@@ -11,7 +11,9 @@ suppressMessages({
   library(dplyr); library(lubridate); library(tibble); library(openxlsx); library(jsonlite)
 })
 
-for (f in c("fondos_pulso","scraper","indices","calculos","dividendos","ajustes",
+# La app NO scrapea (eso lo hace el cron); por eso no carga scraper.R/indices.R
+# (evita quantmod/rvest en el deploy). Solo lo que el dashboard necesita.
+for (f in c("fondos_pulso","calculos","dividendos","ajustes",
             "compute","ui_dashboard","github_store","excel_export"))
   source(file.path("R", paste0(f, ".R")))
 
