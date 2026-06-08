@@ -92,7 +92,11 @@ preparar_pd <- function(vc_df, ov_df = NULL) { t <- preparar_todo(vc_df, ov_df);
 # ============================== UI ==============================
 ui <- page_navbar(
   title = "Pulso VCC", theme = bs_theme(version = 5),
-  nav_panel("Dashboard", uiOutput("dash")),
+  nav_panel("Dashboard",
+    div(style = "display:flex;align-items:center;gap:16px;padding:10px 16px;background:#f7f8fa;border-bottom:1px solid #dde1e8;flex-wrap:wrap",
+      actionButton("actualizar", "🔄 Actualizar datos ahora", class = "btn-primary btn-sm"),
+      span(style = "font-size:12px;color:#7a869a", textOutput("data_ts", inline = TRUE))),
+    uiOutput("dash")),
   nav_panel("Administración",
     div(style = "max-width:1100px;margin:20px auto;padding:0 16px",
       h4("Panel de administración"),
@@ -147,7 +151,26 @@ server <- function(input, output, session) {
     if (is.null(pd)) return(div(style = "padding:40px", h4("Aún no hay datos."),
       p("Corre scripts/actualizar_datos.R o espera al refresco automático.")))
     tags$iframe(srcdoc = render_dashboard_html(pd, logo_b64),
-                style = "width:100%;height:88vh;border:none")
+                style = "width:100%;height:84vh;border:none")
+  })
+
+  # Marca de tiempo de los datos actuales
+  output$data_ts <- renderText({
+    rv$tick
+    store_sync("series_vc.rds")
+    if (file.exists(DATA_RDS)) { d <- readRDS(DATA_RDS)
+      paste0("Cierre ", as.character(d$cierre), " · datos generados ", substr(gsub("T", " ", d$generado), 1, 16))
+    } else ""
+  })
+
+  # Botón: re-consultar la CMF ahora (dispara el workflow de GitHub Actions)
+  observeEvent(input$actualizar, {
+    res <- gh_dispatch("refresh.yml")
+    showModal(modalDialog(title = "Actualizar datos",
+      if (res$ok)
+        HTML("✅ Se inició la actualización: la app está re-consultando la CMF.<br><br>En <b>~3 a 5 minutos</b> recarga esta página (F5) y verás los datos nuevos.")
+      else paste("No se pudo iniciar:", res$msg),
+      easyClose = TRUE, footer = modalButton("Cerrar")))
   })
 
   # ---- Dividendos: subir + persistir ----

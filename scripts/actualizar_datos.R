@@ -30,6 +30,26 @@ for (fd in FONDOS) {
 message("Fondos OK: ", length(series), " / ", length(FONDOS),
         if (length(fallidos)) paste0(" | FALLIDOS: ", paste(fallidos, collapse = ", ")) else "")
 
+# --- Quest renta global A: VC en CLP -> USD (dolar observado) + valor fijo 31-12-2025 ---
+# Replica del script base: se divide por el USD observado del dia habil siguiente
+# (con fallback al ultimo disponible) y el cierre 2025 se fija en 2.2079 (en USD).
+FX <- tryCatch(obtener_usdclp_web(hasta), error = function(e) NULL)
+qn <- "Quest renta global A"
+if (!is.null(series[[qn]]) && !is.null(FX) && nrow(FX) > 0) {
+  h <- series[[qn]]
+  h$valor_cuota <- vapply(seq_len(nrow(h)), function(i) {
+    fx <- fx_proximo_dia_habil(h$fecha[i], FX)
+    if (is.na(fx)) { prev <- FX[FX$fecha <= h$fecha[i], ]; if (nrow(prev)) fx <- prev$usdclp[which.max(prev$fecha)] }
+    if (!is.na(fx) && fx > 0) h$valor_cuota[i] / fx else h$valor_cuota[i]
+  }, numeric(1))
+  d31 <- as.Date("2025-12-31")
+  if (any(h$fecha == d31)) h$valor_cuota[h$fecha == d31] <- 2.2079
+  series[[qn]] <- h
+  message("  ", qn, " convertido a USD (cierre 2025 fijo=2.2079, ult VC=", round(tail(h$valor_cuota, 1), 4), ")")
+} else if (!is.null(series[[qn]])) {
+  message("  AVISO: sin USD observado; ", qn, " queda en CLP")
+}
+
 # Cierre del grupo (moda de ultimos datos)
 fechas_dato <- vapply(series, function(h) as.character(max(h$fecha)), character(1))
 fc <- .moda_fecha(as.Date(fechas_dato)); if (is.na(fc)) fc <- hasta

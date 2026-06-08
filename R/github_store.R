@@ -86,4 +86,17 @@ store_write_text <- function(rel, texto, mensaje = NULL)
 store_write_file <- function(rel, ruta_local_origen, mensaje = NULL)
   store_write_bin(rel, readBin(ruta_local_origen, "raw", file.info(ruta_local_origen)$size), mensaje)
 
+# Dispara el workflow del cron (re-scrapea la CMF ahora). Devuelve list(ok, msg).
+gh_dispatch <- function(workflow = "refresh.yml") {
+  g <- .gh()
+  if (!nzchar(g$token)) return(list(ok = FALSE, msg = "No hay token de GitHub configurado."))
+  r <- tryCatch(POST(
+    sprintf("https://api.github.com/repos/%s/actions/workflows/%s/dispatches", g$repo, workflow),
+    add_headers(Authorization = paste("token", g$token), Accept = "application/vnd.github+json",
+                "User-Agent" = "pulso-vcc"),
+    body = sprintf('{"ref":"%s"}', g$branch)), error = function(e) NULL)
+  if (!is.null(r) && status_code(r) == 204) list(ok = TRUE, msg = "Actualización iniciada.")
+  else list(ok = FALSE, msg = paste0("No se pudo iniciar (HTTP ", if (!is.null(r)) status_code(r) else "sin respuesta", ")."))
+}
+
 if (!exists("%||%")) `%||%` <- function(a, b) if (is.null(a)) b else a
