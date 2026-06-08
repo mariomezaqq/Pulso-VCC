@@ -46,5 +46,10 @@ jobs:
             echo "Sin cambios en series_vc.rds"
           else
             git commit -m "Actualización automática de datos ($(date -u +%Y-%m-%d))"
-            git push
+            # Robusto ante push concurrente: rebase sobre lo remoto (preferir datos nuevos) y reintentar
+            for i in 1 2 3; do
+              git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" || true
+              if git push; then echo "push OK"; break; fi
+              echo "push reintento $i"; sleep 5
+            done
           fi
