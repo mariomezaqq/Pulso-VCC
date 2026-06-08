@@ -202,6 +202,11 @@
   ".alerta .ico{font-weight:700;font-size:16px;line-height:1.2}",
   ".alerta strong{color:#5c4500}",
   ".stale-mark{color:#b8860b;font-size:11px;font-weight:700;margin-left:6px}",
+  ".btn-actualizar{background:var(--accent);color:#fff;border:none;border-radius:6px;",
+  "padding:5px 11px;font-family:'Lato',sans-serif;font-size:11px;font-weight:700;cursor:pointer;",
+  "letter-spacing:.6px;text-transform:uppercase;margin-bottom:6px;transition:background .15s}",
+  ".btn-actualizar:hover{background:#16244a}",
+  ".gen{font-size:11px;color:var(--muted);margin-top:2px}",
   "@media(max-width:900px){",
   "header{padding:16px 20px;flex-wrap:wrap}.alerta{margin:12px 16px 0}",
   ".toolbar{padding:0 16px}main{padding:20px 16px}.header-meta{text-align:left}}"
@@ -224,7 +229,7 @@
 }
 
 #' Devuelve el HTML completo del dashboard.
-render_dashboard_html <- function(pd, logo_b64 = NULL) {
+render_dashboard_html <- function(pd, logo_b64 = NULL, generado = NULL) {
   mes_lbl <- pd$mes_ant_label %||% "Mes ant."
   cats <- pd$categorias
 
@@ -286,8 +291,11 @@ render_dashboard_html <- function(pd, logo_b64 = NULL) {
     "<div class='header-divider'></div>",
     "<div class='header-text'><div class='brand'>Pulso VCC</div>",
     "<div class='subtitle'>Fondos Aprobados &mdash; Comit&eacute; de Inversiones</div></div>",
-    "<div class='header-meta'><div class='fecha'>Cierre ", pd$fecha_cierre, "</div>",
-    "<div>Actualizado autom&aacute;ticamente</div></div></header>",
+    "<div class='header-meta'>",
+    "<button class='btn-actualizar' onclick=\"window.parent.postMessage('pulso-actualizar','*')\">&#x21bb; Actualizar</button>",
+    "<div class='fecha'>Cierre ", pd$fecha_cierre, "</div>",
+    if (!is.null(generado) && nzchar(generado)) paste0("<div class='gen'>Datos: ", generado, " (Chile)</div>") else "",
+    "</div></header>",
     .banner_alertas(pd),
     "<div class='toolbar'><div class='tab-bar'>", tab_btns, "</div></div>",
     "<main>", panel_resumen, .panel_macro(pd), cat_panels, "</main>",

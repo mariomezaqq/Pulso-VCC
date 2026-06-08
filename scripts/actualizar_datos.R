@@ -100,7 +100,7 @@ if (!is.null(tnx) && nrow(tnx) > 0) {
 }
 
 # ---- 4) Guardar ----
-datos <- list(generado = as.character(Sys.time()), cierre = as.character(fc),
+datos <- list(generado = format(Sys.time(), "%Y-%m-%d %H:%M", tz = "America/Santiago"), cierre = as.character(fc),
               series = series, macro = macro, macro_series = macro_series,
               tnx_series = if (!is.null(tnx) && nrow(tnx) > 0) tnx else NULL,
               rf_usa = rf_usa, fallidos = fallidos)

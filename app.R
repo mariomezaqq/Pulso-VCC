@@ -93,9 +93,7 @@ preparar_pd <- function(vc_df, ov_df = NULL) { t <- preparar_todo(vc_df, ov_df);
 ui <- page_navbar(
   title = "Pulso VCC", theme = bs_theme(version = 5),
   nav_panel("Dashboard",
-    div(style = "display:flex;align-items:center;gap:16px;padding:10px 16px;background:#f7f8fa;border-bottom:1px solid #dde1e8;flex-wrap:wrap",
-      actionButton("actualizar", "🔄 Actualizar datos ahora", class = "btn-primary btn-sm"),
-      span(style = "font-size:12px;color:#7a869a", textOutput("data_ts", inline = TRUE))),
+    tags$script(HTML("window.addEventListener('message',function(e){if(e&&e.data==='pulso-actualizar'){Shiny.setInputValue('actualizar',(window.__pulsoN=(window.__pulsoN||0)+1),{priority:'event'});}});")),
     uiOutput("dash")),
   nav_panel("Administración",
     div(style = "max-width:1100px;margin:20px auto;padding:0 16px",
@@ -147,24 +145,16 @@ server <- function(input, output, session) {
 
   output$dash <- renderUI({
     rv$tick
-    pd <- preparar_pd(rv$vc, rv$ov)
-    if (is.null(pd)) return(div(style = "padding:40px", h4("Aún no hay datos."),
+    t <- preparar_todo(rv$vc, rv$ov)
+    if (is.null(t)) return(div(style = "padding:40px", h4("Aún no hay datos."),
       p("Corre scripts/actualizar_datos.R o espera al refresco automático.")))
-    tags$iframe(srcdoc = render_dashboard_html(pd, logo_b64),
-                style = "width:100%;height:84vh;border:none")
-  })
-
-  # Marca de tiempo de los datos actuales
-  output$data_ts <- renderText({
-    rv$tick
-    store_sync("series_vc.rds")
-    if (file.exists(DATA_RDS)) { d <- readRDS(DATA_RDS)
-      paste0("Cierre ", as.character(d$cierre), " · datos generados ", substr(gsub("T", " ", d$generado), 1, 16))
-    } else ""
+    gen <- substr(gsub("T", " ", t$datos$generado %||% ""), 1, 16)
+    tags$iframe(srcdoc = render_dashboard_html(t$pd, logo_b64, gen),
+                style = "width:100%;height:90vh;border:none")
   })
 
   # Botón: re-consultar la CMF ahora (dispara el workflow de GitHub Actions)
-  observeEvent(input$actualizar, {
+  observeEvent(input$actualizar, ignoreInit = TRUE, {
     res <- gh_dispatch("refresh.yml")
     showModal(modalDialog(title = "Actualizar datos",
       if (res$ok)
