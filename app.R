@@ -17,6 +17,9 @@ for (f in c("fondos_pulso","calculos","dividendos","ajustes",
             "compute","ui_dashboard","github_store","excel_export"))
   source(file.path("R", paste0(f, ".R")))
 
+# Token de GitHub para escritura (no se versiona; se incluye en el deploy)
+if (file.exists("R/secret_token.R")) try(source("R/secret_token.R"), silent = TRUE)
+
 DATA_RDS <- "data/series_vc.rds"
 logo_b64 <- { p <- "www/logo.jpg"
   if (file.exists(p)) jsonlite::base64_enc(readBin(p, "raw", file.info(p)$size)) else NULL }

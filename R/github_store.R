@@ -14,11 +14,13 @@
 # =============================================================================
 suppressMessages({ library(httr); library(jsonlite) })
 
+# Repo y URL de datos NO son secretos (el repo es público) -> van como default.
+# El token (para escribir) es secreto: solo via env var / R/secret_token.R.
 .gh <- function() list(
   token  = Sys.getenv("GITHUB_TOKEN", ""),
-  repo   = Sys.getenv("GH_REPO", ""),
+  repo   = Sys.getenv("GH_REPO", "mariomezaqq/Pulso-VCC"),
   branch = Sys.getenv("GH_BRANCH", "main"),
-  raw    = Sys.getenv("PULSO_DATA_URL", "")
+  raw    = Sys.getenv("PULSO_DATA_URL", "https://raw.githubusercontent.com/mariomezaqq/Pulso-VCC/main")
 )
 gh_habilitado <- function() { g <- .gh(); nzchar(g$token) && nzchar(g$repo) }
 

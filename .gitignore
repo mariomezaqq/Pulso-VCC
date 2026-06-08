@@ -1,5 +1,6 @@
 # Credenciales locales (el token va como secreto/env var en la nube)
 R/credentials.R
+R/secret_token.R
 
 # Archivos de prueba / temporales
 _preview.html
