@@ -1,0 +1,19 @@
+# Credenciales locales (el token va como secreto/env var en la nube)
+R/credentials.R
+
+# Archivos de prueba / temporales
+_preview.html
+data/_*
+**/_smoketest.R
+**/_test_*.R
+
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+rsconnect/
+
+# Sistema
+.DS_Store
+Thumbs.db

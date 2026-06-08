@@ -1,0 +1,50 @@
+name: Actualizar datos Pulso VCC
+
+# Corre todos los días a las 15:00 UTC (= 11:00 Chile en invierno, 12:00 en verano).
+# También se puede disparar a mano desde la pestaña Actions ("Run workflow").
+on:
+  schedule:
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write   # para commitear data/series_vc.rds de vuelta al repo
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    env:
+      CMF_RECAPTCHA_TOKEN: ${{ secrets.CMF_RECAPTCHA_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Instalar paquetes R
+        run: |
+          install.packages(c("httr","rvest","dplyr","tidyr","stringr",
+                             "lubridate","tibble","jsonlite","quantmod"))
+        shell: Rscript {0}
+
+      - name: Scrapear y generar data/series_vc.rds
+        run: |
+          options(timeout = 600)
+          setwd(".")
+          source("scripts/actualizar_datos.R")
+        shell: Rscript {0}
+
+      - name: Commit del artefacto actualizado
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/series_vc.rds
+          if git diff --staged --quiet; then
+            echo "Sin cambios en series_vc.rds"
+          else
+            git commit -m "Actualización automática de datos ($(date -u +%Y-%m-%d))"
+            git push
+          fi
