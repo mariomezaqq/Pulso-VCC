@@ -20,11 +20,22 @@ desde <- as.Date(sprintf("%d-12-24", year(hasta) - 1))
 message("Rango de consulta: ", desde, " a ", hasta)
 
 # ---- 1) Series de fondos ----
+# Reintenta cada fondo: la CMF falla de forma intermitente (sobre todo desde la
+# IP del runner US del cron), asi que un solo intento no basta para correr solo.
+scrapear_con_reintento <- function(fd, n = 3) {
+  for (intento in seq_len(n)) {
+    h <- tryCatch(scrapear_fondo(fd, desde, hasta, cred$token, cred$cookies),
+                  error = function(e) { message("  [intento ", intento, "/", n, "] ERROR ",
+                                                fd$nombre, ": ", e$message); NULL })
+    if (!is.null(h) && nrow(h) > 0) return(h)
+    if (intento < n) Sys.sleep(2 * intento)   # backoff: 2s, 4s
+  }
+  NULL
+}
 series <- list(); fallidos <- character()
 for (fd in FONDOS) {
-  h <- tryCatch(scrapear_fondo(fd, desde, hasta, cred$token, cred$cookies),
-                error = function(e) { message("  ERROR ", fd$nombre, ": ", e$message); NULL })
-  if (!is.null(h) && nrow(h) > 0) series[[fd$nombre]] <- h else fallidos <- c(fallidos, fd$nombre)
+  h <- scrapear_con_reintento(fd, n = 3)
+  if (!is.null(h)) series[[fd$nombre]] <- h else fallidos <- c(fallidos, fd$nombre)
   Sys.sleep(0.6)
 }
 message("Fondos OK: ", length(series), " / ", length(FONDOS),
