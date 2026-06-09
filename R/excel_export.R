@@ -110,18 +110,124 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
       if (ncol(wide)>1) addStyle(wb, sh, S$num, rows=2:(n+1), cols=2:ncol(wide), gridExpand=TRUE) }
     setColWidths(wb, sh, cols=1, widths=12); setColWidths(wb, sh, cols=2:max(2,ncol(wide)), widths=16)
   }
-  for (cat in CATEGORIAS) {
-    sh <- substr(cat$titulo, 1, 31); addWorksheet(wb, sh); tabs <- list()
-    for (f in cat$fondos) {
-      s <- .serie_fondo(f, series_aj, vc_df); if (is.null(s) || !nrow(s)) next
-      s <- s[s$fecha >= FECHA_BASE_XLSX, , drop=FALSE]; if (!nrow(s)) next
-      d <- s[, c("fecha","valor_cuota")]; names(d) <- c("Fecha", f$nombre_excel); tabs[[length(tabs)+1]] <- d
-      if ("valor_cuota_ajustado" %in% names(s) && any(abs(s$valor_cuota_ajustado-s$valor_cuota)>1e-9, na.rm=TRUE)) {
-        da <- s[, c("fecha","valor_cuota_ajustado")]; names(da) <- c("Fecha", paste0(f$nombre_excel," Aj.")); tabs[[length(tabs)+1]] <- da
+  # Replica fiel del Comite: por cada fondo, junto a su VC van Div. Acum. +
+  # Cuota+Div. (si tiene dividendos) o Factor Reparto + FA Acum + VC Ajustado
+  # (si usa factor); abajo, MTD/YTD/2025/2024 como FORMULAS vivas de Excel.
+  .int2col <- function(n) { rr <- ""; while (n > 0) { m <- (n-1) %% 26; rr <- paste0(LETTERS[m+1], rr); n <- (n-1) %/% 26 }; rr }
+  st_tit <- createStyle(fontSize=11, fontName="Arial", textDecoration="bold")
+  st_lbl <- createStyle(fontSize=10, fontName="Arial", textDecoration="bold", halign="CENTER", fgFill="#F2F2F2")
+  st_pct <- createStyle(fontSize=10, fontName="Arial", numFmt="0.00%", border="TopBottomLeftRight", halign="RIGHT")
+
+  escribir_hoja_cat <- function(cat) {
+    fondos <- cat$fondos; nf <- length(fondos)
+    sfun <- lapply(fondos, function(f) {
+      s <- .serie_fondo(f, series_aj, vc_df)
+      if (is.null(s) || !nrow(s)) return(NULL)
+      s <- s[s$fecha >= FECHA_BASE_XLSX, , drop=FALSE]; if (!nrow(s)) return(NULL)
+      s[order(s$fecha), , drop=FALSE]
+    })
+    fechas <- sort(unique(do.call(c, lapply(sfun, function(s) if (is.null(s)) as.Date(character()) else s$fecha))))
+    addWorksheet(wb, cat$hoja); sh <- cat$hoja
+    if (!length(fechas)) return(invisible())
+    nF <- length(fechas)
+
+    usa_fa <- vapply(fondos, function(f) isTRUE(f$nombre_excel %in% FONDOS_CON_FACTOR_AJUSTE), logical(1))
+    divs <- lapply(fondos, function(f) {
+      e <- div_por_fondo[[f$nombre_excel]]
+      if (is.null(e) || !nrow(e)) return(NULL)
+      e <- e[order(e$fecha_limite), , drop=FALSE]; e <- e[e$fecha_limite <= max(fechas), , drop=FALSE]
+      if (nrow(e)) e else NULL
+    })
+    tiene_div <- vapply(seq_len(nf), function(j) !usa_fa[j] && !is.null(divs[[j]]), logical(1))
+
+    cvc<-integer(nf); cfa<-rep(NA_integer_,nf); cfac<-rep(NA_integer_,nf); cvca<-rep(NA_integer_,nf)
+    cdiv<-rep(NA_integer_,nf); ccmd<-rep(NA_integer_,nf); cc<-2
+    for (j in seq_len(nf)) { cvc[j]<-cc; cc<-cc+1
+      if (usa_fa[j]) { cfa[j]<-cc;cc<-cc+1; cfac[j]<-cc;cc<-cc+1; cvca[j]<-cc;cc<-cc+1 }
+      else if (tiene_div[j]) { cdiv[j]<-cc;cc<-cc+1; ccmd[j]<-cc;cc<-cc+1 } }
+    ult<-cc-1; col_lbl<-ult+2; col_calc<-ult+3
+
+    writeData(wb, sh, cat$titulo, startCol=1, startRow=1); addStyle(wb, sh, st_tit, rows=1, cols=1)
+    writeData(wb, sh, "Fecha", startCol=1, startRow=2); addStyle(wb, sh, S$hdr, rows=2, cols=1)
+    for (j in seq_len(nf)) {
+      f <- fondos[[j]]
+      writeData(wb, sh, f$nombre_excel, startCol=cvc[j], startRow=2); addStyle(wb, sh, S$hdr, rows=2, cols=cvc[j])
+      if (usa_fa[j]) {
+        writeData(wb, sh, "Factor Reparto", startCol=cfa[j], startRow=2)
+        writeData(wb, sh, "FA Acumulado", startCol=cfac[j], startRow=2)
+        writeData(wb, sh, "VC Ajustado", startCol=cvca[j], startRow=2)
+        for (cx in c(cfa[j],cfac[j],cvca[j])) addStyle(wb, sh, S$hdr, rows=2, cols=cx)
+      } else if (tiene_div[j]) {
+        writeData(wb, sh, "Div. Acum.", startCol=cdiv[j], startRow=2)
+        writeData(wb, sh, "Cuota + Div.", startCol=ccmd[j], startRow=2)
+        for (cx in c(cdiv[j],ccmd[j])) addStyle(wb, sh, S$hdr, rows=2, cols=cx)
+      }
+      nc <- if (usa_fa[j]) paste0(f$nombre_excel," (ajustado)") else if (tiene_div[j]) paste0(f$nombre_excel," + dividendo") else f$nombre_excel
+      writeData(wb, sh, nc, startCol=col_calc+j, startRow=2); addStyle(wb, sh, S$hdr, rows=2, cols=col_calc+j)
+    }
+
+    # Calcular vectores por fondo y volcar en BLOQUE (una matriz + estilos por rango)
+    refM <- vector("list", nf)
+    Md <- matrix(NA_real_, nrow = nF, ncol = ult - 1)   # cols 2..ult del sheet
+    for (j in seq_len(nf)) {
+      s <- sfun[[j]]; vc <- rep(NA_real_, nF); ref <- rep(NA_real_, nF)
+      if (!is.null(s)) {
+        idx <- match(s$fecha, fechas); vc[idx] <- s$valor_cuota
+        Md[, cvc[j]-1] <- vc; ref <- vc
+        if (usa_fa[j]) {
+          faacum_s <- if ("valor_cuota_ajustado" %in% names(s))
+                        ifelse(!is.na(s$valor_cuota) & s$valor_cuota!=0, s$valor_cuota_ajustado/s$valor_cuota, NA_real_)
+                      else if ("factor_reparto" %in% names(s)) cumprod(ifelse(is.na(s$factor_reparto),1,s$factor_reparto))
+                      else rep(1, nrow(s))
+          vca_s <- if ("valor_cuota_ajustado" %in% names(s)) s$valor_cuota_ajustado else s$valor_cuota * faacum_s
+          fr_s  <- if ("factor_reparto" %in% names(s)) s$factor_reparto else rep(NA_real_, nrow(s))
+          fr<-rep(NA_real_,nF); fac<-rep(NA_real_,nF); vca<-rep(NA_real_,nF)
+          fr[idx]<-fr_s; fac[idx]<-faacum_s; vca[idx]<-vca_s
+          Md[, cfa[j]-1]<-fr; Md[, cfac[j]-1]<-fac; Md[, cvca[j]-1]<-vca; ref<-vca
+        } else if (tiene_div[j]) {
+          e <- divs[[j]]
+          dacum <- vapply(seq_len(nF), function(i) sum(e$monto[e$fecha_limite <= fechas[i]], na.rm=TRUE), numeric(1))
+          cmd <- vc + dacum
+          Md[, cdiv[j]-1]<-dacum; Md[, ccmd[j]-1]<-cmd; ref<-cmd
+        }
+      }
+      refM[[j]] <- ref
+    }
+    writeData(wb, sh, data.frame(F = fechas), startCol = 1, startRow = 3, colNames = FALSE)
+    writeData(wb, sh, Md, startCol = 2, startRow = 3, colNames = FALSE)
+    addStyle(wb, sh, S$fch, rows = 3:(nF+2), cols = 1, gridExpand = TRUE)
+    addStyle(wb, sh, S$num, rows = 3:(nF+2), cols = 2:ult, gridExpand = TRUE)
+
+    max_f <- fechas[nF]; yr <- as.integer(format(max_f,"%Y"))
+    target <- list(MTD = as.Date(format(max_f,"%Y-%m-01")) - 1,
+                   YTD = as.Date(sprintf("%d-12-31", yr-1)),
+                   `2025` = as.Date("2025-12-31"), `2024` = as.Date("2024-12-31"))
+    mets <- c("MTD","YTD","2025","2024")
+    for (k in seq_along(mets)) {
+      met <- mets[k]; filam <- nF + 3 + (k-1)
+      writeData(wb, sh, met, startCol=col_lbl, startRow=filam); addStyle(wb, sh, st_lbl, rows=filam, cols=col_lbl)
+      for (j in seq_len(nf)) {
+        ref <- refM[[j]]; pres <- which(!is.na(ref)); if (!length(pres)) next
+        col_ref <- if (usa_fa[j]) cvca[j] else if (tiene_div[j]) ccmd[j] else cvc[j]
+        cl <- .int2col(col_ref); num_row <- max(pres) + 2
+        es_inicio <- met=="YTD" && (fondos[[j]]$nombre_excel %in% FONDOS_YTD_DESDE_INICIO)
+        if (es_inicio) den_row <- min(pres) + 2
+        else { cand <- pres[fechas[pres] <= target[[met]]]; if (!length(cand)) next; den_row <- max(cand) + 2 }
+        writeFormula(wb, sh, paste0("=(",cl,num_row,"/$",cl,"$",den_row,")-1"), startCol=col_calc+j, startRow=filam)
+        addStyle(wb, sh, st_pct, rows=filam, cols=col_calc+j)
       }
     }
-    if (length(tabs)) { wide <- Reduce(function(a,b) full_join(a,b,by="Fecha"), tabs); esc_wide(sh, wide[order(wide$Fecha),]) }
+
+    setColWidths(wb, sh, cols=1, widths=14)
+    for (j in seq_len(nf)) {
+      setColWidths(wb, sh, cols=cvc[j], widths=14)
+      if (usa_fa[j]) setColWidths(wb, sh, cols=c(cfa[j],cfac[j],cvca[j]), widths=c(14,14,16))
+      else if (tiene_div[j]) setColWidths(wb, sh, cols=c(cdiv[j],ccmd[j]), widths=c(14,16))
+    }
+    setColWidths(wb, sh, cols=ult+1, widths=4); setColWidths(wb, sh, cols=col_lbl, widths=8)
+    setColWidths(wb, sh, cols=(col_calc+1):(col_calc+nf), widths=rep(18,nf))
   }
+  for (cat in CATEGORIAS) escribir_hoja_cat(cat)
 
   # ============ Datos macro ============
   if (!is.null(datos$macro_series) && length(datos$macro_series)) {
