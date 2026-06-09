@@ -154,8 +154,12 @@
   ".subtitle{font-size:11px;color:var(--muted);margin-top:2px;text-transform:uppercase;letter-spacing:1.5px}",
   ".header-meta{text-align:right;font-size:12px;color:var(--muted)}",
   ".fecha{font-size:14px;font-weight:700;color:var(--accent);margin-bottom:2px}",
-  ".toolbar{background:var(--surface);border-bottom:2px solid var(--border);padding:0 40px;box-shadow:0 1px 3px rgba(0,0,0,.04)}",
+  ".toolbar{background:var(--surface);border-bottom:2px solid var(--border);padding:0 40px;box-shadow:0 1px 3px rgba(0,0,0,.04);display:flex;align-items:center;justify-content:space-between;gap:12px}",
   ".tab-bar{display:flex;flex-wrap:wrap;gap:0}",
+  ".btn-fs{background:none;border:1px solid var(--border);border-radius:6px;color:var(--muted);",
+  "padding:5px 11px;font-family:'Lato',sans-serif;font-size:11px;font-weight:700;cursor:pointer;",
+  "letter-spacing:.5px;text-transform:uppercase;white-space:nowrap;transition:all .15s}",
+  ".btn-fs:hover{background:var(--accent);color:#fff;border-color:var(--accent)}",
   ".tab-btn{background:none;border:none;border-bottom:3px solid transparent;",
   "padding:14px 18px;font-family:'Lato',sans-serif;font-size:12px;font-weight:700;",
   "color:var(--muted);cursor:pointer;white-space:nowrap;text-transform:uppercase;",
@@ -277,7 +281,11 @@ render_dashboard_html <- function(pd, logo_b64 = NULL, generado = NULL) {
     "document.getElementById(id).style.display='block';",
     "var b=document.querySelectorAll('.tab-btn');",
     "for(var j=0;j<b.length;j++){b[j].classList.remove('active');}",
-    "btn.classList.add('active');}")
+    "btn.classList.add('active');}",
+    "function toggleFS(){var d=document.documentElement;",
+    "if(!document.fullscreenElement&&!document.webkitFullscreenElement){",
+    "if(d.requestFullscreen){d.requestFullscreen();}else if(d.webkitRequestFullscreen){d.webkitRequestFullscreen();}}",
+    "else{if(document.exitFullscreen){document.exitFullscreen();}else if(document.webkitExitFullscreen){document.webkitExitFullscreen();}}}")
 
   logo_html <- if (!is.null(logo_b64) && nzchar(logo_b64))
     paste0("<img class='logo-img' src='data:image/jpeg;base64,", logo_b64, "' alt='Vizcaya Capital'>") else ""
@@ -297,7 +305,8 @@ render_dashboard_html <- function(pd, logo_b64 = NULL, generado = NULL) {
     if (!is.null(generado) && nzchar(generado)) paste0("<div class='gen'>Datos: ", generado, " (Chile)</div>") else "",
     "</div></header>",
     .banner_alertas(pd),
-    "<div class='toolbar'><div class='tab-bar'>", tab_btns, "</div></div>",
+    "<div class='toolbar'><div class='tab-bar'>", tab_btns, "</div>",
+    "<button class='btn-fs' onclick='toggleFS()' title='Ver en pantalla completa'>&#x26F6; Pantalla completa</button></div>",
     "<main>", panel_resumen, .panel_macro(pd), cat_panels, "</main>",
     "<footer>Vizcaya Capital &nbsp;&bull;&nbsp; Uso interno &nbsp;&bull;&nbsp; ",
     "Datos CMF, BCCh y Yahoo Finance</footer>",

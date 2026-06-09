@@ -104,12 +104,16 @@ macro <- list(); macro_series <- list()
 for (idx in INDICES) {
   r <- list(wtd = NA_real_, mtd = NA_real_, ytd = NA_real_); s <- NULL
   if (!is.null(idx$fuente) && idx$fuente == "bcch") {
-    s <- tryCatch(obtener_ipsa_web(seq(ref_ytd, fc, by = "day")), error = function(e) NULL)
+    # IPSA: scraping de datosmacro (dato MAS FRESCO que el BCCh). Se acumula con el
+    # historico previo guardado en macro_series por si una descarga falla.
+    s <- tryCatch(obtener_ipsa_datosmacro(desde = ref_ytd, hasta = fc), error = function(e) NULL)
+    prev_ipsa <- if (!is.null(prev) && !is.null(prev$macro_series)) prev$macro_series[[idx$nombre]] else NULL
+    s <- bind_rows(s, prev_ipsa)                 # datosmacro primero -> pisa al previo en duplicados
     if (!is.null(s) && nrow(s) > 0) {
-      s <- s %>% filter(!is.na(valor)) %>% distinct(fecha, .keep_all = TRUE)
-      if (!any(s$fecha <= ref_ytd))              # inyectar cierre 2025 fijo para YTD
+      s <- s %>% filter(!is.na(valor)) %>% distinct(fecha, .keep_all = TRUE) %>% arrange(fecha)
+      if (!any(s$fecha <= ref_ytd))              # fallback: cierre 2025 fijo si datosmacro no lo trae
         s <- bind_rows(tibble(fecha = ref_ytd, valor = IPSA_31DIC2025), s) %>% arrange(fecha)
-    }
+    } else s <- NULL
   } else if (!is.null(idx$ticker) && nchar(idx$ticker) > 0) {
     s <- tryCatch(obtener_historico_yahoo_json(idx$ticker, ref_ytd - 5, fc), error = function(e) NULL)
     Sys.sleep(1)

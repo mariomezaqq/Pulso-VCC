@@ -126,6 +126,49 @@ obtener_ipsa_web <- function(fechas_objetivo) {
   bind_rows(resultados)
 }
 
+# ---- IPSA (datosmacro.expansion.com - sin credenciales; dato MAS FRESCO que el BCCh) ----
+# La pagina trae una tabla DIARIA del IPSA. El parametro ?dr=YYYY-MM devuelve la
+# ventana (~21 dias habiles) terminada en ese mes; iterando los meses desde 'desde'
+# se arma el historico continuo (las ventanas se solapan). Cada fila expone fecha
+# ISO + valor (punto decimal) en data-value. WebFetch la bloquea; httr + UA da 200.
+.ipsa_dm_parse <- function(html) {
+  patron <- paste0('<td class="fecha" data-value="([0-9]{4}-[0-9]{2}-[0-9]{2})">',
+                   '[^<]*</td><td class="numero" data-value="([0-9.]+)">')
+  hits <- regmatches(html, gregexpr(patron, html, perl = TRUE))[[1]]
+  if (!length(hits)) return(NULL)
+  tibble(fecha = as.Date(sub(paste0(".*", patron, ".*"), "\\1", hits, perl = TRUE)),
+         valor = suppressWarnings(as.numeric(sub(paste0(".*", patron, ".*"), "\\2", hits, perl = TRUE))))
+}
+obtener_ipsa_datosmacro <- function(desde = NULL, hasta = Sys.Date(),
+                                    base = "https://datosmacro.expansion.com/bolsa/chile") {
+  message("  Descargando: IPSA (datosmacro.expansion.com)")
+  ua <- "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+  get1 <- function(u) {                      # con reintento ante hipos de la pagina
+    for (intento in 1:3) {
+      r <- tryCatch(httr::GET(u, httr::user_agent(ua), httr::timeout(30)), error = function(e) NULL)
+      if (!is.null(r) && httr::status_code(r) == 200) {
+        d <- .ipsa_dm_parse(httr::content(r, "text", encoding = "UTF-8"))
+        if (!is.null(d) && nrow(d)) return(d)
+      }
+      Sys.sleep(1.5 * intento)
+    }
+    NULL
+  }
+  urls <- base                               # base = dato del ultimo dia disponible
+  if (!is.null(desde)) {
+    meses <- seq(lubridate::floor_date(as.Date(desde), "month"),
+                 lubridate::floor_date(as.Date(hasta), "month"), by = "month")
+    urls <- c(base, paste0(base, "?dr=", format(meses, "%Y-%m")))
+  }
+  df <- dplyr::bind_rows(lapply(urls, get1))
+  if (is.null(df) || !nrow(df)) { message("    Sin datos IPSA de datosmacro"); return(NULL) }
+  df <- df %>% dplyr::filter(!is.na(fecha), !is.na(valor), !(lubridate::wday(fecha) %in% c(1, 7))) %>%
+    dplyr::distinct(fecha, .keep_all = TRUE) %>% dplyr::arrange(fecha)
+  message("    ✓ IPSA datosmacro: ", nrow(df), " dias (",
+          format(min(df$fecha)), " -> ", format(max(df$fecha)), ")")
+  df
+}
+
 # ---- USD observado (BCCh web) ----
 obtener_usdclp_web <- function(fechas_objetivo) {
   message("  Descargando: USD observado (BCCh - Web Scraping)")

@@ -150,6 +150,7 @@ server <- function(input, output, session) {
       p("Corre scripts/actualizar_datos.R o espera al refresco automático.")))
     gen <- substr(gsub("T", " ", t$datos$generado %||% ""), 1, 16)
     tags$iframe(srcdoc = render_dashboard_html(t$pd, logo_b64, gen),
+                allow = "fullscreen", allowfullscreen = NA,
                 style = "width:100%;height:90vh;border:none")
   })
 
