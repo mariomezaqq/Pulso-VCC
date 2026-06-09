@@ -30,6 +30,19 @@ for (fd in FONDOS) {
 message("Fondos OK: ", length(series), " / ", length(FONDOS),
         if (length(fallidos)) paste0(" | FALLIDOS: ", paste(fallidos, collapse = ", ")) else "")
 
+# ---- GUARD anti-overwrite: no pisar datos buenos con un scrape vacio ----
+# Si la CMF no responde y NO se scrapeo ningun fondo, abortamos con error: el
+# step del cron queda marcado como fallido (alerta visible) y NO se commitea,
+# asi conservamos el series_vc.rds anterior en vez de borrarlo en silencio.
+ruta_rds <- file.path(base, "data", "series_vc.rds")
+prev <- if (file.exists(ruta_rds)) tryCatch(readRDS(ruta_rds), error = function(e) NULL) else NULL
+if (length(series) == 0) {
+  n_prev <- if (!is.null(prev) && !is.null(prev$series)) length(prev$series) else 0L
+  message("SCRAPE VACIO: 0/", length(FONDOS), " fondos OK. NO se sobrescribe series_vc.rds.",
+          if (n_prev > 0) paste0(" Se conservan los ", n_prev, " fondos previos.") else "")
+  quit(save = "no", status = 1)   # el run del cron queda como fallido; datos intactos
+}
+
 # --- Quest renta global A: VC en CLP -> USD (dolar observado) + valor fijo 31-12-2025 ---
 # Replica del script base: se divide por el USD observado del dia habil siguiente
 # (con fallback al ultimo disponible) y el cierre 2025 se fija en 2.2079 (en USD).
@@ -48,6 +61,18 @@ if (!is.null(series[[qn]]) && !is.null(FX) && nrow(FX) > 0) {
   message("  ", qn, " convertido a USD (cierre 2025 fijo=2.2079, ult VC=", round(tail(h$valor_cuota, 1), 4), ")")
 } else if (!is.null(series[[qn]])) {
   message("  AVISO: sin USD observado; ", qn, " queda en CLP")
+}
+
+# ---- Resiliencia ante fallos PARCIALES ----
+# Para los fondos que fallaron HOY pero existian en el archivo previo, conservamos
+# su ultima serie buena (el dashboard ya marca con ⚠ los datos atrasados). Asi un
+# hipo puntual de la CMF no hace desaparecer fondos del cuadro.
+if (length(fallidos) && !is.null(prev) && !is.null(prev$series)) {
+  rescatados <- intersect(fallidos, names(prev$series))
+  for (nm in rescatados) series[[nm]] <- prev$series[[nm]]
+  if (length(rescatados))
+    message("Conservados del archivo previo (fallaron hoy): ", length(rescatados),
+            " -> ", paste(rescatados, collapse = ", "))
 }
 
 # Cierre del grupo (moda de ultimos datos)
