@@ -1,0 +1,60 @@
+name: Calcular dividendos del Boletin (incl. monto total)
+
+# Dias habiles a las 16:00 UTC (~12:00/13:00 Chile), cuando ya estan publicados
+# el boletin del dia y el valor cuota de la CMF. Tambien manual desde Actions.
+on:
+  schedule:
+    - cron: '0 16 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write   # para commitear data/dividendos_calculados.csv
+
+jobs:
+  dividendos:
+    runs-on: ubuntu-latest
+    env:
+      CMF_RECAPTCHA_TOKEN: ${{ secrets.CMF_RECAPTCHA_TOKEN }}
+      CMF_COOKIES: ${{ secrets.CMF_COOKIES }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Instalar paquetes R
+        run: |
+          install.packages(c("httr","rvest","readxl","dplyr","tidyr","stringr",
+                             "stringi","lubridate","tibble","jsonlite"))
+        shell: Rscript {0}
+
+      - name: Procesar dividendos (codigo del buscador en fondos/)
+        working-directory: fondos
+        run: |
+          options(timeout = 600)
+          source("scripts/procesar_dividendos.R")
+        shell: Rscript {0}
+
+      - name: Publicar el CSV en data/ (raiz) para que la app lo lea
+        run: |
+          mkdir -p data
+          cp fondos/data/dividendos_calculados.csv data/dividendos_calculados.csv
+
+      - name: Commit del archivo actualizado
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/dividendos_calculados.csv
+          if git diff --staged --quiet; then
+            echo "Sin cambios en dividendos_calculados.csv"
+          else
+            git commit -m "Dividendos recalculados ($(date -u +%Y-%m-%d))"
+            for i in 1 2 3; do
+              git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" || true
+              if git push; then echo "push OK"; break; fi
+              echo "push reintento $i"; sleep 5
+            done
+          fi
