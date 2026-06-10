@@ -28,9 +28,22 @@ TOKEN   <- if (exists("RECAPTCHA_TOKEN") && nchar(RECAPTCHA_TOKEN) > 50) RECAPTC
 COOKIES <- if (exists("COOKIES") && nzchar(COOKIES)) COOKIES else Sys.getenv("CMF_COOKIES", "")
 if (nchar(TOKEN) < 50) message("[proc] AVISO: token reCAPTCHA vacio/corto; los fondos FIRES/FINRE no scrapearan cuotas.")
 
-# ---- 1) Ultimo boletin ----
-ruta <- descargar_ultimo_boletin("data", dias_atras = 12)
-stopifnot(!is.null(ruta))
+# ---- 1) Boletin a procesar ----
+# La bolsa protege el boletin con reCAPTCHA y genera el xlsx en el navegador, asi
+# que NO se puede auto-descargar de forma confiable. Orden de obtencion:
+#   1) env BOLETIN_XLSX  -> en CI: el ULTIMO boletin subido por la app (memoria GitHub).
+#   2) descarga directa  -> solo funciona local con cache (valida firma xlsx).
+#   3) el xlsx mas reciente que haya en data/.
+ruta <- Sys.getenv("BOLETIN_XLSX", "")
+if (!nzchar(ruta) || !file.exists(ruta)) {
+  ruta <- tryCatch(descargar_ultimo_boletin("data", dias_atras = 12), error = function(e) NULL)
+}
+if (is.null(ruta) || !nzchar(ruta) || !file.exists(ruta)) {
+  cand <- list.files("data", pattern = "(resumen_dividendos|dividendos_ultimo)\\.xlsx$", full.names = TRUE)
+  if (length(cand) > 0) ruta <- cand[order(file.info(cand)$mtime, decreasing = TRUE)][1]
+}
+stopifnot(!is.null(ruta), nzchar(ruta), file.exists(ruta))
+cat("[proc] Boletin a procesar:", ruta, "\n")
 
 # ---- 2) Leer hojas capturando por_cuota Y monto_total ----
 leer_hoja2 <- function(sheet, skip, tipo_evento) {
