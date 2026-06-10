@@ -189,6 +189,14 @@
 "Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PI","10643","FINRE",2026-05-12,2026-05-18,"$","Dividendo",10.054708,NA,NA,NA,NA,10.054708497,"boletin",NA
 "Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PX","10643","FINRE",2026-05-12,2026-05-18,"$","Dividendo",10.419222,NA,NA,NA,NA,10.419221797,"boletin",NA
 "Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","S","10643","FINRE",2026-05-12,2026-05-18,"$","Dividendo",19.114315,NA,NA,NA,NA,19.114314705,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","ND","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",6.373302,NA,NA,NA,NA,6.373302,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","NI","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",7.549092,NA,NA,NA,NA,7.54909198,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","NX","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",8.726208,NA,NA,NA,NA,8.726208,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PA","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",9.643872,NA,NA,NA,NA,9.643872204,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PD","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",9.9479,NA,NA,NA,NA,9.947900275,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PI","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",10.403111,NA,NA,NA,NA,10.403111476,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PX","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",10.780725,NA,NA,NA,NA,10.780724829,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","S","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",23.262885,NA,NA,NA,NA,23.262885475,"boletin",NA
 "Ameris Dover Street XI Fondo de Inversión","A","10565","FINRE",2025-08-12,2025-08-19,"US$","Dividendo",0.024389,NA,NA,NA,NA,0.024389484,"boletin",NA
 "Ameris Dover Street XI Fondo de Inversión","B","10565","FINRE",2025-08-12,2025-08-19,"US$","Dividendo",0.024465,NA,NA,NA,NA,0.02446464,"boletin",NA
 "Ameris Dover Street XI Fondo de Inversión","I","10565","FINRE",2025-08-12,2025-08-19,"US$","Dividendo",0.024566,NA,NA,NA,NA,0.024566095,"boletin",NA
@@ -471,6 +479,8 @@
 "Ameris Parauco Fondo de Inversión","A",NA,NA,2026-03-10,2026-03-16,"$","Dividendo",13.961673,NA,NA,NA,NA,13.961672847,"boletin",NA
 "Ameris Parauco Fondo de Inversión","I",NA,NA,2026-03-10,2026-03-16,"$","Dividendo",14.682609,NA,NA,NA,NA,14.682609005,"boletin",NA
 "Ameris Parauco Fondo de Inversión","P",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",12.272025,NA,NA,NA,NA,12.27202479,"boletin",NA
+"Ameris Parauco Fondo de Inversión","A",NA,NA,2026-06-09,2026-06-15,"$","Dividendo",3.003171,NA,NA,NA,NA,3.003171418,"boletin",NA
+"Ameris Parauco Fondo de Inversión","I",NA,NA,2026-06-09,2026-06-15,"$","Dividendo",3.166928,NA,NA,NA,NA,3.166928106,"boletin",NA
 "Ameris Private Equity Nordic IX Fondo de Inversión","A","9506","FINRE",2025-05-14,2025-05-20,"EURO","Dividendo",0.194708,NA,NA,NA,NA,0.194707727,"boletin",NA
 "Ameris Private Equity Nordic IX Fondo de Inversión","I","9506","FINRE",2025-05-14,2025-05-20,"EURO","Dividendo",0.207329,NA,NA,NA,NA,0.207329298,"boletin",NA
 "Ameris Private Equity Nordic IX Fondo de Inversión","X","9506","FINRE",2025-05-14,2025-05-20,"EURO","Dividendo",0.20855,NA,NA,NA,NA,0.208550456,"boletin",NA
@@ -2394,6 +2404,7 @@
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2026-05-20,2026-05-27,"$","Dividendo",3.017985,NA,NA,NA,NA,3.017985,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2026-05-22,2026-05-28,"$","Dividendo",2.192757,NA,NA,NA,NA,2.1927567,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2026-05-23,2026-05-29,"$","Dividendo",0.264459,NA,NA,NA,NA,0.2644593,"boletin",NA
+"Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2026-06-05,2026-06-11,"$","Dividendo",0.255761,NA,NA,NA,NA,0.2557608,"boletin",NA
 "Fondo de Inversion Singular Leaseback II","A",NA,NA,2025-02-04,2025-02-10,"$","Dividendo",54.825791,NA,NA,NA,NA,54.8257912,"boletin",NA
 "Fondo de Inversion Singular Leaseback II","I",NA,NA,2025-02-04,2025-02-10,"$","Dividendo",52.883332,NA,NA,NA,NA,52.8833316,"boletin",NA
 "Fondo de Inversion Singular Leaseback II","A",NA,NA,2025-02-04,2025-02-10,"$","Reparto",934.415023,NA,NA,NA,NA,934.4150227,"boletin",NA
@@ -7031,6 +7042,7 @@
 "VOLCOMCAPITAL Deuda Privada Fondo de Inversión","B","9384","FINRE",2025-12-10,2025-12-16,"$","Reparto",6.631975,NA,NA,NA,NA,6.63197544491837,"boletin",NA
 "VOLCOMCAPITAL Deuda Privada Fondo de Inversión","B","9384","FINRE",2026-02-04,2026-02-10,"$","Dividendo",0.417731,NA,NA,NA,NA,0.417730547843745,"boletin",NA
 "VOLCOMCAPITAL Deuda Privada Fondo de Inversión","B","9384","FINRE",2026-02-04,2026-02-10,"$","Reparto",16.697045,NA,NA,NA,NA,16.6970447938811,"boletin",NA
+"VOLCOMCAPITAL Deuda Privada Fondo de Inversión","B","9384","FINRE",2026-06-10,2026-06-16,"$","Reparto",8.985257,NA,NA,NA,NA,8.98525705440554,"boletin",NA
 "VOLCOMCAPITAL Deuda Privada Perú Fondo de Inversión","A","9483","FINRE",2025-01-10,2025-01-16,"US$","Dividendo",0.01516,NA,NA,NA,NA,0.0151604004424354,"boletin",NA
 "VOLCOMCAPITAL Deuda Privada Perú Fondo de Inversión","B","9483","FINRE",2025-01-10,2025-01-16,"US$","Dividendo",0.01549,NA,NA,NA,NA,0.0154895744849031,"boletin",NA
 "VOLCOMCAPITAL Deuda Privada Perú Fondo de Inversión","C","9483","FINRE",2025-01-10,2025-01-16,"US$","Dividendo",0.015159,NA,NA,NA,NA,0.015158675488018,"boletin",NA
@@ -7185,6 +7197,8 @@
 "VOLCOMCAPITAL PE Secondary II Fondo de Inversión","E","9263","FINRE",2026-03-11,2026-03-17,"US$","Reparto",0.002439,NA,NA,NA,NA,0.00243867738813615,"boletin",NA
 "VOLCOMCAPITAL PE Secondary II Fondo de Inversión","A","9263","FINRE",2026-04-23,2026-04-29,"US$","Reparto",0.003229,NA,NA,NA,NA,0.0032289525595485,"boletin",NA
 "VOLCOMCAPITAL PE Secondary II Fondo de Inversión","E","9263","FINRE",2026-04-23,2026-04-29,"US$","Reparto",0.003228,NA,NA,NA,NA,0.00322836510158094,"boletin",NA
+"VOLCOMCAPITAL PE Secondary II Fondo de Inversión","A","9263","FINRE",2026-06-10,2026-06-16,"US$","Reparto",0.001599,NA,NA,NA,NA,0.0015992453746674,"boletin",NA
+"VOLCOMCAPITAL PE Secondary II Fondo de Inversión","E","9263","FINRE",2026-06-10,2026-06-16,"US$","Reparto",0.001599,NA,NA,NA,NA,0.00159895440688755,"boletin",NA
 "VOLCOMCAPITAL PE Secondary III Fondo de Inversión","A","9643","FINRE",2025-01-04,2025-01-10,"US$","Dividendo",0.023502,NA,NA,NA,NA,0.0235024937484943,"boletin",NA
 "VOLCOMCAPITAL PE Secondary III Fondo de Inversión","B","9643","FINRE",2025-01-04,2025-01-10,"US$","Dividendo",0.024316,NA,NA,NA,NA,0.0243155576499377,"boletin",NA
 "VOLCOMCAPITAL PE Secondary III Fondo de Inversión","C","9643","FINRE",2025-01-04,2025-01-10,"US$","Dividendo",0.024366,NA,NA,NA,NA,0.0243659592092477,"boletin",NA
@@ -7321,6 +7335,12 @@
 "VOLCOMCAPITAL Private Equity II Fondo de Inversión","A","9388","FINRE",2026-01-31,2026-02-06,"US$","Reparto",0.099518,NA,NA,NA,NA,0.0995175973636908,"boletin",NA
 "VOLCOMCAPITAL Private Equity II Fondo de Inversión","B","9388","FINRE",2026-01-31,2026-02-06,"US$","Reparto",0.103633,NA,NA,NA,NA,0.103633145825711,"boletin",NA
 "VOLCOMCAPITAL Private Equity II Fondo de Inversión","C","9388","FINRE",2026-01-31,2026-02-06,"US$","Reparto",0.104002,NA,NA,NA,NA,0.104001978660835,"boletin",NA
+"VOLCOMCAPITAL Private Equity II Fondo de Inversión","A","9388","FINRE",2026-06-09,2026-06-15,"US$","Dividendo",0.000904,NA,NA,NA,NA,0.00090425404433793,"boletin",NA
+"VOLCOMCAPITAL Private Equity II Fondo de Inversión","B","9388","FINRE",2026-06-09,2026-06-15,"US$","Dividendo",0.000943,NA,NA,NA,NA,0.00094251922474569,"boletin",NA
+"VOLCOMCAPITAL Private Equity II Fondo de Inversión","C","9388","FINRE",2026-06-09,2026-06-15,"US$","Dividendo",0.000946,NA,NA,NA,NA,0.0009459508138035,"boletin",NA
+"VOLCOMCAPITAL Private Equity II Fondo de Inversión","A","9388","FINRE",2026-06-09,2026-06-15,"US$","Reparto",0.006827,NA,NA,NA,NA,0.00682675853804674,"boletin",NA
+"VOLCOMCAPITAL Private Equity II Fondo de Inversión","B","9388","FINRE",2026-06-09,2026-06-15,"US$","Reparto",0.007116,NA,NA,NA,NA,0.00711602014682999,"boletin",NA
+"VOLCOMCAPITAL Private Equity II Fondo de Inversión","C","9388","FINRE",2026-06-09,2026-06-15,"US$","Reparto",0.007142,NA,NA,NA,NA,0.00714194072542803,"boletin",NA
 "VOLCOMCAPITAL Private Equity IV Fondo de Inversión","A","9441","FINRE",2025-01-03,2025-01-09,"EURO","Dividendo",0.036584,NA,NA,NA,NA,0.0365842079985713,"boletin",NA
 "VOLCOMCAPITAL Private Equity IV Fondo de Inversión","B","9441","FINRE",2025-01-03,2025-01-09,"EURO","Dividendo",0.037705,NA,NA,NA,NA,0.0377049341824303,"boletin",NA
 "VOLCOMCAPITAL Private Equity IV Fondo de Inversión","C","9441","FINRE",2025-01-03,2025-01-09,"EURO","Dividendo",0.037903,NA,NA,NA,NA,0.037902642932458,"boletin",NA
