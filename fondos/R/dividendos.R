@@ -175,14 +175,15 @@ descargar_ultimo_boletin <- function(carpeta = "data", dias_atras = 12) {
     if (file.exists(ruta_local) && file.size(ruta_local) > 10000) {
       message("[dividendos] Ultimo boletin (cache): ", basename(ruta_local)); return(normalizePath(ruta_local))
     }
-    urls <- c(
-      sprintf("https://www.bolsadesantiago.com/content/estadisticas/resumen_dividendos_repartos_emisiones/%s_resumen_dividendos_-_repartos_-_emisiones.xlsx", fecha_str),
-      sprintf("https://www.bolsadesantiago.com/content/estadisticas/%s_resumen_dividendos_-_repartos_-_emisiones.xlsx", fecha_str)
-    )
+    # Host de descargas de documentos (servicioscms): devuelve el xlsx REAL sin
+    # captcha ni cookies (a diferencia de www.*, que esta tras un WAF hCaptcha).
+    # attach = "Noticias/avisos generales/<YYYYMMDD> resumen dividendos - repartos - emisiones.xlsx"
+    attach <- sprintf("Noticias/avisos generales/%s resumen dividendos - repartos - emisiones.xlsx", fecha_str)
+    urls <- c(paste0("https://servicioscms.bolsadesantiago.com/Paginas/Descarga.aspx?attach=",
+                     utils::URLencode(attach, reserved = TRUE)))
     for (url in urls) {
-      resp <- tryCatch(httr::GET(url, httr::add_headers("User-Agent" = ua, "Accept" = "*/*",
-                       "Referer" = "https://www.bolsadesantiago.com/estadisticas_boletinbursatil"),
-                       httr::write_disk(ruta_local, overwrite = TRUE), httr::timeout(60)),
+      resp <- tryCatch(httr::GET(url, httr::add_headers("User-Agent" = ua, "Accept" = "*/*"),
+                       httr::write_disk(ruta_local, overwrite = TRUE), httr::timeout(120)),
                        error = function(e) NULL)
       ok_xlsx <- FALSE
       if (!is.null(resp) && httr::status_code(resp) == 200 && file.size(ruta_local) > 10000) {
