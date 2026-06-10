@@ -184,7 +184,14 @@ descargar_ultimo_boletin <- function(carpeta = "data", dias_atras = 12) {
                        "Referer" = "https://www.bolsadesantiago.com/estadisticas_boletinbursatil"),
                        httr::write_disk(ruta_local, overwrite = TRUE), httr::timeout(60)),
                        error = function(e) NULL)
+      ok_xlsx <- FALSE
       if (!is.null(resp) && httr::status_code(resp) == 200 && file.size(ruta_local) > 10000) {
+        # Validar firma ZIP "PK": la bolsa devuelve el HTML del SPA para rutas
+        # inexistentes, asi que un 200 NO garantiza que sea un xlsx real.
+        sig <- tryCatch(readBin(ruta_local, "raw", 2), error = function(e) raw(0))
+        ok_xlsx <- length(sig) == 2 && sig[1] == as.raw(0x50) && sig[2] == as.raw(0x4B)
+      }
+      if (ok_xlsx) {
         message("[dividendos] Ultimo boletin descargado: ", basename(ruta_local),
                 " (", round(file.size(ruta_local)/1024), " KB, dia ", fecha_str, ")")
         return(normalizePath(ruta_local))
