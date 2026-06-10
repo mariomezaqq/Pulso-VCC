@@ -33,6 +33,9 @@ jobs:
 
       - name: Procesar dividendos (codigo del buscador en fondos/)
         working-directory: fondos
+        env:
+          # El ultimo boletin subido por la app vive en data/ (raiz del repo).
+          BOLETIN_XLSX: ${{ github.workspace }}/data/dividendos_ultimo.xlsx
         run: |
           options(timeout = 600)
           source("scripts/procesar_dividendos.R")
