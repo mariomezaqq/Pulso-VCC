@@ -35,7 +35,7 @@ ENTIDADES_MANUAL <- rbind(
   ruta <- store_sync(rel)
   if (!is.null(ruta) && file.exists(ruta))
     tryCatch(read.csv(ruta, stringsAsFactors = FALSE, fileEncoding = "UTF-8",
-                      colClasses = c(Fecha = "character")),
+                      check.names = FALSE, colClasses = c(Fecha = "character")),
              error = function(e) default_df)
   else default_df
 }

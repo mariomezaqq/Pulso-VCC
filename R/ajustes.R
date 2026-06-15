@@ -21,7 +21,9 @@ suppressMessages({ library(readxl); library(dplyr); library(lubridate); library(
   x <- trimws(as.character(x)); out <- as.Date(rep(NA_real_, length(x)), origin = "1970-01-01")
   num <- suppressWarnings(as.numeric(x)); ser <- !is.na(num) & num > 30000 & num < 80000
   out[ser] <- as.Date(num[ser], origin = "1899-12-30")
-  for (fmt in c("%Y-%m-%d","%d/%m/%Y","%d-%m-%Y","%Y/%m/%d","%m/%d/%Y")) {
+  # OJO: los formatos día-primero van ANTES que los año-primero. Si no, "%Y-%m-%d"
+  # consume parcialmente un "13-06-2026" y lo parsea mal como 0013-06-20.
+  for (fmt in c("%d/%m/%Y","%d-%m-%Y","%Y-%m-%d","%Y/%m/%d","%m/%d/%Y")) {
     f <- is.na(out) & nzchar(x) & x != "NA"; if (!any(f)) break
     cand <- suppressWarnings(as.Date(x[f], format = fmt)); out[which(f)[!is.na(cand)]] <- cand[!is.na(cand)]
   }
@@ -72,10 +74,14 @@ cargar_dividendos_pulso <- function(ruta_xlsx, fecha_inicio = as.Date("2025-12-3
 #' Mezcla correcciones manuales (data.frame Fondo, `Fecha limite`, Monto) en la lista.
 fusionar_overrides <- function(div_por_fondo, ov_df) {
   if (is.null(ov_df) || !nrow(ov_df)) return(div_por_fondo)
+  # La columna de fecha puede llegar como "Fecha limite" o "Fecha.limite"
+  # (read.csv con check.names=TRUE convierte el espacio en punto).
+  col_fl <- if (!is.null(ov_df[["Fecha limite"]])) ov_df[["Fecha limite"]] else ov_df[["Fecha.limite"]]
   for (i in seq_len(nrow(ov_df))) {
-    nm <- trimws(as.character(ov_df$Fondo[i])); if (!nzchar(nm)) next
-    fl <- .parse_fecha_div(ov_df[["Fecha limite"]][i]); mo <- suppressWarnings(as.numeric(ov_df$Monto[i]))
-    if (is.na(fl) || is.na(mo) || mo <= 0) next
+    nm <- trimws(as.character(ov_df$Fondo[i])); if (length(nm) != 1 || !nzchar(nm)) next
+    fl <- .parse_fecha_div(if (is.null(col_fl)) NA else col_fl[i])
+    mo <- suppressWarnings(as.numeric(ov_df$Monto[i]))
+    if (length(fl) != 1 || is.na(fl) || length(mo) != 1 || is.na(mo) || mo <= 0) next
     nuevo <- rbind(div_por_fondo[[nm]], data.frame(fecha_limite = fl, monto = mo))
     div_por_fondo[[nm]] <- distinct(arrange(nuevo, fecha_limite), fecha_limite, .keep_all = TRUE)
   }
