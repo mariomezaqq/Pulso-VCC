@@ -1204,6 +1204,10 @@
 "Compass DVA Multiaxis Fondo de Inversión","C","9118","FIRES",2025-06-21,2025-06-27,"US$","Dividendo",0.008649,NA,NA,NA,NA,0.0086485967,"boletin",NA
 "Compass DVA Multiaxis Fondo de Inversión","CG","9118","FIRES",2025-06-21,2025-06-27,"US$","Dividendo",0.004543,NA,NA,NA,NA,0.0045431154,"boletin",NA
 "Compass DVA Multiaxis Fondo de Inversión","D","9118","FIRES",2025-06-21,2025-06-27,"US$","Dividendo",0.007023,NA,NA,NA,NA,0.0070231257,"boletin",NA
+"Compass DVA Multiaxis Fondo de Inversión","A","9118","FIRES",2026-06-13,2026-06-19,"US$","Dividendo",0.011704,NA,NA,NA,NA,0.0117039889,"boletin",NA
+"Compass DVA Multiaxis Fondo de Inversión","C","9118","FIRES",2026-06-13,2026-06-19,"US$","Dividendo",0.0129,NA,NA,NA,NA,0.0128996012,"boletin",NA
+"Compass DVA Multiaxis Fondo de Inversión","CG","9118","FIRES",2026-06-13,2026-06-19,"US$","Dividendo",0.00678,NA,NA,NA,NA,0.0067796103,"boletin",NA
+"Compass DVA Multiaxis Fondo de Inversión","D","9118","FIRES",2026-06-13,2026-06-19,"US$","Dividendo",0.010359,NA,NA,NA,NA,0.0103592108,"boletin",NA
 "Compass DVA Silicon Fund Fondo de Inversión","C","9725","FIRES",2025-06-19,2025-06-26,"US$","Dividendo",0.010814,NA,NA,NA,NA,0.0108137136,"boletin",NA
 "Compass DVA Silicon Fund Fondo de Inversión","CG","9725","FIRES",2025-06-19,2025-06-26,"US$","Dividendo",0.004937,NA,NA,NA,NA,0.0049372772,"boletin",NA
 "Compass DVA Silicon Fund Fondo de Inversión","C","9725","FIRES",2026-05-20,2026-05-27,"US$","Dividendo",0.034259,NA,NA,NA,NA,0.0342592817,"boletin",NA
@@ -4632,6 +4636,7 @@
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-03-13,2026-03-19,"$","Reparto",5.638735,NA,NA,NA,NA,5.638734623,"boletin",NA
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-04-14,2026-04-20,"$","Reparto",5.659345,NA,NA,NA,NA,5.659345403,"boletin",NA
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-05-14,2026-05-20,"$","Reparto",5.721284,NA,NA,NA,NA,5.721283889,"boletin",NA
+"Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-06-12,2026-06-18,"$","Reparto",5.772618,NA,NA,NA,NA,5.772617653,"boletin",NA
 "Fondo de Inversión LarrainVial Retorno Local","A","10671","FINRE",2026-06-03,2026-06-09,"$","Dividendo",1.389851,NA,NA,NA,NA,1.3898514861304,"boletin",NA
 "Fondo de Inversión LarrainVial Retorno Local","I","10671","FINRE",2026-06-03,2026-06-09,"$","Dividendo",1.242978,NA,NA,NA,NA,1.2429784348996,"boletin",NA
 "Fondo de Inversión LarrainVial Retorno Local","O","10671","FINRE",2026-06-03,2026-06-09,"$","Dividendo",1.251238,NA,NA,NA,NA,1.251238301399,"boletin",NA
@@ -5254,6 +5259,9 @@
 "Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","A",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",55.267009,NA,NA,NA,NA,55.267008969,"boletin",NA
 "Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","I",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",55.267009,NA,NA,NA,NA,55.267008969,"boletin",NA
 "Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","IB",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",55.267009,NA,NA,NA,NA,55.267008969,"boletin",NA
+"Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","A",NA,NA,2026-06-12,2026-06-18,"$","Dividendo",57.621651,NA,NA,NA,NA,57.62165073,"boletin",NA
+"Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","I",NA,NA,2026-06-12,2026-06-18,"$","Dividendo",57.621651,NA,NA,NA,NA,57.62165073,"boletin",NA
+"Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","IB",NA,NA,2026-06-12,2026-06-18,"$","Dividendo",57.621651,NA,NA,NA,NA,57.62165073,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2025-06-11,2025-06-17,"$","Dividendo",345.461367,NA,NA,NA,NA,345.4613671,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-04-10,2026-04-16,"$","Dividendo",218.540751,NA,NA,NA,NA,218.5407507,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-04-10,2026-04-16,"$","Dividendo",150.691824,NA,NA,NA,NA,150.6918235,"boletin",NA
@@ -6218,6 +6226,9 @@
 "MBI Arbitrage Fondo de Inversión","A","7089","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1794.095521,NA,NA,NA,NA,1794.095521,"boletin",NA
 "MBI Arbitrage Fondo de Inversión","APV","7089","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1504.856677,NA,NA,NA,NA,1504.8566774,"boletin",NA
 "MBI Arbitrage Fondo de Inversión","I","7089","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1146.670191,NA,NA,NA,NA,1146.6701908,"boletin",NA
+"MBI Arbitrage Fondo de Inversión","APV","7089","FIRES",2026-06-12,2026-06-18,"$","Dividendo",2933.623532,NA,NA,NA,NA,2933.62353243417,"boletin",NA
+"MBI Arbitrage Fondo de Inversión","I","7089","FIRES",2026-06-12,2026-06-18,"$","Dividendo",2246.086842,NA,NA,NA,NA,2246.0868418922,"boletin",NA
+"MBI Arbitrage Fondo de Inversión","U","7089","FIRES",2026-06-12,2026-06-18,"$","Dividendo",3487.713029,NA,NA,NA,NA,3487.71302878086,"boletin",NA
 "MBI Convicción Chile Fondo de Inversión","A","10381","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1348.352284,NA,NA,NA,NA,1348.3522845,"boletin",NA
 "MBI Convicción Chile Fondo de Inversión","AA","10381","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1084.318581,NA,NA,NA,NA,1084.3185807,"boletin",NA
 "MBI Convicción Chile Fondo de Inversión","AB","10381","FIRES",2025-06-18,2025-06-25,"$","Dividendo",970.232051,NA,NA,NA,NA,970.2320512,"boletin",NA
@@ -6226,6 +6237,10 @@
 "MBI Convicción Chile Fondo de Inversión","AE","10381","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1034.73367,NA,NA,NA,NA,1034.7336697,"boletin",NA
 "MBI Convicción Chile Fondo de Inversión","B","10381","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1476.656698,NA,NA,NA,NA,1476.6566976,"boletin",NA
 "MBI Convicción Chile Fondo de Inversión","C","10381","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1028.699001,NA,NA,NA,NA,1028.6990011,"boletin",NA
+"MBI Convicción Chile Fondo de Inversión","A","10381","FIRES",2026-06-12,2026-06-18,"$","Dividendo",2283.894083,NA,NA,NA,NA,2283.89408316359,"boletin",NA
+"MBI Convicción Chile Fondo de Inversión","AE","10381","FIRES",2026-06-12,2026-06-18,"$","Dividendo",1963.674138,NA,NA,NA,NA,1963.67413793103,"boletin",NA
+"MBI Convicción Chile Fondo de Inversión","B","10381","FIRES",2026-06-12,2026-06-18,"$","Dividendo",2584.7049,NA,NA,NA,NA,2584.70490000224,"boletin",NA
+"MBI Convicción Chile Fondo de Inversión","C","10381","FIRES",2026-06-12,2026-06-18,"$","Dividendo",1721.806106,NA,NA,NA,NA,1721.80610577498,"boletin",NA
 "MBI Deuda Alternativa Fondo de Inversión","A","9203","FIRES",2025-06-18,2025-06-25,"$","Dividendo",328.550062,NA,NA,NA,NA,328.5500618,"boletin",NA
 "MBI Deuda Alternativa Fondo de Inversión","APV","9203","FIRES",2025-06-18,2025-06-25,"$","Dividendo",210.810589,NA,NA,NA,NA,210.8105892,"boletin",NA
 "MBI Deuda Alternativa Fondo de Inversión","B","9203","FIRES",2025-06-18,2025-06-25,"$","Dividendo",332.43765,NA,NA,NA,NA,332.4376496,"boletin",NA
@@ -6293,8 +6308,14 @@
 "MBI Global Fixed Income Fondo de Inversión","A","9950","FIRES",2025-06-18,2025-06-25,"US$","Dividendo",0.365407,NA,NA,NA,NA,0.3654067,"boletin",NA
 "MBI Global Fixed Income Fondo de Inversión","APV","9950","FIRES",2025-06-18,2025-06-25,"US$","Dividendo",0.372164,NA,NA,NA,NA,0.372164,"boletin",NA
 "MBI Global Fixed Income Fondo de Inversión","I","9950","FIRES",2025-06-18,2025-06-25,"US$","Dividendo",0.393321,NA,NA,NA,NA,0.3933206,"boletin",NA
+"MBI Global Fixed Income Fondo de Inversión","A","9950","FIRES",2026-06-12,2026-06-18,"US$","Dividendo",0.095584,NA,NA,NA,NA,0.095583995448543,"boletin",NA
+"MBI Global Fixed Income Fondo de Inversión","APV","9950","FIRES",2026-06-12,2026-06-18,"US$","Dividendo",0.097497,NA,NA,NA,NA,0.097496865607557,"boletin",NA
+"MBI Global Fixed Income Fondo de Inversión","I","9950","FIRES",2026-06-12,2026-06-18,"US$","Dividendo",0.103427,NA,NA,NA,NA,0.103427104178929,"boletin",NA
 "MBI Global Fondo de Inversión","A","7171","FIRES",2025-06-18,2025-06-25,"US$","Dividendo",80.301872,NA,NA,NA,NA,80.3018719,"boletin",NA
 "MBI Global Fondo de Inversión","APV","7171","FIRES",2025-06-18,2025-06-25,"US$","Dividendo",81.457715,NA,NA,NA,NA,81.4577154,"boletin",NA
+"MBI Global Fondo de Inversión","A","7171","FIRES",2026-06-12,2026-06-18,"US$","Dividendo",76.429255,NA,NA,NA,NA,76.4292550145114,"boletin",NA
+"MBI Global Fondo de Inversión","APV","7171","FIRES",2026-06-12,2026-06-18,"US$","Dividendo",77.746391,NA,NA,NA,NA,77.7463909941521,"boletin",NA
+"MBI Global Fondo de Inversión","I","7171","FIRES",2026-06-12,2026-06-18,"US$","Dividendo",33.860752,NA,NA,NA,NA,33.8607524523713,"boletin",NA
 "MBI Private Debt US Evergreen Fondo de Inversión","A",NA,NA,2025-01-28,2025-02-03,"US$","Dividendo",0.804453,NA,NA,NA,NA,0.8044528,"boletin",NA
 "MBI Private Debt US Evergreen Fondo de Inversión","I",NA,NA,2025-01-28,2025-02-03,"US$","Dividendo",0.810584,NA,NA,NA,NA,0.8105836,"boletin",NA
 "MBI Private Debt US Evergreen Fondo de Inversión","S",NA,NA,2025-01-28,2025-02-03,"US$","Dividendo",0.815163,NA,NA,NA,NA,0.8151627,"boletin",NA
@@ -6627,6 +6648,11 @@
 "Moneda Deuda Chile Fondo de Inversión","D","9212","FIRES",2025-06-18,2025-06-25,"$","Dividendo",17.325983,NA,NA,NA,NA,17.325983,"boletin",NA
 "Moneda Deuda Chile Fondo de Inversión","E","9212","FIRES",2025-06-18,2025-06-25,"$","Dividendo",18.986416,NA,NA,NA,NA,18.986416,"boletin",NA
 "Moneda Deuda Chile Fondo de Inversión","I","9212","FIRES",2025-06-18,2025-06-25,"$","Dividendo",21.041042,NA,NA,NA,NA,21.041042,"boletin",NA
+"Moneda Deuda Chile Fondo de Inversión","A","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",35.890712,NA,NA,NA,NA,35.890712,"boletin",NA
+"Moneda Deuda Chile Fondo de Inversión","D","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",28.712008,NA,NA,NA,NA,28.712008,"boletin",NA
+"Moneda Deuda Chile Fondo de Inversión","E","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",31.704665,NA,NA,NA,NA,31.704665,"boletin",NA
+"Moneda Deuda Chile Fondo de Inversión","I","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",35.094397,NA,NA,NA,NA,35.094397,"boletin",NA
+"Moneda Deuda Chile Fondo de Inversión","AE","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",36.061488,NA,NA,NA,NA,36.061488,"boletin",NA
 "Moneda Deuda Latinoamericana","A",NA,NA,2025-06-12,2025-06-18,"US$","Dividendo",10.843623,NA,NA,NA,NA,10.843623,"boletin",NA
 "Moneda Deuda Latinoamericana","AE",NA,NA,2025-06-12,2025-06-18,"US$","Dividendo",10.898974,NA,NA,NA,NA,10.898974,"boletin",NA
 "Moneda Deuda Latinoamericana","R",NA,NA,2025-06-12,2025-06-18,"US$","Dividendo",10.838531,NA,NA,NA,NA,10.838531,"boletin",NA
@@ -7742,6 +7768,10 @@
 "Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-09-05,2025-09-11,"US$","Reparto",NA,950198.36,34911060,2025-09-05,0.027218,0.0272176885444737,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-11-25,2025-12-01,"US$","Reparto",NA,1127226,33663746,2025-11-25,0.033485,0.0334848654013192,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-11-25,2025-12-01,"US$","Reparto",NA,2186301.24,33663746,2025-11-25,0.064945,0.0649452751694313,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Cóndor Equity","U","10775","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,218427000,5917416,2026-06-13,36.912565,36.9125645393945,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Cóndor Equity","AC","10775","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,218427000,5917416,2026-06-13,36.912565,36.9125645393945,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Cóndor Equity","CC","10775","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,218427000,5917416,2026-06-13,36.912565,36.9125645393945,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Cóndor Equity","IM","10775","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,218427000,5917416,2026-06-13,36.912565,36.9125645393945,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-01,2025-04-07,"US$","Reparto",NA,70548.92,30874027,2025-04-01,0.002285,0.00228505726183774,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-04-01,2025-04-07,"US$","Reparto",NA,573325.93,30874027,2025-04-01,0.01857,0.0185698459982999,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-29,2025-05-06,"US$","Reparto",NA,62789.54,30294374,2025-04-29,0.002073,0.00207264685633233,"calculado (total/cuotas dia limite)",NA
@@ -7783,6 +7813,13 @@
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,1968213.74,510768,2026-04-02,3.85344,3.85343977065996,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,397267.6,468889,2026-06-02,0.847253,0.847252978592278,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,211479.72,468889,2026-06-02,0.451023,0.451022994782008,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","AC","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","B","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","CC","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","D","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","E","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","I","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","IM","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión EUROPE MEDNEO HEALTH TECH","S","10159","FINRE",2025-07-14,2025-07-21,"EURO","Reparto",NA,149138.14,122002,2025-07-14,1.222426,1.22242573732524,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión PE Secondary Deal II","A","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,342664.18,28242557,2025-08-07,0.012133,0.0121329023180371,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión PE Secondary Deal II","P1","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,15893.78,28242557,2025-08-07,0.000563,0.00056275995992453,"calculado (total/cuotas dia limite)",NA
@@ -7831,14 +7868,6 @@
 "Moneda Alturas II Fondo de Inversión","A","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
 "Moneda Alturas II Fondo de Inversión","B","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
 "Moneda Alturas II Fondo de Inversión","C","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
-"Moneda Deuda Chile Fondo de Inversión","A","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,11325870928,334843499,2026-06-13,33.824372,33.8243715700303,"calculado (total/cuotas dia limite)",NA
-"Moneda Deuda Chile Fondo de Inversión","I","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,11325870928,334843499,2026-06-13,33.824372,33.8243715700303,"calculado (total/cuotas dia limite)",NA
-"Moneda Deuda Chile Fondo de Inversión","D","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,11325870928,334843499,2026-06-13,33.824372,33.8243715700303,"calculado (total/cuotas dia limite)",NA
-"Moneda Deuda Chile Fondo de Inversión","E","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,11325870928,334843499,2026-06-13,33.824372,33.8243715700303,"calculado (total/cuotas dia limite)",NA
-"Moneda Deuda Chile Fondo de Inversión","AE","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,11325870928,334843499,2026-06-13,33.824372,33.8243715700303,"calculado (total/cuotas dia limite)",NA
-"Moneda Deuda Chile Fondo de Inversión","IE","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,11325870928,334843499,2026-06-13,33.824372,33.8243715700303,"calculado (total/cuotas dia limite)",NA
-"Moneda Deuda Chile Fondo de Inversión","DE","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,11325870928,334843499,2026-06-13,33.824372,33.8243715700303,"calculado (total/cuotas dia limite)",NA
-"Moneda Deuda Chile Fondo de Inversión","EE","9212","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,11325870928,334843499,2026-06-13,33.824372,33.8243715700303,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,864272.85,131192044,2026-05-28,0.006588,0.00658784498183959,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,585134.67,131192044,2026-05-28,0.00446,0.00446013836887259,"calculado (total/cuotas dia limite)",NA
 "Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,477605.84,58508791,2025-01-08,0.008163,0.0081629757601,"calculado (total/cuotas dia limite)",NA
@@ -7867,6 +7896,10 @@
 "Fondo de Inversión Asset Deuda Vivo","ADV",NA,NA,2025-06-12,2025-06-18,"$","Reparto",NA,1019361859,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","I",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,114903.97,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","E",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,222847.69,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Credicorp Capital Alto Rendimiento CLP
+(Fondo de Inversión Credicorp Capital Crédito Directo)","B",NA,NA,2026-06-13,2026-06-19,"$","Dividendo",NA,297692000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Credicorp Capital Alto Rendimiento CLP
+(Fondo de Inversión Credicorp Capital Crédito Directo)","I",NA,NA,2026-06-13,2026-06-19,"$","Dividendo",NA,297692000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Independencia Deuda US I","U",NA,NA,2025-02-08,2025-02-14,"US$","Reparto",NA,6208.78,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","A",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,511995657,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","B",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,651307025,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
