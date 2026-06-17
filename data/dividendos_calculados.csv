@@ -244,6 +244,8 @@
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2026-03-11,2026-03-17,"$","Dividendo",14.299136,NA,NA,NA,NA,14.299136146,"boletin",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2026-06-02,2026-06-08,"$","Dividendo",0.770648,NA,NA,NA,NA,0.770648473,"boletin",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2026-06-02,2026-06-08,"$","Dividendo",0.81726,NA,NA,NA,NA,0.817260288,"boletin",NA
+"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2026-06-16,2026-06-22,"$","Dividendo",10.114381,NA,NA,NA,NA,10.114380784,"boletin",NA
+"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2026-06-16,2026-06-22,"$","Dividendo",10.73011,NA,NA,NA,NA,10.730109943,"boletin",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-04-24,2025-04-30,"$","Dividendo",288.045,NA,NA,NA,NA,288.045,"boletin",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2025-04-24,2025-04-30,"$","Dividendo",290.989925,NA,NA,NA,NA,290.989925075,"boletin",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2026-06-04,2026-06-10,"$","Dividendo",288.172414,NA,NA,NA,NA,288.172413793,"boletin",NA
@@ -288,6 +290,8 @@
 "Ameris NM Guardian II Fondo de Inversión","I","9461","FINRE",2025-03-06,2025-03-12,"US$","Reparto",0.03021,NA,NA,NA,NA,0.030209537,"boletin",NA
 "Ameris NM Guardian II Fondo de Inversión","A","9461","FINRE",2025-08-08,2025-08-14,"US$","Reparto",0.029859,NA,NA,NA,NA,0.029859242,"boletin",NA
 "Ameris NM Guardian II Fondo de Inversión","I","9461","FINRE",2025-08-08,2025-08-14,"US$","Reparto",0.031966,NA,NA,NA,NA,0.031966026,"boletin",NA
+"Ameris NM Guardian II Fondo de Inversión","A","9461","FINRE",2026-06-16,2026-06-22,"US$","Dividendo",0.000906,NA,NA,NA,NA,0.000906298,"boletin",NA
+"Ameris NM Guardian II Fondo de Inversión","I","9461","FINRE",2026-06-16,2026-06-22,"US$","Dividendo",0.000977,NA,NA,NA,NA,0.000977431,"boletin",NA
 "Ameris NM Guardian III Fondo de Inversión","A",NA,NA,2025-03-14,2025-03-20,"US$","Dividendo",0.003765,NA,NA,NA,NA,0.003764834,"boletin",NA
 "Ameris NM Guardian III Fondo de Inversión","I",NA,NA,2025-03-14,2025-03-20,"US$","Dividendo",0.00379,NA,NA,NA,NA,0.003790271,"boletin",NA
 "Ameris NM Guardian III Fondo de Inversión","R",NA,NA,2025-03-14,2025-03-20,"US$","Dividendo",0.003606,NA,NA,NA,NA,0.003605989,"boletin",NA
@@ -3766,6 +3770,9 @@
 "Fondo de Inversión Credicorp Capital ICG SE I","B","10076","FINRE",2026-04-21,2026-04-27,"US$","Reparto",0.01431,NA,NA,NA,NA,0.01431006,"boletin",NA
 "Fondo de Inversión Credicorp Capital ICG SE I","I","10076","FINRE",2026-04-21,2026-04-27,"US$","Reparto",0.01462,NA,NA,NA,NA,0.01461999,"boletin",NA
 "Fondo de Inversión Credicorp Capital ICG SE I","CC","10076","FINRE",2026-04-21,2026-04-27,"US$","Reparto",0.014691,NA,NA,NA,NA,0.01469094,"boletin",NA
+"Fondo de Inversión Credicorp Capital ICG SE I","B","10076","FINRE",2026-06-16,2026-06-22,"US$","Reparto",0.006116,NA,NA,NA,NA,0.00611646,"boletin",NA
+"Fondo de Inversión Credicorp Capital ICG SE I","I","10076","FINRE",2026-06-16,2026-06-22,"US$","Reparto",0.006253,NA,NA,NA,NA,0.00625259,"boletin",NA
+"Fondo de Inversión Credicorp Capital ICG SE I","CC","10076","FINRE",2026-06-16,2026-06-22,"US$","Reparto",0.006283,NA,NA,NA,NA,0.00628289,"boletin",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-01,2025-04-07,"US$","Dividendo",0.005792,NA,NA,NA,NA,0.00579203,"boletin",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-04-01,2025-04-07,"US$","Dividendo",0.00603,NA,NA,NA,NA,0.00602977,"boletin",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-29,2025-05-06,"US$","Dividendo",0.007639,NA,NA,NA,NA,0.00763861,"boletin",NA
@@ -4525,6 +4532,7 @@
 "Fondo de Inversión Invinsa Desarrollo Industrial","A",NA,NA,2026-01-14,2026-01-20,"$","Reparto",2442.0321,NA,NA,NA,NA,2442.0321,"boletin",NA
 "Fondo de Inversión Invinsa Desarrollo Industrial","B",NA,NA,2026-01-14,2026-01-20,"$","Reparto",2461.1099,NA,NA,NA,NA,2461.1099,"boletin",NA
 "Fondo de Inversión Invinsa Desarrollo Industrial","C",NA,NA,2026-01-14,2026-01-20,"$","Reparto",2442.0321,NA,NA,NA,NA,2442.0321,"boletin",NA
+"Fondo de Inversión LAB Deuda Inmobiliaria II","I","9465","FINRE",2026-06-16,2026-06-22,"$","Dividendo",7.307222,NA,NA,NA,NA,7.307221780687,"boletin",NA
 "Fondo de Inversión LV - Patio Renta Inmobiliaria I","A",NA,NA,2025-04-10,2025-04-16,"$","Dividendo",47.267243,211299231,NA,NA,NA,47.2672429876228,"boletin",NA
 "Fondo de Inversión LV - Patio Renta Inmobiliaria I","I",NA,NA,2025-04-10,2025-04-16,"$","Dividendo",48.127513,138807881,NA,NA,NA,48.1275129855428,"boletin",NA
 "Fondo de Inversión LV - Patio Renta Inmobiliaria I","A",NA,NA,2025-07-11,2025-07-18,"$","Dividendo",53.009691,NA,NA,NA,NA,53.0096912742069,"boletin",NA
@@ -5128,6 +5136,8 @@
 "Fondo de Inversión Nevasa Ahorro","I","9101","FIRES",2026-06-10,2026-06-16,"$","Dividendo",3.712069,NA,NA,NA,NA,3.712069407,"boletin",NA
 "Fondo de Inversión Nevasa Chile Axion","A","10233","FIRES",2025-06-13,2025-06-19,"$","Dividendo",76.347915,NA,NA,NA,NA,76.347914789,"boletin",NA
 "Fondo de Inversión Nevasa Chile Axion","B","10233","FIRES",2025-06-13,2025-06-19,"$","Dividendo",76.996458,NA,NA,NA,NA,76.996457505,"boletin",NA
+"Fondo de Inversión Nevasa Chile Axion","A","10233","FIRES",2026-06-16,2026-06-22,"$","Dividendo",63.918547,NA,NA,NA,NA,63.918547291,"boletin",NA
+"Fondo de Inversión Nevasa Chile Axion","B","10233","FIRES",2026-06-16,2026-06-22,"$","Dividendo",64.732517,NA,NA,NA,NA,64.732517255,"boletin",NA
 "Fondo de Inversión Nevasa Deuda Privada","R","9952","FINRE",2025-06-10,2025-06-16,"$","Dividendo",21.531337,NA,NA,NA,NA,21.531337474,"boletin",NA
 "Fondo de Inversión Nevasa Deuda Privada","R","9952","FINRE",2025-07-25,2025-07-31,"$","Dividendo",47.815676,NA,NA,NA,NA,47.815675719,"boletin",NA
 "Fondo de Inversión Nevasa Deuda Privada","R","9952","FINRE",2025-09-24,2025-09-30,"$","Reparto",30.69419,NA,NA,NA,NA,30.694189614,"boletin",NA
@@ -7128,6 +7138,9 @@
 "VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","A","10119","FINRE",2026-04-01,2026-04-09,"US$","Reparto",0.01343,NA,NA,NA,NA,0.0134304922762135,"boletin",NA
 "VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","B","10119","FINRE",2026-04-01,2026-04-09,"US$","Reparto",0.013553,NA,NA,NA,NA,0.0135525907393972,"boletin",NA
 "VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","Z","10119","FINRE",2026-04-01,2026-04-09,"US$","Reparto",0.013675,NA,NA,NA,NA,0.0136750317545703,"boletin",NA
+"VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","A","10119","FINRE",2026-06-17,2026-06-23,"US$","Reparto",0.015602,NA,NA,NA,NA,0.0156024616987882,"boletin",NA
+"VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","B","10119","FINRE",2026-06-17,2026-06-23,"US$","Reparto",0.01575,NA,NA,NA,NA,0.0157497374737836,"boletin",NA
+"VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","Z","10119","FINRE",2026-06-17,2026-06-23,"US$","Reparto",0.015897,NA,NA,NA,NA,0.0158972813581662,"boletin",NA
 "VOLCOMCAPITAL Deuda II Fondo de Inversión","A",NA,NA,2025-02-06,2025-02-12,"$","Dividendo",10.937414,NA,NA,NA,NA,10.9374140742315,"boletin",NA
 "VOLCOMCAPITAL Deuda II Fondo de Inversión","B",NA,NA,2025-02-06,2025-02-12,"$","Dividendo",11.150116,NA,NA,NA,NA,11.1501156864426,"boletin",NA
 "VOLCOMCAPITAL Deuda II Fondo de Inversión","A",NA,NA,2025-02-06,2025-02-12,"$","Reparto",28.120349,NA,NA,NA,NA,28.1203485356734,"boletin",NA
@@ -7868,6 +7881,9 @@
 "Moneda Alturas II Fondo de Inversión","A","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
 "Moneda Alturas II Fondo de Inversión","B","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
 "Moneda Alturas II Fondo de Inversión","C","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
+"Moneda Latinoamérica Deuda Local Fondo de Inversión","A","7147","FINRE",2026-06-16,2026-06-22,"US$","Dividendo",NA,18325331,13841949,2026-06-16,1.323898,1.32389817295789,"calculado (total/cuotas dia limite)",NA
+"Moneda Latinoamérica Deuda Local Fondo de Inversión","AE","7147","FINRE",2026-06-16,2026-06-22,"US$","Dividendo",NA,18325331,13841949,2026-06-16,1.323898,1.32389817295789,"calculado (total/cuotas dia limite)",NA
+"Moneda Latinoamérica Deuda Local Fondo de Inversión","C","7147","FINRE",2026-06-16,2026-06-22,"US$","Dividendo",NA,18325331,13841949,2026-06-16,1.323898,1.32389817295789,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,864272.85,131192044,2026-05-28,0.006588,0.00658784498183959,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,585134.67,131192044,2026-05-28,0.00446,0.00446013836887259,"calculado (total/cuotas dia limite)",NA
 "Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,477605.84,58508791,2025-01-08,0.008163,0.0081629757601,"calculado (total/cuotas dia limite)",NA
@@ -7976,9 +7992,6 @@
 "Moneda Deuda Latinoamericana","AE",NA,NA,2026-06-18,2026-06-24,"US$","Dividendo",NA,7492397,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Moneda Deuda Latinoamericana","R",NA,NA,2026-06-18,2026-06-24,"US$","Dividendo",NA,7492397,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Moneda Deuda Latinoamericana","RE",NA,NA,2026-06-18,2026-06-24,"US$","Dividendo",NA,7492397,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda Latinoamérica Deuda Local Fondo de Inversión","A","7147","FINRE",2026-06-16,2026-06-22,"US$","Dividendo",NA,18325331,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda Latinoamérica Deuda Local Fondo de Inversión","AE","7147","FINRE",2026-06-16,2026-06-22,"US$","Dividendo",NA,18325331,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda Latinoamérica Deuda Local Fondo de Inversión","C","7147","FINRE",2026-06-16,2026-06-22,"US$","Dividendo",NA,18325331,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Moneda Renta Variable Chile Fondo de Inversión","A","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Moneda Renta Variable Chile Fondo de Inversión","AE","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Moneda Renta Variable Chile Fondo de Inversión","E","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
