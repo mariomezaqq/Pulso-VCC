@@ -2249,6 +2249,16 @@
 "Compass SP VIII Private Equity Fondo de Inversión","C","9681","FINRE",2026-03-24,2026-03-30,"US$","Reparto",0.023903,NA,NA,NA,NA,0.0239026536,"boletin",NA
 "Compass SP VIII Private Equity Fondo de Inversión","I","9681","FINRE",2026-03-24,2026-03-30,"US$","Reparto",0.023915,NA,NA,NA,NA,0.0239146428,"boletin",NA
 "Compass SP VIII Private Equity Fondo de Inversión","R","9681","FINRE",2026-03-24,2026-03-30,"US$","Reparto",0.017412,NA,NA,NA,NA,0.0174122463,"boletin",NA
+"Compass SP VIII Private Equity Fondo de Inversión","A","9681","FINRE",2026-06-18,2026-06-24,"US$","Dividendo",0.018379,NA,NA,NA,NA,0.0183791721,"boletin",NA
+"Compass SP VIII Private Equity Fondo de Inversión","B","9681","FINRE",2026-06-18,2026-06-24,"US$","Dividendo",0.020089,NA,NA,NA,NA,0.0200892797,"boletin",NA
+"Compass SP VIII Private Equity Fondo de Inversión","C","9681","FINRE",2026-06-18,2026-06-24,"US$","Dividendo",0.021286,NA,NA,NA,NA,0.0212858623,"boletin",NA
+"Compass SP VIII Private Equity Fondo de Inversión","I","9681","FINRE",2026-06-18,2026-06-24,"US$","Dividendo",0.021297,NA,NA,NA,NA,0.0212965397,"boletin",NA
+"Compass SP VIII Private Equity Fondo de Inversión","R","9681","FINRE",2026-06-18,2026-06-24,"US$","Dividendo",0.015424,NA,NA,NA,NA,0.0154244562,"boletin",NA
+"Compass SP VIII Private Equity Fondo de Inversión","A","9681","FINRE",2026-06-18,2026-06-24,"US$","Reparto",0.031355,NA,NA,NA,NA,0.0313553531,"boletin",NA
+"Compass SP VIII Private Equity Fondo de Inversión","B","9681","FINRE",2026-06-18,2026-06-24,"US$","Reparto",0.034273,NA,NA,NA,NA,0.0342728198,"boletin",NA
+"Compass SP VIII Private Equity Fondo de Inversión","C","9681","FINRE",2026-06-18,2026-06-24,"US$","Reparto",0.036314,NA,NA,NA,NA,0.0363142142,"boletin",NA
+"Compass SP VIII Private Equity Fondo de Inversión","I","9681","FINRE",2026-06-18,2026-06-24,"US$","Reparto",0.036332,NA,NA,NA,NA,0.0363324282,"boletin",NA
+"Compass SP VIII Private Equity Fondo de Inversión","R","9681","FINRE",2026-06-18,2026-06-24,"US$","Reparto",0.026315,NA,NA,NA,NA,0.0263145434,"boletin",NA
 "Compass Small Cap Chile Fondo de Inversión","A","7031","FINRE",2025-06-17,2025-06-24,"$","Dividendo",1251.380645,NA,NA,NA,NA,1251.3806447548,"boletin",NA
 "Compass Small Cap Chile Fondo de Inversión","B","7031","FINRE",2025-06-17,2025-06-24,"$","Dividendo",1266.87976,NA,NA,NA,NA,1266.8797597754,"boletin",NA
 "Compass Small Cap Chile Fondo de Inversión","I","7031","FINRE",2025-06-17,2025-06-24,"$","Dividendo",1282.672067,NA,NA,NA,NA,1282.6720671264,"boletin",NA
@@ -2341,6 +2351,9 @@
 "Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","A","10625","FINRE",2026-03-17,2026-03-23,"US$","Dividendo",1.00431,NA,NA,NA,NA,1.00430995,"boletin",NA
 "Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","B","10625","FINRE",2026-03-17,2026-03-23,"US$","Dividendo",1.01354,NA,NA,NA,NA,1.013540105,"boletin",NA
 "Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","I","10625","FINRE",2026-03-17,2026-03-23,"US$","Dividendo",1.019268,NA,NA,NA,NA,1.019267581,"boletin",NA
+"Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","A","10625","FINRE",2026-06-19,2026-06-25,"US$","Dividendo",1.094098,NA,NA,NA,NA,1.094098434,"boletin",NA
+"Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","B","10625","FINRE",2026-06-19,2026-06-25,"US$","Dividendo",1.105553,NA,NA,NA,NA,1.105553228,"boletin",NA
+"Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","I","10625","FINRE",2026-06-19,2026-06-25,"US$","Dividendo",1.112643,NA,NA,NA,NA,1.112643162,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","IR","8723","RGFMU",2025-08-29,2025-09-04,"$","Dividendo",0.715877,NA,NA,NA,NA,0.715877083,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2025-08-29,2025-09-04,"$","Dividendo",0.724498,NA,NA,NA,NA,0.724498189,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","IR","8723","RGFMU",2025-09-05,2025-09-11,"$","Dividendo",0.025892,NA,NA,NA,NA,0.025892384,"boletin",NA
@@ -5121,6 +5134,7 @@
 "Fondo de Inversión LarraínVial Deuda Chile","M","7210","FIRES",2026-05-05,2026-05-11,"$","Dividendo",185.129972,NA,NA,NA,NA,185.129971557741,"boletin",NA
 "Fondo de Inversión Latín Trust Liquidez","A",NA,NA,2025-05-24,2025-05-30,"$","Dividendo",13.268968,50389000,NA,NA,NA,13.26896829947,"boletin",NA
 "Fondo de Inversión Link - AP X","A","9781","FINRE",2026-05-08,2026-05-14,"US$","Dividendo",0.007092,NA,NA,NA,NA,0.0070916942,"boletin",NA
+"Fondo de Inversión Link - AP X","A","9781","FINRE",2026-06-18,2026-06-24,"US$","Dividendo",0.010317,NA,NA,NA,NA,0.0103169183,"boletin",NA
 "Fondo de Inversión Link - Deuda Privada Rentas ERNC","A",NA,NA,2025-06-05,2025-06-11,"$","Dividendo",1534.36123,NA,NA,NA,NA,1534.3612295266,"boletin",NA
 "Fondo de Inversión Link - Deuda Privada Rentas ERNC","F",NA,NA,2025-06-05,2025-06-11,"$","Dividendo",1572.406641,NA,NA,NA,NA,1572.406640613,"boletin",NA
 "Fondo de Inversión Link - Deuda Privada Rentas ERNC","I",NA,NA,2025-06-05,2025-06-11,"$","Dividendo",1552.771759,NA,NA,NA,NA,1552.771758768,"boletin",NA
@@ -5187,6 +5201,8 @@
 "Fondo de Inversión Nevasa Gestión Inmobiliaria VII","R","10005","FINRE",2026-02-27,2026-03-05,"$","Reparto",4296.634385,NA,NA,NA,NA,4296.634384623,"boletin",NA
 "Fondo de Inversión Nevasa Gestión Inmobiliaria VII","N","10005","FINRE",2026-03-24,2026-03-30,"$","Reparto",1215.8758,NA,NA,NA,NA,1215.87580007,"boletin",NA
 "Fondo de Inversión Nevasa Gestión Inmobiliaria VII","R","10005","FINRE",2026-03-24,2026-03-30,"$","Reparto",1189.620936,NA,NA,NA,NA,1189.620936214,"boletin",NA
+"Fondo de Inversión Nevasa Gestión Inmobiliaria VII","N","10005","FINRE",2026-06-18,2026-06-24,"$","Dividendo",44.159419,NA,NA,NA,NA,44.159418629,"boletin",NA
+"Fondo de Inversión Nevasa Gestión Inmobiliaria VII","R","10005","FINRE",2026-06-18,2026-06-24,"$","Dividendo",42.633754,NA,NA,NA,NA,42.633754357,"boletin",NA
 "Fondo de Inversión Nevasa Gestión Inmobiliaria VIII","I","10693","FINRE",2025-08-08,2025-08-14,"$","Reparto",2384.779109,NA,NA,NA,NA,2384.779108757,"boletin",NA
 "Fondo de Inversión Nevasa Gestión Inmobiliaria VIII","R","10693","FINRE",2025-08-08,2025-08-14,"$","Reparto",2388.793675,NA,NA,NA,NA,2388.793674846,"boletin",NA
 "Fondo de Inversión Nevasa Protección","A","10234","FIRES",2025-06-12,2025-06-18,"US$","Dividendo",0.002591,NA,NA,NA,NA,0.00259125,"boletin",NA
@@ -5344,6 +5360,9 @@
 "Fondo de Inversión Security DDP Bridge-Loan Fully Funded CLP","A","10624","FINRE",2026-03-18,2026-03-24,"$","Dividendo",11.774463,NA,NA,NA,NA,11.774463224,"boletin",NA
 "Fondo de Inversión Security DDP Bridge-Loan Fully Funded CLP","B","10624","FINRE",2026-03-18,2026-03-24,"$","Dividendo",11.883279,NA,NA,NA,NA,11.883279346,"boletin",NA
 "Fondo de Inversión Security DDP Bridge-Loan Fully Funded CLP","I","10624","FINRE",2026-03-18,2026-03-24,"$","Dividendo",11.950365,NA,NA,NA,NA,11.950364678,"boletin",NA
+"Fondo de Inversión Security DDP Bridge-Loan Fully Funded CLP","A","10624","FINRE",2026-06-18,2026-06-24,"$","Dividendo",11.755045,NA,NA,NA,NA,11.755044542,"boletin",NA
+"Fondo de Inversión Security DDP Bridge-Loan Fully Funded CLP","B","10624","FINRE",2026-06-18,2026-06-24,"$","Dividendo",11.878347,NA,NA,NA,NA,11.878347166,"boletin",NA
+"Fondo de Inversión Security DDP Bridge-Loan Fully Funded CLP","I","10624","FINRE",2026-06-18,2026-06-24,"$","Dividendo",11.954452,NA,NA,NA,NA,11.954451518,"boletin",NA
 "Fondo de Inversión Security Debt Opportunities (ex CFISECDO-E)","A",NA,NA,2026-04-01,2026-04-09,"US$","Reparto",0.000792,NA,NA,NA,NA,0.000791552,"boletin",NA
 "Fondo de Inversión Security Debt Opportunities (ex CFISECDO-E)","A",NA,NA,2026-04-15,2026-04-21,"US$","Reparto",0.00041,NA,NA,NA,NA,0.000409545,"boletin",NA
 "Fondo de Inversión Security Debt Opportunities (ex CFISECDO-E)","A",NA,NA,2026-05-15,2026-05-22,"US$","Reparto",0.001141,NA,NA,NA,NA,0.001140505,"boletin",NA
@@ -6174,6 +6193,11 @@
 "Frontal Trust Financiamiento Galgo Fondo de Inversión","F",NA,NA,2026-04-14,2026-04-20,"US$","Dividendo",0.038707,NA,NA,NA,NA,0.038707235,"boletin",NA
 "Frontal Trust Financiamiento Galgo Fondo de Inversión","P",NA,NA,2026-04-14,2026-04-20,"US$","Dividendo",0.038306,NA,NA,NA,NA,0.038306338,"boletin",NA
 "Frontal Trust Financiamiento Galgo Fondo de Inversión","PI",NA,NA,2026-04-14,2026-04-20,"US$","Dividendo",0.038527,NA,NA,NA,NA,0.038527395,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","F",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.026553,NA,NA,NA,NA,0.026552745,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","F-2",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.02569,NA,NA,NA,NA,0.025690212,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","P",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.02581,NA,NA,NA,NA,0.025809795,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","P-2",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.02567,NA,NA,NA,NA,0.025669858,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","PI",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.025736,NA,NA,NA,NA,0.025736009,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2025-10-22,2025-10-28,"$","Dividendo",1272.290786,NA,NA,NA,NA,1272.290785714,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2025-11-05,2025-11-11,"$","Dividendo",2971.428571,NA,NA,NA,NA,2971.428571429,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2025-11-27,2025-12-03,"$","Reparto",1982.1795,NA,NA,NA,NA,1982.1795,"boletin",NA
@@ -6963,6 +6987,10 @@
 "Private Equity Real Estate Fondo de Inversión","B",NA,NA,2025-06-13,2025-06-19,"US$","Dividendo",0.107449,NA,NA,NA,NA,0.107448921,"boletin",NA
 "Private Equity Real Estate Fondo de Inversión","A",NA,NA,2025-11-05,2025-11-11,"US$","Dividendo",0.021234,NA,NA,NA,NA,0.021234201,"boletin",NA
 "Private Equity Real Estate Fondo de Inversión","B",NA,NA,2025-11-05,2025-11-11,"US$","Dividendo",0.021234,NA,NA,NA,NA,0.021234453,"boletin",NA
+"Private Equity Real Estate Fondo de Inversión","A",NA,NA,2026-06-17,2026-06-23,"US$","Dividendo",0.676156,NA,NA,NA,NA,0.676156051,"boletin",NA
+"Private Equity Real Estate Fondo de Inversión","B",NA,NA,2026-06-17,2026-06-23,"US$","Dividendo",0.676164,NA,NA,NA,NA,0.676164074,"boletin",NA
+"Private Equity Real Estate Fondo de Inversión","A",NA,NA,2026-06-17,2026-06-23,"US$","Reparto",0.114361,NA,NA,NA,NA,0.114360863,"boletin",NA
+"Private Equity Real Estate Fondo de Inversión","B",NA,NA,2026-06-17,2026-06-23,"US$","Reparto",0.114362,NA,NA,NA,NA,0.11436222,"boletin",NA
 "Quest Acciones Chile Fondo de Inversión","A","9152","FIRES",2025-06-17,2025-06-24,"$","Dividendo",2388.907721,NA,NA,NA,NA,2388.90772092,"boletin",NA
 "Quest Acciones Chile Fondo de Inversión","A","9152","FIRES",2026-06-17,2026-06-23,"$","Dividendo",4299.953002,NA,NA,NA,NA,4299.9530017705,"boletin",NA
 "Quest Estrategia Activa Fondo de Inversión","A","10398","FIRES",2026-06-17,2026-06-23,"$","Dividendo",9.53291,NA,NA,NA,NA,9.5329100213,"boletin",NA
@@ -7997,6 +8025,13 @@
 "Fondo de Inversión FYNSA Migrante","F",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión FYNSA Migrante","G",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión FYNSA Migrante","S",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Sartor Capital Efectivo en Liquidación","A",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,1.6e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Sartor Capital Efectivo en Liquidación","I",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,1.6e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Sartor Capital Efectivo en Liquidación","Q",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,1.6e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Sartor Proyección en Liquidación","A",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Sartor Proyección en Liquidación","B",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Sartor Proyección en Liquidación","I",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Sartor Proyección en Liquidación","Q",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Zurich Renta Fija Chile Index","A",NA,NA,2025-05-23,2025-05-29,"$","Dividendo",NA,102521495,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","A",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","B",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
