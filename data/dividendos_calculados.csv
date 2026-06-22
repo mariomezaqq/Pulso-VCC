@@ -16,10 +16,17 @@
 "Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",4747.713978,NA,NA,NA,NA,4747.713978,"boletin",NA
 "Alza Deuda Privada V Fondo de Inversión","A",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",1672.684596,NA,NA,NA,NA,1672.684596,"boletin",NA
 "Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",1674.088114,NA,NA,NA,NA,1674.088114,"boletin",NA
+"Alza Deuda Privada V Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2581.475448,NA,NA,NA,NA,2581.475448,"boletin",NA
+"Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2584.13183,NA,NA,NA,NA,2584.13183,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",640.143235,NA,NA,NA,NA,640.143235,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",640.439758,NA,NA,NA,NA,640.439758,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",923.474391,NA,NA,NA,NA,923.474391,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",923.902157,NA,NA,NA,NA,923.902157,"boletin",NA
+"Alza Dédalo Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",305.806585,NA,NA,NA,NA,305.806585,"boletin",NA
+"Alza Dédalo Fondo de Inversión","I1",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",307.720236,NA,NA,NA,NA,307.720236,"boletin",NA
+"Alza Dédalo Fondo de Inversión","F",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",304.98705,NA,NA,NA,NA,304.98705,"boletin",NA
+"Alza Fintech X Fondo de Inversión","A","10413","FINRE",2026-06-19,2026-06-25,"$","Dividendo",10.67259,NA,NA,NA,NA,10.67259,"boletin",NA
+"Alza Fintech X Fondo de Inversión","B","10413","FINRE",2026-06-19,2026-06-25,"$","Dividendo",2.908312,NA,NA,NA,NA,2.908312,"boletin",NA
 "Ameris AATech Financiamiento Corto Plazo Fondo de Inversión","A (ex SLPA)","9919","FIRES",2026-04-23,2026-04-29,"$","Dividendo",14.368593,NA,NA,NA,NA,14.368593033,"boletin",NA
 "Ameris AATech Financiamiento Corto Plazo Fondo de Inversión","I (ex SLPI)","9919","FIRES",2026-04-23,2026-04-29,"$","Dividendo",5.037708,NA,NA,NA,NA,5.037708042,"boletin",NA
 "Ameris AATech Financiamiento Corto Plazo Fondo de Inversión","X (ex SLPX)","9919","FIRES",2026-04-23,2026-04-29,"$","Dividendo",24.834826,NA,NA,NA,NA,24.834826284,"boletin",NA
@@ -789,6 +796,11 @@
 "BTG Pactual Deuda Privada Inmobiliaria II Fondo de Inversión","BTGP","10678","FINRE",2026-05-19,2026-05-26,"$","Dividendo",110.159446,NA,NA,NA,NA,110.159446341,"boletin",NA
 "BTG Pactual Deuda Privada Inmobiliaria II Fondo de Inversión","C","10678","FINRE",2026-05-19,2026-05-26,"$","Dividendo",107.352286,NA,NA,NA,NA,107.352285802,"boletin",NA
 "BTG Pactual Deuda Privada Inmobiliaria II Fondo de Inversión","I","10678","FINRE",2026-05-19,2026-05-26,"$","Dividendo",107.542937,NA,NA,NA,NA,107.542937203,"boletin",NA
+"BTG Pactual Deuda Privada Inmobiliaria II Fondo de Inversión","A","10678","FINRE",2026-06-19,2026-06-25,"$","Dividendo",153.277403,NA,NA,NA,NA,153.27740259,"boletin",NA
+"BTG Pactual Deuda Privada Inmobiliaria II Fondo de Inversión","B","10678","FINRE",2026-06-19,2026-06-25,"$","Dividendo",154.592977,NA,NA,NA,NA,154.59297657,"boletin",NA
+"BTG Pactual Deuda Privada Inmobiliaria II Fondo de Inversión","BTGP","10678","FINRE",2026-06-19,2026-06-25,"$","Dividendo",159.195236,NA,NA,NA,NA,159.19523643,"boletin",NA
+"BTG Pactual Deuda Privada Inmobiliaria II Fondo de Inversión","C","10678","FINRE",2026-06-19,2026-06-25,"$","Dividendo",155.039798,NA,NA,NA,NA,155.03979837,"boletin",NA
+"BTG Pactual Deuda Privada Inmobiliaria II Fondo de Inversión","I","10678","FINRE",2026-06-19,2026-06-25,"$","Dividendo",155.314038,NA,NA,NA,NA,155.31403776,"boletin",NA
 "BTG Pactual Financiamiento con Garantías Inmobiliarias Fondo de Inversión","A",NA,NA,2025-01-15,2025-01-21,"$","Dividendo",233,NA,NA,NA,NA,233,"boletin",NA
 "BTG Pactual Financiamiento con Garantías Inmobiliarias Fondo de Inversión","I",NA,NA,2025-01-15,2025-01-21,"$","Dividendo",236.314222,NA,NA,NA,NA,236.314222353374,"boletin",NA
 "BTG Pactual Financiamiento con Garantías Inmobiliarias Fondo de Inversión","A",NA,NA,2025-04-23,2025-04-29,"$","Dividendo",237,NA,NA,NA,NA,237,"boletin",NA
@@ -2327,6 +2339,8 @@
 "Fondo De Inversión Deuda Privada Principal Compass","I",NA,NA,2026-01-22,2026-01-28,"$","Dividendo",778.512487,NA,NA,NA,NA,778.512486525,"boletin",NA
 "Fondo De Inversión Deuda Privada Principal Compass","B",NA,NA,2026-04-21,2026-04-27,"$","Dividendo",716.948522,NA,NA,NA,NA,716.948521713,"boletin",NA
 "Fondo De Inversión Deuda Privada Principal Compass","I",NA,NA,2026-04-21,2026-04-27,"$","Dividendo",740.887611,NA,NA,NA,NA,740.887611474,"boletin",NA
+"Fondo De Inversión Deuda Privada Principal Compass","B",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",138.218149,NA,NA,NA,NA,138.218148866,"boletin",NA
+"Fondo De Inversión Deuda Privada Principal Compass","I",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",143.145692,NA,NA,NA,NA,143.145691526,"boletin",NA
 "Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","A","10625","FINRE",2025-02-18,2025-02-24,"US$","Dividendo",2.367339,NA,NA,NA,NA,2.367338542,"boletin",NA
 "Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","B","10625","FINRE",2025-02-18,2025-02-24,"US$","Dividendo",2.376403,NA,NA,NA,NA,2.37640303,"boletin",NA
 "Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","I","10625","FINRE",2025-02-18,2025-02-24,"US$","Dividendo",2.38196,NA,NA,NA,NA,2.38196,"boletin",NA
@@ -3792,6 +3806,15 @@
 "Fondo de Inversión Credicorp Capital Alto Rendimiento CLP","B",NA,NA,2025-06-16,2025-06-23,"$","Dividendo",10.549348,NA,NA,NA,NA,10.54934759,"boletin",NA
 "Fondo de Inversión Credicorp Capital Alto Rendimiento CLP","I",NA,NA,2025-06-16,2025-06-23,"$","Dividendo",9.999233,NA,NA,NA,NA,9.99923283,"boletin",NA
 "Fondo de Inversión Credicorp Capital Alto Rendimiento CLP","IM",NA,NA,2025-06-16,2025-06-23,"$","Dividendo",11.476317,NA,NA,NA,NA,11.47631684,"boletin",NA
+"Fondo de Inversión Credicorp Capital Alto Rendimiento CLP
+(Fondo de Inversión Credicorp Capital Crédito Directo)","I",NA,NA,2026-06-13,2026-06-19,"$","Dividendo",31.288749,NA,NA,NA,NA,31.288749,"boletin",NA
+"Fondo de Inversión Credicorp Capital Alto Rendimiento CLP
+(Fondo de Inversión Credicorp Capital Crédito Directo)","B",NA,NA,2026-06-13,2026-06-19,"$","Dividendo",32.919342,NA,NA,NA,NA,32.91934227,"boletin",NA
+"Fondo de Inversión Credicorp Capital Alto Rendimiento CLP
+(Fondo de Inversión Credicorp Capital Crédito Directo)","CC",NA,NA,2026-06-13,2026-06-19,"$","Dividendo",24.670911,NA,NA,NA,NA,24.6709105,"boletin",NA
+"Fondo de Inversión Credicorp Capital Alto Rendimiento CLP
+(Fondo de Inversión Credicorp Capital Crédito Directo)","IM",NA,NA,2026-06-13,2026-06-19,"$","Dividendo",36.181032,NA,NA,NA,NA,36.18103199,"boletin",NA
+"Fondo de Inversión Credicorp Capital Cóndor Equity","U","10775","FIRES",2026-06-13,2026-06-19,"$","Dividendo",36.912564,NA,NA,NA,NA,36.91256437,"boletin",NA
 "Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","B",NA,NA,2026-03-05,2026-03-11,"$","Dividendo",5571.465096,NA,NA,NA,NA,5571.46509623,"boletin",NA
 "Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","D",NA,NA,2026-03-05,2026-03-11,"$","Dividendo",5605.235784,NA,NA,NA,NA,5605.23578443,"boletin",NA
 "Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","I",NA,NA,2026-03-05,2026-03-11,"$","Dividendo",5708.889265,NA,NA,NA,NA,5708.88926533,"boletin",NA
@@ -3888,6 +3911,13 @@
 "Fondo de Inversión Credicorp Capital Spread Corporativo Local","E","7275","FIRES",2025-06-16,2025-06-23,"$","Dividendo",36.071053,NA,NA,NA,NA,36.07105331,"boletin",NA
 "Fondo de Inversión Credicorp Capital Spread Corporativo Local","I","7275","FIRES",2025-06-16,2025-06-23,"$","Dividendo",45.288574,NA,NA,NA,NA,45.28857369,"boletin",NA
 "Fondo de Inversión Credicorp Capital Spread Corporativo Local","IM","7275","FIRES",2025-06-16,2025-06-23,"$","Dividendo",36.953893,NA,NA,NA,NA,36.95389317,"boletin",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","AC","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",23.341321,NA,NA,NA,NA,23.3413209,"boletin",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","B","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",34.426591,NA,NA,NA,NA,34.42659083,"boletin",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","CC","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",28.997127,NA,NA,NA,NA,28.99712708,"boletin",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","D","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",35.62081,NA,NA,NA,NA,35.62081011,"boletin",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","E","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",37.154839,NA,NA,NA,NA,37.15483867,"boletin",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","I","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",46.742863,NA,NA,NA,NA,46.742863,"boletin",NA
+"Fondo de Inversión Credicorp Capital Spread Corporativo Local","IM","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",38.425664,NA,NA,NA,NA,38.42566357,"boletin",NA
 "Fondo de Inversión Credicorp Capital – SLP II","B","9892","FINRE",2025-12-30,2026-01-06,"US$","Reparto",0.006484,NA,NA,NA,NA,0.00648425,"boletin",NA
 "Fondo de Inversión Credicorp Capital – SLP II","I","9892","FINRE",2025-12-30,2026-01-06,"US$","Reparto",0.006544,NA,NA,NA,NA,0.00654361,"boletin",NA
 "Fondo de Inversión Deuda Chilena","A",NA,NA,2026-06-16,2026-06-22,"$","Dividendo",24.410242,NA,NA,NA,NA,24.4102424271899,"boletin",NA
@@ -4219,6 +4249,8 @@
 "Fondo de Inversión Falcom Portfolio Advisors Private Debt III","E","9805","FINRE",2026-04-10,2026-04-16,"US$","Reparto",0.008624,NA,NA,NA,NA,0.0086242162,"boletin",NA
 "Fondo de Inversión Falcom Small Cap Chile","A",NA,NA,2025-06-04,2025-06-10,"$","Dividendo",0.232598,NA,NA,NA,NA,0.232597505,"boletin",NA
 "Fondo de Inversión Falcom Small Cap Chile","F",NA,NA,2025-06-04,2025-06-10,"$","Dividendo",0.228864,NA,NA,NA,NA,0.2288638453,"boletin",NA
+"Fondo de Inversión Fynsa Deuda Privada","A","9759","FINRE",2026-06-18,2026-06-24,"$","Dividendo",270.348944,NA,NA,NA,NA,270.348944,"boletin",NA
+"Fondo de Inversión Fynsa Deuda Privada","D","9759","FINRE",2026-06-18,2026-06-24,"$","Dividendo",228.352954,NA,NA,NA,NA,228.352954,"boletin",NA
 "Fondo de Inversión HMC Ares Special Situations IV - Global Distressed Debt","C",NA,NA,2025-02-25,2025-03-03,"US$","Dividendo",0.080136,NA,NA,NA,NA,0.0801360414,"boletin",NA
 "Fondo de Inversión HMC Ares Special Situations IV - Global Distressed Debt","I",NA,NA,2025-02-25,2025-03-03,"US$","Dividendo",0.009897,NA,NA,NA,NA,0.0098972207,"boletin",NA
 "Fondo de Inversión HMC Ares Special Situations IV - Global Distressed Debt","C",NA,NA,2025-04-23,2025-04-29,"US$","Dividendo",0.339567,NA,NA,NA,NA,0.339566641,"boletin",NA
@@ -5366,6 +5398,7 @@
 "Fondo de Inversión Security Debt Opportunities (ex CFISECDO-E)","A",NA,NA,2026-04-01,2026-04-09,"US$","Reparto",0.000792,NA,NA,NA,NA,0.000791552,"boletin",NA
 "Fondo de Inversión Security Debt Opportunities (ex CFISECDO-E)","A",NA,NA,2026-04-15,2026-04-21,"US$","Reparto",0.00041,NA,NA,NA,NA,0.000409545,"boletin",NA
 "Fondo de Inversión Security Debt Opportunities (ex CFISECDO-E)","A",NA,NA,2026-05-15,2026-05-22,"US$","Reparto",0.001141,NA,NA,NA,NA,0.001140505,"boletin",NA
+"Fondo de Inversión Security Debt Opportunities (ex CFISECDO-E)","A",NA,NA,2026-06-19,2026-06-25,"US$","Reparto",0.000931,NA,NA,NA,NA,0.000930633,"boletin",NA
 "Fondo de Inversión Security Deuda Habitacional con Subsidio","A","10047","FINRE",2025-01-15,2025-01-21,"$","Dividendo",546.247045,NA,NA,NA,NA,546.247044917,"boletin",NA
 "Fondo de Inversión Security Deuda Habitacional con Subsidio","FO","10047","FINRE",2025-01-15,2025-01-21,"$","Dividendo",554.303928,NA,NA,NA,NA,554.303927771,"boletin",NA
 "Fondo de Inversión Security Deuda Habitacional con Subsidio","FP","10047","FINRE",2025-01-15,2025-01-21,"$","Dividendo",561.401069,NA,NA,NA,NA,561.401068757,"boletin",NA
@@ -5556,6 +5589,12 @@
 "Fondo de Inversión Security Deuda Privada Automotriz III","A","10649","FINRE",2026-05-14,2026-05-20,"$","Reparto",29.556708,NA,NA,NA,NA,29.556708442,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Automotriz III","B","10649","FINRE",2026-05-14,2026-05-20,"$","Reparto",29.586762,NA,NA,NA,NA,29.586761603,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Automotriz III","S","10649","FINRE",2026-05-14,2026-05-20,"$","Reparto",30.189878,NA,NA,NA,NA,30.189878019,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz III","A","10649","FINRE",2026-06-19,2026-06-25,"$","Dividendo",5.659481,NA,NA,NA,NA,5.659481419,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz III","B","10649","FINRE",2026-06-19,2026-06-25,"$","Dividendo",5.66731,NA,NA,NA,NA,5.667310302,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz III","S","10649","FINRE",2026-06-19,2026-06-25,"$","Dividendo",5.794349,NA,NA,NA,NA,5.794349424,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz III","A","10649","FINRE",2026-06-19,2026-06-25,"$","Reparto",33.951623,NA,NA,NA,NA,33.951623326,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz III","B","10649","FINRE",2026-06-19,2026-06-25,"$","Reparto",33.985828,NA,NA,NA,NA,33.985827611,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz III","S","10649","FINRE",2026-06-19,2026-06-25,"$","Reparto",34.67702,NA,NA,NA,NA,34.677019624,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Automotriz IV","A","10745","FINRE",2025-07-17,2025-07-23,"$","Reparto",38.608716,NA,NA,NA,NA,38.608715654,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Automotriz IV","B","10745","FINRE",2025-07-17,2025-07-23,"$","Reparto",38.638705,NA,NA,NA,NA,38.638705269,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Automotriz IV","S","10745","FINRE",2025-07-17,2025-07-23,"$","Reparto",39.814268,NA,NA,NA,NA,39.814268436,"boletin",NA
@@ -6197,7 +6236,7 @@
 "Frontal Trust Financiamiento Galgo Fondo de Inversión","F-2",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.02569,NA,NA,NA,NA,0.025690212,"boletin",NA
 "Frontal Trust Financiamiento Galgo Fondo de Inversión","P",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.02581,NA,NA,NA,NA,0.025809795,"boletin",NA
 "Frontal Trust Financiamiento Galgo Fondo de Inversión","P-2",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.02567,NA,NA,NA,NA,0.025669858,"boletin",NA
-"Frontal Trust Financiamiento Galgo Fondo de Inversión","PI",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.025736,NA,NA,NA,NA,0.025736009,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","PI-2",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.025736,NA,NA,NA,NA,0.025736009,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2025-10-22,2025-10-28,"$","Dividendo",1272.290786,NA,NA,NA,NA,1272.290785714,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2025-11-05,2025-11-11,"$","Dividendo",2971.428571,NA,NA,NA,NA,2971.428571429,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2025-11-27,2025-12-03,"$","Reparto",1982.1795,NA,NA,NA,NA,1982.1795,"boletin",NA
@@ -6207,6 +6246,7 @@
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2026-05-19,2026-05-26,"$","Dividendo",1592.099929,NA,NA,NA,NA,1592.099928571,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2026-05-30,2026-06-05,"$","Dividendo",2616.131571,NA,NA,NA,NA,2616.131571429,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2026-06-13,2026-06-19,"$","Dividendo",2068.657014,NA,NA,NA,NA,2068.657014286,"boletin",NA
+"Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2026-06-20,2026-06-26,"$","Reparto",2856.6608,NA,NA,NA,NA,2856.6608,"boletin",NA
 "Frontal Trust Infraestructura Alpha Fondo de Inversión","A",NA,NA,2026-01-24,2026-01-30,"$","Reparto",296.883596,NA,NA,NA,NA,296.88359569,"boletin",NA
 "Frontal Trust Infraestructura Alpha Fondo de Inversión","B",NA,NA,2026-01-24,2026-01-30,"$","Reparto",311.384,NA,NA,NA,NA,311.384,"boletin",NA
 "Frontal Trust Mercado Pago Créditos Fondo de Inversión","P","10689","FINRE",2025-03-08,2025-03-14,"$","Dividendo",2.632928,NA,NA,NA,NA,2.632927593,"boletin",NA
@@ -7861,10 +7901,6 @@
 "Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-09-05,2025-09-11,"US$","Reparto",NA,950198.36,34911060,2025-09-05,0.027218,0.0272176885444737,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-11-25,2025-12-01,"US$","Reparto",NA,1127226,33663746,2025-11-25,0.033485,0.0334848654013192,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-11-25,2025-12-01,"US$","Reparto",NA,2186301.24,33663746,2025-11-25,0.064945,0.0649452751694313,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Cóndor Equity","U","10775","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,218427000,5917416,2026-06-13,36.912565,36.9125645393945,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Cóndor Equity","AC","10775","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,218427000,5917416,2026-06-13,36.912565,36.9125645393945,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Cóndor Equity","CC","10775","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,218427000,5917416,2026-06-13,36.912565,36.9125645393945,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Cóndor Equity","IM","10775","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,218427000,5917416,2026-06-13,36.912565,36.9125645393945,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-01,2025-04-07,"US$","Reparto",NA,70548.92,30874027,2025-04-01,0.002285,0.00228505726183774,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-04-01,2025-04-07,"US$","Reparto",NA,573325.93,30874027,2025-04-01,0.01857,0.0185698459982999,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-29,2025-05-06,"US$","Reparto",NA,62789.54,30294374,2025-04-29,0.002073,0.00207264685633233,"calculado (total/cuotas dia limite)",NA
@@ -7906,13 +7942,6 @@
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,1968213.74,510768,2026-04-02,3.85344,3.85343977065996,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,397267.6,468889,2026-06-02,0.847253,0.847252978592278,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,211479.72,468889,2026-06-02,0.451023,0.451022994782008,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Spread Corporativo Local","AC","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Spread Corporativo Local","B","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Spread Corporativo Local","CC","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Spread Corporativo Local","D","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Spread Corporativo Local","E","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Spread Corporativo Local","I","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Credicorp Capital Spread Corporativo Local","IM","7275","FIRES",2026-06-13,2026-06-19,"$","Dividendo",NA,3474839000,79373980,2026-06-13,43.778062,43.7780617775665,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión EUROPE MEDNEO HEALTH TECH","S","10159","FINRE",2025-07-14,2025-07-21,"EURO","Reparto",NA,149138.14,122002,2025-07-14,1.222426,1.22242573732524,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión PE Secondary Deal II","A","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,342664.18,28242557,2025-08-07,0.012133,0.0121329023180371,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión PE Secondary Deal II","P1","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,15893.78,28242557,2025-08-07,0.000563,0.00056275995992453,"calculado (total/cuotas dia limite)",NA
@@ -7926,7 +7955,6 @@
 "Fondo de Inversión Zurich High Yield UF","R","7295","FIRES",2025-05-23,2025-05-29,"US$","Dividendo",NA,172868.22,4746053,2025-05-23,0.036424,0.0364235765667005,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Zurich High Yield UF","R","7295","FIRES",2026-05-22,2026-05-28,"US$","Dividendo",NA,128784.12,1800447,2026-05-22,0.071529,0.0715289747451519,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Zurich Renta Fija Chile Index Fund","A","9476","FIRES",2026-05-22,2026-05-28,"$","Dividendo",NA,106746812,8809476,2026-05-22,12.117272,12.1172718332497,"calculado (total/cuotas dia limite)",NA
-"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,3770866,455193,2025-02-21,8.284097,8.28409659168501,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,34854016,455193,2025-02-21,76.569689,76.5696885416069,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,16480976,455193,2025-02-21,36.206536,36.2065364054948,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-05-23,2025-05-29,"$","Dividendo",NA,22218457,455888,2025-05-23,48.736626,48.7366260332508,"calculado (total/cuotas dia limite)",NA
@@ -7961,6 +7989,11 @@
 "Moneda Alturas II Fondo de Inversión","A","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
 "Moneda Alturas II Fondo de Inversión","B","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
 "Moneda Alturas II Fondo de Inversión","C","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
+"Moneda Renta Variable Chile Fondo de Inversión","A","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,2663694,2026-06-20,478.871497,478.871497253448,"calculado (total/cuotas dia limite)",NA
+"Moneda Renta Variable Chile Fondo de Inversión","AE","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,2663694,2026-06-20,478.871497,478.871497253448,"calculado (total/cuotas dia limite)",NA
+"Moneda Renta Variable Chile Fondo de Inversión","E","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,2663694,2026-06-20,478.871497,478.871497253448,"calculado (total/cuotas dia limite)",NA
+"Moneda Renta Variable Chile Fondo de Inversión","I","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,2663694,2026-06-20,478.871497,478.871497253448,"calculado (total/cuotas dia limite)",NA
+"Moneda Renta Variable Chile Fondo de Inversión","R","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,2663694,2026-06-20,478.871497,478.871497253448,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,864272.85,131192044,2026-05-28,0.006588,0.00658784498183959,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,585134.67,131192044,2026-05-28,0.00446,0.00446013836887259,"calculado (total/cuotas dia limite)",NA
 "Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,477605.84,58508791,2025-01-08,0.008163,0.0081629757601,"calculado (total/cuotas dia limite)",NA
@@ -7974,6 +8007,8 @@
 "Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,107587.7,8435679,2026-04-02,0.012754,0.012753887146596,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,128123.28,206645683,2026-03-11,0.00062,0.000620014306971599,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,332465.91,206645683,2026-03-11,0.001609,0.00160886937003433,"calculado (total/cuotas dia limite)",NA
+"Pionero Fondo de Inversión","A","7010","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,13689337531,46383794,2026-06-20,295.131906,295.131906005512,"calculado (total/cuotas dia limite)",NA
+"Pionero Fondo de Inversión","AE","7010","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,13689337531,46383794,2026-06-20,295.131906,295.131906005512,"calculado (total/cuotas dia limite)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","A",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","H",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-01-31,2025-02-06,"$","Reparto",NA,106105773,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -7989,10 +8024,6 @@
 "Fondo de Inversión Asset Deuda Vivo","ADV",NA,NA,2025-06-12,2025-06-18,"$","Reparto",NA,1019361859,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","I",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,114903.97,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","E",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,222847.69,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión Credicorp Capital Alto Rendimiento CLP
-(Fondo de Inversión Credicorp Capital Crédito Directo)","B",NA,NA,2026-06-13,2026-06-19,"$","Dividendo",NA,297692000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión Credicorp Capital Alto Rendimiento CLP
-(Fondo de Inversión Credicorp Capital Crédito Directo)","I",NA,NA,2026-06-13,2026-06-19,"$","Dividendo",NA,297692000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Independencia Deuda US I","U",NA,NA,2025-02-08,2025-02-14,"US$","Reparto",NA,6208.78,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","A",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,511995657,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","B",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,651307025,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8033,6 +8064,7 @@
 "Fondo de Inversión Sartor Proyección en Liquidación","I",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Sartor Proyección en Liquidación","Q",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Zurich Renta Fija Chile Index","A",NA,NA,2025-05-23,2025-05-29,"$","Dividendo",NA,102521495,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,3770866,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","A",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","B",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","C",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8072,14 +8104,7 @@
 "MBI-BP Deuda Fondo de Inversión, en Liquidación.","B",NA,NA,2025-08-16,2025-08-22,"$","Reparto",NA,103850099,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda Renta Variable Chile Fondo de Inversión","A","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda Renta Variable Chile Fondo de Inversión","AE","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda Renta Variable Chile Fondo de Inversión","E","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda Renta Variable Chile Fondo de Inversión","I","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda Renta Variable Chile Fondo de Inversión","R","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Pionero Fondo de Inversión","A","7010","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,13689337531,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Pionero Fondo de Inversión","AE","7010","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,13689337531,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Vinci Compass Small Cap Chile Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",NA,6199564258,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Vinci Compass Small Cap Chile Fondo de Inversión","B",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",NA,6199564258,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Vinci Compass Small Cap Chile Fondo de Inversión","I",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",NA,6199564258,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
