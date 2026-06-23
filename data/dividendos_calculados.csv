@@ -1751,6 +1751,16 @@
 "Compass Latam High Yield USD Fondo de Inversión","CG",NA,NA,2025-06-24,2025-06-30,"US$","Dividendo",0.063095,NA,NA,NA,NA,0.0630952093,"boletin",NA
 "Compass Latam High Yield USD Fondo de Inversión","E",NA,NA,2025-06-24,2025-06-30,"US$","Dividendo",0.059556,NA,NA,NA,NA,0.0595557466,"boletin",NA
 "Compass Latam High Yield USD Fondo de Inversión","I",NA,NA,2025-06-24,2025-06-30,"US$","Dividendo",0.066201,NA,NA,NA,NA,0.0662009252,"boletin",NA
+"Compass Latam High Yield USD Fondo de Inversión
+(Vinci Compass Latam High Yield USD Fondo de Inversión)","A",NA,NA,2026-06-20,2026-06-26,"US$","Dividendo",0.040849,NA,NA,NA,NA,0.0408493799,"boletin",NA
+"Compass Latam High Yield USD Fondo de Inversión
+(Vinci Compass Latam High Yield USD Fondo de Inversión)","B",NA,NA,2026-06-20,2026-06-26,"US$","Dividendo",0.029634,NA,NA,NA,NA,0.0296337095,"boletin",NA
+"Compass Latam High Yield USD Fondo de Inversión
+(Vinci Compass Latam High Yield USD Fondo de Inversión)","CG",NA,NA,2026-06-20,2026-06-26,"US$","Dividendo",0.035055,NA,NA,NA,NA,0.0350552054,"boletin",NA
+"Compass Latam High Yield USD Fondo de Inversión
+(Vinci Compass Latam High Yield USD Fondo de Inversión)","E",NA,NA,2026-06-20,2026-06-26,"US$","Dividendo",0.032812,NA,NA,NA,NA,0.032812162,"boletin",NA
+"Compass Latam High Yield USD Fondo de Inversión
+(Vinci Compass Latam High Yield USD Fondo de Inversión)","I",NA,NA,2026-06-20,2026-06-26,"US$","Dividendo",0.036474,NA,NA,NA,NA,0.036473634,"boletin",NA
 "Compass PCLO Private Debt Fondo de Inversión","A","9601","FINRE",2025-02-20,2025-02-26,"US$","Reparto",0.035223,NA,NA,NA,NA,0.0352228037,"boletin",NA
 "Compass PCLO Private Debt Fondo de Inversión","B","9601","FINRE",2025-02-20,2025-02-26,"US$","Reparto",0.03692,NA,NA,NA,NA,0.0369196193,"boletin",NA
 "Compass PCLO Private Debt Fondo de Inversión","C","9601","FINRE",2025-02-20,2025-02-26,"US$","Reparto",0.038234,NA,NA,NA,NA,0.038233566,"boletin",NA
@@ -6912,6 +6922,11 @@
 "Moneda Renta CLP Fondo de Inversión","RE","7099","FINRE",2026-04-18,2026-04-24,"$","Dividendo",100,NA,NA,NA,NA,100,"boletin",NA
 "Moneda Renta Fija Internacional Fondo de Inversión","A","9268","FIRES",2026-06-11,2026-06-17,"US$","Dividendo",18.926648,NA,NA,NA,NA,18.926648,"boletin",NA
 "Moneda Renta Fija Internacional Fondo de Inversión","B","9268","FIRES",2026-06-11,2026-06-17,"US$","Dividendo",17.235651,NA,NA,NA,NA,17.235651,"boletin",NA
+"Moneda Renta Variable Chile Fondo de Inversión","A","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",474.373254,NA,NA,NA,NA,474.373254,"boletin",NA
+"Moneda Renta Variable Chile Fondo de Inversión","AE","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",479.328392,NA,NA,NA,NA,479.328392,"boletin",NA
+"Moneda Renta Variable Chile Fondo de Inversión","E","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",484.090821,NA,NA,NA,NA,484.090821,"boletin",NA
+"Moneda Renta Variable Chile Fondo de Inversión","I","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",491.598326,NA,NA,NA,NA,491.598326,"boletin",NA
+"Moneda Renta Variable Chile Fondo de Inversión","R","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",465.42129,NA,NA,NA,NA,465.42129,"boletin",NA
 "Moneda Renta Variable Emergente Fondo de Inversión","A","9676","FIRES",2026-06-09,2026-06-15,"US$","Dividendo",1.370382,NA,NA,NA,NA,1.370382,"boletin",NA
 "Moneda Renta Variable Emergente Fondo de Inversión","B","9676","FIRES",2026-06-09,2026-06-15,"US$","Dividendo",1.369252,NA,NA,NA,NA,1.369252,"boletin",NA
 "Moneda Renta Variable Emergente Fondo de Inversión","C","9676","FIRES",2026-06-09,2026-06-15,"US$","Dividendo",1.371029,NA,NA,NA,NA,1.371029,"boletin",NA
@@ -6983,6 +6998,10 @@
 "Pionero Fondo de Inversión","A","7010","FINRE",2025-06-21,2025-06-27,"$","Dividendo",95.988313,NA,NA,NA,NA,95.988313,"boletin",NA
 "Pionero Fondo de Inversión","AE","7010","FINRE",2025-06-21,2025-06-27,"$","Dividendo",96.913677,NA,NA,NA,NA,96.913677,"boletin",NA
 "Pionero Fondo de Inversión","R","7010","FINRE",2025-06-21,2025-06-27,"$","Dividendo",94.649738,NA,NA,NA,NA,94.649738,"boletin",NA
+"Pionero Fondo de Inversión","A","7010","FINRE",2026-06-20,2026-06-26,"$","Dividendo",296.02091,NA,NA,NA,NA,296.02091,"boletin",NA
+"Pionero Fondo de Inversión","AE","7010","FINRE",2026-06-20,2026-06-26,"$","Dividendo",299.356778,NA,NA,NA,NA,299.356778,"boletin",NA
+"Pionero Fondo de Inversión","R","7010","FINRE",2026-06-20,2026-06-26,"$","Dividendo",282.225271,NA,NA,NA,NA,282.225271,"boletin",NA
+"Pionero Fondo de Inversión","I","7010","FINRE",2026-06-20,2026-06-26,"$","Dividendo",296.366675,NA,NA,NA,NA,296.366675,"boletin",NA
 "Principal Real Estate Oportunidades Estratégicas","B",NA,NA,2025-07-24,2025-07-30,"$","Dividendo",611.029782,NA,NA,NA,NA,611.029781589,"boletin",NA
 "Principal Real Estate Oportunidades Estratégicas","I",NA,NA,2025-07-24,2025-07-30,"$","Dividendo",614.345464,NA,NA,NA,NA,614.34546392,"boletin",NA
 "Principal Real Estate Oportunidades Estratégicas","I2",NA,NA,2025-07-24,2025-07-30,"$","Dividendo",614.868303,NA,NA,NA,NA,614.868303242,"boletin",NA
@@ -7718,6 +7737,9 @@
 "VOLCOMCAPITAL Private Equity X Fondo de Inversión","A","10443","FINRE",2026-01-06,2026-01-12,"EURO","Reparto",0.010761,NA,NA,NA,NA,0.0107612064040928,"boletin",NA
 "VOLCOMCAPITAL Private Equity X Fondo de Inversión","B","10443","FINRE",2026-01-06,2026-01-12,"EURO","Reparto",0.011733,NA,NA,NA,NA,0.0117330728224425,"boletin",NA
 "VOLCOMCAPITAL Private Equity X Fondo de Inversión","C","10443","FINRE",2026-01-06,2026-01-12,"EURO","Reparto",0.011777,NA,NA,NA,NA,0.0117765907855172,"boletin",NA
+"VOLCOMCAPITAL Private Equity X Fondo de Inversión","A","10443","FINRE",2026-06-23,2026-06-30,"EURO","Dividendo",0.008221,NA,NA,NA,NA,0.00822128193073186,"boletin",NA
+"VOLCOMCAPITAL Private Equity X Fondo de Inversión","B","10443","FINRE",2026-06-23,2026-06-30,"EURO","Dividendo",0.009142,NA,NA,NA,NA,0.00914230809433067,"boletin",NA
+"VOLCOMCAPITAL Private Equity X Fondo de Inversión","C","10443","FINRE",2026-06-23,2026-06-30,"EURO","Dividendo",0.009184,NA,NA,NA,NA,0.00918391941748257,"boletin",NA
 "VOLCOMCAPITAL Real Estate II Fondo de Inversión","A","9536","FINRE",2025-06-04,2025-06-10,"EURO","Reparto",0.004775,NA,NA,NA,NA,0.00477520362351761,"boletin",NA
 "VOLCOMCAPITAL Real Estate II Fondo de Inversión","B","9536","FINRE",2025-06-04,2025-06-10,"EURO","Reparto",0.005031,NA,NA,NA,NA,0.00503068191610795,"boletin",NA
 "VOLCOMCAPITAL Real Estate II Fondo de Inversión","E","9536","FINRE",2025-06-04,2025-06-10,"EURO","Reparto",0.005051,NA,NA,NA,NA,0.00505108439022079,"boletin",NA
@@ -7793,6 +7815,10 @@
 "Vinci Compass Latin America Equity Fondo de Inversión","A","9522","FIRES",2026-05-23,2026-05-29,"US$","Dividendo",0.043469,NA,NA,NA,NA,0.0434693623,"boletin",NA
 "Vinci Compass Latin America Equity Fondo de Inversión","B","9522","FIRES",2026-05-23,2026-05-29,"US$","Dividendo",0.045395,NA,NA,NA,NA,0.0453950967,"boletin",NA
 "Vinci Compass Latin America Equity Fondo de Inversión","VC","9522","FIRES",2026-05-23,2026-05-29,"US$","Dividendo",0.042185,NA,NA,NA,NA,0.0421848286,"boletin",NA
+"Vinci Compass Small Cap Chile Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2596.737292,NA,NA,NA,NA,2596.7372922993,"boletin",NA
+"Vinci Compass Small Cap Chile Fondo de Inversión","B",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2652.59151,NA,NA,NA,NA,2652.5915095152,"boletin",NA
+"Vinci Compass Small Cap Chile Fondo de Inversión","I",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2693.703047,NA,NA,NA,NA,2693.7030474919,"boletin",NA
+"Vinci Compass Small Cap Chile Fondo de Inversión","VC",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2675.652323,NA,NA,NA,NA,2675.6523229495,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","B","10148","FINRE",2025-02-05,2025-02-11,"US$","Dividendo",0.068062,NA,NA,NA,NA,0.06806214053875,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","Z","10148","FINRE",2025-02-05,2025-02-11,"US$","Dividendo",0.06855,NA,NA,NA,NA,0.06854950341952,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","B","10148","FINRE",2025-05-20,2025-05-27,"US$","Dividendo",0.018393,NA,NA,NA,NA,0.0183930434657029,"boletin",NA
@@ -7829,6 +7855,10 @@
 "Volcomcapital Private Equity VIII Fondo de Inversión","B","9877","FINRE",2026-01-06,2026-01-12,"EURO","Dividendo",0.02261,NA,NA,NA,NA,0.0226095398561806,"boletin",NA
 "Volcomcapital Private Equity VIII Fondo de Inversión","C","9877","FINRE",2026-01-06,2026-01-12,"EURO","Dividendo",0.022826,NA,NA,NA,NA,0.0228258484067415,"boletin",NA
 "Volcomcapital Private Equity VIII Fondo de Inversión","Z","9877","FINRE",2026-01-06,2026-01-12,"EURO","Dividendo",0.022832,NA,NA,NA,NA,0.0228317362520639,"boletin",NA
+"Volcomcapital Private Equity VIII Fondo de Inversión","A","9877","FINRE",2026-06-23,2026-06-30,"EURO","Dividendo",0.06138,NA,NA,NA,NA,0.0613801803322605,"boletin",NA
+"Volcomcapital Private Equity VIII Fondo de Inversión","B","9877","FINRE",2026-06-23,2026-06-30,"EURO","Dividendo",0.068721,NA,NA,NA,NA,0.0687208436055716,"boletin",NA
+"Volcomcapital Private Equity VIII Fondo de Inversión","C","9877","FINRE",2026-06-23,2026-06-30,"EURO","Dividendo",0.069417,NA,NA,NA,NA,0.0694174764032093,"boletin",NA
+"Volcomcapital Private Equity VIII Fondo de Inversión","Z","9877","FINRE",2026-06-23,2026-06-30,"EURO","Dividendo",0.069438,NA,NA,NA,NA,0.0694381270149697,"boletin",NA
 "XLC - HPS Mezzanine IV Fondo de Inversión","A","9718","FINRE",2025-06-12,2025-06-18,"US$","Dividendo",0.004389,NA,NA,NA,NA,0.004388620714418,"boletin",NA
 "XLC - HPS Mezzanine IV Fondo de Inversión","B","9718","FINRE",2025-06-12,2025-06-18,"US$","Dividendo",0.004416,NA,NA,NA,NA,0.004416181317353,"boletin",NA
 "XLC - HPS Mezzanine IV Fondo de Inversión","A","9718","FINRE",2025-09-26,2025-10-02,"US$","Dividendo",0.036553,NA,NA,NA,NA,0.0365532942685,"boletin",NA
@@ -7955,6 +7985,7 @@
 "Fondo de Inversión Zurich High Yield UF","R","7295","FIRES",2025-05-23,2025-05-29,"US$","Dividendo",NA,172868.22,4746053,2025-05-23,0.036424,0.0364235765667005,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Zurich High Yield UF","R","7295","FIRES",2026-05-22,2026-05-28,"US$","Dividendo",NA,128784.12,1800447,2026-05-22,0.071529,0.0715289747451519,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Zurich Renta Fija Chile Index Fund","A","9476","FIRES",2026-05-22,2026-05-28,"$","Dividendo",NA,106746812,8809476,2026-05-22,12.117272,12.1172718332497,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,3770866,455193,2025-02-21,8.284097,8.28409659168501,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,34854016,455193,2025-02-21,76.569689,76.5696885416069,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,16480976,455193,2025-02-21,36.206536,36.2065364054948,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-05-23,2025-05-29,"$","Dividendo",NA,22218457,455888,2025-05-23,48.736626,48.7366260332508,"calculado (total/cuotas dia limite)",NA
@@ -7989,11 +8020,6 @@
 "Moneda Alturas II Fondo de Inversión","A","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
 "Moneda Alturas II Fondo de Inversión","B","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
 "Moneda Alturas II Fondo de Inversión","C","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
-"Moneda Renta Variable Chile Fondo de Inversión","A","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,2663694,2026-06-20,478.871497,478.871497253448,"calculado (total/cuotas dia limite)",NA
-"Moneda Renta Variable Chile Fondo de Inversión","AE","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,2663694,2026-06-20,478.871497,478.871497253448,"calculado (total/cuotas dia limite)",NA
-"Moneda Renta Variable Chile Fondo de Inversión","E","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,2663694,2026-06-20,478.871497,478.871497253448,"calculado (total/cuotas dia limite)",NA
-"Moneda Renta Variable Chile Fondo de Inversión","I","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,2663694,2026-06-20,478.871497,478.871497253448,"calculado (total/cuotas dia limite)",NA
-"Moneda Renta Variable Chile Fondo de Inversión","R","7136","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,1275567134,2663694,2026-06-20,478.871497,478.871497253448,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,864272.85,131192044,2026-05-28,0.006588,0.00658784498183959,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,585134.67,131192044,2026-05-28,0.00446,0.00446013836887259,"calculado (total/cuotas dia limite)",NA
 "Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,477605.84,58508791,2025-01-08,0.008163,0.0081629757601,"calculado (total/cuotas dia limite)",NA
@@ -8007,8 +8033,6 @@
 "Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,107587.7,8435679,2026-04-02,0.012754,0.012753887146596,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,128123.28,206645683,2026-03-11,0.00062,0.000620014306971599,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,332465.91,206645683,2026-03-11,0.001609,0.00160886937003433,"calculado (total/cuotas dia limite)",NA
-"Pionero Fondo de Inversión","A","7010","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,13689337531,46383794,2026-06-20,295.131906,295.131906005512,"calculado (total/cuotas dia limite)",NA
-"Pionero Fondo de Inversión","AE","7010","FINRE",2026-06-20,2026-06-26,"$","Dividendo",NA,13689337531,46383794,2026-06-20,295.131906,295.131906005512,"calculado (total/cuotas dia limite)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","A",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","H",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-01-31,2025-02-06,"$","Reparto",NA,106105773,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8017,10 +8041,6 @@
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-07-31,2025-08-06,"$","Reparto",NA,108733590,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2025-07-31,2025-08-06,"$","Reparto",NA,108733590,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2026-01-31,2026-02-06,"$","Reparto",NA,162241028,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Compass Latam High Yield USD Fondo de Inversión","A",NA,NA,2026-06-20,2026-06-26,"US$","Dividendo",NA,9945115,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Compass Latam High Yield USD Fondo de Inversión","CG",NA,NA,2026-06-20,2026-06-26,"US$","Dividendo",NA,9945115,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Compass Latam High Yield USD Fondo de Inversión","E",NA,NA,2026-06-20,2026-06-26,"US$","Dividendo",NA,9945115,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Compass Latam High Yield USD Fondo de Inversión","I",NA,NA,2026-06-20,2026-06-26,"US$","Dividendo",NA,9945115,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Asset Deuda Vivo","ADV",NA,NA,2025-06-12,2025-06-18,"$","Reparto",NA,1019361859,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","I",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,114903.97,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","E",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,222847.69,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8064,7 +8084,6 @@
 "Fondo de Inversión Sartor Proyección en Liquidación","I",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Sartor Proyección en Liquidación","Q",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Zurich Renta Fija Chile Index","A",NA,NA,2025-05-23,2025-05-29,"$","Dividendo",NA,102521495,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,3770866,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","A",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","B",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","C",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8105,9 +8124,6 @@
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Vinci Compass Small Cap Chile Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",NA,6199564258,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Vinci Compass Small Cap Chile Fondo de Inversión","B",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",NA,6199564258,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Vinci Compass Small Cap Chile Fondo de Inversión","I",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",NA,6199564258,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "XLC Activos I Fondo de Inversión","A","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,177557068,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","B","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,131131561,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,174659992,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
