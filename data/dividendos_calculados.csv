@@ -695,6 +695,9 @@
 "BICE Stepstone SCOF I Fondo de Inversión","A","9982","FINRE",2026-05-07,2026-05-13,"US$","Reparto",0.022532,NA,NA,NA,NA,0.0225315528,"boletin",NA
 "BICE Stepstone SCOF I Fondo de Inversión","I","9982","FINRE",2026-05-07,2026-05-13,"US$","Reparto",0.023639,NA,NA,NA,NA,0.0236391967,"boletin",NA
 "BICE Stepstone SCOF I Fondo de Inversión","X","9982","FINRE",2026-05-07,2026-05-13,"US$","Reparto",0.023712,NA,NA,NA,NA,0.0237123951,"boletin",NA
+"BICE Stepstone SCOF I Fondo de Inversión","A","9982","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.022532,NA,NA,NA,NA,0.0225315528,"boletin",NA
+"BICE Stepstone SCOF I Fondo de Inversión","I","9982","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.023639,NA,NA,NA,NA,0.0236391967,"boletin",NA
+"BICE Stepstone SCOF I Fondo de Inversión","X","9982","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.023712,NA,NA,NA,NA,0.0237123951,"boletin",NA
 "BICE Stepstone SSOF IV Fondo de Inversión","A","9747","FINRE",2025-01-08,2025-01-14,"US$","Dividendo",0.081473,NA,NA,NA,NA,0.0814734529,"boletin",NA
 "BICE Stepstone SSOF IV Fondo de Inversión","I","9747","FINRE",2025-01-08,2025-01-14,"US$","Dividendo",0.092734,NA,NA,NA,NA,0.0927340657,"boletin",NA
 "BICE Stepstone SSOF IV Fondo de Inversión","A","9747","FINRE",2025-01-21,2025-01-27,"US$","Reparto",0.803454,NA,NA,NA,NA,0.8034535896,"boletin",NA
@@ -2730,6 +2733,14 @@
 "Fondo de Inversión Activa Deuda Automotriz Perú","I","9703","FINRE",2026-05-20,2026-05-27,"US$","Reparto",0.01649,NA,NA,NA,NA,0.0164903813486867,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Perú","R","9703","FINRE",2026-05-20,2026-05-27,"US$","Reparto",0.015683,NA,NA,NA,NA,0.0156826056779368,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Perú","S","9703","FINRE",2026-05-20,2026-05-27,"US$","Reparto",0.016631,NA,NA,NA,NA,0.016630908,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","F","9703","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.000882,NA,NA,NA,NA,0.000881793342409765,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","I","9703","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.000903,NA,NA,NA,NA,0.000903364505530086,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","R","9703","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.000859,NA,NA,NA,NA,0.000858560906237359,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","S","9703","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.000911,NA,NA,NA,NA,0.000911164,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","F","9703","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.01624,NA,NA,NA,NA,0.0162399494482588,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","I","9703","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.016637,NA,NA,NA,NA,0.0166372095375607,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","R","9703","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.015812,NA,NA,NA,NA,0.0158120716866999,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","S","9703","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.016781,NA,NA,NA,NA,0.016780846,"boletin",NA
 "Fondo de Inversión Activa Deuda Estructurada Inmobiliaria","I",NA,NA,2025-01-08,2025-01-14,"$","Reparto",19.089047,NA,NA,NA,NA,19.08904707,"boletin",NA
 "Fondo de Inversión Activa Deuda Estructurada Inmobiliaria","R",NA,NA,2025-01-08,2025-01-14,"$","Reparto",18.951257,NA,NA,NA,NA,18.95125705,"boletin",NA
 "Fondo de Inversión Activa Deuda Estructurada Inmobiliaria","I",NA,NA,2025-02-05,2025-02-11,"$","Dividendo",1.060606,NA,NA,NA,NA,1.06060635,"boletin",NA
@@ -3005,6 +3016,8 @@
 "Fondo de Inversión Activa Estrategia Automotriz IV","R","10705","FINRE",2026-04-15,2026-04-21,"$","Reparto",18.501772,NA,NA,NA,NA,18.50177233,"boletin",NA
 "Fondo de Inversión Activa Estrategia Automotriz IV","I","10705","FINRE",2026-05-13,2026-05-19,"$","Reparto",30.488945,NA,NA,NA,NA,30.48894468,"boletin",NA
 "Fondo de Inversión Activa Estrategia Automotriz IV","R","10705","FINRE",2026-05-13,2026-05-19,"$","Reparto",30.470668,NA,NA,NA,NA,30.47066793,"boletin",NA
+"Fondo de Inversión Activa Estrategia Automotriz IV","I","10705","FINRE",2026-06-23,2026-06-30,"$","Reparto",23.97104,NA,NA,NA,NA,23.971040005275,"boletin",NA
+"Fondo de Inversión Activa Estrategia Automotriz IV","R","10705","FINRE",2026-06-23,2026-06-30,"$","Reparto",23.937949,NA,NA,NA,NA,23.937949472172,"boletin",NA
 "Fondo de Inversión Activa Financiamiento Estructurado","A","9219","FINRE",2025-01-08,2025-01-14,"$","Reparto",30.585792,NA,NA,NA,NA,30.5857919,"boletin",NA
 "Fondo de Inversión Activa Financiamiento Estructurado","A","9219","FINRE",2025-02-05,2025-02-11,"$","Reparto",16.341317,NA,NA,NA,NA,16.3413168458814,"boletin",NA
 "Fondo de Inversión Activa Financiamiento Estructurado","A","9219","FINRE",2025-03-05,2025-03-11,"$","Dividendo",0.777737,NA,NA,NA,NA,0.7777365305797,"boletin",NA
@@ -3836,6 +3849,9 @@
 "Fondo de Inversión Credicorp Capital ICG SE I","B","10076","FINRE",2026-06-16,2026-06-22,"US$","Reparto",0.006116,NA,NA,NA,NA,0.00611646,"boletin",NA
 "Fondo de Inversión Credicorp Capital ICG SE I","I","10076","FINRE",2026-06-16,2026-06-22,"US$","Reparto",0.006253,NA,NA,NA,NA,0.00625259,"boletin",NA
 "Fondo de Inversión Credicorp Capital ICG SE I","CC","10076","FINRE",2026-06-16,2026-06-22,"US$","Reparto",0.006283,NA,NA,NA,NA,0.00628289,"boletin",NA
+"Fondo de Inversión Credicorp Capital ICG SE II","B","10619","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.014732,NA,NA,NA,NA,0.01473204,"boletin",NA
+"Fondo de Inversión Credicorp Capital ICG SE II","I","10619","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.015062,NA,NA,NA,NA,0.01506217,"boletin",NA
+"Fondo de Inversión Credicorp Capital ICG SE II","C","10619","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.014431,NA,NA,NA,NA,0.01443088,"boletin",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-01,2025-04-07,"US$","Dividendo",0.005792,NA,NA,NA,NA,0.00579203,"boletin",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-04-01,2025-04-07,"US$","Dividendo",0.00603,NA,NA,NA,NA,0.00602977,"boletin",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-29,2025-05-06,"US$","Dividendo",0.007639,NA,NA,NA,NA,0.00763861,"boletin",NA
@@ -3960,6 +3976,8 @@
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario I","Ejecutiva",NA,NA,2026-05-13,2026-05-19,"$","Reparto",986.354688,NA,NA,NA,NA,986.354688,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario I","Institucional",NA,NA,2026-06-03,2026-06-09,"$","Reparto",1099.393823,NA,NA,NA,NA,1099.393823,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario I","Ejecutiva",NA,NA,2026-06-03,2026-06-09,"$","Reparto",996.119217,NA,NA,NA,NA,996.119217,"boletin",NA
+"Fondo de Inversión FYNSA Desarrollo Inmobiliario I","Institucional",NA,NA,2026-06-23,2026-06-30,"$","Reparto",1321.118969,NA,NA,NA,NA,1321.118969,"boletin",NA
+"Fondo de Inversión FYNSA Desarrollo Inmobiliario I","Ejecutiva",NA,NA,2026-06-23,2026-06-30,"$","Reparto",1197.015996,NA,NA,NA,NA,1197.015996,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario III","A",NA,NA,2025-01-11,2025-01-17,"$","Reparto",1216.571911,NA,NA,NA,NA,1216.571911,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario III","B",NA,NA,2025-01-11,2025-01-17,"$","Reparto",1238.299606,NA,NA,NA,NA,1238.299606,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario IV","A",NA,NA,2025-03-28,2025-04-03,"$","Reparto",998.64002,NA,NA,NA,NA,998.64002,"boletin",NA
@@ -4207,11 +4225,23 @@
 "Fondo de Inversión Falcom Chilean Fixed Income","G","9289","FIRES",2025-06-04,2025-06-10,"$","Dividendo",5.644303,NA,NA,NA,NA,5.6443030703,"boletin",NA
 "Fondo de Inversión Falcom Chilean Fixed Income","M","9289","FIRES",2025-06-04,2025-06-10,"$","Dividendo",5.036504,NA,NA,NA,NA,5.0365037127,"boletin",NA
 "Fondo de Inversión Falcom Chilean Fixed Income","W","9289","FIRES",2025-06-04,2025-06-10,"$","Dividendo",4.913838,NA,NA,NA,NA,4.913838432,"boletin",NA
+"Fondo de Inversión Falcom Chilean Fixed Income","A","9289","FIRES",2026-06-19,2026-06-25,"$","Dividendo",11.895461,NA,NA,NA,NA,11.8954611302,"boletin",NA
+"Fondo de Inversión Falcom Chilean Fixed Income","G","9289","FIRES",2026-06-19,2026-06-25,"$","Dividendo",12.909334,NA,NA,NA,NA,12.9093339923,"boletin",NA
+"Fondo de Inversión Falcom Chilean Fixed Income","M","9289","FIRES",2026-06-19,2026-06-25,"$","Dividendo",11.475904,NA,NA,NA,NA,11.4759041277,"boletin",NA
+"Fondo de Inversión Falcom Chilean Fixed Income","W","9289","FIRES",2026-06-19,2026-06-25,"$","Dividendo",11.161361,NA,NA,NA,NA,11.1613613849,"boletin",NA
+"Fondo de Inversión Falcom Crédito","A","9720","FINRE",2026-06-19,2026-06-25,"$","Dividendo",48.258404,NA,NA,NA,NA,48.2584036895,"boletin",NA
+"Fondo de Inversión Falcom Crédito","B","9720","FINRE",2026-06-19,2026-06-25,"$","Dividendo",50.096174,NA,NA,NA,NA,50.096174051,"boletin",NA
+"Fondo de Inversión Falcom Crédito","F","9720","FINRE",2026-06-19,2026-06-25,"$","Dividendo",54.936493,NA,NA,NA,NA,54.9364932865,"boletin",NA
 "Fondo de Inversión Falcom Deuda Corporativa Chile","A","9902","FIRES",2025-06-04,2025-06-10,"$","Dividendo",10.214597,NA,NA,NA,NA,10.2145967325,"boletin",NA
 "Fondo de Inversión Falcom Deuda Corporativa Chile","F","9902","FIRES",2025-06-04,2025-06-10,"$","Dividendo",13.119922,NA,NA,NA,NA,13.1199215735,"boletin",NA
 "Fondo de Inversión Falcom Deuda Corporativa Chile","G","9902","FIRES",2025-06-04,2025-06-10,"$","Dividendo",12.092118,NA,NA,NA,NA,12.0921182688,"boletin",NA
 "Fondo de Inversión Falcom Deuda Corporativa Chile","M","9902","FIRES",2025-06-04,2025-06-10,"$","Dividendo",11.004798,NA,NA,NA,NA,11.0047979638,"boletin",NA
 "Fondo de Inversión Falcom Deuda Corporativa Chile","W","9902","FIRES",2025-06-04,2025-06-10,"$","Dividendo",12.47394,NA,NA,NA,NA,12.473940175,"boletin",NA
+"Fondo de Inversión Falcom Deuda Corporativa Chile","A","9902","FIRES",2026-06-19,2026-06-25,"$","Dividendo",10.650735,NA,NA,NA,NA,10.6507350943,"boletin",NA
+"Fondo de Inversión Falcom Deuda Corporativa Chile","F","9902","FIRES",2026-06-19,2026-06-25,"$","Dividendo",13.928426,NA,NA,NA,NA,13.9284262765,"boletin",NA
+"Fondo de Inversión Falcom Deuda Corporativa Chile","G","9902","FIRES",2026-06-19,2026-06-25,"$","Dividendo",12.755175,NA,NA,NA,NA,12.7551754161,"boletin",NA
+"Fondo de Inversión Falcom Deuda Corporativa Chile","M","9902","FIRES",2026-06-19,2026-06-25,"$","Dividendo",11.546614,NA,NA,NA,NA,11.5466139273,"boletin",NA
+"Fondo de Inversión Falcom Deuda Corporativa Chile","W","9902","FIRES",2026-06-19,2026-06-25,"$","Dividendo",13.03995,NA,NA,NA,NA,13.0399500595,"boletin",NA
 "Fondo de Inversión Falcom Deuda Privada","A",NA,NA,2025-06-04,2025-06-10,"$","Dividendo",13.661047,NA,NA,NA,NA,13.6610470275,"boletin",NA
 "Fondo de Inversión Falcom Deuda Privada","B",NA,NA,2025-06-04,2025-06-10,"$","Dividendo",14.094942,NA,NA,NA,NA,14.0949423248,"boletin",NA
 "Fondo de Inversión Falcom Deuda Privada","F",NA,NA,2025-06-04,2025-06-10,"$","Dividendo",15.246326,NA,NA,NA,NA,15.2463255969,"boletin",NA
@@ -4238,6 +4268,10 @@
 "Fondo de Inversión Falcom Global Strategy Fund","B","9297","FIRES",2025-06-04,2025-06-10,"US$","Dividendo",0.017221,NA,NA,NA,NA,0.0172206001,"boletin",NA
 "Fondo de Inversión Falcom Global Strategy Fund","C","9297","FIRES",2025-06-04,2025-06-10,"US$","Dividendo",0.015739,NA,NA,NA,NA,0.015738657,"boletin",NA
 "Fondo de Inversión Falcom Global Strategy Fund","I","9297","FIRES",2025-06-04,2025-06-10,"US$","Dividendo",0.018322,NA,NA,NA,NA,0.0183220793,"boletin",NA
+"Fondo de Inversión Falcom Global Strategy Fund","A","9297","FIRES",2026-06-19,2026-06-25,"US$","Dividendo",0.01713,NA,NA,NA,NA,0.0171295274,"boletin",NA
+"Fondo de Inversión Falcom Global Strategy Fund","B","9297","FIRES",2026-06-19,2026-06-25,"US$","Dividendo",0.017934,NA,NA,NA,NA,0.0179342495,"boletin",NA
+"Fondo de Inversión Falcom Global Strategy Fund","C","9297","FIRES",2026-06-19,2026-06-25,"US$","Dividendo",0.016492,NA,NA,NA,NA,0.0164923875,"boletin",NA
+"Fondo de Inversión Falcom Global Strategy Fund","I","9297","FIRES",2026-06-19,2026-06-25,"US$","Dividendo",0.019212,NA,NA,NA,NA,0.0192115821,"boletin",NA
 "Fondo de Inversión Falcom Portfolio Advisors Private Debt III","A","9805","FINRE",2025-01-22,2025-01-28,"US$","Reparto",0.002667,NA,NA,NA,NA,0.0026673822,"boletin",NA
 "Fondo de Inversión Falcom Portfolio Advisors Private Debt III","E","9805","FINRE",2025-01-22,2025-01-28,"US$","Reparto",0.002706,NA,NA,NA,NA,0.0027061762,"boletin",NA
 "Fondo de Inversión Falcom Portfolio Advisors Private Debt III","A","9805","FINRE",2025-01-28,2025-02-03,"US$","Reparto",0.059816,NA,NA,NA,NA,0.0598159967,"boletin",NA
@@ -4257,9 +4291,15 @@
 "Fondo de Inversión Falcom Portfolio Advisors Private Debt III","E","9805","FINRE",2026-01-16,2026-01-22,"US$","Reparto",0.001552,NA,NA,NA,NA,0.0015522865,"boletin",NA
 "Fondo de Inversión Falcom Portfolio Advisors Private Debt III","A","9805","FINRE",2026-04-10,2026-04-16,"US$","Reparto",0.008483,NA,NA,NA,NA,0.0084827091,"boletin",NA
 "Fondo de Inversión Falcom Portfolio Advisors Private Debt III","E","9805","FINRE",2026-04-10,2026-04-16,"US$","Reparto",0.008624,NA,NA,NA,NA,0.0086242162,"boletin",NA
+"Fondo de Inversión Falcom Short Duration Chile","F","10751","FIRES",2026-06-19,2026-06-25,"$","Dividendo",6.937366,NA,NA,NA,NA,6.9373661268,"boletin",NA
+"Fondo de Inversión Falcom Short Duration Chile","G","10751","FIRES",2026-06-19,2026-06-25,"$","Dividendo",6.694154,NA,NA,NA,NA,6.6941544383,"boletin",NA
+"Fondo de Inversión Falcom Short Duration Chile","M","10751","FIRES",2026-06-19,2026-06-25,"$","Dividendo",6.846788,NA,NA,NA,NA,6.8467882417,"boletin",NA
+"Fondo de Inversión Falcom Short Duration Chile","W","10751","FIRES",2026-06-19,2026-06-25,"$","Dividendo",6.851362,NA,NA,NA,NA,6.8513615654,"boletin",NA
 "Fondo de Inversión Falcom Small Cap Chile","A",NA,NA,2025-06-04,2025-06-10,"$","Dividendo",0.232598,NA,NA,NA,NA,0.232597505,"boletin",NA
 "Fondo de Inversión Falcom Small Cap Chile","F",NA,NA,2025-06-04,2025-06-10,"$","Dividendo",0.228864,NA,NA,NA,NA,0.2288638453,"boletin",NA
-"Fondo de Inversión Fynsa Deuda Privada","A","9759","FINRE",2026-06-18,2026-06-24,"$","Dividendo",270.348944,NA,NA,NA,NA,270.348944,"boletin",NA
+"Fondo de Inversión Falcom Small Cap Chile","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",18.668826,NA,NA,NA,NA,18.6688259659,"boletin",NA
+"Fondo de Inversión Falcom Small Cap Chile","F",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",19.95448,NA,NA,NA,NA,19.9544796701,"boletin",NA
+"Fondo de Inversión Fynsa Deuda Privada","A","9759","FINRE",2026-06-18,2026-06-24,"$","Dividendo",269.462218,NA,NA,NA,NA,269.462218,"boletin",NA
 "Fondo de Inversión Fynsa Deuda Privada","D","9759","FINRE",2026-06-18,2026-06-24,"$","Dividendo",228.352954,NA,NA,NA,NA,228.352954,"boletin",NA
 "Fondo de Inversión HMC Ares Special Situations IV - Global Distressed Debt","C",NA,NA,2025-02-25,2025-03-03,"US$","Dividendo",0.080136,NA,NA,NA,NA,0.0801360414,"boletin",NA
 "Fondo de Inversión HMC Ares Special Situations IV - Global Distressed Debt","I",NA,NA,2025-02-25,2025-03-03,"US$","Dividendo",0.009897,NA,NA,NA,NA,0.0098972207,"boletin",NA
@@ -5370,6 +5410,7 @@
 "Fondo de Inversión SURA Renta Inmobiliaria II","I",NA,NA,2026-02-06,2026-02-12,"$","Dividendo",140.54599,NA,NA,NA,NA,140.54599,"boletin",NA
 "Fondo de Inversión SURA Renta Inmobiliaria II","A",NA,NA,2026-05-13,2026-05-19,"$","Dividendo",140.89617,NA,NA,NA,NA,140.89617,"boletin",NA
 "Fondo de Inversión SURA Renta Inmobiliaria II","I",NA,NA,2026-05-13,2026-05-19,"$","Dividendo",140.579546,NA,NA,NA,NA,140.579546,"boletin",NA
+"Fondo de Inversión SURA Renta Inmobiliaria III","B",NA,NA,2026-06-23,2026-06-30,"US$","Reparto",40610.69,NA,NA,NA,NA,40610.69,"boletin",NA
 "Fondo de Inversión SaaS HR","A",NA,NA,2025-06-27,2025-07-03,"$","Dividendo",23408605.668182,NA,NA,NA,NA,23408605.668182,"boletin",NA
 "Fondo de Inversión SaaS HR","B",NA,NA,2025-06-27,2025-07-03,"$","Dividendo",2536873.577639,NA,NA,NA,NA,2536873.5776392,"boletin",NA
 "Fondo de Inversión SaaS HR","C",NA,NA,2025-06-27,2025-07-03,"$","Dividendo",2970555.346774,NA,NA,NA,NA,2970555.3467742,"boletin",NA
@@ -5984,6 +6025,9 @@
 "Fondo de Inversión Security Stepstone Real Estate Partners IV","A","9896","FINRE",2025-12-30,2026-01-06,"US$","Reparto",0.089541,NA,NA,NA,NA,0.089540671,"boletin",NA
 "Fondo de Inversión Security Stepstone Real Estate Partners IV","D","9896","FINRE",2025-12-30,2026-01-06,"US$","Reparto",0.09742,NA,NA,NA,NA,0.097420382,"boletin",NA
 "Fondo de Inversión Security Stepstone Real Estate Partners IV","S","9896","FINRE",2025-12-30,2026-01-06,"US$","Reparto",0.097621,NA,NA,NA,NA,0.097620521,"boletin",NA
+"Fondo de Inversión Security Stepstone Real Estate Partners IV","A","9896","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.040052,NA,NA,NA,NA,0.040051721,"boletin",NA
+"Fondo de Inversión Security Stepstone Real Estate Partners IV","D","9896","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.044112,NA,NA,NA,NA,0.044111843,"boletin",NA
+"Fondo de Inversión Security Stepstone Real Estate Partners IV","S","9896","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.044213,NA,NA,NA,NA,0.044212948,"boletin",NA
 "Fondo de Inversión Singular Brookfield BSREP IV","I","10144","FINRE",2025-12-23,2025-12-30,"US$","Dividendo",1.472389,NA,NA,NA,NA,1.4723888,"boletin",NA
 "Fondo de Inversión Singular Leaseback I","A",NA,NA,2025-01-21,2025-01-27,"$","Reparto",710.77426,NA,NA,NA,NA,710.7742598,"boletin",NA
 "Fondo de Inversión Singular Leaseback I","I",NA,NA,2025-01-21,2025-01-27,"$","Reparto",726.760276,NA,NA,NA,NA,726.7602758,"boletin",NA
@@ -6195,6 +6239,10 @@
 "Fondo de Inversión Tronador Deuda Privada","B",NA,NA,2026-05-26,2026-06-01,"$","Dividendo",0.0071,NA,NA,NA,NA,0.0071,"boletin",NA
 "Fondo de Inversión Vantrust Acciones Nacionales","A",NA,NA,2025-06-19,2025-06-26,"$","Dividendo",9.90762,NA,NA,NA,NA,9.90762,"boletin",NA
 "Fondo de Inversión Vantrust Acciones Nacionales","I",NA,NA,2025-06-19,2025-06-26,"$","Dividendo",9.90762,NA,NA,NA,NA,9.90762,"boletin",NA
+"Fondo de Inversión Vantrust Capital Acciones Dividend Stars","A",NA,NA,2026-06-23,2026-06-30,"$","Dividendo",33.102186,NA,NA,NA,NA,33.102186,"boletin",NA
+"Fondo de Inversión Vantrust Capital Acciones Dividend Stars","I",NA,NA,2026-06-23,2026-06-30,"$","Dividendo",33.102186,NA,NA,NA,NA,33.102186,"boletin",NA
+"Fondo de Inversión Vantrust Capital Acciones Nacionales","A","9773","FIRES",2026-06-23,2026-06-30,"$","Dividendo",51.347594,NA,NA,NA,NA,51.347594,"boletin",NA
+"Fondo de Inversión Vantrust Capital Acciones Nacionales","I","9773","FIRES",2026-06-23,2026-06-30,"$","Dividendo",51.347594,NA,NA,NA,NA,51.347594,"boletin",NA
 "Fondo de Inversión WEG-2","I",NA,NA,2025-05-29,2025-06-04,"$","Dividendo",37.204773,NA,NA,NA,NA,37.20477304,"boletin",NA
 "Fondo de Inversión WEG-2","I",NA,NA,2025-09-09,2025-09-15,"$","Dividendo",31.96332,NA,NA,NA,NA,31.9633203,"boletin",NA
 "Fondo de inversión Activa Movilidad II","R","10630","FINRE",2025-02-12,2025-02-18,"$","Reparto",13.336419,NA,NA,NA,NA,13.33641888,"boletin",NA
@@ -6346,6 +6394,9 @@
 "MBI Arbitrage Fondo de Inversión","APV","7089","FIRES",2026-06-12,2026-06-18,"$","Dividendo",2933.623532,NA,NA,NA,NA,2933.62353243417,"boletin",NA
 "MBI Arbitrage Fondo de Inversión","I","7089","FIRES",2026-06-12,2026-06-18,"$","Dividendo",2246.086842,NA,NA,NA,NA,2246.0868418922,"boletin",NA
 "MBI Arbitrage Fondo de Inversión","U","7089","FIRES",2026-06-12,2026-06-18,"$","Dividendo",3487.713029,NA,NA,NA,NA,3487.71302878086,"boletin",NA
+"MBI Best Ideas Latam Fondo de Inversión","A","7278","FIRES",2026-06-19,2026-06-25,"US$","Dividendo",58.325056,NA,NA,NA,NA,58.3250557,"boletin",NA
+"MBI Best Ideas Latam Fondo de Inversión","APV","7278","FIRES",2026-06-19,2026-06-25,"US$","Dividendo",59.490139,NA,NA,NA,NA,59.4901388,"boletin",NA
+"MBI Best Ideas Latam Fondo de Inversión","I","7278","FIRES",2026-06-19,2026-06-25,"US$","Dividendo",48.002122,NA,NA,NA,NA,48.0021225,"boletin",NA
 "MBI Convicción Chile Fondo de Inversión","A","10381","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1348.352284,NA,NA,NA,NA,1348.3522845,"boletin",NA
 "MBI Convicción Chile Fondo de Inversión","AA","10381","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1084.318581,NA,NA,NA,NA,1084.3185807,"boletin",NA
 "MBI Convicción Chile Fondo de Inversión","AB","10381","FIRES",2025-06-18,2025-06-25,"$","Dividendo",970.232051,NA,NA,NA,NA,970.2320512,"boletin",NA
@@ -6362,10 +6413,19 @@
 "MBI Deuda Alternativa Fondo de Inversión","APV","9203","FIRES",2025-06-18,2025-06-25,"$","Dividendo",210.810589,NA,NA,NA,NA,210.8105892,"boletin",NA
 "MBI Deuda Alternativa Fondo de Inversión","B","9203","FIRES",2025-06-18,2025-06-25,"$","Dividendo",332.43765,NA,NA,NA,NA,332.4376496,"boletin",NA
 "MBI Deuda Alternativa Fondo de Inversión","D","9203","FIRES",2025-06-18,2025-06-25,"$","Dividendo",221.89087,NA,NA,NA,NA,221.8908697,"boletin",NA
+"MBI Deuda Alternativa Fondo de Inversión","A","9203","FIRES",2026-06-19,2026-06-25,"$","Dividendo",783.850754,NA,NA,NA,NA,783.850754240433,"boletin",NA
+"MBI Deuda Alternativa Fondo de Inversión","APV","9203","FIRES",2026-06-19,2026-06-25,"$","Dividendo",503.859393,NA,NA,NA,NA,503.859393050741,"boletin",NA
+"MBI Deuda Alternativa Fondo de Inversión","B","9203","FIRES",2026-06-19,2026-06-25,"$","Dividendo",795.020774,NA,NA,NA,NA,795.020773595879,"boletin",NA
+"MBI Deuda Alternativa Fondo de Inversión","C","9203","FIRES",2026-06-19,2026-06-25,"$","Dividendo",708.310538,NA,NA,NA,NA,708.310538330756,"boletin",NA
+"MBI Deuda Alternativa Fondo de Inversión","D","9203","FIRES",2026-06-19,2026-06-25,"$","Dividendo",527.859582,NA,NA,NA,NA,527.859582271809,"boletin",NA
 "MBI Deuda Corporativa Fondo de Inversión","A","10162","FIRES",2025-06-18,2025-06-25,"$","Dividendo",347.997342,NA,NA,NA,NA,347.997342,"boletin",NA
 "MBI Deuda Corporativa Fondo de Inversión","APV","10162","FIRES",2025-06-18,2025-06-25,"$","Dividendo",296.525486,NA,NA,NA,NA,296.5254856,"boletin",NA
 "MBI Deuda Corporativa Fondo de Inversión","B","10162","FIRES",2025-06-18,2025-06-25,"$","Dividendo",306.553544,NA,NA,NA,NA,306.5535442,"boletin",NA
 "MBI Deuda Corporativa Fondo de Inversión","C","10162","FIRES",2025-06-18,2025-06-25,"$","Dividendo",363.398892,NA,NA,NA,NA,363.398892,"boletin",NA
+"MBI Deuda Corporativa Fondo de Inversión","A","10162","FIRES",2026-06-19,2026-06-25,"$","Dividendo",257.266599,NA,NA,NA,NA,257.26659872936,"boletin",NA
+"MBI Deuda Corporativa Fondo de Inversión","APV","10162","FIRES",2026-06-19,2026-06-25,"$","Dividendo",219.543698,NA,NA,NA,NA,219.543697813121,"boletin",NA
+"MBI Deuda Corporativa Fondo de Inversión","B","10162","FIRES",2026-06-19,2026-06-25,"$","Dividendo",227.695818,NA,NA,NA,NA,227.695818235237,"boletin",NA
+"MBI Deuda Corporativa Fondo de Inversión","C","10162","FIRES",2026-06-19,2026-06-25,"$","Dividendo",271.217011,NA,NA,NA,NA,271.217011234084,"boletin",NA
 "MBI Deuda Latam Fondo de Inversión","APV",NA,NA,2025-06-18,2025-06-25,"$","Dividendo",99.555314,NA,NA,NA,NA,99.5553142,"boletin",NA
 "MBI Deuda Latam Fondo de Inversión","B",NA,NA,2025-06-18,2025-06-25,"$","Dividendo",106.062678,NA,NA,NA,NA,106.0626775,"boletin",NA
 "MBI Deuda Latam Fondo de Inversión","C",NA,NA,2025-06-18,2025-06-25,"$","Dividendo",110.835664,NA,NA,NA,NA,110.8356641,"boletin",NA
@@ -6374,8 +6434,14 @@
 "MBI Deuda Plus Fondo de Inversión","APV","9077","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1311.064946,NA,NA,NA,NA,1311.064946397,"boletin",NA
 "MBI Deuda Plus Fondo de Inversión","C","9077","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1360.947299,NA,NA,NA,NA,1360.9472992793,"boletin",NA
 "MBI Deuda Plus Fondo de Inversión","D","9077","FIRES",2025-06-18,2025-06-25,"$","Dividendo",1073.234478,NA,NA,NA,NA,1073.2344775559,"boletin",NA
+"MBI Deuda Plus Fondo de Inversión","A","9077","FIRES",2026-06-19,2026-06-25,"$","Dividendo",1240.77549,NA,NA,NA,NA,1240.77548982534,"boletin",NA
+"MBI Deuda Plus Fondo de Inversión","APV","9077","FIRES",2026-06-19,2026-06-25,"$","Dividendo",1261.118818,NA,NA,NA,NA,1261.11881758481,"boletin",NA
+"MBI Deuda Plus Fondo de Inversión","C","9077","FIRES",2026-06-19,2026-06-25,"$","Dividendo",1336.329899,NA,NA,NA,NA,1336.32989869941,"boletin",NA
+"MBI Deuda Plus Fondo de Inversión","D","9077","FIRES",2026-06-19,2026-06-25,"$","Dividendo",1038.920413,NA,NA,NA,NA,1038.92041314794,"boletin",NA
 "MBI Deuda Privada Fondo de Inversión","A",NA,NA,2025-01-28,2025-02-03,"$","Reparto",2250.490674,NA,NA,NA,NA,2250.4906736,"boletin",NA
 "MBI Deuda Privada Fondo de Inversión","C",NA,NA,2025-01-28,2025-02-03,"$","Reparto",2019.401489,NA,NA,NA,NA,2019.4014892,"boletin",NA
+"MBI Deuda Privada Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",807.146521,NA,NA,NA,NA,807.1465214,"boletin",NA
+"MBI Deuda Privada Fondo de Inversión","C",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",716.847329,NA,NA,NA,NA,716.8473286,"boletin",NA
 "MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-01-22,2025-01-28,"$","Reparto",2046.418488,NA,NA,NA,NA,2046.4184883,"boletin",NA
 "MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-01-22,2025-01-28,"$","Reparto",2064.530156,NA,NA,NA,NA,2064.530156,"boletin",NA
 "MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-03-04,2025-03-10,"$","Dividendo",1106.319016,NA,NA,NA,NA,1106.3190163,"boletin",NA
@@ -6422,6 +6488,12 @@
 "MBI Deuda Total Fondo de Inversión","APV","9202","FIRES",2025-06-18,2025-06-25,"$","Dividendo",11.550481,NA,NA,NA,NA,11.5504806,"boletin",NA
 "MBI Deuda Total Fondo de Inversión","B","9202","FIRES",2025-06-18,2025-06-25,"$","Dividendo",11.815385,NA,NA,NA,NA,11.8153852,"boletin",NA
 "MBI Deuda Total Fondo de Inversión","I","9202","FIRES",2025-06-18,2025-06-25,"$","Dividendo",11.694396,NA,NA,NA,NA,11.694396,"boletin",NA
+"MBI Deuda Total Fondo de Inversión","A","9202","FIRES",2026-06-19,2026-06-25,"$","Dividendo",5.728999,NA,NA,NA,NA,5.72899939186152,"boletin",NA
+"MBI Deuda Total Fondo de Inversión","APV","9202","FIRES",2026-06-19,2026-06-25,"$","Dividendo",5.882004,NA,NA,NA,NA,5.88200387994979,"boletin",NA
+"MBI Deuda Total Fondo de Inversión","B","9202","FIRES",2026-06-19,2026-06-25,"$","Dividendo",6.007885,NA,NA,NA,NA,6.007885460745,"boletin",NA
+"MBI Deuda Total Fondo de Inversión","C","9202","FIRES",2026-06-19,2026-06-25,"$","Dividendo",5.150683,NA,NA,NA,NA,5.15068280363468,"boletin",NA
+"MBI Deuda Total Fondo de Inversión","D","9202","FIRES",2026-06-19,2026-06-25,"$","Dividendo",3.560203,NA,NA,NA,NA,3.56020323517213,"boletin",NA
+"MBI Deuda Total Fondo de Inversión","I","9202","FIRES",2026-06-19,2026-06-25,"$","Dividendo",5.974379,NA,NA,NA,NA,5.97437910060996,"boletin",NA
 "MBI Global Fixed Income Fondo de Inversión","A","9950","FIRES",2025-06-18,2025-06-25,"US$","Dividendo",0.365407,NA,NA,NA,NA,0.3654067,"boletin",NA
 "MBI Global Fixed Income Fondo de Inversión","APV","9950","FIRES",2025-06-18,2025-06-25,"US$","Dividendo",0.372164,NA,NA,NA,NA,0.372164,"boletin",NA
 "MBI Global Fixed Income Fondo de Inversión","I","9950","FIRES",2025-06-18,2025-06-25,"US$","Dividendo",0.393321,NA,NA,NA,NA,0.3933206,"boletin",NA
@@ -6536,6 +6608,9 @@
 "MBI/CHL Deuda Estructurada Fondo de Inversión","A",NA,NA,2025-08-05,2025-08-11,"US$","Dividendo",0.433651,NA,NA,NA,NA,0.4336513,"boletin",NA
 "MBI/CHL Deuda Estructurada Fondo de Inversión","B",NA,NA,2025-08-05,2025-08-11,"US$","Dividendo",0.445715,NA,NA,NA,NA,0.4457145,"boletin",NA
 "MBI/CHL Deuda Estructurada Fondo de Inversión","I",NA,NA,2025-08-05,2025-08-11,"US$","Dividendo",0.451399,NA,NA,NA,NA,0.4513993,"boletin",NA
+"MBI/CHL Deuda Estructurada Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.02019,NA,NA,NA,NA,0.0201896,"boletin",NA
+"MBI/CHL Deuda Estructurada Fondo de Inversión","B",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.020869,NA,NA,NA,NA,0.0208687,"boletin",NA
+"MBI/CHL Deuda Estructurada Fondo de Inversión","I",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.02119,NA,NA,NA,NA,0.02119,"boletin",NA
 "Moneda All Caps LatAm Fondo de Inversión","A","7135","FIRES",2026-06-05,2026-06-11,"US$","Dividendo",0.173388,NA,NA,NA,NA,0.173388,"boletin",NA
 "Moneda All Caps LatAm Fondo de Inversión","AE","7135","FIRES",2026-06-05,2026-06-11,"US$","Dividendo",0.174328,NA,NA,NA,NA,0.174328,"boletin",NA
 "Moneda All Caps LatAm Fondo de Inversión","R","7135","FIRES",2026-06-05,2026-06-11,"US$","Dividendo",0.17244,NA,NA,NA,NA,0.17244,"boletin",NA
@@ -6722,6 +6797,15 @@
 "Moneda CARS Fondo de Inversión","I","9617","FINRE",2026-05-23,2026-05-29,"US$","Dividendo",0.676947,NA,NA,NA,NA,0.676947,"boletin",NA
 "Moneda CARS Fondo de Inversión","P","9617","FINRE",2026-05-23,2026-05-29,"US$","Dividendo",0.666205,NA,NA,NA,NA,0.666205,"boletin",NA
 "Moneda CARS Fondo de Inversión","Q","9617","FINRE",2026-05-23,2026-05-29,"US$","Dividendo",0.674108,NA,NA,NA,NA,0.674108,"boletin",NA
+"Moneda CARS Fondo de Inversión","A","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.577427,NA,NA,NA,NA,0.577427,"boletin",NA
+"Moneda CARS Fondo de Inversión","B","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.571474,NA,NA,NA,NA,0.571474,"boletin",NA
+"Moneda CARS Fondo de Inversión","D","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.575079,NA,NA,NA,NA,0.575079,"boletin",NA
+"Moneda CARS Fondo de Inversión","E","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.576571,NA,NA,NA,NA,0.576571,"boletin",NA
+"Moneda CARS Fondo de Inversión","F","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.57741,NA,NA,NA,NA,0.57741,"boletin",NA
+"Moneda CARS Fondo de Inversión","G","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.56232,NA,NA,NA,NA,0.56232,"boletin",NA
+"Moneda CARS Fondo de Inversión","I","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.580112,NA,NA,NA,NA,0.580112,"boletin",NA
+"Moneda CARS Fondo de Inversión","P","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.570921,NA,NA,NA,NA,0.570921,"boletin",NA
+"Moneda CARS Fondo de Inversión","Q","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.577678,NA,NA,NA,NA,0.577678,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","A","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.205522,NA,NA,NA,NA,2.205522,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","C","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.261165,NA,NA,NA,NA,2.261165,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","I","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.23516,NA,NA,NA,NA,2.23516,"boletin",NA
@@ -6774,10 +6858,10 @@
 "Moneda Deuda Latinoamericana","AE",NA,NA,2025-06-12,2025-06-18,"US$","Dividendo",10.898974,NA,NA,NA,NA,10.898974,"boletin",NA
 "Moneda Deuda Latinoamericana","R",NA,NA,2025-06-12,2025-06-18,"US$","Dividendo",10.838531,NA,NA,NA,NA,10.838531,"boletin",NA
 "Moneda Deuda Latinoamericana","RE",NA,NA,2025-06-12,2025-06-18,"US$","Dividendo",10.838949,NA,NA,NA,NA,10.838949,"boletin",NA
-"Moneda Deuda Latinoamericana","A",NA,NA,2026-06-18,2026-06-24,"US$","Dividendo",1.697223,NA,NA,NA,NA,1.697223,"boletin",NA
-"Moneda Deuda Latinoamericana","AE",NA,NA,2026-06-18,2026-06-24,"US$","Dividendo",1.70646,NA,NA,NA,NA,1.70646,"boletin",NA
-"Moneda Deuda Latinoamericana","R",NA,NA,2026-06-18,2026-06-24,"US$","Dividendo",1.685701,NA,NA,NA,NA,1.685701,"boletin",NA
-"Moneda Deuda Latinoamericana","G",NA,NA,2026-06-18,2026-06-24,"US$","Dividendo",1.687891,NA,NA,NA,NA,1.687891,"boletin",NA
+"Moneda Deuda Latinoamericana","A",NA,NA,2026-06-17,2026-06-23,"US$","Dividendo",1.697223,NA,NA,NA,NA,1.697223,"boletin",NA
+"Moneda Deuda Latinoamericana","AE",NA,NA,2026-06-17,2026-06-23,"US$","Dividendo",1.70646,NA,NA,NA,NA,1.70646,"boletin",NA
+"Moneda Deuda Latinoamericana","R",NA,NA,2026-06-17,2026-06-23,"US$","Dividendo",1.685701,NA,NA,NA,NA,1.685701,"boletin",NA
+"Moneda Deuda Latinoamericana","G",NA,NA,2026-06-17,2026-06-23,"US$","Dividendo",1.687891,NA,NA,NA,NA,1.687891,"boletin",NA
 "Moneda GSI Rentas Comerciales III Fondo de Inversión","A",NA,NA,2026-03-25,2026-03-31,"$","Dividendo",908.547636,NA,NA,NA,NA,908.547636,"boletin",NA
 "Moneda GSI Rentas Comerciales III Fondo de Inversión","B",NA,NA,2026-03-25,2026-03-31,"$","Dividendo",921.063167,NA,NA,NA,NA,921.063167,"boletin",NA
 "Moneda GSI Rentas Comerciales III Fondo de Inversión","I",NA,NA,2026-03-25,2026-03-31,"$","Dividendo",933.709689,NA,NA,NA,NA,933.709689,"boletin",NA
@@ -7187,6 +7271,10 @@
 "Toesca Deuda Privada Fondo de Inversión","F","9619","FINRE",2026-05-23,2026-05-29,"$","Dividendo",0.625,NA,NA,NA,NA,0.625,"boletin",NA
 "Toesca Deuda Privada Fondo de Inversión","F1","9619","FINRE",2026-05-23,2026-05-29,"$","Dividendo",0.625,NA,NA,NA,NA,0.625,"boletin",NA
 "Toesca Deuda Privada Fondo de Inversión","I","9619","FINRE",2026-05-23,2026-05-29,"$","Dividendo",0.6931,NA,NA,NA,NA,0.6931,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","A","9619","FINRE",2026-06-23,2026-06-30,"$","Dividendo",0.72,NA,NA,NA,NA,0.72,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","F","9619","FINRE",2026-06-23,2026-06-30,"$","Dividendo",0.625,NA,NA,NA,NA,0.625,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","F1","9619","FINRE",2026-06-23,2026-06-30,"$","Dividendo",0.625,NA,NA,NA,NA,0.625,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","I","9619","FINRE",2026-06-23,2026-06-30,"$","Dividendo",0.7648,NA,NA,NA,NA,0.7648,"boletin",NA
 "Toesca Infraestructura Fondo de Inversión","A",NA,NA,2025-09-30,2025-10-06,"$","Dividendo",1598,NA,NA,NA,NA,1598,"boletin",NA
 "Toesca Infraestructura Fondo de Inversión","B",NA,NA,2025-09-30,2025-10-06,"$","Dividendo",1598,NA,NA,NA,NA,1598,"boletin",NA
 "Toesca Infraestructura Fondo de Inversión","I",NA,NA,2025-09-30,2025-10-06,"$","Dividendo",1598,NA,NA,NA,NA,1598,"boletin",NA
