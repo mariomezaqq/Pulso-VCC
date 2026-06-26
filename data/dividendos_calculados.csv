@@ -3754,6 +3754,10 @@
 "Fondo de Inversión Bci Invinsa Rentas Inmobiliarias","A",NA,NA,2026-04-24,2026-04-30,"$","Dividendo",424.430963,NA,NA,NA,NA,424.4309634127,"boletin",NA
 "Fondo de Inversión Bci Invinsa Rentas Inmobiliarias","B",NA,NA,2026-04-24,2026-04-30,"$","Dividendo",412.796601,NA,NA,NA,NA,412.7966010004,"boletin",NA
 "Fondo de Inversión Bci Invinsa Rentas Inmobiliarias","ADC",NA,NA,2026-04-24,2026-04-30,"$","Dividendo",420.782788,NA,NA,NA,NA,420.7827879281,"boletin",NA
+"Fondo de Inversión Bci Invinsa Rentas Inmobiliarias","I",NA,NA,2026-06-23,2026-06-30,"$","Dividendo",432.100143,NA,NA,NA,NA,432.1001431626,"boletin",NA
+"Fondo de Inversión Bci Invinsa Rentas Inmobiliarias","A",NA,NA,2026-06-23,2026-06-30,"$","Dividendo",428.663198,NA,NA,NA,NA,428.6631976108,"boletin",NA
+"Fondo de Inversión Bci Invinsa Rentas Inmobiliarias","B",NA,NA,2026-06-23,2026-06-30,"$","Dividendo",416.470317,NA,NA,NA,NA,416.4703170125,"boletin",NA
+"Fondo de Inversión Bci Invinsa Rentas Inmobiliarias","ADC",NA,NA,2026-06-23,2026-06-30,"$","Dividendo",424.84123,NA,NA,NA,NA,424.8412302577,"boletin",NA
 "Fondo de Inversión Bci LH y MHE III","A","10675","FINRE",2025-12-17,2025-12-23,"$","Dividendo",374.59709,NA,NA,NA,NA,374.5970901561,"boletin",NA
 "Fondo de Inversión Bci LH y MHE III","ADC","10675","FINRE",2025-12-17,2025-12-23,"$","Dividendo",375.393536,NA,NA,NA,NA,375.3935359512,"boletin",NA
 "Fondo de Inversión Bci LH y MHE III","B","10675","FINRE",2025-12-17,2025-12-23,"$","Dividendo",377.859925,NA,NA,NA,NA,377.8599250261,"boletin",NA
@@ -5784,6 +5788,10 @@
 "Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","S",NA,NA,2026-03-19,2026-03-25,"$","Reparto",2139.161935,NA,NA,NA,NA,2139.161934574,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","GP",NA,NA,2026-03-19,2026-03-25,"$","Reparto",1950.352478,NA,NA,NA,NA,1950.352478418,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","FO",NA,NA,2026-03-19,2026-03-25,"$","Reparto",2058.261376,NA,NA,NA,NA,2058.26137605,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","A",NA,NA,2026-06-25,2026-07-02,"$","Dividendo",59.696099,NA,NA,NA,NA,59.696099203,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","S",NA,NA,2026-06-25,2026-07-02,"$","Dividendo",67.744742,NA,NA,NA,NA,67.744741611,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","GP",NA,NA,2026-06-25,2026-07-02,"$","Dividendo",61.225973,NA,NA,NA,NA,61.225972918,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","FO",NA,NA,2026-06-25,2026-07-02,"$","Dividendo",64.945366,NA,NA,NA,NA,64.945365792,"boletin",NA
 "Fondo de Inversión Security Deuda Privada ULH","A",NA,NA,2025-01-15,2025-01-21,"$","Dividendo",4.313848,NA,NA,NA,NA,4.313848278,"boletin",NA
 "Fondo de Inversión Security Deuda Privada ULH","A",NA,NA,2025-01-15,2025-01-21,"$","Reparto",4.333877,NA,NA,NA,NA,4.333877448,"boletin",NA
 "Fondo de Inversión Security Deuda Privada ULH","A",NA,NA,2025-02-20,2025-02-26,"$","Dividendo",4.541389,NA,NA,NA,NA,4.541389399,"boletin",NA
@@ -6018,6 +6026,12 @@
 "Fondo de Inversión Security Pantheon PGCO IV","A","9724","FINRE",2026-02-27,2026-03-05,"US$","Reparto",0.012178,NA,NA,NA,NA,0.012178178,"boletin",NA
 "Fondo de Inversión Security Pantheon PGCO IV","C","9724","FINRE",2026-02-27,2026-03-05,"US$","Reparto",0.013926,NA,NA,NA,NA,0.013926084,"boletin",NA
 "Fondo de Inversión Security Pantheon PGCO IV","D","9724","FINRE",2026-02-27,2026-03-05,"US$","Reparto",0.014046,NA,NA,NA,NA,0.01404636,"boletin",NA
+"Fondo de Inversión Security Pantheon PGCO IV","A","9724","FINRE",2026-06-25,2026-07-02,"US$","Dividendo",0.041027,NA,NA,NA,NA,0.041026849,"boletin",NA
+"Fondo de Inversión Security Pantheon PGCO IV","C","9724","FINRE",2026-06-25,2026-07-02,"US$","Dividendo",0.047154,NA,NA,NA,NA,0.047153574,"boletin",NA
+"Fondo de Inversión Security Pantheon PGCO IV","D","9724","FINRE",2026-06-25,2026-07-02,"US$","Dividendo",0.047609,NA,NA,NA,NA,0.047608807,"boletin",NA
+"Fondo de Inversión Security Pantheon PGCO IV","A","9724","FINRE",2026-06-25,2026-07-02,"US$","Reparto",0.02492,NA,NA,NA,NA,0.024920426,"boletin",NA
+"Fondo de Inversión Security Pantheon PGCO IV","C","9724","FINRE",2026-06-25,2026-07-02,"US$","Reparto",0.028642,NA,NA,NA,NA,0.028641907,"boletin",NA
+"Fondo de Inversión Security Pantheon PGCO IV","D","9724","FINRE",2026-06-25,2026-07-02,"US$","Reparto",0.028918,NA,NA,NA,NA,0.028918421,"boletin",NA
 "Fondo de Inversión Security Pantheon Secondary Opportunity","A","10108","FINRE",2026-01-06,2026-01-12,"US$","Dividendo",0.077846,NA,NA,NA,NA,0.077846003,"boletin",NA
 "Fondo de Inversión Security Pantheon Secondary Opportunity","D","10108","FINRE",2026-01-06,2026-01-12,"US$","Dividendo",0.081826,NA,NA,NA,NA,0.081826246,"boletin",NA
 "Fondo de Inversión Security Pantheon Secondary Opportunity","S","10108","FINRE",2026-01-06,2026-01-12,"US$","Dividendo",0.081826,NA,NA,NA,NA,0.081826312,"boletin",NA
@@ -6279,6 +6293,8 @@
 "Fondo de inversión Lennox Financiamiento Estructurado","Subordinada",NA,NA,2025-12-26,2026-01-02,"US$","Dividendo",0.013558,NA,NA,NA,NA,0.01355785,"boletin",NA
 "Fondo de inversión Lennox Financiamiento Estructurado","Preferente",NA,NA,2026-03-26,2026-04-01,"US$","Dividendo",0.02063,NA,NA,NA,NA,0.02063,"boletin",NA
 "Fondo de inversión Lennox Financiamiento Estructurado","Subordinada",NA,NA,2026-03-26,2026-04-01,"US$","Dividendo",0.01323,NA,NA,NA,NA,0.01323,"boletin",NA
+"Fondo de inversión Lennox Financiamiento Estructurado","Preferente",NA,NA,2026-06-24,2026-07-01,"US$","Dividendo",0.020854,NA,NA,NA,NA,0.02085417,"boletin",NA
+"Fondo de inversión Lennox Financiamiento Estructurado","Subordinada",NA,NA,2026-06-24,2026-07-01,"US$","Dividendo",0.013373,NA,NA,NA,NA,0.01337307,"boletin",NA
 "Frontal Trust - Cordada Rendimiento con Liquidez Fondo de Inversión","P","9917","FINRE",2025-06-21,2025-06-27,"$","Dividendo",0.489685,169192032,NA,NA,NA,0.489684501,"boletin",NA
 "Frontal Trust - Cordada Rendimiento con Liquidez Fondo de Inversión","PI","9917","FINRE",2025-06-21,2025-06-27,"$","Dividendo",0.462617,70110268,NA,NA,NA,0.462616983,"boletin",NA
 "Frontal Trust - Cordada Rendimiento con Liquidez Fondo de Inversión","P","9917","FINRE",2026-05-09,2026-05-15,"$","Dividendo",6.680797,NA,NA,NA,NA,6.680797197,"boletin",NA
@@ -8006,85 +8022,146 @@
 "XLC HPS HLEND Fondo de Inversión","A","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.046312,NA,NA,NA,NA,0.0463121981,"boletin",NA
 "XLC HPS HLEND Fondo de Inversión","N","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.044966,NA,NA,NA,NA,0.0449658601,"boletin",NA
 "XLC HPS HLEND Fondo de Inversión","X","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.044372,NA,NA,NA,NA,0.0443719762,"boletin",NA
+"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,26201217,36133731,2025-04-30,0.725118,0.725117951425348,"calculado (total/cuotas dia limite)",NA
+"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,235664094,36133731,2025-04-30,6.521997,6.52199724408948,"calculado (total/cuotas dia limite)",NA
+"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-07-31,2025-08-06,"$","Reparto",NA,275723404,35949767,2025-07-31,7.669685,7.66968542523317,"calculado (total/cuotas dia limite)",NA
+"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2025-07-31,2025-08-06,"$","Reparto",NA,275723404,35949767,2025-07-31,7.669685,7.66968542523317,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2025-04-23,2025-04-29,"US$","Reparto",NA,434654.79,7626759,2025-04-23,0.056991,0.0569907632982102,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2025-04-23,2025-04-29,"US$","Reparto",NA,171337.75,7626759,2025-04-23,0.022465,0.0224653434839586,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2025-04-23,2025-04-29,"US$","Reparto",NA,219007.46,7626759,2025-04-23,0.028716,0.028715667238827,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2025-06-11,2025-06-17,"US$","Reparto",NA,104875.63,7626758,2025-06-11,0.013751,0.0137510100158934,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2025-06-11,2025-06-17,"US$","Reparto",NA,41392.11,7626758,2025-06-11,0.005427,0.00542722193124334,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2025-06-11,2025-06-17,"US$","Reparto",NA,52932.26,7626758,2025-06-11,0.00694,0.00694033530405371,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2025-07-05,2025-07-11,"US$","Reparto",NA,178954.52,7626757,2025-07-05,0.023464,0.023464038373373,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2025-07-05,2025-07-11,"US$","Reparto",NA,70666.46,7626757,2025-07-05,0.009266,0.0092655973660259,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2025-07-05,2025-07-11,"US$","Reparto",NA,90379.02,7626757,2025-07-05,0.01185,0.0118502555477663,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,26299.62,7626758,2025-09-06,0.003448,0.00344833566341523,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,10397.32,7626758,2025-09-06,0.001363,0.0013632687225116,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,13303.06,7626758,2025-09-06,0.001744,0.00174426156083444,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending V","A","10472","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,26500.34,6076161,2025-09-06,0.004361,0.00436136217070471,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión AG Direct Lending V","P3","10472","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,153499.66,6076161,2025-09-06,0.025263,0.0252626045680936,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-04-29,2025-05-06,"US$","Reparto",NA,8263894.62,40355190,2025-04-29,0.204779,0.204778980036198,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-04-29,2025-05-06,"US$","Reparto",NA,4260402.22,40355190,2025-04-29,0.105573,0.105572597579367,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-08-14,2025-08-21,"US$","Reparto",NA,222606.58,35170715,2025-08-14,0.006329,0.00632931628717377,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-08-14,2025-08-21,"US$","Reparto",NA,431771.75,35170715,2025-08-14,0.012276,0.0122764563815523,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-09-05,2025-09-11,"US$","Reparto",NA,1843020.02,34911060,2025-09-05,0.052792,0.0527918664115456,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-09-05,2025-09-11,"US$","Reparto",NA,950198.36,34911060,2025-09-05,0.027218,0.0272176885444737,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-11-25,2025-12-01,"US$","Reparto",NA,1127226,33663746,2025-11-25,0.033485,0.0334848654013192,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-11-25,2025-12-01,"US$","Reparto",NA,2186301.24,33663746,2025-11-25,0.064945,0.0649452751694313,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-01,2025-04-07,"US$","Reparto",NA,70548.92,30874027,2025-04-01,0.002285,0.00228505726183774,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-04-01,2025-04-07,"US$","Reparto",NA,573325.93,30874027,2025-04-01,0.01857,0.0185698459982999,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-29,2025-05-06,"US$","Reparto",NA,62789.54,30294374,2025-04-29,0.002073,0.00207264685633233,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-04-29,2025-05-06,"US$","Reparto",NA,510467.61,30294374,2025-04-29,0.01685,0.0168502442783619,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-05-30,2025-06-05,"US$","Reparto",NA,48357.39,29774534,2025-05-30,0.001624,0.00162411911835322,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-05-30,2025-06-05,"US$","Reparto",NA,393348.1,29774534,2025-05-30,0.013211,0.0132108901944028,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-08-19,2025-08-25,"US$","Reparto",NA,140589.38,29371788,2025-08-19,0.004787,0.00478654485898947,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-08-19,2025-08-25,"US$","Reparto",NA,1144975.43,29371788,2025-08-19,0.038982,0.0389821497053032,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-11-04,2025-11-10,"US$","Reparto",NA,51626.62,28190008,2025-11-04,0.001831,0.0018313800874601,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-11-04,2025-11-10,"US$","Reparto",NA,420957.19,28190008,2025-11-04,0.014933,0.0149328508323644,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-11-28,2025-12-04,"US$","Reparto",NA,40944.19,27775328,2025-11-28,0.001474,0.00147412085674586,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-11-28,2025-12-04,"US$","Reparto",NA,333987.08,27775328,2025-11-28,0.012025,0.0120245954434963,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-02-03,2026-02-09,"US$","Reparto",NA,42687.92,27445083,2026-02-03,0.001555,0.00155539409242792,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-02-03,2026-02-09,"US$","Reparto",NA,348543.48,27445083,2026-02-03,0.0127,0.0126996693618773,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-04-01,2026-04-09,"US$","Reparto",NA,116491.45,27109443,2026-04-01,0.004297,0.00429708018608721,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-04-01,2026-04-09,"US$","Reparto",NA,952038.34,27109443,2026-04-01,0.035118,0.0351183291753117,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-05-02,2026-05-08,"US$","Reparto",NA,132905.2,26198559,2026-05-02,0.005073,0.00507299659820653,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-05-02,2026-05-08,"US$","Reparto",NA,1086699.68,26198559,2026-05-02,0.041479,0.0414793686019217,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,48775.75,25144088,2026-06-02,0.00194,0.00193984965490816,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,399015.55,25144088,2026-06-02,0.015869,0.0158691599200523,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Direct I","I","7183","FINRE",2025-08-23,2025-08-29,"EURO","Reparto",NA,208885.71,95693,2025-08-23,2.182873,2.18287282530642,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Direct I","E","7183","FINRE",2025-08-23,2025-08-29,"EURO","Reparto",NA,107275.41,95693,2025-08-23,1.121037,1.12103684504127,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Direct II","E","7276","FINRE",2025-03-07,2025-03-13,"US$","Reparto",NA,4113710.45,352535,2025-03-07,11.668942,11.6689419936352,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Direct II","U","7276","FINRE",2025-03-07,2025-03-13,"US$","Reparto",NA,2197655.72,352535,2025-03-07,6.233865,6.23386537053442,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Direct II","E","7276","FINRE",2025-08-14,2025-08-21,"US$","Reparto",NA,1585654.43,306183,2025-08-14,5.17878,5.17878004013185,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Direct II","I","7276","FINRE",2025-08-14,2025-08-21,"US$","Reparto",NA,2967664.05,306183,2025-08-14,9.692452,9.69245193478686,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2025-03-28,2025-04-03,"US$","Reparto",NA,238421.28,277079,2025-03-28,0.860481,0.860481363331107,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2025-05-29,2025-06-04,"US$","Reparto",NA,381936.55,239390,2025-05-29,1.595457,1.59545728419245,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2025-07-01,2025-07-07,"US$","Reparto",NA,336813.68,178866,2025-07-01,1.88305,1.88304982693056,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-01-02,2025-01-08,"US$","Reparto",NA,666451.57,568753,2025-01-02,1.171777,1.17177680216648,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-02-01,2025-02-07,"US$","Reparto",NA,271298.01,555204,2025-02-01,0.488646,0.488645627576261,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-05-29,2025-06-04,"US$","Reparto",NA,233741.58,549644,2025-05-29,0.42526,0.425259952115741,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-09-30,2025-10-06,"US$","Reparto",NA,300006.1,544831,2025-09-30,0.550641,0.550640659392051,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-12-03,2025-12-10,"US$","Reparto",NA,684544.72,538681,2025-12-03,1.270779,1.27077940669031,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2025-12-03,2025-12-10,"US$","Reparto",NA,1287799.99,538681,2025-12-03,2.390654,2.39065419601511,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-01-06,2026-01-12,"US$","Reparto",NA,676609.95,524849,2026-01-06,1.289152,1.2891516304244,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2026-01-06,2026-01-12,"US$","Reparto",NA,1272835.79,524849,2026-01-06,2.425147,2.42514662094613,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,3701269.29,510768,2026-04-02,7.246478,7.24647836469649,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,1968213.74,510768,2026-04-02,3.85344,3.85343977065996,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,397267.6,468889,2026-06-02,0.847253,0.847252978592278,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,211479.72,468889,2026-06-02,0.451023,0.451022994782008,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión EUROPE MEDNEO HEALTH TECH","S","10159","FINRE",2025-07-14,2025-07-21,"EURO","Reparto",NA,149138.14,122002,2025-07-14,1.222426,1.22242573732524,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión PE Secondary Deal II","A","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,342664.18,28242557,2025-08-07,0.012133,0.0121329023180371,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión PE Secondary Deal II","P1","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,15893.78,28242557,2025-08-07,0.000563,0.00056275995992453,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión PE Secondary Deal II","P2","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,274716.52,28242557,2025-08-07,0.009727,0.00972704150842697,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión PE Secondary Deal II","P3","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,271725.52,28242557,2025-08-07,0.009621,0.00962113749817049,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión PE Secondary Deal II","A","10309","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,170260.02,28242556,2025-09-06,0.006028,0.00602849187483174,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión PE Secondary Deal II","P1","10309","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,7902.85,28242556,2025-09-06,0.00028,0.000279820635596155,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión PE Secondary Deal II","P2","10309","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,136656.77,28242556,2025-09-06,0.004839,0.00483868278404848,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión PE Secondary Deal II","P3","10309","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,135180.36,28242556,2025-09-06,0.004786,0.00478640670837951,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich High Yield UF","CUI","7295","FIRES",2025-05-23,2025-05-29,"US$","Dividendo",NA,172868.22,4746053,2025-05-23,0.036424,0.0364235765667005,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich High Yield UF","R","7295","FIRES",2025-05-23,2025-05-29,"US$","Dividendo",NA,172868.22,4746053,2025-05-23,0.036424,0.0364235765667005,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich High Yield UF","R","7295","FIRES",2026-05-22,2026-05-28,"US$","Dividendo",NA,128784.12,1800447,2026-05-22,0.071529,0.0715289747451519,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Fija Chile Index Fund","A","9476","FIRES",2026-05-22,2026-05-28,"$","Dividendo",NA,106746812,8809476,2026-05-22,12.117272,12.1172718332497,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,3770866,455193,2025-02-21,8.284097,8.28409659168501,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,34854016,455193,2025-02-21,76.569689,76.5696885416069,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,16480976,455193,2025-02-21,36.206536,36.2065364054948,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-05-23,2025-05-29,"$","Dividendo",NA,22218457,455888,2025-05-23,48.736626,48.7366260332508,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2025-05-23,2025-05-29,"$","Dividendo",NA,98442023,455888,2025-05-23,215.93453,215.934529607869,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-08-22,2025-08-28,"$","Dividendo",NA,11852770,456684,2025-08-22,25.953974,25.9539744018563,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2025-08-22,2025-08-28,"$","Dividendo",NA,34096320,456684,2025-08-22,74.660608,74.6606081513015,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2025-08-22,2025-08-28,"$","Dividendo",NA,52792694,456684,2025-08-22,115.600001,115.600001407353,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-11-19,2025-11-25,"$","Dividendo",NA,3770866,456687,2025-11-19,8.257011,8.25701069293067,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2025-11-19,2025-11-25,"$","Dividendo",NA,34854016,456687,2025-11-19,76.319334,76.3193342864945,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2025-11-19,2025-11-25,"$","Dividendo",NA,16480976,456687,2025-11-19,36.088155,36.08815456766,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2026-02-20,2026-02-26,"$","Dividendo",NA,3770865,455590,2026-02-20,8.276885,8.2768850599083,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2026-02-20,2026-02-26,"$","Dividendo",NA,34854016,455590,2026-02-20,76.503053,76.5030528295775,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2026-02-20,2026-02-26,"$","Dividendo",NA,16480970,455590,2026-02-20,36.175014,36.17501405269,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2026-05-22,2026-05-28,"$","Dividendo",NA,17218458,459910,2026-05-22,37.438763,37.4387630951452,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2026-05-22,2026-05-28,"$","Dividendo",NA,34475168,459910,2026-05-22,74.960699,74.9606990020437,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2026-05-22,2026-05-28,"$","Dividendo",NA,23442024,459910,2026-05-22,50.970905,50.9709047701431,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-05-09,2025-05-15,"$","Reparto",NA,2.1e+09,902298,2025-05-09,2327.390729,2327.39072913367,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-05-09,2025-05-15,"$","Reparto",NA,2.1e+09,902298,2025-05-09,2327.390729,2327.39072913367,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-07-14,2025-07-21,"$","Reparto",NA,1.2e+09,708336,2025-07-14,1694.111269,1694.11126921986,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-07-14,2025-07-21,"$","Reparto",NA,1.2e+09,708336,2025-07-14,1694.111269,1694.11126921986,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-08-13,2025-08-20,"$","Reparto",NA,3.5e+08,599151,2025-08-13,584.15992,584.159919597802,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-08-13,2025-08-20,"$","Reparto",NA,3.5e+08,599151,2025-08-13,584.15992,584.159919597802,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-10-24,2025-10-30,"$","Reparto",NA,5.9e+08,567633,2025-10-24,1039.403981,1039.40398115509,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-10-24,2025-10-30,"$","Reparto",NA,5.9e+08,567633,2025-10-24,1039.403981,1039.40398115509,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-12-16,2025-12-22,"$","Reparto",NA,3e+08,515437,2025-12-16,582.030394,582.030393657228,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-12-16,2025-12-22,"$","Reparto",NA,3e+08,515437,2025-12-16,582.030394,582.030393657228,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2026-04-14,2026-04-20,"$","Reparto",NA,1.8e+08,461386,2026-04-14,390.128873,390.128872540518,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2026-04-14,2026-04-20,"$","Reparto",NA,1.8e+08,461386,2026-04-14,390.128873,390.128872540518,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada III Fondo de Inversión","A","10574","FINRE",2025-05-09,2025-05-15,"$","Reparto",NA,5.4e+09,1455564,2025-05-09,3709.902141,3709.90214102108,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada III Fondo de Inversión","B","10574","FINRE",2025-05-09,2025-05-15,"$","Reparto",NA,5.4e+09,1455564,2025-05-09,3709.902141,3709.90214102108,"calculado (total/cuotas dia limite)",NA
+"MBI Deuda Privada III Fondo de Inversión","I","10574","FINRE",2025-05-09,2025-05-15,"$","Reparto",NA,5.4e+09,1455564,2025-05-09,3709.902141,3709.90214102108,"calculado (total/cuotas dia limite)",NA
+"Moneda Alturas II Fondo de Inversión","A","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
+"Moneda Alturas II Fondo de Inversión","B","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
+"Moneda Alturas II Fondo de Inversión","C","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
+"PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,864272.85,131192044,2026-05-28,0.006588,0.00658784498183959,"calculado (total/cuotas dia limite)",NA
+"PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,585134.67,131192044,2026-05-28,0.00446,0.00446013836887259,"calculado (total/cuotas dia limite)",NA
+"Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,477605.84,58508791,2025-01-08,0.008163,0.0081629757601,"calculado (total/cuotas dia limite)",NA
+"Picton - Apollo VIII Fondo de Inversión","N","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,890990.97,58508791,2025-01-08,0.015228,0.0152283265434484,"calculado (total/cuotas dia limite)",NA
+"Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-12-12,2025-12-18,"US$","Reparto",NA,516145.01,55918327,2025-12-12,0.00923,0.0092303370727229,"calculado (total/cuotas dia limite)",NA
+"Picton - Apollo VIII Fondo de Inversión","N","7279","FINRE",2025-12-12,2025-12-18,"US$","Reparto",NA,962841.47,55918327,2025-12-12,0.017219,0.0172187101367037,"calculado (total/cuotas dia limite)",NA
+"Picton - HAMILTON LANE SMID II Fondo de Inversión","A","9707","FINRE",2025-10-16,2025-10-22,"US$","Reparto",NA,818977.39,65659903,2025-10-16,0.012473,0.0124730215653308,"calculado (total/cuotas dia limite)",NA
+"Picton - KKR Global Infrastructure V Fondo de Inversión","C","10726","FINRE",2026-01-09,2026-01-15,"US$","Reparto",NA,138158.17,8687556,2026-01-09,0.015903,0.0159029966194337,"calculado (total/cuotas dia limite)",NA
+"Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-01-09,2026-01-15,"US$","Reparto",NA,112630.35,8687556,2026-01-09,0.012965,0.0129645613813185,"calculado (total/cuotas dia limite)",NA
+"Picton - KKR Global Infrastructure V Fondo de Inversión","C","10726","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,131837.18,8435679,2026-04-02,0.015629,0.0156285199464759,"calculado (total/cuotas dia limite)",NA
+"Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,107587.7,8435679,2026-04-02,0.012754,0.012753887146596,"calculado (total/cuotas dia limite)",NA
+"Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,128123.28,206645683,2026-03-11,0.00062,0.000620014306971599,"calculado (total/cuotas dia limite)",NA
+"Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,332465.91,206645683,2026-03-11,0.001609,0.00160886937003433,"calculado (total/cuotas dia limite)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","A",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","H",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,26201217,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,235664094,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-07-31,2025-08-06,"$","Reparto",NA,275723404,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2025-07-31,2025-08-06,"$","Reparto",NA,275723404,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-01-31,2025-02-06,"$","Reparto",NA,106105773,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2025-01-31,2025-02-06,"$","Reparto",NA,106105773,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-04-30,2025-05-07,"$","Reparto",NA,3246944,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-07-31,2025-08-06,"$","Reparto",NA,108733590,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2025-07-31,2025-08-06,"$","Reparto",NA,108733590,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2026-01-31,2026-02-06,"$","Reparto",NA,162241028,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2025-04-23,2025-04-29,"US$","Reparto",NA,434654.79,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2025-04-23,2025-04-29,"US$","Reparto",NA,171337.75,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2025-04-23,2025-04-29,"US$","Reparto",NA,219007.46,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2025-06-11,2025-06-17,"US$","Reparto",NA,104875.63,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2025-06-11,2025-06-17,"US$","Reparto",NA,41392.11,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2025-06-11,2025-06-17,"US$","Reparto",NA,52932.26,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2025-07-05,2025-07-11,"US$","Reparto",NA,178954.52,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2025-07-05,2025-07-11,"US$","Reparto",NA,70666.46,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2025-07-05,2025-07-11,"US$","Reparto",NA,90379.02,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,26299.62,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,10397.32,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,13303.06,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending V","A","10472","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,26500.34,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión AG Direct Lending V","P3","10472","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,153499.66,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Fondo de Inversión Asset Deuda Vivo","ADV",NA,NA,2025-06-12,2025-06-18,"$","Reparto",NA,1019361859,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-04-29,2025-05-06,"US$","Reparto",NA,8263894.62,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-04-29,2025-05-06,"US$","Reparto",NA,4260402.22,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-08-14,2025-08-21,"US$","Reparto",NA,222606.58,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-08-14,2025-08-21,"US$","Reparto",NA,431771.75,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-09-05,2025-09-11,"US$","Reparto",NA,1843020.02,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-09-05,2025-09-11,"US$","Reparto",NA,950198.36,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-11-25,2025-12-01,"US$","Reparto",NA,1127226,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital - AIX Fully Funded","I","9314","FINRE",2025-11-25,2025-12-01,"US$","Reparto",NA,2186301.24,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","I",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,114903.97,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","E",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,222847.69,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Independencia Deuda US I","U",NA,NA,2025-02-08,2025-02-14,"US$","Reparto",NA,6208.78,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-01,2025-04-07,"US$","Reparto",NA,70548.92,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-04-01,2025-04-07,"US$","Reparto",NA,573325.93,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-04-29,2025-05-06,"US$","Reparto",NA,62789.54,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-04-29,2025-05-06,"US$","Reparto",NA,510467.61,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-05-30,2025-06-05,"US$","Reparto",NA,48357.39,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-05-30,2025-06-05,"US$","Reparto",NA,393348.1,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-08-19,2025-08-25,"US$","Reparto",NA,140589.38,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-08-19,2025-08-25,"US$","Reparto",NA,1144975.43,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-11-04,2025-11-10,"US$","Reparto",NA,51626.62,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-11-04,2025-11-10,"US$","Reparto",NA,420957.19,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2025-11-28,2025-12-04,"US$","Reparto",NA,40944.19,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2025-11-28,2025-12-04,"US$","Reparto",NA,333987.08,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-02-03,2026-02-09,"US$","Reparto",NA,42687.92,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-02-03,2026-02-09,"US$","Reparto",NA,348543.48,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-04-01,2026-04-09,"US$","Reparto",NA,116491.45,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-04-01,2026-04-09,"US$","Reparto",NA,952038.34,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-05-02,2026-05-08,"US$","Reparto",NA,132905.2,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-05-02,2026-05-08,"US$","Reparto",NA,1086699.68,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,48775.75,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,399015.55,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Direct I","I","7183","FINRE",2025-08-23,2025-08-29,"EURO","Reparto",NA,208885.71,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Direct I","E","7183","FINRE",2025-08-23,2025-08-29,"EURO","Reparto",NA,107275.41,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Direct II","E","7276","FINRE",2025-03-07,2025-03-13,"US$","Reparto",NA,4113710.45,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Direct II","U","7276","FINRE",2025-03-07,2025-03-13,"US$","Reparto",NA,2197655.72,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Direct II","E","7276","FINRE",2025-08-14,2025-08-21,"US$","Reparto",NA,1585654.43,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Direct II","I","7276","FINRE",2025-08-14,2025-08-21,"US$","Reparto",NA,2967664.05,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2025-03-28,2025-04-03,"US$","Reparto",NA,238421.28,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2025-05-29,2025-06-04,"US$","Reparto",NA,381936.55,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2025-07-01,2025-07-07,"US$","Reparto",NA,336813.68,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-01-02,2025-01-08,"US$","Reparto",NA,666451.57,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-02-01,2025-02-07,"US$","Reparto",NA,271298.01,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-05-29,2025-06-04,"US$","Reparto",NA,233741.58,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-09-30,2025-10-06,"US$","Reparto",NA,300006.1,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-12-03,2025-12-10,"US$","Reparto",NA,684544.72,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2025-12-03,2025-12-10,"US$","Reparto",NA,1287799.99,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-01-06,2026-01-12,"US$","Reparto",NA,676609.95,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2026-01-06,2026-01-12,"US$","Reparto",NA,1272835.79,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,3701269.29,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,1968213.74,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,397267.6,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,211479.72,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","A",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,511995657,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","B",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,651307025,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","CCAM",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,1019620,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8109,7 +8186,6 @@
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","A",NA,NA,2026-05-18,2026-05-25,"$","Reparto",NA,17573588,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","B",NA,NA,2026-05-18,2026-05-25,"$","Reparto",NA,26187589,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","CCAM",NA,NA,2026-05-18,2026-05-25,"$","Reparto",NA,41301,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión EUROPE MEDNEO HEALTH TECH","S","10159","FINRE",2025-07-14,2025-07-21,"EURO","Reparto",NA,149138.14,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Fondo de Inversión FYNSA Migrante","B",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión FYNSA Migrante","C",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión FYNSA Migrante","D",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8117,14 +8193,6 @@
 "Fondo de Inversión FYNSA Migrante","F",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión FYNSA Migrante","G",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión FYNSA Migrante","S",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión PE Secondary Deal II","A","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,342664.18,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión PE Secondary Deal II","P1","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,15893.78,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión PE Secondary Deal II","P2","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,274716.52,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión PE Secondary Deal II","P3","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,271725.52,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión PE Secondary Deal II","A","10309","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,170260.02,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión PE Secondary Deal II","P1","10309","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,7902.85,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión PE Secondary Deal II","P2","10309","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,136656.77,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión PE Secondary Deal II","P3","10309","FINRE",2025-09-06,2025-09-12,"US$","Reparto",NA,135180.36,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Fondo de Inversión Sartor Capital Efectivo en Liquidación","A",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,1.6e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Sartor Capital Efectivo en Liquidación","I",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,1.6e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Sartor Capital Efectivo en Liquidación","Q",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,1.6e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8132,28 +8200,7 @@
 "Fondo de Inversión Sartor Proyección en Liquidación","B",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Sartor Proyección en Liquidación","I",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Sartor Proyección en Liquidación","Q",NA,NA,2026-07-13,2026-07-20,"$","Dividendo",NA,2.943e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión Zurich High Yield UF","CUI","7295","FIRES",2025-05-23,2025-05-29,"US$","Dividendo",NA,172868.22,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich High Yield UF","R","7295","FIRES",2025-05-23,2025-05-29,"US$","Dividendo",NA,172868.22,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich High Yield UF","R","7295","FIRES",2026-05-22,2026-05-28,"US$","Dividendo",NA,128784.12,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Fondo de Inversión Zurich Renta Fija Chile Index","A",NA,NA,2025-05-23,2025-05-29,"$","Dividendo",NA,102521495,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión Zurich Renta Fija Chile Index Fund","A","9476","FIRES",2026-05-22,2026-05-28,"$","Dividendo",NA,106746812,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,3770866,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,34854016,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2025-02-21,2025-02-27,"$","Dividendo",NA,16480976,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-05-23,2025-05-29,"$","Dividendo",NA,22218457,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2025-05-23,2025-05-29,"$","Dividendo",NA,98442023,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-08-22,2025-08-28,"$","Dividendo",NA,11852770,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2025-08-22,2025-08-28,"$","Dividendo",NA,34096320,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2025-08-22,2025-08-28,"$","Dividendo",NA,52792694,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2025-11-19,2025-11-25,"$","Dividendo",NA,3770866,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2025-11-19,2025-11-25,"$","Dividendo",NA,34854016,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2025-11-19,2025-11-25,"$","Dividendo",NA,16480976,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2026-02-20,2026-02-26,"$","Dividendo",NA,3770865,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2026-02-20,2026-02-26,"$","Dividendo",NA,34854016,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2026-02-20,2026-02-26,"$","Dividendo",NA,16480970,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","A","9847","FINRE",2026-05-22,2026-05-28,"$","Dividendo",NA,17218458,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","P","9847","FINRE",2026-05-22,2026-05-28,"$","Dividendo",NA,34475168,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Fondo de Inversión Zurich Renta Residencial I","Z","9847","FINRE",2026-05-22,2026-05-28,"$","Dividendo",NA,23442024,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","A",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","B",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","C",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8177,21 +8224,6 @@
 "MBI Deuda Privada Fondo de Inversión","C",NA,NA,2025-12-16,2025-12-22,"$","Reparto",NA,2.3e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI Deuda Privada Fondo de Inversión","A",NA,NA,2026-04-14,2026-04-20,"$","Reparto",NA,3.6e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI Deuda Privada Fondo de Inversión","C",NA,NA,2026-04-14,2026-04-20,"$","Reparto",NA,3.6e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-05-09,2025-05-15,"$","Reparto",NA,2.1e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-05-09,2025-05-15,"$","Reparto",NA,2.1e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-07-14,2025-07-21,"$","Reparto",NA,1.2e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-07-14,2025-07-21,"$","Reparto",NA,1.2e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-08-13,2025-08-20,"$","Reparto",NA,3.5e+08,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-08-13,2025-08-20,"$","Reparto",NA,3.5e+08,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-10-24,2025-10-30,"$","Reparto",NA,5.9e+08,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-10-24,2025-10-30,"$","Reparto",NA,5.9e+08,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2025-12-16,2025-12-22,"$","Reparto",NA,3e+08,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2025-12-16,2025-12-22,"$","Reparto",NA,3e+08,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","A","10252","FINRE",2026-04-14,2026-04-20,"$","Reparto",NA,1.8e+08,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada II Fondo de Inversión","I","10252","FINRE",2026-04-14,2026-04-20,"$","Reparto",NA,1.8e+08,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada III Fondo de Inversión","A","10574","FINRE",2025-05-09,2025-05-15,"$","Reparto",NA,5.4e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada III Fondo de Inversión","B","10574","FINRE",2025-05-09,2025-05-15,"$","Reparto",NA,5.4e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"MBI Deuda Privada III Fondo de Inversión","I","10574","FINRE",2025-05-09,2025-05-15,"$","Reparto",NA,5.4e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "MBI Renta Comercial II Fondo de Inversión","A",NA,NA,2025-04-04,2025-04-10,"$","Dividendo",NA,4047070168,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI Renta Comercial II Fondo de Inversión","B",NA,NA,2025-04-04,2025-04-10,"$","Dividendo",NA,4047070168,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI Renta Comercial II Fondo de Inversión","C",NA,NA,2025-04-04,2025-04-10,"$","Dividendo",NA,4047070168,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8208,31 +8240,15 @@
 "MBI-BP Deuda Fondo de Inversión, en Liquidación.","B",NA,NA,2025-08-16,2025-08-22,"$","Reparto",NA,103850099,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda Alturas II Fondo de Inversión","A","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Moneda Alturas II Fondo de Inversión","B","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Moneda Alturas II Fondo de Inversión","C","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,864272.85,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,585134.67,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,477605.84,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - Apollo VIII Fondo de Inversión","N","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,890990.97,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-12-12,2025-12-18,"US$","Reparto",NA,516145.01,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - Apollo VIII Fondo de Inversión","N","7279","FINRE",2025-12-12,2025-12-18,"US$","Reparto",NA,962841.47,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - HAMILTON LANE SMID II Fondo de Inversión","A","9707","FINRE",2025-10-16,2025-10-22,"US$","Reparto",NA,818977.39,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - KKR Global Infrastructure V Fondo de Inversión","C","10726","FINRE",2026-01-09,2026-01-15,"US$","Reparto",NA,138158.17,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-01-09,2026-01-15,"US$","Reparto",NA,112630.35,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - KKR Global Infrastructure V Fondo de Inversión","C","10726","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,131837.18,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,107587.7,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,128123.28,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,332465.91,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"XLC Activos I Fondo de Inversión","A","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,177557068,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"XLC Activos I Fondo de Inversión","B","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,131131561,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,174659992,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"XLC Activos I Fondo de Inversión","A","10637","FINRE",2025-07-14,2025-07-21,"$","Dividendo",NA,181631630,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"XLC Activos I Fondo de Inversión","B","10637","FINRE",2025-07-14,2025-07-21,"$","Dividendo",NA,134143260,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-07-14,2025-07-21,"$","Dividendo",NA,178717875,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-12-18,2025-12-24,"$","Reparto",NA,13237031859,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"XLC Activos II Fondo de Inversión","A","10715","FINRE",2025-09-24,2025-09-30,"$","Reparto",NA,9438946437,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
+"XLC Activos I Fondo de Inversión","A","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,177557068,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"XLC Activos I Fondo de Inversión","B","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,131131561,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,174659992,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"XLC Activos I Fondo de Inversión","A","10637","FINRE",2025-07-14,2025-07-21,"$","Dividendo",NA,181631630,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"XLC Activos I Fondo de Inversión","B","10637","FINRE",2025-07-14,2025-07-21,"$","Dividendo",NA,134143260,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-07-14,2025-07-21,"$","Dividendo",NA,178717875,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-12-18,2025-12-24,"$","Reparto",NA,13237031859,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"XLC Activos II Fondo de Inversión","A","10715","FINRE",2025-09-24,2025-09-30,"$","Reparto",NA,9438946437,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Deuda Privada Fondo de Inversión","A",NA,NA,2025-12-16,2025-12-22,"$","Reparto",NA,41797257,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "XLC Deuda Privada Fondo de Inversión","I",NA,NA,2025-12-16,2025-12-22,"$","Reparto",NA,145169581,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "XLC Deuda Privada Fondo de Inversión","R",NA,NA,2025-12-16,2025-12-22,"$","Reparto",NA,2718416,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
