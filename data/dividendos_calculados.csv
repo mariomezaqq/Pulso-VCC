@@ -662,6 +662,8 @@
 "BICE StepStone IV Fondo de Inversión","I","9572","FINRE",2026-03-14,2026-03-20,"US$","Dividendo",0.003472,NA,NA,NA,NA,0.0034723031,"boletin",NA
 "BICE StepStone IV Fondo de Inversión","A","9572","FINRE",2026-03-14,2026-03-20,"US$","Reparto",0.011944,NA,NA,NA,NA,0.0119440498,"boletin",NA
 "BICE StepStone IV Fondo de Inversión","I","9572","FINRE",2026-03-14,2026-03-20,"US$","Reparto",0.013067,NA,NA,NA,NA,0.0130668248,"boletin",NA
+"BICE StepStone IV Fondo de Inversión","A","9572","FINRE",2026-07-04,2026-07-10,"US$","Reparto",0.05919,NA,NA,NA,NA,0.0591903091,"boletin",NA
+"BICE StepStone IV Fondo de Inversión","I","9572","FINRE",2026-07-04,2026-07-10,"US$","Reparto",0.064884,NA,NA,NA,NA,0.0648840912,"boletin",NA
 "BICE StepStone SCLE I Fondo de Inversión","A","9722","FINRE",2025-02-18,2025-02-24,"US$","Reparto",0.01751,NA,NA,NA,NA,0.0175104454,"boletin",NA
 "BICE StepStone SCLE I Fondo de Inversión","I","9722","FINRE",2025-02-18,2025-02-24,"US$","Reparto",0.018497,NA,NA,NA,NA,0.0184966504,"boletin",NA
 "BICE StepStone SCLE I Fondo de Inversión","X","9722","FINRE",2025-02-18,2025-02-24,"US$","Reparto",0.018689,NA,NA,NA,NA,0.0186885398,"boletin",NA
@@ -1787,6 +1789,18 @@
 "Compass LCP X Private Equity Fondo de Inversión","I","10115","FINRE",2026-05-28,2026-06-03,"US$","Reparto",0.010529,NA,NA,NA,NA,0.0105285332,"boletin",NA
 "Compass LCP X Private Equity Fondo de Inversión","IA","10115","FINRE",2026-05-28,2026-06-03,"US$","Reparto",0.010864,NA,NA,NA,NA,0.0108636931,"boletin",NA
 "Compass LCP X Private Equity Fondo de Inversión","R","10115","FINRE",2026-05-28,2026-06-03,"US$","Reparto",0.009041,NA,NA,NA,NA,0.0090414094,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","A","10115","FINRE",2026-07-03,2026-07-09,"US$","Dividendo",0.019149,NA,NA,NA,NA,0.0191486331,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","B","10115","FINRE",2026-07-03,2026-07-09,"US$","Dividendo",0.020889,NA,NA,NA,NA,0.020889429,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","C","10115","FINRE",2026-07-03,2026-07-09,"US$","Dividendo",0.020649,NA,NA,NA,NA,0.020649266,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","I","10115","FINRE",2026-07-03,2026-07-09,"US$","Dividendo",0.021114,NA,NA,NA,NA,0.021113509,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","IA","10115","FINRE",2026-07-03,2026-07-09,"US$","Dividendo",0.021789,NA,NA,NA,NA,0.0217888582,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","R","10115","FINRE",2026-07-03,2026-07-09,"US$","Dividendo",0.018105,NA,NA,NA,NA,0.0181047401,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","A","10115","FINRE",2026-07-03,2026-07-09,"US$","Reparto",0.009309,NA,NA,NA,NA,0.0093085424,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","B","10115","FINRE",2026-07-03,2026-07-09,"US$","Reparto",0.010155,NA,NA,NA,NA,0.0101547748,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","C","10115","FINRE",2026-07-03,2026-07-09,"US$","Reparto",0.010038,NA,NA,NA,NA,0.0100380207,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","I","10115","FINRE",2026-07-03,2026-07-09,"US$","Reparto",0.010264,NA,NA,NA,NA,0.010263698,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","IA","10115","FINRE",2026-07-03,2026-07-09,"US$","Reparto",0.010592,NA,NA,NA,NA,0.0105920042,"boletin",NA
+"Compass LCP X Private Equity Fondo de Inversión","R","10115","FINRE",2026-07-03,2026-07-09,"US$","Reparto",0.008801,NA,NA,NA,NA,0.00880107,"boletin",NA
 "Compass Latam Corporate Debt Fondo de Inversión","A","9102","FIRES",2025-06-03,2025-06-09,"US$","Dividendo",0.001087,NA,NA,NA,NA,0.0010874113,"boletin",NA
 "Compass Latam Corporate Debt Fondo de Inversión","B","9102","FIRES",2025-06-03,2025-06-09,"US$","Dividendo",0.001314,NA,NA,NA,NA,0.0013135759,"boletin",NA
 "Compass Latam Corporate Debt Fondo de Inversión","DVA","9102","FIRES",2025-06-03,2025-06-09,"US$","Dividendo",0.000768,NA,NA,NA,NA,0.0007676039,"boletin",NA
@@ -2375,6 +2389,7 @@
 "Compass VEPF VIII Private Equity Fondo de Inversión","I","10236","FINRE",2025-11-20,2025-11-26,"US$","Reparto",0.010051,NA,NA,NA,NA,0.0100507272,"boletin",NA
 "Compass VEPF VIII Private Equity Fondo de Inversión","R","10236","FINRE",2025-11-20,2025-11-26,"US$","Reparto",0.009196,NA,NA,NA,NA,0.0091955842,"boletin",NA
 "Desarrollo Inmobiliario Uno Fondo de Inversión","P",NA,NA,2026-04-21,2026-04-27,"$","Dividendo",920.41254,NA,NA,NA,NA,920.412539782,"boletin",NA
+"Desarrollo Inmobiliario Uno Fondo de Inversión","P",NA,NA,2026-07-03,2026-07-09,"$","Dividendo",1793.148836,NA,NA,NA,NA,1793.148835549,"boletin",NA
 "FONDO MUTUO LARRAINVIAL ENFOQUE","IR","8723","RGFMU",2025-05-29,2025-06-04,"$","Dividendo",0.202157,NA,NA,NA,NA,0.202156923,"boletin",NA
 "FONDO MUTUO LARRAINVIAL ENFOQUE","R","8723","RGFMU",2025-05-29,2025-06-04,"$","Dividendo",0.204857,NA,NA,NA,NA,0.204856814,"boletin",NA
 "FONDO MUTUO LARRAINVIAL ENFOQUE","IR","8723","RGFMU",2025-08-07,2025-08-13,"$","Dividendo",0.083179,NA,NA,NA,NA,0.083178868,"boletin",NA
@@ -3756,6 +3771,8 @@
 "Fondo de Inversión Bci Desarrollo Inmobiliario XI","B",NA,NA,2026-05-05,2026-05-11,"$","Reparto",3266.174602,NA,NA,NA,NA,3266.1746018391,"boletin",NA
 "Fondo de Inversión Bci Desarrollo Inmobiliario XII","A",NA,NA,2025-08-21,2025-08-27,"$","Reparto",2360.172664,NA,NA,NA,NA,2360.1726639533,"boletin",NA
 "Fondo de Inversión Bci Desarrollo Inmobiliario XII","B",NA,NA,2025-08-21,2025-08-27,"$","Reparto",2287.722596,NA,NA,NA,NA,2287.7225959598,"boletin",NA
+"Fondo de Inversión Bci Desarrollo Inmobiliario XII","A",NA,NA,2026-07-02,2026-07-08,"$","Reparto",465.043082,NA,NA,NA,NA,465.0430822151,"boletin",NA
+"Fondo de Inversión Bci Desarrollo Inmobiliario XII","B",NA,NA,2026-07-02,2026-07-08,"$","Reparto",448.802785,NA,NA,NA,NA,448.8027850924,"boletin",NA
 "Fondo de Inversión Bci Eurocorp Renta Residencial Preferente","A",NA,NA,2025-05-06,2025-05-12,"$","Dividendo",417.738382,NA,NA,NA,NA,417.7383824287,"boletin",NA
 "Fondo de Inversión Bci Eurocorp Renta Residencial Preferente","ADC",NA,NA,2025-05-06,2025-05-12,"$","Dividendo",417.738426,NA,NA,NA,NA,417.7384257653,"boletin",NA
 "Fondo de Inversión Bci Eurocorp Renta Residencial Preferente","B",NA,NA,2025-05-06,2025-05-12,"$","Dividendo",413.983291,NA,NA,NA,NA,413.9832910433,"boletin",NA
@@ -3853,6 +3870,8 @@
 "Fondo de Inversión Corcovado Deuda Privada","FV","10516","FINRE",2025-09-27,2025-10-03,"$","Dividendo",20.20365,NA,NA,NA,NA,20.20365044,"boletin",NA
 "Fondo de Inversión Corcovado Deuda Privada","FV","10516","FINRE",2025-12-30,2026-01-06,"$","Dividendo",38.826503,NA,NA,NA,NA,38.82650253,"boletin",NA
 "Fondo de Inversión Corcovado Deuda Privada","FV","10516","FINRE",2026-03-31,2026-04-08,"$","Dividendo",22.281562,NA,NA,NA,NA,22.28156214,"boletin",NA
+"Fondo de Inversión Corcovado Deuda Privada","A2","10516","FINRE",2026-07-02,2026-07-08,"$","Dividendo",4.733682,NA,NA,NA,NA,4.73368183,"boletin",NA
+"Fondo de Inversión Corcovado Deuda Privada","B2","10516","FINRE",2026-07-02,2026-07-08,"$","Dividendo",6.642264,NA,NA,NA,NA,6.64226423,"boletin",NA
 "Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-04-28,2025-05-05,"US$","Dividendo",0.022788,291631.88,NA,NA,NA,0.02278811,"boletin",NA
 "Fondo de Inversión Credicorp Capital - AIX Fully Funded","U","9314","FINRE",2025-04-28,2025-05-05,"US$","Dividendo",0.004945,565707.36,NA,NA,NA,0.0049452,"boletin",NA
 "Fondo de Inversión Credicorp Capital - AIX Fully Funded","E","9314","FINRE",2025-08-14,2025-08-21,"US$","Dividendo",0.202659,NA,NA,NA,NA,0.20265945,"boletin",NA
@@ -4055,6 +4074,9 @@
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario I","Ejecutiva",NA,NA,2026-06-03,2026-06-09,"$","Reparto",996.119217,NA,NA,NA,NA,996.119217,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario I","Institucional",NA,NA,2026-06-23,2026-06-30,"$","Reparto",1321.118969,NA,NA,NA,NA,1321.118969,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario I","Ejecutiva",NA,NA,2026-06-23,2026-06-30,"$","Reparto",1197.015996,NA,NA,NA,NA,1197.015996,"boletin",NA
+"Fondo de Inversión FYNSA Desarrollo Inmobiliario II","A",NA,NA,2026-07-03,2026-07-09,"$","Reparto",1419.383577,NA,NA,NA,NA,1419.383577,"boletin",NA
+"Fondo de Inversión FYNSA Desarrollo Inmobiliario II","E",NA,NA,2026-07-03,2026-07-09,"$","Reparto",1328.952408,NA,NA,NA,NA,1328.952408,"boletin",NA
+"Fondo de Inversión FYNSA Desarrollo Inmobiliario II","I",NA,NA,2026-07-03,2026-07-09,"$","Reparto",1408.878962,NA,NA,NA,NA,1408.878962,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario III","A",NA,NA,2025-01-11,2025-01-17,"$","Reparto",1216.571911,NA,NA,NA,NA,1216.571911,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario III","B",NA,NA,2025-01-11,2025-01-17,"$","Reparto",1238.299606,NA,NA,NA,NA,1238.299606,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario IV","A",NA,NA,2025-03-28,2025-04-03,"$","Reparto",998.64002,NA,NA,NA,NA,998.64002,"boletin",NA
@@ -4290,6 +4312,9 @@
 "Fondo de Inversión Falcom Antares Senior Loan Fund III","A","10732","FINRE",2026-04-10,2026-04-16,"US$","Reparto",0.044485,NA,NA,NA,NA,0.0444850185,"boletin",NA
 "Fondo de Inversión Falcom Antares Senior Loan Fund III","I","10732","FINRE",2026-04-10,2026-04-16,"US$","Reparto",0.04458,NA,NA,NA,NA,0.0445798517,"boletin",NA
 "Fondo de Inversión Falcom Antares Senior Loan Fund III","R","10732","FINRE",2026-04-10,2026-04-16,"US$","Reparto",0.043727,NA,NA,NA,NA,0.0437267485,"boletin",NA
+"Fondo de Inversión Falcom Antares Senior Loan Fund III","A","10732","FINRE",2026-07-01,2026-07-07,"US$","Reparto",0.015836,NA,NA,NA,NA,0.0158361825,"boletin",NA
+"Fondo de Inversión Falcom Antares Senior Loan Fund III","I","10732","FINRE",2026-07-01,2026-07-07,"US$","Reparto",0.015894,NA,NA,NA,NA,0.0158941421,"boletin",NA
+"Fondo de Inversión Falcom Antares Senior Loan Fund III","R","10732","FINRE",2026-07-01,2026-07-07,"US$","Reparto",0.015373,NA,NA,NA,NA,0.0153734514,"boletin",NA
 "Fondo de Inversión Falcom Blackrock DLF IX","B","9795","FINRE",2025-01-10,2025-01-16,"US$","Reparto",0.022362,NA,NA,NA,NA,0.0223622206,"boletin",NA
 "Fondo de Inversión Falcom Blackrock DLF IX","V","9795","FINRE",2025-01-10,2025-01-16,"US$","Reparto",0.022362,NA,NA,NA,NA,0.0223622206,"boletin",NA
 "Fondo de Inversión Falcom Blackrock DLF IX","B","9795","FINRE",2025-04-10,2025-04-16,"US$","Reparto",0.022218,NA,NA,NA,NA,0.022218168,"boletin",NA
@@ -6470,6 +6495,8 @@
 "Frontal Trust Mercado Pago Créditos Fondo de Inversión","R","10689","FINRE",2026-05-15,2026-05-22,"$","Dividendo",6.6,NA,NA,NA,NA,6.6,"boletin",NA
 "Frontal Trust Mercado Pago Créditos Fondo de Inversión","P","10689","FINRE",2026-06-13,2026-06-19,"$","Dividendo",0.656818,NA,NA,NA,NA,0.656817696,"boletin",NA
 "Frontal Trust Mercado Pago Créditos Fondo de Inversión","PI","10689","FINRE",2026-06-13,2026-06-19,"$","Dividendo",0.685392,NA,NA,NA,NA,0.685391957,"boletin",NA
+"Frontal Trust Mercado Pago Créditos Fondo de Inversión","P","10689","FINRE",2026-07-04,2026-07-10,"$","Dividendo",0.485398,NA,NA,NA,NA,0.485398462,"boletin",NA
+"Frontal Trust Mercado Pago Créditos Fondo de Inversión","PI","10689","FINRE",2026-07-04,2026-07-10,"$","Dividendo",0.504326,NA,NA,NA,NA,0.504326431,"boletin",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","A",NA,NA,2025-01-15,2025-01-21,"US$","Reparto",0.116305,NA,NA,NA,NA,0.116305462,"boletin",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","B",NA,NA,2025-01-15,2025-01-21,"US$","Reparto",0.116496,NA,NA,NA,NA,0.116496383,"boletin",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","C",NA,NA,2025-01-15,2025-01-21,"US$","Reparto",0.11634,NA,NA,NA,NA,0.116340474,"boletin",NA
@@ -6725,6 +6752,8 @@
 "MBI Retorno Inmobiliario Preferente Fondo de Inversión","I",NA,NA,2026-02-12,2026-02-18,"$","Dividendo",4262.136309,NA,NA,NA,NA,4262.1363087,"boletin",NA
 "MBI Retorno Inmobiliario Preferente Fondo de Inversión","A",NA,NA,2026-04-30,2026-05-07,"$","Dividendo",866.035088,NA,NA,NA,NA,866.035088129412,"boletin",NA
 "MBI Retorno Inmobiliario Preferente Fondo de Inversión","I",NA,NA,2026-04-30,2026-05-07,"$","Dividendo",834.419819,NA,NA,NA,NA,834.419819109348,"boletin",NA
+"MBI Retorno Inmobiliario Preferente Fondo de Inversión","A",NA,NA,2026-06-30,2026-07-06,"$","Reparto",1892.535423,NA,NA,NA,NA,1892.5354232,"boletin",NA
+"MBI Retorno Inmobiliario Preferente Fondo de Inversión","I",NA,NA,2026-06-30,2026-07-06,"$","Reparto",1826.733346,NA,NA,NA,NA,1826.7333465,"boletin",NA
 "MBI-BP Deuda Fondo de Inversión","A",NA,NA,2025-05-27,2025-06-02,"$","Dividendo",2164.820415,NA,NA,NA,NA,2164.8204148,"boletin",NA
 "MBI-BP Deuda Fondo de Inversión","B",NA,NA,2025-05-27,2025-06-02,"$","Dividendo",1551.759813,NA,NA,NA,NA,1551.7598134,"boletin",NA
 "MBI-BP Deuda Fondo de Inversión, en Liquidación.","A",NA,NA,2025-02-14,2025-02-20,"$","Reparto",5219.720309,NA,NA,NA,NA,5219.7203092,"boletin",NA
@@ -8144,6 +8173,8 @@
 "XLC HPS HLEND Fondo de Inversión","A","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.046312,NA,NA,NA,NA,0.0463121981,"boletin",NA
 "XLC HPS HLEND Fondo de Inversión","N","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.044966,NA,NA,NA,NA,0.0449658601,"boletin",NA
 "XLC HPS HLEND Fondo de Inversión","X","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.044372,NA,NA,NA,NA,0.0443719762,"boletin",NA
+"Ameris Electromovilidad Fondo de Inversión","A","10514","FINRE",2026-07-03,2026-07-09,"$","Reparto",NA,1.1e+08,1635439,2026-07-03,67.260237,67.2602366624964,"calculado (total/cuotas dia limite)",NA
+"Ameris Electromovilidad Fondo de Inversión","D","10514","FINRE",2026-07-03,2026-07-09,"$","Reparto",NA,1.1e+08,1635439,2026-07-03,67.260237,67.2602366624964,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,26201217,36133731,2025-04-30,0.725118,0.725117951425348,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,235664094,36133731,2025-04-30,6.521997,6.52199724408948,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-07-31,2025-08-06,"$","Reparto",NA,275723404,35949767,2025-07-31,7.669685,7.66968542523317,"calculado (total/cuotas dia limite)",NA
@@ -8263,6 +8294,8 @@
 "Moneda Alturas II Fondo de Inversión","C","9614","FIRES",2025-03-22,2025-03-28,"US$","Dividendo",NA,16130210,587278,2025-03-22,27.466055,27.4660550954883,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,864272.85,131192044,2026-05-28,0.006588,0.00658784498183959,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,585134.67,131192044,2026-05-28,0.00446,0.00446013836887259,"calculado (total/cuotas dia limite)",NA
+"PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-07-03,2026-07-09,"US$","Reparto",NA,95124.35,129808186,2026-07-03,0.000733,0.000732807019526061,"calculado (total/cuotas dia limite)",NA
+"PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-07-03,2026-07-09,"US$","Reparto",NA,64409.44,129808186,2026-07-03,0.000496,0.000496189353785258,"calculado (total/cuotas dia limite)",NA
 "Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,477605.84,58508791,2025-01-08,0.008163,0.0081629757601,"calculado (total/cuotas dia limite)",NA
 "Picton - Apollo VIII Fondo de Inversión","N","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,890990.97,58508791,2025-01-08,0.015228,0.0152283265434484,"calculado (total/cuotas dia limite)",NA
 "Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-12-12,2025-12-18,"US$","Reparto",NA,516145.01,55918327,2025-12-12,0.00923,0.0092303370727229,"calculado (total/cuotas dia limite)",NA
@@ -8367,8 +8400,6 @@
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-07-03,2026-07-09,"US$","Reparto",NA,95124.35,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-07-03,2026-07-09,"US$","Reparto",NA,64409.44,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","A","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,177557068,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","B","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,131131561,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,174659992,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
