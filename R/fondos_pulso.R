@@ -26,6 +26,7 @@ MAPEO_SEBRA <- list(
   list(nombre_excel = "MBI RF plus dolar U",               ticker_sebra = "CFI-MBRFUS"),
   list(nombre_excel = "Moneda renta clp R",                ticker_sebra = "CFIMRCLPR"),
   list(nombre_excel = "LV Enfoque F",                      ticker_sebra = NA),
+  list(nombre_excel = "Falcom Tactical Chilean Equities",                      ticker_sebra = "CFIFALCTAC"),
   list(nombre_excel = "LV Enfoque R",                      ticker_sebra = "CFMLVENFR"),
   list(nombre_excel = "Toesca chile equities",             ticker_sebra = "CFMTOEEQUB"),
   list(nombre_excel = "Conviccion mbi",                    ticker_sebra = "CFIMBICL-A"),
@@ -98,6 +99,8 @@ FONDOS <- list(
   list(nombre = "Quest renta global A",         run = "9274",  serie = "A",     row = "AAAw%20cAAhAABP4NAAs"),
   list(nombre = "HMC deuda privada global bp",  run = "9914",  serie = "BP",    row = "AAAw%20cAAhAABQKDAAF"),
   list(nombre = "Falcom Chilean Fixed Income A",run = "9289",  serie = "A",     row = "AAAw+cAAhAABP4NAAv"),
+  list(nombre = "Falcom Tactical Chilean Equities",run = "9194",  serie = "UNICA",     row = "AABbsrAAjAAAAF8AAV"),
+
 
   # --- Fondos de Inversion NO Rescatables (FINRE) ---
   list(nombre = "Moneda deuda latam R",      run = "7055",  serie = "R", row = "AABbsrAAjAAAAFyAAF",   tipoentidad = "FINRE"),
@@ -186,7 +189,8 @@ CATEGORIAS <- list(
       list(nombre_script = "Conviccion mbi",          nombre_excel = "Conviccion mbi"),
       list(nombre_script = "Fynsa retorno total",     nombre_excel = "Fynsa retorno total"),
       list(nombre_script = "Moneda pionero A",        nombre_excel = "Moneda pionero A"),
-      list(nombre_script = "FM BTG Chile Acción F",   nombre_excel = "FM BTG Chile Acción F")
+      list(nombre_script = "FM BTG Chile Acción F",   nombre_excel = "FM BTG Chile Acción F"),
+      list(nombre_script = "Falcom Tactical Chilean Equities",   nombre_excel = "Falcom Tactical Chilean Equities")
     )
   ),
 
@@ -254,7 +258,7 @@ DATOS_FONDO <- list(
   "FFMM LV ahorro corporativo (F)"    = list(rent2024="8,97%",  rent2025="6,84%",   duracion="4,3", liquidez="24 hrs",        moneda="CLP", tac="1,10%"),
   "Moneda deuda chile (A)"            = list(rent2024="9,60%",  rent2025="8,80%",   duracion="4,4", liquidez="t + 11",        moneda="CLP", tac="0,71%"),
   "LV Deuda chile (A)"                = list(rent2024="9,66%",  rent2025="8,27%",   duracion="4,2", liquidez="t +10",         moneda="CLP", tac="1,25%"),
-  "BTG deuda activa plus A"           = list(rent2024="16,60%", rent2025="7,08%",   duracion="5,07",liquidez="t+10",          moneda="CLP", tac="1,19%"),
+  "BTG deuda activa plus A"           = list(rent2024="16,60%", rent2025="7,08%",   duracion="4",liquidez="t+10",          moneda="CLP", tac="1,19%"),
   "BTG deuda corporativa A"           = list(rent2024="13,03%", rent2025="8,49%",   duracion="4,7", liquidez="t +10",         moneda="CLP", tac="0,70%"),
   "Quest renta global hedge"          = list(rent2024="8,19%",  rent2025="9,97%",   duracion="5,7", liquidez="50 dias corr",  moneda="CLP", tac="0,90%"),
   "Quest renta global A"              = list(rent2024="6,72%",  rent2025="10,20%",  duracion="5,9", liquidez="50 dias corr",  moneda="USD", tac="0,90%"),
@@ -268,6 +272,7 @@ DATOS_FONDO <- list(
   "LV Enfoque R"                      = list(rent2024="",       rent2025="28,74%(1/2 año)",duracion="",liquidez="t + 7",      moneda="CLP", tac="1,80%"),
   "Toesca chile equities"             = list(rent2024="6,50%",  rent2025="60,97%",  duracion="",    liquidez="t + 2",         moneda="CLP", tac="1,79%"),
   "Conviccion mbi"                    = list(rent2024="9,55%",  rent2025="37,25%",  duracion="",    liquidez="t+11",          moneda="CLP", tac="solo perf fee"),
+  "Falcom Tactical Chilean Equities"                    = list(rent2024="1,96%",  rent2025="68,07%",  duracion="",    liquidez="t+11",          moneda="CLP", tac="1,79%"),
   "Fynsa retorno total"               = list(rent2024="-1,11%", rent2025="63,47%",  duracion="",    liquidez="t+11",          moneda="CLP", tac="0,36%"),
   "Moneda pionero A"                  = list(rent2024="11,00%", rent2025="68,60%",  duracion="",    liquidez="ult dia mes",   moneda="CLP", tac="1,08%"),
   "Mbi deuda alternativa A"           = list(rent2024="9,45%",  rent2025="6,61%",   duracion="",    liquidez="t+11",          moneda="CLP", tac="1,13%"),
