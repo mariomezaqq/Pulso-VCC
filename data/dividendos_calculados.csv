@@ -572,6 +572,8 @@
 "Avante Renta V Fondo de Inversión","AP","10762","FINRE",2025-12-31,2026-01-07,"$","Dividendo",6.381979,NA,NA,NA,NA,6.381978555,"boletin",NA
 "Avante Renta V Fondo de Inversión","A","10762","FINRE",2026-03-30,2026-04-07,"$","Dividendo",9.073889,NA,NA,NA,NA,9.073888705959,"boletin",NA
 "Avante Renta V Fondo de Inversión","AP","10762","FINRE",2026-03-30,2026-04-07,"$","Dividendo",9.110695,NA,NA,NA,NA,9.110695246157,"boletin",NA
+"Avante Renta V Fondo de Inversión","A","10762","FINRE",2026-07-01,2026-07-07,"$","Dividendo",9.07434,NA,NA,NA,NA,9.07433956,"boletin",NA
+"Avante Renta V Fondo de Inversión","AP","10762","FINRE",2026-07-01,2026-07-07,"$","Dividendo",9.116768,NA,NA,NA,NA,9.11676814,"boletin",NA
 "BCI Small Cap Chile Fondo de Inversión","AP","9113","FINRE",2025-01-03,2025-01-09,"$","Dividendo",343.36119,NA,NA,NA,NA,343.36119,"boletin",NA
 "BCI Small Cap Chile Fondo de Inversión","C (BCI)","9113","FINRE",2025-01-03,2025-01-09,"$","Dividendo",364.02867,NA,NA,NA,NA,364.02867,"boletin",NA
 "BCI Small Cap Chile Fondo de Inversión","L (Clásica)","9113","FINRE",2025-01-03,2025-01-09,"$","Dividendo",349.49611,NA,NA,NA,NA,349.49611,"boletin",NA
@@ -7212,6 +7214,8 @@
 "Picton - Apollo VIII Fondo de Inversión","N","7279","FINRE",2025-08-29,2025-09-04,"US$","Dividendo",0.052601,NA,NA,NA,NA,0.05260099,"boletin",NA
 "Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-12-12,2025-12-18,"US$","Dividendo",0.016591,NA,NA,NA,NA,0.01659063,"boletin",NA
 "Picton - Apollo VIII Fondo de Inversión","N","7279","FINRE",2025-12-12,2025-12-18,"US$","Dividendo",0.009789,NA,NA,NA,NA,0.00978938,"boletin",NA
+"Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2026-07-07,2026-07-13,"US$","Dividendo",0.038488,NA,NA,NA,NA,0.0384881,"boletin",NA
+"Picton - Apollo VIII Fondo de Inversión","N","7279","FINRE",2026-07-07,2026-07-13,"US$","Dividendo",0.02271,NA,NA,NA,NA,0.02271002,"boletin",NA
 "Picton - HAMILTON LANE SMID II Fondo de Inversión","A","9707","FINRE",2025-07-22,2025-07-28,"US$","Dividendo",0.01523,NA,NA,NA,NA,0.01523033,"boletin",NA
 "Picton - HAMILTON LANE SMID II Fondo de Inversión","A","9707","FINRE",2025-07-22,2025-07-28,"US$","Reparto",0.044237,NA,NA,NA,NA,0.04423749,"boletin",NA
 "Picton - HAMILTON LANE SMID II Fondo de Inversión","A","9707","FINRE",2025-10-16,2025-10-22,"US$","Dividendo",0.032258,NA,NA,NA,NA,0.03225773,"boletin",NA
@@ -7518,6 +7522,8 @@
 "VOLCOMCAPITAL Coinvestment III Fondo de Inversión","B","9788","FINRE",2026-02-18,2026-02-24,"US$","Reparto",0.014502,NA,NA,NA,NA,0.0145023681636539,"boletin",NA
 "VOLCOMCAPITAL Coinvestment III Fondo de Inversión","A","9788","FINRE",2026-06-03,2026-06-09,"US$","Reparto",0.02016,NA,NA,NA,NA,0.0201599616979275,"boletin",NA
 "VOLCOMCAPITAL Coinvestment III Fondo de Inversión","B","9788","FINRE",2026-06-03,2026-06-09,"US$","Reparto",0.020223,NA,NA,NA,NA,0.0202234869797153,"boletin",NA
+"VOLCOMCAPITAL Coinvestment III Fondo de Inversión","A","9788","FINRE",2026-07-07,2026-07-13,"US$","Reparto",0.04228,NA,NA,NA,NA,0.0422803445876092,"boletin",NA
+"VOLCOMCAPITAL Coinvestment III Fondo de Inversión","B","9788","FINRE",2026-07-07,2026-07-13,"US$","Reparto",0.042415,NA,NA,NA,NA,0.0424148652456132,"boletin",NA
 "VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","A","10119","FINRE",2025-06-04,2025-06-10,"US$","Dividendo",0.035411,NA,NA,NA,NA,0.0354109079817755,"boletin",NA
 "VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","B","10119","FINRE",2025-06-04,2025-06-10,"US$","Dividendo",0.035684,NA,NA,NA,NA,0.0356844002223037,"boletin",NA
 "VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","Z","10119","FINRE",2025-06-04,2025-06-10,"US$","Dividendo",0.035959,NA,NA,NA,NA,0.0359588014374752,"boletin",NA
@@ -8400,6 +8406,8 @@
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2026-07-07,2026-07-13,"US$","Reparto",NA,3286869.27,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Picton - Apollo VIII Fondo de Inversión","N","7279","FINRE",2026-07-07,2026-07-13,"US$","Reparto",NA,6130701.95,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","A","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,177557068,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","B","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,131131561,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,174659992,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
