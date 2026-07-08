@@ -27,7 +27,7 @@ jobs:
       - name: Instalar paquetes R
         run: |
           install.packages(c("httr","rvest","dplyr","tidyr","stringr",
-                             "lubridate","tibble","jsonlite","quantmod"))
+                             "lubridate","tibble","jsonlite","quantmod","readxl"))
         shell: Rscript {0}
 
       - name: Scrapear y generar data/series_vc.rds
@@ -38,6 +38,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Completar rent 2024/2025 de fondos nuevos (del valor cuota)
+        continue-on-error: true   # secundario: si falla, NO debe frenar el commit diario
         run: |
           options(timeout = 600)
           setwd(".")
