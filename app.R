@@ -13,8 +13,13 @@ suppressMessages({
 
 # La app NO scrapea (eso lo hace el cron); por eso no carga scraper.R/indices.R
 # (evita quantmod/rvest en el deploy). Solo lo que el dashboard necesita.
+# github_store + admin_fondos van PRIMERO: asi en la nube bajamos la ultima lista
+# curada de GitHub ANTES de armar los fondos (fondos_pulso.R la lee del disco).
+source("R/github_store.R")
+source("R/admin_fondos.R")
+try(store_sync("fondos_curados.csv"), silent = TRUE)
 for (f in c("fondos_pulso","calculos","dividendos","ajustes",
-            "compute","ui_dashboard","github_store","excel_export"))
+            "compute","ui_dashboard","excel_export"))
   source(file.path("R", paste0(f, ".R")))
 
 # Token de GitHub para escritura (no se versiona; se incluye en el deploy)
@@ -29,6 +34,9 @@ ENTIDADES_MANUAL <- rbind(
   data.frame(Nombre = NOMBRES_FONDOS_MANUALES,  Tipo = "Fondo",  stringsAsFactors = FALSE),
   data.frame(Nombre = NOMBRES_INDICES_MANUALES, Tipo = "Indice", stringsAsFactors = FALSE)
 )
+
+# Catalogo CMF (comparador): fuente de run/serie/row correctos para agregar fondos
+CATALOGO <- tryCatch(cargar_catalogo(), error = function(e) NULL)
 
 # ---- Lectura de inputs persistidos ----
 .leer_csv <- function(rel, default_df) {
@@ -99,6 +107,29 @@ ui <- page_navbar(
     div(style = "max-width:1100px;margin:20px auto;padding:0 16px",
       h4("Panel de administración"),
       p(class = "text-muted", "Los cambios se guardan y persisten (en GitHub cuando está configurado). El dashboard se recalcula al instante."),
+      card(card_header("➕ Agregar fondo desde el catálogo CMF"),
+        p(class = "text-muted", "Busca el fondo en el catálogo del comparador (trae run/serie/row correctos de la CMF). Elige su categoría, completa los datos que quieras mostrar y agrégalo. Se guarda y se dispara la consulta a la CMF; en ~5 min recarga y aparecen sus rentabilidades."),
+        selectizeInput("cat_fondo", "Fondo (busca por nombre)", choices = NULL, width = "100%",
+                       options = list(placeholder = "Escribe para buscar en el catálogo...", maxOptions = 50)),
+        uiOutput("cat_preview"),
+        layout_columns(col_widths = c(4,4,4),
+          selectInput("cat_hoja", "Categoría (hoja)", choices = NULL),
+          textInput("cat_hoja_nueva", "…o nueva categoría", ""),
+          textInput("cat_nombre", "Nombre a mostrar", "")),
+        layout_columns(col_widths = c(2,2,2,2,2,2),
+          textInput("cat_rent2024", "Rent. 2024", ""),
+          textInput("cat_rent2025", "Rent. 2025", ""),
+          textInput("cat_duracion", "Duración", ""),
+          textInput("cat_liquidez", "Liquidez", ""),
+          selectInput("cat_moneda", "Moneda", choices = c("CLP","UF","USD")),
+          textInput("cat_tac", "TAC", "")),
+        div(style = "margin-top:8px", actionButton("cat_add", "Agregar fondo", class = "btn-primary")),
+        verbatimTextOutput("cat_msg")),
+      card(card_header("Fondos actuales (quitar)"),
+        p(class = "text-muted", "Selecciona una fila y quítala. El cambio se guarda al instante."),
+        DTOutput("tbl_cur"),
+        div(style = "margin-top:8px", actionButton("cat_del", "Quitar fondo seleccionado", class = "btn-outline-danger")),
+        verbatimTextOutput("cat_del_msg")),
       layout_columns(col_widths = c(6,6),
         card(card_header("Dividendos (Boletín Bolsa)"),
           fileInput("div_file", NULL, accept = ".xlsx", buttonLabel = "Elegir...", placeholder = "ningún archivo"),
@@ -140,8 +171,89 @@ server <- function(input, output, session) {
     tick  = 0,
     vc    = .leer_csv("manuales_vc.csv", default_vc()),
     ov    = .leer_csv("dividendos_overrides.csv", default_ov()),
-    entry = data.frame(ENTIDADES_MANUAL, VC = NA_real_, stringsAsFactors = FALSE)
+    entry = data.frame(ENTIDADES_MANUAL, VC = NA_real_, stringsAsFactors = FALSE),
+    cur   = cargar_curados()
   )
+
+  # ---- Agregar / quitar fondos ----
+  # Poblar el buscador del catalogo (server-side: son ~3400 series) y las hojas
+  if (!is.null(CATALOGO))
+    updateSelectizeInput(session, "cat_fondo", server = TRUE,
+                         choices = stats::setNames(CATALOGO$key, CATALOGO$label))
+  observe({
+    hojas <- if (!is.null(rv$cur)) unique(rv$cur$hoja) else character()
+    updateSelectInput(session, "cat_hoja", choices = hojas,
+                      selected = isolate(input$cat_hoja) %||% (hojas[1] %||% ""))
+  })
+
+  fila_catalogo <- reactive({
+    k <- input$cat_fondo
+    if (is.null(k) || !nzchar(k) || is.null(CATALOGO)) return(NULL)
+    f <- CATALOGO[CATALOGO$key == k, , drop = FALSE]
+    if (!nrow(f)) NULL else as.list(f[1, ])
+  })
+
+  # Al elegir un fondo: mostrar run/serie/row y prellenar el nombre a mostrar
+  observeEvent(input$cat_fondo, {
+    f <- fila_catalogo(); if (is.null(f)) return()
+    if (!nzchar(input$cat_nombre %||% ""))
+      updateTextInput(session, "cat_nombre", value = .nombre_sugerido(f$nombre))
+  })
+  output$cat_preview <- renderUI({
+    f <- fila_catalogo()
+    if (is.null(f)) return(p(class = "text-muted", "Ningún fondo seleccionado."))
+    HTML(sprintf("<div style='font-size:13px;color:#555'><b>run:</b> %s &nbsp; <b>serie:</b> %s &nbsp; <b>tipo:</b> %s &nbsp; <b>row:</b> <code>%s</code></div>",
+                 f$run, f$serie, f$tipoentidad, f$row))
+  })
+
+  observeEvent(input$cat_add, {
+    if (is.null(rv$cur)) { output$cat_msg <- renderText("No se pudo leer la lista de fondos (fondos_curados.csv)."); return() }
+    f <- fila_catalogo()
+    hoja <- if (nzchar(trimws(input$cat_hoja_nueva %||% ""))) trimws(input$cat_hoja_nueva) else (input$cat_hoja %||% "")
+    tit  <- { m <- rv$cur$titulo[rv$cur$hoja == hoja]; if (length(m)) m[1] else hoja }
+    res <- agregar_fondo_curado(rv$cur, f, hoja = hoja, titulo = tit, nombre = input$cat_nombre,
+                                moneda = input$cat_moneda, rent2024 = input$cat_rent2024,
+                                rent2025 = input$cat_rent2025, duracion = input$cat_duracion,
+                                liquidez = input$cat_liquidez, tac = input$cat_tac)
+    if (!isTRUE(res$ok)) { output$cat_msg <- renderText(paste("⚠", res$msg)); return() }
+    rv$cur <- res$df
+    msg <- guardar_curados(rv$cur, paste0("Panel admin: agregar fondo '", trimws(input$cat_nombre), "'"))
+    refrescar_fondos_globales()
+    disp <- gh_dispatch("refresh.yml")
+    updateTextInput(session, "cat_nombre", value = ""); updateTextInput(session, "cat_hoja_nueva", value = "")
+    for (id in c("cat_rent2024","cat_rent2025","cat_duracion","cat_liquidez","cat_tac"))
+      updateTextInput(session, id, value = "")
+    rv$tick <- rv$tick + 1
+    output$cat_msg <- renderText(paste0("✅ Agregado. ", msg,
+      if (disp$ok) " · Consultando la CMF: recarga (F5) en ~5 min para ver sus rentabilidades." else paste0(" · (scrape no disparado: ", disp$msg, ")")))
+    showModal(modalDialog(title = "Fondo agregado",
+      HTML(paste0("✅ <b>", trimws(input$cat_nombre), "</b> se agregó a <b>", hoja, "</b>.<br><br>",
+                  "Se está consultando la CMF para traer sus rentabilidades.<br>",
+                  "Recarga esta página (<b>F5</b>) en <b>~3 a 5 minutos</b>.")),
+      easyClose = TRUE, footer = modalButton("Cerrar")))
+  })
+
+  output$tbl_cur <- renderDT({
+    rv$tick
+    df <- rv$cur
+    if (is.null(df) || !nrow(df)) return(datatable(data.frame(Aviso = "Sin lista curada."), rownames = FALSE))
+    vis <- data.frame(Nombre = df$nombre_excel, Categoría = df$hoja,
+                      Run = df$run, Serie = df$serie,
+                      Tipo = ifelse(tolower(df$es_manual) %in% c("true","1"), "Manual", df$tipoentidad),
+                      check.names = FALSE, stringsAsFactors = FALSE)
+    datatable(vis, rownames = FALSE, selection = "single",
+              options = list(pageLength = 10, lengthMenu = list(c(10,25,50,-1), c("10","25","50","Todas"))))
+  }, server = FALSE)
+
+  observeEvent(input$cat_del, {
+    sel <- input$tbl_cur_rows_selected
+    if (is.null(rv$cur) || !length(sel)) { output$cat_del_msg <- renderText("Selecciona un fondo primero."); return() }
+    nombre <- rv$cur$nombre_excel[sel]
+    rv$cur <- rv$cur[-sel, , drop = FALSE]
+    msg <- guardar_curados(rv$cur, paste0("Panel admin: quitar fondo '", nombre, "'"))
+    refrescar_fondos_globales(); rv$tick <- rv$tick + 1
+    output$cat_del_msg <- renderText(paste0("🗑 Quitado '", nombre, "'. ", msg))
+  })
 
   output$dash <- renderUI({
     rv$tick

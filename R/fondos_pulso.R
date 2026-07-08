@@ -300,3 +300,80 @@ DATOS_FONDO <- list(
   "FM LV Cuenta Activa Conservadora"        = list(rent2024="8,21%",  rent2025="8,63%",  duracion="",liquidez="",moneda="CLP",tac=""),
   "FM BTG Gestión Conservadora"             = list(rent2024="11,96%", rent2025="7,92%",  duracion="",liquidez="",moneda="CLP",tac="1,63")
 )
+
+# =============================================================================
+# OVERRIDE DATA-DRIVEN (panel de administracion)
+# Si existe data/fondos_curados.csv, reconstruye FONDOS / CATEGORIAS /
+# DATOS_FONDO / MAPEO_SEBRA / NOMBRES_FONDOS_MANUALES desde ese CSV editable
+# (lo edita el panel de admin y se persiste a GitHub). Si el CSV falta, esta
+# corrupto, o produce muy pocos fondos, se MANTIENE el hardcode de arriba.
+# Para forzar el hardcode (ej. al regenerar el CSV): options(pulso.hardcode_only=TRUE)
+# Genera el CSV base con: Rscript scripts/build_fondos_curados.R
+# =============================================================================
+.aplicar_curados <- function(ruta = "data/fondos_curados.csv") {
+  if (!file.exists(ruta)) return(NULL)
+  df <- tryCatch(read.csv(ruta, stringsAsFactors = FALSE, fileEncoding = "UTF-8",
+                          colClasses = "character"),
+                 error = function(e) NULL)
+  if (is.null(df) || !nrow(df)) return(NULL)
+  req <- c("orden","hoja","titulo","nombre_script","nombre_excel","es_manual",
+           "run","serie","row","tipoentidad","ticker_sebra",
+           "rent2024","rent2025","duracion","liquidez","moneda","tac")
+  if (!all(req %in% names(df))) { message("[curados] faltan columnas -> hardcode."); return(NULL) }
+  df$orden <- suppressWarnings(as.integer(df$orden))
+  if (any(is.na(df$orden))) df$orden <- seq_len(nrow(df))
+  df <- df[order(df$orden), , drop = FALSE]
+  es_man <- tolower(trimws(df$es_manual)) %in% c("true","1","yes","si","sí")
+
+  # FONDOS: unico por nombre_script (no manual, con run)
+  f_list <- list(); vis <- character()
+  for (i in which(!es_man & nzchar(df$nombre_script) & nzchar(df$run))) {
+    ns <- df$nombre_script[i]; if (ns %in% vis) next; vis <- c(vis, ns)
+    ent <- list(nombre = ns, run = df$run[i], serie = df$serie[i], row = df$row[i])
+    if (nzchar(df$tipoentidad[i])) ent$tipoentidad <- df$tipoentidad[i]
+    f_list[[length(f_list) + 1L]] <- ent
+  }
+  if (length(f_list) < 20) { message("[curados] pocos fondos (", length(f_list), ") -> hardcode."); return(NULL) }
+
+  # CATEGORIAS: agrupadas por hoja, preservando orden
+  c_list <- list()
+  for (hj in unique(df$hoja)) {
+    sub <- df[df$hoja == hj, , drop = FALSE]
+    fondos <- lapply(seq_len(nrow(sub)), function(k)
+      list(nombre_script = sub$nombre_script[k], nombre_excel = sub$nombre_excel[k]))
+    c_list[[length(c_list) + 1L]] <- list(hoja = hj, titulo = sub$titulo[1], fondos = fondos)
+  }
+
+  # DATOS_FONDO: por nombre_excel unico
+  d_list <- list()
+  for (ne in unique(df$nombre_excel[nzchar(df$nombre_excel)])) {
+    i <- which(df$nombre_excel == ne)[1]
+    d_list[[ne]] <- list(rent2024 = df$rent2024[i], rent2025 = df$rent2025[i],
+                         duracion = df$duracion[i], liquidez = df$liquidez[i],
+                         moneda = df$moneda[i], tac = df$tac[i])
+  }
+
+  # MAPEO_SEBRA: por nombre_excel unico ("" -> NA)
+  s_list <- list(); seen <- character()
+  for (i in seq_len(nrow(df))) {
+    ne <- df$nombre_excel[i]; if (!nzchar(ne) || ne %in% seen) next; seen <- c(seen, ne)
+    tk <- df$ticker_sebra[i]; tk <- if (!nzchar(tk)) NA else tk
+    s_list[[length(s_list) + 1L]] <- list(nombre_excel = ne, ticker_sebra = tk)
+  }
+
+  nm_man <- unique(df$nombre_excel[es_man & nzchar(df$nombre_excel)])
+  list(FONDOS = f_list, CATEGORIAS = c_list, DATOS_FONDO = d_list,
+       MAPEO_SEBRA = s_list, NOMBRES_FONDOS_MANUALES = nm_man)
+}
+
+if (!isTRUE(getOption("pulso.hardcode_only", FALSE))) {
+  .cur <- tryCatch(.aplicar_curados(), error = function(e) { message("[curados] error: ", e$message); NULL })
+  if (!is.null(.cur)) {
+    FONDOS      <- .cur$FONDOS
+    CATEGORIAS  <- .cur$CATEGORIAS
+    DATOS_FONDO <- .cur$DATOS_FONDO
+    MAPEO_SEBRA <- .cur$MAPEO_SEBRA
+    if (length(.cur$NOMBRES_FONDOS_MANUALES)) NOMBRES_FONDOS_MANUALES <- .cur$NOMBRES_FONDOS_MANUALES
+    message("[curados] listas desde CSV: ", length(FONDOS), " fondos, ", length(CATEGORIAS), " hojas.")
+  }
+}
