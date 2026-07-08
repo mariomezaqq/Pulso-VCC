@@ -22,6 +22,11 @@ for (f in c("fondos_pulso","calculos","dividendos","ajustes",
             "compute","ui_dashboard","excel_export"))
   source(file.path("R", paste0(f, ".R")))
 
+# Folleto CMF (para autocompletar rent/TAC al agregar un fondo). Token-free, pero
+# usa rvest/pdftools; si no cargan en el deploy, la app sigue y el boton avisa.
+FOLLETO_OK <- tryCatch({ source("R/folletos.R"); source("R/folletos_datos.R"); TRUE },
+                       error = function(e) { message("[app] folletos no disponible: ", e$message); FALSE })
+
 # Token de GitHub para escritura (no se versiona; se incluye en el deploy)
 if (file.exists("R/secret_token.R")) try(source("R/secret_token.R"), silent = TRUE)
 
@@ -116,6 +121,11 @@ ui <- page_navbar(
           selectInput("cat_hoja", "Categoría (hoja)", choices = NULL),
           textInput("cat_hoja_nueva", "…o nueva categoría", ""),
           textInput("cat_nombre", "Nombre a mostrar", "")),
+        div(style = "margin:4px 0 10px",
+          actionButton("cat_autocompletar", "🔎 Autocompletar rent + TAC desde folleto CMF", class = "btn-outline-secondary btn-sm"),
+          span(class = "text-muted", style = "font-size:12px;margin-left:8px",
+               "Baja el folleto de la CMF y rellena lo que encuentre (exacto). Lo que falte, escríbelo tú."),
+          verbatimTextOutput("cat_auto_msg")),
         layout_columns(col_widths = c(2,2,2,2,2,2),
           textInput("cat_rent2024", "Rent. 2024", ""),
           textInput("cat_rent2025", "Rent. 2025", ""),
@@ -204,6 +214,30 @@ server <- function(input, output, session) {
     if (is.null(f)) return(p(class = "text-muted", "Ningún fondo seleccionado."))
     HTML(sprintf("<div style='font-size:13px;color:#555'><b>run:</b> %s &nbsp; <b>serie:</b> %s &nbsp; <b>tipo:</b> %s &nbsp; <b>row:</b> <code>%s</code></div>",
                  f$run, f$serie, f$tipoentidad, f$row))
+  })
+
+  # Autocompletar rent 2024/2025 + TAC desde el folleto de la CMF (sin token).
+  # Solo rellena lo que el folleto trae (exacto); lo que falte queda para tipear.
+  observeEvent(input$cat_autocompletar, {
+    f <- fila_catalogo()
+    if (is.null(f)) { output$cat_auto_msg <- renderText("Elige un fondo del catálogo primero."); return() }
+    if (!isTRUE(FOLLETO_OK)) { output$cat_auto_msg <- renderText("Autocompletar no disponible en este servidor."); return() }
+    fondo <- list(run = f$run, serie = f$serie, tipoentidad = f$tipoentidad, row = f$row)
+    d <- withProgress(message = "Consultando el folleto en la CMF…", value = 0.5,
+      tryCatch(datos_folleto_fondo(fondo, anios = c(2024, 2025), dir = "data/folletos",
+                                   cookies = "", reusar = TRUE),
+               error = function(e) { message("[autocompletar] ", e$message); NULL }))
+    if (is.null(d)) { output$cat_auto_msg <- renderText("No se pudo leer el folleto de la CMF (puede no tener folleto)."); return() }
+    r24 <- fmt_pct_cl(d$rent[["2024"]]); r25 <- fmt_pct_cl(d$rent[["2025"]]); tac <- fmt_pct_cl(d$tac)
+    if (nzchar(r24)) updateTextInput(session, "cat_rent2024", value = r24)
+    if (nzchar(r25)) updateTextInput(session, "cat_rent2025", value = r25)
+    if (nzchar(tac)) updateTextInput(session, "cat_tac",      value = tac)
+    hallados <- c(if (nzchar(r24)) "Rent 2024", if (nzchar(r25)) "Rent 2025", if (nzchar(tac)) "TAC")
+    faltan   <- setdiff(c("Rent 2024","Rent 2025","TAC"), hallados)
+    output$cat_auto_msg <- renderText(paste0(
+      if (length(hallados)) paste0("✅ Del folleto: ", paste(hallados, collapse = ", "), ". ") else "El folleto no trae rent/TAC de este fondo. ",
+      if (length(faltan))   paste0("Falta (escríbelo tú): ", paste(faltan, collapse = ", "), ". ") else "",
+      "Revisa los valores antes de agregar."))
   })
 
   observeEvent(input$cat_add, {
