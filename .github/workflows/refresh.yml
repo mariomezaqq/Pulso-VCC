@@ -37,11 +37,18 @@ jobs:
           source("scripts/actualizar_datos.R")
         shell: Rscript {0}
 
+      - name: Completar rent 2024/2025 de fondos nuevos (del valor cuota)
+        run: |
+          options(timeout = 600)
+          setwd(".")
+          source("scripts/completar_rentabilidades.R")
+        shell: Rscript {0}
+
       - name: Commit del artefacto actualizado
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/series_vc.rds
+          git add data/series_vc.rds data/fondos_curados.csv
           if git diff --staged --quiet; then
             echo "Sin cambios en series_vc.rds"
           else
