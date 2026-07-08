@@ -113,6 +113,14 @@ for (idx in INDICES) {
       s <- s %>% filter(!is.na(valor)) %>% distinct(fecha, .keep_all = TRUE) %>% arrange(fecha)
       if (!any(s$fecha <= ref_ytd))              # fallback: cierre 2025 fijo si datosmacro no lo trae
         s <- bind_rows(tibble(fecha = ref_ytd, valor = IPSA_31DIC2025), s) %>% arrange(fecha)
+      # Ancla Yahoo (^IPSA): agrega/pisa el valor del dia con una 2a fuente. Asi,
+      # si datosmacro corrompe el ultimo dato, el guard descarta la basura y Yahoo
+      # aporta el valor real y fresco en su lugar.
+      yh <- tryCatch(obtener_ipsa_yahoo_actual(), error = function(e) NULL)
+      if (!is.null(yh) && nrow(yh) > 0)
+        s <- bind_rows(yh, s) %>% distinct(fecha, .keep_all = TRUE) %>% arrange(fecha)
+      # Guard: descarta puntos con saltos imposibles (fuente corrupta ~mitad del indice).
+      s <- filtrar_saltos_ipsa(s)
     } else s <- NULL
   } else if (!is.null(idx$ticker) && nchar(idx$ticker) > 0) {
     s <- tryCatch(obtener_historico_yahoo_json(idx$ticker, ref_ytd - 5, fc), error = function(e) NULL)

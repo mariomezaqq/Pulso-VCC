@@ -169,6 +169,43 @@ obtener_ipsa_datosmacro <- function(desde = NULL, hasta = Sys.Date(),
   df
 }
 
+# ---- Guard anti-basura del IPSA ----
+# La fuente (datosmacro) a veces sirve valores corruptos (~la mitad del indice,
+# p.ej. 5480 cuando el IPSA real es ~10800). Un indice NO se mueve >15% en un dia,
+# asi que descartamos cualquier punto cuyo salto dia-a-dia respecto al ULTIMO
+# valor RETENIDO supere el umbral. Se escanea hacia adelante desde un ancla buena
+# (el historico/cierre 2025), de modo que un outlier no arrastre a los siguientes
+# ni congele la serie de forma permanente si la fuente se recupera.
+filtrar_saltos_ipsa <- function(s, max_salto = 0.15) {
+  if (is.null(s) || nrow(s) < 2) return(s)
+  s <- s[order(s$fecha), , drop = FALSE]
+  keep <- rep(TRUE, nrow(s)); ref <- NA_real_
+  for (i in seq_len(nrow(s))) {
+    v <- s$valor[i]
+    if (is.na(v) || v <= 0) { keep[i] <- FALSE; next }
+    if (is.na(ref)) { ref <- v; next }                 # primer valor valido = ancla
+    if (abs(v / ref - 1) > max_salto) keep[i] <- FALSE # salto imposible -> descartar, ref se mantiene
+    else ref <- v
+  }
+  n_out <- sum(!keep)
+  if (n_out > 0) message("    IPSA: descartados ", n_out, " punto(s) por salto > ",
+                         round(max_salto * 100), "% (fuente corrupta): ",
+                         paste(format(s$fecha[!keep]), round(s$valor[!keep], 1), collapse = ", "))
+  s[keep, , drop = FALSE]
+}
+
+# Ancla del ultimo IPSA via Yahoo (^IPSA): 1 punto (valor del dia), sin historia.
+# Sirve como valor fresco cuando datosmacro entrega basura en el ultimo dia.
+obtener_ipsa_yahoo_actual <- function() {
+  s <- tryCatch(obtener_historico_yahoo_json("^IPSA", Sys.Date() - 10, Sys.Date()),
+                error = function(e) NULL)
+  if (is.null(s) || !nrow(s)) return(NULL)
+  s <- s %>% filter(!is.na(valor), valor > 0) %>% arrange(fecha)
+  if (!nrow(s)) return(NULL)
+  message("    ✓ IPSA Yahoo (ancla): ", format(max(s$fecha)), " = ", round(tail(s$valor, 1), 1))
+  s
+}
+
 # ---- USD observado (BCCh web) ----
 obtener_usdclp_web <- function(fechas_objetivo) {
   message("  Descargando: USD observado (BCCh - Web Scraping)")
