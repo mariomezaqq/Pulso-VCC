@@ -18,6 +18,8 @@
 "Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",1674.088114,NA,NA,NA,NA,1674.088114,"boletin",NA
 "Alza Deuda Privada V Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2581.475448,NA,NA,NA,NA,2581.475448,"boletin",NA
 "Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2584.13183,NA,NA,NA,NA,2584.13183,"boletin",NA
+"Alza Deuda Privada V Fondo de Inversión","A",NA,NA,2026-07-09,2026-07-15,"$","Dividendo",1494.749428,NA,NA,NA,NA,1494.749428,"boletin",NA
+"Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-07-09,2026-07-15,"$","Dividendo",1496.28755,NA,NA,NA,NA,1496.28755,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",640.143235,NA,NA,NA,NA,640.143235,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",640.439758,NA,NA,NA,NA,640.439758,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",923.474391,NA,NA,NA,NA,923.474391,"boletin",NA
@@ -226,6 +228,14 @@
 "Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PI","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",10.403111,NA,NA,NA,NA,10.403111476,"boletin",NA
 "Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PX","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",10.780725,NA,NA,NA,NA,10.780724829,"boletin",NA
 "Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","S","10643","FINRE",2026-06-09,2026-06-15,"$","Dividendo",23.262885,NA,NA,NA,NA,23.262885475,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","ND","10643","FINRE",2026-07-09,2026-07-15,"$","Dividendo",7.667492,NA,NA,NA,NA,7.667492,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","NI","10643","FINRE",2026-07-09,2026-07-15,"$","Dividendo",3.823712,NA,NA,NA,NA,3.823711557,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","NX","10643","FINRE",2026-07-09,2026-07-15,"$","Dividendo",3.826375,NA,NA,NA,NA,3.826375356,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PA","10643","FINRE",2026-07-09,2026-07-15,"$","Dividendo",9.324759,NA,NA,NA,NA,9.324758992,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PD","10643","FINRE",2026-07-09,2026-07-15,"$","Dividendo",9.618587,NA,NA,NA,NA,9.618587279,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PI","10643","FINRE",2026-07-09,2026-07-15,"$","Dividendo",10.058198,NA,NA,NA,NA,10.058197786,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","PX","10643","FINRE",2026-07-09,2026-07-15,"$","Dividendo",10.42291,NA,NA,NA,NA,10.422910407,"boletin",NA
+"Ameris Deuda Privada con Garantía FOGAPE Fondo de Inversión","S","10643","FINRE",2026-07-09,2026-07-15,"$","Dividendo",16.081859,NA,NA,NA,NA,16.08185857,"boletin",NA
 "Ameris Dover Street XI Fondo de Inversión","A","10565","FINRE",2025-08-12,2025-08-19,"US$","Dividendo",0.024389,NA,NA,NA,NA,0.024389484,"boletin",NA
 "Ameris Dover Street XI Fondo de Inversión","B","10565","FINRE",2025-08-12,2025-08-19,"US$","Dividendo",0.024465,NA,NA,NA,NA,0.02446464,"boletin",NA
 "Ameris Dover Street XI Fondo de Inversión","I","10565","FINRE",2025-08-12,2025-08-19,"US$","Dividendo",0.024566,NA,NA,NA,NA,0.024566095,"boletin",NA
@@ -4225,6 +4235,9 @@
 "Fondo de Inversión FYNSA Galgo II","B","10604","FINRE",2026-04-09,2026-04-15,"$","Dividendo",246.575332,NA,NA,NA,NA,246.575332,"boletin",NA
 "Fondo de Inversión FYNSA Galgo II","C","10604","FINRE",2026-04-09,2026-04-15,"$","Dividendo",295.890427,NA,NA,NA,NA,295.890427,"boletin",NA
 "Fondo de Inversión FYNSA Galgo II","I","10604","FINRE",2026-04-09,2026-04-15,"$","Dividendo",221.917817,NA,NA,NA,NA,221.917817,"boletin",NA
+"Fondo de Inversión FYNSA Galgo II","B","10604","FINRE",2026-07-09,2026-07-15,"$","Dividendo",249.315068,NA,NA,NA,NA,249.315068,"boletin",NA
+"Fondo de Inversión FYNSA Galgo II","C","10604","FINRE",2026-07-09,2026-07-15,"$","Dividendo",299.178073,NA,NA,NA,NA,299.178073,"boletin",NA
+"Fondo de Inversión FYNSA Galgo II","I","10604","FINRE",2026-07-09,2026-07-15,"$","Dividendo",224.383583,NA,NA,NA,NA,224.383583,"boletin",NA
 "Fondo de Inversión FYNSA Migrante","B",NA,NA,2025-01-09,2025-01-15,"$","Dividendo",101.173424,NA,NA,NA,NA,101.173424,"boletin",NA
 "Fondo de Inversión FYNSA Migrante","C",NA,NA,2025-01-09,2025-01-15,"$","Dividendo",121.852503,NA,NA,NA,NA,121.852503,"boletin",NA
 "Fondo de Inversión FYNSA Migrante","D",NA,NA,2025-01-09,2025-01-15,"$","Dividendo",155.3274,NA,NA,NA,NA,155.3274,"boletin",NA
@@ -6149,6 +6162,7 @@
 "Fondo de Inversión Security Oaktree Real Estate Income Fund","C","9573","FINRE",2025-10-09,2025-10-15,"US$","Dividendo",0.002671,NA,NA,NA,NA,0.002671132,"boletin",NA
 "Fondo de Inversión Security Oaktree Real Estate Income Fund","C","9573","FINRE",2026-01-08,2026-01-14,"US$","Dividendo",0.004476,NA,NA,NA,NA,0.004476264,"boletin",NA
 "Fondo de Inversión Security Oaktree Real Estate Income Fund","C","9573","FINRE",2026-04-09,2026-04-15,"US$","Dividendo",0.003818,NA,NA,NA,NA,0.003818061,"boletin",NA
+"Fondo de Inversión Security Oaktree Real Estate Income Fund","C","9573","FINRE",2026-07-09,2026-07-15,"US$","Dividendo",0.005185,NA,NA,NA,NA,0.005184581,"boletin",NA
 "Fondo de Inversión Security Pantheon PGCO IV","A","9724","FINRE",2025-01-10,2025-01-16,"US$","Dividendo",0.004812,NA,NA,NA,NA,0.00481188,"boletin",NA
 "Fondo de Inversión Security Pantheon PGCO IV","C","9724","FINRE",2025-01-10,2025-01-16,"US$","Dividendo",0.005391,NA,NA,NA,NA,0.005390854,"boletin",NA
 "Fondo de Inversión Security Pantheon PGCO IV","D","9724","FINRE",2025-01-10,2025-01-16,"US$","Dividendo",0.005427,NA,NA,NA,NA,0.005427409,"boletin",NA
@@ -7905,6 +7919,12 @@
 "VOLCOMCAPITAL PE Secondary III Fondo de Inversión","D","9643","FINRE",2026-05-12,2026-05-18,"US$","Reparto",0.0262,NA,NA,NA,NA,0.0261997748221106,"boletin",NA
 "VOLCOMCAPITAL PE Secondary III Fondo de Inversión","Y","9643","FINRE",2026-05-12,2026-05-18,"US$","Reparto",0.026409,NA,NA,NA,NA,0.0264094081059827,"boletin",NA
 "VOLCOMCAPITAL PE Secondary III Fondo de Inversión","Z","9643","FINRE",2026-05-12,2026-05-18,"US$","Reparto",0.0262,NA,NA,NA,NA,0.0262001723403058,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","A","9643","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.050102,NA,NA,NA,NA,0.050101524415376,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","B","9643","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.052093,NA,NA,NA,NA,0.0520931674675808,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","C","9643","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.052227,NA,NA,NA,NA,0.0522269410675834,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","D","9643","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.052629,NA,NA,NA,NA,0.0526285470987674,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","Y","9643","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.053056,NA,NA,NA,NA,0.0530560877473713,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","Z","9643","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.052629,NA,NA,NA,NA,0.0526290575547218,"boletin",NA
 "VOLCOMCAPITAL PE Secondary IV Fondo de Inversión","A","10248","FINRE",2025-01-16,2025-01-22,"US$","Dividendo",0.134633,NA,NA,NA,NA,0.134633206346971,"boletin",NA
 "VOLCOMCAPITAL PE Secondary IV Fondo de Inversión","B","10248","FINRE",2025-01-16,2025-01-22,"US$","Dividendo",0.082225,NA,NA,NA,NA,0.0822253896484294,"boletin",NA
 "VOLCOMCAPITAL PE Secondary IV Fondo de Inversión","C","10248","FINRE",2025-01-16,2025-01-22,"US$","Dividendo",0.152941,NA,NA,NA,NA,0.152941328874899,"boletin",NA
@@ -8174,6 +8194,8 @@
 "VolcomCapital Coinvestment VII Fondo de Inversión","Z","10148","FINRE",2026-04-01,2026-04-09,"US$","Reparto",0.030975,NA,NA,NA,NA,0.0309745071499204,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","B","10148","FINRE",2026-06-05,2026-06-11,"US$","Reparto",0.03368,NA,NA,NA,NA,0.0336798608926324,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","Z","10148","FINRE",2026-06-05,2026-06-11,"US$","Reparto",0.03396,NA,NA,NA,NA,0.0339599408088983,"boletin",NA
+"VolcomCapital Coinvestment VII Fondo de Inversión","B","10148","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.043691,NA,NA,NA,NA,0.0436908230608626,"boletin",NA
+"VolcomCapital Coinvestment VII Fondo de Inversión","Z","10148","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.044058,NA,NA,NA,NA,0.0440581999078938,"boletin",NA
 "VolcomCapital Deuda II Fondo de Inversión en liquidación","A","9600","FINRE",2026-06-11,2026-06-17,"$","Reparto",24.335045,NA,NA,NA,NA,24.3350446818375,"boletin",NA
 "VolcomCapital Deuda II Fondo de Inversión en liquidación","B","9600","FINRE",2026-06-11,2026-06-17,"$","Reparto",24.904354,NA,NA,NA,NA,24.9043540414735,"boletin",NA
 "VolcomCapital Private Equity VI Fondo de Inversion","A","9723","FINRE",2026-03-03,2026-03-09,"US$","Reparto",0.003188,NA,NA,NA,NA,0.00318838543782123,"boletin",NA
@@ -8313,6 +8335,8 @@
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,1968213.74,510768,2026-04-02,3.85344,3.85343977065996,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,397267.6,468889,2026-06-02,0.847253,0.847252978592278,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-06-02,2026-06-08,"US$","Reparto",NA,211479.72,468889,2026-06-02,0.451023,0.451022994782008,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2026-07-04,2026-07-10,"US$","Reparto",NA,1373103.89,464328,2026-07-04,2.957185,2.95718520966713,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2026-07-04,2026-07-10,"US$","Reparto",NA,730191.27,464328,2026-07-04,1.572576,1.5725764376591,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión EUROPE MEDNEO HEALTH TECH","S","10159","FINRE",2025-07-14,2025-07-21,"EURO","Reparto",NA,149138.14,122002,2025-07-14,1.222426,1.22242573732524,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión PE Secondary Deal II","A","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,342664.18,28242557,2025-08-07,0.012133,0.0121329023180371,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión PE Secondary Deal II","P1","10309","FINRE",2025-08-07,2025-08-13,"US$","Reparto",NA,15893.78,28242557,2025-08-07,0.000563,0.00056275995992453,"calculado (total/cuotas dia limite)",NA
