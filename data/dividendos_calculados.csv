@@ -4238,6 +4238,10 @@
 "Fondo de Inversión FYNSA Galgo II","B","10604","FINRE",2026-07-09,2026-07-15,"$","Dividendo",249.315068,NA,NA,NA,NA,249.315068,"boletin",NA
 "Fondo de Inversión FYNSA Galgo II","C","10604","FINRE",2026-07-09,2026-07-15,"$","Dividendo",299.178073,NA,NA,NA,NA,299.178073,"boletin",NA
 "Fondo de Inversión FYNSA Galgo II","I","10604","FINRE",2026-07-09,2026-07-15,"$","Dividendo",224.383583,NA,NA,NA,NA,224.383583,"boletin",NA
+"Fondo de Inversión FYNSA Galgo II","B","10604","FINRE",2026-07-10,2026-07-17,"$","Reparto",1103.402449,NA,NA,NA,NA,1103.402449,"boletin",NA
+"Fondo de Inversión FYNSA Galgo II","C","10604","FINRE",2026-07-10,2026-07-17,"$","Reparto",1103.824874,NA,NA,NA,NA,1103.824874,"boletin",NA
+"Fondo de Inversión FYNSA Galgo II","I","10604","FINRE",2026-07-10,2026-07-17,"$","Reparto",1103.19125,NA,NA,NA,NA,1103.19125,"boletin",NA
+"Fondo de Inversión FYNSA Galgo II","S","10604","FINRE",2026-07-10,2026-07-17,"$","Reparto",432.737794,NA,NA,NA,NA,432.737794,"boletin",NA
 "Fondo de Inversión FYNSA Migrante","B",NA,NA,2025-01-09,2025-01-15,"$","Dividendo",101.173424,NA,NA,NA,NA,101.173424,"boletin",NA
 "Fondo de Inversión FYNSA Migrante","C",NA,NA,2025-01-09,2025-01-15,"$","Dividendo",121.852503,NA,NA,NA,NA,121.852503,"boletin",NA
 "Fondo de Inversión FYNSA Migrante","D",NA,NA,2025-01-09,2025-01-15,"$","Dividendo",155.3274,NA,NA,NA,NA,155.3274,"boletin",NA
@@ -4583,6 +4587,9 @@
 "Fondo de Inversión HMC Mezzanine Inmobiliario IV","I","10555","FINRE",2026-04-07,2026-04-13,"$","Dividendo",805.874853,NA,NA,NA,NA,805.8748529942,"boletin",NA
 "Fondo de Inversión HMC Mezzanine Inmobiliario IV","R","10555","FINRE",2026-04-07,2026-04-13,"$","Dividendo",798.75605,NA,NA,NA,NA,798.756050283,"boletin",NA
 "Fondo de Inversión HMC Mezzanine Inmobiliario IV","X","10555","FINRE",2026-04-07,2026-04-13,"$","Dividendo",821.508237,NA,NA,NA,NA,821.5082366183,"boletin",NA
+"Fondo de Inversión HMC Mezzanine Inmobiliario IV","I","10555","FINRE",2026-07-10,2026-07-17,"$","Dividendo",855.040244,NA,NA,NA,NA,855.0402443058,"boletin",NA
+"Fondo de Inversión HMC Mezzanine Inmobiliario IV","R","10555","FINRE",2026-07-10,2026-07-17,"$","Dividendo",845.738801,NA,NA,NA,NA,845.7388008816,"boletin",NA
+"Fondo de Inversión HMC Mezzanine Inmobiliario IV","X","10555","FINRE",2026-07-10,2026-07-17,"$","Dividendo",873.41572,NA,NA,NA,NA,873.415719538,"boletin",NA
 "Fondo de Inversión HMC Pearl Diver VII","BP",NA,NA,2025-01-21,2025-01-27,"US$","Dividendo",0.035162,NA,NA,NA,NA,0.0351618588,"boletin",NA
 "Fondo de Inversión HMC Pearl Diver VII","I",NA,NA,2025-01-21,2025-01-27,"US$","Dividendo",0.041854,NA,NA,NA,NA,0.0418535583,"boletin",NA
 "Fondo de Inversión HMC Pearl Diver VII","BP",NA,NA,2025-03-04,2025-03-10,"US$","Reparto",0.052909,NA,NA,NA,NA,0.0529087069,"boletin",NA
@@ -7108,6 +7115,9 @@
 "Moneda GSI Rentas Logísticas I Fondo de Inversión","A",NA,NA,2026-04-23,2026-04-29,"$","Dividendo",6639.452274,NA,NA,NA,NA,6639.452274,"boletin",NA
 "Moneda GSI Rentas Logísticas I Fondo de Inversión","B",NA,NA,2026-04-23,2026-04-29,"$","Dividendo",6788.570594,NA,NA,NA,NA,6788.570594,"boletin",NA
 "Moneda GSI Rentas Logísticas I Fondo de Inversión","E",NA,NA,2026-04-23,2026-04-29,"$","Dividendo",6788.778012,NA,NA,NA,NA,6788.778012,"boletin",NA
+"Moneda GSI Rentas Logísticas I Fondo de Inversión","A",NA,NA,2026-07-10,2026-07-17,"$","Dividendo",207.151181,NA,NA,NA,NA,207.151181,"boletin",NA
+"Moneda GSI Rentas Logísticas I Fondo de Inversión","B",NA,NA,2026-07-10,2026-07-17,"$","Dividendo",217.213815,NA,NA,NA,NA,217.213815,"boletin",NA
+"Moneda GSI Rentas Logísticas I Fondo de Inversión","E",NA,NA,2026-07-10,2026-07-17,"$","Dividendo",218.38387,NA,NA,NA,NA,218.38387,"boletin",NA
 "Moneda GSI Rentas Logísticas II Fondo de Inversión","A1",NA,NA,2025-01-14,2025-01-20,"$","Dividendo",1179.919497,NA,NA,NA,NA,1179.919497,"boletin",NA
 "Moneda GSI Rentas Logísticas II Fondo de Inversión","A2",NA,NA,2025-01-14,2025-01-20,"$","Dividendo",1175.487115,NA,NA,NA,NA,1175.487115,"boletin",NA
 "Moneda GSI Rentas Logísticas II Fondo de Inversión","A3",NA,NA,2025-01-14,2025-01-20,"$","Dividendo",1189.565084,NA,NA,NA,NA,1189.565084,"boletin",NA
