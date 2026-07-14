@@ -4722,6 +4722,9 @@
 "Fondo de Inversión HMC Renta Global Pesos","BP","9769","FIRES",2026-06-11,2026-06-17,"$","Dividendo",5.408144,NA,NA,NA,NA,5.4081440699,"boletin",NA
 "Fondo de Inversión HMC Renta Global Pesos","C","9769","FIRES",2026-06-11,2026-06-17,"$","Dividendo",5.665791,NA,NA,NA,NA,5.6657914494,"boletin",NA
 "Fondo de Inversión HMC Renta Global Pesos","X","9769","FIRES",2026-06-11,2026-06-17,"$","Dividendo",6.553482,NA,NA,NA,NA,6.5534820942,"boletin",NA
+"Fondo de Inversión HMC Renta Global Pesos","BP","9769","FIRES",2026-07-13,2026-07-20,"$","Reparto",5.384667,NA,NA,NA,NA,5.3846669421,"boletin",NA
+"Fondo de Inversión HMC Renta Global Pesos","C","9769","FIRES",2026-07-13,2026-07-20,"$","Reparto",5.638254,NA,NA,NA,NA,5.6382540677,"boletin",NA
+"Fondo de Inversión HMC Renta Global Pesos","X","9769","FIRES",2026-07-13,2026-07-20,"$","Reparto",6.53184,NA,NA,NA,NA,6.5318397195,"boletin",NA
 "Fondo de Inversión HMC Renta Global USD","BP","10283","FIRES",2025-01-08,2025-01-14,"US$","Reparto",0.008352,NA,NA,NA,NA,0.0083521721,"boletin",NA
 "Fondo de Inversión HMC Renta Global USD","C","10283","FIRES",2025-01-08,2025-01-14,"US$","Reparto",0.008315,NA,NA,NA,NA,0.0083147463,"boletin",NA
 "Fondo de Inversión HMC Renta Global USD","X","10283","FIRES",2025-01-08,2025-01-14,"US$","Reparto",0.009234,NA,NA,NA,NA,0.0092344982,"boletin",NA
@@ -4770,6 +4773,8 @@
 "Fondo de Inversión HMC Renta Global USD","C","10283","FIRES",2026-05-12,2026-05-18,"US$","Dividendo",0.006718,NA,NA,NA,NA,0.006717515,"boletin",NA
 "Fondo de Inversión HMC Renta Global USD","BP","10283","FIRES",2026-06-11,2026-06-17,"US$","Dividendo",0.00683,NA,NA,NA,NA,0.0068300769,"boletin",NA
 "Fondo de Inversión HMC Renta Global USD","C","10283","FIRES",2026-06-11,2026-06-17,"US$","Dividendo",0.006742,NA,NA,NA,NA,0.0067421536,"boletin",NA
+"Fondo de Inversión HMC Renta Global USD","BP","10283","FIRES",2026-07-13,2026-07-20,"US$","Reparto",0.006813,NA,NA,NA,NA,0.0068134063,"boletin",NA
+"Fondo de Inversión HMC Renta Global USD","C","10283","FIRES",2026-07-13,2026-07-20,"US$","Reparto",0.006722,NA,NA,NA,NA,0.0067221919,"boletin",NA
 "Fondo de Inversión HMC Secondaries CDR X","BP","10189","FINRE",2025-02-26,2025-03-04,"US$","Reparto",0.010604,NA,NA,NA,NA,0.0106036642,"boletin",NA
 "Fondo de Inversión HMC Secondaries CDR X","E","10189","FINRE",2025-02-26,2025-03-04,"US$","Reparto",0.011691,NA,NA,NA,NA,0.0116905785,"boletin",NA
 "Fondo de Inversión HMC Secondaries CDR X","I","10189","FINRE",2025-02-26,2025-03-04,"US$","Reparto",0.011669,NA,NA,NA,NA,0.0116694979,"boletin",NA
@@ -6700,12 +6705,18 @@
 "MBI Deuda Privada III Fondo de Inversión","A","10574","FINRE",2026-06-09,2026-06-15,"$","Reparto",2753.556905,NA,NA,NA,NA,2753.5569047,"boletin",NA
 "MBI Deuda Privada III Fondo de Inversión","B","10574","FINRE",2026-06-09,2026-06-15,"$","Reparto",2827.5,NA,NA,NA,NA,2827.5,"boletin",NA
 "MBI Deuda Privada III Fondo de Inversión","I","10574","FINRE",2026-06-09,2026-06-15,"$","Reparto",2751.135962,NA,NA,NA,NA,2751.1359616,"boletin",NA
+"MBI Deuda Privada III Fondo de Inversión","A","10574","FINRE",2026-07-10,2026-07-17,"$","Reparto",2594.355215,NA,NA,NA,NA,2594.3552149288,"boletin",NA
+"MBI Deuda Privada III Fondo de Inversión","B","10574","FINRE",2026-07-10,2026-07-17,"$","Reparto",2667.5,NA,NA,NA,NA,2667.5,"boletin",NA
+"MBI Deuda Privada III Fondo de Inversión","I","10574","FINRE",2026-07-10,2026-07-17,"$","Reparto",2592.86359,NA,NA,NA,NA,2592.86359049788,"boletin",NA
 "MBI Deuda Privada IV Fondo de Inversión","A","10683","FINRE",2026-04-14,2026-04-20,"$","Dividendo",3265.391168,NA,NA,NA,NA,3265.3911685,"boletin",NA
 "MBI Deuda Privada IV Fondo de Inversión","C","10683","FINRE",2026-04-14,2026-04-20,"$","Dividendo",3243.303309,NA,NA,NA,NA,3243.3033094,"boletin",NA
 "MBI Deuda Privada IV Fondo de Inversión","I","10683","FINRE",2026-04-14,2026-04-20,"$","Dividendo",3179.795747,NA,NA,NA,NA,3179.7957473,"boletin",NA
 "MBI Deuda Privada IV Fondo de Inversión","A","10683","FINRE",2026-06-09,2026-06-15,"$","Reparto",6268.86803,NA,NA,NA,NA,6268.8680297,"boletin",NA
 "MBI Deuda Privada IV Fondo de Inversión","C","10683","FINRE",2026-06-09,2026-06-15,"$","Reparto",6222.229856,NA,NA,NA,NA,6222.2298555,"boletin",NA
 "MBI Deuda Privada IV Fondo de Inversión","I","10683","FINRE",2026-06-09,2026-06-15,"$","Reparto",6108.696705,NA,NA,NA,NA,6108.6967047,"boletin",NA
+"MBI Deuda Privada IV Fondo de Inversión","A","10683","FINRE",2026-07-10,2026-07-17,"$","Reparto",1828.307671,NA,NA,NA,NA,1828.30767139786,"boletin",NA
+"MBI Deuda Privada IV Fondo de Inversión","C","10683","FINRE",2026-07-10,2026-07-17,"$","Reparto",1814.012218,NA,NA,NA,NA,1814.01221772627,"boletin",NA
+"MBI Deuda Privada IV Fondo de Inversión","I","10683","FINRE",2026-07-10,2026-07-17,"$","Reparto",1782.274988,NA,NA,NA,NA,1782.2749879952,"boletin",NA
 "MBI Deuda Total Fondo de Inversión","A","9202","FIRES",2025-06-18,2025-06-25,"$","Dividendo",11.321122,NA,NA,NA,NA,11.3211219,"boletin",NA
 "MBI Deuda Total Fondo de Inversión","APV","9202","FIRES",2025-06-18,2025-06-25,"$","Dividendo",11.550481,NA,NA,NA,NA,11.5504806,"boletin",NA
 "MBI Deuda Total Fondo de Inversión","B","9202","FIRES",2025-06-18,2025-06-25,"$","Dividendo",11.815385,NA,NA,NA,NA,11.8153852,"boletin",NA
