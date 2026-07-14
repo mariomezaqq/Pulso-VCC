@@ -35,38 +35,87 @@ suppressMessages({ library(readxl); library(dplyr); library(lubridate); library(
   suppressWarnings(as.numeric(x))
 }
 
-#' Carga dividendos del Boletin y los devuelve por nombre_excel.
-#' @return named list nombre_excel -> tibble(fecha_limite, monto)
-cargar_dividendos_pulso <- function(ruta_xlsx, fecha_inicio = as.Date("2025-12-31")) {
-  if (is.null(ruta_xlsx) || !file.exists(ruta_xlsx)) return(list())
-  if (!"Dividendos CFI nacionales" %in% tryCatch(excel_sheets(ruta_xlsx), error = function(e) character(0)))
+# Lookup (nombre_excel, fecha_limite) -> monto_final desde dividendos_calculados.csv.
+# Resuelve el caso "monto total" (reparto SIN monto por-cuota en el boletin), que
+# procesar_dividendos.R ya calculo como total/cuotas del dia limite. Mapea las filas
+# calculadas (run+serie) al nombre_excel del pulso via la lista curada (solo FIRES/
+# FINRE; los RGFMU se ajustan por factor de reparto de la serie, no por el boletin).
+.calc_lookup_div <- function() {
+  ruta <- tryCatch(store_sync("dividendos_calculados.csv"), error = function(e) NULL)
+  if (is.null(ruta) || !file.exists(ruta))
+    ruta <- if (file.exists("data/dividendos_calculados.csv")) "data/dividendos_calculados.csv" else NULL
+  if (is.null(ruta)) return(list())
+  df <- tryCatch(read.csv(ruta, stringsAsFactors = FALSE, fileEncoding = "UTF-8", check.names = FALSE),
+                 error = function(e) NULL)
+  if (is.null(df) || !nrow(df) || !all(c("run","serie","fecha_limite","monto_final") %in% names(df)))
     return(list())
-  df <- tryCatch(suppressMessages(read_excel(ruta_xlsx, sheet = "Dividendos CFI nacionales",
-                                             skip = 11, col_names = TRUE, col_types = "text")),
+  ex <- list(); for (cat in CATEGORIAS) for (f in cat$fondos) ex[[f$nombre_script]] <- f$nombre_excel
+  rs <- list()
+  for (fd in FONDOS) {
+    tipo <- if (!is.null(fd$tipoentidad)) fd$tipoentidad else "FIRES"
+    if (identical(tipo, "RGFMU")) next
+    run <- as.character(fd$run %||% ""); if (!nzchar(run)) next
+    rs[[paste0(run, "|", as.character(fd$serie %||% ""))]] <- ex[[fd$nombre]] %||% fd$nombre
+  }
+  out <- list()
+  for (i in seq_len(nrow(df))) {
+    nm <- rs[[paste0(as.character(df$run[i]), "|", as.character(df$serie[i]))]]
+    if (is.null(nm)) next
+    fl <- suppressWarnings(as.Date(as.character(df$fecha_limite[i])))
+    mo <- suppressWarnings(as.numeric(df$monto_final[i]))
+    if (is.na(fl) || is.na(mo) || mo <= 0) next
+    out[[paste0(nm, "|", as.character(fl))]] <- mo
+  }
+  out
+}
+
+# Extrae dividendos de UNA hoja del boletin, cruzando por TICKER SEBRA (columna
+# "Pesos"/"Dolares"). Toma el monto "Por Accion / cuota"; si viene vacio (reparto
+# como monto total), lo rescata de dividendos_calculados.csv (arg calc).
+.leer_hoja_div <- function(ruta_xlsx, hoja, skip, lookup, fecha_inicio, calc) {
+  if (!hoja %in% tryCatch(excel_sheets(ruta_xlsx), error = function(e) character(0))) return(list())
+  df <- tryCatch(suppressMessages(read_excel(ruta_xlsx, sheet = hoja, skip = skip,
+                                             col_names = TRUE, col_types = "text")),
                  error = function(e) NULL)
   if (is.null(df) || nrow(df) == 0) return(list())
-
-  # lookup TICKER -> nombre_excel
-  lookup <- list()
-  for (m in MAPEO_SEBRA) { t <- m$ticker_sebra
-    if (!is.null(t) && !is.na(t) && nzchar(t)) lookup[[toupper(trimws(t))]] <- m$nombre_excel }
-  if (!length(lookup)) return(list())
-
   cols <- tolower(colnames(df))
   ic <- which(grepl("pesos", cols))[1];   if (is.na(ic)) ic <- 3L
   iu <- which(grepl("d.lar", cols))[1];   if (is.na(iu)) iu <- 4L
   im <- which(grepl("por acci|cuota", cols))[1]; if (is.na(im)) im <- 9L
   il <- which(grepl("l.mi", cols))[1];    if (is.na(il)) il <- 11L
-
   res <- list()
   for (i in seq_len(nrow(df))) {
     nc <- toupper(trimws(as.character(df[[ic]][i]))); nu <- toupper(trimws(as.character(df[[iu]][i])))
     nombre <- if (nzchar(nc) && !is.null(lookup[[nc]])) lookup[[nc]]
               else if (nzchar(nu) && !is.null(lookup[[nu]])) lookup[[nu]] else NULL
     if (is.null(nombre)) next
-    fl <- .parse_fecha_div(df[[il]][i]); mo <- .parse_monto_div(df[[im]][i])
-    if (is.na(fl) || is.na(mo) || mo <= 0 || fl < fecha_inicio) next
+    fl <- .parse_fecha_div(df[[il]][i]); if (is.na(fl) || fl < fecha_inicio) next
+    mo <- .parse_monto_div(df[[im]][i])
+    if (is.na(mo) || mo <= 0) {                       # sin por-cuota -> usar el calculado
+      mo <- calc[[paste0(nombre, "|", as.character(fl))]]
+      if (is.null(mo) || is.na(mo) || mo <= 0) next
+    }
     res[[nombre]] <- rbind(res[[nombre]], data.frame(fecha_limite = fl, monto = mo))
+  }
+  res
+}
+
+#' Carga dividendos del Boletin y los devuelve por nombre_excel. Lee AMBAS hojas
+#' relevantes ("Dividendos CFI nacionales" + "Repartos CFI-CFM"); los repartos que
+#' vienen solo como monto total se resuelven con dividendos_calculados.csv.
+#' @return named list nombre_excel -> tibble(fecha_limite, monto)
+cargar_dividendos_pulso <- function(ruta_xlsx, fecha_inicio = as.Date("2025-12-31")) {
+  if (is.null(ruta_xlsx) || !file.exists(ruta_xlsx)) return(list())
+  lookup <- list()
+  for (m in MAPEO_SEBRA) { t <- m$ticker_sebra
+    if (!is.null(t) && !is.na(t) && nzchar(t)) lookup[[toupper(trimws(t))]] <- m$nombre_excel }
+  if (!length(lookup)) return(list())
+  calc <- tryCatch(.calc_lookup_div(), error = function(e) list())
+
+  res <- list()
+  for (hs in list(list("Dividendos CFI nacionales", 11L), list("Repartos CFI-CFM", 10L))) {
+    parcial <- .leer_hoja_div(ruta_xlsx, hs[[1]], hs[[2]], lookup, fecha_inicio, calc)
+    for (nm in names(parcial)) res[[nm]] <- rbind(res[[nm]], parcial[[nm]])
   }
   lapply(res, function(d) distinct(arrange(d, fecha_limite), fecha_limite, .keep_all = TRUE))
 }

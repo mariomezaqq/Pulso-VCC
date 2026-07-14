@@ -83,7 +83,8 @@ construir_pulso_data <- function(series, fecha_cierre = NULL, macro = list(), rf
       mtd <- NA_real_; ytd <- NA_real_; mes_ant <- NA_real_
       fecha_dato <- NA; atrasado <- FALSE
 
-      h <- if (identical(nombre_script, "__MANUAL__")) {
+      es_manual <- identical(nombre_script, "__MANUAL__")
+      h <- if (es_manual) {
         if (!is.null(series_manual)) series_manual[[nombre_excel]] else NULL
       } else series[[nombre_script]]
 
@@ -91,15 +92,23 @@ construir_pulso_data <- function(series, fecha_cierre = NULL, macro = list(), rf
         if (!is.null(h) && nrow(h) > 0) {
           fecha_dato <- max(h$fecha)
           atrasado   <- fecha_dato < fc
-          mtd     <- .rent(h, fin_mes_ant,  fc)
-          mes_ant <- .rent(h, ini_mes_ant,  fin_mes_ant)
+          # Los fondos MANUALES muestran su propio ultimo VC (el usuario lo ingresa
+          # a mano): si su dato es mas nuevo que el cierre del grupo scrapeado, se
+          # ancla a SU fecha en vez de recortarse a fc. Los scrapeados usan fc igual
+          # que antes (ref_fin == fc -> comportamiento identico).
+          ref_fin <- if (es_manual && fecha_dato > fc) fecha_dato else fc
+          f_fin_mes_ant  <- floor_date(ref_fin, "month") - 1
+          f_ini_mes_ant  <- floor_date(f_fin_mes_ant, "month") - 1
+          f_fin_anio_ant <- as.Date(sprintf("%d-12-31", year(ref_fin) - 1))
+          mtd     <- .rent(h, f_fin_mes_ant, ref_fin)
+          mes_ant <- .rent(h, f_ini_mes_ant, f_fin_mes_ant)
           if (nombre_excel %in% FONDOS_YTD_DESDE_INICIO) {
             col <- if ("valor_cuota_ajustado" %in% names(h)) "valor_cuota_ajustado" else "valor_cuota"
             v0 <- h %>% arrange(fecha) %>% slice(1)
-            vf <- .vc_a_fecha(h, fc, col)
+            vf <- .vc_a_fecha(h, ref_fin, col)
             ytd <- if (nrow(v0) && !is.na(vf) && v0[[col]][1] != 0) (vf / v0[[col]][1]) - 1 else NA_real_
           } else {
-            ytd <- .rent(h, fin_anio_ant, fc)
+            ytd <- .rent(h, f_fin_anio_ant, ref_fin)
           }
         }
       }
