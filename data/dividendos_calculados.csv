@@ -24,6 +24,8 @@
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",640.439758,NA,NA,NA,NA,640.439758,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",923.474391,NA,NA,NA,NA,923.474391,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",923.902157,NA,NA,NA,NA,923.902157,"boletin",NA
+"Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-07-17,2026-07-23,"$","Dividendo",2349.780039,NA,NA,NA,NA,2349.780039,"boletin",NA
+"Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-07-17,2026-07-23,"$","Dividendo",2351.594052,NA,NA,NA,NA,2351.594052,"boletin",NA
 "Alza Dédalo Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",305.806585,NA,NA,NA,NA,305.806585,"boletin",NA
 "Alza Dédalo Fondo de Inversión","I1",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",307.720236,NA,NA,NA,NA,307.720236,"boletin",NA
 "Alza Dédalo Fondo de Inversión","F",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",304.98705,NA,NA,NA,NA,304.98705,"boletin",NA
@@ -6148,6 +6150,8 @@
 "Fondo de Inversión Security GNP IV CLP","GP","10718","FINRE",2026-06-17,2026-06-23,"$","Dividendo",62.280793,NA,NA,NA,NA,62.280792623,"boletin",NA
 "Fondo de Inversión Security GNP IV CLP","A","10718","FINRE",2026-06-17,2026-06-23,"$","Reparto",37.140736,NA,NA,NA,NA,37.140735521,"boletin",NA
 "Fondo de Inversión Security GNP IV CLP","GP","10718","FINRE",2026-06-17,2026-06-23,"$","Reparto",37.320776,NA,NA,NA,NA,37.320775987,"boletin",NA
+"Fondo de Inversión Security GNP IV CLP","A","10718","FINRE",2026-07-17,2026-07-23,"$","Dividendo",20.488069,NA,NA,NA,NA,20.488069498,"boletin",NA
+"Fondo de Inversión Security GNP IV CLP","GP","10718","FINRE",2026-07-17,2026-07-23,"$","Dividendo",20.593386,NA,NA,NA,NA,20.593385736,"boletin",NA
 "Fondo de Inversión Security GNP IV USD","A","10717","FINRE",2025-04-11,2025-04-17,"US$","Reparto",1.453864,NA,NA,NA,NA,1.453864078,"boletin",NA
 "Fondo de Inversión Security GNP IV USD","GP","10717","FINRE",2025-04-11,2025-04-17,"US$","Reparto",1.454978,NA,NA,NA,NA,1.454978074,"boletin",NA
 "Fondo de Inversión Security GNP IV USD","S","10717","FINRE",2025-04-11,2025-04-17,"US$","Reparto",1.455124,NA,NA,NA,NA,1.455124,"boletin",NA
@@ -6166,6 +6170,9 @@
 "Fondo de Inversión Security GNP IV USD","A","10717","FINRE",2026-04-14,2026-04-20,"US$","Reparto",2.179845,NA,NA,NA,NA,2.17984466,"boletin",NA
 "Fondo de Inversión Security GNP IV USD","S","10717","FINRE",2026-04-14,2026-04-20,"US$","Reparto",2.190846,NA,NA,NA,NA,2.190846,"boletin",NA
 "Fondo de Inversión Security GNP IV USD","GP","10717","FINRE",2026-04-14,2026-04-20,"US$","Reparto",2.189515,NA,NA,NA,NA,2.189514849,"boletin",NA
+"Fondo de Inversión Security GNP IV USD","A","10717","FINRE",2026-07-17,2026-07-23,"US$","Dividendo",2.207796,NA,NA,NA,NA,2.207796117,"boletin",NA
+"Fondo de Inversión Security GNP IV USD","S","10717","FINRE",2026-07-17,2026-07-23,"US$","Dividendo",2.221194,NA,NA,NA,NA,2.221194,"boletin",NA
+"Fondo de Inversión Security GNP IV USD","GP","10717","FINRE",2026-07-17,2026-07-23,"US$","Dividendo",2.21958,NA,NA,NA,NA,2.21958035,"boletin",NA
 "Fondo de Inversión Security GNP V CLP","A","10769","FINRE",2025-10-21,2025-10-27,"$","Reparto",15.467332,NA,NA,NA,NA,15.467332377,"boletin",NA
 "Fondo de Inversión Security GNP V CLP","B","10769","FINRE",2025-10-21,2025-10-27,"$","Reparto",15.477817,NA,NA,NA,NA,15.477817496,"boletin",NA
 "Fondo de Inversión Security GNP V CLP","I","10769","FINRE",2025-10-21,2025-10-27,"$","Reparto",15.488306,NA,NA,NA,NA,15.488305556,"boletin",NA
@@ -6178,6 +6185,9 @@
 "Fondo de Inversión Security GNP V CLP","A","10769","FINRE",2026-04-14,2026-04-20,"$","Reparto",20.703764,NA,NA,NA,NA,20.703763595,"boletin",NA
 "Fondo de Inversión Security GNP V CLP","B","10769","FINRE",2026-04-14,2026-04-20,"$","Reparto",20.747823,NA,NA,NA,NA,20.747823093,"boletin",NA
 "Fondo de Inversión Security GNP V CLP","I","10769","FINRE",2026-04-14,2026-04-20,"$","Reparto",20.791955,NA,NA,NA,NA,20.791955368,"boletin",NA
+"Fondo de Inversión Security GNP V CLP","A","10769","FINRE",2026-07-17,2026-07-23,"$","Reparto",17.160143,NA,NA,NA,NA,17.160143421,"boletin",NA
+"Fondo de Inversión Security GNP V CLP","B","10769","FINRE",2026-07-17,2026-07-23,"$","Reparto",17.209996,NA,NA,NA,NA,17.209995863,"boletin",NA
+"Fondo de Inversión Security GNP V CLP","I","10769","FINRE",2026-07-17,2026-07-23,"$","Reparto",17.259925,NA,NA,NA,NA,17.259925094,"boletin",NA
 "Fondo de Inversión Security GNP V USD","A","10768","FINRE",2025-10-21,2025-10-27,"US$","Reparto",1.555681,NA,NA,NA,NA,1.55568055,"boletin",NA
 "Fondo de Inversión Security GNP V USD","B","10768","FINRE",2025-10-21,2025-10-27,"US$","Reparto",1.556749,NA,NA,NA,NA,1.556748936,"boletin",NA
 "Fondo de Inversión Security GNP V USD","I","10768","FINRE",2025-10-21,2025-10-27,"US$","Reparto",1.557787,NA,NA,NA,NA,1.557787481,"boletin",NA
@@ -6190,6 +6200,9 @@
 "Fondo de Inversión Security GNP V USD","A","10768","FINRE",2026-04-14,2026-04-20,"US$","Reparto",2.463218,NA,NA,NA,NA,2.463218119,"boletin",NA
 "Fondo de Inversión Security GNP V USD","B","10768","FINRE",2026-04-14,2026-04-20,"US$","Reparto",2.468474,NA,NA,NA,NA,2.468474043,"boletin",NA
 "Fondo de Inversión Security GNP V USD","I","10768","FINRE",2026-04-14,2026-04-20,"US$","Reparto",2.473731,NA,NA,NA,NA,2.473730944,"boletin",NA
+"Fondo de Inversión Security GNP V USD","A","10768","FINRE",2026-07-17,2026-07-23,"US$","Dividendo",2.02,NA,NA,NA,NA,2.02,"boletin",NA
+"Fondo de Inversión Security GNP V USD","B","10768","FINRE",2026-07-17,2026-07-23,"US$","Dividendo",2.025912,NA,NA,NA,NA,2.02591234,"boletin",NA
+"Fondo de Inversión Security GNP V USD","I","10768","FINRE",2026-07-17,2026-07-23,"US$","Dividendo",2.031791,NA,NA,NA,NA,2.03179051,"boletin",NA
 "Fondo de Inversión Security HY Chile","A",NA,NA,2025-06-12,2025-06-18,"$","Dividendo",1535.823017,NA,NA,NA,NA,1535.823016618,"boletin",NA
 "Fondo de Inversión Security HY Chile","D",NA,NA,2025-06-12,2025-06-18,"$","Dividendo",13.006174,NA,NA,NA,NA,13.006173602,"boletin",NA
 "Fondo de Inversión Security HY Chile","F",NA,NA,2025-06-12,2025-06-18,"$","Dividendo",12.438611,NA,NA,NA,NA,12.438610929,"boletin",NA
@@ -8465,6 +8478,8 @@
 "Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-07-02,2026-07-08,"US$","Reparto",NA,332286.37,8190288,2026-07-02,0.040571,0.0405707772263402,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,128123.28,206645683,2026-03-11,0.00062,0.000620014306971599,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,332465.91,206645683,2026-03-11,0.001609,0.00160886937003433,"calculado (total/cuotas dia limite)",NA
+"Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-07-17,2026-07-23,"US$","Reparto",NA,1153074.67,206121806,2026-07-17,0.005594,0.00559414209210697,"calculado (total/cuotas dia limite)",NA
+"Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-07-17,2026-07-23,"US$","Reparto",NA,2992875.17,206121806,2026-07-17,0.01452,0.0145199347453524,"calculado (total/cuotas dia limite)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","A",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","H",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-01-31,2025-02-06,"$","Reparto",NA,106105773,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8549,8 +8564,6 @@
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-07-17,2026-07-23,"US$","Reparto",NA,1153074.67,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-07-17,2026-07-23,"US$","Reparto",NA,2992875.17,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","A","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,177557068,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","B","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,131131561,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,174659992,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
