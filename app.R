@@ -136,7 +136,7 @@ ui <- page_navbar(
         div(style = "margin-top:8px", actionButton("cat_add", "Agregar fondo", class = "btn-primary")),
         verbatimTextOutput("cat_msg")),
       card(card_header("Editar fondos (categoría, rent, TAC, duración…)"),
-        p(class = "text-muted", HTML("Haz <b>doble clic</b> en una celda para editarla (categoría, rentabilidades, duración, liquidez, moneda, TAC, ticker). Para mover un fondo de categoría, edita la columna <b>Categoría</b>. Luego <b>Guardar cambios</b>. Para eliminar, selecciona filas y <b>Eliminar</b>.")),
+        p(class = "text-muted", HTML("Haz <b>doble clic</b> en una celda para editarla: <b>Nombre</b>, categoría, rentabilidades, duración, liquidez, moneda, TAC, ticker. Para mover un fondo de categoría, edita la columna <b>Categoría</b>. Luego <b>Guardar cambios</b>. Para eliminar, selecciona filas y <b>Eliminar</b>. <i>(Al renombrar, las rentabilidades MTD/YTD en vivo reaparecen tras el próximo refresco de la CMF.)</i>")),
         DTOutput("tbl_cur"),
         div(style = "margin-top:8px",
           actionButton("cat_save", "💾 Guardar cambios", class = "btn-primary"),
@@ -271,7 +271,7 @@ server <- function(input, output, session) {
   # columnas visibles (orden = indice DT 0-based) -> columna real en rv$cur
   .colmap_cur <- c("hoja","nombre_excel","rent2024","rent2025","duracion",
                    "liquidez","moneda","tac","ticker_sebra","run","serie","tipoentidad")
-  .editables_cur <- c("hoja","rent2024","rent2025","duracion","liquidez","moneda","tac","ticker_sebra")
+  .editables_cur <- c("hoja","nombre_excel","rent2024","rent2025","duracion","liquidez","moneda","tac","ticker_sebra")
 
   output$tbl_cur <- renderDT({
     rv$tick
@@ -286,7 +286,7 @@ server <- function(input, output, session) {
       Tipo = ifelse(tolower(df$es_manual) %in% c("true","1"), "Manual", df$tipoentidad),
       check.names = FALSE, stringsAsFactors = FALSE)
     datatable(vis, rownames = FALSE, selection = "multiple",
-              editable = list(target = "cell", disable = list(columns = c(1, 9, 10, 11))),
+              editable = list(target = "cell", disable = list(columns = c(9, 10, 11))),
               options = list(pageLength = 15, lengthMenu = list(c(15, 30, 60, -1), c("15","30","60","Todas")),
                              columnDefs = list(list(className = "dt-center", targets = 2:11))))
   }, server = FALSE)
@@ -295,8 +295,14 @@ server <- function(input, output, session) {
   observeEvent(input$tbl_cur_cell_edit, {
     info <- input$tbl_cur_cell_edit
     cc <- .colmap_cur[info$col + 1]
-    if (length(cc) == 1 && cc %in% .editables_cur && !is.null(rv$cur) && info$row <= nrow(rv$cur))
-      rv$cur[info$row, cc] <- as.character(info$value)
+    if (length(cc) != 1 || !(cc %in% .editables_cur) || is.null(rv$cur) || info$row > nrow(rv$cur)) return()
+    val <- as.character(info$value)
+    rv$cur[info$row, cc] <- val
+    # renombrar: sincroniza nombre_script (clave del scraping) salvo manuales (__MANUAL__)
+    if (cc == "nombre_excel") {
+      es_man <- tolower(trimws(rv$cur$es_manual[info$row])) %in% c("true","1","yes","si","sí")
+      if (!es_man) rv$cur$nombre_script[info$row] <- val
+    }
   })
 
   observeEvent(input$cat_save, {
