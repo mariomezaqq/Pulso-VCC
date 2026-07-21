@@ -135,10 +135,12 @@ ui <- page_navbar(
           textInput("cat_tac", "TAC", "")),
         div(style = "margin-top:8px", actionButton("cat_add", "Agregar fondo", class = "btn-primary")),
         verbatimTextOutput("cat_msg")),
-      card(card_header("Fondos actuales (quitar)"),
-        p(class = "text-muted", "Selecciona una fila y quítala. El cambio se guarda al instante."),
+      card(card_header("Editar fondos (categoría, rent, TAC, duración…)"),
+        p(class = "text-muted", HTML("Haz <b>doble clic</b> en una celda para editarla (categoría, rentabilidades, duración, liquidez, moneda, TAC, ticker). Para mover un fondo de categoría, edita la columna <b>Categoría</b>. Luego <b>Guardar cambios</b>. Para eliminar, selecciona filas y <b>Eliminar</b>.")),
         DTOutput("tbl_cur"),
-        div(style = "margin-top:8px", actionButton("cat_del", "Quitar fondo seleccionado", class = "btn-outline-danger")),
+        div(style = "margin-top:8px",
+          actionButton("cat_save", "💾 Guardar cambios", class = "btn-primary"),
+          actionButton("cat_del", "Eliminar seleccionadas", class = "btn-outline-danger", style = "margin-left:8px")),
         verbatimTextOutput("cat_del_msg")),
       layout_columns(col_widths = c(6,6),
         card(card_header("Dividendos (Boletín Bolsa)"),
@@ -266,26 +268,54 @@ server <- function(input, output, session) {
       easyClose = TRUE, footer = modalButton("Cerrar")))
   })
 
+  # columnas visibles (orden = indice DT 0-based) -> columna real en rv$cur
+  .colmap_cur <- c("hoja","nombre_excel","rent2024","rent2025","duracion",
+                   "liquidez","moneda","tac","ticker_sebra","run","serie","tipoentidad")
+  .editables_cur <- c("hoja","rent2024","rent2025","duracion","liquidez","moneda","tac","ticker_sebra")
+
   output$tbl_cur <- renderDT({
     rv$tick
-    df <- rv$cur
+    df <- isolate(rv$cur)   # editar celdas NO debe re-renderizar (isolate)
     if (is.null(df) || !nrow(df)) return(datatable(data.frame(Aviso = "Sin lista curada."), rownames = FALSE))
-    vis <- data.frame(Nombre = df$nombre_excel, Categoría = df$hoja,
-                      Run = df$run, Serie = df$serie,
-                      Tipo = ifelse(tolower(df$es_manual) %in% c("true","1"), "Manual", df$tipoentidad),
-                      check.names = FALSE, stringsAsFactors = FALSE)
-    datatable(vis, rownames = FALSE, selection = "single",
-              options = list(pageLength = 10, lengthMenu = list(c(10,25,50,-1), c("10","25","50","Todas"))))
+    vis <- data.frame(
+      Categoría = df$hoja, Nombre = df$nombre_excel,
+      `Rent 2024` = df$rent2024, `Rent 2025` = df$rent2025,
+      Duración = df$duracion, Liquidez = df$liquidez, Moneda = df$moneda,
+      TAC = df$tac, Ticker = df$ticker_sebra,
+      Run = df$run, Serie = df$serie,
+      Tipo = ifelse(tolower(df$es_manual) %in% c("true","1"), "Manual", df$tipoentidad),
+      check.names = FALSE, stringsAsFactors = FALSE)
+    datatable(vis, rownames = FALSE, selection = "multiple",
+              editable = list(target = "cell", disable = list(columns = c(1, 9, 10, 11))),
+              options = list(pageLength = 15, lengthMenu = list(c(15, 30, 60, -1), c("15","30","60","Todas")),
+                             columnDefs = list(list(className = "dt-center", targets = 2:11))))
   }, server = FALSE)
+
+  # editar una celda -> actualiza rv$cur (sin re-render)
+  observeEvent(input$tbl_cur_cell_edit, {
+    info <- input$tbl_cur_cell_edit
+    cc <- .colmap_cur[info$col + 1]
+    if (length(cc) == 1 && cc %in% .editables_cur && !is.null(rv$cur) && info$row <= nrow(rv$cur))
+      rv$cur[info$row, cc] <- as.character(info$value)
+  })
+
+  observeEvent(input$cat_save, {
+    if (is.null(rv$cur)) { output$cat_del_msg <- renderText("No hay lista que guardar."); return() }
+    rv$cur <- normalizar_titulos(rv$cur)
+    msg <- guardar_curados(rv$cur, "Panel admin: editar lista de fondos")
+    refrescar_fondos_globales(); rv$tick <- rv$tick + 1
+    output$cat_del_msg <- renderText(paste0("💾 Cambios guardados. ", msg,
+      " · Recarga (F5) en ~1 min para ver el dashboard actualizado."))
+  })
 
   observeEvent(input$cat_del, {
     sel <- input$tbl_cur_rows_selected
-    if (is.null(rv$cur) || !length(sel)) { output$cat_del_msg <- renderText("Selecciona un fondo primero."); return() }
-    nombre <- rv$cur$nombre_excel[sel]
+    if (is.null(rv$cur) || !length(sel)) { output$cat_del_msg <- renderText("Selecciona una o más filas primero."); return() }
+    nombres <- paste(rv$cur$nombre_excel[sel], collapse = ", ")
     rv$cur <- rv$cur[-sel, , drop = FALSE]
-    msg <- guardar_curados(rv$cur, paste0("Panel admin: quitar fondo '", nombre, "'"))
+    msg <- guardar_curados(rv$cur, paste0("Panel admin: quitar ", length(sel), " fondo(s)"))
     refrescar_fondos_globales(); rv$tick <- rv$tick + 1
-    output$cat_del_msg <- renderText(paste0("🗑 Quitado '", nombre, "'. ", msg))
+    output$cat_del_msg <- renderText(paste0("🗑 Quitado(s): ", nombres, ". ", msg))
   })
 
   output$dash <- renderUI({

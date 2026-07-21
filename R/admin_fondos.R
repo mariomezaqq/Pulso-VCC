@@ -52,6 +52,19 @@ cargar_curados <- function(ruta = "data/fondos_curados.csv") {
   df[, COLS_CURADOS, drop = FALSE]
 }
 
+# Titulo consistente por hoja (todas las filas de una hoja comparten el mismo
+# titulo = el primer no-vacio; fallback al nombre de la hoja). Evita que al mover
+# un fondo de categoria queden titulos distintos en una misma hoja.
+normalizar_titulos <- function(cur) {
+  if (is.null(cur) || !nrow(cur)) return(cur)
+  for (h in unique(cur$hoja)) {
+    idx <- which(cur$hoja == h)
+    tit <- cur$titulo[idx]; tit <- tit[!is.na(tit) & nzchar(trimws(tit))]
+    cur$titulo[idx] <- if (length(tit)) tit[1] else h
+  }
+  cur
+}
+
 # ---- Persistir la lista curada (local + commit a GitHub) ----
 guardar_curados <- function(df, mensaje = "Panel admin: actualizar lista de fondos") {
   df <- df[, COLS_CURADOS, drop = FALSE]
@@ -79,13 +92,26 @@ agregar_fondo_curado <- function(cur, fila_cat, hoja, titulo, nombre, moneda = "
   nombre <- trimws(nombre %||% "")
   if (!nzchar(hoja))   return(list(ok = FALSE, msg = "Falta la categoria (hoja)."))
   if (!nzchar(nombre)) return(list(ok = FALSE, msg = "Falta el nombre a mostrar."))
-  if (is.null(fila_cat) || !nzchar(fila_cat$run %||% ""))
-    return(list(ok = FALSE, msg = "Elige un fondo del catalogo."))
-  # duplicado por run+serie (ya scrapeado) o por nombre (choca la clave del dashboard)
-  ya_run <- any(cur$run == fila_cat$run & cur$serie == fila_cat$serie)
-  if (ya_run) return(list(ok = FALSE, msg = "Ese fondo/serie ya esta en la lista."))
-  if (nombre %in% c(cur$nombre_script, cur$nombre_excel))
-    return(list(ok = FALSE, msg = paste0("Ya existe un fondo llamado '", nombre, "'. Usa otro nombre.")))
+  na0 <- function(x) { x <- x %||% ""; if (length(x) != 1 || is.na(x)) "" else as.character(x) }
+  crun <- na0(fila_cat$run); cserie <- na0(fila_cat$serie)
+  if (is.null(fila_cat) || !nzchar(crun))
+    return(list(ok = FALSE, msg = "Elige un fondo válido del catálogo."))
+  # Comparaciones seguras (NA/"" -> FALSE; nunca NA que rompe el if).
+  run_v   <- ifelse(is.na(cur$run), "", cur$run)
+  serie_v <- ifelse(is.na(cur$serie), "", cur$serie)
+  hoja_v  <- ifelse(is.na(cur$hoja), "", cur$hoja)
+  mismo_fondo <- nzchar(run_v) & run_v == crun & serie_v == cserie
+  # (1) mismo fondo en la MISMA hoja -> bloquear (con mensaje claro)
+  dup_hoja <- mismo_fondo & hoja_v == hoja
+  if (any(dup_hoja)) return(list(ok = FALSE, msg = paste0(
+    "Ese fondo ya está en la hoja '", hoja, "' como '", cur$nombre_excel[which(dup_hoja)[1]], "'.")))
+  # (2) mismo fondo en OTRA hoja -> permitido (comparable): reusa el nombre existente
+  if (any(mismo_fondo)) {
+    nombre <- cur$nombre_excel[which(mismo_fondo)[1]]
+  } else if (nombre %in% c(cur$nombre_script, cur$nombre_excel)) {
+    # (3) fondo nuevo pero el nombre choca con otro fondo distinto
+    return(list(ok = FALSE, msg = paste0("Ya existe otro fondo llamado '", nombre, "'. Usa otro nombre.")))
+  }
 
   orden_new <- suppressWarnings(max(as.integer(cur$orden), na.rm = TRUE))
   if (!is.finite(orden_new)) orden_new <- nrow(cur)
