@@ -9,12 +9,51 @@ suppressMessages({
   library(quantmod)
 })
 
+# ---- IPSA: serie diaria oficial del BCCh (Canasta) ----
+# Devuelve tibble(fecha, valor) con el historico reciente (~desde ene del anio).
+# Es la fuente OFICIAL y al dia del IPSA; se prefiere sobre datosmacro/Yahoo
+# (que se corrompio / quedo congelado). Sin credenciales.
+obtener_ipsa_bcch_serie <- function() {
+  message("  Descargando: IPSA (BCCh Canasta - serie oficial)")
+  url <- "https://si3.bcentral.cl/siete/ES/Siete/Canasta?idCanasta=JQTEU1162911"
+  historico <- tryCatch({
+    resp <- httr::GET(url, httr::timeout(25),
+                      httr::add_headers("User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"))
+    if (httr::status_code(resp) != 200) { message("    HTTP Error: ", httr::status_code(resp)); return(NULL) }
+    page <- rvest::read_html(resp)
+    headers <- page %>% html_nodes("table thead th") %>% html_text(trim = TRUE)
+    if (length(headers) < 4) { message("    Sin encabezados de fecha"); return(NULL) }
+    headers_fechas <- headers[4:length(headers)]
+    filas <- page %>% html_nodes("table tbody tr")
+    if (length(filas) == 0) { message("    Sin filas"); return(NULL) }
+    celdas <- filas[1] %>% html_nodes("td") %>% html_text(trim = TRUE)
+    if (length(celdas) < 4) { message("    Primera fila incompleta"); return(NULL) }
+    valores_text <- celdas[4:length(celdas)]
+    valores_num  <- suppressWarnings(as.numeric(gsub("\\.", "", valores_text) %>% gsub(",", ".", .)))
+    ok <- !is.na(valores_num) & nzchar(valores_text)
+    valores_num_clean <- valores_num[ok]; headers_fechas_clean <- headers_fechas[ok]
+    if (!length(valores_num_clean)) { message("    Sin valores validos"); return(NULL) }
+    meses_es <- c("ene"="01","feb"="02","mar"="03","abr"="04","may"="05","jun"="06",
+                  "jul"="07","ago"="08","sep"="09","oct"="10","nov"="11","dic"="12")
+    fechas_conv <- sapply(headers_fechas_clean, function(fs) {
+      p <- strsplit(tolower(fs), "\\.")[[1]]
+      if (length(p) == 3 && !is.na(meses_es[p[2]])) as.Date(paste(p[3], meses_es[p[2]], p[1], sep = "-")) else NA_Date_
+    })
+    tibble::as_tibble(list(fecha = as.Date(fechas_conv), valor = valores_num_clean)) %>%
+      filter(!is.na(fecha), !is.na(valor)) %>% distinct(fecha, .keep_all = TRUE) %>% arrange(fecha)
+  }, error = function(e) { message("    Error BCCh: ", e$message); NULL })
+  if (is.null(historico) || !nrow(historico)) return(NULL)
+  message("    ✓ IPSA BCCh: ", nrow(historico), " dias (",
+          format(min(historico$fecha)), " -> ", format(max(historico$fecha)), ")")
+  historico
+}
+
 # ---- IPSA (BCCh web) ----
 obtener_ipsa_web <- function(fechas_objetivo) {
   message("  Descargando: IPSA (BCCh - Web Scraping)")
-  
+
   url <- "https://si3.bcentral.cl/siete/ES/Siete/Canasta?idCanasta=JQTEU1162911"
-  
+
   historico <- tryCatch({
     resp <- httr::GET(url, 
                       httr::timeout(20),

@@ -104,22 +104,20 @@ macro <- list(); macro_series <- list()
 for (idx in INDICES) {
   r <- list(wtd = NA_real_, mtd = NA_real_, ytd = NA_real_); s <- NULL
   if (!is.null(idx$fuente) && idx$fuente == "bcch") {
-    # IPSA: scraping de datosmacro (dato MAS FRESCO que el BCCh). Se acumula con el
-    # historico previo guardado en macro_series por si una descarga falla.
-    s <- tryCatch(obtener_ipsa_datosmacro(desde = ref_ytd, hasta = fc), error = function(e) NULL)
+    # IPSA: fuente OFICIAL del BCCh (Canasta), al dia y confiable. Fallback a
+    # datosmacro si el BCCh falla. Se acumula con el historico previo guardado en
+    # macro_series por si una descarga falla. (Se descarto Yahoo ^IPSA: quedaba
+    # congelado dias, y datosmacro solo: se habia corrompido a ~la mitad.)
+    s <- tryCatch(obtener_ipsa_bcch_serie(), error = function(e) NULL)
+    if (is.null(s) || !nrow(s))
+      s <- tryCatch(obtener_ipsa_datosmacro(desde = ref_ytd, hasta = fc), error = function(e) NULL)
     prev_ipsa <- if (!is.null(prev) && !is.null(prev$macro_series)) prev$macro_series[[idx$nombre]] else NULL
-    s <- bind_rows(s, prev_ipsa)                 # datosmacro primero -> pisa al previo en duplicados
+    s <- bind_rows(s, prev_ipsa)                 # fuente nueva primero -> pisa al previo en duplicados
     if (!is.null(s) && nrow(s) > 0) {
       s <- s %>% filter(!is.na(valor)) %>% distinct(fecha, .keep_all = TRUE) %>% arrange(fecha)
-      if (!any(s$fecha <= ref_ytd))              # fallback: cierre 2025 fijo si datosmacro no lo trae
+      if (!any(s$fecha <= ref_ytd))              # fallback: cierre 2025 fijo si la fuente no lo trae
         s <- bind_rows(tibble(fecha = ref_ytd, valor = IPSA_31DIC2025), s) %>% arrange(fecha)
-      # Ancla Yahoo (^IPSA): agrega/pisa el valor del dia con una 2a fuente. Asi,
-      # si datosmacro corrompe el ultimo dato, el guard descarta la basura y Yahoo
-      # aporta el valor real y fresco en su lugar.
-      yh <- tryCatch(obtener_ipsa_yahoo_actual(), error = function(e) NULL)
-      if (!is.null(yh) && nrow(yh) > 0)
-        s <- bind_rows(yh, s) %>% distinct(fecha, .keep_all = TRUE) %>% arrange(fecha)
-      # Guard: descarta puntos con saltos imposibles (fuente corrupta ~mitad del indice).
+      # Guard: descarta saltos imposibles (por si cae al fallback datosmacro corrupto).
       s <- filtrar_saltos_ipsa(s)
     } else s <- NULL
   } else if (!is.null(idx$ticker) && nchar(idx$ticker) > 0) {
