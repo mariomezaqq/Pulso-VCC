@@ -368,6 +368,14 @@
 "Ameris NM Guardian IV Fondo de Inversión","I","10428","FINRE",2026-04-22,2026-04-28,"US$","Dividendo",0.019386,NA,NA,NA,NA,0.019385566,"boletin",NA
 "Ameris NM Guardian IV Fondo de Inversión","R","10428","FINRE",2026-04-22,2026-04-28,"US$","Dividendo",0.019053,NA,NA,NA,NA,0.019052532,"boletin",NA
 "Ameris NM Guardian IV Fondo de Inversión","T","10428","FINRE",2026-04-22,2026-04-28,"US$","Dividendo",0.019192,NA,NA,NA,NA,0.019191781,"boletin",NA
+"Ameris NM Guardian IV Fondo de Inversión","A","10428","FINRE",2026-07-22,2026-07-28,"US$","Dividendo",0.015296,211961.69,NA,NA,NA,0.015295916,"boletin",NA
+"Ameris NM Guardian IV Fondo de Inversión","I","10428","FINRE",2026-07-22,2026-07-28,"US$","Dividendo",0.015314,211961.69,NA,NA,NA,0.015314077,"boletin",NA
+"Ameris NM Guardian IV Fondo de Inversión","R","10428","FINRE",2026-07-22,2026-07-28,"US$","Dividendo",0.015008,211961.69,NA,NA,NA,0.015008341,"boletin",NA
+"Ameris NM Guardian IV Fondo de Inversión","T","10428","FINRE",2026-07-22,2026-07-28,"US$","Dividendo",0.015134,211961.69,NA,NA,NA,0.015133943,"boletin",NA
+"Ameris NM Guardian IV Fondo de Inversión","A","10428","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.006318,87554.05,NA,NA,NA,0.006318213,"boletin",NA
+"Ameris NM Guardian IV Fondo de Inversión","I","10428","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.006326,87554.05,NA,NA,NA,0.006325717,"boletin",NA
+"Ameris NM Guardian IV Fondo de Inversión","R","10428","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.006199,87554.05,NA,NA,NA,0.006199427,"boletin",NA
+"Ameris NM Guardian IV Fondo de Inversión","T","10428","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.006251,87554.05,NA,NA,NA,0.00625131,"boletin",NA
 "Ameris NM Private Credit Fondo de Inversión","A","9879","FINRE",2025-04-01,2025-04-07,"US$","Dividendo",0.00509,NA,NA,NA,NA,0.005090233,"boletin",NA
 "Ameris NM Private Credit Fondo de Inversión","AN","9879","FINRE",2025-04-01,2025-04-07,"US$","Dividendo",0.006469,NA,NA,NA,NA,0.006468647,"boletin",NA
 "Ameris NM Private Credit Fondo de Inversión","I","9879","FINRE",2025-04-01,2025-04-07,"US$","Dividendo",0.005125,NA,NA,NA,NA,0.005125192,"boletin",NA
@@ -2842,6 +2850,14 @@
 "Fondo de Inversión Activa Deuda Automotriz Perú","I","9703","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.016637,NA,NA,NA,NA,0.0166372095375607,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Perú","R","9703","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.015812,NA,NA,NA,NA,0.0158120716866999,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Perú","S","9703","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.016781,NA,NA,NA,NA,0.016780846,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","F","9703","FINRE",2026-07-22,2026-07-28,"US$","Dividendo",0.000784,NA,NA,NA,NA,0.000783983189549206,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","I","9703","FINRE",2026-07-22,2026-07-28,"US$","Dividendo",0.000803,NA,NA,NA,NA,0.000803084768679264,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","R","9703","FINRE",2026-07-22,2026-07-28,"US$","Dividendo",0.000763,NA,NA,NA,NA,0.000762836710733512,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","S","9703","FINRE",2026-07-22,2026-07-28,"US$","Dividendo",0.00081,NA,NA,NA,NA,0.000810094,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","F","9703","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.016401,NA,NA,NA,NA,0.0164014528271773,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","I","9703","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.016801,NA,NA,NA,NA,0.0168010739071369,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","R","9703","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.015959,NA,NA,NA,NA,0.0159590557412509,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","S","9703","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.016948,NA,NA,NA,NA,0.01694773,"boletin",NA
 "Fondo de Inversión Activa Deuda Estructurada Inmobiliaria","I",NA,NA,2025-01-08,2025-01-14,"$","Reparto",19.089047,NA,NA,NA,NA,19.08904707,"boletin",NA
 "Fondo de Inversión Activa Deuda Estructurada Inmobiliaria","R",NA,NA,2025-01-08,2025-01-14,"$","Reparto",18.951257,NA,NA,NA,NA,18.95125705,"boletin",NA
 "Fondo de Inversión Activa Deuda Estructurada Inmobiliaria","I",NA,NA,2025-02-05,2025-02-11,"$","Dividendo",1.060606,NA,NA,NA,NA,1.06060635,"boletin",NA
@@ -4423,6 +4439,8 @@
 "Fondo de Inversión Falcom GTCR Private Equity XIII","B","9938","FINRE",2025-11-11,2025-11-17,"US$","Reparto",0.087982,NA,NA,NA,NA,0.0879821124,"boletin",NA
 "Fondo de Inversión Falcom GTCR Private Equity XIII","A","9938","FINRE",2026-01-27,2026-02-02,"US$","Reparto",0.119377,NA,NA,NA,NA,0.1193769125,"boletin",NA
 "Fondo de Inversión Falcom GTCR Private Equity XIII","B","9938","FINRE",2026-01-27,2026-02-02,"US$","Reparto",0.120206,NA,NA,NA,NA,0.1202055174,"boletin",NA
+"Fondo de Inversión Falcom GTCR Private Equity XIII","A","9938","FINRE",2026-07-21,2026-07-27,"US$","Reparto",0.054588,NA,NA,NA,NA,0.0545883897,"boletin",NA
+"Fondo de Inversión Falcom GTCR Private Equity XIII","B","9938","FINRE",2026-07-21,2026-07-27,"US$","Reparto",0.054986,NA,NA,NA,NA,0.0549860922,"boletin",NA
 "Fondo de Inversión Falcom GTCR Private Equity XIV","A","10366","FINRE",2025-08-05,2025-08-11,"US$","Reparto",0.128735,NA,NA,NA,NA,0.1287346397,"boletin",NA
 "Fondo de Inversión Falcom GTCR Private Equity XIV","B","10366","FINRE",2025-08-05,2025-08-11,"US$","Reparto",0.129648,NA,NA,NA,NA,0.1296481176,"boletin",NA
 "Fondo de Inversión Falcom GTCR Private Equity XIV","R","10366","FINRE",2025-08-05,2025-08-11,"US$","Reparto",0.121437,NA,NA,NA,NA,0.1214365521,"boletin",NA
@@ -4832,6 +4850,8 @@
 "Fondo de Inversión Inmobiliario X","P","9749","FINRE",2026-04-22,2026-04-28,"$","Reparto",1330.522941,NA,NA,NA,NA,1330.522940798,"boletin",NA
 "Fondo de Inversión Inmobiliario X","A","9749","FINRE",2026-06-12,2026-06-18,"$","Reparto",973.214735,NA,NA,NA,NA,973.214735445661,"boletin",NA
 "Fondo de Inversión Inmobiliario X","P","9749","FINRE",2026-06-12,2026-06-18,"$","Reparto",982.719628,NA,NA,NA,NA,982.719628068171,"boletin",NA
+"Fondo de Inversión Inmobiliario X","A","9749","FINRE",2026-07-22,2026-07-28,"$","Reparto",1838.824396,NA,NA,NA,NA,1838.82439593964,"boletin",NA
+"Fondo de Inversión Inmobiliario X","P","9749","FINRE",2026-07-22,2026-07-28,"$","Reparto",1856.783283,NA,NA,NA,NA,1856.78328339715,"boletin",NA
 "Fondo de Inversión Invinsa Desarrollo Industrial","A",NA,NA,2026-01-14,2026-01-20,"$","Reparto",2442.0321,NA,NA,NA,NA,2442.0321,"boletin",NA
 "Fondo de Inversión Invinsa Desarrollo Industrial","B",NA,NA,2026-01-14,2026-01-20,"$","Reparto",2461.1099,NA,NA,NA,NA,2461.1099,"boletin",NA
 "Fondo de Inversión Invinsa Desarrollo Industrial","C",NA,NA,2026-01-14,2026-01-20,"$","Reparto",2442.0321,NA,NA,NA,NA,2442.0321,"boletin",NA
@@ -5529,6 +5549,10 @@
 "Fondo de Inversión PE Secondary Deal II","P1","10309","FINRE",2026-06-06,2026-06-12,"US$","Reparto",0.006694,NA,NA,NA,NA,0.006694,"boletin",NA
 "Fondo de Inversión PE Secondary Deal II","P2","10309","FINRE",2026-06-06,2026-06-12,"US$","Reparto",0.006839,NA,NA,NA,NA,0.00683929411764706,"boletin",NA
 "Fondo de Inversión PE Secondary Deal II","P3","10309","FINRE",2026-06-06,2026-06-12,"US$","Reparto",0.006901,NA,NA,NA,NA,0.00690123115213754,"boletin",NA
+"Fondo de Inversión PE Secondary Deal II","A","10309","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.007149,NA,NA,NA,NA,0.00714896434,"boletin",NA
+"Fondo de Inversión PE Secondary Deal II","P1","10309","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.007254,NA,NA,NA,NA,0.007254,"boletin",NA
+"Fondo de Inversión PE Secondary Deal II","P2","10309","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.007415,NA,NA,NA,NA,0.00741458824,"boletin",NA
+"Fondo de Inversión PE Secondary Deal II","P3","10309","FINRE",2026-07-22,2026-07-28,"US$","Reparto",0.007482,NA,NA,NA,NA,0.0074824921,"boletin",NA
 "Fondo de Inversión Pre-IPO Opportunities MVP","A","9652","FINRE",2025-10-21,2025-10-27,"US$","Reparto",0.017493,NA,NA,NA,NA,0.017492689,"boletin",NA
 "Fondo de Inversión Pre-IPO Opportunities MVP","C","9652","FINRE",2025-10-21,2025-10-27,"US$","Reparto",0.061906,NA,NA,NA,NA,0.061906416,"boletin",NA
 "Fondo de Inversión Pre-IPO Opportunities MVP","A","9652","FINRE",2026-03-25,2026-03-31,"US$","Reparto",0.021866,NA,NA,NA,NA,0.021865869,"boletin",NA
@@ -6222,6 +6246,7 @@
 "Fondo de Inversión Security Infraestructura Driftwood III","B",NA,NA,2026-04-08,2026-04-14,"US$","Dividendo",81.725694,NA,NA,NA,NA,81.725693646,"boletin",NA
 "Fondo de Inversión Security Infraestructura Driftwood III","I",NA,NA,2026-04-08,2026-04-14,"US$","Dividendo",83.491769,NA,NA,NA,NA,83.491768742,"boletin",NA
 "Fondo de Inversión Security Oaktree Opportunities-Debt (ex CFISECOA-E)","A",NA,NA,2026-04-01,2026-04-09,"US$","Dividendo",0.289899,NA,NA,NA,NA,0.289899084,"boletin",NA
+"Fondo de Inversión Security Oaktree Opportunities-Debt (ex CFISECOA-E)","A",NA,NA,2026-07-22,2026-07-28,"US$","Dividendo",0.041263,NA,NA,NA,NA,0.041262628,"boletin",NA
 "Fondo de Inversión Security Oaktree Opportunities-Debt II","A",NA,NA,2026-03-30,2026-04-07,"US$","Dividendo",0.015829,NA,NA,NA,NA,0.015828761,"boletin",NA
 "Fondo de Inversión Security Oaktree Opportunities-Debt II","E",NA,NA,2026-03-30,2026-04-07,"US$","Dividendo",0.015829,NA,NA,NA,NA,0.015828761,"boletin",NA
 "Fondo de Inversión Security Oaktree Real Estate Income Fund","C","9573","FINRE",2025-01-04,2025-01-10,"US$","Dividendo",0.002317,NA,NA,NA,NA,0.002316733,"boletin",NA
@@ -6482,6 +6507,12 @@
 "Fondo de Inversión Singular Residential MBS I","A","9991","FINRE",2026-06-17,2026-06-23,"$","Reparto",259.86648,NA,NA,NA,NA,259.86648,"boletin",NA
 "Fondo de Inversión Singular Residential MBS I","B","9991","FINRE",2026-06-17,2026-06-23,"$","Reparto",262.474251,NA,NA,NA,NA,262.4742512,"boletin",NA
 "Fondo de Inversión Singular Residential MBS I","I","9991","FINRE",2026-06-17,2026-06-23,"$","Reparto",267.778648,NA,NA,NA,NA,267.7786475,"boletin",NA
+"Fondo de Inversión Singular Residential MBS I","A","9991","FINRE",2026-07-22,2026-07-28,"$","Dividendo",216.422136,NA,NA,NA,NA,216.4221355,"boletin",NA
+"Fondo de Inversión Singular Residential MBS I","B","9991","FINRE",2026-07-22,2026-07-28,"$","Dividendo",218.625386,NA,NA,NA,NA,218.6253859,"boletin",NA
+"Fondo de Inversión Singular Residential MBS I","I","9991","FINRE",2026-07-22,2026-07-28,"$","Dividendo",223.107805,NA,NA,NA,NA,223.1078048,"boletin",NA
+"Fondo de Inversión Singular Residential MBS I","A","9991","FINRE",2026-07-22,2026-07-28,"$","Reparto",346.421052,NA,NA,NA,NA,346.4210522,"boletin",NA
+"Fondo de Inversión Singular Residential MBS I","B","9991","FINRE",2026-07-22,2026-07-28,"$","Reparto",349.947735,NA,NA,NA,NA,349.9477354,"boletin",NA
+"Fondo de Inversión Singular Residential MBS I","I","9991","FINRE",2026-07-22,2026-07-28,"$","Reparto",357.122622,NA,NA,NA,NA,357.122622,"boletin",NA
 "Fondo de Inversión Tronador Deuda Privada","A",NA,NA,2025-01-28,2025-02-03,"$","Dividendo",0.006499,NA,NA,NA,NA,0.00649932,"boletin",NA
 "Fondo de Inversión Tronador Deuda Privada","B",NA,NA,2025-01-28,2025-02-03,"$","Dividendo",0.007638,NA,NA,NA,NA,0.00763827,"boletin",NA
 "Fondo de Inversión Tronador Deuda Privada","A",NA,NA,2025-03-26,2025-04-01,"$","Dividendo",0.0065,NA,NA,NA,NA,0.00650026,"boletin",NA
@@ -7499,6 +7530,10 @@
 "Toesca Avenida Net Lease Chile II Fondo de Inversión","I",NA,NA,2026-04-17,2026-04-23,"$","Dividendo",519.635472,NA,NA,NA,NA,519.6354717,"boletin",NA
 "Toesca Avenida Net Lease Chile II Fondo de Inversión","R",NA,NA,2026-04-17,2026-04-23,"$","Dividendo",460.351866,NA,NA,NA,NA,460.3518656,"boletin",NA
 "Toesca Avenida Net Lease Chile II Fondo de Inversión","S",NA,NA,2026-04-17,2026-04-23,"$","Dividendo",708.548266,NA,NA,NA,NA,708.5482656,"boletin",NA
+"Toesca Avenida Net Lease Chile II Fondo de Inversión","A",NA,NA,2026-07-21,2026-07-27,"$","Dividendo",563.359557,NA,NA,NA,NA,563.3595568,"boletin",NA
+"Toesca Avenida Net Lease Chile II Fondo de Inversión","I",NA,NA,2026-07-21,2026-07-27,"$","Dividendo",605.548463,NA,NA,NA,NA,605.5484627,"boletin",NA
+"Toesca Avenida Net Lease Chile II Fondo de Inversión","R",NA,NA,2026-07-21,2026-07-27,"$","Dividendo",545.278833,NA,NA,NA,NA,545.2788328,"boletin",NA
+"Toesca Avenida Net Lease Chile II Fondo de Inversión","S",NA,NA,2026-07-21,2026-07-27,"$","Dividendo",726.086231,NA,NA,NA,NA,726.0862313,"boletin",NA
 "Toesca Avenida Net Lease US II Fondo de Inversión","A",NA,NA,2025-01-23,2025-01-29,"US$","Dividendo",0.013575,NA,NA,NA,NA,0.0135749,"boletin",NA
 "Toesca Avenida Net Lease US II Fondo de Inversión","B",NA,NA,2025-01-23,2025-01-29,"US$","Dividendo",0.010937,NA,NA,NA,NA,0.0109367,"boletin",NA
 "Toesca Avenida Net Lease US II Fondo de Inversión","A",NA,NA,2025-04-22,2025-04-28,"US$","Dividendo",0.013444,NA,NA,NA,NA,0.0134437,"boletin",NA
@@ -7511,6 +7546,10 @@
 "Toesca Avenida Net Lease US II Fondo de Inversión","B",NA,NA,2026-01-22,2026-01-28,"US$","Dividendo",0.013107,NA,NA,NA,NA,0.0131075,"boletin",NA
 "Toesca Avenida Net Lease US II Fondo de Inversión","A",NA,NA,2026-04-24,2026-04-30,"US$","Dividendo",0.016145,NA,NA,NA,NA,0.0161454,"boletin",NA
 "Toesca Avenida Net Lease US II Fondo de Inversión","B",NA,NA,2026-04-24,2026-04-30,"US$","Dividendo",0.014658,NA,NA,NA,NA,0.0146579,"boletin",NA
+"Toesca Avenida Net Lease US II Fondo de Inversión","A",NA,NA,2026-07-21,2026-07-27,"US$","Dividendo",0.017832,NA,NA,NA,NA,0.0178317,"boletin",NA
+"Toesca Avenida Net Lease US II Fondo de Inversión","B",NA,NA,2026-07-21,2026-07-27,"US$","Dividendo",0.016344,NA,NA,NA,NA,0.0163442,"boletin",NA
+"Toesca Avenida Net Lease US III Fondo de Inversión","A",NA,NA,2026-07-21,2026-07-27,"US$","Dividendo",0.006902,NA,NA,NA,NA,0.0069019,"boletin",NA
+"Toesca Avenida Net Lease US III Fondo de Inversión","B",NA,NA,2026-07-21,2026-07-27,"US$","Dividendo",0.006902,NA,NA,NA,NA,0.0069019,"boletin",NA
 "Toesca Créditos Energía Renovable Fondo de Inversión","I",NA,NA,2025-07-04,2025-07-10,"US$","Dividendo",3.755914,NA,NA,NA,NA,3.755914,"boletin",NA
 "Toesca Créditos Energía Renovable Fondo de Inversión","S",NA,NA,2025-07-04,2025-07-10,"US$","Dividendo",4.361564,NA,NA,NA,NA,4.361564,"boletin",NA
 "Toesca Deuda Privada Facturas Fondo de Inversión","S","9970","FIRES",2025-01-03,2025-01-09,"$","Dividendo",1.846,NA,NA,NA,NA,1.846,"boletin",NA
@@ -7620,6 +7659,8 @@
 "Toesca US Credit I Fondo de Inversión","B","10437","FINRE",2025-07-03,2025-07-09,"US$","Dividendo",0.0191,NA,NA,NA,NA,0.0191,"boletin",NA
 "Toesca US Credit I Fondo de Inversión","A","10437","FINRE",2025-10-15,2025-10-21,"US$","Dividendo",0.0249,NA,NA,NA,NA,0.0249,"boletin",NA
 "Toesca US Credit I Fondo de Inversión","B","10437","FINRE",2025-10-15,2025-10-21,"US$","Dividendo",0.0234,NA,NA,NA,NA,0.0234,"boletin",NA
+"Toesca US Credit I Fondo de Inversión","A","10437","FINRE",2026-07-21,2026-07-27,"US$","Dividendo",0.0158,NA,NA,NA,NA,0.0158,"boletin",NA
+"Toesca US Credit I Fondo de Inversión","B","10437","FINRE",2026-07-21,2026-07-27,"US$","Dividendo",0.0114,NA,NA,NA,NA,0.0114,"boletin",NA
 "VOLCOMCAPITAL Coinversiones Fondo de Inversión","A","9599","FINRE",2025-01-03,2025-01-09,"US$","Dividendo",0.022712,NA,NA,NA,NA,0.0227124366938943,"boletin",NA
 "VOLCOMCAPITAL Coinversiones Fondo de Inversión","B","9599","FINRE",2025-01-03,2025-01-09,"US$","Dividendo",0.023431,NA,NA,NA,NA,0.0234310008272531,"boletin",NA
 "VOLCOMCAPITAL Coinversiones Fondo de Inversión","C","9599","FINRE",2025-01-03,2025-01-09,"US$","Dividendo",0.02412,NA,NA,NA,NA,0.0241197610721367,"boletin",NA
@@ -7835,6 +7876,8 @@
 "VOLCOMCAPITAL Infraestructura III Fondo de Inversión","E","10089","FINRE",2025-12-31,2026-01-07,"US$","Dividendo",0.01076,NA,NA,NA,NA,0.0107596170025387,"boletin",NA
 "VOLCOMCAPITAL Infraestructura III Fondo de Inversión","B","10089","FINRE",2026-02-10,2026-02-16,"US$","Dividendo",0.002737,NA,NA,NA,NA,0.0027365020338645,"boletin",NA
 "VOLCOMCAPITAL Infraestructura III Fondo de Inversión","E","10089","FINRE",2026-02-10,2026-02-16,"US$","Dividendo",0.002637,NA,NA,NA,NA,0.0026366936692376,"boletin",NA
+"VOLCOMCAPITAL Infraestructura III Fondo de Inversión","B","10089","FINRE",2026-07-23,2026-07-29,"US$","Dividendo",0.002789,NA,NA,NA,NA,0.00278944590652233,"boletin",NA
+"VOLCOMCAPITAL Infraestructura III Fondo de Inversión","E","10089","FINRE",2026-07-23,2026-07-29,"US$","Dividendo",0.002684,NA,NA,NA,NA,0.00268431246802421,"boletin",NA
 "VOLCOMCAPITAL Infraestructura IV Fondo de Inversión","A","10636","FINRE",2025-10-02,2025-10-08,"EURO","Reparto",0.154107,NA,NA,NA,NA,0.154106846994434,"boletin",NA
 "VOLCOMCAPITAL Infraestructura IV Fondo de Inversión","C","10636","FINRE",2025-10-02,2025-10-08,"EURO","Reparto",0.15432,NA,NA,NA,NA,0.154319839703484,"boletin",NA
 "VOLCOMCAPITAL Infraestructura IV Fondo de Inversión","D","10636","FINRE",2025-10-02,2025-10-08,"EURO","Reparto",0.154373,NA,NA,NA,NA,0.154373071124974,"boletin",NA
