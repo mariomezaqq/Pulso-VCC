@@ -751,6 +751,9 @@
 "BICE Stepstone SCOF I Fondo de Inversión","A","9982","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.022532,NA,NA,NA,NA,0.0225315528,"boletin",NA
 "BICE Stepstone SCOF I Fondo de Inversión","I","9982","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.023639,NA,NA,NA,NA,0.0236391967,"boletin",NA
 "BICE Stepstone SCOF I Fondo de Inversión","X","9982","FINRE",2026-06-23,2026-06-30,"US$","Reparto",0.023712,NA,NA,NA,NA,0.0237123951,"boletin",NA
+"BICE Stepstone SCOF I Fondo de Inversión","A","9982","FINRE",2026-07-24,2026-07-30,"US$","Reparto",0.015704,NA,NA,NA,NA,0.0157038095,"boletin",NA
+"BICE Stepstone SCOF I Fondo de Inversión","I","9982","FINRE",2026-07-24,2026-07-30,"US$","Reparto",0.016478,NA,NA,NA,NA,0.0164783955,"boletin",NA
+"BICE Stepstone SCOF I Fondo de Inversión","X","9982","FINRE",2026-07-24,2026-07-30,"US$","Reparto",0.016527,NA,NA,NA,NA,0.0165268208,"boletin",NA
 "BICE Stepstone SSOF IV Fondo de Inversión","A","9747","FINRE",2025-01-08,2025-01-14,"US$","Dividendo",0.081473,NA,NA,NA,NA,0.0814734529,"boletin",NA
 "BICE Stepstone SSOF IV Fondo de Inversión","I","9747","FINRE",2025-01-08,2025-01-14,"US$","Dividendo",0.092734,NA,NA,NA,NA,0.0927340657,"boletin",NA
 "BICE Stepstone SSOF IV Fondo de Inversión","A","9747","FINRE",2025-01-21,2025-01-27,"US$","Reparto",0.803454,NA,NA,NA,NA,0.8034535896,"boletin",NA
@@ -2460,6 +2463,8 @@
 "Fondo De Inversión Deuda Privada Principal Compass","I",NA,NA,2026-04-21,2026-04-27,"$","Dividendo",740.887611,NA,NA,NA,NA,740.887611474,"boletin",NA
 "Fondo De Inversión Deuda Privada Principal Compass","B",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",138.218149,NA,NA,NA,NA,138.218148866,"boletin",NA
 "Fondo De Inversión Deuda Privada Principal Compass","I",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",143.145692,NA,NA,NA,NA,143.145691526,"boletin",NA
+"Fondo De Inversión Deuda Privada Principal Compass","B",NA,NA,2026-07-23,2026-07-29,"$","Dividendo",376.767195,NA,NA,NA,NA,376.767195034,"boletin",NA
+"Fondo De Inversión Deuda Privada Principal Compass","I",NA,NA,2026-07-23,2026-07-29,"$","Dividendo",390.625614,NA,NA,NA,NA,390.625614246,"boletin",NA
 "Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","A","10625","FINRE",2025-02-18,2025-02-24,"US$","Dividendo",2.367339,NA,NA,NA,NA,2.367338542,"boletin",NA
 "Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","B","10625","FINRE",2025-02-18,2025-02-24,"US$","Dividendo",2.376403,NA,NA,NA,NA,2.37640303,"boletin",NA
 "Fondo De Inversión Security DDP Bridge-Loan Fully Funded USD","I","10625","FINRE",2025-02-18,2025-02-24,"US$","Dividendo",2.38196,NA,NA,NA,NA,2.38196,"boletin",NA
@@ -4975,6 +4980,8 @@
 "Fondo de Inversión LarrainVial Oportunidad Inmobiliaria","O",NA,NA,2026-02-10,2026-02-16,"$","Reparto",1437.711114,NA,NA,NA,NA,1437.71111380007,"boletin",NA
 "Fondo de Inversión LarrainVial Oportunidad Inmobiliaria","L",NA,NA,2026-05-06,2026-05-12,"$","Reparto",684.717244,NA,NA,NA,NA,684.71724391731,"boletin",NA
 "Fondo de Inversión LarrainVial Oportunidad Inmobiliaria","O",NA,NA,2026-05-06,2026-05-12,"$","Reparto",701.574198,NA,NA,NA,NA,701.57419804818,"boletin",NA
+"Fondo de Inversión LarrainVial Oportunidad Inmobiliaria","L",NA,NA,2026-07-23,2026-07-29,"$","Reparto",691.772583,NA,NA,NA,NA,691.77258271525,"boletin",NA
+"Fondo de Inversión LarrainVial Oportunidad Inmobiliaria","O",NA,NA,2026-07-23,2026-07-29,"$","Reparto",709.930904,NA,NA,NA,NA,709.93090447821,"boletin",NA
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2025-12-22,2025-12-29,"$","Reparto",5.621547,NA,NA,NA,NA,5.621547415,"boletin",NA
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-01-15,2026-01-21,"$","Reparto",5.623166,NA,NA,NA,NA,5.6231665,"boletin",NA
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-02-13,2026-02-19,"$","Reparto",5.624283,NA,NA,NA,NA,5.624283159,"boletin",NA
@@ -4982,6 +4989,7 @@
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-04-14,2026-04-20,"$","Reparto",5.659345,NA,NA,NA,NA,5.659345403,"boletin",NA
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-05-14,2026-05-20,"$","Reparto",5.721284,NA,NA,NA,NA,5.721283889,"boletin",NA
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-06-12,2026-06-18,"$","Reparto",5.772618,NA,NA,NA,NA,5.772617653,"boletin",NA
+"Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-07-23,2026-07-29,"$","Reparto",5.780698,NA,NA,NA,NA,5.780697509,"boletin",NA
 "Fondo de Inversión LarrainVial Retorno Local","A","10671","FINRE",2026-06-03,2026-06-09,"$","Dividendo",1.389851,NA,NA,NA,NA,1.3898514861304,"boletin",NA
 "Fondo de Inversión LarrainVial Retorno Local","I","10671","FINRE",2026-06-03,2026-06-09,"$","Dividendo",1.242978,NA,NA,NA,NA,1.2429784348996,"boletin",NA
 "Fondo de Inversión LarrainVial Retorno Local","O","10671","FINRE",2026-06-03,2026-06-09,"$","Dividendo",1.251238,NA,NA,NA,NA,1.251238301399,"boletin",NA
@@ -5559,6 +5567,8 @@
 "Fondo de Inversión Pre-IPO Opportunities MVP","C","9652","FINRE",2026-03-25,2026-03-31,"US$","Reparto",0.077383,NA,NA,NA,NA,0.077383016,"boletin",NA
 "Fondo de Inversión Pre-IPO Opportunities MVP","A","9652","FINRE",2026-06-17,2026-06-23,"US$","Dividendo",0.004025,NA,NA,NA,NA,0.004024698,"boletin",NA
 "Fondo de Inversión Pre-IPO Opportunities MVP","C","9652","FINRE",2026-06-17,2026-06-23,"US$","Dividendo",0.014243,NA,NA,NA,NA,0.01424335,"boletin",NA
+"Fondo de Inversión Pre-IPO Opportunities MVP","A","9652","FINRE",2026-07-23,2026-07-29,"US$","Dividendo",0.029082,NA,NA,NA,NA,0.029081615,"boletin",NA
+"Fondo de Inversión Pre-IPO Opportunities MVP","C","9652","FINRE",2026-07-23,2026-07-29,"US$","Dividendo",0.102919,NA,NA,NA,NA,0.102919406,"boletin",NA
 "Fondo de Inversión Pudú Conservador","A","10589","FIRES",2026-05-23,2026-05-29,"$","Dividendo",26.558605,NA,NA,NA,NA,26.558605,"boletin",NA
 "Fondo de Inversión Pudú Conservador","L","10589","FIRES",2026-05-23,2026-05-29,"$","Dividendo",18.984373,NA,NA,NA,NA,18.984373,"boletin",NA
 "Fondo de Inversión Renta Dinámica","DOS","9117","FIRES",2026-06-13,2026-06-19,"$","Dividendo",2.929744,NA,NA,NA,NA,2.929744025,"boletin",NA
@@ -7629,6 +7639,11 @@
 "Toesca Deuda Privada Fondo de Inversión","F","9619","FINRE",2026-06-23,2026-06-30,"$","Dividendo",0.625,NA,NA,NA,NA,0.625,"boletin",NA
 "Toesca Deuda Privada Fondo de Inversión","F1","9619","FINRE",2026-06-23,2026-06-30,"$","Dividendo",0.625,NA,NA,NA,NA,0.625,"boletin",NA
 "Toesca Deuda Privada Fondo de Inversión","I","9619","FINRE",2026-06-23,2026-06-30,"$","Dividendo",0.7648,NA,NA,NA,NA,0.7648,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","SI","9619","FINRE",2026-07-21,2026-07-27,"$","Dividendo",1.3567,NA,NA,NA,NA,1.3567,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","A","9619","FINRE",2026-07-25,2026-07-31,"$","Dividendo",0.6975,NA,NA,NA,NA,0.6975,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","I","9619","FINRE",2026-07-25,2026-07-31,"$","Dividendo",0.7409,NA,NA,NA,NA,0.7409,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","F","9619","FINRE",2026-07-25,2026-07-31,"$","Dividendo",0.61,NA,NA,NA,NA,0.61,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","F1","9619","FINRE",2026-07-25,2026-07-31,"$","Dividendo",0.61,NA,NA,NA,NA,0.61,"boletin",NA
 "Toesca Infraestructura Fondo de Inversión","A",NA,NA,2025-09-30,2025-10-06,"$","Dividendo",1598,NA,NA,NA,NA,1598,"boletin",NA
 "Toesca Infraestructura Fondo de Inversión","B",NA,NA,2025-09-30,2025-10-06,"$","Dividendo",1598,NA,NA,NA,NA,1598,"boletin",NA
 "Toesca Infraestructura Fondo de Inversión","I",NA,NA,2025-09-30,2025-10-06,"$","Dividendo",1598,NA,NA,NA,NA,1598,"boletin",NA
@@ -8059,6 +8074,12 @@
 "VOLCOMCAPITAL PE Secondary III Fondo de Inversión","D","9643","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.052629,NA,NA,NA,NA,0.0526285470987674,"boletin",NA
 "VOLCOMCAPITAL PE Secondary III Fondo de Inversión","Y","9643","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.053056,NA,NA,NA,NA,0.0530560877473713,"boletin",NA
 "VOLCOMCAPITAL PE Secondary III Fondo de Inversión","Z","9643","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.052629,NA,NA,NA,NA,0.0526290575547218,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","A","9643","FINRE",2026-07-24,2026-07-30,"US$","Reparto",0.031782,NA,NA,NA,NA,0.0317817594047676,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","B","9643","FINRE",2026-07-24,2026-07-30,"US$","Reparto",0.033048,NA,NA,NA,NA,0.0330480049970589,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","C","9643","FINRE",2026-07-24,2026-07-30,"US$","Reparto",0.033132,NA,NA,NA,NA,0.0331321639673454,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","D","9643","FINRE",2026-07-24,2026-07-30,"US$","Reparto",0.033388,NA,NA,NA,NA,0.0333883359764435,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","Y","9643","FINRE",2026-07-24,2026-07-30,"US$","Reparto",0.033661,NA,NA,NA,NA,0.0336608520786811,"boletin",NA
+"VOLCOMCAPITAL PE Secondary III Fondo de Inversión","Z","9643","FINRE",2026-07-24,2026-07-30,"US$","Reparto",0.03339,NA,NA,NA,NA,0.03339008931278,"boletin",NA
 "VOLCOMCAPITAL PE Secondary IV Fondo de Inversión","A","10248","FINRE",2025-01-16,2025-01-22,"US$","Dividendo",0.134633,NA,NA,NA,NA,0.134633206346971,"boletin",NA
 "VOLCOMCAPITAL PE Secondary IV Fondo de Inversión","B","10248","FINRE",2025-01-16,2025-01-22,"US$","Dividendo",0.082225,NA,NA,NA,NA,0.0822253896484294,"boletin",NA
 "VOLCOMCAPITAL PE Secondary IV Fondo de Inversión","C","10248","FINRE",2025-01-16,2025-01-22,"US$","Dividendo",0.152941,NA,NA,NA,NA,0.152941328874899,"boletin",NA
@@ -8271,6 +8292,8 @@
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","R",NA,NA,2026-05-27,2026-06-02,"US$","Reparto",0.01047,NA,NA,NA,NA,0.0104699905,"boletin",NA
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","A",NA,NA,2026-07-14,2026-07-21,"US$","Reparto",0.007761,NA,NA,NA,NA,0.0077614,"boletin",NA
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","R",NA,NA,2026-07-14,2026-07-21,"US$","Reparto",0.007751,NA,NA,NA,NA,0.0077506926,"boletin",NA
+"Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","A",NA,NA,2026-07-23,2026-07-29,"US$","Reparto",0.006889,NA,NA,NA,NA,0.00688888,"boletin",NA
+"Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","R",NA,NA,2026-07-23,2026-07-29,"US$","Reparto",0.006875,NA,NA,NA,NA,0.0068752518,"boletin",NA
 "Vinci Compass Cinven VII Private Equity Fondo de Inversión","C",NA,NA,2026-07-07,2026-07-13,"EURO","Dividendo",0.066442,NA,NA,NA,NA,0.0664422925,"boletin",NA
 "Vinci Compass Cinven VII Private Equity Fondo de Inversión","I",NA,NA,2026-07-07,2026-07-13,"EURO","Dividendo",0.066441,NA,NA,NA,NA,0.0664407788,"boletin",NA
 "Vinci Compass Cinven VII Private Equity Fondo de Inversión","IA",NA,NA,2026-07-07,2026-07-13,"EURO","Dividendo",0.066441,NA,NA,NA,NA,0.0664408885,"boletin",NA
