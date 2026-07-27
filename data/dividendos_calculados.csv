@@ -911,6 +911,8 @@
 "BTG Pactual Renta Comercial Fondo de Inversión","I",NA,NA,2026-01-27,2026-02-02,"$","Dividendo",404.123689,NA,NA,NA,NA,404.123688647,"boletin",NA
 "BTG Pactual Renta Comercial Fondo de Inversión","A",NA,NA,2026-04-29,2026-05-06,"$","Dividendo",400,NA,NA,NA,NA,400,"boletin",NA
 "BTG Pactual Renta Comercial Fondo de Inversión","I",NA,NA,2026-04-29,2026-05-06,"$","Dividendo",404.370345,NA,NA,NA,NA,404.3703449201,"boletin",NA
+"BTG Pactual Renta Comercial Fondo de Inversión","A",NA,NA,2026-07-25,2026-07-31,"$","Dividendo",350,NA,NA,NA,NA,350,"boletin",NA
+"BTG Pactual Renta Comercial Fondo de Inversión","I",NA,NA,2026-07-25,2026-07-31,"$","Dividendo",353.93244,NA,NA,NA,NA,353.9324404439,"boletin",NA
 "BTG Pactual Renta Residencial Fondo de Inversión","A",NA,NA,2025-01-31,2025-02-06,"$","Dividendo",70,NA,NA,NA,NA,70,"boletin",NA
 "BTG Pactual Renta Residencial Fondo de Inversión","H",NA,NA,2025-01-31,2025-02-06,"$","Dividendo",70.833033,NA,NA,NA,NA,70.83303284774,"boletin",NA
 "BTG Pactual Renta Residencial Fondo de Inversión","I",NA,NA,2025-01-31,2025-02-06,"$","Dividendo",70.296512,NA,NA,NA,NA,70.29651181475,"boletin",NA
@@ -929,6 +931,9 @@
 "BTG Pactual Renta Residencial Fondo de Inversión","A",NA,NA,2026-04-29,2026-05-06,"$","Dividendo",30,NA,NA,NA,NA,30,"boletin",NA
 "BTG Pactual Renta Residencial Fondo de Inversión","H",NA,NA,2026-04-29,2026-05-06,"$","Dividendo",30.481409,NA,NA,NA,NA,30.4814087912,"boletin",NA
 "BTG Pactual Renta Residencial Fondo de Inversión","I",NA,NA,2026-04-29,2026-05-06,"$","Dividendo",30.243778,NA,NA,NA,NA,30.2437784591,"boletin",NA
+"BTG Pactual Renta Residencial Fondo de Inversión","A",NA,NA,2026-07-25,2026-07-31,"$","Dividendo",30,NA,NA,NA,NA,30,"boletin",NA
+"BTG Pactual Renta Residencial Fondo de Inversión","H",NA,NA,2026-07-25,2026-07-31,"$","Dividendo",30.496706,NA,NA,NA,NA,30.49670559851,"boletin",NA
+"BTG Pactual Renta Residencial Fondo de Inversión","I",NA,NA,2026-07-25,2026-07-31,"$","Dividendo",30.258129,NA,NA,NA,NA,30.25812925468,"boletin",NA
 "BTG Pactual Small Cap Chile Fondo de Inversión","A","7018","FIRES",2025-06-19,2025-06-26,"$","Dividendo",22402.476892,1647590163,NA,NA,NA,22402.476891699,"boletin",NA
 "BTG Pactual Small Cap Chile Fondo de Inversión","A","7018","FIRES",2026-03-19,2026-03-25,"$","Dividendo",6052.699361,NA,NA,NA,NA,6052.69936078948,"boletin",NA
 "BTG Pactual Venture Debt II Fondo de Inversión","A","10412","FINRE",2025-04-29,2025-05-06,"$","Dividendo",118.603177,NA,NA,NA,NA,118.603176969611,"boletin",NA
@@ -5665,6 +5670,7 @@
 "Fondo de Inversión SURA Renta Inmobiliaria II","A",NA,NA,2026-05-13,2026-05-19,"$","Dividendo",140.89617,NA,NA,NA,NA,140.89617,"boletin",NA
 "Fondo de Inversión SURA Renta Inmobiliaria II","I",NA,NA,2026-05-13,2026-05-19,"$","Dividendo",140.579546,NA,NA,NA,NA,140.579546,"boletin",NA
 "Fondo de Inversión SURA Renta Inmobiliaria III","B",NA,NA,2026-06-23,2026-06-30,"$","Reparto",40610.69,NA,NA,NA,NA,40610.69,"boletin",NA
+"Fondo de Inversión SURA Renta Inmobiliaria III","B",NA,NA,2026-07-24,2026-07-30,"$","Reparto",40820.31,NA,NA,NA,NA,40820.31,"boletin",NA
 "Fondo de Inversión SaaS HR","A",NA,NA,2025-06-27,2025-07-03,"$","Dividendo",23408605.668182,NA,NA,NA,NA,23408605.668182,"boletin",NA
 "Fondo de Inversión SaaS HR","B",NA,NA,2025-06-27,2025-07-03,"$","Dividendo",2536873.577639,NA,NA,NA,NA,2536873.5776392,"boletin",NA
 "Fondo de Inversión SaaS HR","C",NA,NA,2025-06-27,2025-07-03,"$","Dividendo",2970555.346774,NA,NA,NA,NA,2970555.3467742,"boletin",NA
@@ -7146,6 +7152,15 @@
 "Moneda CARS Fondo de Inversión","I","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.580112,NA,NA,NA,NA,0.580112,"boletin",NA
 "Moneda CARS Fondo de Inversión","P","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.570921,NA,NA,NA,NA,0.570921,"boletin",NA
 "Moneda CARS Fondo de Inversión","Q","9617","FINRE",2026-06-23,2026-06-30,"US$","Dividendo",0.577678,NA,NA,NA,NA,0.577678,"boletin",NA
+"Moneda CARS Fondo de Inversión","A","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.608471,NA,NA,NA,NA,0.608471,"boletin",NA
+"Moneda CARS Fondo de Inversión","B","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.601957,NA,NA,NA,NA,0.601957,"boletin",NA
+"Moneda CARS Fondo de Inversión","D","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.605875,NA,NA,NA,NA,0.605875,"boletin",NA
+"Moneda CARS Fondo de Inversión","E","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.607538,NA,NA,NA,NA,0.607538,"boletin",NA
+"Moneda CARS Fondo de Inversión","F","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.608453,NA,NA,NA,NA,0.608453,"boletin",NA
+"Moneda CARS Fondo de Inversión","G","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.592019,NA,NA,NA,NA,0.592019,"boletin",NA
+"Moneda CARS Fondo de Inversión","I","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.611331,NA,NA,NA,NA,0.611331,"boletin",NA
+"Moneda CARS Fondo de Inversión","P","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.60166,NA,NA,NA,NA,0.60166,"boletin",NA
+"Moneda CARS Fondo de Inversión","Q","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.608766,NA,NA,NA,NA,0.608766,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","A","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.205522,NA,NA,NA,NA,2.205522,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","C","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.261165,NA,NA,NA,NA,2.261165,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","I","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.23516,NA,NA,NA,NA,2.23516,"boletin",NA
@@ -7468,6 +7483,8 @@
 "Principal Real Estate USA Fondo de Inversión","O",NA,NA,2026-01-16,2026-01-22,"US$","Dividendo",0.007275,NA,NA,NA,NA,0.007274859,"boletin",NA
 "Principal Real Estate USA Fondo de Inversión","A",NA,NA,2026-04-24,2026-04-30,"US$","Dividendo",0.008092,NA,NA,NA,NA,0.008092449,"boletin",NA
 "Principal Real Estate USA Fondo de Inversión","B",NA,NA,2026-04-24,2026-04-30,"US$","Dividendo",0.006757,NA,NA,NA,NA,0.006757409,"boletin",NA
+"Principal Real Estate USA Fondo de Inversión","A",NA,NA,2026-07-24,2026-07-30,"US$","Dividendo",0.0071,NA,NA,NA,NA,0.007100331,"boletin",NA
+"Principal Real Estate USA Fondo de Inversión","B",NA,NA,2026-07-24,2026-07-30,"US$","Dividendo",0.005914,NA,NA,NA,NA,0.00591416,"boletin",NA
 "Private Equity I Fondo de Inversión","A",NA,NA,2025-06-17,2025-06-24,"US$","Dividendo",0.002867,NA,NA,NA,NA,0.002866591,"boletin",NA
 "Private Equity I Fondo de Inversión","B",NA,NA,2025-06-17,2025-06-24,"US$","Dividendo",0.002867,NA,NA,NA,NA,0.002866591,"boletin",NA
 "Private Equity I Fondo de Inversión","A",NA,NA,2025-06-17,2025-06-24,"US$","Reparto",0.110131,NA,NA,NA,NA,0.110131137,"boletin",NA
@@ -8368,6 +8385,10 @@
 "VolcomCapital Private Equity VI Fondo de Inversion","B","9723","FINRE",2026-03-30,2026-04-07,"US$","Reparto",0.001741,NA,NA,NA,NA,0.00174053467936574,"boletin",NA
 "VolcomCapital Private Equity VI Fondo de Inversion","C","9723","FINRE",2026-03-30,2026-04-07,"US$","Reparto",0.001752,NA,NA,NA,NA,0.0017518535563909,"boletin",NA
 "VolcomCapital Private Equity VI Fondo de Inversion","D","9723","FINRE",2026-03-30,2026-04-07,"US$","Reparto",0.001769,NA,NA,NA,NA,0.00176883916963109,"boletin",NA
+"VolcomCapital – HPS Mezzanine IV Fondo de Inversión
+(ex XLC - HPS Mezzanine IV Fondo de Inversión)","A",NA,NA,2026-07-28,2026-08-03,"US$","Dividendo",0.039061,NA,NA,NA,NA,0.0390613523879931,"boletin",NA
+"VolcomCapital – HPS Mezzanine IV Fondo de Inversión
+(ex XLC - HPS Mezzanine IV Fondo de Inversión)","B",NA,NA,2026-07-28,2026-08-03,"US$","Dividendo",0.039354,NA,NA,NA,NA,0.0393539088752614,"boletin",NA
 "Volcomcapital Private Equity VIII Fondo de Inversión","A","9877","FINRE",2025-06-11,2025-06-17,"EURO","Dividendo",0.007084,NA,NA,NA,NA,0.00708410830903143,"boletin",NA
 "Volcomcapital Private Equity VIII Fondo de Inversión","B","9877","FINRE",2025-06-11,2025-06-17,"EURO","Dividendo",0.007822,NA,NA,NA,NA,0.00782194714940404,"boletin",NA
 "Volcomcapital Private Equity VIII Fondo de Inversión","C","9877","FINRE",2025-06-11,2025-06-17,"EURO","Dividendo",0.007891,NA,NA,NA,NA,0.00789125486369765,"boletin",NA
@@ -8652,16 +8673,11 @@
 "MBI-BP Deuda Fondo de Inversión, en Liquidación.","B",NA,NA,2025-08-16,2025-08-22,"$","Reparto",NA,103850099,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda CARS Fondo de Inversión","A","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",NA,528000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda CARS Fondo de Inversión","B","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",NA,528000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda CARS Fondo de Inversión","D","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",NA,528000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda CARS Fondo de Inversión","E","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",NA,528000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda CARS Fondo de Inversión","F","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",NA,528000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda CARS Fondo de Inversión","G","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",NA,528000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda CARS Fondo de Inversión","I","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",NA,528000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda CARS Fondo de Inversión","P","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",NA,528000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Moneda CARS Fondo de Inversión","Q","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",NA,528000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"VolcomCapital – HPS Mezzanine IV Fondo de Inversión
+(ex XLC - HPS Mezzanine IV Fondo de Inversión)","A",NA,NA,2026-07-28,2026-08-03,"US$","Reparto",NA,855992.4,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"VolcomCapital – HPS Mezzanine IV Fondo de Inversión
+(ex XLC - HPS Mezzanine IV Fondo de Inversión)","B",NA,NA,2026-07-28,2026-08-03,"US$","Reparto",NA,855992.4,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "XLC Activos I Fondo de Inversión","A","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,177557068,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","B","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,131131561,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "XLC Activos I Fondo de Inversión","C","10637","FINRE",2025-04-12,2025-04-21,"$","Dividendo",NA,174659992,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
