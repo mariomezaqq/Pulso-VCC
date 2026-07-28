@@ -4101,6 +4101,9 @@
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","A",NA,NA,2026-01-24,2026-01-30,"$","Dividendo",36981.02316,NA,NA,NA,NA,36981.02316006,"boletin",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","B",NA,NA,2026-01-24,2026-01-30,"$","Dividendo",37374.660299,NA,NA,NA,NA,37374.66029889,"boletin",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","CCAM",NA,NA,2026-01-24,2026-01-30,"$","Dividendo",37499.585059,NA,NA,NA,NA,37499.58505946,"boletin",NA
+"Fondo de Inversión Credicorp Capital Retorno Preferente Maestra II","A",NA,NA,2026-07-25,2026-07-31,"$","Dividendo",510.817498,NA,NA,NA,NA,510.81749774,"boletin",NA
+"Fondo de Inversión Credicorp Capital Retorno Preferente Maestra II","B",NA,NA,2026-07-25,2026-07-31,"$","Dividendo",511.121869,NA,NA,NA,NA,511.12186924,"boletin",NA
+"Fondo de Inversión Credicorp Capital Retorno Preferente Maestra II","CCAM",NA,NA,2026-07-25,2026-07-31,"$","Dividendo",511.12184,NA,NA,NA,NA,511.12184035,"boletin",NA
 "Fondo de Inversión Credicorp Capital Spread Corporativo Local","AC","7275","FIRES",2025-06-16,2025-06-23,"$","Dividendo",22.603257,NA,NA,NA,NA,22.60325703,"boletin",NA
 "Fondo de Inversión Credicorp Capital Spread Corporativo Local","B","7275","FIRES",2025-06-16,2025-06-23,"$","Dividendo",33.639219,NA,NA,NA,NA,33.63921854,"boletin",NA
 "Fondo de Inversión Credicorp Capital Spread Corporativo Local","CC","7275","FIRES",2025-06-16,2025-06-23,"$","Dividendo",28.080219,NA,NA,NA,NA,28.08021898,"boletin",NA
@@ -7869,6 +7872,8 @@
 "VOLCOMCAPITAL Expansión VI Fondo de Inversión","C","10590","FINRE",2025-03-21,2025-03-27,"EURO","Reparto",0.020828,NA,NA,NA,NA,0.020827735543933,"boletin",NA
 "VOLCOMCAPITAL Expansión VI Fondo de Inversión","B","10590","FINRE",2025-06-04,2025-06-10,"EURO","Reparto",0.032043,NA,NA,NA,NA,0.0320433293474547,"boletin",NA
 "VOLCOMCAPITAL Expansión VI Fondo de Inversión","C","10590","FINRE",2025-06-04,2025-06-10,"EURO","Reparto",0.032232,NA,NA,NA,NA,0.0322318755028492,"boletin",NA
+"VOLCOMCAPITAL Expansión VI Fondo de Inversión","B","10590","FINRE",2026-07-28,2026-08-03,"EURO","Dividendo",0.002283,NA,NA,NA,NA,0.00228274229949668,"boletin",NA
+"VOLCOMCAPITAL Expansión VI Fondo de Inversión","C","10590","FINRE",2026-07-28,2026-08-03,"EURO","Dividendo",0.002307,NA,NA,NA,NA,0.00230700174841568,"boletin",NA
 "VOLCOMCAPITAL Infraestructura I Fondo de Inversion","A","9418","FINRE",2025-04-09,2025-04-15,"US$","Dividendo",0.005207,NA,NA,NA,NA,0.00520657050570373,"boletin",NA
 "VOLCOMCAPITAL Infraestructura I Fondo de Inversion","B","9418","FINRE",2025-04-09,2025-04-15,"US$","Dividendo",0.005652,NA,NA,NA,NA,0.00565243779184334,"boletin",NA
 "VOLCOMCAPITAL Infraestructura I Fondo de Inversion","C","9418","FINRE",2025-04-09,2025-04-15,"US$","Dividendo",0.005724,NA,NA,NA,NA,0.00572359098931391,"boletin",NA
