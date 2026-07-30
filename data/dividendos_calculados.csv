@@ -3842,6 +3842,12 @@
 "Fondo de Inversión Baring Asia Private Equity Fund VIII","F","10133","FINRE",2026-03-25,2026-03-31,"US$","Reparto",0.005075,NA,NA,NA,NA,0.00507490951768575,"boletin",NA
 "Fondo de Inversión Baring Asia Private Equity Fund VIII","I","10133","FINRE",2026-03-25,2026-03-31,"US$","Reparto",0.005075,NA,NA,NA,NA,0.00507491002095562,"boletin",NA
 "Fondo de Inversión Baring Asia Private Equity Fund VIII","R","10133","FINRE",2026-03-25,2026-03-31,"US$","Reparto",0.004564,NA,NA,NA,NA,0.00456405844152913,"boletin",NA
+"Fondo de Inversión Baring Asia Private Equity Fund VIII","F","10133","FINRE",2026-07-29,2026-08-04,"US$","Dividendo",0.001966,NA,NA,NA,NA,0.00196556869233335,"boletin",NA
+"Fondo de Inversión Baring Asia Private Equity Fund VIII","I","10133","FINRE",2026-07-29,2026-08-04,"US$","Dividendo",0.001966,NA,NA,NA,NA,0.00196556911432528,"boletin",NA
+"Fondo de Inversión Baring Asia Private Equity Fund VIII","R","10133","FINRE",2026-07-29,2026-08-04,"US$","Dividendo",0.001761,NA,NA,NA,NA,0.00176093792460887,"boletin",NA
+"Fondo de Inversión Baring Asia Private Equity Fund VIII","F","10133","FINRE",2026-07-29,2026-08-04,"US$","Reparto",0.022998,NA,NA,NA,NA,0.0229979141185011,"boletin",NA
+"Fondo de Inversión Baring Asia Private Equity Fund VIII","I","10133","FINRE",2026-07-29,2026-08-04,"US$","Reparto",0.022998,NA,NA,NA,NA,0.0229979166571492,"boletin",NA
+"Fondo de Inversión Baring Asia Private Equity Fund VIII","R","10133","FINRE",2026-07-29,2026-08-04,"US$","Reparto",0.020604,NA,NA,NA,NA,0.0206036273616717,"boletin",NA
 "Fondo de Inversión Bci Adler V","C",NA,NA,2025-02-28,2025-03-06,"US$","Reparto",0.008571,NA,NA,NA,NA,0.0085711055,"boletin",NA
 "Fondo de Inversión Bci Adler V","ADC",NA,NA,2025-02-28,2025-03-06,"US$","Reparto",0.008653,NA,NA,NA,NA,0.0086527426,"boletin",NA
 "Fondo de Inversión Bci Adler V","C",NA,NA,2025-05-30,2025-06-05,"US$","Reparto",0.010264,NA,NA,NA,NA,0.0102640816,"boletin",NA
@@ -4057,6 +4063,8 @@
 "Fondo de Inversión Credicorp Capital Private Debt IV","I","10352","FINRE",2025-12-18,2025-12-24,"US$","Dividendo",0.012005,NA,NA,NA,NA,0.01200525,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt IV","B","10352","FINRE",2025-12-18,2025-12-24,"US$","Reparto",0.003266,NA,NA,NA,NA,0.00326607,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt IV","I","10352","FINRE",2025-12-18,2025-12-24,"US$","Reparto",0.003302,NA,NA,NA,NA,0.00330235,"boletin",NA
+"Fondo de Inversión Credicorp Capital Private Debt IV","B","10352","FINRE",2026-07-29,2026-08-04,"US$","Reparto",0.012002,NA,NA,NA,NA,0.01200163,"boletin",NA
+"Fondo de Inversión Credicorp Capital Private Debt IV","I","10352","FINRE",2026-07-29,2026-08-04,"US$","Reparto",0.012151,NA,NA,NA,NA,0.01215085,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt V","B","10504","FINRE",2025-12-13,2025-12-19,"EURO","Dividendo",0.146868,NA,NA,NA,NA,0.14686785,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt V","C","10504","FINRE",2025-12-13,2025-12-19,"EURO","Dividendo",0.153772,NA,NA,NA,NA,0.15377244,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt V","D","10504","FINRE",2025-12-13,2025-12-19,"EURO","Dividendo",0.203076,NA,NA,NA,NA,0.20307569,"boletin",NA
@@ -6566,6 +6574,8 @@
 "Fondo de Inversión Tronador Deuda Privada","B",NA,NA,2026-05-26,2026-06-01,"$","Dividendo",0.0071,NA,NA,NA,NA,0.0071,"boletin",NA
 "Fondo de Inversión Tronador Deuda Privada","A",NA,NA,2026-06-24,2026-07-01,"$","Dividendo",0.0058,NA,NA,NA,NA,0.0058,"boletin",NA
 "Fondo de Inversión Tronador Deuda Privada","B",NA,NA,2026-06-24,2026-07-01,"$","Dividendo",0.0069,NA,NA,NA,NA,0.0069,"boletin",NA
+"Fondo de Inversión Tronador Deuda Privada","A",NA,NA,2026-07-28,2026-08-03,"$","Dividendo",0.006,NA,NA,NA,NA,0.0059996,"boletin",NA
+"Fondo de Inversión Tronador Deuda Privada","B",NA,NA,2026-07-28,2026-08-03,"$","Dividendo",0.007129,NA,NA,NA,NA,0.0071288,"boletin",NA
 "Fondo de Inversión Vantrust Acciones Nacionales","A",NA,NA,2025-06-19,2025-06-26,"$","Dividendo",9.90762,NA,NA,NA,NA,9.90762,"boletin",NA
 "Fondo de Inversión Vantrust Acciones Nacionales","I",NA,NA,2025-06-19,2025-06-26,"$","Dividendo",9.90762,NA,NA,NA,NA,9.90762,"boletin",NA
 "Fondo de Inversión Vantrust Capital Acciones Dividend Stars","A",NA,NA,2026-06-23,2026-06-30,"$","Dividendo",33.102186,NA,NA,NA,NA,33.102186,"boletin",NA
@@ -8360,6 +8370,9 @@
 "Vinci Compass Small Cap Chile Fondo de Inversión","B",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2652.59151,NA,NA,NA,NA,2652.5915095152,"boletin",NA
 "Vinci Compass Small Cap Chile Fondo de Inversión","I",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2693.703047,NA,NA,NA,NA,2693.7030474919,"boletin",NA
 "Vinci Compass Small Cap Chile Fondo de Inversión","VC",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2675.652323,NA,NA,NA,NA,2675.6523229495,"boletin",NA
+"VolcomCapital Activos I Fondo de Inversión","B",NA,NA,2026-07-30,2026-08-05,"$","Reparto",2169.117356,NA,NA,NA,NA,2169.11735636516,"boletin",NA
+"VolcomCapital Activos I Fondo de Inversión","C",NA,NA,2026-07-30,2026-08-05,"$","Reparto",284.366736,NA,NA,NA,NA,284.366735591747,"boletin",NA
+"VolcomCapital Activos I Fondo de Inversión","E",NA,NA,2026-07-30,2026-08-05,"$","Reparto",769.594172,NA,NA,NA,NA,769.594172419574,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","B","10148","FINRE",2025-02-05,2025-02-11,"US$","Dividendo",0.068062,NA,NA,NA,NA,0.06806214053875,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","Z","10148","FINRE",2025-02-05,2025-02-11,"US$","Dividendo",0.06855,NA,NA,NA,NA,0.06854950341952,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","B","10148","FINRE",2025-05-20,2025-05-27,"US$","Dividendo",0.018393,NA,NA,NA,NA,0.0183930434657029,"boletin",NA
