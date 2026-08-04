@@ -386,8 +386,13 @@ server <- function(input, output, session) {
     })
 
   # ---- VC manual del día (entrada rápida) ----
-  output$tbl_entry <- renderDT(datatable(rv$entry, editable = list(target = "cell", disable = list(columns = c(0,1))),
-                                         rownames = FALSE, options = list(dom = "t")), server = FALSE)
+  # editar celdas NO debe re-renderizar (isolate + tick), mismo motivo que tbl_cur:
+  # re-renderizar en cada edicion resetea la tabla (pagina/orden) a mitad del tipeo.
+  output$tbl_entry <- renderDT({
+    rv$tick
+    datatable(isolate(rv$entry), editable = list(target = "cell", disable = list(columns = c(0,1))),
+             rownames = FALSE, options = list(dom = "t"))
+  }, server = FALSE)
   observeEvent(input$tbl_entry_cell_edit, { rv$entry <- editData(rv$entry, input$tbl_entry_cell_edit, rownames = FALSE) })
   observeEvent(input$save_vc_dia, {
     f <- as.character(input$vc_fecha)
@@ -411,24 +416,36 @@ server <- function(input, output, session) {
     paste(c(paste(names(rv$vc), collapse = ","),
             if (nrow(rv$vc)) apply(rv$vc, 1, function(x) paste(x, collapse = ","))), collapse = "\n"),
     "Actualizar VC manuales")
-  output$tbl_vc <- renderDT(datatable(rv$vc, editable = TRUE, rownames = FALSE,
-    options = list(pageLength = 10, order = list(list(2, "desc")),
-                   lengthMenu = list(c(10, 25, 50, -1), c("10","25","50","Todas")))), server = FALSE)
+  # isolate + tick (idem tbl_cur): editar celdas NO debe re-renderizar, si no la
+  # tabla se reordena (esta ordenada por Fecha desc) a mitad de la correccion y
+  # la siguiente edicion cae en una fila distinta a la que se estaba corrigiendo.
+  output$tbl_vc <- renderDT({
+    rv$tick
+    datatable(isolate(rv$vc), editable = TRUE, rownames = FALSE,
+      options = list(pageLength = 10, order = list(list(2, "desc")),
+                     lengthMenu = list(c(10, 25, 50, -1), c("10","25","50","Todas"))))
+  }, server = FALSE)
   observeEvent(input$tbl_vc_cell_edit, { rv$vc <- editData(rv$vc, input$tbl_vc_cell_edit, rownames = FALSE) })
   observeEvent(input$del_vc, {
     sel <- input$tbl_vc_rows_selected
-    if (length(sel)) { rv$vc <- rv$vc[-sel, , drop = FALSE] }
+    if (length(sel)) { rv$vc <- rv$vc[-sel, , drop = FALSE]; rv$tick <- rv$tick + 1 }
   })
   observeEvent(input$save_vc, { output$vc_hist_msg <- renderText(guardar_vc()); rv$tick <- rv$tick + 1 })
 
   # ---- Correcciones de dividendos ----
-  output$tbl_ov <- renderDT(datatable(rv$ov, editable = TRUE, rownames = FALSE,
-    options = list(pageLength = 10, order = list(list(1, "desc")),
-                   lengthMenu = list(c(10, 25, 50, -1), c("10","25","50","Todas")))), server = FALSE)
+  # isolate + tick (idem tbl_vc/tbl_cur): evita que re-renderizar en cada edicion
+  # reordene la tabla (esta ordenada por Fecha limite desc) a mitad de la correccion.
+  output$tbl_ov <- renderDT({
+    rv$tick
+    datatable(isolate(rv$ov), editable = TRUE, rownames = FALSE,
+      options = list(pageLength = 10, order = list(list(1, "desc")),
+                     lengthMenu = list(c(10, 25, 50, -1), c("10","25","50","Todas"))))
+  }, server = FALSE)
   observeEvent(input$tbl_ov_cell_edit, { rv$ov <- editData(rv$ov, input$tbl_ov_cell_edit, rownames = FALSE) })
   observeEvent(input$add_ov, {
     rv$ov <- rbind(rv$ov, data.frame(Fondo = "", `Fecha limite` = "", Monto = NA_real_,
                                      check.names = FALSE, stringsAsFactors = FALSE))
+    rv$tick <- rv$tick + 1
   })
   observeEvent(input$save_ov, {
     msg <- store_write_text("dividendos_overrides.csv",

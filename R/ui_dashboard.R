@@ -101,15 +101,18 @@
 }
 
 .panel_macro <- function(pd) {
+  mes_lbl <- pd$mes_ant_label %||% "Mes ant."
   h <- "<div class='tab-panel' id='panel-macro' style='display:none'>"
   h <- paste0(h, "<h2 class='cat-title'>Índices Macro</h2><div class='table-wrap'><table>",
     "<thead><tr><th class='th-left'>Índice</th>",
-    "<th class='th-center'>WTD</th><th class='th-center'>MTD</th><th class='th-center'>YTD</th>",
+    "<th class='th-center'>WTD</th><th class='th-center'>MTD</th>",
+    "<th class='th-center'>", mes_lbl, "</th><th class='th-center'>YTD</th>",
     "</tr></thead><tbody>")
   for (idx in pd$indices_macro) {
     h <- paste0(h, "<tr><td class='nombre'>", idx$nombre, "</td>",
       "<td class='center ", .cls_frac(idx$wtd), "'>", .fmt_pct_frac(idx$wtd), "</td>",
       "<td class='center ", .cls_frac(idx$mtd), "'>", .fmt_pct_frac(idx$mtd), "</td>",
+      "<td class='center ", .cls_frac(idx$mes_ant), "'>", .fmt_pct_frac(idx$mes_ant), "</td>",
       "<td class='center ", .cls_frac(idx$ytd), "'>", .fmt_pct_frac(idx$ytd), "</td></tr>")
   }
   h <- paste0(h, "</tbody></table></div>")
