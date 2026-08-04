@@ -1,5 +1,5 @@
 "orden","hoja","titulo","nombre_script","nombre_excel","es_manual","run","serie","row","tipoentidad","ticker_sebra","rent2024","rent2025","duracion","liquidez","moneda","tac"
-"1","De la Casa","De la Casa","FI Albion","FI Albion","FALSE","10757","A","AABbsrAAjAAAAFyAAF","FINRE","CFIALBIONA","","3,39%","0","48 hrs","CLP",""
+"1","De la Casa","De la Casa","FI Albion","FI Albion","FALSE","10757","A","AABbsrAAjAAAAFyAAF","FINRE","CFIALBIONA","","3,39%","0-diag","48 hrs","CLP",""
 "2","De la Casa","De la Casa","__MANUAL__","Amc Biotech","TRUE","","","","","","","138,80%","","","USD",""
 "3","Renta Fija CP","Renta Fija Corto Plazo","MBI Deuda Total (B)","MBI Deuda Total (B)","FALSE","9202","B","AAAw+cAAhAABP4OAAk","FIRES","CFIMBIDT-B","11,48%","7,68%","3","48 hrs","CLP","0,95%"
 "4","Renta Fija CP","Renta Fija Corto Plazo","FFMM LV ahorro capital (F)","FFMM LV ahorro capital (F)","FALSE","8263","F","AABbsrAAjAAAACfAA1","RGFMU","","8,82%","5,75%","2,9","24 hrs","CLP","1,10%"
