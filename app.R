@@ -87,6 +87,15 @@ aplicar_indices_manuales <- function(macro, vc_df, fc) {
 
 preparar_todo <- function(vc_df, ov_df = NULL) {
   store_sync("series_vc.rds")   # en la nube baja el ultimo dato del cron; en local mantiene el archivo
+  # fondos_curados.csv (categoria/duracion/liquidez/TAC/etc) solo se sincronizaba
+  # UNA VEZ al arrancar el proceso R (linea ~20). Si otra sesion/instancia edito
+  # y commiteo un cambio, este proceso quedaba con FONDOS/CATEGORIAS/DATOS_FONDO
+  # global desactualizados hasta que alguien tocara el panel admin EN ESTE MISMO
+  # proceso. Se resincroniza aqui, en cada render, igual que series_vc.rds.
+  if (!isTRUE(getOption("pulso.hardcode_only", FALSE))) {
+    store_sync("fondos_curados.csv")
+    refrescar_fondos_globales()
+  }
   if (!file.exists(DATA_RDS)) return(NULL)
   datos <- readRDS(DATA_RDS)
   fc <- as.Date(datos$cierre)
