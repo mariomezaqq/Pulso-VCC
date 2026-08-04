@@ -4079,6 +4079,8 @@
 "Fondo de Inversión Credicorp Capital Private Debt V","I","10504","FINRE",2025-12-13,2025-12-19,"EURO","Reparto",0.19675,NA,NA,NA,NA,0.19675035,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Direct I","E","7183","FINRE",2025-08-23,2025-08-29,"EURO","Dividendo",7.195998,NA,NA,NA,NA,7.19599819,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Direct I","I","7183","FINRE",2025-08-23,2025-08-29,"EURO","Dividendo",62.684868,NA,NA,NA,NA,62.68486774,"boletin",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","I","7216","FINRE",2026-08-01,2026-08-07,"US$","Dividendo",32.666992,NA,NA,NA,NA,32.66699177,"boletin",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2026-08-01,2026-08-07,"US$","Dividendo",2.205543,NA,NA,NA,NA,2.20554329,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-05-29,2025-06-04,"US$","Dividendo",0.945345,NA,NA,NA,NA,0.94534499,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-09-30,2025-10-06,"US$","Dividendo",0.653629,NA,NA,NA,NA,0.65362939,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","(I)","9185","FINRE",2025-12-03,2025-12-10,"US$","Dividendo",5.34341,NA,NA,NA,NA,5.3434101,"boletin",NA
@@ -4575,6 +4577,10 @@
 "Fondo de Inversión HMC Deuda Privada Andina","X","9804","FINRE",2026-04-14,2026-04-20,"US$","Reparto",0.17822,NA,NA,NA,NA,0.1782200365,"boletin",NA
 "Fondo de Inversión HMC Deuda Privada Andina","A","9804","FINRE",2026-06-10,2026-06-16,"US$","Dividendo",0.010823,NA,NA,NA,NA,0.0108228113,"boletin",NA
 "Fondo de Inversión HMC Deuda Privada Andina","X","9804","FINRE",2026-06-10,2026-06-16,"US$","Dividendo",0.010894,NA,NA,NA,NA,0.0108942071,"boletin",NA
+"Fondo de Inversión HMC Deuda Privada Andina","A","9804","FINRE",2026-08-04,2026-08-10,"US$","Dividendo",0.002649,NA,NA,NA,NA,0.0026485853,"boletin",NA
+"Fondo de Inversión HMC Deuda Privada Andina","X","9804","FINRE",2026-08-04,2026-08-10,"US$","Dividendo",0.002666,NA,NA,NA,NA,0.0026663424,"boletin",NA
+"Fondo de Inversión HMC Deuda Privada Andina","A","9804","FINRE",2026-08-04,2026-08-10,"US$","Reparto",0.023909,NA,NA,NA,NA,0.0239085293,"boletin",NA
+"Fondo de Inversión HMC Deuda Privada Andina","X","9804","FINRE",2026-08-04,2026-08-10,"US$","Reparto",0.024069,NA,NA,NA,NA,0.0240688206,"boletin",NA
 "Fondo de Inversión HMC Deuda Privada Global","A","9914","FIRES",2025-01-14,2025-01-20,"US$","Reparto",0.023583,NA,NA,NA,NA,0.0235832176,"boletin",NA
 "Fondo de Inversión HMC Deuda Privada Global","BP","9914","FIRES",2025-01-14,2025-01-20,"US$","Reparto",0.026141,NA,NA,NA,NA,0.0261409764,"boletin",NA
 "Fondo de Inversión HMC Deuda Privada Global","F","9914","FIRES",2025-01-14,2025-01-20,"US$","Reparto",0.026918,NA,NA,NA,NA,0.0269178285,"boletin",NA
@@ -7620,6 +7626,8 @@
 "Toesca Deuda Privada Facturas Fondo de Inversión","T","9970","FIRES",2025-04-01,2025-04-07,"$","Dividendo",2.0115,NA,NA,NA,NA,2.0115,"boletin",NA
 "Toesca Deuda Privada Facturas Fondo de Inversión","S","9970","FIRES",2026-04-09,2026-04-15,"$","Dividendo",11.7137,NA,NA,NA,NA,11.7137,"boletin",NA
 "Toesca Deuda Privada Facturas Fondo de Inversión","T","9970","FIRES",2026-04-09,2026-04-15,"$","Dividendo",1.7339,NA,NA,NA,NA,1.7339,"boletin",NA
+"Toesca Deuda Privada Facturas Fondo de Inversión","S","9970","FIRES",2026-08-05,2026-08-11,"$","Dividendo",1.6792,NA,NA,NA,NA,1.6792,"boletin",NA
+"Toesca Deuda Privada Facturas Fondo de Inversión","T","9970","FIRES",2026-08-05,2026-08-11,"$","Dividendo",1.6622,NA,NA,NA,NA,1.6622,"boletin",NA
 "Toesca Deuda Privada Fondo de Inversión","SI","9619","FINRE",2025-01-09,2025-01-15,"$","Dividendo",1.9705,NA,NA,NA,NA,1.9705,"boletin",NA
 "Toesca Deuda Privada Fondo de Inversión","A","9619","FINRE",2025-01-25,2025-01-31,"$","Dividendo",0.7649,NA,NA,NA,NA,0.7649,"boletin",NA
 "Toesca Deuda Privada Fondo de Inversión","F","9619","FINRE",2025-01-25,2025-01-31,"$","Dividendo",0.67,NA,NA,NA,NA,0.67,"boletin",NA
@@ -8258,6 +8266,8 @@
 "VOLCOMCAPITAL Private Equity Small Cap II Fondo de Inversión","B","10513","FINRE",2025-11-28,2025-12-04,"US$","Reparto",0.084303,NA,NA,NA,NA,0.0843025149370527,"boletin",NA
 "VOLCOMCAPITAL Private Equity Small Cap II Fondo de Inversión","A","10513","FINRE",2026-05-05,2026-05-11,"US$","Reparto",0.04958,NA,NA,NA,NA,0.0495801612991907,"boletin",NA
 "VOLCOMCAPITAL Private Equity Small Cap II Fondo de Inversión","B","10513","FINRE",2026-05-05,2026-05-11,"US$","Reparto",0.051093,NA,NA,NA,NA,0.0510925547302518,"boletin",NA
+"VOLCOMCAPITAL Private Equity Small Cap II Fondo de Inversión","A","10513","FINRE",2026-08-04,2026-08-10,"US$","Reparto",0.037653,NA,NA,NA,NA,0.0376529001687198,"boletin",NA
+"VOLCOMCAPITAL Private Equity Small Cap II Fondo de Inversión","B","10513","FINRE",2026-08-04,2026-08-10,"US$","Reparto",0.038818,NA,NA,NA,NA,0.0388177859734515,"boletin",NA
 "VOLCOMCAPITAL Private Equity VI Fondo de Inversion","A","9723","FINRE",2025-08-29,2025-09-04,"US$","Dividendo",0.101362,NA,NA,NA,NA,0.101361697475347,"boletin",NA
 "VOLCOMCAPITAL Private Equity VI Fondo de Inversion","B","9723","FINRE",2025-08-29,2025-09-04,"US$","Dividendo",0.10802,NA,NA,NA,NA,0.108020086712259,"boletin",NA
 "VOLCOMCAPITAL Private Equity VI Fondo de Inversion","C","9723","FINRE",2025-08-29,2025-09-04,"US$","Dividendo",0.108707,NA,NA,NA,NA,0.108706715147384,"boletin",NA
@@ -8646,6 +8656,8 @@
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","I",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,114903.97,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","E",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,222847.69,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Independencia Deuda US I","U",NA,NA,2025-02-08,2025-02-14,"US$","Reparto",NA,6208.78,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","I","7216","FINRE",2026-08-04,2026-08-10,"US$","Reparto",NA,1100056.74,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2026-08-04,2026-08-10,"US$","Reparto",NA,1100056.74,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","A",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,511995657,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","B",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,651307025,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","CCAM",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,1019620,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
