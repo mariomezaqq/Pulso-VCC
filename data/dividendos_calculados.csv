@@ -675,6 +675,8 @@
 "BICE Monarch IV Fondo de Inversión","I","9529","FINRE",2026-06-11,2026-06-17,"US$","Reparto",0.017178,NA,NA,NA,NA,0.0171778653,"boletin",NA
 "BICE Monarch IV Fondo de Inversión","A","9529","FINRE",2026-07-15,2026-07-22,"US$","Reparto",0.016148,NA,NA,NA,NA,0.0161479295,"boletin",NA
 "BICE Monarch IV Fondo de Inversión","I","9529","FINRE",2026-07-15,2026-07-22,"US$","Reparto",0.016681,NA,NA,NA,NA,0.0166813952,"boletin",NA
+"BICE Monarch IV Fondo de Inversión","A","9529","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.004325,NA,NA,NA,NA,0.0043253383,"boletin",NA
+"BICE Monarch IV Fondo de Inversión","I","9529","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.004468,NA,NA,NA,NA,0.0044682309,"boletin",NA
 "BICE Secundarios RE II Fondo de Inversión","A","9774","FINRE",2025-01-08,2025-01-14,"US$","Reparto",0.044113,NA,NA,NA,NA,0.0441126266,"boletin",NA
 "BICE Secundarios RE II Fondo de Inversión","I","9774","FINRE",2025-01-08,2025-01-14,"US$","Reparto",0.083356,NA,NA,NA,NA,0.0833563738,"boletin",NA
 "BICE Secundarios RE II Fondo de Inversión","X","9774","FINRE",2025-01-08,2025-01-14,"US$","Reparto",0.08336,NA,NA,NA,NA,0.0833598195,"boletin",NA
@@ -5680,6 +5682,7 @@
 "Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2025-04-06,2025-04-11,"US$","Reparto",0.176995,NA,NA,NA,NA,0.17699525,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2025-11-19,2025-11-25,"US$","Reparto",90.1248,NA,NA,NA,NA,90.1248,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2026-02-06,2026-02-12,"US$","Reparto",86.8255,NA,NA,NA,NA,86.8255,"boletin",NA
+"Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2026-08-05,2026-08-11,"US$","Reparto",87.2398,385000,NA,NA,NA,87.2398,"boletin",NA
 "Fondo de Inversión SURA Renta Inmobiliaria II","A",NA,NA,2025-01-25,2025-01-31,"$","Dividendo",121.189185,NA,NA,NA,NA,121.1891851,"boletin",NA
 "Fondo de Inversión SURA Renta Inmobiliaria II","I",NA,NA,2025-01-25,2025-01-31,"$","Dividendo",120.761647,NA,NA,NA,NA,120.7616467,"boletin",NA
 "Fondo de Inversión SURA Renta Inmobiliaria II","A",NA,NA,2025-04-17,2025-04-25,"$","Dividendo",129.6411,NA,NA,NA,NA,129.6411,"boletin",NA
@@ -6195,6 +6198,9 @@
 "Fondo de Inversión Security Driftwood Preferred Equity","A","10667","FINRE",2026-05-14,2026-05-20,"US$","Dividendo",26.827011,NA,NA,NA,NA,26.827011056,"boletin",NA
 "Fondo de Inversión Security Driftwood Preferred Equity","B","10667","FINRE",2026-05-14,2026-05-20,"US$","Dividendo",26.938495,NA,NA,NA,NA,26.938495306,"boletin",NA
 "Fondo de Inversión Security Driftwood Preferred Equity","I","10667","FINRE",2026-05-14,2026-05-20,"US$","Dividendo",27.050292,NA,NA,NA,NA,27.050292468,"boletin",NA
+"Fondo de Inversión Security Driftwood Preferred Equity","A","10667","FINRE",2026-08-04,2026-08-10,"US$","Dividendo",25.556694,NA,NA,NA,NA,25.556693944,"boletin",NA
+"Fondo de Inversión Security Driftwood Preferred Equity","B","10667","FINRE",2026-08-04,2026-08-10,"US$","Dividendo",25.677307,NA,NA,NA,NA,25.677307114,"boletin",NA
+"Fondo de Inversión Security Driftwood Preferred Equity","I","10667","FINRE",2026-08-04,2026-08-10,"US$","Dividendo",25.798401,NA,NA,NA,NA,25.798401442,"boletin",NA
 "Fondo de Inversión Security Electromovilidad Urbana I","A",NA,NA,2025-01-16,2025-01-22,"$","Reparto",15.754286,NA,NA,NA,NA,15.754285859,"boletin",NA
 "Fondo de Inversión Security Electromovilidad Urbana I","I",NA,NA,2025-01-16,2025-01-22,"$","Reparto",16.012687,NA,NA,NA,NA,16.012686525,"boletin",NA
 "Fondo de Inversión Security Electromovilidad Urbana I","A",NA,NA,2025-02-20,2025-02-26,"$","Reparto",23.61574,NA,NA,NA,NA,23.615739899,"boletin",NA
@@ -8395,6 +8401,21 @@
 "Vinci Compass LAPCO Fondo de Inversión","C","9998","FINRE",2026-03-03,2026-03-09,"US$","Dividendo",0.011589,NA,NA,NA,NA,0.0115893848,"boletin",NA
 "Vinci Compass LAPCO Fondo de Inversión","D","9998","FINRE",2026-03-03,2026-03-09,"US$","Dividendo",0.011687,NA,NA,NA,NA,0.0116865183,"boletin",NA
 "Vinci Compass LAPCO Fondo de Inversión","I","9998","FINRE",2026-03-03,2026-03-09,"US$","Dividendo",0.012147,NA,NA,NA,NA,0.0121468526,"boletin",NA
+"Vinci Compass LCP IX Private Equity Fondo de Inversión","A",NA,NA,2026-08-04,2026-08-10,"US$","Dividendo",0.007566,NA,NA,NA,NA,0.0075659001,"boletin",NA
+"Vinci Compass LCP IX Private Equity Fondo de Inversión","B",NA,NA,2026-08-04,2026-08-10,"US$","Dividendo",0.007897,NA,NA,NA,NA,0.0078969526,"boletin",NA
+"Vinci Compass LCP IX Private Equity Fondo de Inversión","C",NA,NA,2026-08-04,2026-08-10,"US$","Dividendo",0.008151,NA,NA,NA,NA,0.0081512237,"boletin",NA
+"Vinci Compass LCP IX Private Equity Fondo de Inversión","I",NA,NA,2026-08-04,2026-08-10,"US$","Dividendo",0.008149,NA,NA,NA,NA,0.0081494295,"boletin",NA
+"Vinci Compass LCP IX Private Equity Fondo de Inversión","R",NA,NA,2026-08-04,2026-08-10,"US$","Dividendo",0.006931,NA,NA,NA,NA,0.0069305797,"boletin",NA
+"Vinci Compass LCP IX Private Equity Fondo de Inversión","A",NA,NA,2026-08-04,2026-08-10,"US$","Reparto",0.006261,NA,NA,NA,NA,0.0062611766,"boletin",NA
+"Vinci Compass LCP IX Private Equity Fondo de Inversión","B",NA,NA,2026-08-04,2026-08-10,"US$","Reparto",0.006535,NA,NA,NA,NA,0.006535163,"boletin",NA
+"Vinci Compass LCP IX Private Equity Fondo de Inversión","C",NA,NA,2026-08-04,2026-08-10,"US$","Reparto",0.006746,NA,NA,NA,NA,0.0067455769,"boletin",NA
+"Vinci Compass LCP IX Private Equity Fondo de Inversión","I",NA,NA,2026-08-04,2026-08-10,"US$","Reparto",0.006744,NA,NA,NA,NA,0.0067440932,"boletin",NA
+"Vinci Compass LCP IX Private Equity Fondo de Inversión","R",NA,NA,2026-08-04,2026-08-10,"US$","Reparto",0.005735,NA,NA,NA,NA,0.0057354083,"boletin",NA
+"Vinci Compass LS 12 Fondo de Inversión","R",NA,NA,2026-08-04,2026-08-10,"US$","Reparto",0.024817,NA,NA,NA,NA,0.0248173842,"boletin",NA
+"Vinci Compass LS 12 Fondo de Inversión","A",NA,NA,2026-08-04,2026-08-10,"US$","Reparto",0.024822,NA,NA,NA,NA,0.0248220024,"boletin",NA
+"Vinci Compass LS 12 Fondo de Inversión","B",NA,NA,2026-08-04,2026-08-10,"US$","Reparto",0.024821,NA,NA,NA,NA,0.0248209834,"boletin",NA
+"Vinci Compass LS 12 Fondo de Inversión","C",NA,NA,2026-08-04,2026-08-10,"US$","Reparto",0.024817,NA,NA,NA,NA,0.0248174203,"boletin",NA
+"Vinci Compass LS 12 Fondo de Inversión","I",NA,NA,2026-08-04,2026-08-10,"US$","Reparto",0.024817,NA,NA,NA,NA,0.0248174167,"boletin",NA
 "Vinci Compass Latin America Equity Fondo de Inversión","A","9522","FIRES",2026-05-23,2026-05-29,"US$","Dividendo",0.043469,NA,NA,NA,NA,0.0434693623,"boletin",NA
 "Vinci Compass Latin America Equity Fondo de Inversión","B","9522","FIRES",2026-05-23,2026-05-29,"US$","Dividendo",0.045395,NA,NA,NA,NA,0.0453950967,"boletin",NA
 "Vinci Compass Latin America Equity Fondo de Inversión","VC","9522","FIRES",2026-05-23,2026-05-29,"US$","Dividendo",0.042185,NA,NA,NA,NA,0.0421848286,"boletin",NA
@@ -8429,6 +8450,8 @@
 "VolcomCapital Coinvestment VII Fondo de Inversión","Z","10148","FINRE",2026-06-05,2026-06-11,"US$","Reparto",0.03396,NA,NA,NA,NA,0.0339599408088983,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","B","10148","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.043691,NA,NA,NA,NA,0.0436908230608626,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","Z","10148","FINRE",2026-07-10,2026-07-17,"US$","Reparto",0.044058,NA,NA,NA,NA,0.0440581999078938,"boletin",NA
+"VolcomCapital Coinvestment VII Fondo de Inversión","B","10148","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.017294,NA,NA,NA,NA,0.0172937208628875,"boletin",NA
+"VolcomCapital Coinvestment VII Fondo de Inversión","Z","10148","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.01744,NA,NA,NA,NA,0.0174402934307696,"boletin",NA
 "VolcomCapital Deuda II Fondo de Inversión en liquidación","A","9600","FINRE",2026-06-11,2026-06-17,"$","Reparto",24.335045,NA,NA,NA,NA,24.3350446818375,"boletin",NA
 "VolcomCapital Deuda II Fondo de Inversión en liquidación","B","9600","FINRE",2026-06-11,2026-06-17,"$","Reparto",24.904354,NA,NA,NA,NA,24.9043540414735,"boletin",NA
 "VolcomCapital Private Equity VI Fondo de Inversion","A","9723","FINRE",2026-03-03,2026-03-09,"US$","Reparto",0.003188,NA,NA,NA,NA,0.00318838543782123,"boletin",NA
@@ -8560,6 +8583,8 @@
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2025-03-28,2025-04-03,"US$","Reparto",NA,238421.28,277079,2025-03-28,0.860481,0.860481363331107,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2025-05-29,2025-06-04,"US$","Reparto",NA,381936.55,239390,2025-05-29,1.595457,1.59545728419245,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2025-07-01,2025-07-07,"US$","Reparto",NA,336813.68,178866,2025-07-01,1.88305,1.88304982693056,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","I","7216","FINRE",2026-08-04,2026-08-10,"US$","Reparto",NA,1100056.74,161120,2026-08-04,6.827559,6.82755942988378,"calculado (total/cuotas dia limite)",NA
+"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2026-08-04,2026-08-10,"US$","Reparto",NA,1100056.74,161120,2026-08-04,6.827559,6.82755942988378,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-01-02,2025-01-08,"US$","Reparto",NA,666451.57,568753,2025-01-02,1.171777,1.17177680216648,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-02-01,2025-02-07,"US$","Reparto",NA,271298.01,555204,2025-02-01,0.488646,0.488645627576261,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries II Fully Funded","E","9185","FINRE",2025-05-29,2025-06-04,"US$","Reparto",NA,233741.58,549644,2025-05-29,0.42526,0.425259952115741,"calculado (total/cuotas dia limite)",NA
@@ -8656,8 +8681,6 @@
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","I",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,114903.97,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","E",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,222847.69,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Independencia Deuda US I","U",NA,NA,2025-02-08,2025-02-14,"US$","Reparto",NA,6208.78,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","I","7216","FINRE",2026-08-04,2026-08-10,"US$","Reparto",NA,1100056.74,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Fondo de Inversión Credicorp Capital Private Equity - PG Secondaries I","E","7216","FINRE",2026-08-04,2026-08-10,"US$","Reparto",NA,1100056.74,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","A",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,511995657,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","B",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,651307025,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","CCAM",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,1019620,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -8689,8 +8712,6 @@
 "Fondo de Inversión FYNSA Migrante","F",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión FYNSA Migrante","G",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión FYNSA Migrante","S",NA,NA,2025-12-22,2025-12-29,"$","Reparto",NA,735274650,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2026-08-05,2026-08-11,"US$","Reparto",NA,385000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Fondo de Inversión SURA Real Estate Global, en Liquidación","SURA",NA,NA,2026-08-05,2026-08-11,"US$","Reparto",NA,385000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Zurich Renta Fija Chile Index","A",NA,NA,2025-05-23,2025-05-29,"$","Dividendo",NA,102521495,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","A",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","B",NA,NA,2025-04-29,2025-05-06,"US$","Dividendo",NA,90000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
