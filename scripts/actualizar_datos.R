@@ -95,14 +95,17 @@ message("Cierre del grupo: ", fc)
 ref_wtd <- fc - 7
 ref_mtd <- floor_date(fc, "month") - 1
 ref_ytd <- as.Date(sprintf("%d-12-31", year(fc) - 1))
+ref_mes_ant_fin <- ref_mtd                        # ultimo dia mes anterior (mismo que base MTD)
+ref_mes_ant_ini <- floor_date(ref_mes_ant_fin, "month") - 1
 
 rent_serie <- function(h) {                # h: tibble(fecha, valor_cuota)
-  list(wtd = .rent(h, ref_wtd, fc), mtd = .rent(h, ref_mtd, fc), ytd = .rent(h, ref_ytd, fc))
+  list(wtd = .rent(h, ref_wtd, fc), mtd = .rent(h, ref_mtd, fc), ytd = .rent(h, ref_ytd, fc),
+       mes_ant = .rent(h, ref_mes_ant_ini, ref_mes_ant_fin))
 }
 IPSA_31DIC2025 <- 10481.40                 # valor fijo (la serie web del BCCh no llega tan atras)
 macro <- list(); macro_series <- list()
 for (idx in INDICES) {
-  r <- list(wtd = NA_real_, mtd = NA_real_, ytd = NA_real_); s <- NULL
+  r <- list(wtd = NA_real_, mtd = NA_real_, ytd = NA_real_, mes_ant = NA_real_); s <- NULL
   if (!is.null(idx$fuente) && idx$fuente == "bcch") {
     # IPSA: fuente OFICIAL del BCCh (Canasta), al dia y confiable. Fallback a
     # datosmacro si el BCCh falla. Se acumula con el historico previo guardado en
@@ -128,8 +131,8 @@ for (idx in INDICES) {
     r <- rent_serie(s %>% rename(valor_cuota = valor))
     macro_series[[idx$nombre]] <- s
   }
-  macro[[length(macro) + 1]] <- list(nombre = idx$nombre, wtd = r$wtd, mtd = r$mtd, ytd = r$ytd)
-  message("  Macro ", idx$nombre, ": WTD ", round(r$wtd*100,2), " MTD ", round(r$mtd*100,2), " YTD ", round(r$ytd*100,2))
+  macro[[length(macro) + 1]] <- list(nombre = idx$nombre, wtd = r$wtd, mtd = r$mtd, ytd = r$ytd, mes_ant = r$mes_ant)
+  message("  Macro ", idx$nombre, ": WTD ", round(r$wtd*100,2), " MTD ", round(r$mtd*100,2), " YTD ", round(r$ytd*100,2), " Mes ant ", round(r$mes_ant*100,2))
 }
 
 # ---- 3) Renta Fija USA (Treasury 10y ^TNX) ----

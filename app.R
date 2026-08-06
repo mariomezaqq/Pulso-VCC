@@ -74,12 +74,14 @@ construir_series_manual <- function(vc_df) {
 aplicar_indices_manuales <- function(macro, vc_df, fc) {
   ref_wtd <- fc - 7; ref_mtd <- floor_date(fc, "month") - 1
   ref_ytd <- as.Date(sprintf("%d-12-31", year(fc) - 1))
+  ref_mes_ant_fin <- ref_mtd; ref_mes_ant_ini <- floor_date(ref_mes_ant_fin, "month") - 1
   for (nm in NOMBRES_INDICES_MANUALES) {
     s <- serie_de_vc(vc_df, nm); if (is.null(s)) next
     for (j in seq_along(macro)) if (identical(macro[[j]]$nombre, nm)) {
       macro[[j]]$wtd <- .rent(s, ref_wtd, fc)
       macro[[j]]$mtd <- .rent(s, ref_mtd, fc)
       macro[[j]]$ytd <- .rent(s, ref_ytd, fc)
+      macro[[j]]$mes_ant <- .rent(s, ref_mes_ant_ini, ref_mes_ant_fin)
     }
   }
   macro

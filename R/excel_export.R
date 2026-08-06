@@ -59,10 +59,10 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
   blanco <- function(cols) for (c in cols) { writeData(wb, sh, "", startCol=c, startRow=r); addStyle(wb, sh, S$txt, rows=r, cols=c) }
 
   # -- Indices macro --
-  seccion("Indices macro", c("Indice","WTD","MTD","YTD"))
+  seccion("Indices macro", c("Indice","WTD","MTD", pd$mes_ant_label %||% "Mes ant.","YTD"))
   for (idx in pd$indices_macro) {
     writeData(wb, sh, idx$nombre, startCol=1, startRow=r); addStyle(wb, sh, S$nom, rows=r, cols=1)
-    wr_pct(2, idx$wtd); wr_pct(3, idx$mtd); wr_pct(4, idx$ytd); blanco(5:NC); r <- r + 1
+    wr_pct(2, idx$wtd); wr_pct(3, idx$mtd); wr_pct(4, idx$mes_ant); wr_pct(5, idx$ytd); blanco(6:NC); r <- r + 1
   }
   r <- r + 1
   # -- Renta Fija USA --
