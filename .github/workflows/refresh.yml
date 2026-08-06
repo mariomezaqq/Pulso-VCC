@@ -45,16 +45,6 @@ jobs:
           source("scripts/completar_rentabilidades.R")
         shell: Rscript {0}
 
-      - name: Empujar valor cuota al Supabase del Blotter
-        continue-on-error: true   # secundario: si falla, NO debe frenar el commit diario
-        env:
-          SUPABASE_BLOTTER_URL: ${{ secrets.SUPABASE_BLOTTER_URL }}
-          SUPABASE_BLOTTER_KEY: ${{ secrets.SUPABASE_BLOTTER_KEY }}
-        run: |
-          setwd(".")
-          source("scripts/push_valor_cuota_supabase.R")
-        shell: Rscript {0}
-
       - name: Commit del artefacto actualizado
         run: |
           git config user.name  "github-actions[bot]"
