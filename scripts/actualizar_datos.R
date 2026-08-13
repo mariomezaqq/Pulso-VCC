@@ -136,9 +136,17 @@ for (idx in INDICES) {
 }
 
 # ---- 3) Renta Fija USA (Treasury 10y ^TNX) ----
+# Yahoo a veces devuelve una ventana truncada (ej. solo el ultimo mes) aunque se
+# pida desde diciembre del anio anterior; sin merge con el historico previo eso
+# borraba el cierre 2025 (quedaba NA -> "-" en el dashboard). Mismo patron que
+# el fallback de IPSA: la fuente nueva pisa al previo en fechas duplicadas, pero
+# el historico viejo se conserva si el fetch de hoy no llega tan atras.
 rf_usa <- NULL
 tnx <- tryCatch(obtener_treasury_10y(fc), error = function(e) NULL)
+prev_tnx <- if (!is.null(prev) && !is.null(prev$tnx_series)) prev$tnx_series else NULL
+tnx <- bind_rows(tnx, prev_tnx)
 if (!is.null(tnx) && nrow(tnx) > 0) {
+  tnx <- tnx %>% filter(!is.na(valor)) %>% distinct(fecha, .keep_all = TRUE) %>% arrange(fecha)
   val_a <- function(ref) { f <- tnx %>% filter(fecha <= ref) %>% arrange(desc(fecha)) %>% slice(1)
                            if (nrow(f)) f$valor[1] else NA_real_ }
   rf_usa <- list(
@@ -146,6 +154,8 @@ if (!is.null(tnx) && nrow(tnx) > 0) {
     rows = list(list(nombre = "Treasury 10y",
                      cierre2025 = val_a(ref_ytd), abr20 = val_a(ref_wtd), abr27 = val_a(fc)))
   )
+} else {
+  tnx <- NULL
 }
 
 # ---- 4) Guardar ----
