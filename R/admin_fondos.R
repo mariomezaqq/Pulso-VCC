@@ -10,7 +10,7 @@ if (!exists("%||%")) `%||%` <- function(a, b) if (is.null(a) || length(a) == 0) 
 # Columnas del CSV curado, en orden (debe calzar con .aplicar_curados / build_fondos_curados.R)
 COLS_CURADOS <- c("orden","hoja","titulo","nombre_script","nombre_excel","es_manual",
                   "run","serie","row","tipoentidad","ticker_sebra",
-                  "rent2024","rent2025","duracion","liquidez","moneda","tac")
+                  "rent2024","rent2025","duracion","liquidez","moneda","tac","art107")
 
 # Sugerencia de nombre a mostrar a partir del nombre CMF (MAYUSCULAS y largo).
 # Quita sufijos tipicos y pasa a Mayuscula Inicial; el usuario lo puede editar.
@@ -87,7 +87,7 @@ refrescar_fondos_globales <- function() {
 # Devuelve list(ok, df|msg). Valida duplicados y campos minimos.
 agregar_fondo_curado <- function(cur, fila_cat, hoja, titulo, nombre, moneda = "CLP",
                                  rent2024 = "", rent2025 = "", duracion = "",
-                                 liquidez = "", tac = "", ticker_sebra = "") {
+                                 liquidez = "", tac = "", ticker_sebra = "", art107 = "") {
   hoja   <- trimws(hoja %||% "")
   nombre <- trimws(nombre %||% "")
   if (!nzchar(hoja))   return(list(ok = FALSE, msg = "Falta la categoria (hoja)."))
@@ -125,6 +125,7 @@ agregar_fondo_curado <- function(cur, fila_cat, hoja, titulo, nombre, moneda = "
     rent2024 = trimws(rent2024 %||% ""), rent2025 = trimws(rent2025 %||% ""),
     duracion = trimws(duracion %||% ""), liquidez = trimws(liquidez %||% ""),
     moneda = moneda %||% "CLP", tac = trimws(tac %||% ""),
+    art107 = trimws(art107 %||% ""),
     stringsAsFactors = FALSE)
   list(ok = TRUE, df = rbind(cur, nueva[, COLS_CURADOS]))
 }

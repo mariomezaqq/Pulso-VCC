@@ -144,10 +144,12 @@ ui <- page_navbar(
           textInput("cat_liquidez", "Liquidez", ""),
           selectInput("cat_moneda", "Moneda", choices = c("CLP","UF","USD")),
           textInput("cat_tac", "TAC", "")),
+        layout_columns(col_widths = c(3),
+          selectInput("cat_art107", "¿Acogido al art. 107 LIR?", choices = c("Sin definir" = "", "Sí", "No"))),
         div(style = "margin-top:8px", actionButton("cat_add", "Agregar fondo", class = "btn-primary")),
         verbatimTextOutput("cat_msg")),
       card(card_header("Editar fondos (categoría, rent, TAC, duración…)"),
-        p(class = "text-muted", HTML("Haz <b>doble clic</b> en una celda para editarla: <b>Nombre</b>, categoría, rentabilidades, duración, liquidez, moneda, TAC, ticker. Para mover un fondo de categoría, edita la columna <b>Categoría</b>. Luego <b>Guardar cambios</b>. Para eliminar, selecciona filas y <b>Eliminar</b>. <i>(Al renombrar, las rentabilidades MTD/YTD en vivo reaparecen tras el próximo refresco de la CMF.)</i>")),
+        p(class = "text-muted", HTML("Haz <b>doble clic</b> en una celda para editarla: <b>Nombre</b>, categoría, rentabilidades, duración, liquidez, moneda, TAC, ticker, art. 107 (escribe <b>Sí</b> o <b>No</b>). Para mover un fondo de categoría, edita la columna <b>Categoría</b>. Luego <b>Guardar cambios</b>. Para eliminar, selecciona filas y <b>Eliminar</b>. <i>(Al renombrar, las rentabilidades MTD/YTD en vivo reaparecen tras el próximo refresco de la CMF.)</i>")),
         DTOutput("tbl_cur"),
         div(style = "margin-top:8px",
           actionButton("cat_save", "💾 Guardar cambios", class = "btn-primary"),
@@ -260,7 +262,8 @@ server <- function(input, output, session) {
     res <- agregar_fondo_curado(rv$cur, f, hoja = hoja, titulo = tit, nombre = input$cat_nombre,
                                 moneda = input$cat_moneda, rent2024 = input$cat_rent2024,
                                 rent2025 = input$cat_rent2025, duracion = input$cat_duracion,
-                                liquidez = input$cat_liquidez, tac = input$cat_tac)
+                                liquidez = input$cat_liquidez, tac = input$cat_tac,
+                                art107 = input$cat_art107)
     if (!isTRUE(res$ok)) { output$cat_msg <- renderText(paste("⚠", res$msg)); return() }
     rv$cur <- res$df
     msg <- guardar_curados(rv$cur, paste0("Panel admin: agregar fondo '", trimws(input$cat_nombre), "'"))
@@ -269,6 +272,7 @@ server <- function(input, output, session) {
     updateTextInput(session, "cat_nombre", value = ""); updateTextInput(session, "cat_hoja_nueva", value = "")
     for (id in c("cat_rent2024","cat_rent2025","cat_duracion","cat_liquidez","cat_tac"))
       updateTextInput(session, id, value = "")
+    updateSelectInput(session, "cat_art107", selected = "")
     rv$tick <- rv$tick + 1
     output$cat_msg <- renderText(paste0("✅ Agregado. ", msg,
       if (disp$ok) " · Consultando la CMF: recarga (F5) en ~5 min para ver sus rentabilidades." else paste0(" · (scrape no disparado: ", disp$msg, ")")))
@@ -281,8 +285,8 @@ server <- function(input, output, session) {
 
   # columnas visibles (orden = indice DT 0-based) -> columna real en rv$cur
   .colmap_cur <- c("hoja","nombre_excel","rent2024","rent2025","duracion",
-                   "liquidez","moneda","tac","ticker_sebra","run","serie","tipoentidad")
-  .editables_cur <- c("hoja","nombre_excel","rent2024","rent2025","duracion","liquidez","moneda","tac","ticker_sebra")
+                   "liquidez","moneda","tac","art107","ticker_sebra","run","serie","tipoentidad")
+  .editables_cur <- c("hoja","nombre_excel","rent2024","rent2025","duracion","liquidez","moneda","tac","art107","ticker_sebra")
 
   output$tbl_cur <- renderDT({
     rv$tick
@@ -292,14 +296,14 @@ server <- function(input, output, session) {
       Categoría = df$hoja, Nombre = df$nombre_excel,
       `Rent 2024` = df$rent2024, `Rent 2025` = df$rent2025,
       Duración = df$duracion, Liquidez = df$liquidez, Moneda = df$moneda,
-      TAC = df$tac, Ticker = df$ticker_sebra,
+      TAC = df$tac, `Art. 107` = df$art107, Ticker = df$ticker_sebra,
       Run = df$run, Serie = df$serie,
       Tipo = ifelse(tolower(df$es_manual) %in% c("true","1"), "Manual", df$tipoentidad),
       check.names = FALSE, stringsAsFactors = FALSE)
     datatable(vis, rownames = FALSE, selection = "multiple",
-              editable = list(target = "cell", disable = list(columns = c(9, 10, 11))),
+              editable = list(target = "cell", disable = list(columns = c(10, 11, 12))),
               options = list(pageLength = 15, lengthMenu = list(c(15, 30, 60, -1), c("15","30","60","Todas")),
-                             columnDefs = list(list(className = "dt-center", targets = 2:11))))
+                             columnDefs = list(list(className = "dt-center", targets = 2:12))))
   }, server = FALSE)
 
   # editar una celda -> actualiza rv$cur (sin re-render)

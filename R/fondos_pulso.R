@@ -318,7 +318,7 @@ DATOS_FONDO <- list(
   if (is.null(df) || !nrow(df)) return(NULL)
   req <- c("orden","hoja","titulo","nombre_script","nombre_excel","es_manual",
            "run","serie","row","tipoentidad","ticker_sebra",
-           "rent2024","rent2025","duracion","liquidez","moneda","tac")
+           "rent2024","rent2025","duracion","liquidez","moneda","tac","art107")
   if (!all(req %in% names(df))) { message("[curados] faltan columnas -> hardcode."); return(NULL) }
   df$orden <- suppressWarnings(as.integer(df$orden))
   if (any(is.na(df$orden))) df$orden <- seq_len(nrow(df))
@@ -350,7 +350,7 @@ DATOS_FONDO <- list(
     i <- which(df$nombre_excel == ne)[1]
     d_list[[ne]] <- list(rent2024 = df$rent2024[i], rent2025 = df$rent2025[i],
                          duracion = df$duracion[i], liquidez = df$liquidez[i],
-                         moneda = df$moneda[i], tac = df$tac[i])
+                         moneda = df$moneda[i], tac = df$tac[i], art107 = df$art107[i])
   }
 
   # MAPEO_SEBRA: por nombre_excel unico ("" -> NA)

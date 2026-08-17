@@ -78,7 +78,7 @@ construir_pulso_data <- function(series, fecha_cierre = NULL, macro = list(), rf
       nombre_excel  <- f$nombre_excel
       nombre_script <- f$nombre_script
       meta <- DATOS_FONDO[[nombre_excel]]
-      if (is.null(meta)) meta <- list(rent2025="", rent2024="", duracion="", liquidez="", moneda="", tac="")
+      if (is.null(meta)) meta <- list(rent2025="", rent2024="", duracion="", liquidez="", moneda="", tac="", art107="")
 
       mtd <- NA_real_; ytd <- NA_real_; mes_ant <- NA_real_
       fecha_dato <- NA; atrasado <- FALSE
@@ -119,6 +119,7 @@ construir_pulso_data <- function(series, fecha_cierre = NULL, macro = list(), rf
         rent2025 = meta$rent2025 %||% "", rent2024 = meta$rent2024 %||% "",
         duracion = meta$duracion %||% "", liquidez = meta$liquidez %||% "",
         moneda   = meta$moneda   %||% "", tac      = meta$tac      %||% "",
+        art107   = meta$art107   %||% "",
         fecha_dato = if (!is.na(fecha_dato)) format(fecha_dato, "%d/%m") else NA_character_,
         atrasado   = atrasado
       )

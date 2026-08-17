@@ -56,6 +56,7 @@
     "<th class='th-center'>2025</th><th class='th-center'>2024</th>",
     "<th class='th-center'>Duraci&oacute;n</th><th class='th-center'>Liquidez</th>",
     "<th class='th-center'>Moneda</th><th class='th-center'>TAC</th>",
+    "<th class='th-center'>Art. 107</th>",
     "</tr></thead>")
 }
 .row <- function(f) {
@@ -72,6 +73,7 @@
     "<td class='secondary'>", .raw(f$liquidez), "</td>",
     "<td class='center badge'>", .raw(f$moneda), "</td>",
     "<td class='center secondary'>", .raw(f$tac), "</td>",
+    "<td class='center badge'>", .raw(f$art107), "</td>",
     "</tr>")
 }
 .avg_row <- function(fondos) {
@@ -86,7 +88,7 @@
     "<td class='center avg-val'>", fp(.avg_frac(fondos,"ytd")),     "</td>",
     "<td class='center avg-val'>", fp(.avg_str_pct(fondos,"rent2025"), FALSE), "</td>",
     "<td class='center avg-val'>", fp(.avg_str_pct(fondos,"rent2024"), FALSE), "</td>",
-    "<td></td><td></td><td></td><td></td>",
+    "<td></td><td></td><td></td><td></td><td></td>",
     "</tr>")
 }
 .group_header <- function(nombre, mes_lbl) {
@@ -97,8 +99,9 @@
     "<th class='th-center'>2025</th><th class='th-center'>2024</th>",
     "<th class='th-center'>Duraci&oacute;n</th><th class='th-center'>Liquidez</th>",
     "<th class='th-center'>Moneda</th><th class='th-center'>TAC</th>",
+    "<th class='th-center'>Art. 107</th>",
     "</tr>")
-  paste0("<tr class='group-header'><td class='group-label' colspan='10'>", nombre, "</td></tr>", sub)
+  paste0("<tr class='group-header'><td class='group-label' colspan='11'>", nombre, "</td></tr>", sub)
 }
 
 .panel_macro <- function(pd) {

@@ -36,7 +36,7 @@ FECHA_BASE_XLSX <- as.Date("2025-12-31")
 }
 
 generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) {
-  S <- .estilos(); wb <- createWorkbook(); NC <- 9
+  S <- .estilos(); wb <- createWorkbook(); NC <- 10
   fc <- if (!is.null(pd$fecha_cierre_date)) pd$fecha_cierre_date else as.Date(datos$cierre)
 
   # ============ Cuadro resumen ============
@@ -83,7 +83,7 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
     metas <- lapply(cat$fondos, function(f) f$duracion)
     tiene_dur <- any(vapply(cat$fondos, function(f) !is.null(f$duracion) && nzchar(f$duracion) && f$duracion!="—", logical(1)))
     headers <- c("Fondo","Rentabilidad MTD","Rentabilidad YTD","Rentabilidad 2025","Rentabilidad 2024",
-                 if (tiene_dur) "Duracion" else "", "Liquidez","Moneda","TAC")
+                 if (tiene_dur) "Duracion" else "", "Liquidez","Moneda","TAC","Art. 107")
     seccion(cat$nombre, headers)
     for (f in cat$fondos) {
       writeData(wb, sh, f$nombre, startCol=1, startRow=r); addStyle(wb, sh, S$nom, rows=r, cols=1)
@@ -94,13 +94,15 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
       }
       txt_o_blanco(4, f$rent2025, S$ptx); txt_o_blanco(5, f$rent2024, S$ptx)
       txt_o_blanco(6, f$duracion, S$txt); txt_o_blanco(7, f$liquidez, S$txt)
-      txt_o_blanco(8, f$moneda, S$txt);  txt_o_blanco(9, f$tac, S$txt); r <- r + 1
+      txt_o_blanco(8, f$moneda, S$txt);  txt_o_blanco(9, f$tac, S$txt)
+      txt_o_blanco(10, f$art107, S$txt); r <- r + 1
     }
     r <- r + 1
   }
   setColWidths(wb, sh, cols=1, widths=38); setColWidths(wb, sh, cols=2:5, widths=16)
   setColWidths(wb, sh, cols=6, widths=10); setColWidths(wb, sh, cols=7, widths=18)
   setColWidths(wb, sh, cols=8, widths=10); setColWidths(wb, sh, cols=9, widths=14)
+  setColWidths(wb, sh, cols=10, widths=10)
 
   # ============ Hojas por categoria (serie VC diaria desde 31-dic) ============
   esc_wide <- function(sh, wide) {
