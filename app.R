@@ -418,7 +418,16 @@ server <- function(input, output, session) {
     # Releer el archivo mas reciente de GitHub (no la copia en memoria de esta
     # sesion) antes de fusionar: si hay otra pestana/sesion abierta que guardo
     # despues de que esta sesion cargo, evita pisar/borrar esos datos.
-    actual <- tryCatch(.leer_csv("manuales_vc.csv", default_vc()), error = function(e) rv$vc)
+    # OJO: store_sync/.leer_csv lee de raw.githubusercontent.com, un CDN con
+    # cache de ~5 min -> guardar dos veces seguido (ej. corregir un VC recien
+    # ingresado) releia la version VIEJA y borraba lo recien commiteado. Por
+    # eso aqui se usa la API de contenidos de GitHub (siempre fresca).
+    actual <- tryCatch({
+      txt <- store_read_fresh_text("manuales_vc.csv")
+      if (is.null(txt)) .leer_csv("manuales_vc.csv", default_vc())
+      else read.csv(text = txt, stringsAsFactors = FALSE, check.names = FALSE,
+                    colClasses = c(Fecha = "character"))
+    }, error = function(e) rv$vc)
     keep <- actual[!(paste(actual$Nombre, actual$Fecha) %in% paste(nuevas$Nombre, nuevas$Fecha)), , drop = FALSE]
     rv$vc <- rbind(keep, nuevas)
     rv$vc <- rv$vc[order(rv$vc$Nombre, rv$vc$Fecha), ]

@@ -49,6 +49,25 @@ store_sync <- function(rel) {
   if (file.exists(local)) local else NULL
 }
 
+#' Lee un archivo SIEMPRE fresco desde la API de contenidos de GitHub (a
+#' diferencia de store_sync/raw.githubusercontent.com, que es un CDN cacheado
+#' ~5 min: releer por ahi justo despues de guardar puede traer la version
+#' VIEJA y, al fusionar y volver a guardar, borrar lo recien commiteado).
+#' Solo funciona si hay token (si no, NULL -> el llamador cae a store_sync).
+#' @return texto del archivo (character) o NULL si no se pudo leer.
+store_read_fresh_text <- function(rel) {
+  g <- .gh(); if (!nzchar(g$token) || !nzchar(g$repo)) return(NULL)
+  api <- paste0("https://api.github.com/repos/", g$repo, "/contents/data/", rel)
+  hdr <- add_headers(Authorization = paste("token", g$token),
+                     Accept = "application/vnd.github+json",
+                     "User-Agent" = "pulso-vcc-cloud")
+  r <- tryCatch(GET(api, hdr, query = list(ref = g$branch), timeout(20)), error = function(e) NULL)
+  if (is.null(r) || status_code(r) != 200) return(NULL)
+  b64 <- content(r, "parsed")$content
+  if (is.null(b64)) return(NULL)
+  tryCatch(rawToChar(jsonlite::base64_dec(gsub("[\r\n]", "", b64))), error = function(e) NULL)
+}
+
 # ---- ESCRITURA ----
 #' Guarda 'raw' (vector raw) en data/<rel> local y, si GitHub esta configurado,
 #' lo commitea al repo. Devuelve un mensaje de estado.
