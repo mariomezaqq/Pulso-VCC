@@ -68,6 +68,21 @@ store_read_fresh_text <- function(rel) {
   tryCatch(rawToChar(jsonlite::base64_dec(gsub("[\r\n]", "", b64))), error = function(e) NULL)
 }
 
+#' Como store_sync(), pero via la API de contenidos de GitHub (sin el cache
+#' de CDN de raw.githubusercontent.com). Usar para archivos que se editan y
+#' se vuelven a renderizar en la misma sesion (ej. fondos_curados.csv desde
+#' el panel admin): con store_sync, el primer render inmediatamente despues
+#' de guardar puede pisar el archivo recien escrito con la version vieja que
+#' el CDN todavia tiene cacheada, revirtiendo silenciosamente la edicion.
+store_sync_fresh <- function(rel) {
+  local <- store_path(rel)
+  txt <- store_read_fresh_text(rel)
+  if (is.null(txt)) return(store_sync(rel))  # sin token/error -> cae a CDN/local
+  dir.create(dirname(local), showWarnings = FALSE, recursive = TRUE)
+  writeBin(charToRaw(txt), local)
+  if (file.exists(local)) local else NULL
+}
+
 # ---- ESCRITURA ----
 #' Guarda 'raw' (vector raw) en data/<rel> local y, si GitHub esta configurado,
 #' lo commitea al repo. Devuelve un mensaje de estado.

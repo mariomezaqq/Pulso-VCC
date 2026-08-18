@@ -94,8 +94,12 @@ preparar_todo <- function(vc_df, ov_df = NULL) {
   # y commiteo un cambio, este proceso quedaba con FONDOS/CATEGORIAS/DATOS_FONDO
   # global desactualizados hasta que alguien tocara el panel admin EN ESTE MISMO
   # proceso. Se resincroniza aqui, en cada render, igual que series_vc.rds.
+  # store_sync_fresh (no store_sync): el dashboard se re-renderiza justo
+  # despues de guardar (cat_save bumpea rv$tick), y el CDN de store_sync
+  # (raw.githubusercontent.com) tarda ~5 min en reflejar el commit -> pisaba
+  # la edicion recien guardada con la version vieja cacheada.
   if (!isTRUE(getOption("pulso.hardcode_only", FALSE))) {
-    store_sync("fondos_curados.csv")
+    store_sync_fresh("fondos_curados.csv")
     refrescar_fondos_globales()
   }
   if (!file.exists(DATA_RDS)) return(NULL)
