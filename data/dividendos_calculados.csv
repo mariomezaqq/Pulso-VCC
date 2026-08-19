@@ -677,6 +677,10 @@
 "BICE GAIP Fondo de Inversión","I","10106","FINRE",2026-04-07,2026-04-13,"US$","Dividendo",0.002442,NA,NA,NA,NA,0.0024420952,"boletin",NA
 "BICE GAIP Fondo de Inversión","A","10106","FINRE",2026-04-07,2026-04-13,"US$","Reparto",0.00851,NA,NA,NA,NA,0.0085096818,"boletin",NA
 "BICE GAIP Fondo de Inversión","I","10106","FINRE",2026-04-07,2026-04-13,"US$","Reparto",0.008547,NA,NA,NA,NA,0.0085473332,"boletin",NA
+"BICE GAIP Fondo de Inversión","A","10106","FINRE",2026-08-19,2026-08-25,"US$","Dividendo",0.006321,NA,NA,NA,NA,0.0063205778,"boletin",NA
+"BICE GAIP Fondo de Inversión","I","10106","FINRE",2026-08-19,2026-08-25,"US$","Dividendo",0.006352,NA,NA,NA,NA,0.0063515803,"boletin",NA
+"BICE GAIP Fondo de Inversión","A","10106","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.021636,NA,NA,NA,NA,0.0216358239,"boletin",NA
+"BICE GAIP Fondo de Inversión","I","10106","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.021742,NA,NA,NA,NA,0.0217419481,"boletin",NA
 "BICE Global Credit Opportunities Fondo de Inversión","A","9627","FINRE",2025-06-16,2025-06-23,"US$","Dividendo",0.045128,NA,NA,NA,NA,0.0451278787,"boletin",NA
 "BICE Global Credit Opportunities Fondo de Inversión","I","9627","FINRE",2025-06-16,2025-06-23,"US$","Dividendo",0.047561,NA,NA,NA,NA,0.0475614893,"boletin",NA
 "BICE Global Credit Opportunities Fondo de Inversión","A","9627","FINRE",2025-06-17,2025-06-24,"US$","Reparto",0.027287,NA,NA,NA,NA,0.0272866243,"boletin",NA
@@ -810,6 +814,10 @@
 "BICE Stepstone V Fondo de Inversión","I","10088","FINRE",2025-02-07,2025-02-13,"US$","Reparto",0.010455,NA,NA,NA,NA,0.0104546148,"boletin",NA
 "BICE Stepstone V Fondo de Inversión","A","10088","FINRE",2025-02-08,2025-02-14,"US$","Dividendo",0.012379,NA,NA,NA,NA,0.0123792093,"boletin",NA
 "BICE Stepstone V Fondo de Inversión","I","10088","FINRE",2025-02-08,2025-02-14,"US$","Dividendo",0.013442,NA,NA,NA,NA,0.0134416476,"boletin",NA
+"BICE Stepstone V Fondo de Inversión","A","10088","FINRE",2026-08-19,2026-08-25,"US$","Dividendo",0.01861,NA,NA,NA,NA,0.0186096891,"boletin",NA
+"BICE Stepstone V Fondo de Inversión","I","10088","FINRE",2026-08-19,2026-08-25,"US$","Dividendo",0.020534,NA,NA,NA,NA,0.0205339643,"boletin",NA
+"BICE Stepstone V Fondo de Inversión","A","10088","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.041407,NA,NA,NA,NA,0.0414065582,"boletin",NA
+"BICE Stepstone V Fondo de Inversión","I","10088","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.045688,NA,NA,NA,NA,0.0456880705,"boletin",NA
 "BICE Thoma Bravo XV Fondo de Inversión","A","10290","FINRE",2025-04-15,2025-04-23,"US$","Dividendo",0.01659,NA,NA,NA,NA,0.0165898793,"boletin",NA
 "BICE Thoma Bravo XV Fondo de Inversión","I","10290","FINRE",2025-04-15,2025-04-23,"US$","Dividendo",0.017216,NA,NA,NA,NA,0.0172162881,"boletin",NA
 "BICE Thoma Bravo XV Fondo de Inversión","X","10290","FINRE",2025-04-15,2025-04-23,"US$","Dividendo",0.017251,NA,NA,NA,NA,0.0172506855,"boletin",NA
@@ -2604,6 +2612,8 @@
 "Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-05-28,2026-06-03,"$","Dividendo",0.02237,NA,NA,NA,NA,0.022369631,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","IR","8723","RGFMU",2026-06-02,2026-06-08,"$","Dividendo",0.102731,NA,NA,NA,NA,0.102730847,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-06-02,2026-06-08,"$","Dividendo",0.103598,NA,NA,NA,NA,0.103598128,"boletin",NA
+"Fondo Mutuo LarrainVial Enfoque","IR","8723","RGFMU",2026-08-14,2026-08-21,"$","Dividendo",0.0627,NA,NA,NA,NA,0.062699993,"boletin",NA
+"Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-08-14,2026-08-21,"$","Dividendo",0.063163,NA,NA,NA,NA,0.063162636,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-02,2025-01-08,"$","Dividendo",0.363163,NA,NA,NA,NA,0.363163,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-04,2025-01-10,"$","Dividendo",0.527473,NA,NA,NA,NA,0.5274734,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-18,2025-01-24,"$","Dividendo",1.476629,NA,NA,NA,NA,1.4766294,"boletin",NA
@@ -4003,10 +4013,17 @@
 "Fondo de Inversión Bci Secundarios I","I","10563","FINRE",2025-07-31,2025-08-06,"US$","Reparto",0.044853,NA,NA,NA,NA,0.0448530632,"boletin",NA
 "Fondo de Inversión Bci Secundarios I","BCI","10563","FINRE",2025-12-19,2025-12-26,"US$","Reparto",0.116854,NA,NA,NA,NA,0.1168538247,"boletin",NA
 "Fondo de Inversión Bci Secundarios I","I","10563","FINRE",2025-12-19,2025-12-26,"US$","Reparto",0.097143,NA,NA,NA,NA,0.0971428571,"boletin",NA
+"Fondo de Inversión Bci Secundarios I","BCI","10563","FINRE",2026-08-12,2026-08-19,"US$","Reparto",0.081943,NA,NA,NA,NA,0.0819434672,"boletin",NA
+"Fondo de Inversión Bci Secundarios I","I","10563","FINRE",2026-08-12,2026-08-19,"US$","Reparto",0.081407,NA,NA,NA,NA,0.0814068743,"boletin",NA
 "Fondo de Inversión Bci Secundarios II","BP","10816","FINRE",2026-04-24,2026-04-30,"US$","Reparto",27.421513,NA,NA,NA,NA,27.4215132812,"boletin",NA
 "Fondo de Inversión Bci Secundarios II","F","10816","FINRE",2026-04-24,2026-04-30,"US$","Reparto",27.452722,NA,NA,NA,NA,27.4527222222,"boletin",NA
 "Fondo de Inversión Bci Secundarios II","ADC","10816","FINRE",2026-04-24,2026-04-30,"US$","Reparto",27.437113,NA,NA,NA,NA,27.437113082,"boletin",NA
 "Fondo de Inversión Bci Secundarios II","CL","10816","FINRE",2026-04-24,2026-04-30,"US$","Reparto",27.390336,NA,NA,NA,NA,27.3903363636,"boletin",NA
+"Fondo de Inversión Bci Secundarios II","ADC","10816","FINRE",2026-08-12,2026-08-19,"US$","Reparto",134.1158,NA,NA,NA,NA,134.1158004561,"boletin",NA
+"Fondo de Inversión Bci Secundarios II","BCI","10816","FINRE",2026-08-12,2026-08-19,"US$","Reparto",131.49549,NA,NA,NA,NA,131.4954901961,"boletin",NA
+"Fondo de Inversión Bci Secundarios II","BP","10816","FINRE",2026-08-12,2026-08-19,"US$","Reparto",133.979641,NA,NA,NA,NA,133.979640625,"boletin",NA
+"Fondo de Inversión Bci Secundarios II","CL","10816","FINRE",2026-08-12,2026-08-19,"US$","Reparto",133.709473,NA,NA,NA,NA,133.7094727273,"boletin",NA
+"Fondo de Inversión Bci Secundarios II","F","10816","FINRE",2026-08-12,2026-08-19,"US$","Reparto",134.250361,NA,NA,NA,NA,134.2503611111,"boletin",NA
 "Fondo de Inversión Black Salmon U.S. Industrial Opportunity I","A",NA,NA,2025-06-03,2025-06-09,"US$","Dividendo",0.000651,NA,NA,NA,NA,0.000650700204,"boletin",NA
 "Fondo de Inversión Black Salmon U.S. Industrial Opportunity I","I",NA,NA,2025-06-03,2025-06-09,"US$","Dividendo",0.000657,NA,NA,NA,NA,0.000656966309,"boletin",NA
 "Fondo de Inversión CMB - LV Infraestructura III","A",NA,NA,2025-05-15,2025-05-22,"$","Reparto",250,NA,NA,NA,NA,250,"boletin",NA
@@ -4095,6 +4112,11 @@
 "Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","D",NA,NA,2026-08-12,2026-08-19,"$","Dividendo",95.224233,NA,NA,NA,NA,95.22423254,"boletin",NA
 "Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","A",NA,NA,2026-08-12,2026-08-19,"$","Dividendo",98.148267,NA,NA,NA,NA,98.14826677,"boletin",NA
 "Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","CC",NA,NA,2026-08-12,2026-08-19,"$","Dividendo",98.592044,NA,NA,NA,NA,98.59204361,"boletin",NA
+"Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","A",NA,NA,2026-08-13,2026-08-20,"$","Reparto",800.153773,NA,NA,NA,NA,800.15377345,"boletin",NA
+"Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","B",NA,NA,2026-08-13,2026-08-20,"$","Reparto",770.302859,NA,NA,NA,NA,770.30285942,"boletin",NA
+"Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","CC",NA,NA,2026-08-13,2026-08-20,"$","Reparto",803.771662,NA,NA,NA,NA,803.77166227,"boletin",NA
+"Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","D",NA,NA,2026-08-13,2026-08-20,"$","Reparto",776.315584,NA,NA,NA,NA,776.31558378,"boletin",NA
+"Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","I",NA,NA,2026-08-13,2026-08-20,"$","Reparto",792.16264,NA,NA,NA,NA,792.16263955,"boletin",NA
 "Fondo de Inversión Credicorp Capital ICG SE I","B","10076","FINRE",2026-04-21,2026-04-27,"US$","Reparto",0.01431,NA,NA,NA,NA,0.01431006,"boletin",NA
 "Fondo de Inversión Credicorp Capital ICG SE I","I","10076","FINRE",2026-04-21,2026-04-27,"US$","Reparto",0.01462,NA,NA,NA,NA,0.01461999,"boletin",NA
 "Fondo de Inversión Credicorp Capital ICG SE I","CC","10076","FINRE",2026-04-21,2026-04-27,"US$","Reparto",0.014691,NA,NA,NA,NA,0.01469094,"boletin",NA
@@ -4179,6 +4201,8 @@
 "Fondo de Inversión Credicorp Capital Renta Inmobiliaria II","I",NA,NA,2025-05-02,2025-05-08,"$","Dividendo",267.222254,NA,NA,NA,NA,267.22225447,"boletin",NA
 "Fondo de Inversión Credicorp Capital Renta Inmobiliaria II","B",NA,NA,2025-12-22,2025-12-29,"$","Dividendo",166.128158,NA,NA,NA,NA,166.12815815,"boletin",NA
 "Fondo de Inversión Credicorp Capital Renta Inmobiliaria II","I",NA,NA,2025-12-22,2025-12-29,"$","Dividendo",169.677061,NA,NA,NA,NA,169.67706123,"boletin",NA
+"Fondo de Inversión Credicorp Capital Renta Inmobiliaria II","B",NA,NA,2026-08-13,2026-08-20,"$","Dividendo",409.492865,NA,NA,NA,NA,409.49286518,"boletin",NA
+"Fondo de Inversión Credicorp Capital Renta Inmobiliaria II","I",NA,NA,2026-08-13,2026-08-20,"$","Dividendo",419.534926,NA,NA,NA,NA,419.53492604,"boletin",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","A",NA,NA,2025-01-10,2025-01-16,"$","Dividendo",788.812104,NA,NA,NA,NA,788.81210419,"boletin",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","B",NA,NA,2025-01-10,2025-01-16,"$","Dividendo",794.883094,NA,NA,NA,NA,794.8830938,"boletin",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","CCAM",NA,NA,2025-01-10,2025-01-16,"$","Dividendo",797.455238,NA,NA,NA,NA,797.45523828,"boletin",NA
@@ -6782,6 +6806,11 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Frontal Trust Financiamiento Galgo Fondo de Inversión","P",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.02581,NA,NA,NA,NA,0.025809795,"boletin",NA
 "Frontal Trust Financiamiento Galgo Fondo de Inversión","P-2",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.02567,NA,NA,NA,NA,0.025669858,"boletin",NA
 "Frontal Trust Financiamiento Galgo Fondo de Inversión","PI-2",NA,NA,2026-06-19,2026-06-25,"US$","Dividendo",0.025736,NA,NA,NA,NA,0.025736009,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","F",NA,NA,2026-08-18,2026-08-24,"US$","Dividendo",0.013758,NA,NA,NA,NA,0.013758328,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","F-2",NA,NA,2026-08-18,2026-08-24,"US$","Dividendo",0.01326,NA,NA,NA,NA,0.013259971,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","P",NA,NA,2026-08-18,2026-08-24,"US$","Dividendo",0.013354,NA,NA,NA,NA,0.013353901,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","P-2",NA,NA,2026-08-18,2026-08-24,"US$","Dividendo",0.013221,NA,NA,NA,NA,0.013220833,"boletin",NA
+"Frontal Trust Financiamiento Galgo Fondo de Inversión","PI-2",NA,NA,2026-08-18,2026-08-24,"US$","Dividendo",0.013265,NA,NA,NA,NA,0.013265189,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2025-10-22,2025-10-28,"$","Dividendo",1272.290786,NA,NA,NA,NA,1272.290785714,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2025-11-05,2025-11-11,"$","Dividendo",2971.428571,NA,NA,NA,NA,2971.428571429,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2025-11-27,2025-12-03,"$","Reparto",1982.1795,NA,NA,NA,NA,1982.1795,"boletin",NA
@@ -7934,6 +7963,9 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","A","10119","FINRE",2026-06-17,2026-06-23,"US$","Reparto",0.015602,NA,NA,NA,NA,0.0156024616987882,"boletin",NA
 "VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","B","10119","FINRE",2026-06-17,2026-06-23,"US$","Reparto",0.01575,NA,NA,NA,NA,0.0157497374737836,"boletin",NA
 "VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","Z","10119","FINRE",2026-06-17,2026-06-23,"US$","Reparto",0.015897,NA,NA,NA,NA,0.0158972813581662,"boletin",NA
+"VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","A","10119","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.018724,NA,NA,NA,NA,0.0187235577075827,"boletin",NA
+"VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","B","10119","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.018906,NA,NA,NA,NA,0.0189060154075184,"boletin",NA
+"VOLCOMCAPITAL Coinvestment VI Fondo de Inversión","Z","10119","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.019089,NA,NA,NA,NA,0.019088619190181,"boletin",NA
 "VOLCOMCAPITAL Deuda II Fondo de Inversión","A",NA,NA,2025-02-06,2025-02-12,"$","Dividendo",10.937414,NA,NA,NA,NA,10.9374140742315,"boletin",NA
 "VOLCOMCAPITAL Deuda II Fondo de Inversión","B",NA,NA,2025-02-06,2025-02-12,"$","Dividendo",11.150116,NA,NA,NA,NA,11.1501156864426,"boletin",NA
 "VOLCOMCAPITAL Deuda II Fondo de Inversión","A",NA,NA,2025-02-06,2025-02-12,"$","Reparto",28.120349,NA,NA,NA,NA,28.1203485356734,"boletin",NA
@@ -8083,6 +8115,9 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "VOLCOMCAPITAL Infraestructura I Fondo de Inversion","A","9418","FINRE",2026-07-21,2026-07-27,"US$","Reparto",0.007076,NA,NA,NA,NA,0.00707586393646429,"boletin",NA
 "VOLCOMCAPITAL Infraestructura I Fondo de Inversion","B","9418","FINRE",2026-07-21,2026-07-27,"US$","Reparto",0.007706,NA,NA,NA,NA,0.00770562489366414,"boletin",NA
 "VOLCOMCAPITAL Infraestructura I Fondo de Inversion","C","9418","FINRE",2026-07-21,2026-07-27,"US$","Reparto",0.007806,NA,NA,NA,NA,0.00780625523219822,"boletin",NA
+"VOLCOMCAPITAL Infraestructura I Fondo de Inversion","A","9418","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.050202,NA,NA,NA,NA,0.0502022084279007,"boletin",NA
+"VOLCOMCAPITAL Infraestructura I Fondo de Inversion","B","9418","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.054681,NA,NA,NA,NA,0.0546805184052854,"boletin",NA
+"VOLCOMCAPITAL Infraestructura I Fondo de Inversion","C","9418","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.055396,NA,NA,NA,NA,0.0553960420810036,"boletin",NA
 "VOLCOMCAPITAL Infraestructura III Fondo de Inversión","B","10089","FINRE",2025-02-05,2025-02-11,"US$","Dividendo",0.004129,NA,NA,NA,NA,0.0041289392987771,"boletin",NA
 "VOLCOMCAPITAL Infraestructura III Fondo de Inversión","E","10089","FINRE",2025-02-05,2025-02-11,"US$","Dividendo",0.003993,NA,NA,NA,NA,0.0039927853438071,"boletin",NA
 "VOLCOMCAPITAL Infraestructura III Fondo de Inversión","B","10089","FINRE",2025-12-31,2026-01-07,"US$","Dividendo",0.011163,NA,NA,NA,NA,0.0111631398080417,"boletin",NA
@@ -8577,6 +8612,7 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "VolcomCapital Activos I Fondo de Inversión","B",NA,NA,2026-07-30,2026-08-05,"$","Reparto",2169.117356,NA,NA,NA,NA,2169.11735636516,"boletin",NA
 "VolcomCapital Activos I Fondo de Inversión","C",NA,NA,2026-07-30,2026-08-05,"$","Reparto",284.366736,NA,NA,NA,NA,284.366735591747,"boletin",NA
 "VolcomCapital Activos I Fondo de Inversión","E",NA,NA,2026-07-30,2026-08-05,"$","Reparto",769.594172,NA,NA,NA,NA,769.594172419574,"boletin",NA
+"VolcomCapital Alternativos I Fondo de Inversión","C",NA,NA,2026-08-19,2026-08-25,"US$","Dividendo",0.03348,NA,NA,NA,NA,0.033480226013266,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","B","10148","FINRE",2025-02-05,2025-02-11,"US$","Dividendo",0.068062,NA,NA,NA,NA,0.06806214053875,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","Z","10148","FINRE",2025-02-05,2025-02-11,"US$","Dividendo",0.06855,NA,NA,NA,NA,0.06854950341952,"boletin",NA
 "VolcomCapital Coinvestment VII Fondo de Inversión","B","10148","FINRE",2025-05-20,2025-05-27,"US$","Dividendo",0.018393,NA,NA,NA,NA,0.0183930434657029,"boletin",NA
