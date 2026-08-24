@@ -22,6 +22,8 @@
 "Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-07-09,2026-07-15,"$","Dividendo",1496.28755,NA,NA,NA,NA,1496.28755,"boletin",NA
 "Alza Deuda Privada V Fondo de Inversión","A",NA,NA,2026-07-31,2026-08-06,"$","Dividendo",5161.365559,NA,NA,NA,NA,5161.365559,"boletin",NA
 "Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-07-31,2026-08-06,"$","Dividendo",5167.729506,NA,NA,NA,NA,5167.729506,"boletin",NA
+"Alza Deuda Privada V Fondo de Inversión","A",NA,NA,2026-08-21,2026-08-27,"$","Dividendo",4130.812766,NA,NA,NA,NA,4130.812766,"boletin",NA
+"Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-08-21,2026-08-27,"$","Dividendo",4137.132669,NA,NA,NA,NA,4137.132669,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",640.143235,NA,NA,NA,NA,640.143235,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",640.439758,NA,NA,NA,NA,640.439758,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",923.474391,NA,NA,NA,NA,923.474391,"boletin",NA
@@ -2623,6 +2625,8 @@
 "Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-06-02,2026-06-08,"$","Dividendo",0.103598,NA,NA,NA,NA,0.103598128,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","IR","8723","RGFMU",2026-08-14,2026-08-21,"$","Dividendo",0.0627,NA,NA,NA,NA,0.062699993,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-08-14,2026-08-21,"$","Dividendo",0.063163,NA,NA,NA,NA,0.063162636,"boletin",NA
+"Fondo Mutuo LarrainVial Enfoque","IR","8723","RGFMU",2026-08-20,2026-08-26,"$","Dividendo",0.98012,NA,NA,NA,NA,0.980119876,"boletin",NA
+"Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-08-20,2026-08-26,"$","Dividendo",0.987253,NA,NA,NA,NA,0.987252839,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-02,2025-01-08,"$","Dividendo",0.363163,NA,NA,NA,NA,0.363163,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-04,2025-01-10,"$","Dividendo",0.527473,NA,NA,NA,NA,0.5274734,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-18,2025-01-24,"$","Dividendo",1.476629,NA,NA,NA,NA,1.4766294,"boletin",NA
@@ -3865,6 +3869,12 @@
 "Fondo de Inversión BCI NV","A","9531","FINRE",2026-01-30,2026-02-05,"US$","Reparto",0.054785,NA,NA,NA,NA,0.0547850455,"boletin",NA
 "Fondo de Inversión BCI NV","B","9531","FINRE",2026-01-30,2026-02-05,"US$","Reparto",0.053543,NA,NA,NA,NA,0.0535427018,"boletin",NA
 "Fondo de Inversión BCI NV","BCI","9531","FINRE",2026-01-30,2026-02-05,"US$","Reparto",0.074532,NA,NA,NA,NA,0.0745324898,"boletin",NA
+"Fondo de Inversión BCI NV","A","9531","FINRE",2026-08-21,2026-08-27,"US$","Dividendo",0.021653,NA,NA,NA,NA,0.0216534135,"boletin",NA
+"Fondo de Inversión BCI NV","B","9531","FINRE",2026-08-21,2026-08-27,"US$","Dividendo",0.021127,NA,NA,NA,NA,0.0211273406,"boletin",NA
+"Fondo de Inversión BCI NV","BCI","9531","FINRE",2026-08-21,2026-08-27,"US$","Dividendo",0.029654,NA,NA,NA,NA,0.0296540666,"boletin",NA
+"Fondo de Inversión BCI NV","A","9531","FINRE",2026-08-21,2026-08-27,"US$","Reparto",0.060607,NA,NA,NA,NA,0.0606073884,"boletin",NA
+"Fondo de Inversión BCI NV","B","9531","FINRE",2026-08-21,2026-08-27,"US$","Reparto",0.059135,NA,NA,NA,NA,0.0591349212,"boletin",NA
+"Fondo de Inversión BCI NV","BCI","9531","FINRE",2026-08-21,2026-08-27,"US$","Reparto",0.083001,NA,NA,NA,NA,0.0830010344,"boletin",NA
 "Fondo de Inversión BCI Oportunidades Deuda","ADC","9280","FINRE",2025-12-17,2025-12-23,"$","Dividendo",12.177641,NA,NA,NA,NA,12.1776406854,"boletin",NA
 "Fondo de Inversión BCI Oportunidades Deuda","BCI","9280","FINRE",2025-12-17,2025-12-23,"$","Dividendo",17.447843,NA,NA,NA,NA,17.4478425437,"boletin",NA
 "Fondo de Inversión BCI Oportunidades Deuda","Bprivada","9280","FINRE",2025-12-17,2025-12-23,"$","Dividendo",18.552274,NA,NA,NA,NA,18.5522744476,"boletin",NA
@@ -5707,6 +5717,8 @@
 "Fondo de Inversión Nevasa Gestión Inmobiliaria VII","R","10005","FINRE",2026-03-24,2026-03-30,"$","Reparto",1189.620936,NA,NA,NA,NA,1189.620936214,"boletin",NA
 "Fondo de Inversión Nevasa Gestión Inmobiliaria VII","N","10005","FINRE",2026-06-18,2026-06-24,"$","Dividendo",44.159419,NA,NA,NA,NA,44.159418629,"boletin",NA
 "Fondo de Inversión Nevasa Gestión Inmobiliaria VII","R","10005","FINRE",2026-06-18,2026-06-24,"$","Dividendo",42.633754,NA,NA,NA,NA,42.633754357,"boletin",NA
+"Fondo de Inversión Nevasa Gestión Inmobiliaria VII","N","10005","FINRE",2026-08-21,2026-08-27,"$","Reparto",1514.486529,NA,NA,NA,NA,1514.486529166,"boletin",NA
+"Fondo de Inversión Nevasa Gestión Inmobiliaria VII","R","10005","FINRE",2026-08-21,2026-08-27,"$","Reparto",1459.389285,NA,NA,NA,NA,1459.389285158,"boletin",NA
 "Fondo de Inversión Nevasa Gestión Inmobiliaria VIII","I","10693","FINRE",2025-08-08,2025-08-14,"$","Reparto",2384.779109,NA,NA,NA,NA,2384.779108757,"boletin",NA
 "Fondo de Inversión Nevasa Gestión Inmobiliaria VIII","R","10693","FINRE",2025-08-08,2025-08-14,"$","Reparto",2388.793675,NA,NA,NA,NA,2388.793674846,"boletin",NA
 "Fondo de Inversión Nevasa Protección","A","10234","FIRES",2025-06-12,2025-06-18,"US$","Dividendo",0.002591,NA,NA,NA,NA,0.00259125,"boletin",NA
@@ -8203,6 +8215,9 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "VOLCOMCAPITAL Mid Market Fondo de Inversión","A","9633","FINRE",2026-04-14,2026-04-20,"US$","Reparto",0.033891,NA,NA,NA,NA,0.0338906806611138,"boletin",NA
 "VOLCOMCAPITAL Mid Market Fondo de Inversión","B","9633","FINRE",2026-04-14,2026-04-20,"US$","Reparto",0.035807,NA,NA,NA,NA,0.0358072234779948,"boletin",NA
 "VOLCOMCAPITAL Mid Market Fondo de Inversión","C","9633","FINRE",2026-04-14,2026-04-20,"US$","Reparto",0.037407,NA,NA,NA,NA,0.0374065275124113,"boletin",NA
+"VOLCOMCAPITAL Mid Market Fondo de Inversión","A","9633","FINRE",2026-08-22,2026-08-28,"US$","Reparto",0.016519,NA,NA,NA,NA,0.0165194216892844,"boletin",NA
+"VOLCOMCAPITAL Mid Market Fondo de Inversión","B","9633","FINRE",2026-08-22,2026-08-28,"US$","Reparto",0.017461,NA,NA,NA,NA,0.0174613735833056,"boletin",NA
+"VOLCOMCAPITAL Mid Market Fondo de Inversión","C","9633","FINRE",2026-08-22,2026-08-28,"US$","Reparto",0.018248,NA,NA,NA,NA,0.0182475834237975,"boletin",NA
 "VOLCOMCAPITAL PE Secondary I Fondo de Inversión","A","9240","FINRE",2025-01-22,2025-01-28,"US$","Dividendo",0.02701,NA,NA,NA,NA,0.0270100833523703,"boletin",NA
 "VOLCOMCAPITAL PE Secondary I Fondo de Inversión","B","9240","FINRE",2025-01-22,2025-01-28,"US$","Dividendo",0.029306,NA,NA,NA,NA,0.0293061437463347,"boletin",NA
 "VOLCOMCAPITAL PE Secondary I Fondo de Inversión","A","9240","FINRE",2025-03-11,2025-03-17,"US$","Dividendo",0.009681,NA,NA,NA,NA,0.0096809168394548,"boletin",NA
