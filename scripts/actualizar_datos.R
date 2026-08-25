@@ -112,8 +112,16 @@ for (idx in INDICES) {
     # macro_series por si una descarga falla. (Se descarto Yahoo ^IPSA: quedaba
     # congelado dias, y datosmacro solo: se habia corrompido a ~la mitad.)
     s <- tryCatch(obtener_ipsa_bcch_serie(), error = function(e) NULL)
-    if (is.null(s) || !nrow(s))
+    if (is.null(s) || !nrow(s)) {
       s <- tryCatch(obtener_ipsa_datosmacro(desde = ref_ytd, hasta = fc), error = function(e) NULL)
+    } else if (max(s$fecha) < fc - 1) {
+      # El BCCh publica la "Canasta" con rezago (no siempre esta "al dia" pese al
+      # comentario de arriba); si su ultimo dato queda >1 dia habil detras del
+      # cierre, completamos los dias faltantes con datosmacro (mas fresco) sin
+      # perder el historico BCCh ya validado.
+      dm <- tryCatch(obtener_ipsa_datosmacro(desde = max(s$fecha), hasta = fc), error = function(e) NULL)
+      if (!is.null(dm) && nrow(dm)) s <- bind_rows(dm, s)   # dm (mas fresco) pisa duplicados de s
+    }
     prev_ipsa <- if (!is.null(prev) && !is.null(prev$macro_series)) prev$macro_series[[idx$nombre]] else NULL
     s <- bind_rows(s, prev_ipsa)                 # fuente nueva primero -> pisa al previo en duplicados
     if (!is.null(s) && nrow(s) > 0) {
