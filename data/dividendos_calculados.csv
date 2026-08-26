@@ -2805,6 +2805,9 @@
 "Fondo de Inversión Activa Deuda Automotriz Global III","C","10651","FINRE",2026-08-12,2026-08-19,"$","Dividendo",0.06547,NA,NA,NA,NA,0.0654699130543065,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Global III","I","10651","FINRE",2026-08-12,2026-08-19,"$","Dividendo",11.488065,NA,NA,NA,NA,11.4880651342645,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Global III","R","10651","FINRE",2026-08-12,2026-08-19,"$","Dividendo",11.136941,NA,NA,NA,NA,11.1369408282136,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Global III","C","10651","FINRE",2026-08-25,2026-08-31,"$","Reparto",0.068754,171111772,NA,NA,NA,0.0687536271798587,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Global III","I","10651","FINRE",2026-08-25,2026-08-31,"$","Reparto",51.027129,486193323,NA,NA,NA,51.0271290265229,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Global III","R","10651","FINRE",2026-08-25,2026-08-31,"$","Reparto",51.021048,1042694905,NA,NA,NA,51.0210476183766,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Perú","F","9703","FINRE",2025-01-22,2025-01-28,"US$","Dividendo",0.002919,NA,NA,NA,NA,0.00291925742652337,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Perú","I","9703","FINRE",2025-01-22,2025-01-28,"US$","Dividendo",0.002996,NA,NA,NA,NA,0.00299571308102704,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Perú","R","9703","FINRE",2025-01-22,2025-01-28,"US$","Dividendo",0.002875,NA,NA,NA,NA,0.002875109403572,"boletin",NA
@@ -4576,6 +4579,8 @@
 "Fondo de Inversión Falcom Blackrock DLF IX","V","9795","FINRE",2025-07-30,2025-08-05,"US$","Reparto",0.022264,NA,NA,NA,NA,0.0222644303,"boletin",NA
 "Fondo de Inversión Falcom Blackrock DLF IX","B","9795","FINRE",2026-03-11,2026-03-17,"US$","Reparto",0.040595,NA,NA,NA,NA,0.0405948729,"boletin",NA
 "Fondo de Inversión Falcom Blackrock DLF IX","V","9795","FINRE",2026-03-11,2026-03-17,"US$","Reparto",0.040595,NA,NA,NA,NA,0.0405948729,"boletin",NA
+"Fondo de Inversión Falcom Blackrock DLF IX","B","9795","FINRE",2026-08-25,2026-08-31,"US$","Reparto",0.049575,NA,NA,NA,NA,0.0495748244,"boletin",NA
+"Fondo de Inversión Falcom Blackrock DLF IX","V","9795","FINRE",2026-08-25,2026-08-31,"US$","Reparto",0.049575,NA,NA,NA,NA,0.0495748244,"boletin",NA
 "Fondo de Inversión Falcom Chilean Fixed Income","A","9289","FIRES",2025-06-04,2025-06-10,"$","Dividendo",5.232088,NA,NA,NA,NA,5.2320879699,"boletin",NA
 "Fondo de Inversión Falcom Chilean Fixed Income","G","9289","FIRES",2025-06-04,2025-06-10,"$","Dividendo",5.644303,NA,NA,NA,NA,5.6443030703,"boletin",NA
 "Fondo de Inversión Falcom Chilean Fixed Income","M","9289","FIRES",2025-06-04,2025-06-10,"$","Dividendo",5.036504,NA,NA,NA,NA,5.0365037127,"boletin",NA
@@ -7429,6 +7434,15 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Moneda CARS Fondo de Inversión","I","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.611331,NA,NA,NA,NA,0.611331,"boletin",NA
 "Moneda CARS Fondo de Inversión","P","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.60166,NA,NA,NA,NA,0.60166,"boletin",NA
 "Moneda CARS Fondo de Inversión","Q","9617","FINRE",2026-07-24,2026-07-30,"US$","Dividendo",0.608766,NA,NA,NA,NA,0.608766,"boletin",NA
+"Moneda CARS Fondo de Inversión","A","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.648466,NA,NA,NA,NA,0.648466,"boletin",NA
+"Moneda CARS Fondo de Inversión","B","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.641262,NA,NA,NA,NA,0.641262,"boletin",NA
+"Moneda CARS Fondo de Inversión","D","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.645567,NA,NA,NA,NA,0.645567,"boletin",NA
+"Moneda CARS Fondo de Inversión","E","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.647438,NA,NA,NA,NA,0.647438,"boletin",NA
+"Moneda CARS Fondo de Inversión","F","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.648447,NA,NA,NA,NA,0.648447,"boletin",NA
+"Moneda CARS Fondo de Inversión","G","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.630351,NA,NA,NA,NA,0.630351,"boletin",NA
+"Moneda CARS Fondo de Inversión","I","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.651547,NA,NA,NA,NA,0.651547,"boletin",NA
+"Moneda CARS Fondo de Inversión","P","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.641257,NA,NA,NA,NA,0.641257,"boletin",NA
+"Moneda CARS Fondo de Inversión","Q","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.648814,NA,NA,NA,NA,0.648814,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","A","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.205522,NA,NA,NA,NA,2.205522,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","C","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.261165,NA,NA,NA,NA,2.261165,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","I","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.23516,NA,NA,NA,NA,2.23516,"boletin",NA
@@ -7495,6 +7509,10 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Moneda GSI Rentas Comerciales III Fondo de Inversión","B",NA,NA,2026-03-25,2026-03-31,"$","Dividendo",921.063167,NA,NA,NA,NA,921.063167,"boletin",NA
 "Moneda GSI Rentas Comerciales III Fondo de Inversión","I",NA,NA,2026-03-25,2026-03-31,"$","Dividendo",933.709689,NA,NA,NA,NA,933.709689,"boletin",NA
 "Moneda GSI Rentas Comerciales III Fondo de Inversión","E",NA,NA,2026-03-25,2026-03-31,"$","Dividendo",946.37557,NA,NA,NA,NA,946.37557,"boletin",NA
+"Moneda GSI Rentas Comerciales III Fondo de Inversión","A",NA,NA,2026-08-25,2026-08-31,"$","Dividendo",1071.535663,NA,NA,NA,NA,1071.535663,"boletin",NA
+"Moneda GSI Rentas Comerciales III Fondo de Inversión","B",NA,NA,2026-08-25,2026-08-31,"$","Dividendo",1085.901948,NA,NA,NA,NA,1085.901948,"boletin",NA
+"Moneda GSI Rentas Comerciales III Fondo de Inversión","I",NA,NA,2026-08-25,2026-08-31,"$","Dividendo",1100.414282,NA,NA,NA,NA,1100.414282,"boletin",NA
+"Moneda GSI Rentas Comerciales III Fondo de Inversión","E",NA,NA,2026-08-25,2026-08-31,"$","Dividendo",1114.945861,NA,NA,NA,NA,1114.945861,"boletin",NA
 "Moneda GSI Rentas Logísticas I Fondo de Inversión","A",NA,NA,2025-01-14,2025-01-20,"$","Dividendo",3399.490801,NA,NA,NA,NA,3399.490801,"boletin",NA
 "Moneda GSI Rentas Logísticas I Fondo de Inversión","B",NA,NA,2025-01-14,2025-01-20,"$","Dividendo",3487.989189,NA,NA,NA,NA,3487.989189,"boletin",NA
 "Moneda GSI Rentas Logísticas I Fondo de Inversión","E",NA,NA,2025-01-14,2025-01-20,"$","Dividendo",3489.818146,NA,NA,NA,NA,3489.818146,"boletin",NA
@@ -7935,6 +7953,10 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Toesca Deuda Privada Fondo de Inversión","I","9619","FINRE",2026-07-25,2026-07-31,"$","Dividendo",0.7409,NA,NA,NA,NA,0.7409,"boletin",NA
 "Toesca Deuda Privada Fondo de Inversión","F","9619","FINRE",2026-07-25,2026-07-31,"$","Dividendo",0.61,NA,NA,NA,NA,0.61,"boletin",NA
 "Toesca Deuda Privada Fondo de Inversión","F1","9619","FINRE",2026-07-25,2026-07-31,"$","Dividendo",0.61,NA,NA,NA,NA,0.61,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","A","9619","FINRE",2026-08-25,2026-08-31,"$","Dividendo",0.6975,NA,NA,NA,NA,0.6975,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","I","9619","FINRE",2026-08-25,2026-08-31,"$","Dividendo",0.7409,NA,NA,NA,NA,0.7409,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","F","9619","FINRE",2026-08-25,2026-08-31,"$","Dividendo",0.61,NA,NA,NA,NA,0.61,"boletin",NA
+"Toesca Deuda Privada Fondo de Inversión","F1","9619","FINRE",2026-08-25,2026-08-31,"$","Dividendo",0.61,NA,NA,NA,NA,0.61,"boletin",NA
 "Toesca Infraestructura Fondo de Inversión","A",NA,NA,2025-09-30,2025-10-06,"$","Dividendo",1598,NA,NA,NA,NA,1598,"boletin",NA
 "Toesca Infraestructura Fondo de Inversión","B",NA,NA,2025-09-30,2025-10-06,"$","Dividendo",1598,NA,NA,NA,NA,1598,"boletin",NA
 "Toesca Infraestructura Fondo de Inversión","I",NA,NA,2025-09-30,2025-10-06,"$","Dividendo",1598,NA,NA,NA,NA,1598,"boletin",NA
@@ -8926,6 +8948,9 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,332465.91,206645683,2026-03-11,0.001609,0.00160886937003433,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-07-17,2026-07-23,"US$","Reparto",NA,1153074.67,206121806,2026-07-17,0.005594,0.00559414209210697,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-07-17,2026-07-23,"US$","Reparto",NA,2992875.17,206121806,2026-07-17,0.01452,0.0145199347453524,"calculado (total/cuotas dia limite)",NA
+"Ameris Alternativos I Fondo de Inversión","A",NA,NA,2026-08-27,2026-09-02,"US$","Dividendo",NA,3710000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Ameris Alternativos I Fondo de Inversión","F",NA,NA,2026-08-27,2026-09-02,"US$","Dividendo",NA,3710000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Ameris Alternativos I Fondo de Inversión","H",NA,NA,2026-08-27,2026-09-02,"US$","Dividendo",NA,3710000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","A",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","H",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-01-31,2025-02-06,"$","Reparto",NA,106105773,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -9012,6 +9037,20 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "MBI-BP Deuda Fondo de Inversión, en Liquidación.","B",NA,NA,2025-08-16,2025-08-22,"$","Reparto",NA,103850099,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","A1",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","A2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","A3",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","A4",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","B1",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","B4",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","C",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","C2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","E",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","E2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","I1",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","I2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","I3",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","I4",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "VolcomCapital – HPS Mezzanine IV Fondo de Inversión
 (ex XLC - HPS Mezzanine IV Fondo de Inversión)","A",NA,NA,2026-07-28,2026-08-03,"US$","Reparto",NA,855992.4,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
