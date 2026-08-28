@@ -4679,6 +4679,7 @@
 "Fondo de Inversión HMC CD&R Fund XII","I","10414","FINRE",2025-10-28,2025-11-05,"US$","Dividendo",0.133988,NA,NA,NA,NA,0.1339878137,"boletin",NA
 "Fondo de Inversión HMC CD&R Fund XII","I","10414","FINRE",2026-02-25,2026-03-03,"US$","Dividendo",0.011485,NA,NA,NA,NA,0.0114846697,"boletin",NA
 "Fondo de Inversión HMC CD&R Fund XII","I","10414","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.010872,NA,NA,NA,NA,0.0108719124,"boletin",NA
+"Fondo de Inversión HMC CD&R Fund XII","I","10414","FINRE",2026-08-26,2026-09-01,"US$","Reparto",0.010645,NA,NA,NA,NA,0.0106454143,"boletin",NA
 "Fondo de Inversión HMC CIP IX","E","10681","FINRE",2025-09-24,2025-09-30,"US$","Dividendo",0.044317,NA,NA,NA,NA,0.0443173482,"boletin",NA
 "Fondo de Inversión HMC CIP IX","I","10681","FINRE",2025-09-24,2025-09-30,"US$","Dividendo",0.044317,NA,NA,NA,NA,0.0443167876,"boletin",NA
 "Fondo de Inversión HMC CIP IX","E","10681","FINRE",2026-05-15,2026-05-22,"US$","Reparto",0.124427,NA,NA,NA,NA,0.124427287,"boletin",NA
@@ -5674,6 +5675,9 @@
 "Fondo de Inversión Link - Deuda Privada Rentas ERNC","A",NA,NA,2026-05-12,2026-05-18,"$","Dividendo",618.288894,NA,NA,NA,NA,618.2888938748,"boletin",NA
 "Fondo de Inversión Link - Deuda Privada Rentas ERNC","F",NA,NA,2026-05-12,2026-05-18,"$","Dividendo",639.325192,NA,NA,NA,NA,639.3251915444,"boletin",NA
 "Fondo de Inversión Link - Deuda Privada Rentas ERNC","I",NA,NA,2026-05-12,2026-05-18,"$","Dividendo",629.456626,NA,NA,NA,NA,629.4566258496,"boletin",NA
+"Fondo de Inversión Link - Deuda Privada Rentas ERNC","A",NA,NA,2026-08-27,2026-09-02,"$","Dividendo",468.302176,NA,NA,NA,NA,468.3021763518,"boletin",NA
+"Fondo de Inversión Link - Deuda Privada Rentas ERNC","F",NA,NA,2026-08-27,2026-09-02,"$","Dividendo",485.317757,NA,NA,NA,NA,485.3177574695,"boletin",NA
+"Fondo de Inversión Link - Deuda Privada Rentas ERNC","I",NA,NA,2026-08-27,2026-09-02,"$","Dividendo",477.47105,NA,NA,NA,NA,477.4710504431,"boletin",NA
 "Fondo de Inversión Link - Inmobiliario I","A",NA,NA,2026-06-10,2026-06-16,"$","Dividendo",20.747062,NA,NA,NA,NA,20.7470621153,"boletin",NA
 "Fondo de Inversión Link - Inmobiliario I","I",NA,NA,2026-06-10,2026-06-16,"$","Dividendo",21.266582,NA,NA,NA,NA,21.2665817054,"boletin",NA
 "Fondo de Inversión Link - Inmobiliario I","N",NA,NA,2026-06-10,2026-06-16,"$","Dividendo",21.212379,NA,NA,NA,NA,21.2123789859,"boletin",NA
@@ -7599,6 +7603,20 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Moneda GSI Rentas Logísticas II Fondo de Inversión","I2",NA,NA,2026-04-24,2026-04-30,"$","Dividendo",1078.837661,NA,NA,NA,NA,1078.837661,"boletin",NA
 "Moneda GSI Rentas Logísticas II Fondo de Inversión","I3",NA,NA,2026-04-24,2026-04-30,"$","Dividendo",1076.718137,NA,NA,NA,NA,1076.718137,"boletin",NA
 "Moneda GSI Rentas Logísticas II Fondo de Inversión","I4",NA,NA,2026-04-24,2026-04-30,"$","Dividendo",843.63542,NA,NA,NA,NA,843.63542,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","A1",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",947.359172,NA,NA,NA,NA,947.359172,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","A2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",945.514385,NA,NA,NA,NA,945.514385,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","A3",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",1012.658761,NA,NA,NA,NA,1012.658761,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","A4",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",754.917015,NA,NA,NA,NA,754.917015,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","B1",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",949.52058,NA,NA,NA,NA,949.52058,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","B4",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",756.162748,NA,NA,NA,NA,756.162748,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","C",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",952.472182,NA,NA,NA,NA,952.472182,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","C2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",768.48489,NA,NA,NA,NA,768.48489,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","E",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",954.603473,NA,NA,NA,NA,954.603473,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","E2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",768.488313,NA,NA,NA,NA,768.488313,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","I1",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",951.663682,NA,NA,NA,NA,951.663682,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","I2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",951.045487,NA,NA,NA,NA,951.045487,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","I3",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",949.944966,NA,NA,NA,NA,949.944966,"boletin",NA
+"Moneda GSI Rentas Logísticas II Fondo de Inversión","I4",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",768.485094,NA,NA,NA,NA,768.485094,"boletin",NA
 "Moneda Latam Corporate Credit Feeder Fondo de Inversión","A","9277","FIRES",2026-06-05,2026-06-11,"US$","Dividendo",0.093852,NA,NA,NA,NA,0.093852,"boletin",NA
 "Moneda Latam Corporate Credit Feeder Fondo de Inversión","I","9277","FIRES",2026-06-05,2026-06-11,"US$","Dividendo",0.088366,NA,NA,NA,NA,0.088366,"boletin",NA
 "Moneda Latam Corporate Credit Feeder Fondo de Inversión","C","9277","FIRES",2026-06-05,2026-06-11,"US$","Dividendo",0.095375,NA,NA,NA,NA,0.095375,"boletin",NA
@@ -8616,6 +8634,8 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "VOLCOMCAPITAL Special Situations III Fondo de Inversión","C","9645","FINRE",2026-03-31,2026-04-08,"US$","Reparto",0.013513,NA,NA,NA,NA,0.0135126629476302,"boletin",NA
 "VOLCOMCAPITAL Special Situations III Fondo de Inversión","B","9645","FINRE",2026-06-04,2026-06-10,"US$","Reparto",0.007601,NA,NA,NA,NA,0.00760059803120328,"boletin",NA
 "VOLCOMCAPITAL Special Situations III Fondo de Inversión","C","9645","FINRE",2026-06-04,2026-06-10,"US$","Reparto",0.007678,NA,NA,NA,NA,0.00767803222755784,"boletin",NA
+"VOLCOMCAPITAL Special Situations III Fondo de Inversión","B","9645","FINRE",2026-08-29,2026-09-04,"US$","Reparto",0.023187,NA,NA,NA,NA,0.0231868390130984,"boletin",NA
+"VOLCOMCAPITAL Special Situations III Fondo de Inversión","C","9645","FINRE",2026-08-29,2026-09-04,"US$","Reparto",0.023428,NA,NA,NA,NA,0.0234282511760122,"boletin",NA
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","A",NA,NA,2026-05-27,2026-06-02,"US$","Reparto",0.010486,NA,NA,NA,NA,0.01048612,"boletin",NA
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","R",NA,NA,2026-05-27,2026-06-02,"US$","Reparto",0.01047,NA,NA,NA,NA,0.0104699905,"boletin",NA
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","A",NA,NA,2026-07-14,2026-07-21,"US$","Reparto",0.007761,NA,NA,NA,NA,0.0077614,"boletin",NA
@@ -8644,6 +8664,8 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Vinci Compass Global Investments Fondo de Inversión","E",NA,NA,2026-06-30,2026-07-06,"US$","Dividendo",0.003368,NA,NA,NA,NA,0.0033682537,"boletin",NA
 "Vinci Compass Global Investments Fondo de Inversión","A",NA,NA,2026-06-30,2026-07-06,"US$","Reparto",0.000714,NA,NA,NA,NA,0.0007141823,"boletin",NA
 "Vinci Compass Global Investments Fondo de Inversión","E",NA,NA,2026-06-30,2026-07-06,"US$","Reparto",0.000714,NA,NA,NA,NA,0.0007142091,"boletin",NA
+"Vinci Compass Global Investments Fondo de Inversión","A",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.057093,NA,NA,NA,NA,0.0570931689,"boletin",NA
+"Vinci Compass Global Investments Fondo de Inversión","E",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.057095,NA,NA,NA,NA,0.0570952434,"boletin",NA
 "Vinci Compass Global Investments III Fondo de Inversión","A",NA,NA,2026-07-31,2026-08-06,"EURO","Dividendo",0.013129,NA,NA,NA,NA,0.0131293542,"boletin",NA
 "Vinci Compass Global Investments III Fondo de Inversión","A",NA,NA,2026-07-31,2026-08-06,"EURO","Reparto",0.01996,NA,NA,NA,NA,0.0199598403,"boletin",NA
 "Vinci Compass LAPCO Fondo de Inversión","A","9998","FINRE",2026-02-27,2026-03-05,"US$","Dividendo",0.006375,NA,NA,NA,NA,0.0063745369,"boletin",NA
@@ -8683,12 +8705,20 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Vinci Compass PCLO Private Debt Fondo de Inversión","A",NA,NA,2026-08-06,2026-08-12,"US$","Reparto",0.024108,NA,NA,NA,NA,0.0241077863,"boletin",NA
 "Vinci Compass PCLO Private Debt Fondo de Inversión","B",NA,NA,2026-08-06,2026-08-12,"US$","Reparto",0.025428,NA,NA,NA,NA,0.0254282909,"boletin",NA
 "Vinci Compass PCLO Private Debt Fondo de Inversión","C",NA,NA,2026-08-06,2026-08-12,"US$","Reparto",0.026457,NA,NA,NA,NA,0.0264570892,"boletin",NA
+"Vinci Compass PCRED Private Debt Fondo de Inversión","R",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.006297,NA,NA,NA,NA,0.0062974773,"boletin",NA
+"Vinci Compass PCRED Private Debt Fondo de Inversión","A",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.007311,NA,NA,NA,NA,0.0073108144,"boletin",NA
+"Vinci Compass PCRED Private Debt Fondo de Inversión","B",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.007859,NA,NA,NA,NA,0.0078591096,"boletin",NA
+"Vinci Compass PCRED Private Debt Fondo de Inversión","C",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.008287,NA,NA,NA,NA,0.008286985,"boletin",NA
+"Vinci Compass PCRED Private Debt Fondo de Inversión","P",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.008084,NA,NA,NA,NA,0.0080837985,"boletin",NA
 "Vinci Compass Private Equity V Fondo de Inversión","A",NA,NA,2026-08-05,2026-08-11,"US$","Dividendo",0.294178,NA,NA,NA,NA,0.2941783483,"boletin",NA
 "Vinci Compass Private Equity V Fondo de Inversión","A",NA,NA,2026-08-05,2026-08-11,"US$","Reparto",0.36714,NA,NA,NA,NA,0.3671404001,"boletin",NA
 "Vinci Compass Private Equity VII Fondo de Inversión","A",NA,NA,2026-08-07,2026-08-13,"US$","Reparto",0.004923,NA,NA,NA,NA,0.0049227222,"boletin",NA
 "Vinci Compass Private Equity X Fondo de Inversión","A",NA,NA,2026-07-07,2026-07-13,"US$","Dividendo",0.005636,NA,NA,NA,NA,0.005635702,"boletin",NA
 "Vinci Compass Private Equity X Fondo de Inversión","A",NA,NA,2026-07-07,2026-07-13,"US$","Reparto",0.003894,NA,NA,NA,NA,0.0038937738,"boletin",NA
 "Vinci Compass Private Equity X Fondo de Inversión","A",NA,NA,2026-08-07,2026-08-13,"US$","Reparto",0.004215,NA,NA,NA,NA,0.004215276,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","A",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.028839,NA,NA,NA,NA,0.0288389186,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","B",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.031281,NA,NA,NA,NA,0.0312808929,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","C",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.034852,NA,NA,NA,NA,0.0348524599,"boletin",NA
 "Vinci Compass Private Equity XV Fondo de Inversión","C",NA,NA,2026-07-31,2026-08-06,"EURO","Dividendo",0.008986,NA,NA,NA,NA,0.0089856362,"boletin",NA
 "Vinci Compass Private Equity XV Fondo de Inversión","C",NA,NA,2026-07-31,2026-08-06,"EURO","Reparto",0.013729,NA,NA,NA,NA,0.013728844,"boletin",NA
 "Vinci Compass Private Equity XVI Fondo de Inversión","A",NA,NA,2026-08-06,2026-08-12,"US$","Dividendo",0.00036,NA,NA,NA,NA,0.0003600297,"boletin",NA
@@ -9037,20 +9067,6 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "MBI-BP Deuda Fondo de Inversión, en Liquidación.","B",NA,NA,2025-08-16,2025-08-22,"$","Reparto",NA,103850099,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","A1",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","A2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","A3",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","A4",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","B1",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","B4",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","C",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","C2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","E",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","E2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","I1",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","I2",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","I3",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Moneda GSI Rentas Logísticas II Fondo de Inversión","I4",NA,NA,2026-08-26,2026-09-01,"$","Dividendo",NA,2.472e+09,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "VolcomCapital – HPS Mezzanine IV Fondo de Inversión
 (ex XLC - HPS Mezzanine IV Fondo de Inversión)","A",NA,NA,2026-07-28,2026-08-03,"US$","Reparto",NA,855992.4,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
