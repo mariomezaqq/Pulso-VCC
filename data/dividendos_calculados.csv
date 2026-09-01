@@ -3827,6 +3827,10 @@
 "Fondo de Inversión BCI DSS19","B","9758","FINRE",2026-05-29,2026-06-04,"US$","Reparto",0.956242,NA,NA,NA,NA,0.9562423625,"boletin",NA
 "Fondo de Inversión BCI DSS19","C","9758","FINRE",2026-05-29,2026-06-04,"US$","Reparto",0.938407,NA,NA,NA,NA,0.9384065973,"boletin",NA
 "Fondo de Inversión BCI DSS19","ADC","9758","FINRE",2026-05-29,2026-06-04,"US$","Reparto",0.99293,NA,NA,NA,NA,0.9929300007,"boletin",NA
+"Fondo de Inversión BCI DSS19","A","9758","FINRE",2026-08-29,2026-09-04,"US$","Dividendo",4.567204,NA,NA,NA,NA,4.5672039798,"boletin",NA
+"Fondo de Inversión BCI DSS19","B","9758","FINRE",2026-08-29,2026-09-04,"US$","Dividendo",4.409149,NA,NA,NA,NA,4.4091485448,"boletin",NA
+"Fondo de Inversión BCI DSS19","C","9758","FINRE",2026-08-29,2026-09-04,"US$","Dividendo",4.323699,NA,NA,NA,NA,4.3236988168,"boletin",NA
+"Fondo de Inversión BCI DSS19","ADC","9758","FINRE",2026-08-29,2026-09-04,"US$","Dividendo",4.585108,NA,NA,NA,NA,4.5851079968,"boletin",NA
 "Fondo de Inversión BCI HLC II","A",NA,NA,2025-01-22,2025-01-28,"$","Dividendo",250.119676,NA,NA,NA,NA,250.1196762999,"boletin",NA
 "Fondo de Inversión BCI HLC II","ADC",NA,NA,2025-01-22,2025-01-28,"$","Dividendo",254.995861,NA,NA,NA,NA,254.9958605247,"boletin",NA
 "Fondo de Inversión BCI HLC II","B",NA,NA,2025-01-22,2025-01-28,"$","Dividendo",247.271882,NA,NA,NA,NA,247.271882056,"boletin",NA
@@ -3984,6 +3988,8 @@
 "Fondo de Inversión Bci Adler V","ADC",NA,NA,2025-08-29,2025-09-04,"US$","Reparto",0.007848,NA,NA,NA,NA,0.0078479268,"boletin",NA
 "Fondo de Inversión Bci Adler V","C",NA,NA,2025-11-28,2025-12-04,"US$","Reparto",0.011525,NA,NA,NA,NA,0.0115252261,"boletin",NA
 "Fondo de Inversión Bci Adler V","ADC",NA,NA,2025-11-28,2025-12-04,"US$","Reparto",0.011669,NA,NA,NA,NA,0.0116689855,"boletin",NA
+"Fondo de Inversión Bci Adler V","C",NA,NA,2026-08-29,2026-09-04,"US$","Reparto",0.01303,NA,NA,NA,NA,0.0130303735,"boletin",NA
+"Fondo de Inversión Bci Adler V","ADC",NA,NA,2026-08-29,2026-09-04,"US$","Reparto",0.013229,NA,NA,NA,NA,0.0132289226,"boletin",NA
 "Fondo de Inversión Bci Desarrollo Inmobiliario XI","A",NA,NA,2026-05-05,2026-05-11,"$","Reparto",3413.164592,NA,NA,NA,NA,3413.1645923521,"boletin",NA
 "Fondo de Inversión Bci Desarrollo Inmobiliario XI","B",NA,NA,2026-05-05,2026-05-11,"$","Reparto",3266.174602,NA,NA,NA,NA,3266.1746018391,"boletin",NA
 "Fondo de Inversión Bci Desarrollo Inmobiliario XI","A",NA,NA,2026-07-04,2026-07-10,"$","Reparto",1951.404333,NA,NA,NA,NA,1951.4043325334,"boletin",NA
@@ -4194,6 +4200,8 @@
 "Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-05-02,2026-05-08,"US$","Dividendo",0.016295,NA,NA,NA,NA,0.01629541,"boletin",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-05-30,2026-06-05,"US$","Dividendo",0.006303,NA,NA,NA,NA,0.0063029,"boletin",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-05-30,2026-06-05,"US$","Dividendo",0.006605,NA,NA,NA,NA,0.00660528,"boletin",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.005255,NA,NA,NA,NA,0.00525522,"boletin",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.005515,NA,NA,NA,NA,0.00551532,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt III","B","9760","FINRE",2025-03-28,2025-04-03,"EURO","Dividendo",0.096684,NA,NA,NA,NA,0.09668443,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt III","I","9760","FINRE",2025-03-28,2025-04-03,"EURO","Dividendo",0.11679,NA,NA,NA,NA,0.11678974,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt III","B","9760","FINRE",2025-03-28,2025-04-03,"EURO","Reparto",0.013885,NA,NA,NA,NA,0.01388513,"boletin",NA
@@ -8531,6 +8539,11 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "VOLCOMCAPITAL Private Equity IV Fondo de Inversión","C","9441","FINRE",2026-06-18,2026-06-24,"EURO","Reparto",0.101831,NA,NA,NA,NA,0.101831471079989,"boletin",NA
 "VOLCOMCAPITAL Private Equity IV Fondo de Inversión","D","9441","FINRE",2026-06-18,2026-06-24,"EURO","Reparto",0.102274,NA,NA,NA,NA,0.102274356597802,"boletin",NA
 "VOLCOMCAPITAL Private Equity IV Fondo de Inversión","E","9441","FINRE",2026-06-18,2026-06-24,"EURO","Reparto",0.073249,NA,NA,NA,NA,0.0732487049728026,"boletin",NA
+"VOLCOMCAPITAL Private Equity IV Fondo de Inversión","A","9441","FINRE",2026-09-01,2026-09-07,"EURO","Reparto",0.13491,NA,NA,NA,NA,0.134910425752204,"boletin",NA
+"VOLCOMCAPITAL Private Equity IV Fondo de Inversión","B","9441","FINRE",2026-09-01,2026-09-07,"EURO","Reparto",0.1399,NA,NA,NA,NA,0.139899725714708,"boletin",NA
+"VOLCOMCAPITAL Private Equity IV Fondo de Inversión","C","9441","FINRE",2026-09-01,2026-09-07,"EURO","Reparto",0.140765,NA,NA,NA,NA,0.140764530597588,"boletin",NA
+"VOLCOMCAPITAL Private Equity IV Fondo de Inversión","D","9441","FINRE",2026-09-01,2026-09-07,"EURO","Reparto",0.141385,NA,NA,NA,NA,0.14138521098557,"boletin",NA
+"VOLCOMCAPITAL Private Equity IV Fondo de Inversión","E","9441","FINRE",2026-09-01,2026-09-07,"EURO","Reparto",0.101197,NA,NA,NA,NA,0.101196956222771,"boletin",NA
 "VOLCOMCAPITAL Private Equity IX Fondo de Inversión","A","10186","FINRE",2025-04-28,2025-05-05,"US$","Dividendo",0.000222,NA,NA,NA,NA,0.0002222141275995,"boletin",NA
 "VOLCOMCAPITAL Private Equity IX Fondo de Inversión","B","10186","FINRE",2025-04-28,2025-05-05,"US$","Dividendo",0.000227,NA,NA,NA,NA,0.0002265535168047,"boletin",NA
 "VOLCOMCAPITAL Private Equity IX Fondo de Inversión","C","10186","FINRE",2025-04-28,2025-05-05,"US$","Dividendo",0.000231,NA,NA,NA,NA,0.0002312501458938,"boletin",NA
