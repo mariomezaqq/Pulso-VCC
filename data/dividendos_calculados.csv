@@ -567,6 +567,24 @@
 "Ameris NM Private Credit Fondo de Inversión","T","9879","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.004969,NA,NA,NA,NA,0.004968629,"boletin",NA
 "Ameris NM Private Credit Fondo de Inversión","X","9879","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.006655,NA,NA,NA,NA,0.006654577,"boletin",NA
 "Ameris NM Private Credit Fondo de Inversión","XN","9879","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.007065,NA,NA,NA,NA,0.007064825,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","A","9879","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.002392,NA,NA,NA,NA,0.002392167,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","AN","9879","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.003019,NA,NA,NA,NA,0.003019369,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","I","9879","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.002411,NA,NA,NA,NA,0.002410515,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","IN","9879","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.003037,NA,NA,NA,NA,0.003037064,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","R","9879","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.002255,NA,NA,NA,NA,0.002254533,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","RN","9879","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.002993,NA,NA,NA,NA,0.002993482,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","T","9879","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.002277,NA,NA,NA,NA,0.00227654,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","X","9879","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.003051,NA,NA,NA,NA,0.00305083,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","XN","9879","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.003239,NA,NA,NA,NA,0.003238609,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","A","9879","FINRE",2026-09-01,2026-09-07,"US$","Reparto",0.004095,NA,NA,NA,NA,0.004094805,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","AN","9879","FINRE",2026-09-01,2026-09-07,"US$","Reparto",0.005168,NA,NA,NA,NA,0.00516843,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","I","9879","FINRE",2026-09-01,2026-09-07,"US$","Reparto",0.004126,NA,NA,NA,NA,0.004126218,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","IN","9879","FINRE",2026-09-01,2026-09-07,"US$","Reparto",0.005199,NA,NA,NA,NA,0.005198721,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","R","9879","FINRE",2026-09-01,2026-09-07,"US$","Reparto",0.003859,NA,NA,NA,NA,0.003859215,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","RN","9879","FINRE",2026-09-01,2026-09-07,"US$","Reparto",0.005124,NA,NA,NA,NA,0.005124117,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","T","9879","FINRE",2026-09-01,2026-09-07,"US$","Reparto",0.003897,NA,NA,NA,NA,0.003896866,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","X","9879","FINRE",2026-09-01,2026-09-07,"US$","Reparto",0.005222,NA,NA,NA,NA,0.005222282,"boletin",NA
+"Ameris NM Private Credit Fondo de Inversión","XN","9879","FINRE",2026-09-01,2026-09-07,"US$","Reparto",0.005544,NA,NA,NA,NA,0.005543694,"boletin",NA
 "Ameris Parauco Fondo de Inversión","P",NA,NA,2025-02-27,2025-03-05,"$","Dividendo",12.138475,NA,NA,NA,NA,12.138474621,"boletin",NA
 "Ameris Parauco Fondo de Inversión","A",NA,NA,2025-05-13,2025-05-19,"$","Dividendo",6.912153,NA,NA,NA,NA,6.912152624,"boletin",NA
 "Ameris Parauco Fondo de Inversión","I",NA,NA,2025-05-13,2025-05-19,"$","Dividendo",7.204777,NA,NA,NA,NA,7.204777111,"boletin",NA
@@ -4200,8 +4218,8 @@
 "Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-05-02,2026-05-08,"US$","Dividendo",0.016295,NA,NA,NA,NA,0.01629541,"boletin",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-05-30,2026-06-05,"US$","Dividendo",0.006303,NA,NA,NA,NA,0.0063029,"boletin",NA
 "Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-05-30,2026-06-05,"US$","Dividendo",0.006605,NA,NA,NA,NA,0.00660528,"boletin",NA
-"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.005255,NA,NA,NA,NA,0.00525522,"boletin",NA
-"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-09-01,2026-09-07,"US$","Dividendo",0.005515,NA,NA,NA,NA,0.00551532,"boletin",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-09-02,2026-09-08,"US$","Dividendo",0.005255,NA,NA,NA,NA,0.00525522,"boletin",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-09-02,2026-09-08,"US$","Dividendo",0.005515,NA,NA,NA,NA,0.00551532,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt III","B","9760","FINRE",2025-03-28,2025-04-03,"EURO","Dividendo",0.096684,NA,NA,NA,NA,0.09668443,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt III","I","9760","FINRE",2025-03-28,2025-04-03,"EURO","Dividendo",0.11679,NA,NA,NA,NA,0.11678974,"boletin",NA
 "Fondo de Inversión Credicorp Capital Private Debt III","B","9760","FINRE",2025-03-28,2025-04-03,"EURO","Reparto",0.013885,NA,NA,NA,NA,0.01388513,"boletin",NA
@@ -4288,6 +4306,8 @@
 "Fondo de Inversión Credicorp Capital – SLP II","B","9892","FINRE",2025-12-30,2026-01-06,"US$","Reparto",0.006484,NA,NA,NA,NA,0.00648425,"boletin",NA
 "Fondo de Inversión Credicorp Capital – SLP II","I","9892","FINRE",2025-12-30,2026-01-06,"US$","Reparto",0.006544,NA,NA,NA,NA,0.00654361,"boletin",NA
 "Fondo de Inversión Deuda Chilena","A",NA,NA,2026-06-16,2026-06-22,"$","Dividendo",24.410242,NA,NA,NA,NA,24.4102424271899,"boletin",NA
+"Fondo de Inversión Deuda Privada Automotriz V","A",NA,NA,2026-09-01,2026-09-07,"$","Reparto",22.408757,NA,NA,NA,NA,22.408757167,"boletin",NA
+"Fondo de Inversión Deuda Privada Automotriz V","S",NA,NA,2026-09-01,2026-09-07,"$","Reparto",23.210121,NA,NA,NA,NA,23.210120872,"boletin",NA
 "Fondo de Inversión Drake Real Estate Partners Fund III","I","9458","FINRE",2025-06-18,2025-06-25,"US$","Dividendo",0.01405,NA,NA,NA,NA,0.0140495446130418,"boletin",NA
 "Fondo de Inversión Drake Real Estate Partners Fund III","P","9458","FINRE",2025-06-18,2025-06-25,"US$","Dividendo",0.013918,NA,NA,NA,NA,0.0139181622060823,"boletin",NA
 "Fondo de Inversión Drake Real Estate Partners Fund III","I","9458","FINRE",2025-06-18,2025-06-25,"US$","Reparto",0.096041,NA,NA,NA,NA,0.0960407232433961,"boletin",NA
@@ -6275,6 +6295,14 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Fondo de Inversión Security Deuda Privada Automotriz IV","B","10745","FINRE",2026-08-13,2026-08-20,"$","Reparto",30.571493,NA,NA,NA,NA,30.571493473,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Automotriz IV","S","10745","FINRE",2026-08-13,2026-08-20,"$","Reparto",30.819583,NA,NA,NA,NA,30.819583056,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Automotriz IV","SUB","10745","FINRE",2026-08-13,2026-08-20,"$","Reparto",100.126526,NA,NA,NA,NA,100.126526182,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","A","10745","FINRE",2026-09-01,2026-09-07,"$","Dividendo",10.658551,NA,NA,NA,NA,10.658550588,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","B","10745","FINRE",2026-09-01,2026-09-07,"$","Dividendo",10.660928,NA,NA,NA,NA,10.660927833,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","S","10745","FINRE",2026-09-01,2026-09-07,"$","Dividendo",10.744631,NA,NA,NA,NA,10.744630856,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","SUB","10745","FINRE",2026-09-01,2026-09-07,"$","Dividendo",13.012453,NA,NA,NA,NA,13.012453326,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","A","10745","FINRE",2026-09-01,2026-09-07,"$","Reparto",23.859505,NA,NA,NA,NA,23.859504564,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","B","10745","FINRE",2026-09-01,2026-09-07,"$","Reparto",23.86458,NA,NA,NA,NA,23.864579517,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","S","10745","FINRE",2026-09-01,2026-09-07,"$","Reparto",24.051234,NA,NA,NA,NA,24.051234268,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","SUB","10745","FINRE",2026-09-01,2026-09-07,"$","Reparto",63.919293,NA,NA,NA,NA,63.919293213,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","A",NA,NA,2025-02-04,2025-02-10,"$","Reparto",774.955557,NA,NA,NA,NA,774.955556656,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","FO",NA,NA,2025-02-04,2025-02-10,"$","Reparto",825.673846,NA,NA,NA,NA,825.673845747,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","GP",NA,NA,2025-02-04,2025-02-10,"$","Reparto",789.851112,NA,NA,NA,NA,789.851112155,"boletin",NA
@@ -6953,6 +6981,9 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Frontal Trust Mercado Pago Créditos Fondo de Inversión","PI","10689","FINRE",2026-06-13,2026-06-19,"$","Dividendo",0.685392,NA,NA,NA,NA,0.685391957,"boletin",NA
 "Frontal Trust Mercado Pago Créditos Fondo de Inversión","P","10689","FINRE",2026-07-04,2026-07-10,"$","Dividendo",0.485398,NA,NA,NA,NA,0.485398462,"boletin",NA
 "Frontal Trust Mercado Pago Créditos Fondo de Inversión","PI","10689","FINRE",2026-07-04,2026-07-10,"$","Dividendo",0.504326,NA,NA,NA,NA,0.504326431,"boletin",NA
+"Frontal Trust Mercado Pago Créditos Fondo de Inversión","P","10689","FINRE",2026-09-02,2026-09-08,"$","Dividendo",1.239826,NA,NA,NA,NA,1.239825607,"boletin",NA
+"Frontal Trust Mercado Pago Créditos Fondo de Inversión","PI","10689","FINRE",2026-09-02,2026-09-08,"$","Dividendo",1.174791,NA,NA,NA,NA,1.174790968,"boletin",NA
+"Frontal Trust Mercado Pago Créditos Fondo de Inversión","R","10689","FINRE",2026-09-02,2026-09-08,"$","Dividendo",5,NA,NA,NA,NA,5,"boletin",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","A",NA,NA,2025-01-15,2025-01-21,"US$","Reparto",0.116305,NA,NA,NA,NA,0.116305462,"boletin",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","B",NA,NA,2025-01-15,2025-01-21,"US$","Reparto",0.116496,NA,NA,NA,NA,0.116496383,"boletin",NA
 "Frontal Trust U.S. Real Estate NNN Medical Fondo de Inversión","C",NA,NA,2025-01-15,2025-01-21,"US$","Reparto",0.11634,NA,NA,NA,NA,0.116340474,"boletin",NA
@@ -7213,6 +7244,10 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "MBI Private Debt US Evergreen Fondo de Inversión","F",NA,NA,2026-07-29,2026-08-04,"US$","Dividendo",0.693024,NA,NA,NA,NA,0.693023785899052,"boletin",NA
 "MBI Private Debt US Evergreen Fondo de Inversión","I",NA,NA,2026-07-29,2026-08-04,"US$","Dividendo",0.687072,NA,NA,NA,NA,0.687071984564307,"boletin",NA
 "MBI Private Debt US Evergreen Fondo de Inversión","S",NA,NA,2026-07-29,2026-08-04,"US$","Dividendo",0.695885,NA,NA,NA,NA,0.69588527709743,"boletin",NA
+"MBI Private Debt US Evergreen Fondo de Inversión","A",NA,NA,2026-08-28,2026-09-03,"US$","Dividendo",0.678393,NA,NA,NA,NA,0.678392708084162,"boletin",NA
+"MBI Private Debt US Evergreen Fondo de Inversión","F",NA,NA,2026-08-28,2026-09-03,"US$","Dividendo",0.696951,NA,NA,NA,NA,0.696951118259601,"boletin",NA
+"MBI Private Debt US Evergreen Fondo de Inversión","I",NA,NA,2026-08-28,2026-09-03,"US$","Dividendo",0.690661,NA,NA,NA,NA,0.690661459437849,"boletin",NA
+"MBI Private Debt US Evergreen Fondo de Inversión","S",NA,NA,2026-08-28,2026-09-03,"US$","Dividendo",0.699795,NA,NA,NA,NA,0.699794592552617,"boletin",NA
 "MBI Renta Comercial II Fondo de Inversión","A",NA,NA,2025-06-28,2025-07-04,"$","Dividendo",2099.749884,NA,NA,NA,NA,2099.74988420259,"boletin",NA
 "MBI Renta Comercial II Fondo de Inversión","A",NA,NA,2026-05-27,2026-06-02,"$","Reparto",520.258,NA,NA,NA,NA,520.258,"boletin",NA
 "MBI Renta Comercial II Fondo de Inversión","B",NA,NA,2026-05-27,2026-06-02,"$","Reparto",770879.5,NA,NA,NA,NA,770879.5,"boletin",NA
@@ -9017,6 +9052,8 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","I",NA,NA,2026-08-21,2026-08-27,"US$","Reparto",NA,454884,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","E",NA,NA,2026-08-21,2026-08-27,"US$","Reparto",NA,234560.44,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Independencia Deuda US I","U",NA,NA,2025-02-08,2025-02-14,"US$","Reparto",NA,6208.78,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Fondo de Inversión Credicorp Capital PG Private Debt I","B","9680","FINRE",2026-09-02,2026-09-08,"US$","Reparto",NA,31087.89,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Fondo de Inversión Credicorp Capital PG Private Debt I","I","9680","FINRE",2026-09-02,2026-09-08,"US$","Reparto",NA,254690.13,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","A",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,511995657,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","B",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,651307025,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital Retorno Preferente Maestra I","CCAM",NA,NA,2025-03-07,2025-03-13,"$","Reparto",NA,1019620,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
