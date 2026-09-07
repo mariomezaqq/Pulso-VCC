@@ -24,6 +24,8 @@
 "Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-07-31,2026-08-06,"$","Dividendo",5167.729506,NA,NA,NA,NA,5167.729506,"boletin",NA
 "Alza Deuda Privada V Fondo de Inversión","A",NA,NA,2026-08-21,2026-08-27,"$","Dividendo",4130.812766,NA,NA,NA,NA,4130.812766,"boletin",NA
 "Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-08-21,2026-08-27,"$","Dividendo",4137.132669,NA,NA,NA,NA,4137.132669,"boletin",NA
+"Alza Deuda Privada V Fondo de Inversión","A",NA,NA,2026-09-04,2026-09-10,"$","Reparto",1180.340356,NA,NA,NA,NA,1180.340356,"boletin",NA
+"Alza Deuda Privada V Fondo de Inversión","I",NA,NA,2026-09-04,2026-09-10,"$","Reparto",1182.146208,NA,NA,NA,NA,1182.146208,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",640.143235,NA,NA,NA,NA,640.143235,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-05-14,2026-05-20,"$","Dividendo",640.439758,NA,NA,NA,NA,640.439758,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-06-05,2026-06-11,"$","Dividendo",923.474391,NA,NA,NA,NA,923.474391,"boletin",NA
@@ -32,6 +34,8 @@
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-07-17,2026-07-23,"$","Dividendo",2351.594052,NA,NA,NA,NA,2351.594052,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-07-31,2026-08-06,"$","Dividendo",1242.420604,NA,NA,NA,NA,1242.420604,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-07-31,2026-08-06,"$","Dividendo",1243.379743,NA,NA,NA,NA,1243.379743,"boletin",NA
+"Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-09-04,2026-09-10,"$","Reparto",1312.112354,NA,NA,NA,NA,1312.112354,"boletin",NA
+"Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-09-04,2026-09-10,"$","Reparto",1313.356828,NA,NA,NA,NA,1313.356828,"boletin",NA
 "Alza Dédalo Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",305.806585,NA,NA,NA,NA,305.806585,"boletin",NA
 "Alza Dédalo Fondo de Inversión","I1",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",307.720236,NA,NA,NA,NA,307.720236,"boletin",NA
 "Alza Dédalo Fondo de Inversión","F",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",304.98705,NA,NA,NA,NA,304.98705,"boletin",NA
@@ -2737,6 +2741,9 @@
 "Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2026-06-05,2026-06-11,"US$","Reparto",0.036927,NA,NA,NA,NA,0.0369272993110137,"boletin",NA
 "Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2026-06-05,2026-06-11,"US$","Reparto",0.038595,NA,NA,NA,NA,0.038594903493513,"boletin",NA
 "Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2026-06-05,2026-06-11,"US$","Reparto",0.039359,NA,NA,NA,NA,0.0393587226321717,"boletin",NA
+"Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2026-09-02,2026-09-08,"US$","Dividendo",0.001686,NA,NA,NA,NA,0.0016855844552305,"boletin",NA
+"Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2026-09-02,2026-09-08,"US$","Dividendo",0.001764,NA,NA,NA,NA,0.0017638696428549,"boletin",NA
+"Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2026-09-02,2026-09-08,"US$","Dividendo",0.001799,NA,NA,NA,NA,0.001799080855513,"boletin",NA
 "Fondo de Inversión AG Direct Lending V","A","10472","FINRE",2025-03-06,2025-03-12,"US$","Dividendo",0.046299,NA,NA,NA,NA,0.046298955739859,"boletin",NA
 "Fondo de Inversión AG Direct Lending V","P3","10472","FINRE",2025-03-06,2025-03-12,"US$","Dividendo",0.047231,NA,NA,NA,NA,0.047231356790288,"boletin",NA
 "Fondo de Inversión AG Direct Lending V","A","10472","FINRE",2025-06-10,2025-06-16,"US$","Dividendo",0.02643,NA,NA,NA,NA,0.026430131530048,"boletin",NA
@@ -2747,6 +2754,8 @@
 "Fondo de Inversión AG Direct Lending V","P3","10472","FINRE",2026-03-04,2026-03-10,"US$","Reparto",0.037909,NA,NA,NA,NA,0.037909286,"boletin",NA
 "Fondo de Inversión AG Direct Lending V","A","10472","FINRE",2026-06-04,2026-06-10,"US$","Dividendo",0.016519,NA,NA,NA,NA,0.0165185614434579,"boletin",NA
 "Fondo de Inversión AG Direct Lending V","P3","10472","FINRE",2026-06-04,2026-06-10,"US$","Dividendo",0.017281,NA,NA,NA,NA,0.0172810093084707,"boletin",NA
+"Fondo de Inversión AG Direct Lending V","A","10472","FINRE",2026-09-02,2026-09-08,"US$","Dividendo",0.008709,NA,NA,NA,NA,0.00870898678,"boletin",NA
+"Fondo de Inversión AG Direct Lending V","P3","10472","FINRE",2026-09-02,2026-09-08,"US$","Dividendo",0.009152,NA,NA,NA,NA,0.00915180093,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Global II","A",NA,NA,2025-01-22,2025-01-28,"$","Reparto",28.439529,NA,NA,NA,NA,28.4395292293581,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Global II","C",NA,NA,2025-01-22,2025-01-28,"$","Reparto",64.258398,NA,NA,NA,NA,64.2583981862098,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Global II","D",NA,NA,2025-01-22,2025-01-28,"$","Reparto",30.984893,NA,NA,NA,NA,30.9848932121117,"boletin",NA
@@ -7287,6 +7296,8 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "MBI Retorno Inmobiliario Preferente Fondo de Inversión","I",NA,NA,2026-06-30,2026-07-06,"$","Reparto",1826.733346,NA,NA,NA,NA,1826.7333465,"boletin",NA
 "MBI Retorno Inmobiliario Preferente Fondo de Inversión","A",NA,NA,2026-08-06,2026-08-12,"$","Reparto",1038.548514,NA,NA,NA,NA,1038.54851403369,"boletin",NA
 "MBI Retorno Inmobiliario Preferente Fondo de Inversión","I",NA,NA,2026-08-06,2026-08-12,"$","Reparto",1003.497425,NA,NA,NA,NA,1003.49742464943,"boletin",NA
+"MBI Retorno Inmobiliario Preferente Fondo de Inversión","A",NA,NA,2026-09-02,2026-09-08,"$","Reparto",1068.198918,NA,NA,NA,NA,1068.19891844718,"boletin",NA
+"MBI Retorno Inmobiliario Preferente Fondo de Inversión","I",NA,NA,2026-09-02,2026-09-08,"$","Reparto",1032.943786,NA,NA,NA,NA,1032.94378588856,"boletin",NA
 "MBI-BP Deuda Fondo de Inversión","A",NA,NA,2025-05-27,2025-06-02,"$","Dividendo",2164.820415,NA,NA,NA,NA,2164.8204148,"boletin",NA
 "MBI-BP Deuda Fondo de Inversión","B",NA,NA,2025-05-27,2025-06-02,"$","Dividendo",1551.759813,NA,NA,NA,NA,1551.7598134,"boletin",NA
 "MBI-BP Deuda Fondo de Inversión, en Liquidación.","A",NA,NA,2025-02-14,2025-02-20,"$","Reparto",5219.720309,NA,NA,NA,NA,5219.7203092,"boletin",NA
@@ -8839,6 +8850,16 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Vinci Compass Small Cap Chile Fondo de Inversión","B",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2652.59151,NA,NA,NA,NA,2652.5915095152,"boletin",NA
 "Vinci Compass Small Cap Chile Fondo de Inversión","I",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2693.703047,NA,NA,NA,NA,2693.7030474919,"boletin",NA
 "Vinci Compass Small Cap Chile Fondo de Inversión","VC",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",2675.652323,NA,NA,NA,NA,2675.6523229495,"boletin",NA
+"Vinci Compass VEPF VIII Private Equity Fondo de Inversión","A",NA,NA,2026-09-04,2026-09-10,"US$","Dividendo",0.002421,NA,NA,NA,NA,0.0024212529,"boletin",NA
+"Vinci Compass VEPF VIII Private Equity Fondo de Inversión","B",NA,NA,2026-09-04,2026-09-10,"US$","Dividendo",0.002478,NA,NA,NA,NA,0.0024783868,"boletin",NA
+"Vinci Compass VEPF VIII Private Equity Fondo de Inversión","C",NA,NA,2026-09-04,2026-09-10,"US$","Dividendo",0.002527,NA,NA,NA,NA,0.0025265158,"boletin",NA
+"Vinci Compass VEPF VIII Private Equity Fondo de Inversión","I",NA,NA,2026-09-04,2026-09-10,"US$","Dividendo",0.002498,NA,NA,NA,NA,0.0024975923,"boletin",NA
+"Vinci Compass VEPF VIII Private Equity Fondo de Inversión","R",NA,NA,2026-09-04,2026-09-10,"US$","Dividendo",0.002264,NA,NA,NA,NA,0.002263715,"boletin",NA
+"Vinci Compass VEPF VIII Private Equity Fondo de Inversión","A",NA,NA,2026-09-04,2026-09-10,"US$","Reparto",0.002904,NA,NA,NA,NA,0.0029040277,"boletin",NA
+"Vinci Compass VEPF VIII Private Equity Fondo de Inversión","B",NA,NA,2026-09-04,2026-09-10,"US$","Reparto",0.002973,NA,NA,NA,NA,0.002972556,"boletin",NA
+"Vinci Compass VEPF VIII Private Equity Fondo de Inversión","C",NA,NA,2026-09-04,2026-09-10,"US$","Reparto",0.00303,NA,NA,NA,NA,0.0030302708,"boletin",NA
+"Vinci Compass VEPF VIII Private Equity Fondo de Inversión","I",NA,NA,2026-09-04,2026-09-10,"US$","Reparto",0.002996,NA,NA,NA,NA,0.0029955828,"boletin",NA
+"Vinci Compass VEPF VIII Private Equity Fondo de Inversión","R",NA,NA,2026-09-04,2026-09-10,"US$","Reparto",0.002715,NA,NA,NA,NA,0.0027150957,"boletin",NA
 "VolcomCapital Activos I Fondo de Inversión","B",NA,NA,2026-07-30,2026-08-05,"$","Reparto",2169.117356,NA,NA,NA,NA,2169.11735636516,"boletin",NA
 "VolcomCapital Activos I Fondo de Inversión","C",NA,NA,2026-07-30,2026-08-05,"$","Reparto",284.366736,NA,NA,NA,NA,284.366735591747,"boletin",NA
 "VolcomCapital Activos I Fondo de Inversión","E",NA,NA,2026-07-30,2026-08-05,"$","Reparto",769.594172,NA,NA,NA,NA,769.594172419574,"boletin",NA
@@ -9072,6 +9093,8 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-05-28,2026-06-03,"US$","Reparto",NA,585134.67,131192044,2026-05-28,0.00446,0.00446013836887259,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-07-03,2026-07-09,"US$","Reparto",NA,95124.35,129808186,2026-07-03,0.000733,0.000732807019526061,"calculado (total/cuotas dia limite)",NA
 "PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-07-03,2026-07-09,"US$","Reparto",NA,64409.44,129808186,2026-07-03,0.000496,0.000496189353785258,"calculado (total/cuotas dia limite)",NA
+"PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-09-04,2026-09-10,"US$","Reparto",NA,298780.4,129656678,2026-09-04,0.002304,0.00230439654452978,"calculado (total/cuotas dia limite)",NA
+"PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-09-04,2026-09-10,"US$","Reparto",NA,202311.39,129656678,2026-09-04,0.00156,0.00156036228626448,"calculado (total/cuotas dia limite)",NA
 "Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,477605.84,58508791,2025-01-08,0.008163,0.0081629757601,"calculado (total/cuotas dia limite)",NA
 "Picton - Apollo VIII Fondo de Inversión","N","7279","FINRE",2025-01-08,2025-01-14,"US$","Reparto",NA,890990.97,58508791,2025-01-08,0.015228,0.0152283265434484,"calculado (total/cuotas dia limite)",NA
 "Picton - Apollo VIII Fondo de Inversión","E","7279","FINRE",2025-12-12,2025-12-18,"US$","Reparto",NA,516145.01,55918327,2025-12-12,0.00923,0.0092303370727229,"calculado (total/cuotas dia limite)",NA
@@ -9176,8 +9199,6 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"PICTON – TPG VIII Fondo de Inversión","A","9637","FINRE",2026-09-04,2026-09-10,"US$","Reparto",NA,298780.4,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"PICTON – TPG VIII Fondo de Inversión","I","9637","FINRE",2026-09-04,2026-09-10,"US$","Reparto",NA,202311.39,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "VolcomCapital – HPS Mezzanine IV Fondo de Inversión
 (ex XLC - HPS Mezzanine IV Fondo de Inversión)","A",NA,NA,2026-07-28,2026-08-03,"US$","Reparto",NA,855992.4,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "VolcomCapital – HPS Mezzanine IV Fondo de Inversión
