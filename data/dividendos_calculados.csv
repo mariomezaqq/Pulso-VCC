@@ -2669,6 +2669,8 @@
 "Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-08-21,2026-08-27,"$","Dividendo",0.810482,NA,NA,NA,NA,0.810481674,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","IR","8723","RGFMU",2026-08-27,2026-09-02,"$","Dividendo",0.079444,NA,NA,NA,NA,0.079444494,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-08-27,2026-09-02,"$","Dividendo",0.080013,NA,NA,NA,NA,0.080013309,"boletin",NA
+"Fondo Mutuo LarrainVial Enfoque","IR","8723","RGFMU",2026-09-05,2026-09-11,"$","Dividendo",0.169554,NA,NA,NA,NA,0.169554464,"boletin",NA
+"Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-09-05,2026-09-11,"$","Dividendo",0.170743,NA,NA,NA,NA,0.17074274,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-02,2025-01-08,"$","Dividendo",0.363163,NA,NA,NA,NA,0.363163,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-04,2025-01-10,"$","Dividendo",0.527473,NA,NA,NA,NA,0.5274734,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-18,2025-01-24,"$","Dividendo",1.476629,NA,NA,NA,NA,1.4766294,"boletin",NA
@@ -4728,6 +4730,8 @@
 "Fondo de Inversión HMC Ares Special Situations IV - Global Distressed Debt","I",NA,NA,2025-06-10,2025-06-16,"US$","Reparto",0.011579,NA,NA,NA,NA,0.0115794094,"boletin",NA
 "Fondo de Inversión HMC Ares Special Situations IV - Global Distressed Debt","C",NA,NA,2026-01-06,2026-01-12,"US$","Dividendo",0.11359,NA,NA,NA,NA,0.1135902721,"boletin",NA
 "Fondo de Inversión HMC Ares Special Situations IV - Global Distressed Debt","I",NA,NA,2026-01-06,2026-01-12,"US$","Dividendo",0.014004,NA,NA,NA,NA,0.0140041576,"boletin",NA
+"Fondo de Inversión HMC Ares Special Situations IV - Global Distressed Debt","C",NA,NA,2026-09-08,2026-09-14,"US$","Reparto",0.131171,NA,NA,NA,NA,0.1311706746,"boletin",NA
+"Fondo de Inversión HMC Ares Special Situations IV - Global Distressed Debt","I",NA,NA,2026-09-08,2026-09-14,"US$","Reparto",0.016172,NA,NA,NA,NA,0.0161715855,"boletin",NA
 "Fondo de Inversión HMC CD&R Fund XII","I","10414","FINRE",2025-02-26,2025-03-04,"US$","Dividendo",0.023291,NA,NA,NA,NA,0.0232909359,"boletin",NA
 "Fondo de Inversión HMC CD&R Fund XII","I","10414","FINRE",2025-02-26,2025-03-04,"US$","Reparto",0.022876,NA,NA,NA,NA,0.0228757464,"boletin",NA
 "Fondo de Inversión HMC CD&R Fund XII","I","10414","FINRE",2025-10-28,2025-11-05,"US$","Dividendo",0.133988,NA,NA,NA,NA,0.1339878137,"boletin",NA
@@ -8623,6 +8627,10 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "VOLCOMCAPITAL Private Equity IX Fondo de Inversión","B","10186","FINRE",2026-03-11,2026-03-17,"US$","Dividendo",0.002617,NA,NA,NA,NA,0.0026168653286335,"boletin",NA
 "VOLCOMCAPITAL Private Equity IX Fondo de Inversión","C","10186","FINRE",2026-03-11,2026-03-17,"US$","Dividendo",0.002676,NA,NA,NA,NA,0.0026756742677298,"boletin",NA
 "VOLCOMCAPITAL Private Equity IX Fondo de Inversión","D","10186","FINRE",2026-03-11,2026-03-17,"US$","Dividendo",0.002616,NA,NA,NA,NA,0.0026161430641379,"boletin",NA
+"VOLCOMCAPITAL Private Equity IX Fondo de Inversión","A","10186","FINRE",2026-09-09,2026-09-15,"US$","Dividendo",0.00345,NA,NA,NA,NA,0.0034499101754012,"boletin",NA
+"VOLCOMCAPITAL Private Equity IX Fondo de Inversión","B","10186","FINRE",2026-09-09,2026-09-15,"US$","Dividendo",0.003526,NA,NA,NA,NA,0.0035263520715919,"boletin",NA
+"VOLCOMCAPITAL Private Equity IX Fondo de Inversión","C","10186","FINRE",2026-09-09,2026-09-15,"US$","Dividendo",0.003609,NA,NA,NA,NA,0.0036086567683284,"boletin",NA
+"VOLCOMCAPITAL Private Equity IX Fondo de Inversión","D","10186","FINRE",2026-09-09,2026-09-15,"US$","Dividendo",0.00353,NA,NA,NA,NA,0.0035304203575695,"boletin",NA
 "VOLCOMCAPITAL Private Equity Small Cap II Fondo de Inversión","A","10513","FINRE",2025-03-22,2025-03-28,"US$","Reparto",0.070021,NA,NA,NA,NA,0.0700209758464693,"boletin",NA
 "VOLCOMCAPITAL Private Equity Small Cap II Fondo de Inversión","B","10513","FINRE",2025-03-22,2025-03-28,"US$","Reparto",0.070345,NA,NA,NA,NA,0.0703452257939044,"boletin",NA
 "VOLCOMCAPITAL Private Equity Small Cap II Fondo de Inversión","A","10513","FINRE",2025-04-28,2025-05-05,"US$","Dividendo",0.017735,NA,NA,NA,NA,0.0177345042238676,"boletin",NA
