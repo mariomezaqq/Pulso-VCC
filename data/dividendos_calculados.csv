@@ -2679,6 +2679,8 @@
 "Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-08-27,2026-09-02,"$","Dividendo",0.080013,NA,NA,NA,NA,0.080013309,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","IR","8723","RGFMU",2026-09-05,2026-09-11,"$","Dividendo",0.169554,NA,NA,NA,NA,0.169554464,"boletin",NA
 "Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-09-05,2026-09-11,"$","Dividendo",0.170743,NA,NA,NA,NA,0.17074274,"boletin",NA
+"Fondo Mutuo LarrainVial Enfoque","IR","8723","RGFMU",2026-09-09,2026-09-15,"$","Dividendo",0.491159,NA,NA,NA,NA,0.491158838,"boletin",NA
+"Fondo Mutuo LarrainVial Enfoque","R","8723","RGFMU",2026-09-09,2026-09-15,"$","Dividendo",0.494568,NA,NA,NA,NA,0.494567976,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-02,2025-01-08,"$","Dividendo",0.363163,NA,NA,NA,NA,0.363163,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-04,2025-01-10,"$","Dividendo",0.527473,NA,NA,NA,NA,0.5274734,"boletin",NA
 "Fondo Mutuo Toesca Chile Equities","B","9414","RGFMU",2025-01-18,2025-01-24,"$","Dividendo",1.476629,NA,NA,NA,NA,1.4766294,"boletin",NA
@@ -2737,6 +2739,8 @@
 "Fondo de Inversion Singular Leaseback II","I",NA,NA,2025-05-15,2025-05-22,"$","Reparto",121.84367,NA,NA,NA,NA,121.8436699,"boletin",NA
 "Fondo de Inversion Singular Leaseback II","A",NA,NA,2026-04-01,2026-04-09,"$","Reparto",144.461146,NA,NA,NA,NA,144.4611464,"boletin",NA
 "Fondo de Inversion Singular Leaseback II","I",NA,NA,2026-04-01,2026-04-09,"$","Reparto",140.414237,NA,NA,NA,NA,140.4142369,"boletin",NA
+"Fondo de Inversion Singular Leaseback II","A",NA,NA,2026-09-10,2026-09-16,"$","Reparto",1437.859237,NA,NA,NA,NA,1437.8592373,"boletin",NA
+"Fondo de Inversion Singular Leaseback II","I",NA,NA,2026-09-10,2026-09-16,"$","Reparto",1402.731088,NA,NA,NA,NA,1402.731088,"boletin",NA
 "Fondo de Inversion Singular Private Equity I","A","10308","FINRE",2026-04-29,2026-05-06,"US$","Reparto",4.75341,NA,NA,NA,NA,4.7534099,"boletin",NA
 "Fondo de Inversion Singular Private Equity I","I","10308","FINRE",2026-04-29,2026-05-06,"US$","Reparto",4.807179,NA,NA,NA,NA,4.8071786,"boletin",NA
 "Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2025-06-10,2025-06-16,"US$","Dividendo",0.005229,NA,NA,NA,NA,0.005229243380965,"boletin",NA
@@ -5859,6 +5863,11 @@
 "Fondo de Inversión Outdoors","C",NA,NA,2025-12-26,2026-01-02,"$","Dividendo",2303.606707,NA,NA,NA,NA,2303.6067072,"boletin",NA
 "Fondo de Inversión Outdoors","D",NA,NA,2025-12-26,2026-01-02,"$","Dividendo",2560.361876,NA,NA,NA,NA,2560.36187575,"boletin",NA
 "Fondo de Inversión Outdoors","E",NA,NA,2025-12-26,2026-01-02,"$","Dividendo",2654.88997,NA,NA,NA,NA,2654.88997018,"boletin",NA
+"Fondo de Inversión Outdoors","A",NA,NA,2026-09-04,2026-09-10,"$","Dividendo",165804.275,NA,NA,NA,NA,165804.275,"boletin",NA
+"Fondo de Inversión Outdoors","B",NA,NA,2026-09-04,2026-09-10,"$","Dividendo",6802.85224,NA,NA,NA,NA,6802.85224,"boletin",NA
+"Fondo de Inversión Outdoors","C",NA,NA,2026-09-04,2026-09-10,"$","Dividendo",6689.07354,NA,NA,NA,NA,6689.07354,"boletin",NA
+"Fondo de Inversión Outdoors","D",NA,NA,2026-09-04,2026-09-10,"$","Dividendo",7528.76557,NA,NA,NA,NA,7528.76557,"boletin",NA
+"Fondo de Inversión Outdoors","E",NA,NA,2026-09-04,2026-09-10,"$","Dividendo",6337.33097,NA,NA,NA,NA,6337.33097,"boletin",NA
 "Fondo de Inversión PE Secondary Deal II","A","10309","FINRE",2025-12-04,2025-12-11,"US$","Reparto",0.010539,NA,NA,NA,NA,0.01053920304153,"boletin",NA
 "Fondo de Inversión PE Secondary Deal II","P1","10309","FINRE",2025-12-04,2025-12-11,"US$","Reparto",0.010671,NA,NA,NA,NA,0.0106706,"boletin",NA
 "Fondo de Inversión PE Secondary Deal II","P2","10309","FINRE",2025-12-04,2025-12-11,"US$","Reparto",0.01087,NA,NA,NA,NA,0.010869589411765,"boletin",NA
@@ -7033,6 +7042,7 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2026-06-13,2026-06-19,"$","Dividendo",2068.657014,NA,NA,NA,NA,2068.657014286,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2026-06-20,2026-06-26,"$","Reparto",2856.6608,NA,NA,NA,NA,2856.6608,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2026-07-17,2026-07-23,"$","Reparto",3530.15685,NA,NA,NA,NA,3530.15685,"boletin",NA
+"Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P",NA,NA,2026-09-11,2026-09-17,"$","Reparto",12817.397164,NA,NA,NA,NA,12817.397164286,"boletin",NA
 "Frontal Trust Infraestructura Alpha Fondo de Inversión","A",NA,NA,2026-01-24,2026-01-30,"$","Reparto",296.883596,NA,NA,NA,NA,296.88359569,"boletin",NA
 "Frontal Trust Infraestructura Alpha Fondo de Inversión","B",NA,NA,2026-01-24,2026-01-30,"$","Reparto",311.384,NA,NA,NA,NA,311.384,"boletin",NA
 "Frontal Trust Mercado Pago Créditos Fondo de Inversión","P","10689","FINRE",2025-03-08,2025-03-14,"$","Dividendo",2.632928,NA,NA,NA,NA,2.632927593,"boletin",NA
@@ -7981,6 +7991,8 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Quest Operaciones Inmobiliarias Fondo de Inversión","B",NA,NA,2026-02-04,2026-02-10,"$","Reparto",3823.877889,NA,NA,NA,NA,3823.87788884,"boletin",NA
 "Quest Operaciones Inmobiliarias Fondo de Inversión","A",NA,NA,2026-06-12,2026-06-18,"$","Reparto",3010.304524,NA,NA,NA,NA,3010.3045236729,"boletin",NA
 "Quest Operaciones Inmobiliarias Fondo de Inversión","B",NA,NA,2026-06-12,2026-06-18,"$","Reparto",3018.894967,NA,NA,NA,NA,3018.8949667281,"boletin",NA
+"Quest Operaciones Inmobiliarias Fondo de Inversión","A",NA,NA,2026-09-11,2026-09-17,"$","Reparto",3114.792029,NA,NA,NA,NA,3114.79202891,"boletin",NA
+"Quest Operaciones Inmobiliarias Fondo de Inversión","B",NA,NA,2026-09-11,2026-09-17,"$","Reparto",3123.892207,NA,NA,NA,NA,3123.8922069,"boletin",NA
 "Quest Renta Local Fondo de Inversión","A","9153","FIRES",2025-06-17,2025-06-24,"$","Dividendo",497.993974,NA,NA,NA,NA,497.99397355,"boletin",NA
 "Quest Renta Local Fondo de Inversión","B","9153","FIRES",2025-06-17,2025-06-24,"$","Dividendo",520.588817,NA,NA,NA,NA,520.58881686,"boletin",NA
 "Quest Renta Local Fondo de Inversión","L","9153","FIRES",2025-06-17,2025-06-24,"$","Dividendo",32.374359,NA,NA,NA,NA,32.37435897,"boletin",NA
