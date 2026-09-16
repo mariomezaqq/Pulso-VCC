@@ -4411,6 +4411,9 @@
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario II","A",NA,NA,2026-07-03,2026-07-09,"$","Reparto",1419.383577,NA,NA,NA,NA,1419.383577,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario II","E",NA,NA,2026-07-03,2026-07-09,"$","Reparto",1328.952408,NA,NA,NA,NA,1328.952408,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario II","I",NA,NA,2026-07-03,2026-07-09,"$","Reparto",1408.878962,NA,NA,NA,NA,1408.878962,"boletin",NA
+"Fondo de Inversión FYNSA Desarrollo Inmobiliario II","Altos Montos",NA,NA,2026-09-15,2026-09-23,"$","Reparto",2375.961592,NA,NA,NA,NA,2375.961592,"boletin",NA
+"Fondo de Inversión FYNSA Desarrollo Inmobiliario II","Ejecutiva",NA,NA,2026-09-15,2026-09-23,"$","Reparto",2221.495482,NA,NA,NA,NA,2221.495482,"boletin",NA
+"Fondo de Inversión FYNSA Desarrollo Inmobiliario II","Institucional",NA,NA,2026-09-15,2026-09-23,"$","Reparto",2359.782064,NA,NA,NA,NA,2359.782064,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario III","A",NA,NA,2025-01-11,2025-01-17,"$","Reparto",1216.571911,NA,NA,NA,NA,1216.571911,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario III","B",NA,NA,2025-01-11,2025-01-17,"$","Reparto",1238.299606,NA,NA,NA,NA,1238.299606,"boletin",NA
 "Fondo de Inversión FYNSA Desarrollo Inmobiliario IV","A",NA,NA,2025-03-28,2025-04-03,"$","Reparto",998.64002,NA,NA,NA,NA,998.64002,"boletin",NA
@@ -5973,8 +5976,8 @@
 "Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-04-10,2026-04-16,"$","Dividendo",150.691824,NA,NA,NA,NA,150.6918235,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-08-11,2026-08-18,"$","Dividendo",28.953521,NA,NA,NA,NA,28.953521,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-08-11,2026-08-18,"$","Dividendo",20.073096,NA,NA,NA,NA,20.073096,"boletin",NA
-"Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-09-09,2026-09-15,"$","Dividendo",32.283986,NA,NA,NA,NA,32.2839865,"boletin",NA
-"Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-09-09,2026-09-15,"$","Dividendo",22.402232,NA,NA,NA,NA,22.4022319,"boletin",NA
+"Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-09-09,2026-09-15,"$","Dividendo",32.296126,NA,NA,NA,NA,32.2961261,"boletin",NA
+"Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-09-09,2026-09-15,"$","Dividendo",22.431103,NA,NA,NA,NA,22.4311027,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global","A",NA,NA,2025-01-07,2025-01-13,"US$","Reparto",0.174315,NA,NA,NA,NA,0.1743149,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2025-04-06,2025-04-11,"US$","Reparto",0.176995,NA,NA,NA,NA,0.17699525,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2025-11-19,2025-11-25,"US$","Reparto",90.1248,NA,NA,NA,NA,90.1248,"boletin",NA
@@ -7918,6 +7921,8 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-03-11,2026-03-17,"US$","Dividendo",0.017879,NA,NA,NA,NA,0.0178792,"boletin",NA
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-03-11,2026-03-17,"US$","Dividendo",0.018695,NA,NA,NA,NA,0.01869518,"boletin",NA
 "Picton - West Street Capital Partners VIII","C",NA,NA,2026-05-13,2026-05-19,"US$","Reparto",0.012707,NA,NA,NA,NA,0.01270741,"boletin",NA
+"Picton - West Street Capital Partners VIII Fondo de Inversión","C","9995","FINRE",2026-09-16,2026-09-24,"US$","Dividendo",0.002842,NA,NA,NA,NA,0.00284196,"boletin",NA
+"Picton - West Street Capital Partners VIII Fondo de Inversión","C","9995","FINRE",2026-09-16,2026-09-24,"US$","Reparto",0.011945,NA,NA,NA,NA,0.01194474,"boletin",NA
 "Pionero Fondo de Inversión","A","7010","FINRE",2025-06-21,2025-06-27,"$","Dividendo",95.988313,NA,NA,NA,NA,95.988313,"boletin",NA
 "Pionero Fondo de Inversión","AE","7010","FINRE",2025-06-21,2025-06-27,"$","Dividendo",96.913677,NA,NA,NA,NA,96.913677,"boletin",NA
 "Pionero Fondo de Inversión","R","7010","FINRE",2025-06-21,2025-06-27,"$","Dividendo",94.649738,NA,NA,NA,NA,94.649738,"boletin",NA
@@ -8785,6 +8790,10 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "VOLCOMCAPITAL Real Estate V Fondo de Inversión","B","9913","FINRE",2026-03-26,2026-04-01,"US$","Dividendo",0.07616,NA,NA,NA,NA,0.0761600768464547,"boletin",NA
 "VOLCOMCAPITAL Real Estate V Fondo de Inversión","A","9913","FINRE",2026-03-26,2026-04-01,"US$","Reparto",0.002032,NA,NA,NA,NA,0.00203248192260491,"boletin",NA
 "VOLCOMCAPITAL Real Estate V Fondo de Inversión","B","9913","FINRE",2026-03-26,2026-04-01,"US$","Reparto",0.002087,NA,NA,NA,NA,0.00208708317993321,"boletin",NA
+"VOLCOMCAPITAL Real Estate V Fondo de Inversión","A","9913","FINRE",2026-09-15,2026-09-23,"US$","Dividendo",0.033985,NA,NA,NA,NA,0.033984752302164,"boletin",NA
+"VOLCOMCAPITAL Real Estate V Fondo de Inversión","B","9913","FINRE",2026-09-15,2026-09-23,"US$","Dividendo",0.034937,NA,NA,NA,NA,0.0349372217539755,"boletin",NA
+"VOLCOMCAPITAL Real Estate V Fondo de Inversión","A","9913","FINRE",2026-09-15,2026-09-23,"US$","Reparto",0.027035,NA,NA,NA,NA,0.0270346450297096,"boletin",NA
+"VOLCOMCAPITAL Real Estate V Fondo de Inversión","B","9913","FINRE",2026-09-15,2026-09-23,"US$","Reparto",0.027794,NA,NA,NA,NA,0.0277941180318188,"boletin",NA
 "VOLCOMCAPITAL Special Situations II Fondo de Inversión","A","9299","FINRE",2025-03-05,2025-03-11,"US$","Reparto",0.002896,NA,NA,NA,NA,0.0028958431204175,"boletin",NA
 "VOLCOMCAPITAL Special Situations II Fondo de Inversión","B","9299","FINRE",2025-03-05,2025-03-11,"US$","Reparto",0.003279,NA,NA,NA,NA,0.0032788605746669,"boletin",NA
 "VOLCOMCAPITAL Special Situations II Fondo de Inversión","A","9299","FINRE",2025-06-11,2025-06-17,"US$","Reparto",0.003665,NA,NA,NA,NA,0.0036647675657541,"boletin",NA
@@ -8827,6 +8836,13 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","R",NA,NA,2026-07-23,2026-07-29,"US$","Reparto",0.006875,NA,NA,NA,NA,0.0068752518,"boletin",NA
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","A",NA,NA,2026-08-13,2026-08-20,"US$","Reparto",0.0076,NA,NA,NA,NA,0.0075996,"boletin",NA
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","R",NA,NA,2026-08-13,2026-08-20,"US$","Reparto",0.007581,NA,NA,NA,NA,0.0075812884,"boletin",NA
+"Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","A",NA,NA,2026-09-15,2026-09-23,"US$","Reparto",0.006888,NA,NA,NA,NA,0.00688778,"boletin",NA
+"Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","R",NA,NA,2026-09-15,2026-09-23,"US$","Reparto",0.006867,NA,NA,NA,NA,0.0068670673,"boletin",NA
+"Vinci Compass BXD Private Debt Fondo de Inversión","A",NA,NA,2026-09-15,2026-09-23,"US$","Dividendo",0.012564,NA,NA,NA,NA,0.0125644828,"boletin",NA
+"Vinci Compass BXD Private Debt Fondo de Inversión","B",NA,NA,2026-09-15,2026-09-23,"US$","Dividendo",0.012792,NA,NA,NA,NA,0.0127921826,"boletin",NA
+"Vinci Compass BXD Private Debt Fondo de Inversión","C",NA,NA,2026-09-15,2026-09-23,"US$","Dividendo",0.012783,NA,NA,NA,NA,0.0127831798,"boletin",NA
+"Vinci Compass BXD Private Debt Fondo de Inversión","I",NA,NA,2026-09-15,2026-09-23,"US$","Dividendo",0.012783,NA,NA,NA,NA,0.0127833079,"boletin",NA
+"Vinci Compass BXD Private Debt Fondo de Inversión","R",NA,NA,2026-09-15,2026-09-23,"US$","Dividendo",0.012472,NA,NA,NA,NA,0.0124719039,"boletin",NA
 "Vinci Compass Cinven VII Private Equity Fondo de Inversión","C",NA,NA,2026-07-07,2026-07-13,"EURO","Dividendo",0.066442,NA,NA,NA,NA,0.0664422925,"boletin",NA
 "Vinci Compass Cinven VII Private Equity Fondo de Inversión","I",NA,NA,2026-07-07,2026-07-13,"EURO","Dividendo",0.066441,NA,NA,NA,NA,0.0664407788,"boletin",NA
 "Vinci Compass Cinven VII Private Equity Fondo de Inversión","IA",NA,NA,2026-07-07,2026-07-13,"EURO","Dividendo",0.066441,NA,NA,NA,NA,0.0664408885,"boletin",NA
