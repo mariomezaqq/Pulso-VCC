@@ -111,8 +111,19 @@ preparar_todo <- function(vc_df, ov_df = NULL) {
   div <- fusionar_overrides(cargar_dividendos_pulso(ruta_div), ov_df)
   series_aj <- enriquecer_series_ajustadas(datos$series, div)
   macro <- aplicar_indices_manuales(datos$macro, vc_df, fc)
+  series_man <- construir_series_manual(vc_df)
+  # "MBI Deuda estructurada" es manual (VC ingresado a mano) pero sus dividendos SI
+  # se cargan del boletin (ticker CFI-MBICHA, ver MAPEO_SEBRA); sin este ajuste
+  # quedaban registrados en `div` pero nunca se sumaban al VC para la rentabilidad.
+  if (!is.null(series_man[["MBI Deuda estructurada"]])) {
+    ev <- div[["MBI Deuda estructurada"]]
+    ev_t <- if (!is.null(ev)) tibble(fecha_limite = as.Date(ev$fecha_limite),
+                                     monto = as.numeric(ev$monto), moneda = NA_character_) else NULL
+    series_man[["MBI Deuda estructurada"]] <- aplicar_dividendos_a_historico(
+      series_man[["MBI Deuda estructurada"]], ev_t, moneda_vc = "$")
+  }
   pd <- construir_pulso_data(series_aj, fecha_cierre = fc, macro = macro,
-                             rf_usa = datos$rf_usa, series_manual = construir_series_manual(vc_df))
+                             rf_usa = datos$rf_usa, series_manual = series_man)
   list(pd = pd, datos = datos, series_aj = series_aj, div = div)
 }
 preparar_pd <- function(vc_df, ov_df = NULL) { t <- preparar_todo(vc_df, ov_df); if (is.null(t)) NULL else t$pd }
