@@ -88,7 +88,7 @@ aplicar_indices_manuales <- function(macro, vc_df, fc) {
 }
 
 preparar_todo <- function(vc_df, ov_df = NULL) {
-  store_sync("series_vc.rds")   # en la nube baja el ultimo dato del cron; en local mantiene el archivo
+  store_sync_fresh("series_vc.rds")   # en la nube baja el ultimo dato del cron (via API, sin cache de CDN); en local mantiene el archivo
   # fondos_curados.csv (categoria/duracion/liquidez/TAC/etc) solo se sincronizaba
   # UNA VEZ al arrancar el proceso R (linea ~20). Si otra sesion/instancia edito
   # y commiteo un cambio, este proceso quedaba con FONDOS/CATEGORIAS/DATOS_FONDO
@@ -379,7 +379,7 @@ server <- function(input, output, session) {
 
   # ---- Dividendos: subir + persistir ----
   estado_div <- function() {
-    store_sync("dividendos.xlsx")
+    store_sync_fresh("dividendos.xlsx")
     if (file.exists("data/dividendos.xlsx"))
       paste0("Archivo guardado: dividendos.xlsx (", format(file.info("data/dividendos.xlsx")$mtime, "%d/%m %H:%M"), ")")
     else "Aún no se ha subido ningún archivo de dividendos."
@@ -394,7 +394,7 @@ server <- function(input, output, session) {
   # ---- Tabla de dividendos cargados ----
   output$tbl_div_data <- renderDT({
     rv$tick
-    store_sync("dividendos.xlsx")
+    store_sync_fresh("dividendos.xlsx")
     ruta <- if (file.exists("data/dividendos.xlsx")) "data/dividendos.xlsx" else NULL
     div <- fusionar_overrides(cargar_dividendos_pulso(ruta), rv$ov)
     df <- do.call(rbind, lapply(names(div), function(nm) {

@@ -54,8 +54,8 @@ store_sync <- function(rel) {
 #' ~5 min: releer por ahi justo despues de guardar puede traer la version
 #' VIEJA y, al fusionar y volver a guardar, borrar lo recien commiteado).
 #' Solo funciona si hay token (si no, NULL -> el llamador cae a store_sync).
-#' @return texto del archivo (character) o NULL si no se pudo leer.
-store_read_fresh_text <- function(rel) {
+#' @return vector raw (bytes) del archivo, o NULL si no se pudo leer.
+store_read_fresh_raw <- function(rel) {
   g <- .gh(); if (!nzchar(g$token) || !nzchar(g$repo)) return(NULL)
   api <- paste0("https://api.github.com/repos/", g$repo, "/contents/data/", rel)
   hdr <- add_headers(Authorization = paste("token", g$token),
@@ -65,21 +65,31 @@ store_read_fresh_text <- function(rel) {
   if (is.null(r) || status_code(r) != 200) return(NULL)
   b64 <- content(r, "parsed")$content
   if (is.null(b64)) return(NULL)
-  tryCatch(rawToChar(jsonlite::base64_dec(gsub("[\r\n]", "", b64))), error = function(e) NULL)
+  tryCatch(jsonlite::base64_dec(gsub("[\r\n]", "", b64)), error = function(e) NULL)
+}
+
+#' Igual que store_read_fresh_raw() pero devuelve texto (character). Usar solo
+#' para archivos de texto (CSV); para binarios (.rds, .xlsx) usar la version raw.
+store_read_fresh_text <- function(rel) {
+  raw <- store_read_fresh_raw(rel)
+  if (is.null(raw)) return(NULL)
+  tryCatch(rawToChar(raw), error = function(e) NULL)
 }
 
 #' Como store_sync(), pero via la API de contenidos de GitHub (sin el cache
 #' de CDN de raw.githubusercontent.com). Usar para archivos que se editan y
 #' se vuelven a renderizar en la misma sesion (ej. fondos_curados.csv desde
-#' el panel admin): con store_sync, el primer render inmediatamente despues
-#' de guardar puede pisar el archivo recien escrito con la version vieja que
-#' el CDN todavia tiene cacheada, revirtiendo silenciosamente la edicion.
+#' el panel admin, o series_vc.rds justo despues de que el cron termino): con
+#' store_sync, el primer render inmediatamente despues de guardar puede pisar
+#' el archivo recien escrito con la version vieja que el CDN todavia tiene
+#' cacheada, revirtiendo silenciosamente la edicion. Binary-safe (usa bytes
+#' crudos, nunca pasa por texto) para que sirva igual con .rds/.xlsx que con .csv.
 store_sync_fresh <- function(rel) {
   local <- store_path(rel)
-  txt <- store_read_fresh_text(rel)
-  if (is.null(txt)) return(store_sync(rel))  # sin token/error -> cae a CDN/local
+  raw <- store_read_fresh_raw(rel)
+  if (is.null(raw)) return(store_sync(rel))  # sin token/error -> cae a CDN/local
   dir.create(dirname(local), showWarnings = FALSE, recursive = TRUE)
-  writeBin(charToRaw(txt), local)
+  writeBin(raw, local)
   if (file.exists(local)) local else NULL
 }
 
