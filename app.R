@@ -140,8 +140,10 @@ ui <- page_navbar(
       p(class = "text-muted", "Los cambios se guardan y persisten (en GitHub cuando está configurado). El dashboard se recalcula al instante."),
       card(card_header("➕ Agregar fondo desde el catálogo CMF"),
         p(class = "text-muted", "Busca el fondo en el catálogo del comparador (trae run/serie/row correctos de la CMF). Elige su categoría, completa los datos que quieras mostrar y agrégalo. Se guarda y se dispara la consulta a la CMF; en ~5 min recarga y aparecen sus rentabilidades."),
-        selectizeInput("cat_fondo", "Fondo (busca por nombre)", choices = NULL, width = "100%",
-                       options = list(placeholder = "Escribe para buscar en el catálogo...", maxOptions = 50)),
+        selectizeInput("cat_fondo", "Fondo (busca por nombre)", width = "100%",
+                       choices = if (!is.null(CATALOGO)) stats::setNames(CATALOGO$key, CATALOGO$label) else NULL,
+                       options = list(placeholder = "Escribe para buscar en el catálogo...",
+                                      maxOptions = 3500, closeAfterSelect = TRUE)),
         uiOutput("cat_preview"),
         layout_columns(col_widths = c(4,4,4),
           selectInput("cat_hoja", "Categoría (hoja)", choices = NULL),
@@ -216,10 +218,10 @@ server <- function(input, output, session) {
   )
 
   # ---- Agregar / quitar fondos ----
-  # Poblar el buscador del catalogo (server-side: son ~3400 series) y las hojas
-  if (!is.null(CATALOGO))
-    updateSelectizeInput(session, "cat_fondo", server = TRUE,
-                         choices = stats::setNames(CATALOGO$key, CATALOGO$label))
+  # El buscador de fondos ya trae las ~3500 opciones cargadas en el navegador
+  # (ver selectizeInput en la UI): el filtrado es instantaneo, sin ida y vuelta
+  # al servidor por cada letra (eso era lo que se sentia lento/no funcionaba
+  # en shinyapps.io). Aqui solo faltan las categorias (hojas).
   observe({
     hojas <- if (!is.null(rv$cur)) unique(rv$cur$hoja) else character()
     updateSelectInput(session, "cat_hoja", choices = hojas,
