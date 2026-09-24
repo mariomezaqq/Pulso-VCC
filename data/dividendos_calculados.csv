@@ -314,6 +314,8 @@
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2026-06-16,2026-06-22,"$","Dividendo",10.73011,NA,NA,NA,NA,10.730109943,"boletin",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2026-07-31,2026-08-06,"$","Reparto",1407.7626,NA,NA,NA,NA,1407.7626,"boletin",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2026-07-31,2026-08-06,"$","Reparto",1495.3922,NA,NA,NA,NA,1495.3922,"boletin",NA
+"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2026-09-23,2026-09-29,"$","Dividendo",8.302691,NA,NA,NA,NA,8.302691346,"boletin",NA
+"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2026-09-23,2026-09-29,"$","Dividendo",8.830753,NA,NA,NA,NA,8.830752874,"boletin",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-04-24,2025-04-30,"$","Dividendo",288.045,NA,NA,NA,NA,288.045,"boletin",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2025-04-24,2025-04-30,"$","Dividendo",290.989925,NA,NA,NA,NA,290.989925075,"boletin",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2026-06-04,2026-06-10,"$","Dividendo",288.172414,NA,NA,NA,NA,288.172413793,"boletin",NA
@@ -3028,6 +3030,14 @@
 "Fondo de Inversión Activa Deuda Automotriz Perú","I","9703","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.016946,NA,NA,NA,NA,0.0169462004520056,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Perú","R","9703","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.016088,NA,NA,NA,NA,0.0160883877559026,"boletin",NA
 "Fondo de Inversión Activa Deuda Automotriz Perú","S","9703","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.017096,NA,NA,NA,NA,0.017095682,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","F","9703","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.000686,NA,NA,NA,NA,0.000686,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","I","9703","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.000702,NA,NA,NA,NA,0.000702,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","R","9703","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.000666,NA,NA,NA,NA,0.000666,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","S","9703","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.000709,NA,NA,NA,NA,0.000709,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","F","9703","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.016689,NA,NA,NA,NA,0.0166887582136089,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","I","9703","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.017092,NA,NA,NA,NA,0.0170918694699284,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","R","9703","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.016216,NA,NA,NA,NA,0.0162159471557167,"boletin",NA
+"Fondo de Inversión Activa Deuda Automotriz Perú","S","9703","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.017245,NA,NA,NA,NA,0.017244604,"boletin",NA
 "Fondo de Inversión Activa Deuda Estructurada Inmobiliaria","I",NA,NA,2025-01-08,2025-01-14,"$","Reparto",19.089047,NA,NA,NA,NA,19.08904707,"boletin",NA
 "Fondo de Inversión Activa Deuda Estructurada Inmobiliaria","R",NA,NA,2025-01-08,2025-01-14,"$","Reparto",18.951257,NA,NA,NA,NA,18.95125705,"boletin",NA
 "Fondo de Inversión Activa Deuda Estructurada Inmobiliaria","I",NA,NA,2025-02-05,2025-02-11,"$","Dividendo",1.060606,NA,NA,NA,NA,1.06060635,"boletin",NA
@@ -3324,6 +3334,8 @@
 "Fondo de Inversión Activa Estrategia Automotriz IV","R","10705","FINRE",2026-07-15,2026-07-22,"$","Reparto",28.288188,NA,NA,NA,NA,28.288187694404,"boletin",NA
 "Fondo de Inversión Activa Estrategia Automotriz IV","I","10705","FINRE",2026-08-12,2026-08-19,"$","Reparto",34.894883,NA,NA,NA,NA,34.8948830716294,"boletin",NA
 "Fondo de Inversión Activa Estrategia Automotriz IV","R","10705","FINRE",2026-08-12,2026-08-19,"$","Reparto",34.812888,NA,NA,NA,NA,34.8128879758768,"boletin",NA
+"Fondo de Inversión Activa Estrategia Automotriz IV","I","10705","FINRE",2026-09-23,2026-09-29,"$","Reparto",29.68091,NA,NA,NA,NA,29.68091036,"boletin",NA
+"Fondo de Inversión Activa Estrategia Automotriz IV","R","10705","FINRE",2026-09-23,2026-09-29,"$","Reparto",29.586638,NA,NA,NA,NA,29.58663838,"boletin",NA
 "Fondo de Inversión Activa Financiamiento Estructurado","A","9219","FINRE",2025-01-08,2025-01-14,"$","Reparto",30.585792,NA,NA,NA,NA,30.5857919,"boletin",NA
 "Fondo de Inversión Activa Financiamiento Estructurado","A","9219","FINRE",2025-02-05,2025-02-11,"$","Reparto",16.341317,NA,NA,NA,NA,16.3413168458814,"boletin",NA
 "Fondo de Inversión Activa Financiamiento Estructurado","A","9219","FINRE",2025-03-05,2025-03-11,"$","Dividendo",0.777737,NA,NA,NA,NA,0.7777365305797,"boletin",NA
@@ -3854,6 +3866,12 @@
 "Fondo de Inversión Altamar X Midmarket","B","9775","FINRE",2026-05-20,2026-05-27,"US$","Reparto",0.02369,NA,NA,NA,NA,0.0236898631853333,"boletin",NA
 "Fondo de Inversión Altamar X Midmarket","C","9775","FINRE",2026-05-20,2026-05-27,"US$","Reparto",0.02357,NA,NA,NA,NA,0.0235699506582204,"boletin",NA
 "Fondo de Inversión Altamar X Midmarket","D","9775","FINRE",2026-05-20,2026-05-27,"US$","Reparto",0.022023,NA,NA,NA,NA,0.0220234614822394,"boletin",NA
+"Fondo de Inversión Altamar X Midmarket","B","9775","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.003361,NA,NA,NA,NA,0.003361,"boletin",NA
+"Fondo de Inversión Altamar X Midmarket","C","9775","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.003343,NA,NA,NA,NA,0.003343,"boletin",NA
+"Fondo de Inversión Altamar X Midmarket","D","9775","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.003116,NA,NA,NA,NA,0.003116,"boletin",NA
+"Fondo de Inversión Altamar X Midmarket","B","9775","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.011007,NA,NA,NA,NA,0.011006538,"boletin",NA
+"Fondo de Inversión Altamar X Midmarket","C","9775","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.010949,NA,NA,NA,NA,0.01094872,"boletin",NA
+"Fondo de Inversión Altamar X Midmarket","D","9775","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.010203,NA,NA,NA,NA,0.010203284,"boletin",NA
 "Fondo de Inversión Alza Multifamily","A",NA,NA,2025-03-12,2025-03-18,"$","Dividendo",38647.94,NA,NA,NA,NA,38647.94,"boletin",NA
 "Fondo de Inversión Alza Multifamily","B",NA,NA,2025-03-12,2025-03-18,"$","Dividendo",920.763013,NA,NA,NA,NA,920.763013,"boletin",NA
 "Fondo de Inversión Aubrey Global Emerging Markets","A",NA,NA,2025-11-06,2025-11-12,"US$","Dividendo",3.69781,NA,NA,NA,NA,3.6978104335048,"boletin",NA
@@ -5397,6 +5415,12 @@
 "Fondo de Inversión Larraín Vial ACP Secondaries 4","F","9962","FINRE",2026-04-22,2026-04-28,"EURO","Reparto",0.014837,NA,NA,NA,NA,0.0148365448193766,"boletin",NA
 "Fondo de Inversión Larraín Vial ACP Secondaries 4","I","9962","FINRE",2026-04-22,2026-04-28,"EURO","Reparto",0.014834,NA,NA,NA,NA,0.0148337973065184,"boletin",NA
 "Fondo de Inversión Larraín Vial ACP Secondaries 4","R","9962","FINRE",2026-04-22,2026-04-28,"EURO","Reparto",0.013875,NA,NA,NA,NA,0.0138745352214936,"boletin",NA
+"Fondo de Inversión Larraín Vial ACP Secondaries 4","F","9962","FINRE",2026-09-23,2026-09-29,"EURO","Dividendo",0.003293,NA,NA,NA,NA,0.003293,"boletin",NA
+"Fondo de Inversión Larraín Vial ACP Secondaries 4","I","9962","FINRE",2026-09-23,2026-09-29,"EURO","Dividendo",0.003292,NA,NA,NA,NA,0.003292,"boletin",NA
+"Fondo de Inversión Larraín Vial ACP Secondaries 4","R","9962","FINRE",2026-09-23,2026-09-29,"EURO","Dividendo",0.003065,NA,NA,NA,NA,0.003065,"boletin",NA
+"Fondo de Inversión Larraín Vial ACP Secondaries 4","F","9962","FINRE",2026-09-23,2026-09-29,"EURO","Reparto",0.017118,NA,NA,NA,NA,0.0171180249149065,"boletin",NA
+"Fondo de Inversión Larraín Vial ACP Secondaries 4","I","9962","FINRE",2026-09-23,2026-09-29,"EURO","Reparto",0.017115,NA,NA,NA,NA,0.0171148274849159,"boletin",NA
+"Fondo de Inversión Larraín Vial ACP Secondaries 4","R","9962","FINRE",2026-09-23,2026-09-29,"EURO","Reparto",0.015935,NA,NA,NA,NA,0.0159347718833236,"boletin",NA
 "Fondo de Inversión Larraín Vial ACP Secondaries 5","F","10545","FINRE",2025-05-14,2025-05-20,"EURO","Dividendo",0.005156,NA,NA,NA,NA,0.005155991,"boletin",NA
 "Fondo de Inversión Larraín Vial ACP Secondaries 5","I","10545","FINRE",2025-05-14,2025-05-20,"EURO","Dividendo",0.005156,NA,NA,NA,NA,0.005156039,"boletin",NA
 "Fondo de Inversión Larraín Vial ACP Secondaries 5","P","10545","FINRE",2025-05-14,2025-05-20,"EURO","Dividendo",0.005076,NA,NA,NA,NA,0.005076286,"boletin",NA
@@ -5500,6 +5524,14 @@
 "Fondo de Inversión Larraín Vial Apollo X","I","10292","FINRE",2026-03-25,2026-03-31,"US$","Reparto",0.00799,NA,NA,NA,NA,0.007990265,"boletin",NA
 "Fondo de Inversión Larraín Vial Apollo X","P","10292","FINRE",2026-03-25,2026-03-31,"US$","Reparto",0.007517,NA,NA,NA,NA,0.007516737,"boletin",NA
 "Fondo de Inversión Larraín Vial Apollo X","R","10292","FINRE",2026-03-25,2026-03-31,"US$","Reparto",0.007161,NA,NA,NA,NA,0.007161257,"boletin",NA
+"Fondo de Inversión Larraín Vial Apollo X","F","10292","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.00323,NA,NA,NA,NA,0.00323,"boletin",NA
+"Fondo de Inversión Larraín Vial Apollo X","I","10292","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.00323,NA,NA,NA,NA,0.00323,"boletin",NA
+"Fondo de Inversión Larraín Vial Apollo X","P","10292","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.003019,NA,NA,NA,NA,0.003019,"boletin",NA
+"Fondo de Inversión Larraín Vial Apollo X","R","10292","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.002862,NA,NA,NA,NA,0.002862,"boletin",NA
+"Fondo de Inversión Larraín Vial Apollo X","F","10292","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.01034,NA,NA,NA,NA,0.010339999,"boletin",NA
+"Fondo de Inversión Larraín Vial Apollo X","I","10292","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.01034,NA,NA,NA,NA,0.01034,"boletin",NA
+"Fondo de Inversión Larraín Vial Apollo X","P","10292","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.009665,NA,NA,NA,NA,0.009664932,"boletin",NA
+"Fondo de Inversión Larraín Vial Apollo X","R","10292","FINRE",2026-09-23,2026-09-29,"US$","Reparto",0.009161,NA,NA,NA,NA,0.009160936,"boletin",NA
 "Fondo de Inversión Larraín Vial Court Square IV","F","9851","FINRE",2025-02-26,2025-03-04,"US$","Dividendo",0.033703,31421.63,NA,NA,NA,0.0337032019598758,"boletin",NA
 "Fondo de Inversión Larraín Vial Court Square IV","I","9851","FINRE",2025-02-26,2025-03-04,"US$","Dividendo",0.033703,157107.74,NA,NA,NA,0.0337027091266988,"boletin",NA
 "Fondo de Inversión Larraín Vial Court Square IV","R","9851","FINRE",2025-02-26,2025-03-04,"US$","Dividendo",0.030372,60400.95,NA,NA,NA,0.030371863425309,"boletin",NA
@@ -7636,6 +7668,15 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Moneda CARS Fondo de Inversión","I","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.651547,NA,NA,NA,NA,0.651547,"boletin",NA
 "Moneda CARS Fondo de Inversión","P","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.641257,NA,NA,NA,NA,0.641257,"boletin",NA
 "Moneda CARS Fondo de Inversión","Q","9617","FINRE",2026-08-25,2026-08-31,"US$","Dividendo",0.648814,NA,NA,NA,NA,0.648814,"boletin",NA
+"Moneda CARS Fondo de Inversión","A","9617","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.580963,NA,NA,NA,NA,0.580963,"boletin",NA
+"Moneda CARS Fondo de Inversión","B","9617","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.57429,NA,NA,NA,NA,0.57429,"boletin",NA
+"Moneda CARS Fondo de Inversión","D","9617","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.578256,NA,NA,NA,NA,0.578256,"boletin",NA
+"Moneda CARS Fondo de Inversión","E","9617","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.580014,NA,NA,NA,NA,0.580014,"boletin",NA
+"Moneda CARS Fondo de Inversión","F","9617","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.580946,NA,NA,NA,NA,0.580946,"boletin",NA
+"Moneda CARS Fondo de Inversión","G","9617","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.56425,NA,NA,NA,NA,0.56425,"boletin",NA
+"Moneda CARS Fondo de Inversión","I","9617","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.583751,NA,NA,NA,NA,0.583751,"boletin",NA
+"Moneda CARS Fondo de Inversión","P","9617","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.574545,NA,NA,NA,NA,0.574545,"boletin",NA
+"Moneda CARS Fondo de Inversión","Q","9617","FINRE",2026-09-23,2026-09-29,"US$","Dividendo",0.581302,NA,NA,NA,NA,0.581302,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","A","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.205522,NA,NA,NA,NA,2.205522,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","C","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.261165,NA,NA,NA,NA,2.261165,"boletin",NA
 "Moneda Carlyle Europe Partners V Fondo de Inversión","I","9636","FINRE",2025-07-29,2025-08-04,"EURO","Dividendo",2.23516,NA,NA,NA,NA,2.23516,"boletin",NA
@@ -7924,6 +7965,7 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Picton - WP Fondo de Inversión","N","7262","FINRE",2025-12-29,2026-01-05,"US$","Dividendo",0.039811,NA,NA,NA,NA,0.03981142,"boletin",NA
 "Picton - WP Fondo de Inversión","N","7262","FINRE",2026-03-17,2026-03-23,"US$","Dividendo",0.046022,NA,NA,NA,NA,0.04602198,"boletin",NA
 "Picton - WP Fondo de Inversión","N","7262","FINRE",2026-05-29,2026-06-04,"US$","Dividendo",0.067074,NA,NA,NA,NA,0.06707384,"boletin",NA
+"Picton - WP Fondo de Inversión","N","7262","FINRE",2026-09-24,2026-09-30,"US$","Dividendo",0.047652,NA,NA,NA,NA,0.04765227,"boletin",NA
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2025-01-15,2025-01-21,"US$","Dividendo",0.001032,NA,NA,NA,NA,0.00103165,"boletin",NA
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2025-01-15,2025-01-21,"US$","Dividendo",0.001078,NA,NA,NA,NA,0.00107784,"boletin",NA
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2025-01-15,2025-01-21,"US$","Reparto",0.015547,NA,NA,NA,NA,0.01554703,"boletin",NA
@@ -8910,6 +8952,10 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Vinci Compass Global Investments Fondo de Inversión","E",NA,NA,2026-06-30,2026-07-06,"US$","Reparto",0.000714,NA,NA,NA,NA,0.0007142091,"boletin",NA
 "Vinci Compass Global Investments Fondo de Inversión","A",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.057093,NA,NA,NA,NA,0.0570931689,"boletin",NA
 "Vinci Compass Global Investments Fondo de Inversión","E",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.057095,NA,NA,NA,NA,0.0570952434,"boletin",NA
+"Vinci Compass Global Investments Fondo de Inversión","A",NA,NA,2026-09-23,2026-09-29,"US$","Dividendo",0.022978,NA,NA,NA,NA,0.0229775389,"boletin",NA
+"Vinci Compass Global Investments Fondo de Inversión","E",NA,NA,2026-09-23,2026-09-29,"US$","Dividendo",0.022978,NA,NA,NA,NA,0.022978374,"boletin",NA
+"Vinci Compass Global Investments Fondo de Inversión","A",NA,NA,2026-09-23,2026-09-29,"US$","Reparto",0.004715,NA,NA,NA,NA,0.0047152766,"boletin",NA
+"Vinci Compass Global Investments Fondo de Inversión","E",NA,NA,2026-09-23,2026-09-29,"US$","Reparto",0.004715,NA,NA,NA,NA,0.004715447,"boletin",NA
 "Vinci Compass Global Investments III Fondo de Inversión","A",NA,NA,2026-07-31,2026-08-06,"EURO","Dividendo",0.013129,NA,NA,NA,NA,0.0131293542,"boletin",NA
 "Vinci Compass Global Investments III Fondo de Inversión","A",NA,NA,2026-07-31,2026-08-06,"EURO","Reparto",0.01996,NA,NA,NA,NA,0.0199598403,"boletin",NA
 "Vinci Compass Global Investments III Fondo de Inversión","A",NA,NA,2026-09-22,2026-09-28,"EURO","Dividendo",0.020758,NA,NA,NA,NA,0.0207577089,"boletin",NA
@@ -8977,6 +9023,10 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Vinci Compass PCLO Private Debt Fondo de Inversión","A",NA,NA,2026-08-06,2026-08-12,"US$","Reparto",0.024108,NA,NA,NA,NA,0.0241077863,"boletin",NA
 "Vinci Compass PCLO Private Debt Fondo de Inversión","B",NA,NA,2026-08-06,2026-08-12,"US$","Reparto",0.025428,NA,NA,NA,NA,0.0254282909,"boletin",NA
 "Vinci Compass PCLO Private Debt Fondo de Inversión","C",NA,NA,2026-08-06,2026-08-12,"US$","Reparto",0.026457,NA,NA,NA,NA,0.0264570892,"boletin",NA
+"Vinci Compass PCLO Private Debt Fondo de Inversión","R",NA,NA,2026-09-23,2026-09-29,"US$","Reparto",0.007087,NA,NA,NA,NA,0.007086538,"boletin",NA
+"Vinci Compass PCLO Private Debt Fondo de Inversión","A",NA,NA,2026-09-23,2026-09-29,"US$","Reparto",0.007915,NA,NA,NA,NA,0.0079146292,"boletin",NA
+"Vinci Compass PCLO Private Debt Fondo de Inversión","B",NA,NA,2026-09-23,2026-09-29,"US$","Reparto",0.008354,NA,NA,NA,NA,0.0083543024,"boletin",NA
+"Vinci Compass PCLO Private Debt Fondo de Inversión","C",NA,NA,2026-09-23,2026-09-29,"US$","Reparto",0.008697,NA,NA,NA,NA,0.0086970727,"boletin",NA
 "Vinci Compass PCRED Private Debt Fondo de Inversión","R",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.006297,NA,NA,NA,NA,0.0062974773,"boletin",NA
 "Vinci Compass PCRED Private Debt Fondo de Inversión","A",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.007311,NA,NA,NA,NA,0.0073108144,"boletin",NA
 "Vinci Compass PCRED Private Debt Fondo de Inversión","B",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.007859,NA,NA,NA,NA,0.0078591096,"boletin",NA
@@ -8995,6 +9045,12 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Vinci Compass Private Equity XII Fondo de Inversión","A",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.028839,NA,NA,NA,NA,0.0288389186,"boletin",NA
 "Vinci Compass Private Equity XII Fondo de Inversión","B",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.031281,NA,NA,NA,NA,0.0312808929,"boletin",NA
 "Vinci Compass Private Equity XII Fondo de Inversión","C",NA,NA,2026-08-26,2026-09-01,"US$","Reparto",0.034852,NA,NA,NA,NA,0.0348524599,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","A",NA,NA,2026-09-23,2026-09-29,"US$","Dividendo",0.011552,NA,NA,NA,NA,0.0115515875,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","B",NA,NA,2026-09-23,2026-09-29,"US$","Dividendo",0.012532,NA,NA,NA,NA,0.0125322027,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","C",NA,NA,2026-09-23,2026-09-29,"US$","Dividendo",0.013965,NA,NA,NA,NA,0.0139651435,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","A",NA,NA,2026-09-23,2026-09-29,"US$","Reparto",0.002386,NA,NA,NA,NA,0.0023855764,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","B",NA,NA,2026-09-23,2026-09-29,"US$","Reparto",0.002588,NA,NA,NA,NA,0.0025880883,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","C",NA,NA,2026-09-23,2026-09-29,"US$","Reparto",0.002884,NA,NA,NA,NA,0.0028840136,"boletin",NA
 "Vinci Compass Private Equity XV Fondo de Inversión","C",NA,NA,2026-07-31,2026-08-06,"EURO","Dividendo",0.008986,NA,NA,NA,NA,0.0089856362,"boletin",NA
 "Vinci Compass Private Equity XV Fondo de Inversión","C",NA,NA,2026-07-31,2026-08-06,"EURO","Reparto",0.013729,NA,NA,NA,NA,0.013728844,"boletin",NA
 "Vinci Compass Private Equity XV Fondo de Inversión","C",NA,NA,2026-09-22,2026-09-28,"EURO","Dividendo",0.014302,NA,NA,NA,NA,0.0143016715,"boletin",NA
@@ -9368,6 +9424,7 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Picton - WP Fondo de Inversión","N","7262","FINRE",2026-09-24,2026-09-30,"US$","Reparto",NA,616748.19,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "VolcomCapital – HPS Mezzanine IV Fondo de Inversión
 (ex XLC - HPS Mezzanine IV Fondo de Inversión)","A",NA,NA,2026-07-28,2026-08-03,"US$","Reparto",NA,855992.4,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "VolcomCapital – HPS Mezzanine IV Fondo de Inversión
