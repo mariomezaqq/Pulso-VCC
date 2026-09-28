@@ -36,6 +36,8 @@
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-07-31,2026-08-06,"$","Dividendo",1243.379743,NA,NA,NA,NA,1243.379743,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-09-04,2026-09-10,"$","Reparto",1312.112354,NA,NA,NA,NA,1312.112354,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-09-04,2026-09-10,"$","Reparto",1313.356828,NA,NA,NA,NA,1313.356828,"boletin",NA
+"Alza Deuda Privada VI Fondo de Inversión","A",NA,NA,2026-09-25,2026-10-01,"$","Dividendo",1796.04098,NA,NA,NA,NA,1796.04098,"boletin",NA
+"Alza Deuda Privada VI Fondo de Inversión","I",NA,NA,2026-09-25,2026-10-01,"$","Dividendo",1798.056243,NA,NA,NA,NA,1798.056243,"boletin",NA
 "Alza Dédalo Fondo de Inversión","A",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",305.806585,NA,NA,NA,NA,305.806585,"boletin",NA
 "Alza Dédalo Fondo de Inversión","I1",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",307.720236,NA,NA,NA,NA,307.720236,"boletin",NA
 "Alza Dédalo Fondo de Inversión","F",NA,NA,2026-06-19,2026-06-25,"$","Dividendo",304.98705,NA,NA,NA,NA,304.98705,"boletin",NA
@@ -726,6 +728,8 @@
 "BICE GAIP Fondo de Inversión","I","10106","FINRE",2026-08-19,2026-08-25,"US$","Dividendo",0.006352,NA,NA,NA,NA,0.0063515803,"boletin",NA
 "BICE GAIP Fondo de Inversión","A","10106","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.021636,NA,NA,NA,NA,0.0216358239,"boletin",NA
 "BICE GAIP Fondo de Inversión","I","10106","FINRE",2026-08-19,2026-08-25,"US$","Reparto",0.021742,NA,NA,NA,NA,0.0217419481,"boletin",NA
+"BICE GAIP Fondo de Inversión","A","10106","FINRE",2026-09-24,2026-09-30,"US$","Reparto",0.004619,NA,NA,NA,NA,0.0046188838,"boletin",NA
+"BICE GAIP Fondo de Inversión","I","10106","FINRE",2026-09-24,2026-09-30,"US$","Reparto",0.004642,NA,NA,NA,NA,0.0046415395,"boletin",NA
 "BICE Global Credit Opportunities Fondo de Inversión","A","9627","FINRE",2025-06-16,2025-06-23,"US$","Dividendo",0.045128,NA,NA,NA,NA,0.0451278787,"boletin",NA
 "BICE Global Credit Opportunities Fondo de Inversión","I","9627","FINRE",2025-06-16,2025-06-23,"US$","Dividendo",0.047561,NA,NA,NA,NA,0.0475614893,"boletin",NA
 "BICE Global Credit Opportunities Fondo de Inversión","A","9627","FINRE",2025-06-17,2025-06-24,"US$","Reparto",0.027287,NA,NA,NA,NA,0.0272866243,"boletin",NA
@@ -3971,6 +3975,9 @@
 "Fondo de Inversión BCI HLC Perfeccionamiento","A","10078","FINRE",2026-03-18,2026-03-24,"$","Dividendo",1167.016591,NA,NA,NA,NA,1167.0165910048,"boletin",NA
 "Fondo de Inversión BCI HLC Perfeccionamiento","ADC","10078","FINRE",2026-03-18,2026-03-24,"$","Dividendo",1147.597354,NA,NA,NA,NA,1147.5973541514,"boletin",NA
 "Fondo de Inversión BCI HLC Perfeccionamiento","BCI","10078","FINRE",2026-03-18,2026-03-24,"$","Dividendo",1202.601131,NA,NA,NA,NA,1202.6011307228,"boletin",NA
+"Fondo de Inversión BCI HLC Perfeccionamiento","A","10078","FINRE",2026-09-23,2026-09-29,"$","Reparto",933.617883,NA,NA,NA,NA,933.6178829342,"boletin",NA
+"Fondo de Inversión BCI HLC Perfeccionamiento","ADC","10078","FINRE",2026-09-23,2026-09-29,"$","Reparto",918.082394,NA,NA,NA,NA,918.0823941942,"boletin",NA
+"Fondo de Inversión BCI HLC Perfeccionamiento","BCI","10078","FINRE",2026-09-23,2026-09-29,"$","Reparto",962.08563,NA,NA,NA,NA,962.085630114,"boletin",NA
 "Fondo de Inversión BCI LMV II","A",NA,NA,2026-01-30,2026-02-05,"US$","Reparto",0.035544,NA,NA,NA,NA,0.035544065,"boletin",NA
 "Fondo de Inversión BCI LMV II","B",NA,NA,2026-01-30,2026-02-05,"US$","Reparto",0.033647,NA,NA,NA,NA,0.0336468935,"boletin",NA
 "Fondo de Inversión BCI LMV II","C",NA,NA,2026-01-30,2026-02-05,"US$","Reparto",0.033085,NA,NA,NA,NA,0.0330851821,"boletin",NA
@@ -4929,6 +4936,8 @@
 "Fondo de Inversión HMC Mezzanine Inmobiliario III","R","9740","FINRE",2025-11-21,2025-11-27,"$","Dividendo",698.966626,NA,NA,NA,NA,698.9666261237,"boletin",NA
 "Fondo de Inversión HMC Mezzanine Inmobiliario III","I","9740","FINRE",2026-04-10,2026-04-16,"$","Dividendo",1705.066672,NA,NA,NA,NA,1705.0666723406,"boletin",NA
 "Fondo de Inversión HMC Mezzanine Inmobiliario III","R","9740","FINRE",2026-04-10,2026-04-16,"$","Dividendo",1673.681701,NA,NA,NA,NA,1673.6817013524,"boletin",NA
+"Fondo de Inversión HMC Mezzanine Inmobiliario III","I","9740","FINRE",2026-09-25,2026-10-01,"$","Reparto",2501.259505,NA,NA,NA,NA,2501.2595053137,"boletin",NA
+"Fondo de Inversión HMC Mezzanine Inmobiliario III","R","9740","FINRE",2026-09-25,2026-10-01,"$","Reparto",2434.684486,NA,NA,NA,NA,2434.6844863147,"boletin",NA
 "Fondo de Inversión HMC Mezzanine Inmobiliario IV","I","10555","FINRE",2025-01-29,2025-02-04,"$","Reparto",216.904771,NA,NA,NA,NA,216.9047710549,"boletin",NA
 "Fondo de Inversión HMC Mezzanine Inmobiliario IV","R","10555","FINRE",2025-01-29,2025-02-04,"$","Reparto",216.387705,NA,NA,NA,NA,216.3877052957,"boletin",NA
 "Fondo de Inversión HMC Mezzanine Inmobiliario IV","X","10555","FINRE",2025-01-29,2025-02-04,"$","Reparto",218.184837,NA,NA,NA,NA,218.1848371858,"boletin",NA
@@ -6039,6 +6048,10 @@
 "Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","A",NA,NA,2026-06-12,2026-06-18,"$","Dividendo",57.621651,NA,NA,NA,NA,57.62165073,"boletin",NA
 "Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","I",NA,NA,2026-06-12,2026-06-18,"$","Dividendo",57.621651,NA,NA,NA,NA,57.62165073,"boletin",NA
 "Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","IB",NA,NA,2026-06-12,2026-06-18,"$","Dividendo",57.621651,NA,NA,NA,NA,57.62165073,"boletin",NA
+"Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","A",NA,NA,2026-09-24,2026-09-30,"$","Dividendo",8.883569,NA,NA,NA,NA,8.8835685359,"boletin",NA
+"Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","I",NA,NA,2026-09-24,2026-09-30,"$","Dividendo",8.88357,NA,NA,NA,NA,8.8835698088,"boletin",NA
+"Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","IB",NA,NA,2026-09-24,2026-09-30,"$","Dividendo",8.886546,NA,NA,NA,NA,8.8865458081,"boletin",NA
+"Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","X",NA,NA,2026-09-24,2026-09-30,"$","Dividendo",6.108736,NA,NA,NA,NA,6.1087360851,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2025-06-11,2025-06-17,"$","Dividendo",345.461367,NA,NA,NA,NA,345.4613671,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-04-10,2026-04-16,"$","Dividendo",218.540751,NA,NA,NA,NA,218.5407507,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-04-10,2026-04-16,"$","Dividendo",150.691824,NA,NA,NA,NA,150.6918235,"boletin",NA
@@ -7441,6 +7454,10 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "MBI Private Debt US Evergreen Fondo de Inversión","F",NA,NA,2026-08-28,2026-09-03,"US$","Dividendo",0.696951,NA,NA,NA,NA,0.696951118259601,"boletin",NA
 "MBI Private Debt US Evergreen Fondo de Inversión","I",NA,NA,2026-08-28,2026-09-03,"US$","Dividendo",0.690661,NA,NA,NA,NA,0.690661459437849,"boletin",NA
 "MBI Private Debt US Evergreen Fondo de Inversión","S",NA,NA,2026-08-28,2026-09-03,"US$","Dividendo",0.699795,NA,NA,NA,NA,0.699794592552617,"boletin",NA
+"MBI Private Debt US Evergreen Fondo de Inversión","A",NA,NA,2026-09-26,2026-10-02,"US$","Dividendo",0.677696,NA,NA,NA,NA,0.677695947872514,"boletin",NA
+"MBI Private Debt US Evergreen Fondo de Inversión","F",NA,NA,2026-09-26,2026-10-02,"US$","Dividendo",0.696894,NA,NA,NA,NA,0.696894063805797,"boletin",NA
+"MBI Private Debt US Evergreen Fondo de Inversión","I",NA,NA,2026-09-26,2026-10-02,"US$","Dividendo",0.690311,NA,NA,NA,NA,0.690311071313232,"boletin",NA
+"MBI Private Debt US Evergreen Fondo de Inversión","S",NA,NA,2026-09-26,2026-10-02,"US$","Dividendo",0.699704,NA,NA,NA,NA,0.699704218522977,"boletin",NA
 "MBI Renta Comercial II Fondo de Inversión","A",NA,NA,2025-06-28,2025-07-04,"$","Dividendo",2099.749884,NA,NA,NA,NA,2099.74988420259,"boletin",NA
 "MBI Renta Comercial II Fondo de Inversión","A",NA,NA,2026-05-27,2026-06-02,"$","Reparto",520.258,NA,NA,NA,NA,520.258,"boletin",NA
 "MBI Renta Comercial II Fondo de Inversión","B",NA,NA,2026-05-27,2026-06-02,"$","Reparto",770879.5,NA,NA,NA,NA,770879.5,"boletin",NA
