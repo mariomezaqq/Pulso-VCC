@@ -4836,6 +4836,7 @@
 "Fondo de Inversión Falcom GTCR Private Equity XIII","B","9938","FINRE",2026-01-27,2026-02-02,"US$","Reparto",0.120206,NA,NA,NA,NA,0.1202055174,"boletin",NA
 "Fondo de Inversión Falcom GTCR Private Equity XIII","A","9938","FINRE",2026-07-21,2026-07-27,"US$","Reparto",0.054588,NA,NA,NA,NA,0.0545883897,"boletin",NA
 "Fondo de Inversión Falcom GTCR Private Equity XIII","B","9938","FINRE",2026-07-21,2026-07-27,"US$","Reparto",0.054986,NA,NA,NA,NA,0.0549860922,"boletin",NA
+"Fondo de Inversión Falcom GTCR Private Equity XIII","A","9938","FINRE",2026-10-09,2026-10-16,"US$","Reparto",0.100617,NA,NA,NA,NA,0.1006173697,"boletin",NA
 "Fondo de Inversión Falcom GTCR Private Equity XIV","A","10366","FINRE",2025-08-05,2025-08-11,"US$","Reparto",0.128735,NA,NA,NA,NA,0.1287346397,"boletin",NA
 "Fondo de Inversión Falcom GTCR Private Equity XIV","B","10366","FINRE",2025-08-05,2025-08-11,"US$","Reparto",0.129648,NA,NA,NA,NA,0.1296481176,"boletin",NA
 "Fondo de Inversión Falcom GTCR Private Equity XIV","R","10366","FINRE",2025-08-05,2025-08-11,"US$","Reparto",0.121437,NA,NA,NA,NA,0.1214365521,"boletin",NA
@@ -6870,6 +6871,7 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Fondo de Inversión Security Oaktree Real Estate Income Fund","C","9573","FINRE",2026-01-08,2026-01-14,"US$","Dividendo",0.004476,NA,NA,NA,NA,0.004476264,"boletin",NA
 "Fondo de Inversión Security Oaktree Real Estate Income Fund","C","9573","FINRE",2026-04-09,2026-04-15,"US$","Dividendo",0.003818,NA,NA,NA,NA,0.003818061,"boletin",NA
 "Fondo de Inversión Security Oaktree Real Estate Income Fund","C","9573","FINRE",2026-07-09,2026-07-15,"US$","Dividendo",0.005185,NA,NA,NA,NA,0.005184581,"boletin",NA
+"Fondo de Inversión Security Oaktree Real Estate Income Fund","C","9573","FINRE",2026-10-08,2026-10-15,"US$","Dividendo",0.002826,NA,NA,NA,NA,0.0028263091,"boletin",NA
 "Fondo de Inversión Security Pantheon PGCO IV","A","9724","FINRE",2025-01-10,2025-01-16,"US$","Dividendo",0.004812,NA,NA,NA,NA,0.00481188,"boletin",NA
 "Fondo de Inversión Security Pantheon PGCO IV","C","9724","FINRE",2025-01-10,2025-01-16,"US$","Dividendo",0.005391,NA,NA,NA,NA,0.005390854,"boletin",NA
 "Fondo de Inversión Security Pantheon PGCO IV","D","9724","FINRE",2025-01-10,2025-01-16,"US$","Dividendo",0.005427,NA,NA,NA,NA,0.005427409,"boletin",NA
@@ -9606,6 +9608,7 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Picton - KKR Global Infrastructure V Fondo de Inversión","C","10726","FINRE",2026-10-01,2026-10-07,"US$","Reparto",NA,380722.97,7461450,2026-10-01,0.051025,0.0510253318085953,"calculado (total/cuotas dia limite)",NA
 "Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-10-01,2026-10-07,"US$","Reparto",NA,311444.27,7461450,2026-10-01,0.04174,0.0417404476977992,"calculado (total/cuotas dia limite)",NA
 "Picton - WP Fondo de Inversión","N","7262","FINRE",2026-09-24,2026-09-30,"US$","Reparto",NA,616748.19,26161061,2026-09-24,0.023575,0.0235750446026189,"calculado (total/cuotas dia limite)",NA
+"Picton - WP Fondo de Inversión","N","7262","FINRE",2026-10-09,2026-10-16,"US$","Reparto",NA,442900.54,24769654,2026-10-09,0.017881,0.0178807719461985,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,128123.28,206645683,2026-03-11,0.00062,0.000620014306971599,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,332465.91,206645683,2026-03-11,0.001609,0.00160886937003433,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-07-17,2026-07-23,"US$","Reparto",NA,1153074.67,206121806,2026-07-17,0.005594,0.00559414209210697,"calculado (total/cuotas dia limite)",NA
@@ -9697,7 +9700,6 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Picton - WP Fondo de Inversión","N","7262","FINRE",2026-10-09,2026-10-16,"US$","Reparto",NA,442900.54,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "VolcomCapital – HPS Mezzanine IV Fondo de Inversión
 (ex XLC - HPS Mezzanine IV Fondo de Inversión)","A",NA,NA,2026-07-28,2026-08-03,"US$","Reparto",NA,855992.4,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "VolcomCapital – HPS Mezzanine IV Fondo de Inversión
