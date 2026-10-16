@@ -5470,6 +5470,7 @@
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-07-23,2026-07-29,"$","Reparto",5.780698,NA,NA,NA,NA,5.780697509,"boletin",NA
 "Fondo de Inversión LarrainVial Renta Residenciales","A",NA,NA,2026-08-27,2026-09-02,"$","Reparto",5.785173,NA,NA,NA,NA,5.785172636,"boletin",NA
 "Fondo de Inversión LarrainVial Rentas Residenciales","A",NA,NA,2026-09-15,2026-09-23,"$","Reparto",5.802654,NA,NA,NA,NA,5.802654223,"boletin",NA
+"Fondo de Inversión LarrainVial Rentas Residenciales","A",NA,NA,2026-10-14,2026-10-20,"$","Reparto",5.829447,NA,NA,NA,NA,5.829446964,"boletin",NA
 "Fondo de Inversión LarrainVial Retorno Local","A","10671","FINRE",2026-06-03,2026-06-09,"$","Dividendo",1.389851,NA,NA,NA,NA,1.3898514861304,"boletin",NA
 "Fondo de Inversión LarrainVial Retorno Local","I","10671","FINRE",2026-06-03,2026-06-09,"$","Dividendo",1.242978,NA,NA,NA,NA,1.2429784348996,"boletin",NA
 "Fondo de Inversión LarrainVial Retorno Local","O","10671","FINRE",2026-06-03,2026-06-09,"$","Dividendo",1.251238,NA,NA,NA,NA,1.251238301399,"boletin",NA
@@ -9444,6 +9445,10 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Volcomcapital Private Equity VIII Fondo de Inversión","B","9877","FINRE",2026-06-23,2026-06-30,"EURO","Dividendo",0.068721,NA,NA,NA,NA,0.0687208436055716,"boletin",NA
 "Volcomcapital Private Equity VIII Fondo de Inversión","C","9877","FINRE",2026-06-23,2026-06-30,"EURO","Dividendo",0.069417,NA,NA,NA,NA,0.0694174764032093,"boletin",NA
 "Volcomcapital Private Equity VIII Fondo de Inversión","Z","9877","FINRE",2026-06-23,2026-06-30,"EURO","Dividendo",0.069438,NA,NA,NA,NA,0.0694381270149697,"boletin",NA
+"Volcomcapital Private Equity VIII Fondo de Inversión","A","9877","FINRE",2026-10-16,2026-10-22,"EURO","Dividendo",0.018602,NA,NA,NA,NA,0.0186023332366962,"boletin",NA
+"Volcomcapital Private Equity VIII Fondo de Inversión","B","9877","FINRE",2026-10-16,2026-10-22,"EURO","Dividendo",0.020915,NA,NA,NA,NA,0.0209145515970315,"boletin",NA
+"Volcomcapital Private Equity VIII Fondo de Inversión","C","9877","FINRE",2026-10-16,2026-10-22,"EURO","Dividendo",0.021135,NA,NA,NA,NA,0.0211346429622936,"boletin",NA
+"Volcomcapital Private Equity VIII Fondo de Inversión","Z","9877","FINRE",2026-10-16,2026-10-22,"EURO","Dividendo",0.021142,NA,NA,NA,NA,0.0211416047315505,"boletin",NA
 "XLC - HPS Mezzanine IV Fondo de Inversión","A","9718","FINRE",2025-06-12,2025-06-18,"US$","Dividendo",0.004389,NA,NA,NA,NA,0.004388620714418,"boletin",NA
 "XLC - HPS Mezzanine IV Fondo de Inversión","B","9718","FINRE",2025-06-12,2025-06-18,"US$","Dividendo",0.004416,NA,NA,NA,NA,0.004416181317353,"boletin",NA
 "XLC - HPS Mezzanine IV Fondo de Inversión","A","9718","FINRE",2025-09-26,2025-10-02,"US$","Dividendo",0.036553,NA,NA,NA,NA,0.0365532942685,"boletin",NA
@@ -9492,6 +9497,8 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "XLC HPS HLEND Fondo de Inversión","A","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.046312,NA,NA,NA,NA,0.0463121981,"boletin",NA
 "XLC HPS HLEND Fondo de Inversión","N","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.044966,NA,NA,NA,NA,0.0449658601,"boletin",NA
 "XLC HPS HLEND Fondo de Inversión","X","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.044372,NA,NA,NA,NA,0.0443719762,"boletin",NA
+"Ameris Electromovilidad Fondo de Inversión","A","10514","FINRE",2026-10-15,2026-10-21,"$","Reparto",NA,112601646,1493773,2026-10-15,75.380709,75.3807091833246,"calculado (total/cuotas dia limite)",NA
+"Ameris Electromovilidad Fondo de Inversión","D","10514","FINRE",2026-10-15,2026-10-21,"$","Reparto",NA,112601646,1493773,2026-10-15,75.380709,75.3807091833246,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,26201217,36133731,2025-04-30,0.725118,0.725117951425348,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,235664094,36133731,2025-04-30,6.521997,6.52199724408948,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-07-31,2025-08-06,"$","Reparto",NA,275723404,35949767,2025-07-31,7.669685,7.66968542523317,"calculado (total/cuotas dia limite)",NA
