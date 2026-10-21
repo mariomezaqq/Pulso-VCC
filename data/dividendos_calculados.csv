@@ -298,6 +298,8 @@
 "Ameris Electromovilidad Fondo de Inversión","D","10514","FINRE",2026-02-19,2026-02-25,"$","Reparto",761.3932,7e+06,NA,NA,NA,761.3932,"boletin",NA
 "Ameris Electromovilidad Fondo de Inversión","A","10514","FINRE",2026-07-03,2026-07-09,"$","Reparto",772.396,NA,NA,NA,NA,772.396,"boletin",NA
 "Ameris Electromovilidad Fondo de Inversión","D","10514","FINRE",2026-07-03,2026-07-09,"$","Reparto",779.6523,NA,NA,NA,NA,779.6523,"boletin",NA
+"Ameris Electromovilidad Fondo de Inversión","A","10514","FINRE",2026-10-15,2026-10-21,"$","Reparto",0.096316,NA,NA,NA,NA,0.096316252,"boletin",NA
+"Ameris Electromovilidad Fondo de Inversión","D","10514","FINRE",2026-10-15,2026-10-21,"$","Reparto",0.096316,NA,NA,NA,NA,0.096316252,"boletin",NA
 "Ameris Financiamiento Colateralizado I Fondo de Inversión","A","10025","FINRE",2025-04-30,2025-05-07,"$","Dividendo",118.954104,NA,NA,NA,NA,118.954104187,"boletin",NA
 "Ameris Financiamiento Colateralizado I Fondo de Inversión","X","10025","FINRE",2025-04-30,2025-05-07,"$","Dividendo",123.383608,NA,NA,NA,NA,123.383607948,"boletin",NA
 "Ameris Financiamiento Colateralizado I Fondo de Inversión","A","10025","FINRE",2026-06-03,2026-06-09,"$","Dividendo",3.4973,NA,NA,NA,NA,3.497300469,"boletin",NA
@@ -1089,6 +1091,9 @@
 "BTG Pactual Venture Debt III Fondo de Inversión","A","10657","FINRE",2026-05-13,2026-05-19,"$","Dividendo",130.037415,NA,NA,NA,NA,130.037415095713,"boletin",NA
 "BTG Pactual Venture Debt III Fondo de Inversión","I","10657","FINRE",2026-05-13,2026-05-19,"$","Dividendo",130.699359,NA,NA,NA,NA,130.69935886113,"boletin",NA
 "BTG Pactual Venture Debt III Fondo de Inversión","M","10657","FINRE",2026-05-13,2026-05-19,"$","Dividendo",130.794488,NA,NA,NA,NA,130.794488305519,"boletin",NA
+"BTG Pactual Venture Debt III Fondo de Inversión","A","10657","FINRE",2026-10-20,2026-10-26,"$","Dividendo",377.468377,NA,NA,NA,NA,377.468376945561,"boletin",NA
+"BTG Pactual Venture Debt III Fondo de Inversión","I","10657","FINRE",2026-10-20,2026-10-26,"$","Dividendo",379.783284,NA,NA,NA,NA,379.783283746039,"boletin",NA
+"BTG Pactual Venture Debt III Fondo de Inversión","M","10657","FINRE",2026-10-20,2026-10-26,"$","Dividendo",380.158208,NA,NA,NA,NA,380.158207917134,"boletin",NA
 "Chile Fondo de Inversión Small Cap","P1","7022","FINRE",2025-06-17,2025-06-24,"$","Dividendo",17724.96741,811327709,NA,NA,NA,17724.967410266,"boletin",NA
 "Chile Fondo de Inversión Small Cap","P1","7022","FINRE",2026-06-09,2026-06-15,"$","Dividendo",1468.36033,NA,NA,NA,NA,1468.36032952462,"boletin",NA
 "Chile Fondo de Inversión Small Cap","BCH","7022","FINRE",2026-06-09,2026-06-15,"$","Dividendo",11.169349,NA,NA,NA,NA,11.1693493333333,"boletin",NA
@@ -5332,6 +5337,8 @@
 "Fondo de Inversión Independencia Doral","B",NA,NA,2026-05-06,2026-05-12,"US$","Dividendo",0.023904,NA,NA,NA,NA,0.023904,"boletin",NA
 "Fondo de Inversión Independencia Doral","A",NA,NA,2026-07-21,2026-07-27,"US$","Dividendo",0.007265,NA,NA,NA,NA,0.007265,"boletin",NA
 "Fondo de Inversión Independencia Doral","B",NA,NA,2026-07-21,2026-07-27,"US$","Dividendo",0.007449,NA,NA,NA,NA,0.007449,"boletin",NA
+"Fondo de Inversión Independencia Doral","A",NA,NA,2026-10-20,2026-10-26,"US$","Dividendo",0.007262,NA,NA,NA,NA,0.007262,"boletin",NA
+"Fondo de Inversión Independencia Doral","B",NA,NA,2026-10-20,2026-10-26,"US$","Dividendo",0.007455,NA,NA,NA,NA,0.007455,"boletin",NA
 "Fondo de Inversión Infraestructura Chile I","A",NA,NA,2026-03-14,2026-03-20,"$","Reparto",383.729467,NA,NA,NA,NA,383.729467144695,"boletin",NA
 "Fondo de Inversión Infraestructura Chile I","P1",NA,NA,2026-03-14,2026-03-20,"$","Reparto",399.373648,NA,NA,NA,NA,399.37364812723,"boletin",NA
 "Fondo de Inversión Infraestructura Chile I","IT",NA,NA,2026-03-14,2026-03-20,"$","Reparto",415.438748,NA,NA,NA,NA,415.438747899449,"boletin",NA
@@ -6230,8 +6237,8 @@
 "Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-08-11,2026-08-18,"$","Dividendo",20.073096,NA,NA,NA,NA,20.073096,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-09-09,2026-09-15,"$","Dividendo",32.296126,NA,NA,NA,NA,32.2961261,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-09-09,2026-09-15,"$","Dividendo",22.431103,NA,NA,NA,NA,22.4311027,"boletin",NA
-"Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-10-14,2026-10-20,"$","Dividendo",33.522957,NA,NA,NA,NA,33.5229572,"boletin",NA
-"Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-10-14,2026-10-20,"$","Dividendo",23.312292,NA,NA,NA,NA,23.3122923,"boletin",NA
+"Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-10-14,2026-10-20,"$","Dividendo",33.526193,NA,NA,NA,NA,33.526193,"boletin",NA
+"Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-10-14,2026-10-20,"$","Dividendo",23.321842,NA,NA,NA,NA,23.3218418,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global","A",NA,NA,2025-01-07,2025-01-13,"US$","Reparto",0.174315,NA,NA,NA,NA,0.1743149,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2025-04-06,2025-04-11,"US$","Reparto",0.176995,NA,NA,NA,NA,0.17699525,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2025-11-19,2025-11-25,"US$","Reparto",90.1248,NA,NA,NA,NA,90.1248,"boletin",NA
@@ -7999,6 +8006,10 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Moneda GSI Rentas Comerciales III Fondo de Inversión","B",NA,NA,2026-08-25,2026-08-31,"$","Dividendo",1085.901948,NA,NA,NA,NA,1085.901948,"boletin",NA
 "Moneda GSI Rentas Comerciales III Fondo de Inversión","I",NA,NA,2026-08-25,2026-08-31,"$","Dividendo",1100.414282,NA,NA,NA,NA,1100.414282,"boletin",NA
 "Moneda GSI Rentas Comerciales III Fondo de Inversión","E",NA,NA,2026-08-25,2026-08-31,"$","Dividendo",1114.945861,NA,NA,NA,NA,1114.945861,"boletin",NA
+"Moneda GSI Rentas Comerciales III Fondo de Inversión","A",NA,NA,2026-10-20,2026-10-26,"$","Dividendo",32170.027112,NA,NA,NA,NA,32170.027112,"boletin",NA
+"Moneda GSI Rentas Comerciales III Fondo de Inversión","B",NA,NA,2026-10-20,2026-10-26,"$","Dividendo",32617.573615,NA,NA,NA,NA,32617.573615,"boletin",NA
+"Moneda GSI Rentas Comerciales III Fondo de Inversión","I",NA,NA,2026-10-20,2026-10-26,"$","Dividendo",33069.829673,NA,NA,NA,NA,33069.829673,"boletin",NA
+"Moneda GSI Rentas Comerciales III Fondo de Inversión","E",NA,NA,2026-10-20,2026-10-26,"$","Dividendo",33522.844182,NA,NA,NA,NA,33522.844182,"boletin",NA
 "Moneda GSI Rentas Logísticas I Fondo de Inversión","A",NA,NA,2025-01-14,2025-01-20,"$","Dividendo",3399.490801,NA,NA,NA,NA,3399.490801,"boletin",NA
 "Moneda GSI Rentas Logísticas I Fondo de Inversión","B",NA,NA,2025-01-14,2025-01-20,"$","Dividendo",3487.989189,NA,NA,NA,NA,3487.989189,"boletin",NA
 "Moneda GSI Rentas Logísticas I Fondo de Inversión","E",NA,NA,2025-01-14,2025-01-20,"$","Dividendo",3489.818146,NA,NA,NA,NA,3489.818146,"boletin",NA
@@ -9219,11 +9230,18 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","R",NA,NA,2026-08-13,2026-08-20,"US$","Reparto",0.007581,NA,NA,NA,NA,0.0075812884,"boletin",NA
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","A",NA,NA,2026-09-15,2026-09-23,"US$","Reparto",0.006888,NA,NA,NA,NA,0.00688778,"boletin",NA
 "Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","R",NA,NA,2026-09-15,2026-09-23,"US$","Reparto",0.006867,NA,NA,NA,NA,0.0068670673,"boletin",NA
+"Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","A",NA,NA,2026-10-20,2026-10-26,"US$","Reparto",0.006896,NA,NA,NA,NA,0.00689644,"boletin",NA
+"Vinci Compass BX Crédito Privado Semilíquido Fondo de Inversión","R",NA,NA,2026-10-20,2026-10-26,"US$","Reparto",0.006872,NA,NA,NA,NA,0.0068715512,"boletin",NA
 "Vinci Compass BXD Private Debt Fondo de Inversión","A",NA,NA,2026-09-15,2026-09-23,"US$","Dividendo",0.012564,NA,NA,NA,NA,0.0125644828,"boletin",NA
 "Vinci Compass BXD Private Debt Fondo de Inversión","B",NA,NA,2026-09-15,2026-09-23,"US$","Dividendo",0.012792,NA,NA,NA,NA,0.0127921826,"boletin",NA
 "Vinci Compass BXD Private Debt Fondo de Inversión","C",NA,NA,2026-09-15,2026-09-23,"US$","Dividendo",0.012783,NA,NA,NA,NA,0.0127831798,"boletin",NA
 "Vinci Compass BXD Private Debt Fondo de Inversión","I",NA,NA,2026-09-15,2026-09-23,"US$","Dividendo",0.012783,NA,NA,NA,NA,0.0127833079,"boletin",NA
 "Vinci Compass BXD Private Debt Fondo de Inversión","R",NA,NA,2026-09-15,2026-09-23,"US$","Dividendo",0.012472,NA,NA,NA,NA,0.0124719039,"boletin",NA
+"Vinci Compass BXLS VI Private Equity Fondo de Inversión","A",NA,NA,2026-10-20,2026-10-26,"US$","Dividendo",0.482904,NA,NA,NA,NA,0.4829040774,"boletin",NA
+"Vinci Compass BXLS VI Private Equity Fondo de Inversión","B",NA,NA,2026-10-20,2026-10-26,"US$","Dividendo",0.502044,NA,NA,NA,NA,0.5020444987,"boletin",NA
+"Vinci Compass BXLS VI Private Equity Fondo de Inversión","C",NA,NA,2026-10-20,2026-10-26,"US$","Dividendo",0.512187,NA,NA,NA,NA,0.512187323,"boletin",NA
+"Vinci Compass BXLS VI Private Equity Fondo de Inversión","I",NA,NA,2026-10-20,2026-10-26,"US$","Dividendo",0.511683,NA,NA,NA,NA,0.5116832966,"boletin",NA
+"Vinci Compass BXLS VI Private Equity Fondo de Inversión","R",NA,NA,2026-10-20,2026-10-26,"US$","Dividendo",0.44778,NA,NA,NA,NA,0.4477801047,"boletin",NA
 "Vinci Compass COF III Private Debt Fondo de Inversión","R",NA,NA,2026-10-09,2026-10-16,"US$","Reparto",0.067896,NA,NA,NA,NA,0.067896354,"boletin",NA
 "Vinci Compass COF III Private Debt Fondo de Inversión","A",NA,NA,2026-10-09,2026-10-16,"US$","Reparto",0.074006,NA,NA,NA,NA,0.0740055657,"boletin",NA
 "Vinci Compass COF III Private Debt Fondo de Inversión","B",NA,NA,2026-10-09,2026-10-16,"US$","Reparto",0.077192,NA,NA,NA,NA,0.0771921347,"boletin",NA
@@ -9539,8 +9557,6 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "XLC HPS HLEND Fondo de Inversión","A","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.046312,NA,NA,NA,NA,0.0463121981,"boletin",NA
 "XLC HPS HLEND Fondo de Inversión","N","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.044966,NA,NA,NA,NA,0.0449658601,"boletin",NA
 "XLC HPS HLEND Fondo de Inversión","X","10568","FINRE",2025-06-17,2025-06-24,"US$","Dividendo",0.044372,NA,NA,NA,NA,0.0443719762,"boletin",NA
-"Ameris Electromovilidad Fondo de Inversión","A","10514","FINRE",2026-10-15,2026-10-21,"$","Reparto",NA,112601646,1493773,2026-10-15,75.380709,75.3807091833246,"calculado (total/cuotas dia limite)",NA
-"Ameris Electromovilidad Fondo de Inversión","D","10514","FINRE",2026-10-15,2026-10-21,"$","Reparto",NA,112601646,1493773,2026-10-15,75.380709,75.3807091833246,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,26201217,36133731,2025-04-30,0.725118,0.725117951425348,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,235664094,36133731,2025-04-30,6.521997,6.52199724408948,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-07-31,2025-08-06,"$","Reparto",NA,275723404,35949767,2025-07-31,7.669685,7.66968542523317,"calculado (total/cuotas dia limite)",NA
@@ -9706,6 +9722,7 @@ Preferente",NA,NA,2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA,NA,NA,113
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2025-07-31,2025-08-06,"$","Reparto",NA,108733590,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2026-01-31,2026-02-06,"$","Reparto",NA,162241028,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2026-07-31,2026-08-06,"$","Reparto",NA,242471004,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2026-10-30,2026-11-06,"$","Reparto",NA,296507055,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Asset Deuda Vivo","ADV",NA,NA,2025-06-12,2025-06-18,"$","Reparto",NA,1019361859,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","I",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,114903.97,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","E",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,222847.69,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
