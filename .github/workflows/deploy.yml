@@ -1,0 +1,101 @@
+name: Publicar app en shinyapps.io
+
+# Publica la app cada vez que cambia el CODIGO en main, para que shinyapps.io
+# siempre corra lo mismo que esta en el repo. Los cambios de data/ (cron, panel
+# admin) NO republican: la app los lee de GitHub en tiempo de ejecucion.
+# Tambien se puede disparar a mano desde la pestaña Actions ("Run workflow").
+#
+# Secrets necesarios (Settings -> Secrets and variables -> Actions):
+#   SHINYAPPS_TOKEN, SHINYAPPS_SECRET -> shinyapps.io -> Account -> Tokens
+#   PULSO_GH_TOKEN                    -> PAT con contents:write + actions:write
+#                                        (el mismo que usa hoy la app para guardar)
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app.R'
+      - 'R/**'
+      - 'fondos/R/**'
+      - 'fondos/data/**'
+      - 'www/**'
+      - '.rscignore'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-shinyapps
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  SHINYAPPS_CUENTA: mariomezaqq
+  APP_NOMBRE: pulso-vcc
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verificar secrets
+        env:
+          SHINYAPPS_TOKEN: ${{ secrets.SHINYAPPS_TOKEN }}
+          SHINYAPPS_SECRET: ${{ secrets.SHINYAPPS_SECRET }}
+          PULSO_GH_TOKEN: ${{ secrets.PULSO_GH_TOKEN }}
+        run: |
+          falta=""
+          [ -z "$SHINYAPPS_TOKEN" ]  && falta="$falta SHINYAPPS_TOKEN"
+          [ -z "$SHINYAPPS_SECRET" ] && falta="$falta SHINYAPPS_SECRET"
+          [ -z "$PULSO_GH_TOKEN" ]   && falta="$falta PULSO_GH_TOKEN"
+          if [ -n "$falta" ]; then echo "::error::Faltan secrets:$falta"; exit 1; fi
+
+      # pdftools (folletos CMF) necesita poppler para compilar/cargar
+      - name: Librerias del sistema
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libpoppler-cpp-dev libcurl4-openssl-dev libxml2-dev
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Cache de paquetes R
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-deploy-${{ runner.os }}-${{ hashFiles('.github/workflows/deploy.yml') }}
+
+      # rsconnect necesita instalados todos los paquetes que detecta en el bundle
+      - name: Instalar paquetes R
+        run: |
+          pk <- c("rsconnect","shiny","bslib","DT","dplyr","lubridate","tibble","openxlsx",
+                  "jsonlite","httr","rvest","pdftools","readxl","stringr","stringi","tidyr","quantmod")
+          falta <- pk[!vapply(pk, requireNamespace, logical(1), quietly = TRUE)]
+          if (length(falta)) install.packages(falta)
+        shell: Rscript {0}
+
+      # El token de GitHub de la app no se versiona: se escribe solo en el runner
+      # y viaja dentro del bundle (shinyapps.io no tiene variables de entorno).
+      - name: Token de la app
+        env:
+          PULSO_GH_TOKEN: ${{ secrets.PULSO_GH_TOKEN }}
+        run: printf 'Sys.setenv(GITHUB_TOKEN = "%s")\n' "$PULSO_GH_TOKEN" > R/secret_token.R
+
+      - name: Publicar
+        env:
+          SHINYAPPS_TOKEN: ${{ secrets.SHINYAPPS_TOKEN }}
+          SHINYAPPS_SECRET: ${{ secrets.SHINYAPPS_SECRET }}
+        run: |
+          rsconnect::setAccountInfo(name   = Sys.getenv("SHINYAPPS_CUENTA"),
+                                    token  = Sys.getenv("SHINYAPPS_TOKEN"),
+                                    secret = Sys.getenv("SHINYAPPS_SECRET"))
+          rsconnect::deployApp(appDir = ".", appName = Sys.getenv("APP_NOMBRE"),
+                               account = Sys.getenv("SHINYAPPS_CUENTA"), server = "shinyapps.io",
+                               forceUpdate = TRUE, launch.browser = FALSE, logLevel = "normal")
+        shell: Rscript {0}
+
+      - name: Borrar token del runner
+        if: always()
+        run: rm -f R/secret_token.R
