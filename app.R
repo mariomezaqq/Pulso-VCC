@@ -45,6 +45,12 @@ CATALOGO <- tryCatch(cargar_catalogo(), error = function(e) NULL)
 
 # ---- Lectura de inputs persistidos ----
 .leer_csv <- function(rel, default_df) {
+  # primero la API de GitHub (siempre fresca); el CDN raw puede traer una version
+  # de hasta ~5 min atras y, al guardar desde esa sesion, borrar lo recien ingresado
+  txt <- tryCatch(store_read_fresh_text(rel), error = function(e) NULL)
+  if (!is.null(txt))
+    return(tryCatch(read.csv(text = txt, stringsAsFactors = FALSE, check.names = FALSE, encoding = "UTF-8",
+                             colClasses = c(Fecha = "character")), error = function(e) default_df))
   ruta <- store_sync(rel)
   if (!is.null(ruta) && file.exists(ruta))
     tryCatch(read.csv(ruta, stringsAsFactors = FALSE, fileEncoding = "UTF-8",
@@ -608,12 +614,38 @@ server <- function(input, output, session) {
       options = list(pageLength = 10, order = list(list(2, "desc")),
                      lengthMenu = list(c(10, 25, 50, -1), c("10","25","50","Todas"))))
   }, server = FALSE)
-  observeEvent(input$tbl_vc_cell_edit, { rv$vc <- editData(rv$vc, input$tbl_vc_cell_edit, rownames = FALSE) })
+  # VC (Nombre|Fecha) que esta sesion borro o cambio de nombre/fecha: al guardar
+  # no se reviven aunque sigan en GitHub
+  vc_quitados <- character()
+  observeEvent(input$tbl_vc_cell_edit, {
+    info <- input$tbl_vc_cell_edit
+    if (info$col %in% c(0, 2) && info$row <= nrow(rv$vc))   # Nombre o Fecha: cambia la llave
+      vc_quitados <<- c(vc_quitados, paste(rv$vc$Nombre[info$row], rv$vc$Fecha[info$row]))
+    rv$vc <- editData(rv$vc, info, rownames = FALSE)
+  })
   observeEvent(input$del_vc, {
     sel <- input$tbl_vc_rows_selected
-    if (length(sel)) { rv$vc <- rv$vc[-sel, , drop = FALSE]; rv$tick <- rv$tick + 1 }
+    if (length(sel)) {
+      vc_quitados <<- c(vc_quitados, paste(rv$vc$Nombre[sel], rv$vc$Fecha[sel]))
+      rv$vc <- rv$vc[-sel, , drop = FALSE]; rv$tick <- rv$tick + 1
+    }
   })
-  observeEvent(input$save_vc, { output$vc_hist_msg <- renderText(guardar_vc()); rv$tick <- rv$tick + 1 })
+  # Guardar el historial editado: la tabla de esta sesion puede ser vieja (se
+  # cargo al abrir la pagina). Antes de escribir, se suman los VC que estan en
+  # GitHub y no en la tabla (ingresados desde otra sesion), salvo los que esta
+  # sesion borro: asi corregir un valor nunca borra lo que otro ingreso.
+  observeEvent(input$save_vc, {
+    fresco <- .leer_csv("manuales_vc.csv", default_vc())
+    k <- paste(fresco$Nombre, fresco$Fecha)
+    faltan <- !(k %in% paste(rv$vc$Nombre, rv$vc$Fecha)) & !(k %in% vc_quitados)
+    if (any(faltan) && all(names(rv$vc) %in% names(fresco))) {
+      rv$vc <- rbind(rv$vc, fresco[faltan, names(rv$vc), drop = FALSE])
+      rv$vc <- rv$vc[order(rv$vc$Nombre, rv$vc$Fecha), ]
+    }
+    msg <- guardar_vc(); vc_quitados <<- character()
+    output$vc_hist_msg <- renderText(paste0(msg, if (any(faltan)) paste0(" (se conservaron ", sum(faltan), " VC ingresados desde otra sesión)") else ""))
+    rv$tick <- rv$tick + 1
+  })
 
   # ---- Correcciones de dividendos ----
   # isolate + tick (idem tbl_vc/tbl_cur): evita que re-renderizar en cada edicion
