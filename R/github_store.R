@@ -104,7 +104,7 @@ store_sync_fresh <- function(rel) {
 # (ref = sha): no mezcla versiones ni depende del cache de CDN. El estado es del
 # proceso R, asi que lo comparten todas las sesiones abiertas.
 ARCHIVOS_SYNC <- c("series_vc.rds", "fondos_curados.csv", "dividendos.xlsx",
-                   "dividendos_calculados.csv")
+                   "dividendos_calculados.csv", "ipsa_yahoo.csv")
 .sync <- new.env()
 .sync$sha <- NA_character_          # version ya bajada a data/
 .sync$sha_remoto <- NA_character_   # ultima version vista en GitHub
