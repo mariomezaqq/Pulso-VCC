@@ -73,7 +73,18 @@ El workflow ya está en `.github/workflows/refresh.yml` (corre diario y se puede
 Crea un **Personal Access Token** (Settings → Developer settings → Tokens) con permiso
 `contents: write` sobre el repo. Lo usarás como variable `GITHUB_TOKEN` en shinyapps.io.
 
-### 4) Publicar en shinyapps.io
+### 4) Publicar en shinyapps.io (automático)
+`.github/workflows/deploy.yml` republica la app en cada push a `main` que toque
+código (`app.R`, `R/`, `fondos/R/`, `fondos/data/`, `www/`). Los cambios de `data/`
+no republican: la app los lee de GitHub al vuelo. También se puede correr a mano
+en **Actions → Publicar app en shinyapps.io → Run workflow**.
+
+Secrets del repo (**Settings → Secrets and variables → Actions**):
+- `SHINYAPPS_TOKEN` y `SHINYAPPS_SECRET` = shinyapps.io → Account → Tokens
+- `PULSO_GH_TOKEN` = el PAT del paso 3 (el workflow lo escribe en `R/secret_token.R`
+  solo dentro del runner; nunca se commitea)
+
+Publicación manual (respaldo):
 ```r
 install.packages("rsconnect")
 rsconnect::setAccountInfo(name="TU_CUENTA", token="...", secret="...")  # de shinyapps.io → Account → Tokens
