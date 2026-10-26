@@ -11,7 +11,7 @@ name: Publicar app en shinyapps.io
 #                                        (el mismo que usa hoy la app para guardar)
 on:
   push:
-    branches: [main]
+    branches: [main, claude/deploy-automatico]
     paths:
       - 'app.R'
       - 'R/**'
