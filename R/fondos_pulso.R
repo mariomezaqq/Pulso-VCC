@@ -377,3 +377,51 @@ if (!isTRUE(getOption("pulso.hardcode_only", FALSE))) {
     message("[curados] listas desde CSV: ", length(FONDOS), " fondos, ", length(CATEGORIAS), " hojas.")
   }
 }
+
+# =============================================================================
+# LLAVE ESTABLE DE LAS SERIES: "run-serie"
+# data/series_vc.rds guarda cada serie con la llave run-serie (ej. "9152-A"), no
+# con el nombre: renombrar un fondo (o que la CMF le cambie el nombre, como Quest
+# -> MBIQ) no pierde sus datos. En memoria todo sigue por nombre (nombre_script);
+# se traduce al leer (series_por_nombre) y al guardar (series_por_clave).
+# =============================================================================
+clave_fondo <- function(fd) paste0(fd$run, "-", fd$serie)
+
+#' Series del archivo -> por nombre de los FONDOS actuales. Acepta archivos
+#' viejos (llave = nombre) para no perder datos en la transicion.
+series_por_nombre <- function(series) {
+  out <- list()
+  for (fd in FONDOS) {
+    h <- series[[clave_fondo(fd)]]
+    if (is.null(h)) h <- series[[fd$nombre]]
+    if (!is.null(h)) out[[fd$nombre]] <- h
+  }
+  out
+}
+
+#' Series por nombre -> por run-serie (para guardar).
+series_por_clave <- function(series) {
+  out <- list()
+  for (fd in FONDOS) {
+    h <- series[[fd$nombre]]
+    if (!is.null(h)) out[[clave_fondo(fd)]] <- h
+  }
+  out
+}
+
+#' Nombre actual (nombre_script) del fondo con esa run-serie, o "" si no esta.
+nombre_por_clave <- function(clave) {
+  for (fd in FONDOS) if (identical(clave_fondo(fd), clave)) return(fd$nombre)
+  ""
+}
+
+# YTD desde el inicio (fondos que partieron este año), por run-serie para que
+# no dependa del nombre: BTG Credito Privado A y B.
+CLAVES_YTD_DESDE_INICIO <- c("10843-A", "10843-B")
+local({
+  ex <- list(); for (cat in CATEGORIAS) for (f in cat$fondos) ex[[f$nombre_script]] <- f$nombre_excel
+  for (fd in FONDOS) if (clave_fondo(fd) %in% CLAVES_YTD_DESDE_INICIO) {
+    ne <- ex[[fd$nombre]]; if (is.null(ne)) ne <- fd$nombre
+    FONDOS_YTD_DESDE_INICIO <<- unique(c(FONDOS_YTD_DESDE_INICIO, ne))
+  }
+})

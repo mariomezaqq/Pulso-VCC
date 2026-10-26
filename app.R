@@ -99,7 +99,7 @@ preparar_todo <- function(vc_df, ov_df = NULL) {
   # Dividendos (FIRES/FINRE) + factor de reparto (RGFMU) -> valor_cuota_ajustado
   ruta_div <- if (file.exists("data/dividendos.xlsx")) "data/dividendos.xlsx" else NULL
   div <- fusionar_overrides(cargar_dividendos_pulso(ruta_div), ov_df)
-  series_aj <- enriquecer_series_ajustadas(datos$series, div)
+  series_aj <- enriquecer_series_ajustadas(series_por_nombre(datos$series), div)   # rds por run-serie -> nombre actual
   macro <- aplicar_indices_manuales(datos$macro, vc_df, fc)
   series_man <- construir_series_manual(vc_df)
   # "MBI Deuda estructurada" es manual (VC ingresado a mano) pero sus dividendos SI
@@ -164,7 +164,7 @@ ui <- page_navbar(
         div(style = "margin-top:8px", actionButton("cat_add", "Agregar fondo", class = "btn-primary")),
         verbatimTextOutput("cat_msg")),
       card(card_header("Editar fondos (categoría, rent, TAC, duración…)"),
-        p(class = "text-muted", HTML("Haz <b>doble clic</b> en una celda para editarla: <b>Nombre</b>, categoría, rentabilidades, duración, liquidez, moneda, TAC, ticker, art. 107 (escribe <b>Sí</b> o <b>No</b>). Para mover un fondo de categoría, edita la columna <b>Categoría</b>. Luego <b>Guardar cambios</b>. Para eliminar, selecciona filas y <b>Eliminar</b>. <i>(Al renombrar, las rentabilidades MTD/YTD en vivo reaparecen tras el próximo refresco de la CMF.)</i>")),
+        p(class = "text-muted", HTML("Haz <b>doble clic</b> en una celda para editarla: <b>Nombre</b>, categoría, rentabilidades, duración, liquidez, moneda, TAC, ticker, art. 107 (escribe <b>Sí</b> o <b>No</b>). Para mover un fondo de categoría, edita la columna <b>Categoría</b>. Luego <b>Guardar cambios</b>. Para eliminar, selecciona filas y <b>Eliminar</b>. <i>(Renombrar no pierde datos: las series se guardan por run + serie.)</i>")),
         uiOutput("revision_tickers"),
         DTOutput("tbl_cur"),
         div(style = "margin-top:8px",
@@ -432,18 +432,51 @@ server <- function(input, output, session) {
     cc <- .colmap_cur[info$col + 1]
     if (length(cc) != 1 || !(cc %in% .editables_cur) || is.null(rv$cur) || info$row > nrow(rv$cur)) return()
     val <- as.character(info$value)
-    rv$cur[info$row, cc] <- val
-    # renombrar: sincroniza nombre_script (clave del scraping) salvo manuales (__MANUAL__)
     if (cc == "nombre_excel") {
+      val <- trimws(val); viejo <- rv$cur$nombre_excel[info$row]
       es_man <- tolower(trimws(rv$cur$es_manual[info$row])) %in% c("true","1","yes","si","sí")
-      if (!es_man) rv$cur$nombre_script[info$row] <- val
+      # los manuales guardan su VC por nombre (manuales_vc.csv): no se renombran aqui
+      if (es_man || !nzchar(val)) {
+        output$cat_del_msg <- renderText(if (es_man) "⚠ Los fondos manuales no se renombran desde aquí (su VC se guarda por nombre)." else "⚠ El nombre no puede quedar vacío.")
+        rv$tick <- rv$tick + 1; return()
+      }
+      # renombrar: todas las filas del mismo fondo (run + serie, ej. si esta en 2
+      # hojas); sus series siguen intactas porque se guardan por run-serie
+      mismo <- which(rv$cur$run == rv$cur$run[info$row] & rv$cur$serie == rv$cur$serie[info$row] &
+                     !tolower(trimws(rv$cur$es_manual)) %in% c("true","1","yes","si","sí"))
+      if (val %in% rv$cur$nombre_excel[-mismo]) {
+        output$cat_del_msg <- renderText(paste0("⚠ Ya existe otro fondo llamado '", val, "'. Usa otro nombre."))
+        rv$tick <- rv$tick + 1; return()
+      }
+      rv$cur$nombre_excel[mismo] <- val; rv$cur$nombre_script[mismo] <- val
+      if (!identical(viejo, val)) renombres[[viejo]] <<- val
+      if (length(mismo) > 1) rv$tick <- rv$tick + 1
+      return()
     }
+    rv$cur[info$row, cc] <- val
   })
+  # Renombres pendientes (viejo -> nuevo): al guardar, las correcciones de
+  # dividendos de esos fondos (dividendos_overrides.csv, por nombre) se mueven al nombre nuevo
+  renombres <- list()
 
   observeEvent(input$cat_save, {
     if (is.null(rv$cur)) { output$cat_del_msg <- renderText("No hay lista que guardar."); return() }
     rv$cur <- normalizar_titulos(rv$cur)
     msg <- guardar_curados(rv$cur, "Panel admin: editar lista de fondos")
+    if (length(renombres) && nrow(rv$ov)) {
+      fondo <- as.character(rv$ov$Fondo); mover <- fondo %in% names(renombres)
+      if (any(mover)) {
+        # resolver cadenas (A -> B -> C) por si se renombro dos veces antes de guardar
+        for (k in which(mover)) {
+          n <- fondo[k]; i <- 0
+          while (!is.null(renombres[[n]]) && i < length(renombres)) { n <- renombres[[n]]; i <- i + 1 }
+          fondo[k] <- n
+        }
+        rv$ov$Fondo <- fondo
+        msg <- paste0(msg, " · Correcciones de dividendos: ", guardar_ov())
+      }
+    }
+    renombres <<- list()
     refrescar_fondos_globales(); rv$tick <- rv$tick + 1
     output$cat_del_msg <- renderText(paste0("💾 Cambios guardados. ", msg,
       " · El dashboard se actualiza solo en ~1 min."))
@@ -597,11 +630,12 @@ server <- function(input, output, session) {
                                      check.names = FALSE, stringsAsFactors = FALSE))
     rv$tick <- rv$tick + 1
   })
-  observeEvent(input$save_ov, {
-    msg <- store_write_text("dividendos_overrides.csv",
+  guardar_ov <- function() store_write_text("dividendos_overrides.csv",
       paste(c(paste(names(rv$ov), collapse = ","),
               if (nrow(rv$ov)) apply(rv$ov, 1, function(x) paste(x, collapse = ","))), collapse = "\n"),
       "Corregir dividendos")
+  observeEvent(input$save_ov, {
+    msg <- guardar_ov()
     output$ov_msg <- renderText(msg); rv$tick <- rv$tick + 1
   })
 }
