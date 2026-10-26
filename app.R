@@ -128,12 +128,18 @@ ui <- page_navbar(
     div(style = "max-width:1100px;margin:20px auto;padding:0 16px",
       h4("Panel de administración"),
       p(class = "text-muted", "Los cambios se guardan y persisten (en GitHub cuando está configurado). El dashboard se recalcula al instante."),
-      card(card_header("➕ Agregar fondo desde el catálogo CMF"),
-        p(class = "text-muted", "Busca el fondo en el catálogo del comparador (trae run/serie/row correctos de la CMF). Elige su categoría, completa los datos que quieras mostrar y agrégalo. Se guarda y se dispara la consulta a la CMF; en ~5 min recarga y aparecen sus rentabilidades."),
+      card(card_header("➕ Agregar fondo (catálogo CMF o link de la CMF)"),
+        p(class = "text-muted", "Busca el fondo en el catálogo del comparador (trae run/serie/row correctos de la CMF). Elige su categoría, completa los datos que quieras mostrar y agrégalo. Se guarda y se dispara la consulta a la CMF; en ~3 a 5 min aparecen solas sus rentabilidades."),
         selectizeInput("cat_fondo", "Fondo (busca por nombre)", width = "100%",
                        choices = if (!is.null(CATALOGO)) stats::setNames(CATALOGO$key, CATALOGO$label) else NULL,
                        options = list(placeholder = "Escribe para buscar en el catálogo...",
                                       maxOptions = 3500, closeAfterSelect = TRUE)),
+        p(class = "text-muted", style = "font-size:13px;margin:-4px 0 6px",
+          "¿Fondo nuevo que no está en el catálogo? Pega el link de su ficha en la CMF (cmfchile.cl → el fondo → cualquier pestaña) y elige la serie:"),
+        layout_columns(col_widths = c(7, 2, 3),
+          textInput("cat_link", NULL, placeholder = "https://www.cmfchile.cl/institucional/mercados/entidad.php?mercado=V&rut=…&tipoentidad=…&row=…"),
+          actionButton("cat_link_buscar", "Buscar en la CMF", class = "btn-outline-secondary"),
+          uiOutput("cat_link_serie_ui")),
         uiOutput("cat_preview"),
         layout_columns(col_widths = c(4,4,4),
           selectInput("cat_hoja", "Categoría (hoja)", choices = NULL),
@@ -236,7 +242,17 @@ server <- function(input, output, session) {
                       selected = isolate(input$cat_hoja) %||% (hojas[1] %||% ""))
   })
 
+  # El fondo a agregar sale del catalogo o del link de la CMF: vale el ultimo
+  # que se uso (elegir en el buscador o buscar un link).
+  fuente   <- reactiveVal("catalogo")
+  fondo_link <- reactiveVal(NULL)   # list(nombre, run, tipoentidad, row, series)
+
   fila_catalogo <- reactive({
+    if (fuente() == "link") {
+      d <- fondo_link(); s <- input$cat_link_serie
+      if (is.null(d) || is.null(s) || !nzchar(s)) return(NULL)
+      return(list(nombre = d$nombre, run = d$run, serie = s, tipoentidad = d$tipoentidad, row = d$row))
+    }
     k <- input$cat_fondo
     if (is.null(k) || !nzchar(k) || is.null(CATALOGO)) return(NULL)
     f <- CATALOGO[CATALOGO$key == k, , drop = FALSE]
@@ -245,15 +261,38 @@ server <- function(input, output, session) {
 
   # Al elegir un fondo: mostrar run/serie/row y prellenar el nombre a mostrar
   observeEvent(input$cat_fondo, {
+    if (nzchar(input$cat_fondo %||% "")) fuente("catalogo")
     f <- fila_catalogo(); if (is.null(f)) return()
     if (!nzchar(input$cat_nombre %||% ""))
       updateTextInput(session, "cat_nombre", value = .nombre_sugerido(f$nombre))
   })
+
+  # Fondo nuevo por link de la CMF: lee nombre y series vigentes de su ficha
+  observeEvent(input$cat_link_buscar, {
+    f <- parsear_link_cmf(input$cat_link)
+    if (is.null(f)) {
+      fondo_link(NULL)
+      output$cat_msg <- renderText("⚠ El link no es de una ficha de fondo de la CMF (debe traer rut=…, tipoentidad=… y row=…).")
+      return()
+    }
+    d <- withProgress(message = "Consultando el fondo en la CMF…", value = 0.5,
+      tryCatch(datos_fondo_cmf(f), error = function(e) conditionMessage(e)))
+    if (is.character(d)) { fondo_link(NULL); output$cat_msg <- renderText(paste("⚠ No se pudo leer el fondo:", d)); return() }
+    if (!length(d$series)) { fondo_link(NULL); output$cat_msg <- renderText("⚠ La CMF no muestra series vigentes para este fondo."); return() }
+    fondo_link(d); fuente("link")
+    updateTextInput(session, "cat_nombre", value = .nombre_sugerido(d$nombre))
+    output$cat_msg <- renderText(paste0("✅ Encontrado en la CMF: ", d$nombre, ". Elige la serie."))
+  })
+  output$cat_link_serie_ui <- renderUI({
+    d <- fondo_link(); if (is.null(d)) return(NULL)
+    selectInput("cat_link_serie", NULL, choices = stats::setNames(d$series, paste("Serie", d$series)))
+  })
+
   output$cat_preview <- renderUI({
     f <- fila_catalogo()
     if (is.null(f)) return(p(class = "text-muted", "Ningún fondo seleccionado."))
-    HTML(sprintf("<div style='font-size:13px;color:#555'><b>run:</b> %s &nbsp; <b>serie:</b> %s &nbsp; <b>tipo:</b> %s &nbsp; <b>row:</b> <code>%s</code></div>",
-                 f$run, f$serie, f$tipoentidad, f$row))
+    HTML(sprintf("<div style='font-size:13px;color:#555'><b>%s</b> &nbsp; <b>run:</b> %s &nbsp; <b>serie:</b> %s &nbsp; <b>tipo:</b> %s &nbsp; <b>row:</b> <code>%s</code></div>",
+                 if (fuente() == "link") "Desde link CMF:" else "", f$run, f$serie, f$tipoentidad, f$row))
   })
 
   # Autocompletar TAC desde el folleto de la CMF (sin token). Las rentabilidades
@@ -295,6 +334,7 @@ server <- function(input, output, session) {
     refrescar_fondos_globales()
     disp <- gh_dispatch("refresh.yml")
     updateTextInput(session, "cat_nombre", value = ""); updateTextInput(session, "cat_hoja_nueva", value = "")
+    if (fuente() == "link") { fondo_link(NULL); updateTextInput(session, "cat_link", value = "") }
     for (id in c("cat_rent2024","cat_rent2025","cat_duracion","cat_liquidez","cat_tac"))
       updateTextInput(session, id, value = "")
     updateSelectInput(session, "cat_art107", selected = "")
