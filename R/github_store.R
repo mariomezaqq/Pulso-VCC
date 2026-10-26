@@ -183,10 +183,49 @@ store_write_bin <- function(rel, raw, mensaje = NULL) {
   r1 <- tryCatch(PUT(api, hdr, body = toJSON(body, auto_unbox = TRUE), timeout(30)),
                  error = function(e) NULL)
   if (!is.null(r1) && status_code(r1) %in% c(200, 201))
-    paste0("Commit OK a GitHub: data/", rel)
-  else
-    paste0("Guardado local OK, pero FALLO el commit a GitHub (HTTP ",
-           if (!is.null(r1)) status_code(r1) else "NULL", ").")
+    return(paste0("Commit OK a GitHub: data/", rel))
+  # La API de contenidos falla con archivos de algunos MB (HTTP 500, le pasaba
+  # al boletin) o si otro commit cambio el archivo entretanto (409). Respaldo:
+  # commit por la Git Data API (blob + tree + commit), que acepta hasta 100 MB.
+  r2 <- .commit_git_data(g, paste0("data/", rel), raw, body$message)
+  if (isTRUE(r2$ok)) return(paste0("Commit OK a GitHub: data/", rel))
+  paste0("Guardado local OK, pero FALLO el commit a GitHub (HTTP ",
+         if (!is.null(r1)) status_code(r1) else "NULL", "; respaldo: ", r2$msg, ").")
+}
+
+#' Commit de un archivo via Git Data API: blob -> tree -> commit -> mover la rama.
+#' Si otro commit entra entremedio (la rama no avanza en fast-forward), reintenta
+#' sobre el commit nuevo, hasta `intentos` veces. Devuelve list(ok, msg).
+.commit_git_data <- function(g, path, raw, mensaje, intentos = 3) {
+  base <- sprintf("https://api.github.com/repos/%s/git", g$repo)
+  hdr <- .gh_hdr(g)
+  pedir <- function(verbo, url, body = NULL) {
+    r <- tryCatch(VERB(verbo, url, hdr, timeout(120),
+                       body = if (!is.null(body)) toJSON(body, auto_unbox = TRUE)),
+                  error = function(e) NULL)
+    if (is.null(r) || status_code(r) >= 300)
+      return(list(ok = FALSE, msg = paste(verbo, sub(".*/git/", "", url), "HTTP",
+                                          if (is.null(r)) "sin respuesta" else status_code(r))))
+    list(ok = TRUE, d = content(r, "parsed"))
+  }
+  blob <- pedir("POST", paste0(base, "/blobs"),
+                list(content = jsonlite::base64_enc(raw), encoding = "base64"))
+  if (!blob$ok) return(blob)
+  for (i in seq_len(intentos)) {
+    ref <- pedir("GET", paste0(base, "/ref/heads/", g$branch)); if (!ref$ok) return(ref)
+    padre <- ref$d$object$sha
+    com <- pedir("GET", paste0(base, "/commits/", padre)); if (!com$ok) return(com)
+    tree <- pedir("POST", paste0(base, "/trees"), list(base_tree = com$d$tree$sha,
+      tree = list(list(path = path, mode = "100644", type = "blob", sha = blob$d$sha))))
+    if (!tree$ok) return(tree)
+    nuevo <- pedir("POST", paste0(base, "/commits"),
+                   list(message = mensaje, tree = tree$d$sha, parents = list(padre)))
+    if (!nuevo$ok) return(nuevo)
+    mov <- pedir("PATCH", paste0(base, "/refs/heads/", g$branch), list(sha = nuevo$d$sha, force = FALSE))
+    if (mov$ok) return(list(ok = TRUE, msg = "ok"))
+    Sys.sleep(1)   # la rama avanzo (ej. commit del cron): reintentar sobre el nuevo
+  }
+  mov
 }
 
 store_write_text <- function(rel, texto, mensaje = NULL)
