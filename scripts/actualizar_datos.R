@@ -58,8 +58,8 @@ if (length(series) == 0) {
 # Replica del script base: se divide por el USD observado del dia habil siguiente
 # (con fallback al ultimo disponible) y el cierre 2025 se fija en 2.2079 (en USD).
 FX <- tryCatch(obtener_usdclp_web(hasta), error = function(e) NULL)
-qn <- "Quest renta global A"
-if (!is.null(series[[qn]]) && !is.null(FX) && nrow(FX) > 0) {
+qn <- nombre_por_clave("9274-A")   # Quest renta global A (por run-serie: no depende del nombre)
+if (nzchar(qn) && !is.null(series[[qn]]) && !is.null(FX) && nrow(FX) > 0) {
   h <- series[[qn]]
   h$valor_cuota <- vapply(seq_len(nrow(h)), function(i) {
     fx <- fx_proximo_dia_habil(h$fecha[i], FX)
@@ -70,7 +70,7 @@ if (!is.null(series[[qn]]) && !is.null(FX) && nrow(FX) > 0) {
   if (any(h$fecha == d31)) h$valor_cuota[h$fecha == d31] <- 2.2079
   series[[qn]] <- h
   message("  ", qn, " convertido a USD (cierre 2025 fijo=2.2079, ult VC=", round(tail(h$valor_cuota, 1), 4), ")")
-} else if (!is.null(series[[qn]])) {
+} else if (nzchar(qn) && !is.null(series[[qn]])) {
   message("  AVISO: sin USD observado; ", qn, " queda en CLP")
 }
 
@@ -79,8 +79,9 @@ if (!is.null(series[[qn]]) && !is.null(FX) && nrow(FX) > 0) {
 # su ultima serie buena (el dashboard ya marca con ⚠ los datos atrasados). Asi un
 # hipo puntual de la CMF no hace desaparecer fondos del cuadro.
 if (length(fallidos) && !is.null(prev) && !is.null(prev$series)) {
-  rescatados <- intersect(fallidos, names(prev$series))
-  for (nm in rescatados) series[[nm]] <- prev$series[[nm]]
+  prev_series <- series_por_nombre(prev$series)   # el archivo guarda por run-serie
+  rescatados <- intersect(fallidos, names(prev_series))
+  for (nm in rescatados) series[[nm]] <- prev_series[[nm]]
   if (length(rescatados))
     message("Conservados del archivo previo (fallaron hoy): ", length(rescatados),
             " -> ", paste(rescatados, collapse = ", "))
@@ -168,7 +169,7 @@ if (!is.null(tnx) && nrow(tnx) > 0) {
 
 # ---- 4) Guardar ----
 datos <- list(generado = format(Sys.time(), "%Y-%m-%d %H:%M", tz = "America/Santiago"), cierre = as.character(fc),
-              series = series, macro = macro, macro_series = macro_series,
+              series = series_por_clave(series), macro = macro,   # llave run-serie (ver fondos_pulso.R) macro_series = macro_series,
               tnx_series = if (!is.null(tnx) && nrow(tnx) > 0) tnx else NULL,
               rf_usa = rf_usa, fallidos = fallidos)
 saveRDS(datos, file.path(base, "data", "series_vc.rds"))
