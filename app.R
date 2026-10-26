@@ -151,18 +151,21 @@ ui <- page_navbar(
                "Baja el folleto de la CMF y rellena el TAC. Las rentabilidades 2024/2025 se calculan solas del valor cuota tras agregar."),
           verbatimTextOutput("cat_auto_msg")),
         layout_columns(col_widths = c(2,2,2,2,2,2),
-          textInput("cat_rent2024", "Rent. 2024", ""),
-          textInput("cat_rent2025", "Rent. 2025", ""),
+          textInput("cat_rent2024", "Rent. 2024", "", placeholder = "vacío = se calcula"),
+          textInput("cat_rent2025", "Rent. 2025", "", placeholder = "vacío = se calcula"),
           textInput("cat_duracion", "Duración", ""),
           textInput("cat_liquidez", "Liquidez", ""),
           selectInput("cat_moneda", "Moneda", choices = c("CLP","UF","USD")),
           textInput("cat_tac", "TAC", "")),
-        layout_columns(col_widths = c(3),
-          selectInput("cat_art107", "¿Acogido al art. 107 LIR?", choices = c("Sin definir" = "", "Sí", "No"))),
+        layout_columns(col_widths = c(3, 3, 6),
+          textInput("cat_ticker", "Ticker Boletín (dividendos)", ""),
+          selectInput("cat_art107", "¿Acogido al art. 107 LIR?", choices = c("Sin definir" = "", "Sí", "No")),
+          div(style = "font-size:12px;padding-top:30px", textOutput("cat_ticker_msg"))),
         div(style = "margin-top:8px", actionButton("cat_add", "Agregar fondo", class = "btn-primary")),
         verbatimTextOutput("cat_msg")),
       card(card_header("Editar fondos (categoría, rent, TAC, duración…)"),
         p(class = "text-muted", HTML("Haz <b>doble clic</b> en una celda para editarla: <b>Nombre</b>, categoría, rentabilidades, duración, liquidez, moneda, TAC, ticker, art. 107 (escribe <b>Sí</b> o <b>No</b>). Para mover un fondo de categoría, edita la columna <b>Categoría</b>. Luego <b>Guardar cambios</b>. Para eliminar, selecciona filas y <b>Eliminar</b>. <i>(Al renombrar, las rentabilidades MTD/YTD en vivo reaparecen tras el próximo refresco de la CMF.)</i>")),
+        uiOutput("revision_tickers"),
         DTOutput("tbl_cur"),
         div(style = "margin-top:8px",
           actionButton("cat_save", "💾 Guardar cambios", class = "btn-primary"),
@@ -295,6 +298,46 @@ server <- function(input, output, session) {
                  if (fuente() == "link") "Desde link CMF:" else "", f$run, f$serie, f$tipoentidad, f$row))
   })
 
+  # Ticker del Boletin: se completa solo al elegir el fondo (por run + serie)
+  observeEvent(fila_catalogo(), ignoreNULL = FALSE, {
+    f <- fila_catalogo()
+    if (is.null(f)) { output$cat_ticker_msg <- renderText(""); return() }
+    if (identical(f$tipoentidad, "RGFMU")) {
+      updateTextInput(session, "cat_ticker", value = "")
+      output$cat_ticker_msg <- renderText("Fondo mutuo: sus repartos ya vienen en el valor cuota, no lleva ticker.")
+      return()
+    }
+    sug <- ticker_sugerido(f$run, f$serie)
+    updateTextInput(session, "cat_ticker", value = sug)
+    output$cat_ticker_msg <- renderText(if (nzchar(sug))
+      paste0("✅ Ticker del Boletín para run ", f$run, " serie ", f$serie, ": ", sug, ".")
+      else "No aparece en el Boletín (sin dividendos desde 2024, o es nuevo). Si reparte dividendos, escribe su ticker.")
+  })
+
+  # Revision de tickers de la lista actual contra el Boletin
+  revision <- reactive({ rv$tick; datos_ver(); revisar_tickers(rv$cur) })
+  output$revision_tickers <- renderUI({
+    r <- revision(); if (!nrow(r)) return(NULL)
+    filas <- paste0("<tr><td>", htmltools::htmlEscape(r$Fondo), "</td><td>", r$Run, "-", r$Serie,
+                    "</td><td>", ifelse(nzchar(r$Actual), r$Actual, "—"), "</td><td><b>", r$Boletin,
+                    "</b></td><td>", r$Problema, "</td></tr>", collapse = "")
+    div(class = "alert alert-warning", style = "font-size:13px",
+      HTML(paste0("<b>⚠ ", nrow(r), " fondo(s) con el ticker distinto al del Boletín</b> (sus dividendos no se suman bien):",
+                  "<table class='table table-sm' style='margin:6px 0'><tr><th>Fondo</th><th>Run-serie</th><th>Ticker actual</th><th>Boletín</th><th></th></tr>",
+                  filas, "</table>")),
+      actionButton("aplicar_tickers", "Usar los tickers del Boletín y guardar", class = "btn-warning btn-sm"))
+  })
+  observeEvent(input$aplicar_tickers, {
+    r <- revision(); if (!nrow(r) || is.null(rv$cur)) return()
+    for (k in seq_len(nrow(r))) {
+      i <- which(rv$cur$run == r$Run[k] & rv$cur$serie == r$Serie[k])
+      rv$cur$ticker_sebra[i] <- r$Boletin[k]
+    }
+    msg <- guardar_curados(rv$cur, paste0("Panel admin: tickers del Boletín para ", nrow(r), " fondo(s)"))
+    refrescar_fondos_globales(); rv$tick <- rv$tick + 1
+    output$cat_del_msg <- renderText(paste0("✅ Tickers actualizados (", paste(r$Fondo, collapse = ", "), "). ", msg))
+  })
+
   # Autocompletar TAC desde el folleto de la CMF (sin token). Las rentabilidades
   # NO salen del folleto: se calculan del valor cuota (como el pulso) en el cron
   # tras agregar el fondo. Aqui solo el TAC (Remuneracion Maxima del folleto).
@@ -321,13 +364,25 @@ server <- function(input, output, session) {
   observeEvent(input$cat_add, {
     if (is.null(rv$cur)) { output$cat_msg <- renderText("No se pudo leer la lista de fondos (fondos_curados.csv)."); return() }
     f <- fila_catalogo()
+    # Validaciones que evitan los errores tipicos al agregar (caso MBIQ):
+    r24 <- trimws(input$cat_rent2024 %||% ""); r25 <- trimws(input$cat_rent2025 %||% "")
+    if (nzchar(r24) && identical(r24, r25)) {
+      output$cat_msg <- renderText(paste0("⚠ Rent. 2024 y 2025 son iguales (", r24, "): revisa. Si las dejas vacías, se calculan solas del valor cuota con dividendos."))
+      return()
+    }
+    tk <- trimws(input$cat_ticker %||% "")
+    sug <- if (!is.null(f) && !identical(f$tipoentidad, "RGFMU")) ticker_sugerido(f$run, f$serie) else ""
+    if (!nzchar(tk) && nzchar(sug)) {
+      output$cat_msg <- renderText(paste0("⚠ Falta el ticker: el Boletín trae ", sug, " para este fondo y serie. Sin ticker sus dividendos no se suman y la rentabilidad sale más baja."))
+      return()
+    }
     hoja <- if (nzchar(trimws(input$cat_hoja_nueva %||% ""))) trimws(input$cat_hoja_nueva) else (input$cat_hoja %||% "")
     tit  <- { m <- rv$cur$titulo[rv$cur$hoja == hoja]; if (length(m)) m[1] else hoja }
     res <- agregar_fondo_curado(rv$cur, f, hoja = hoja, titulo = tit, nombre = input$cat_nombre,
-                                moneda = input$cat_moneda, rent2024 = input$cat_rent2024,
-                                rent2025 = input$cat_rent2025, duracion = input$cat_duracion,
+                                moneda = input$cat_moneda, rent2024 = r24,
+                                rent2025 = r25, duracion = input$cat_duracion,
                                 liquidez = input$cat_liquidez, tac = input$cat_tac,
-                                art107 = input$cat_art107)
+                                ticker_sebra = tk, art107 = input$cat_art107)
     if (!isTRUE(res$ok)) { output$cat_msg <- renderText(paste("⚠", res$msg)); return() }
     rv$cur <- res$df
     msg <- guardar_curados(rv$cur, paste0("Panel admin: agregar fondo '", trimws(input$cat_nombre), "'"))
@@ -335,7 +390,7 @@ server <- function(input, output, session) {
     disp <- gh_dispatch("refresh.yml")
     updateTextInput(session, "cat_nombre", value = ""); updateTextInput(session, "cat_hoja_nueva", value = "")
     if (fuente() == "link") { fondo_link(NULL); updateTextInput(session, "cat_link", value = "") }
-    for (id in c("cat_rent2024","cat_rent2025","cat_duracion","cat_liquidez","cat_tac"))
+    for (id in c("cat_rent2024","cat_rent2025","cat_duracion","cat_liquidez","cat_tac","cat_ticker"))
       updateTextInput(session, id, value = "")
     updateSelectInput(session, "cat_art107", selected = "")
     rv$tick <- rv$tick + 1
