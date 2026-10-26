@@ -1,0 +1,31 @@
+name: IPSA Yahoo (en observación)
+
+# Días hábiles a las 21:37 UTC (18:37 Chile en verano, 17:37 en invierno), después
+# del cierre de la bolsa: guarda el cierre del IPSA de Yahoo (MXIPSAGC.SN) en
+# data/ipsa_yahoo.csv para compararlo con el IPSA manual antes de usarlo en el
+# dashboard. No toca series_vc.rds ni ningún cálculo. También manual.
+on:
+  schedule:
+    - cron: '37 21 * * 1-5'
+  workflow_dispatch:
+
+concurrency:
+  group: pulso-ipsa-yahoo
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  ipsa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cierre del IPSA en Yahoo
+        run: python3 .github/scripts/ipsa_yahoo.py
+
+      - name: Commit
+        run: .github/scripts/commit-datos.sh "IPSA Yahoo ($(date -u +%Y-%m-%d))" data/ipsa_yahoo.csv
