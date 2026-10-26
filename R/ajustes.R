@@ -131,6 +131,71 @@ recortar_boletin <- function(src, dest, desde = as.Date("2024-01-01")) {
   dest
 }
 
+#' Tickers del Boletin por run + serie. El Boletin trae nombre + serie + ticker
+#' (columnas Pesos/Dolares) pero no el run; dividendos_calculados.csv trae
+#' nombre + serie + run. Cruzando ambos sale run|serie -> ticker (se prefiere el
+#' de pesos). Se cachea hasta que cambie alguno de los dos archivos.
+#' @return data.frame(run, serie, ticker, otros) - `otros`: el otro ticker valido
+.cache_tickers <- new.env()
+tickers_boletin <- function(ruta_xlsx = "data/dividendos.xlsx",
+                            ruta_calc = "data/dividendos_calculados.csv") {
+  vacio <- data.frame(run = character(), serie = character(), ticker = character(), otros = character())
+  if (!file.exists(ruta_xlsx) || !file.exists(ruta_calc)) return(vacio)
+  clave <- paste(file.info(c(ruta_xlsx, ruta_calc))$mtime, collapse = "|")
+  if (identical(.cache_tickers$clave, clave)) return(.cache_tickers$df)
+  b <- do.call(rbind, lapply(HOJAS_BOLETIN, function(hs) {
+    d <- tryCatch(suppressMessages(read_excel(ruta_xlsx, sheet = hs[[1]], skip = hs[[2]],
+                                              col_types = "text")), error = function(e) NULL)
+    if (is.null(d) || ncol(d) < 4) return(NULL)
+    data.frame(nombre = trimws(d[[1]]), serie = trimws(d[[2]]),
+               pesos = trimws(d[[3]]), dolares = trimws(d[[4]]))
+  }))
+  calc <- tryCatch(read.csv(ruta_calc, colClasses = "character", fileEncoding = "UTF-8"),
+                   error = function(e) NULL)
+  if (is.null(b) || is.null(calc) || !all(c("nombre", "serie", "run") %in% names(calc))) return(vacio)
+  calc <- unique(calc[!is.na(calc$run) & nzchar(calc$run) & calc$run != "NA", c("nombre", "serie", "run")])
+  m <- unique(merge(unique(b), calc, by = c("nombre", "serie")))
+  ok <- function(x) !is.na(x) & nzchar(x) & x != "-"
+  m$ticker <- ifelse(ok(m$pesos), m$pesos, m$dolares)
+  m$otros  <- ifelse(ok(m$pesos) & ok(m$dolares), m$dolares, "")
+  m <- m[ok(m$ticker), ]
+  df <- m[!duplicated(paste(m$run, m$serie)), c("run", "serie", "ticker", "otros")]
+  .cache_tickers$clave <- clave; .cache_tickers$df <- df
+  df
+}
+
+#' Ticker sugerido para un fondo (run + serie), o "" si el Boletin no lo trae.
+ticker_sugerido <- function(run, serie) {
+  t <- tickers_boletin()
+  i <- which(t$run == as.character(run) & t$serie == as.character(serie))[1]
+  if (is.na(i)) "" else t$ticker[i]
+}
+
+#' Revisa los tickers de la lista curada contra el Boletin: fondos de inversion
+#' sin ticker cuando el Boletin si trae uno para su run + serie, o con un ticker
+#' que el Boletin asigna a otra serie. Sin estos, los dividendos no se suman
+#' (o se suman los de otra serie) y la rentabilidad sale mal.
+#' @return data.frame(Fondo, Run, Serie, Actual, Boletin, Problema)
+revisar_tickers <- function(cur) {
+  t <- tickers_boletin()
+  out <- data.frame(Fondo = character(), Run = character(), Serie = character(),
+                    Actual = character(), Boletin = character(), Problema = character())
+  if (is.null(cur) || !nrow(cur) || !nrow(t)) return(out)
+  es_man <- tolower(trimws(cur$es_manual)) %in% c("true", "1", "yes", "si", "sí")
+  for (i in which(!es_man & cur$tipoentidad != "RGFMU" & nzchar(cur$run))) {
+    j <- which(t$run == cur$run[i] & t$serie == cur$serie[i])[1]
+    if (is.na(j)) next
+    actual <- toupper(trimws(cur$ticker_sebra[i]))
+    validos <- toupper(c(t$ticker[j], t$otros[j]))
+    problema <- if (!nzchar(actual)) "Sin ticker: no se suman sus dividendos"
+                else if (!actual %in% validos) "El ticker no corresponde a esta serie en el Boletín"
+                else ""
+    if (nzchar(problema)) out[nrow(out) + 1, ] <- list(cur$nombre_excel[i], cur$run[i], cur$serie[i],
+                                                       cur$ticker_sebra[i], t$ticker[j], problema)
+  }
+  unique(out)
+}
+
 #' Carga dividendos del Boletin y los devuelve por nombre_excel. Lee AMBAS hojas
 #' relevantes ("Dividendos CFI nacionales" + "Repartos CFI-CFM"); los repartos que
 #' vienen solo como monto total se resuelven con dividendos_calculados.csv.
