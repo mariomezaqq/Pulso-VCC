@@ -66,36 +66,42 @@ parsear_link_cmf <- function(url) {
 #' nombre de la pestaña Identificacion; series de "Series de Cuotas" (fondos de
 #' inversion, sin fecha de termino) o del selector de la pestaña Valores Cuota
 #' (fondos mutuos). Devuelve list(nombre, run, tipoentidad, row, series).
-datos_fondo_cmf <- function(f) {
-  pagina <- function(pestania) {
-    url <- paste0("https://www.cmfchile.cl/institucional/mercados/entidad.php?mercado=V&rut=",
-                  f$run, "&grupo=&tipoentidad=", f$tipoentidad, "&row=", f$row,
-                  "&vig=VI&control=svs&pestania=", pestania)
-    r <- httr::GET(url, httr::user_agent("Mozilla/5.0"), httr::timeout(30))
-    if (httr::status_code(r) != 200) stop("la CMF respondió HTTP ", httr::status_code(r))
-    xml2::read_html(httr::content(r, "text", encoding = "UTF-8"))
-  }
-  txt <- function(nodos) trimws(gsub("\\s+", " ", xml2::xml_text(nodos)))
+.pagina_cmf <- function(f, pestania) {
+  url <- paste0("https://www.cmfchile.cl/institucional/mercados/entidad.php?mercado=V&rut=",
+                f$run, "&grupo=&tipoentidad=", f$tipoentidad, "&row=", f$row,
+                "&vig=VI&control=svs&pestania=", pestania)
+  r <- httr::GET(url, httr::user_agent("Mozilla/5.0"), httr::timeout(30))
+  if (httr::status_code(r) != 200) stop("la CMF respondió HTTP ", httr::status_code(r))
+  xml2::read_html(httr::content(r, "text", encoding = "UTF-8"))
+}
+.txt_nodos <- function(nodos) trimws(gsub("\\s+", " ", xml2::xml_text(nodos)))
 
-  ident <- pagina(1)
-  th <- txt(xml2::xml_find_all(ident, "//table//th"))
-  td <- txt(xml2::xml_find_all(ident, "//table//th/following-sibling::td[1]"))
-  i  <- which(grepl("^Nombre", th) & !grepl("Corto", th))[1]
-  nombre <- if (!is.na(i) && i <= length(td)) td[i] else ""
-  if (!nzchar(nombre)) stop("no encontré el fondo en la CMF (revisa el link)")
-
+#' Series vigentes de un fondo (run, tipoentidad, row) segun su ficha en la CMF:
+#' "Series de Cuotas" (fondos de inversion, sin fecha de termino) o el selector
+#' de "Valores Cuota" (fondos mutuos). Tambien la usa scripts/actualizar_catalogo.R.
+series_fondo_cmf <- function(f) {
   if (f$tipoentidad == "RGFMU") {
-    op <- xml2::xml_find_all(pagina(7), "//select[@name='se']/option")
+    op <- xml2::xml_find_all(.pagina_cmf(f, 7), "//select[@name='se']/option")
     series <- setdiff(trimws(xml2::xml_attr(op, "value")), c("%", ""))
   } else {
-    filas <- xml2::xml_find_all(pagina(14), "//table//tr[td]")
-    celdas <- lapply(filas, function(tr) txt(xml2::xml_find_all(tr, "./td")))
+    filas <- xml2::xml_find_all(.pagina_cmf(f, 14), "//table//tr[td]")
+    celdas <- lapply(filas, function(tr) .txt_nodos(xml2::xml_find_all(tr, "./td")))
     # columnas: Serie, Caracteristica, Fecha Inicio, Fecha Termino, ...
     series <- vapply(Filter(function(c) length(c) >= 4 && !nzchar(c[4]), celdas),
                      function(c) c[1], character(1))
   }
+  unique(series[nzchar(series)])
+}
+
+datos_fondo_cmf <- function(f) {
+  ident <- .pagina_cmf(f, 1)
+  th <- .txt_nodos(xml2::xml_find_all(ident, "//table//th"))
+  td <- .txt_nodos(xml2::xml_find_all(ident, "//table//th/following-sibling::td[1]"))
+  i  <- which(grepl("^Nombre", th) & !grepl("Corto", th))[1]
+  nombre <- if (!is.na(i) && i <= length(td)) td[i] else ""
+  if (!nzchar(nombre)) stop("no encontré el fondo en la CMF (revisa el link)")
   list(nombre = nombre, run = f$run, tipoentidad = f$tipoentidad, row = f$row,
-       series = unique(series[nzchar(series)]))
+       series = series_fondo_cmf(f))
 }
 
 # ---- Lista curada actual (la fuente de verdad de los fondos del dashboard) ----

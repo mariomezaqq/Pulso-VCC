@@ -108,3 +108,9 @@ En ~1 minuto tendrás el link público `https://TU_CUENTA.shinyapps.io/pulso-vcc
   es correr `scripts/actualizar_datos.R` en un PC (Chile) con el Programador de
   tareas de Windows y hacer `git push` del `series_vc.rds`.
 - **Token reCAPTCHA:** es fijo y no caduca (validado por meses). No requiere cookies.
+- **Catálogo de fondos (buscador del panel):** `.github/workflows/catalogo.yml`
+  corre el día 2 de cada mes (y a mano desde Actions) `scripts/actualizar_catalogo.R`,
+  que lee de la CMF los fondos y series vigentes y reescribe
+  `fondos/data/catalogo_fondos_limpio.csv`; la app se republica sola. Si la CMF
+  no responde o fallan muchos fondos, no toca el catálogo. Un fondo que aún no
+  esté en el catálogo se puede agregar pegando el link de su ficha en la CMF.

@@ -133,7 +133,7 @@ ui <- page_navbar(
         selectizeInput("cat_fondo", "Fondo (busca por nombre)", width = "100%",
                        choices = if (!is.null(CATALOGO)) stats::setNames(CATALOGO$key, CATALOGO$label) else NULL,
                        options = list(placeholder = "Escribe para buscar en el catálogo...",
-                                      maxOptions = 3500, closeAfterSelect = TRUE)),
+                                      maxOptions = 10000, closeAfterSelect = TRUE)),
         p(class = "text-muted", style = "font-size:13px;margin:-4px 0 6px",
           "¿Fondo nuevo que no está en el catálogo? Pega el link de su ficha en la CMF (cmfchile.cl → el fondo → cualquier pestaña) y elige la serie:"),
         layout_columns(col_widths = c(7, 2, 3),
@@ -235,7 +235,7 @@ server <- function(input, output, session) {
   })
 
   # ---- Agregar / quitar fondos ----
-  # El buscador de fondos ya trae las ~3500 opciones cargadas en el navegador
+  # El buscador de fondos ya trae las ~3500-5000 opciones (todo el catalogo) cargadas en el navegador
   # (ver selectizeInput en la UI): el filtrado es instantaneo, sin ida y vuelta
   # al servidor por cada letra (eso era lo que se sentia lento/no funcionaba
   # en shinyapps.io). Aqui solo faltan las categorias (hojas).
