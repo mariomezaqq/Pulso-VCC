@@ -99,6 +99,38 @@ suppressMessages({ library(readxl); library(dplyr); library(lubridate); library(
   res
 }
 
+# Hojas del Boletin que se leen, con las filas a saltar hasta la cabecera.
+HOJAS_BOLETIN <- list(list("Dividendos CFI nacionales", 11L), list("Repartos CFI-CFM", 10L))
+
+#' Deja del Boletin solo lo que se usa: las 2 hojas de HOJAS_BOLETIN, como valores
+#' (sin formatos/tablas/nombres), filas con fecha limite desde `desde` y sin las
+#' columnas de texto largo (lugar de pago, observaciones). La cabecera queda en la
+#' misma fila, asi cargar_dividendos_pulso() lee igual el original y el recortado.
+#' Pesa ~1/3 y se sube y lee mas rapido. Error si no encuentra la estructura.
+recortar_boletin <- function(src, dest, desde = as.Date("2024-01-01")) {
+  wb <- openxlsx::createWorkbook()
+  for (hs in HOJAS_BOLETIN) {
+    d <- read_excel(src, sheet = hs[[1]], col_names = FALSE, col_types = "text",
+                    .name_repair = "minimal")
+    hdr <- which(trimws(d[[1]]) == "Nombre Emisor")[1]
+    if (is.na(hdr)) stop("no se encontro la cabecera de la hoja '", hs[[1]], "'")
+    cab <- tolower(unlist(d[hdr, ]))
+    il <- which(grepl("l.mi", cab))[1]
+    if (is.na(il)) stop("no se encontro la columna de fecha limite en '", hs[[1]], "'")
+    datos <- d[-seq_len(hdr), ]
+    fl <- .parse_fecha_div(datos[[il]])
+    datos <- datos[is.na(fl) | fl >= desde, ]
+    for (j in which(grepl("lugar|observ", cab))) datos[[j]] <- NA_character_
+    openxlsx::addWorksheet(wb, hs[[1]])
+    # read_excel salta las filas vacias iniciales: se escribe desde la fila que
+    # deja la cabecera justo despues de las `skip` filas que espera el lector
+    openxlsx::writeData(wb, hs[[1]], rbind(d[seq_len(hdr), ], datos), colNames = FALSE,
+                        startRow = hs[[2]] + 2L - hdr)
+  }
+  openxlsx::saveWorkbook(wb, dest, overwrite = TRUE)
+  dest
+}
+
 #' Carga dividendos del Boletin y los devuelve por nombre_excel. Lee AMBAS hojas
 #' relevantes ("Dividendos CFI nacionales" + "Repartos CFI-CFM"); los repartos que
 #' vienen solo como monto total se resuelven con dividendos_calculados.csv.
@@ -112,7 +144,7 @@ cargar_dividendos_pulso <- function(ruta_xlsx, fecha_inicio = as.Date("2025-12-3
   calc <- tryCatch(.calc_lookup_div(), error = function(e) list())
 
   res <- list()
-  for (hs in list(list("Dividendos CFI nacionales", 11L), list("Repartos CFI-CFM", 10L))) {
+  for (hs in HOJAS_BOLETIN) {
     parcial <- .leer_hoja_div(ruta_xlsx, hs[[1]], hs[[2]], lookup, fecha_inicio, calc)
     for (nm in names(parcial)) res[[nm]] <- rbind(res[[nm]], parcial[[nm]])
   }

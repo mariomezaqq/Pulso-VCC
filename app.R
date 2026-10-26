@@ -394,7 +394,13 @@ server <- function(input, output, session) {
   }
   output$div_msg <- renderText(estado_div())
   observeEvent(input$div_file, {
-    msg <- tryCatch(store_write_file("dividendos.xlsx", input$div_file$datapath, "Subir dividendos desde la app"),
+    # Se sube recortado (recortar_boletin: solo lo que se usa, ~1/3 del peso). Si
+    # el archivo no tiene la estructura esperada, se sube tal cual y se avisa.
+    ruta <- input$div_file$datapath; nota <- ""
+    rec <- tryCatch(recortar_boletin(ruta, tempfile(fileext = ".xlsx")),
+                    error = function(e) { nota <<- paste0(" (sin recortar: ", conditionMessage(e), ")"); NULL })
+    if (!is.null(rec)) ruta <- rec
+    msg <- tryCatch(paste0(store_write_file("dividendos.xlsx", ruta, "Subir dividendos desde la app"), nota),
                     error = function(e) paste("Error:", e$message))
     output$div_msg <- renderText(paste0(msg, "\n", estado_div())); rv$tick <- rv$tick + 1
   })
