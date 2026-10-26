@@ -387,7 +387,7 @@ server <- function(input, output, session) {
     rv$cur <- res$df
     msg <- guardar_curados(rv$cur, paste0("Panel admin: agregar fondo '", trimws(input$cat_nombre), "'"))
     refrescar_fondos_globales()
-    disp <- gh_dispatch("refresh.yml")
+    disp <- gh_dispatch("refresh.yml", list(solo_fondos = paste0(f$run, "-", f$serie)))   # solo el fondo nuevo
     updateTextInput(session, "cat_nombre", value = ""); updateTextInput(session, "cat_hoja_nueva", value = "")
     if (fuente() == "link") { fondo_link(NULL); updateTextInput(session, "cat_link", value = "") }
     for (id in c("cat_rent2024","cat_rent2025","cat_duracion","cat_liquidez","cat_tac","cat_ticker"))
@@ -395,11 +395,11 @@ server <- function(input, output, session) {
     updateSelectInput(session, "cat_art107", selected = "")
     rv$tick <- rv$tick + 1
     output$cat_msg <- renderText(paste0("✅ Agregado. ", msg,
-      if (disp$ok) " · Consultando la CMF: el dashboard se actualiza solo en ~3 a 5 min." else paste0(" · (scrape no disparado: ", disp$msg, ")")))
+      if (disp$ok) " · Consultando la CMF solo para este fondo: aparece solo en ~2 min." else paste0(" · (scrape no disparado: ", disp$msg, ")")))
     showModal(modalDialog(title = "Fondo agregado",
       HTML(paste0("✅ <b>", trimws(input$cat_nombre), "</b> se agregó a <b>", hoja, "</b>.<br><br>",
                   "Se está consultando la CMF para traer sus rentabilidades.<br>",
-                  "El dashboard se actualizará solo en <b>~3 a 5 minutos</b> (no hace falta recargar).")),
+                  "El dashboard se actualizará solo en <b>~2 minutos</b> (no hace falta recargar).")),
       easyClose = TRUE, footer = modalButton("Cerrar")))
   })
 

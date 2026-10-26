@@ -36,6 +36,7 @@ env:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 20   # el 26-10 un "Setup R" quedo colgado: mejor fallar y reintentar
     steps:
       - name: Checkout
         uses: actions/checkout@v4

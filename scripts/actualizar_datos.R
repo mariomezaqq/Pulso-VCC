@@ -32,21 +32,37 @@ scrapear_con_reintento <- function(fd, n = 3) {
   }
   NULL
 }
+# Modo "solo" (al agregar un fondo desde el panel): SOLO_FONDOS="9152-A,..." (run-serie)
+# scrapea solo esos fondos, mas los que aun no tienen serie en el archivo previo
+# (por si otra corrida "solo" quedo cancelada en la cola), y reusa del archivo
+# previo el resto de las series, los indices macro y la RF USA. Segundos en vez
+# de ~1,5 min. Sin SOLO_FONDOS (cron diario): todos.
+solo <- trimws(strsplit(Sys.getenv("SOLO_FONDOS", ""), ",")[[1]]); solo <- solo[nzchar(solo)]
+ruta_rds <- file.path(base, "data", "series_vc.rds")
+prev <- if (file.exists(ruta_rds)) tryCatch(readRDS(ruta_rds), error = function(e) NULL) else NULL
+modo_solo <- length(solo) > 0 && !is.null(prev) && !is.null(prev$series)
+fondos_a_scrapear <- FONDOS
+if (modo_solo) {
+  con_serie <- names(series_por_nombre(prev$series))
+  fondos_a_scrapear <- Filter(function(fd) clave_fondo(fd) %in% solo || !(fd$nombre %in% con_serie), FONDOS)
+  message("Modo solo: ", paste(vapply(fondos_a_scrapear, function(fd) paste0(fd$nombre, " (", clave_fondo(fd), ")"), ""), collapse = ", "))
+  if (!length(fondos_a_scrapear)) { modo_solo <- FALSE; fondos_a_scrapear <- FONDOS
+                                    message("Modo solo sin fondos que calcen: se scrapean todos.") }
+}
+
 series <- list(); fallidos <- character()
-for (fd in FONDOS) {
+for (fd in fondos_a_scrapear) {
   h <- scrapear_con_reintento(fd, n = 3)
   if (!is.null(h)) series[[fd$nombre]] <- h else fallidos <- c(fallidos, fd$nombre)
   Sys.sleep(0.6)
 }
-message("Fondos OK: ", length(series), " / ", length(FONDOS),
+message("Fondos OK: ", length(series), " / ", length(fondos_a_scrapear),
         if (length(fallidos)) paste0(" | FALLIDOS: ", paste(fallidos, collapse = ", ")) else "")
 
 # ---- GUARD anti-overwrite: no pisar datos buenos con un scrape vacio ----
 # Si la CMF no responde y NO se scrapeo ningun fondo, abortamos con error: el
 # step del cron queda marcado como fallido (alerta visible) y NO se commitea,
 # asi conservamos el series_vc.rds anterior en vez de borrarlo en silencio.
-ruta_rds <- file.path(base, "data", "series_vc.rds")
-prev <- if (file.exists(ruta_rds)) tryCatch(readRDS(ruta_rds), error = function(e) NULL) else NULL
 if (length(series) == 0) {
   n_prev <- if (!is.null(prev) && !is.null(prev$series)) length(prev$series) else 0L
   message("SCRAPE VACIO: 0/", length(FONDOS), " fondos OK. NO se sobrescribe series_vc.rds.",
@@ -85,6 +101,22 @@ if (length(fallidos) && !is.null(prev) && !is.null(prev$series)) {
   if (length(rescatados))
     message("Conservados del archivo previo (fallaron hoy): ", length(rescatados),
             " -> ", paste(rescatados, collapse = ", "))
+}
+
+# Modo solo: el resto de las series, los indices macro y la RF USA salen del
+# archivo previo (la conversion USD de Quest de arriba solo toco lo recien scrapeado)
+if (modo_solo) {
+  todas <- series_por_nombre(prev$series)
+  for (nm in names(series)) todas[[nm]] <- series[[nm]]
+  series <- todas
+  fechas_dato <- vapply(series, function(h) as.character(max(h$fecha)), character(1))
+  fc <- .moda_fecha(as.Date(fechas_dato)); if (is.na(fc)) fc <- as.Date(prev$cierre)
+  datos <- prev
+  datos$generado <- format(Sys.time(), "%Y-%m-%d %H:%M", tz = "America/Santiago")
+  datos$cierre <- as.character(fc); datos$series <- series_por_clave(series); datos$fallidos <- fallidos
+  saveRDS(datos, ruta_rds)
+  message("Guardado data/series_vc.rds (modo solo) | series: ", length(datos$series))
+  quit(save = "no")
 }
 
 # Cierre del grupo (moda de ultimos datos)
