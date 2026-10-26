@@ -1,0 +1,51 @@
+name: Actualizar catálogo de fondos CMF
+
+# Una vez al mes (día 2, 13:07 UTC ≈ 10:07 Chile) reescribe el catálogo del
+# buscador del panel (fondos/data/catalogo_fondos_limpio.csv) con los fondos y
+# series vigentes de la CMF. Al commitearlo, deploy.yml republica la app
+# (toca fondos/data/) y el buscador queda al día. También manual desde Actions.
+on:
+  schedule:
+    - cron: '7 13 2 * *'
+  workflow_dispatch:
+
+concurrency:
+  group: pulso-catalogo
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  catalogo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # "Setup R" a veces se cuelga en el runner de GitHub: tope de 6 min y un reintento.
+      - name: Setup R
+        id: setup_r
+        uses: r-lib/actions/setup-r@v2
+        timeout-minutes: 6
+        continue-on-error: true
+        with:
+          use-public-rspm: true
+
+      - name: Setup R (reintento)
+        if: steps.setup_r.outcome == 'failure'
+        uses: r-lib/actions/setup-r@v2
+        timeout-minutes: 8
+        with:
+          use-public-rspm: true
+
+      - name: Instalar paquetes R
+        run: install.packages(c("httr", "xml2"))
+        shell: Rscript {0}
+
+      - name: Leer fondos y series vigentes de la CMF
+        run: Rscript scripts/actualizar_catalogo.R
+
+      - name: Commit del catálogo
+        run: .github/scripts/commit-datos.sh "Catálogo de fondos CMF actualizado ($(date -u +%Y-%m-%d))" fondos/data/catalogo_fondos_limpio.csv
