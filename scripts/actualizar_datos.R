@@ -1,5 +1,5 @@
 # =============================================================================
-# ACTUALIZAR DATOS  (lo corre el cron diario 11:00 Chile / 15:00 UTC, y manual)
+# ACTUALIZAR DATOS  (lo corre el cron diario 11:00 Chile todo el año, y manual)
 # Scrapea las series de valor cuota de los 48 fondos + indices macro + RF USA,
 # y guarda data/series_vc.rds (series CRUDAS). Los dividendos / manuales se
 # aplican al renderizar en la app, no aqui.

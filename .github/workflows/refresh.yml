@@ -1,9 +1,13 @@
 name: Actualizar datos Pulso VCC
 
-# Corre todos los días a las 15:00 UTC (= 11:00 Chile en invierno, 12:00 en verano).
+# Corre todos los días a las 11:00 hora de Chile, todo el año. GitHub programa en
+# UTC y Chile cambia de horario, así que hay dos horarios (14:00 y 15:00 UTC) y el
+# job "hora" deja pasar solo el que ese día cae a las 11:00 en Chile:
+#   verano (UTC-3): 14:00 UTC = 11:00   |   invierno (UTC-4): 15:00 UTC = 11:00
 # También se puede disparar a mano desde la pestaña Actions ("Run workflow").
 on:
   schedule:
+    - cron: '0 14 * * *'
     - cron: '0 15 * * *'
   workflow_dispatch:
     inputs:
@@ -21,7 +25,28 @@ permissions:
   contents: write   # para commitear data/series_vc.rds de vuelta al repo
 
 jobs:
+  hora:
+    runs-on: ubuntu-latest
+    outputs:
+      correr: ${{ steps.h.outputs.correr }}
+    steps:
+      - id: h
+        # Decide por el horario que disparo la corrida (no por la hora real, que
+        # puede atrasarse): 14:00 UTC solo con Chile en UTC-3, 15:00 UTC solo en UTC-4.
+        run: |
+          off=$(TZ=America/Santiago date +%z)
+          case "${{ github.event_name }}|${{ github.event.schedule }}|$off" in
+            workflow_dispatch*) correr=true ;;
+            "schedule|0 14 * * *|-0300") correr=true ;;
+            "schedule|0 15 * * *|-0400") correr=true ;;
+            *) correr=false ;;
+          esac
+          echo "Chile UTC$off, disparo '${{ github.event.schedule }}' -> correr=$correr"
+          echo "correr=$correr" >> "$GITHUB_OUTPUT"
+
   scrape:
+    needs: hora
+    if: needs.hora.outputs.correr == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30   # si algo se cuelga (ej. instalar R), falla en vez de quedar horas
     env:
