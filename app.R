@@ -17,7 +17,7 @@ suppressMessages({
 # curada de GitHub ANTES de armar los fondos (fondos_pulso.R la lee del disco).
 source("R/github_store.R")
 source("R/admin_fondos.R")
-try(store_sync("fondos_curados.csv"), silent = TRUE)
+try(sincronizar_datos(), silent = TRUE)   # data/ al dia con GitHub (ver datos_ver en el server)
 for (f in c("fondos_pulso","calculos","dividendos","ajustes",
             "compute","ui_dashboard","excel_export"))
   source(file.path("R", paste0(f, ".R")))
@@ -88,25 +88,15 @@ aplicar_indices_manuales <- function(macro, vc_df, fc) {
 }
 
 preparar_todo <- function(vc_df, ov_df = NULL) {
-  store_sync_fresh("series_vc.rds")   # en la nube baja el ultimo dato del cron (via API, sin cache de CDN); en local mantiene el archivo
-  # fondos_curados.csv (categoria/duracion/liquidez/TAC/etc) solo se sincronizaba
-  # UNA VEZ al arrancar el proceso R (linea ~20). Si otra sesion/instancia edito
-  # y commiteo un cambio, este proceso quedaba con FONDOS/CATEGORIAS/DATOS_FONDO
-  # global desactualizados hasta que alguien tocara el panel admin EN ESTE MISMO
-  # proceso. Se resincroniza aqui, en cada render, igual que series_vc.rds.
-  # store_sync_fresh (no store_sync): el dashboard se re-renderiza justo
-  # despues de guardar (cat_save bumpea rv$tick), y el CDN de store_sync
-  # (raw.githubusercontent.com) tarda ~5 min en reflejar el commit -> pisaba
-  # la edicion recien guardada con la version vieja cacheada.
-  if (!isTRUE(getOption("pulso.hardcode_only", FALSE))) {
-    store_sync_fresh("fondos_curados.csv")
-    refrescar_fondos_globales()
-  }
+  # Lee SOLO del disco: series_vc.rds, fondos_curados.csv, dividendos.xlsx y
+  # dividendos_calculados.csv los mantiene al dia sincronizar_datos() (al arrancar
+  # y cada vez que cambia el commit de GitHub, via datos_ver en el server). Antes
+  # se bajaban en cada render, y la lista de fondos podia quedar vieja hasta
+  # reiniciar la app.
   if (!file.exists(DATA_RDS)) return(NULL)
   datos <- readRDS(DATA_RDS)
   fc <- as.Date(datos$cierre)
   # Dividendos (FIRES/FINRE) + factor de reparto (RGFMU) -> valor_cuota_ajustado
-  store_sync("dividendos.xlsx")
   ruta_div <- if (file.exists("data/dividendos.xlsx")) "data/dividendos.xlsx" else NULL
   div <- fusionar_overrides(cargar_dividendos_pulso(ruta_div), ov_df)
   series_aj <- enriquecer_series_ajustadas(datos$series, div)
@@ -217,6 +207,24 @@ server <- function(input, output, session) {
     cur   = cargar_curados()
   )
 
+  # ---- Datos al dia sin reiniciar ----
+  # Cada 60 s se mira el ultimo commit de GitHub (cron, panel admin de otra
+  # sesion, workflow de dividendos). Si cambio, se bajan solo los archivos que
+  # cambiaron y el dashboard se redibuja solo; si no, no se descarga nada.
+  datos_ver <- reactivePoll(60000, session, checkFunc = version_datos, valueFunc = function() {
+    cambios <- sincronizar_datos()
+    if ("fondos_curados.csv" %in% cambios && !isTRUE(getOption("pulso.hardcode_only", FALSE)))
+      refrescar_fondos_globales()
+    .sync$sha
+  })
+  # La tabla del panel admin se recarga solo si la lista cambio en GitHub (otra
+  # sesion o el cron la edito); asi no se guarda encima una version vieja.
+  cur_blob <- .sync$blobs[["fondos_curados.csv"]]
+  observeEvent(datos_ver(), {
+    b <- .sync$blobs[["fondos_curados.csv"]]
+    if (!identical(b, cur_blob)) { cur_blob <<- b; rv$cur <- cargar_curados(); rv$tick <- rv$tick + 1 }
+  })
+
   # ---- Agregar / quitar fondos ----
   # El buscador de fondos ya trae las ~3500 opciones cargadas en el navegador
   # (ver selectizeInput en la UI): el filtrado es instantaneo, sin ida y vuelta
@@ -292,11 +300,11 @@ server <- function(input, output, session) {
     updateSelectInput(session, "cat_art107", selected = "")
     rv$tick <- rv$tick + 1
     output$cat_msg <- renderText(paste0("✅ Agregado. ", msg,
-      if (disp$ok) " · Consultando la CMF: recarga (F5) en ~5 min para ver sus rentabilidades." else paste0(" · (scrape no disparado: ", disp$msg, ")")))
+      if (disp$ok) " · Consultando la CMF: el dashboard se actualiza solo en ~3 a 5 min." else paste0(" · (scrape no disparado: ", disp$msg, ")")))
     showModal(modalDialog(title = "Fondo agregado",
       HTML(paste0("✅ <b>", trimws(input$cat_nombre), "</b> se agregó a <b>", hoja, "</b>.<br><br>",
                   "Se está consultando la CMF para traer sus rentabilidades.<br>",
-                  "Recarga esta página (<b>F5</b>) en <b>~3 a 5 minutos</b>.")),
+                  "El dashboard se actualizará solo en <b>~3 a 5 minutos</b> (no hace falta recargar).")),
       easyClose = TRUE, footer = modalButton("Cerrar")))
   })
 
@@ -343,7 +351,7 @@ server <- function(input, output, session) {
     msg <- guardar_curados(rv$cur, "Panel admin: editar lista de fondos")
     refrescar_fondos_globales(); rv$tick <- rv$tick + 1
     output$cat_del_msg <- renderText(paste0("💾 Cambios guardados. ", msg,
-      " · Recarga (F5) en ~1 min para ver el dashboard actualizado."))
+      " · El dashboard se actualiza solo en ~1 min."))
   })
 
   observeEvent(input$cat_del, {
@@ -357,7 +365,7 @@ server <- function(input, output, session) {
   })
 
   output$dash <- renderUI({
-    rv$tick
+    rv$tick; datos_ver()
     t <- preparar_todo(rv$vc, rv$ov)
     if (is.null(t)) return(div(style = "padding:40px", h4("Aún no hay datos."),
       p("Corre scripts/actualizar_datos.R o espera al refresco automático.")))
@@ -372,7 +380,7 @@ server <- function(input, output, session) {
     res <- gh_dispatch("refresh.yml")
     showModal(modalDialog(title = "Actualizar datos",
       if (res$ok)
-        HTML("✅ Se inició la actualización: la app está re-consultando la CMF.<br><br>En <b>~3 a 5 minutos</b> recarga esta página (F5) y verás los datos nuevos.")
+        HTML("✅ Se inició la actualización: la app está re-consultando la CMF.<br><br>En <b>~3 a 5 minutos</b> el dashboard se actualizará solo con los datos nuevos.")
       else paste("No se pudo iniciar:", res$msg),
       easyClose = TRUE, footer = modalButton("Cerrar")))
   })

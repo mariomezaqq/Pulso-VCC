@@ -41,9 +41,8 @@ suppressMessages({ library(readxl); library(dplyr); library(lubridate); library(
 # calculadas (run+serie) al nombre_excel del pulso via la lista curada (solo FIRES/
 # FINRE; los RGFMU se ajustan por factor de reparto de la serie, no por el boletin).
 .calc_lookup_div <- function() {
-  ruta <- tryCatch(store_sync("dividendos_calculados.csv"), error = function(e) NULL)
-  if (is.null(ruta) || !file.exists(ruta))
-    ruta <- if (file.exists("data/dividendos_calculados.csv")) "data/dividendos_calculados.csv" else NULL
+  # En la app lo mantiene al dia sincronizar_datos(); en el cron viene del checkout.
+  ruta <- if (file.exists("data/dividendos_calculados.csv")) "data/dividendos_calculados.csv" else NULL
   if (is.null(ruta)) return(list())
   df <- tryCatch(read.csv(ruta, stringsAsFactors = FALSE, fileEncoding = "UTF-8", check.names = FALSE),
                  error = function(e) NULL)

@@ -54,19 +54,24 @@ store_sync <- function(rel) {
 #' ~5 min: releer por ahi justo despues de guardar puede traer la version
 #' VIEJA y, al fusionar y volver a guardar, borrar lo recien commiteado).
 #' Solo funciona si hay token (si no, NULL -> el llamador cae a store_sync).
+#' Pide el contenido CRUDO (Accept: vnd.github.raw): sirve hasta 100 MB. Con el
+#' JSON + base64 de antes, GitHub devuelve content vacio sobre 1 MB y se
+#' escribia un archivo vacio (le pasaba a dividendos.xlsx).
+#' @param ref commit/rama a leer (default: la rama configurada).
 #' @return vector raw (bytes) del archivo, o NULL si no se pudo leer.
-store_read_fresh_raw <- function(rel) {
+store_read_fresh_raw <- function(rel, ref = NULL) {
   g <- .gh(); if (!nzchar(g$token) || !nzchar(g$repo)) return(NULL)
   api <- paste0("https://api.github.com/repos/", g$repo, "/contents/data/", rel)
-  hdr <- add_headers(Authorization = paste("token", g$token),
-                     Accept = "application/vnd.github+json",
-                     "User-Agent" = "pulso-vcc-cloud")
-  r <- tryCatch(GET(api, hdr, query = list(ref = g$branch), timeout(20)), error = function(e) NULL)
+  r <- tryCatch(GET(api, .gh_hdr(g, "application/vnd.github.raw"),
+                    query = list(ref = ref %||% g$branch), timeout(60)),
+                error = function(e) NULL)
   if (is.null(r) || status_code(r) != 200) return(NULL)
-  b64 <- content(r, "parsed")$content
-  if (is.null(b64)) return(NULL)
-  tryCatch(jsonlite::base64_dec(gsub("[\r\n]", "", b64)), error = function(e) NULL)
+  content(r, "raw")
 }
+
+.gh_hdr <- function(g, accept = "application/vnd.github+json")
+  add_headers(Authorization = paste("token", g$token), Accept = accept,
+              "User-Agent" = "pulso-vcc-cloud")
 
 #' Igual que store_read_fresh_raw() pero devuelve texto (character). Usar solo
 #' para archivos de texto (CSV); para binarios (.rds, .xlsx) usar la version raw.
@@ -91,6 +96,66 @@ store_sync_fresh <- function(rel) {
   dir.create(dirname(local), showWarnings = FALSE, recursive = TRUE)
   writeBin(raw, local)
   if (file.exists(local)) local else NULL
+}
+
+# ---- SINCRONIZACION POR VERSION (datos al dia sin reiniciar la app) ----
+# La app mira cada ~30-60 s el ultimo commit de la rama (1 llamada barata). Solo
+# si cambio, baja los archivos de data/ cuyo blob cambio, leidos EN ESE commit
+# (ref = sha): no mezcla versiones ni depende del cache de CDN. El estado es del
+# proceso R, asi que lo comparten todas las sesiones abiertas.
+ARCHIVOS_SYNC <- c("series_vc.rds", "fondos_curados.csv", "dividendos.xlsx",
+                   "dividendos_calculados.csv")
+.sync <- new.env()
+.sync$sha <- NA_character_          # version ya bajada a data/
+.sync$sha_remoto <- NA_character_   # ultima version vista en GitHub
+.sync$t <- 0                        # cuando se consulto GitHub por ultima vez
+.sync$blobs <- list()               # sha del blob de cada archivo bajado
+
+#' Version actual de los datos en GitHub (sha del ultimo commit de la rama),
+#' consultada como mucho una vez cada `cada` segundos por proceso.
+#' Sin token (uso local): cambia cada 5 min y se re-sincroniza por CDN.
+version_datos <- function(cada = 30) {
+  g <- .gh()
+  if (!nzchar(g$token)) return(as.character(as.numeric(Sys.time()) %/% 300))
+  if (!is.na(.sync$sha_remoto) && as.numeric(Sys.time()) - .sync$t < cada) return(.sync$sha_remoto)
+  r <- tryCatch(GET(sprintf("https://api.github.com/repos/%s/commits/%s", g$repo, g$branch),
+                    .gh_hdr(g, "application/vnd.github.sha"), timeout(10)),
+                error = function(e) NULL)
+  .sync$t <- as.numeric(Sys.time())
+  if (!is.null(r) && status_code(r) == 200)
+    .sync$sha_remoto <- trimws(content(r, "text", encoding = "UTF-8"))
+  .sync$sha_remoto
+}
+
+#' Baja a data/ los archivos de ARCHIVOS_SYNC que cambiaron desde la ultima
+#' sincronizacion. Devuelve sus nombres (character(0) si no cambio nada). Si una
+#' descarga falla, no marca la version: se reintenta en la proxima vuelta.
+sincronizar_datos <- function() {
+  g <- .gh(); v <- version_datos()
+  if (is.na(v) || identical(v, .sync$sha)) return(character(0))
+  if (!nzchar(g$token)) {
+    for (f in ARCHIVOS_SYNC) store_sync(f)
+    .sync$sha <- v
+    return(ARCHIVOS_SYNC)
+  }
+  r <- tryCatch(GET(sprintf("https://api.github.com/repos/%s/contents/data", g$repo),
+                    .gh_hdr(g), query = list(ref = v), timeout(15)),
+                error = function(e) NULL)
+  if (is.null(r) || status_code(r) != 200) return(character(0))
+  lista <- content(r, "parsed")
+  blobs <- setNames(lapply(lista, `[[`, "sha"), vapply(lista, `[[`, "", "name"))
+  cambiados <- character(0)
+  for (f in intersect(ARCHIVOS_SYNC, names(blobs))) {
+    if (identical(.sync$blobs[[f]], blobs[[f]]) && file.exists(store_path(f))) next
+    raw <- store_read_fresh_raw(f, ref = v)
+    if (is.null(raw)) return(cambiados)
+    dir.create(dirname(store_path(f)), showWarnings = FALSE, recursive = TRUE)
+    writeBin(raw, store_path(f))
+    .sync$blobs[[f]] <- blobs[[f]]
+    cambiados <- c(cambiados, f)
+  }
+  .sync$sha <- v
+  cambiados
 }
 
 # ---- ESCRITURA ----
