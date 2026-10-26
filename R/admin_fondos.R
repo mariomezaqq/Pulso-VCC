@@ -43,6 +43,61 @@ cargar_catalogo <- function(ruta = "fondos/data/catalogo_fondos_limpio.csv") {
   df
 }
 
+# ---- Fondo desde el link de la CMF (fondos nuevos que no estan en el catalogo) ----
+#' Lee rut/tipoentidad/row de un link de la ficha del fondo en la CMF
+#' (.../entidad.php?mercado=V&rut=9152&tipoentidad=FIRES&row=...). NULL si no sirve.
+parsear_link_cmf <- function(url) {
+  u <- trimws(url %||% "")
+  if (!grepl("cmfchile\\.cl", u, ignore.case = TRUE) || !grepl("?", u, fixed = TRUE)) return(NULL)
+  par <- list()
+  for (kv in strsplit(sub("^[^?]*\\?", "", u), "&", fixed = TRUE)[[1]]) {
+    p <- strsplit(sub("^amp;", "", kv), "=", fixed = TRUE)[[1]]
+    if (length(p) >= 2) par[[tolower(p[1])]] <- utils::URLdecode(paste(p[-1], collapse = "="))
+  }
+  run  <- gsub("[^0-9]", "", sub("-.*$", "", par$rut %||% ""))   # sin digito verificador
+  tipo <- toupper(trimws(par$tipoentidad %||% ""))
+  if (!nzchar(run) || !tipo %in% c("FIRES", "FINRE", "RGFMU")) return(NULL)
+  # el row de la CMF viaja con '+' que el navegador muestra como espacio o %20;
+  # se guarda con '+', igual que en el catalogo
+  list(run = run, tipoentidad = tipo, row = gsub(" ", "+", trimws(par$row %||% "")))
+}
+
+#' Nombre y series vigentes del fondo, leidos de su ficha en la CMF (sin token):
+#' nombre de la pestaña Identificacion; series de "Series de Cuotas" (fondos de
+#' inversion, sin fecha de termino) o del selector de la pestaña Valores Cuota
+#' (fondos mutuos). Devuelve list(nombre, run, tipoentidad, row, series).
+datos_fondo_cmf <- function(f) {
+  pagina <- function(pestania) {
+    url <- paste0("https://www.cmfchile.cl/institucional/mercados/entidad.php?mercado=V&rut=",
+                  f$run, "&grupo=&tipoentidad=", f$tipoentidad, "&row=", f$row,
+                  "&vig=VI&control=svs&pestania=", pestania)
+    r <- httr::GET(url, httr::user_agent("Mozilla/5.0"), httr::timeout(30))
+    if (httr::status_code(r) != 200) stop("la CMF respondió HTTP ", httr::status_code(r))
+    xml2::read_html(httr::content(r, "text", encoding = "UTF-8"))
+  }
+  txt <- function(nodos) trimws(gsub("\\s+", " ", xml2::xml_text(nodos)))
+
+  ident <- pagina(1)
+  th <- txt(xml2::xml_find_all(ident, "//table//th"))
+  td <- txt(xml2::xml_find_all(ident, "//table//th/following-sibling::td[1]"))
+  i  <- which(grepl("^Nombre", th) & !grepl("Corto", th))[1]
+  nombre <- if (!is.na(i) && i <= length(td)) td[i] else ""
+  if (!nzchar(nombre)) stop("no encontré el fondo en la CMF (revisa el link)")
+
+  if (f$tipoentidad == "RGFMU") {
+    op <- xml2::xml_find_all(pagina(7), "//select[@name='se']/option")
+    series <- setdiff(trimws(xml2::xml_attr(op, "value")), c("%", ""))
+  } else {
+    filas <- xml2::xml_find_all(pagina(14), "//table//tr[td]")
+    celdas <- lapply(filas, function(tr) txt(xml2::xml_find_all(tr, "./td")))
+    # columnas: Serie, Caracteristica, Fecha Inicio, Fecha Termino, ...
+    series <- vapply(Filter(function(c) length(c) >= 4 && !nzchar(c[4]), celdas),
+                     function(c) c[1], character(1))
+  }
+  list(nombre = nombre, run = f$run, tipoentidad = f$tipoentidad, row = f$row,
+       series = unique(series[nzchar(series)]))
+}
+
 # ---- Lista curada actual (la fuente de verdad de los fondos del dashboard) ----
 cargar_curados <- function(ruta = "data/fondos_curados.csv") {
   if (!file.exists(ruta)) return(NULL)
