@@ -1,14 +1,18 @@
 name: Actualizar datos Pulso VCC
+# Las corridas de "un solo fondo" (agregar fondo en el panel) llevan otro nombre:
+# hora_refresh.sh no las cuenta como la actualizacion completa del dia.
+run-name: ${{ github.event.inputs.solo_fondos && format('Solo fondo {0}', github.event.inputs.solo_fondos) || 'Actualizar datos Pulso VCC' }}
 
-# Corre todos los días a las 11:00 hora de Chile, todo el año. GitHub programa en
-# UTC y Chile cambia de horario, así que hay dos horarios (14:00 y 15:00 UTC) y el
-# job "hora" deja pasar solo el que ese día cae a las 11:00 en Chile:
-#   verano (UTC-3): 14:00 UTC = 11:00   |   invierno (UTC-4): 15:00 UTC = 11:00
-# También se puede disparar a mano desde la pestaña Actions ("Run workflow").
+# Actualiza todos los días a partir de las 11:00 de Chile. GitHub atrasa los cron
+# varias horas (el de las 11:00 corria a las 14-17 h), así que se programa cada
+# hora (minuto :17, fuera de la hora en punto que GitHub más atrasa) y el job
+# "hora" (.github/scripts/hora_refresh.sh) deja pasar solo la primera corrida
+# que llega después de las 11:00 si hoy aún no se actualizó; las demás se saltan
+# en segundos. 13-21 UTC = 10:17-18:17 Chile en verano, 09:17-17:17 en invierno.
+# También se puede disparar a mano desde Actions o el botón del panel.
 on:
   schedule:
-    - cron: '0 14 * * *'
-    - cron: '0 15 * * *'
+    - cron: '17 13-21 * * *'
   workflow_dispatch:
     inputs:
       solo_fondos:
@@ -23,6 +27,7 @@ concurrency:
 
 permissions:
   contents: write   # para commitear data/series_vc.rds de vuelta al repo
+  actions: read     # hora_refresh.sh revisa si ya hubo una actualizacion hoy
 
 jobs:
   hora:
@@ -30,19 +35,13 @@ jobs:
     outputs:
       correr: ${{ steps.h.outputs.correr }}
     steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
       - id: h
-        # Decide por el horario que disparo la corrida (no por la hora real, que
-        # puede atrasarse): 14:00 UTC solo con Chile en UTC-3, 15:00 UTC solo en UTC-4.
-        run: |
-          off=$(TZ=America/Santiago date +%z)
-          case "${{ github.event_name }}|${{ github.event.schedule }}|$off" in
-            workflow_dispatch*) correr=true ;;
-            "schedule|0 14 * * *|-0300") correr=true ;;
-            "schedule|0 15 * * *|-0400") correr=true ;;
-            *) correr=false ;;
-          esac
-          echo "Chile UTC$off, disparo '${{ github.event.schedule }}' -> correr=$correr"
-          echo "correr=$correr" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/hora_refresh.sh "${{ github.event_name }}" >> "$GITHUB_OUTPUT"
 
   scrape:
     needs: hora
