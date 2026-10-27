@@ -145,6 +145,28 @@ preparar_pd <- function(vc_df, ov_df = NULL) { t <- preparar_todo(vc_df, ov_df);
 # ============================== UI ==============================
 ui <- page_navbar(
   title = "Pulso VCC", theme = bs_theme(version = 5),
+  header = tagList(
+    # Reconexion automatica: shinyapps.io corta la conexion tras un rato sin
+    # actividad y en cada redeploy. En vez de la pantalla gris "Disconnected from
+    # the server", un aviso chico "Reconectando..." y la pagina se recarga sola en
+    # cuanto el servidor responde (si estaba en otra pestaña, al volver a ella).
+    # Tope de 3 recargas en 2 min por si la app fallara al cargar.
+    tags$style(HTML("#shiny-disconnected-overlay,#ss-connect-dialog,#ss-overlay{display:none!important}
+      #pulso-reconectando{display:none;position:fixed;right:16px;bottom:16px;z-index:9999;
+        background:#333;color:#fff;padding:8px 14px;border-radius:6px;font-size:13px;opacity:.9}")),
+    tags$div(id = "pulso-reconectando", "Reconectando…"),
+    tags$script(HTML("(function(){var caido=false,esperando=false;
+      function puedeRecargar(){try{var k='pulsoRecargas',a=JSON.parse(sessionStorage.getItem(k)||'[]'),t=Date.now();
+        a=a.filter(function(x){return t-x<120000;});if(a.length>=3)return false;a.push(t);sessionStorage.setItem(k,JSON.stringify(a));}catch(e){}
+        return true;}
+      function esperarYRecargar(){if(esperando)return;esperando=true;
+        (function intento(){fetch(location.href,{cache:'no-store'}).then(function(r){
+            if(r.ok&&puedeRecargar())location.reload();else setTimeout(intento,3000);})
+          .catch(function(){setTimeout(intento,3000);});})();}
+      $(document).on('shiny:disconnected',function(){caido=true;
+        document.getElementById('pulso-reconectando').style.display='block';
+        if(document.visibilityState==='visible')esperarYRecargar();});
+      document.addEventListener('visibilitychange',function(){if(caido&&document.visibilityState==='visible')esperarYRecargar();});})();"))),
   nav_panel("Dashboard",
     tags$script(HTML("window.addEventListener('message',function(e){if(e&&e.data==='pulso-actualizar'){Shiny.setInputValue('actualizar',(window.__pulsoN=(window.__pulsoN||0)+1),{priority:'event'});}});")),
     uiOutput("dash")),
