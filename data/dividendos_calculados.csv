@@ -4090,6 +4090,9 @@
 "Fondo de Inversión BCI HLC Perfeccionamiento","A","10078","FINRE",2026-09-23,2026-09-29,"$","Reparto",933.617883,NA,NA,NA,NA,933.6178829342,"boletin",NA
 "Fondo de Inversión BCI HLC Perfeccionamiento","ADC","10078","FINRE",2026-09-23,2026-09-29,"$","Reparto",918.082394,NA,NA,NA,NA,918.0823941942,"boletin",NA
 "Fondo de Inversión BCI HLC Perfeccionamiento","BCI","10078","FINRE",2026-09-23,2026-09-29,"$","Reparto",962.08563,NA,NA,NA,NA,962.085630114,"boletin",NA
+"Fondo de Inversión BCI HLC Perfeccionamiento","A","10078","FINRE",2026-10-27,2026-11-03,"$","Reparto",1604.655644,NA,NA,NA,NA,1604.6556442417,"boletin",NA
+"Fondo de Inversión BCI HLC Perfeccionamiento","ADC","10078","FINRE",2026-10-27,2026-11-03,"$","Reparto",1577.95409,NA,NA,NA,NA,1577.9540897619,"boletin",NA
+"Fondo de Inversión BCI HLC Perfeccionamiento","BCI","10078","FINRE",2026-10-27,2026-11-03,"$","Reparto",1653.584749,NA,NA,NA,NA,1653.5847488654,"boletin",NA
 "Fondo de Inversión BCI LMV II","A",NA,NA,2026-01-30,2026-02-05,"US$","Reparto",0.035544,NA,NA,NA,NA,0.035544065,"boletin",NA
 "Fondo de Inversión BCI LMV II","B",NA,NA,2026-01-30,2026-02-05,"US$","Reparto",0.033647,NA,NA,NA,NA,0.0336468935,"boletin",NA
 "Fondo de Inversión BCI LMV II","C",NA,NA,2026-01-30,2026-02-05,"US$","Reparto",0.033085,NA,NA,NA,NA,0.0330851821,"boletin",NA
@@ -6886,6 +6889,9 @@ Preferente","10113","FINRE",2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA
 "Fondo de Inversión Security Driftwood Preferred Equity","A","10667","FINRE",2026-08-04,2026-08-10,"US$","Dividendo",25.556694,NA,NA,NA,NA,25.556693944,"boletin",NA
 "Fondo de Inversión Security Driftwood Preferred Equity","B","10667","FINRE",2026-08-04,2026-08-10,"US$","Dividendo",25.677307,NA,NA,NA,NA,25.677307114,"boletin",NA
 "Fondo de Inversión Security Driftwood Preferred Equity","I","10667","FINRE",2026-08-04,2026-08-10,"US$","Dividendo",25.798401,NA,NA,NA,NA,25.798401442,"boletin",NA
+"Fondo de Inversión Security Driftwood Preferred Equity","A","10667","FINRE",2026-10-28,2026-11-04,"US$","Dividendo",23.377043,NA,NA,NA,NA,23.3770430792,"boletin",NA
+"Fondo de Inversión Security Driftwood Preferred Equity","B","10667","FINRE",2026-10-28,2026-11-04,"US$","Dividendo",23.508321,NA,NA,NA,NA,23.5083205585,"boletin",NA
+"Fondo de Inversión Security Driftwood Preferred Equity","I","10667","FINRE",2026-10-28,2026-11-04,"US$","Dividendo",23.636218,NA,NA,NA,NA,23.6362179487,"boletin",NA
 "Fondo de Inversión Security Electromovilidad Urbana I","A",NA,NA,2025-01-16,2025-01-22,"$","Reparto",15.754286,NA,NA,NA,NA,15.754285859,"boletin",NA
 "Fondo de Inversión Security Electromovilidad Urbana I","I",NA,NA,2025-01-16,2025-01-22,"$","Reparto",16.012687,NA,NA,NA,NA,16.012686525,"boletin",NA
 "Fondo de Inversión Security Electromovilidad Urbana I","A",NA,NA,2025-02-20,2025-02-26,"$","Reparto",23.61574,NA,NA,NA,NA,23.615739899,"boletin",NA
@@ -9881,6 +9887,8 @@ Preferente","10113","FINRE",2026-08-07,2026-08-13,"$","Dividendo",113.5262,NA,NA
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-07-17,2026-07-23,"US$","Reparto",NA,2992875.17,206121806,2026-07-17,0.01452,0.0145199347453524,"calculado (total/cuotas dia limite)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","A",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Desarrollo Inmobiliario Perú 2 Fondo de Inversión","H",NA,NA,2025-09-20,2025-09-26,"$","Reparto",NA,2048964655,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2026-10-30,2026-11-06,"$","Reparto",NA,303403863,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2026-10-30,2026-11-06,"$","Reparto",NA,303403863,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-01-31,2025-02-06,"$","Reparto",NA,106105773,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2025-01-31,2025-02-06,"$","Reparto",NA,106105773,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","A",NA,NA,2025-04-30,2025-05-07,"$","Reparto",NA,3246944,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
