@@ -250,4 +250,27 @@ gh_dispatch <- function(workflow = "refresh.yml", inputs = NULL) {
   else list(ok = FALSE, msg = paste0("No se pudo iniciar (HTTP ", if (!is.null(r)) status_code(r) else "sin respuesta", ")."))
 }
 
+# ---- Actualizacion diaria lanzada por la app ----
+# GitHub atrasa varias horas, o directamente salta, los cron de este repo (el
+# 04-11 no corrio ninguno). Si alguien tiene el dashboard abierto despues de las
+# 11:00 de Chile y la actualizacion completa de hoy aun no corrio, la app lanza
+# refresh.yml. Revisa cada 5 min por proceso; tras lanzarla espera 45 min antes
+# de volver a intentarlo (lo que tarda en correr y sincronizarse, con holgura).
+.auto <- new.env(); .auto$lanzada <- 0; .auto$revisada <- 0
+asegurar_actualizacion_diaria <- function(ruta_rds = "data/series_vc.rds") {
+  t <- as.numeric(Sys.time())
+  if (t - .auto$revisada < 5 * 60 || t - .auto$lanzada < 45 * 60) return(invisible(FALSE))
+  .auto$revisada <- t
+  if (!gh_habilitado() || !file.exists(ruta_rds)) return(invisible(FALSE))
+  ahora <- as.POSIXlt(Sys.time(), tz = "America/Santiago")
+  if (ahora$hour < 11) return(invisible(FALSE))
+  d <- tryCatch(readRDS(ruta_rds), error = function(e) NULL)
+  ult <- d$completo %||% d$generado %||% ""          # "YYYY-MM-DD HH:MM" (hora Chile)
+  if (nzchar(ult) && ult >= paste(format(ahora, "%Y-%m-%d"), "11:00")) return(invisible(FALSE))
+  .auto$lanzada <- t
+  r <- gh_dispatch("refresh.yml")
+  message("[auto] actualizacion del dia lanzada por la app (ultima completa: ", ult, "): ", r$msg)
+  invisible(isTRUE(r$ok))
+}
+
 if (!exists("%||%")) `%||%` <- function(a, b) if (is.null(a)) b else a
