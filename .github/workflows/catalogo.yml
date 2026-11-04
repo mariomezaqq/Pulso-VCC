@@ -15,6 +15,7 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write   # para lanzar deploy.yml al final
 
 jobs:
   catalogo:
@@ -49,3 +50,10 @@ jobs:
 
       - name: Commit del catálogo
         run: .github/scripts/commit-datos.sh "Catálogo de fondos CMF actualizado ($(date -u +%Y-%m-%d))" fondos/data/catalogo_fondos_limpio.csv
+
+      # El commit del bot (GITHUB_TOKEN) no dispara deploy.yml por push: se lanza
+      # a mano para que el buscador de la app tome el catalogo nuevo.
+      - name: Republicar la app
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main --repo "$GITHUB_REPOSITORY"

@@ -200,7 +200,10 @@ if (!is.null(tnx) && nrow(tnx) > 0) {
 }
 
 # ---- 4) Guardar ----
-datos <- list(generado = format(Sys.time(), "%Y-%m-%d %H:%M", tz = "America/Santiago"), cierre = as.character(fc),
+ahora_cl <- format(Sys.time(), "%Y-%m-%d %H:%M", tz = "America/Santiago")
+# `completo`: hora de la ultima actualizacion COMPLETA (el modo solo no la cambia);
+# la usa la app para saber si hoy ya corrio (asegurar_actualizacion_diaria)
+datos <- list(generado = ahora_cl, completo = ahora_cl, cierre = as.character(fc),
               series = series_por_clave(series), macro = macro,   # llave run-serie (ver fondos_pulso.R) macro_series = macro_series,
               tnx_series = if (!is.null(tnx) && nrow(tnx) > 0) tnx else NULL,
               rf_usa = rf_usa, fallidos = fallidos)

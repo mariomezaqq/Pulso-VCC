@@ -266,7 +266,12 @@ server <- function(input, output, session) {
   # Cada 60 s se mira el ultimo commit de GitHub (cron, panel admin de otra
   # sesion, workflow de dividendos). Si cambio, se bajan solo los archivos que
   # cambiaron y el dashboard se redibuja solo; si no, no se descarga nada.
-  datos_ver <- reactivePoll(60000, session, checkFunc = version_datos, valueFunc = function() {
+  # De paso, si ya son las 11:00 y hoy no hubo actualizacion completa, la lanza
+  # (asegurar_actualizacion_diaria, en github_store.R): no depende del cron de GitHub.
+  datos_ver <- reactivePoll(60000, session, checkFunc = function() {
+    try(asegurar_actualizacion_diaria(), silent = TRUE)
+    version_datos()
+  }, valueFunc = function() {
     cambios <- sincronizar_datos()
     if ("fondos_curados.csv" %in% cambios && !isTRUE(getOption("pulso.hardcode_only", FALSE)))
       refrescar_fondos_globales()
