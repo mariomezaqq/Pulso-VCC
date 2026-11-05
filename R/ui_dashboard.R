@@ -65,7 +65,8 @@
   stale <- if (isTRUE(f$atrasado))
     paste0("<span class='stale-mark' title='Sin el cierre del grupo'>&#9888; ", f$fecha_dato, "</span>") else ""
   paste0("<tr>",
-    "<td class='nombre'>", f$nombre, stale, "</td>",
+    "<td class='nombre'>", f$nombre, stale,
+    if (nzchar(f$nemo %||% "")) paste0("<span class='nemo'>", f$nemo, "</span>") else "", "</td>",
     "<td data-l='MTD' class='center ", .cls_frac(f$mtd),     "'>", .fmt_pct_frac(f$mtd),     "</td>",
     "<td data-l='", mes_lbl, "' class='center ", .cls_frac(f$mes_ant), "'>", .fmt_pct_frac(f$mes_ant), "</td>",
     "<td data-l='YTD' class='center ", .cls_frac(f$ytd),     "'>", .fmt_pct_frac(f$ytd),     "</td>",
@@ -215,6 +216,7 @@
   ".alerta .ico{font-weight:700;font-size:16px;line-height:1.2}",
   ".alerta strong{color:#5c4500}",
   ".stale-mark{color:#b8860b;font-size:11px;font-weight:700;margin-left:6px}",
+  ".nemo{display:block;font-size:10px;font-weight:400;color:var(--muted);letter-spacing:.6px;margin-top:1px}",
   ".btn-actualizar{background:var(--accent);color:#fff;border:none;border-radius:6px;",
   "padding:5px 11px;font-family:'Lato',sans-serif;font-size:11px;font-weight:700;cursor:pointer;",
   "letter-spacing:.6px;text-transform:uppercase;margin-bottom:6px;transition:background .15s}",

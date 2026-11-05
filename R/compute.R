@@ -71,6 +71,11 @@ construir_pulso_data <- function(series, fecha_cierre = NULL, macro = list(), rf
   fin_anio_ant <- as.Date(sprintf("%d-12-31", yr - 1))
   mes_ant_label <- MESES_ES[month(fin_mes_ant)]
 
+  # Nemotecnico de cada fondo (ticker del Boletin, ver MAPEO_SEBRA): se muestra bajo el nombre
+  nemos <- list()
+  for (m in MAPEO_SEBRA) { t <- m$ticker_sebra
+    if (!is.null(t) && length(t) == 1 && !is.na(t) && nzchar(trimws(t))) nemos[[m$nombre_excel]] <- trimws(t) }
+
   cats_out <- list()
   for (cat in CATEGORIAS) {
     fondos_out <- list()
@@ -114,7 +119,7 @@ construir_pulso_data <- function(series, fecha_cierre = NULL, macro = list(), rf
       }
 
       fondos_out[[length(fondos_out) + 1]] <- list(
-        nombre   = nombre_excel,
+        nombre   = nombre_excel, nemo = nemos[[nombre_excel]] %||% "",
         mtd      = mtd, ytd = ytd, mes_ant = mes_ant,
         rent2025 = meta$rent2025 %||% "", rent2024 = meta$rent2024 %||% "",
         duracion = meta$duracion %||% "", liquidez = meta$liquidez %||% "",
