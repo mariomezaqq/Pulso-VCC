@@ -146,6 +146,19 @@ preparar_pd <- function(vc_df, ov_df = NULL) { t <- preparar_todo(vc_df, ov_df);
 ui <- page_navbar(
   title = "Pulso VCC", theme = bs_theme(version = 5),
   header = tagList(
+    # App instalable (Agregar a pantalla de inicio): icono Pulso + Vizcaya
+    # (www/, generado con scripts/hacer_icono.py) y manifest
+    tags$head(
+      tags$link(rel = "manifest", href = "manifest.webmanifest"),
+      tags$link(rel = "icon", type = "image/png", href = "favicon-32.png"),
+      tags$link(rel = "apple-touch-icon", href = "apple-touch-icon.png"),
+      tags$meta(name = "theme-color", content = "#1b2d5b"),
+      tags$meta(name = "apple-mobile-web-app-capable", content = "yes"),
+      tags$meta(name = "mobile-web-app-capable", content = "yes"),
+      tags$meta(name = "apple-mobile-web-app-title", content = "Pulso"),
+      tags$meta(name = "apple-mobile-web-app-status-bar-style", content = "default")),
+    # El dashboard ocupa la pantalla bajo la barra (sin doble scroll en el celular)
+    tags$style(HTML(".pulso-dash{height:calc(100vh - 70px);height:calc(100dvh - 70px);display:block}")),
     # Reconexion automatica: shinyapps.io corta la conexion tras un rato sin
     # actividad y en cada redeploy. En vez de la pantalla gris "Disconnected from
     # the server", un aviso chico "Reconectando..." y la pagina se recarga sola en
@@ -551,7 +564,7 @@ server <- function(input, output, session) {
     gen <- substr(gsub("T", " ", t$datos$generado %||% ""), 1, 16)
     tags$iframe(srcdoc = render_dashboard_html(t$pd, logo_b64, gen),
                 allow = "fullscreen", allowfullscreen = NA,
-                style = "width:100%;height:90vh;border:none")
+                class = "pulso-dash", style = "width:100%;border:none")
   })
 
   # Botón: re-consultar la CMF ahora (dispara el workflow de GitHub Actions)
