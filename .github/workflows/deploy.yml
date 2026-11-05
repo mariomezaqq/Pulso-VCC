@@ -32,6 +32,9 @@ permissions:
 env:
   SHINYAPPS_CUENTA: mariomezaqq
   APP_NOMBRE: pulso-vcc
+  # Version de R fija: shinyapps.io tarda en soportar cada R nuevo (el 04-11 el
+  # deploy fallo con "Unsupported R version 4.6.2"). Subirla cuando shinyapps la soporte.
+  R_VERSION: '4.6.1'
 
 jobs:
   deploy:
@@ -65,6 +68,7 @@ jobs:
         timeout-minutes: 6
         continue-on-error: true
         with:
+          r-version: ${{ env.R_VERSION }}
           use-public-rspm: true
 
       - name: Setup R (reintento)
@@ -72,6 +76,7 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         timeout-minutes: 8
         with:
+          r-version: ${{ env.R_VERSION }}
           use-public-rspm: true
 
       - name: Cache de paquetes R
