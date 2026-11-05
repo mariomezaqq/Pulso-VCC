@@ -59,35 +59,37 @@
     "<th class='th-center'>Art. 107</th>",
     "</tr></thead>")
 }
-.row <- function(f) {
+# data-l: nombre de la columna en cada celda; en el celular la fila se muestra como
+# tarjeta y cada valor lleva su etiqueta (ver @media max-width:700px en .CSS)
+.row <- function(f, mes_lbl = "Mes ant.") {
   stale <- if (isTRUE(f$atrasado))
     paste0("<span class='stale-mark' title='Sin el cierre del grupo'>&#9888; ", f$fecha_dato, "</span>") else ""
   paste0("<tr>",
     "<td class='nombre'>", f$nombre, stale, "</td>",
-    "<td class='center ", .cls_frac(f$mtd),     "'>", .fmt_pct_frac(f$mtd),     "</td>",
-    "<td class='center ", .cls_frac(f$mes_ant), "'>", .fmt_pct_frac(f$mes_ant), "</td>",
-    "<td class='center ", .cls_frac(f$ytd),     "'>", .fmt_pct_frac(f$ytd),     "</td>",
-    "<td class='center ", .cls_str(f$rent2025), "'>", .fmt_pct_str(f$rent2025), "</td>",
-    "<td class='center ", .cls_str(f$rent2024), "'>", .fmt_pct_str(f$rent2024), "</td>",
-    "<td class='center secondary'>", .raw(f$duracion), "</td>",
-    "<td class='secondary'>", .raw(f$liquidez), "</td>",
-    "<td class='center badge'>", .raw(f$moneda), "</td>",
-    "<td class='center secondary'>", .raw(f$tac), "</td>",
-    "<td class='center badge'>", .raw(f$art107), "</td>",
+    "<td data-l='MTD' class='center ", .cls_frac(f$mtd),     "'>", .fmt_pct_frac(f$mtd),     "</td>",
+    "<td data-l='", mes_lbl, "' class='center ", .cls_frac(f$mes_ant), "'>", .fmt_pct_frac(f$mes_ant), "</td>",
+    "<td data-l='YTD' class='center ", .cls_frac(f$ytd),     "'>", .fmt_pct_frac(f$ytd),     "</td>",
+    "<td data-l='2025' class='center ", .cls_str(f$rent2025), "'>", .fmt_pct_str(f$rent2025), "</td>",
+    "<td data-l='2024' class='center ", .cls_str(f$rent2024), "'>", .fmt_pct_str(f$rent2024), "</td>",
+    "<td data-l='Duraci&oacute;n' class='center secondary'>", .raw(f$duracion), "</td>",
+    "<td data-l='Liquidez' class='secondary'>", .raw(f$liquidez), "</td>",
+    "<td data-l='Moneda' class='center badge'>", .raw(f$moneda), "</td>",
+    "<td data-l='TAC' class='center secondary'>", .raw(f$tac), "</td>",
+    "<td data-l='Art. 107' class='center badge'>", .raw(f$art107), "</td>",
     "</tr>")
 }
-.avg_row <- function(fondos) {
+.avg_row <- function(fondos, mes_lbl = "Mes ant.") {
   fp <- function(v, frac = TRUE) {
     if (is.na(v)) return("&mdash;")
     if (frac) sprintf("%+.2f%%", v * 100) else sprintf("%+.2f%%", v)
   }
   paste0("<tr class='avg-row'>",
     "<td class='avg-label'>Promedio</td>",
-    "<td class='center avg-val'>", fp(.avg_frac(fondos,"mtd")),     "</td>",
-    "<td class='center avg-val'>", fp(.avg_frac(fondos,"mes_ant")), "</td>",
-    "<td class='center avg-val'>", fp(.avg_frac(fondos,"ytd")),     "</td>",
-    "<td class='center avg-val'>", fp(.avg_str_pct(fondos,"rent2025"), FALSE), "</td>",
-    "<td class='center avg-val'>", fp(.avg_str_pct(fondos,"rent2024"), FALSE), "</td>",
+    "<td data-l='MTD' class='center avg-val'>", fp(.avg_frac(fondos,"mtd")),     "</td>",
+    "<td data-l='", mes_lbl, "' class='center avg-val'>", fp(.avg_frac(fondos,"mes_ant")), "</td>",
+    "<td data-l='YTD' class='center avg-val'>", fp(.avg_frac(fondos,"ytd")),     "</td>",
+    "<td data-l='2025' class='center avg-val'>", fp(.avg_str_pct(fondos,"rent2025"), FALSE), "</td>",
+    "<td data-l='2024' class='center avg-val'>", fp(.avg_str_pct(fondos,"rent2024"), FALSE), "</td>",
     "<td></td><td></td><td></td><td></td><td></td>",
     "</tr>")
 }
@@ -114,10 +116,10 @@
     "</tr></thead><tbody>")
   for (idx in pd$indices_macro) {
     h <- paste0(h, "<tr><td class='nombre'>", idx$nombre, "</td>",
-      "<td class='center ", .cls_frac(idx$wtd), "'>", .fmt_pct_frac(idx$wtd), "</td>",
-      "<td class='center ", .cls_frac(idx$mtd), "'>", .fmt_pct_frac(idx$mtd), "</td>",
-      "<td class='center ", .cls_frac(idx$mes_ant), "'>", .fmt_pct_frac(idx$mes_ant), "</td>",
-      "<td class='center ", .cls_frac(idx$ytd), "'>", .fmt_pct_frac(idx$ytd), "</td></tr>")
+      "<td data-l='WTD' class='center ", .cls_frac(idx$wtd), "'>", .fmt_pct_frac(idx$wtd), "</td>",
+      "<td data-l='MTD' class='center ", .cls_frac(idx$mtd), "'>", .fmt_pct_frac(idx$mtd), "</td>",
+      "<td data-l='", mes_lbl, "' class='center ", .cls_frac(idx$mes_ant), "'>", .fmt_pct_frac(idx$mes_ant), "</td>",
+      "<td data-l='YTD' class='center ", .cls_frac(idx$ytd), "'>", .fmt_pct_frac(idx$ytd), "</td></tr>")
   }
   h <- paste0(h, "</tbody></table></div>")
   rf <- pd$rf_usa
@@ -134,10 +136,10 @@
       var_cls <- if (is.na(var)) "neutral" else if (var >= 0) "pos" else "neg"
       cn <- function(x) if (is.null(x) || is.na(x)) "&mdash;" else sprintf("%.3f", x)
       h <- paste0(h, "<tr><td class='nombre'>", r$nombre, "</td>",
-        "<td class='center secondary'>", cn(r$cierre2025), "</td>",
-        "<td class='center secondary'>", cn(r$abr20), "</td>",
-        "<td class='center secondary'>", cn(r$abr27), "</td>",
-        "<td class='center ", var_cls, "'>", var_str, "</td></tr>")
+        "<td data-l='", rf$headers$cierre, "' class='center secondary'>", cn(r$cierre2025), "</td>",
+        "<td data-l='", rf$headers$fecha1, "' class='center secondary'>", cn(r$abr20), "</td>",
+        "<td data-l='", rf$headers$fecha2, "' class='center secondary'>", cn(r$abr27), "</td>",
+        "<td data-l='Var. semana' class='center ", var_cls, "'>", var_str, "</td></tr>")
     }
     h <- paste0(h, "</tbody></table></div>")
   }
@@ -221,8 +223,9 @@
   "@media(max-width:900px){",
   "header{padding:16px 20px;flex-wrap:wrap}.alerta{margin:12px 16px 0}",
   ".toolbar{padding:0 16px}main{padding:20px 16px}.header-meta{text-align:left}}",
-  # Celular: encabezado compacto, pestañas en una fila deslizable y el nombre del
-  # fondo fijo a la izquierda mientras se deslizan las columnas
+  # Celular: encabezado compacto, pestañas en una fila deslizable y cada fondo
+  # como tarjeta (nombre arriba, valores con su etiqueta en 5 columnas): sin
+  # scroll hacia los lados. Las etiquetas salen del atributo data-l de cada celda.
   "@media(max-width:700px){",
   "header{padding:12px 14px;gap:10px}.logo-img{height:34px}.header-divider{display:none}",
   ".brand{font-size:16px}.subtitle{font-size:9px;letter-spacing:1px}",
@@ -232,15 +235,22 @@
   ".toolbar{padding:0 4px}.btn-fs{display:none}",
   ".tab-bar{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}",
   ".tab-bar::-webkit-scrollbar{display:none}.tab-btn{padding:11px 12px;font-size:11px}",
-  "main{padding:14px 8px}.cat-title{font-size:16px;margin-bottom:10px}",
-  "table{font-size:12px}thead th,tr.sub-header th{padding:8px 8px;font-size:10px}",
-  "tbody td,td.avg-label{padding:8px 8px}td.group-label{padding:7px 8px}",
-  "thead th.th-left{min-width:0}",
-  "td.nombre,td.avg-label,thead th.th-left,tr.sub-header th:first-child{position:sticky;left:0;z-index:1;",
-  "white-space:normal;min-width:120px;max-width:44vw;box-shadow:2px 0 3px rgba(0,0,0,.08)}",
-  "td.nombre,td.avg-label{background:inherit}",
-  "tbody tr:nth-child(odd) td.nombre{background:var(--surface)}tbody tr:nth-child(even) td.nombre{background:var(--surface2)}",
-  "td.group-label .gl{position:sticky;left:8px;display:inline-block}",
+  "main{padding:12px 8px}.cat-title{font-size:16px;margin-bottom:8px}",
+  ".table-wrap{overflow:visible;border:none;box-shadow:none;border-radius:0}",
+  "table,tbody{display:block;width:100%}thead,tr.sub-header{display:none}",
+  "tbody tr{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-bottom:8px;",
+  "border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--surface)!important}",
+  "tbody tr:hover{background:var(--surface)!important}",
+  "tbody td{display:block;padding:5px 6px;white-space:normal;text-align:center;font-size:12px;",
+  "border-top:1px solid var(--border);border-radius:0;overflow-wrap:anywhere}",
+  "tbody td::before{content:attr(data-l);display:block;font-size:9px;font-weight:700;color:var(--muted);",
+  "text-transform:uppercase;letter-spacing:.4px;margin-bottom:1px}",
+  "tbody td:empty{display:none}",
+  "td.nombre,td.avg-label{grid-column:1/-1;border-top:none;text-align:left!important;font-size:14px;padding:8px 10px}",
+  "td.nombre::before,td.avg-label::before{display:none}",
+  "tr.group-header{display:block;border:none;margin:18px 2px 8px;background:transparent!important}",
+  "td.group-label{display:block;border:none;padding:0;color:var(--accent);font-size:12px;text-align:left}",
+  "tr.avg-row{background:#e9ecef!important}",
   "footer{padding:16px;font-size:10px}}"
 )
 
@@ -269,7 +279,7 @@ render_dashboard_html <- function(pd, logo_b64 = NULL, generado = NULL) {
   resumen_body <- ""
   for (cat in cats) {
     resumen_body <- paste0(resumen_body, .group_header(cat$nombre, mes_lbl))
-    for (f in cat$fondos) resumen_body <- paste0(resumen_body, .row(f))
+    for (f in cat$fondos) resumen_body <- paste0(resumen_body, .row(f, mes_lbl))
   }
   panel_resumen <- paste0(
     "<div class='tab-panel' id='panel-0' style='display:block'>",
@@ -280,8 +290,8 @@ render_dashboard_html <- function(pd, logo_b64 = NULL, generado = NULL) {
   # Paneles por categoria
   cat_panels <- ""
   for (i in seq_along(cats)) {
-    rows <- paste0(paste0(vapply(cats[[i]]$fondos, .row, character(1)), collapse = ""),
-                   .avg_row(cats[[i]]$fondos))
+    rows <- paste0(paste0(vapply(cats[[i]]$fondos, .row, character(1), mes_lbl = mes_lbl), collapse = ""),
+                   .avg_row(cats[[i]]$fondos, mes_lbl))
     cat_panels <- paste0(cat_panels,
       "<div class='tab-panel' id='panel-", i, "' style='display:none'>",
       "<h2 class='cat-title'>", cats[[i]]$nombre, "</h2>",
