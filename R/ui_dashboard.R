@@ -101,7 +101,7 @@
     "<th class='th-center'>Moneda</th><th class='th-center'>TAC</th>",
     "<th class='th-center'>Art. 107</th>",
     "</tr>")
-  paste0("<tr class='group-header'><td class='group-label' colspan='11'>", nombre, "</td></tr>", sub)
+  paste0("<tr class='group-header'><td class='group-label' colspan='11'><span class='gl'>", nombre, "</span></td></tr>", sub)
 }
 
 .panel_macro <- function(pd) {
@@ -220,7 +220,28 @@
   ".gen{font-size:11px;color:var(--muted);margin-top:2px}",
   "@media(max-width:900px){",
   "header{padding:16px 20px;flex-wrap:wrap}.alerta{margin:12px 16px 0}",
-  ".toolbar{padding:0 16px}main{padding:20px 16px}.header-meta{text-align:left}}"
+  ".toolbar{padding:0 16px}main{padding:20px 16px}.header-meta{text-align:left}}",
+  # Celular: encabezado compacto, pestañas en una fila deslizable y el nombre del
+  # fondo fijo a la izquierda mientras se deslizan las columnas
+  "@media(max-width:700px){",
+  "header{padding:12px 14px;gap:10px}.logo-img{height:34px}.header-divider{display:none}",
+  ".brand{font-size:16px}.subtitle{font-size:9px;letter-spacing:1px}",
+  ".header-meta{width:100%;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}",
+  ".btn-actualizar{margin:0}.fecha{margin:0}",
+  ".alerta{margin:10px 10px 0;font-size:12px;padding:10px 12px}",
+  ".toolbar{padding:0 4px}.btn-fs{display:none}",
+  ".tab-bar{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}",
+  ".tab-bar::-webkit-scrollbar{display:none}.tab-btn{padding:11px 12px;font-size:11px}",
+  "main{padding:14px 8px}.cat-title{font-size:16px;margin-bottom:10px}",
+  "table{font-size:12px}thead th,tr.sub-header th{padding:8px 8px;font-size:10px}",
+  "tbody td,td.avg-label{padding:8px 8px}td.group-label{padding:7px 8px}",
+  "thead th.th-left{min-width:0}",
+  "td.nombre,td.avg-label,thead th.th-left,tr.sub-header th:first-child{position:sticky;left:0;z-index:1;",
+  "white-space:normal;min-width:120px;max-width:44vw;box-shadow:2px 0 3px rgba(0,0,0,.08)}",
+  "td.nombre,td.avg-label{background:inherit}",
+  "tbody tr:nth-child(odd) td.nombre{background:var(--surface)}tbody tr:nth-child(even) td.nombre{background:var(--surface2)}",
+  "td.group-label .gl{position:sticky;left:8px;display:inline-block}",
+  "footer{padding:16px;font-size:10px}}"
 )
 
 # ---- Banner de alertas (datos desactualizados) ----
