@@ -147,7 +147,8 @@ ui <- page_navbar(
   title = "Pulso VCC", theme = bs_theme(version = 5),
   header = tagList(
     # App instalable (Agregar a pantalla de inicio): icono Pulso + Vizcaya
-    # (www/, generado con scripts/hacer_icono.py) y manifest
+    # (www/icon-*.png, apple-touch-icon.png, favicon-32.png; diseño entregado por
+    # Mario). Solo es el icono de la app: dentro del dashboard sigue www/logo.jpg
     tags$head(
       tags$link(rel = "manifest", href = "manifest.webmanifest"),
       tags$link(rel = "icon", type = "image/png", href = "favicon-32.png"),
