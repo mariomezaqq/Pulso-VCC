@@ -28,6 +28,8 @@
 "Alza Deuda Privada V Fondo de Inversión","I","10798","FINRE",2026-09-04,2026-09-10,"$","Reparto",1182.146208,NA,NA,NA,NA,1182.146208,"boletin",NA
 "Alza Deuda Privada V Fondo de Inversión","A","10798","FINRE",2026-10-16,2026-10-22,"$","Dividendo",2144.125059,NA,NA,NA,NA,2144.125059,"boletin",NA
 "Alza Deuda Privada V Fondo de Inversión","I","10798","FINRE",2026-10-16,2026-10-22,"$","Dividendo",2148.070735,NA,NA,NA,NA,2148.070735,"boletin",NA
+"Alza Deuda Privada V Fondo de Inversión","A","10798","FINRE",2026-11-06,2026-11-12,"$","Dividendo",1307.071224,NA,NA,NA,NA,1307.071224,"boletin",NA
+"Alza Deuda Privada V Fondo de Inversión","I","10798","FINRE",2026-11-06,2026-11-12,"$","Dividendo",1309.476531,NA,NA,NA,NA,1309.476531,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A","10835","FINRE",2026-05-14,2026-05-20,"$","Dividendo",640.143235,NA,NA,NA,NA,640.143235,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","I","10835","FINRE",2026-05-14,2026-05-20,"$","Dividendo",640.439758,NA,NA,NA,NA,640.439758,"boletin",NA
 "Alza Deuda Privada VI Fondo de Inversión","A","10835","FINRE",2026-06-05,2026-06-11,"$","Dividendo",923.474391,NA,NA,NA,NA,923.474391,"boletin",NA
@@ -4466,6 +4468,11 @@
 "Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","D","10505","FINRE",2026-10-02,2026-10-08,"$","Dividendo",2525.547974,NA,NA,NA,NA,2525.54797412,"boletin",NA
 "Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","A","10505","FINRE",2026-10-02,2026-10-08,"$","Dividendo",2604.35531,NA,NA,NA,NA,2604.35531026,"boletin",NA
 "Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","CC","10505","FINRE",2026-10-02,2026-10-08,"$","Dividendo",2615.645829,NA,NA,NA,NA,2615.64582896,"boletin",NA
+"Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","B","10505","FINRE",2026-11-06,2026-11-12,"$","Dividendo",1307.201979,NA,NA,NA,NA,1307.2019793,"boletin",NA
+"Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","I","10505","FINRE",2026-11-06,2026-11-12,"$","Dividendo",1348.396251,NA,NA,NA,NA,1348.39625145,"boletin",NA
+"Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","D","10505","FINRE",2026-11-06,2026-11-12,"$","Dividendo",1318.97026,NA,NA,NA,NA,1318.97025969,"boletin",NA
+"Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","A","10505","FINRE",2026-11-06,2026-11-12,"$","Dividendo",1362.112053,NA,NA,NA,NA,1362.1120528,"boletin",NA
+"Fondo de Inversión Credicorp Capital Desarrollo Subsidio Habitacional I","CC","10505","FINRE",2026-11-06,2026-11-12,"$","Dividendo",1368.262899,NA,NA,NA,NA,1368.26289907,"boletin",NA
 "Fondo de Inversión Credicorp Capital ICG SE I","B","10076","FINRE",2026-04-21,2026-04-27,"US$","Reparto",0.01431,NA,NA,NA,NA,0.01431006,"boletin",NA
 "Fondo de Inversión Credicorp Capital ICG SE I","I","10076","FINRE",2026-04-21,2026-04-27,"US$","Reparto",0.01462,NA,NA,NA,NA,0.01461999,"boletin",NA
 "Fondo de Inversión Credicorp Capital ICG SE I","CC","10076","FINRE",2026-04-21,2026-04-27,"US$","Reparto",0.014691,NA,NA,NA,NA,0.01469094,"boletin",NA
@@ -6287,6 +6294,8 @@
 "Fondo de Inversión Pre-IPO Opportunities MVP","C","9652","FINRE",2026-07-23,2026-07-29,"US$","Dividendo",0.102919,NA,NA,NA,NA,0.102919406,"boletin",NA
 "Fondo de Inversión Pre-IPO Opportunities MVP","A","9652","FINRE",2026-10-08,2026-10-15,"US$","Dividendo",0.01371,NA,NA,NA,NA,0.013709907,"boletin",NA
 "Fondo de Inversión Pre-IPO Opportunities MVP","C","9652","FINRE",2026-10-08,2026-10-15,"US$","Dividendo",0.048519,NA,NA,NA,NA,0.048519147,"boletin",NA
+"Fondo de Inversión Pre-IPO Opportunities MVP","A","9652","FINRE",2026-11-05,2026-11-11,"US$","Dividendo",0.01629,NA,NA,NA,NA,0.016290082,"boletin",NA
+"Fondo de Inversión Pre-IPO Opportunities MVP","C","9652","FINRE",2026-11-05,2026-11-11,"US$","Dividendo",0.05765,NA,NA,NA,NA,0.057650342,"boletin",NA
 "Fondo de Inversión Pudú Conservador","A","10589","FIRES",2026-05-23,2026-05-29,"$","Dividendo",26.558605,NA,NA,NA,NA,26.558605,"boletin",NA
 "Fondo de Inversión Pudú Conservador","L","10589","FIRES",2026-05-23,2026-05-29,"$","Dividendo",18.984373,NA,NA,NA,NA,18.984373,"boletin",NA
 "Fondo de Inversión Renta Dinámica","DOS","9117","FIRES",2026-06-13,2026-06-19,"$","Dividendo",2.929744,NA,NA,NA,NA,2.929744025,"boletin",NA
@@ -6371,6 +6380,8 @@
 "Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","I","10470","FINRE",2026-10-23,2026-10-29,"$","Dividendo",8.922475,NA,NA,NA,NA,8.9224745779,"boletin",NA
 "Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","IB","10470","FINRE",2026-10-23,2026-10-29,"$","Dividendo",8.925464,NA,NA,NA,NA,8.9254644045,"boletin",NA
 "Fondo de Inversión Rentas Residenciales LarrainVial - Eurocorp","X","10470","FINRE",2026-10-23,2026-10-29,"$","Dividendo",6.135489,NA,NA,NA,NA,6.1354893536,"boletin",NA
+"Fondo de Inversión SURA Capital Inmobiliario Chile, en Liquidación","A",NA,NA,2026-11-06,2026-11-12,"$","Reparto",28617.1037,NA,NA,NA,NA,28617.1037,"boletin",NA
+"Fondo de Inversión SURA Capital Inmobiliario Chile, en Liquidación","I",NA,NA,2026-11-06,2026-11-12,"$","Reparto",29167.1758,NA,NA,NA,NA,29167.1758,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2025-06-11,2025-06-17,"$","Dividendo",345.461367,NA,NA,NA,NA,345.4613671,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-04-10,2026-04-16,"$","Dividendo",218.540751,NA,NA,NA,NA,218.5407507,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-04-10,2026-04-16,"$","Dividendo",150.691824,NA,NA,NA,NA,150.6918235,"boletin",NA
@@ -9667,6 +9678,10 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "Vinci Compass PCRED Private Debt Fondo de Inversión","B","9634","FINRE",2026-10-16,2026-10-22,"US$","Reparto",0.043012,NA,NA,NA,NA,0.043011957,"boletin",NA
 "Vinci Compass PCRED Private Debt Fondo de Inversión","C","9634","FINRE",2026-10-16,2026-10-22,"US$","Reparto",0.045404,NA,NA,NA,NA,0.0454038214,"boletin",NA
 "Vinci Compass PCRED Private Debt Fondo de Inversión","P","9634","FINRE",2026-10-16,2026-10-22,"US$","Reparto",0.04429,NA,NA,NA,NA,0.0442903959,"boletin",NA
+"Vinci Compass Private Debt III Fondo de Inversión","A","9479","FINRE",2026-11-06,2026-11-12,"US$","Dividendo",0.004262,NA,NA,NA,NA,0.0042619468,"boletin",NA
+"Vinci Compass Private Debt III Fondo de Inversión","B","9479","FINRE",2026-11-06,2026-11-12,"US$","Dividendo",0.004532,NA,NA,NA,NA,0.0045321904,"boletin",NA
+"Vinci Compass Private Debt III Fondo de Inversión","A","9479","FINRE",2026-11-06,2026-11-12,"US$","Reparto",0.004342,NA,NA,NA,NA,0.0043419229,"boletin",NA
+"Vinci Compass Private Debt III Fondo de Inversión","B","9479","FINRE",2026-11-06,2026-11-12,"US$","Reparto",0.004617,NA,NA,NA,NA,0.0046172102,"boletin",NA
 "Vinci Compass Private Equity IV Fondo de Inversión","A","7260","FINRE",2026-10-01,2026-10-07,"US$","Dividendo",0.325325,NA,NA,NA,NA,0.3253250651,"boletin",NA
 "Vinci Compass Private Equity V Fondo de Inversión","A","7269","FINRE",2026-08-05,2026-08-11,"US$","Dividendo",0.294178,NA,NA,NA,NA,0.2941783483,"boletin",NA
 "Vinci Compass Private Equity V Fondo de Inversión","A","7269","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.36714,NA,NA,NA,NA,0.3671404001,"boletin",NA
@@ -9857,8 +9872,6 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2025-04-30,2025-05-07,"$","Reparto",NA,235664094,36133731,2025-04-30,6.521997,6.52199724408948,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2025-07-31,2025-08-06,"$","Reparto",NA,275723404,35949767,2025-07-31,7.669685,7.66968542523317,"calculado (total/cuotas dia limite)",NA
 "Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2025-07-31,2025-08-06,"$","Reparto",NA,275723404,35949767,2025-07-31,7.669685,7.66968542523317,"calculado (total/cuotas dia limite)",NA
-"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","C","9827","FINRE",2026-10-30,2026-11-06,"$","Reparto",NA,303403863,34967182,2026-10-30,8.676818,8.67681768007518,"calculado (total/cuotas dia limite)",NA
-"Ameris Financiamiento para Acceso a la Vivienda Fondo de Inversión","I","9827","FINRE",2026-10-30,2026-11-06,"$","Reparto",NA,303403863,34967182,2026-10-30,8.676818,8.67681768007518,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión AG Direct Lending IV","A","9842","FINRE",2025-04-23,2025-04-29,"US$","Reparto",NA,434654.79,7626759,2025-04-23,0.056991,0.0569907632982102,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión AG Direct Lending IV","P1","9842","FINRE",2025-04-23,2025-04-29,"US$","Reparto",NA,171337.75,7626759,2025-04-23,0.022465,0.0224653434839586,"calculado (total/cuotas dia limite)",NA
 "Fondo de Inversión AG Direct Lending IV","P2","9842","FINRE",2025-04-23,2025-04-29,"US$","Reparto",NA,219007.46,7626759,2025-04-23,0.028716,0.028715667238827,"calculado (total/cuotas dia limite)",NA
