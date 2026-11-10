@@ -57,7 +57,8 @@ MAPEO_SEBRA <- list(
 # ---- Fondos / indices manuales ----
 NOMBRES_FONDOS_MANUALES <- c("Amc Biotech", "Quest Fin Inmb.", "Fynsa Deuda Inmob.", "MBI Deuda estructurada")
 
-NOMBRES_INDICES_MANUALES <- c("Legatruh", "IPSA")
+NOMBRES_INDICES_MANUALES <- c("Legatruh")   # se cargan a mano
+NOMBRES_INDICES_AUTO     <- c("IPSA")       # solo automaticos (oficial + Yahoo); ya no se ingresan a mano
 
 # ---- Reglas especiales de calculo ----
 FONDOS_YTD_DESDE_INICIO <- c(

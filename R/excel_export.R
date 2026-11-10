@@ -261,7 +261,7 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
 
   # ============ Fondos / Indices Manuales (orden original) ============
   manual_wide <- function(tipo, orden) {
-    sub <- vc_df[vc_df$Tipo==tipo, , drop=FALSE]; if (!nrow(sub)) return(NULL)
+    sub <- vc_df[vc_df$Tipo==tipo & !(vc_df$Nombre %in% NOMBRES_INDICES_AUTO), , drop=FALSE]; if (!nrow(sub)) return(NULL)
     pres <- unique(sub$Nombre); nombres <- c(orden[orden %in% pres], setdiff(pres, orden))
     tabs <- lapply(nombres, function(nm) { d <- sub[sub$Nombre==nm, c("Fecha","Valor")]
       names(d) <- c("Fecha", nm); d$Fecha <- as.Date(d$Fecha); d <- d[d$Fecha>=FECHA_BASE_XLSX,]; d[order(d$Fecha),] })
@@ -279,8 +279,9 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
   # a la derecha, las rentabilidades que muestra el dashboard.
   addWorksheet(wb, "Indices")
   col0 <- 1
-  for (nm in NOMBRES_INDICES_MANUALES) {
-    man <- serie_de_vc(vc_df, nm); if (!is.null(man)) man$Fuente <- "Manual"
+  for (nm in c(NOMBRES_INDICES_MANUALES, NOMBRES_INDICES_AUTO)) {
+    man <- serie_de_vc(vc_df, nm)
+    if (!is.null(man)) man$Fuente <- if (nm %in% NOMBRES_INDICES_AUTO) "Historico" else "Manual"
     aut <- NULL
     if (identical(nm, "IPSA")) {
       of <- datos$macro_series[["IPSA"]]
@@ -289,7 +290,7 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
       yh <- if (!is.null(yh) && nrow(yh)) tibble(fecha=as.Date(yh$fecha), valor_cuota=suppressWarnings(as.numeric(yh$cierre)), Fuente="Yahoo") else NULL
       aut <- bind_rows(of, yh) %>% filter(!is.na(fecha), !is.na(valor_cuota)) %>% distinct(fecha, .keep_all=TRUE)
     }
-    s <- bind_rows(man, aut)
+    s <- if (nm %in% NOMBRES_INDICES_AUTO) bind_rows(aut, man) else bind_rows(man, aut)   # el primero manda por fecha
     if (!is.null(s) && nrow(s)) {
       s <- s %>% filter(fecha >= FECHA_BASE_XLSX) %>% distinct(fecha, .keep_all=TRUE) %>% arrange(fecha)
       out <- data.frame(Fecha=s$fecha, setNames(list(s$valor_cuota), nm), Fuente=s$Fuente, check.names=FALSE)

@@ -46,8 +46,11 @@ aplicar_indices_manuales <- function(macro, vc_df, fc, auto = list()) {
   ref_wtd <- fc - 7; ref_mtd <- floor_date(fc, "month") - 1
   ref_ytd <- as.Date(sprintf("%d-12-31", year(fc) - 1))
   ref_mes_ant_fin <- ref_mtd; ref_mes_ant_ini <- floor_date(ref_mes_ant_fin, "month") - 1
-  for (nm in NOMBRES_INDICES_MANUALES) {
-    s <- bind_rows(serie_de_vc(vc_df, nm), auto[[nm]])   # en la misma fecha manda el manual
+  for (nm in c(NOMBRES_INDICES_MANUALES, NOMBRES_INDICES_AUTO)) {
+    # AUTO (IPSA): manda la serie automatica; los VC manuales antiguos solo rellenan el historial
+    # donde no hay dato automatico (sin ellos se pierden YTD y mes anterior). Ya no se ingresan nuevos.
+    s <- if (nm %in% NOMBRES_INDICES_AUTO) bind_rows(auto[[nm]], serie_de_vc(vc_df, nm))
+         else bind_rows(serie_de_vc(vc_df, nm), auto[[nm]])   # en la misma fecha manda el manual
     if (!nrow(s)) next
     s <- s %>% distinct(fecha, .keep_all = TRUE) %>% arrange(fecha)
     for (j in seq_along(macro)) if (identical(macro[[j]]$nombre, nm)) {
