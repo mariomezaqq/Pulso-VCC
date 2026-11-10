@@ -135,51 +135,64 @@ texto_correo <- function(pd) {
 
 .esc <- function(x) { x <- gsub("&", "&amp;", x, fixed = TRUE); x <- gsub("<", "&lt;", x, fixed = TRUE); gsub(">", "&gt;", x, fixed = TRUE) }
 
-#' Cuerpo del correo en el formato de correo de la skill vizcaya-afi-diseno: 640 px,
-#' tablas con estilos en linea (Outlook y Gmail), encabezado navy con logo, kicker
-#' arena, un bloque con filete arena por tema, Georgia + Arial, paleta cerrada.
+#' Cuerpo del correo con el sistema de diseño de Vizcaya Capital (skill vizcaya-capital):
+#' paleta cerrada navy/ice/steel/sky/mist/slate (sin acento arena), serif para titulos
+#' y nombres (Georgia en correo) + sans para el cuerpo (Arial en correo), filetes de
+#' 1 px, secciones numeradas 01 02 03 en mist, sin tarjetas ni sombras. 640 px, tablas
+#' con estilos en linea (Outlook y Gmail).
 #' `logo_src`: "cid:logo-pulso" para enviar (Gmail bloquea data:) o "data:image/png;base64,..."
 #' para la vista previa. Devuelve list(html, texto).
-.GEORGIA <- "Georgia,'Times New Roman',serif"; .ARIAL <- "Arial,Helvetica,sans-serif"
+.SERIF <- "Georgia,'Times New Roman',serif"; .SANS <- "Arial,Helvetica,sans-serif"
+.NAVY <- "#182b46"; .ICE <- "#e2ebf2"; .STEEL <- "#355470"; .SKY <- "#c3dbe5"; .MIST <- "#87a4b2"; .SLATE <- "#485a66"
 .p_cuerpo <- function(txt, extra = "")
-  paste0("<p align=\"justify\" style=\"margin:0;font-family:", .GEORGIA, ";font-size:15px;line-height:24px;color:#2b3340;",
-         "text-align:justify;mso-line-height-rule:exactly;", extra, "\">", txt, "</p>")
+  paste0("<p align=\"justify\" style=\"margin:0;font-family:", .SANS, ";font-size:14px;line-height:23px;color:", .SLATE,
+         ";text-align:justify;mso-line-height-rule:exactly;", extra, "\">", txt, "</p>")
 
 cuerpo_correo <- function(t, firma = "", logo_src = "cid:logo-pulso") {
-  link <- sprintf("<a href=\"%s\" style=\"color:#355470;font-weight:bold;\">Pulso VCC</a>", URL_PULSO)
+  link <- sprintf("<a href=\"%s\" style=\"color:%s;font-weight:bold;\">Pulso VCC</a>", URL_PULSO, .STEEL)
   html_txt <- function(p) sub("{LINK}", link, .esc(p), fixed = TRUE)
-  bloque <- function(b) paste0(
-    "<tr><td style=\"padding:0 40px 28px 40px;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr>",
-    "<td style=\"border-left:3px solid #a89880;padding:0 0 0 18px;\">",
-    "<p style=\"margin:0 0 8px 0;font-family:", .ARIAL, ";font-size:13px;line-height:18px;font-weight:bold;letter-spacing:1px;color:#182b46;text-transform:uppercase;\"><font color=\"#182b46\">",
-    .esc(b$titulo), "</font></p>", .p_cuerpo(html_txt(b$texto)), "</td></tr></table></td></tr>")
-  fila <- function(p, ultimo = FALSE) paste0("<tr><td style=\"padding:0 40px ", if (ultimo) "30" else "14", "px 40px;\">", .p_cuerpo(html_txt(p)), "</td></tr>")
-  cierre <- vapply(seq_along(t$cierre), function(i) fila(t$cierre[i]), "")
+  td <- function(x, pad = "0 40px") paste0("<tr><td style=\"padding:", pad, ";\">", x, "</td></tr>")
+  filete <- paste0("<tr><td style=\"padding:0 40px;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr>",
+                   "<td height=\"1\" bgcolor=\"", .SKY, "\" style=\"background-color:", .SKY, ";font-size:1px;line-height:1px;mso-line-height-rule:exactly;\">&nbsp;</td></tr></table></td></tr>")
+  bloque <- function(i) {
+    b <- t$bloques[[i]]
+    paste0(filete, "<tr><td style=\"padding:22px 40px 24px 40px;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr>",
+      "<td width=\"46\" valign=\"top\" style=\"font-family:", .SERIF, ";font-size:15px;line-height:24px;color:", .MIST, ";\"><font color=\"", .MIST, "\">", sprintf("%02d", i), "</font></td>",
+      "<td valign=\"top\"><p style=\"margin:0 0 8px 0;font-family:", .SERIF, ";font-size:19px;line-height:24px;color:", .NAVY, ";\"><font color=\"", .NAVY, "\">", .esc(b$titulo), "</font></p>",
+      .p_cuerpo(html_txt(b$texto)), "</td></tr></table></td></tr>")
+  }
+  cierre <- paste(vapply(seq_along(t$cierre), function(i) td(.p_cuerpo(html_txt(t$cierre[i])), if (i == 1) "22px 40px 12px 40px" else "0 40px 12px 40px"), ""), collapse = "")
   fecha_larga <- sprintf("%s de %d", .fecha_larga(t$fecha_cierre), as.integer(format(t$fecha_cierre, "%Y")))
+  lineas <- if (nzchar(firma)) strsplit(firma, "\n", fixed = TRUE)[[1]] else character(0)
+  firma_html <- if (length(lineas)) td(paste0(
+    "<p style=\"margin:0;font-family:", .SANS, ";font-size:14px;line-height:23px;color:", .SLATE, ";\">", .esc(lineas[1]), "</p>",
+    if (length(lineas) > 1) paste0("<p style=\"margin:0;font-family:", .SERIF, ";font-size:17px;line-height:24px;color:", .NAVY, ";\"><font color=\"", .NAVY, "\">", .esc(lineas[2]), "</font></p>") else "",
+    if (length(lineas) > 2) paste0("<p style=\"margin:0;font-family:", .SANS, ";font-size:12px;line-height:18px;color:", .MIST, ";\"><font color=\"", .MIST, "\">", .esc(paste(lineas[-(1:2)], collapse = " · ")), "</font></p>") else ""),
+    "10px 40px 34px 40px") else td("&nbsp;", "0 40px 10px 40px")
 
   html <- paste0(
     "<!doctype html><html lang=\"es\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
     "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>", .esc(t$asunto), "</title>",
     "<style>p{margin:0;} table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;} img{border:0;-ms-interpolation-mode:bicubic;}</style></head>",
-    "<body bgcolor=\"#f1f1f1\" style=\"margin:0;padding:0;background-color:#f1f1f1;\">",
-    "<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"#f1f1f1\"><tr><td align=\"center\" style=\"padding:24px 12px;\">",
+    "<body bgcolor=\"", .ICE, "\" style=\"margin:0;padding:0;background-color:", .ICE, ";\">",
+    "<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"", .ICE, "\"><tr><td align=\"center\" style=\"padding:24px 12px;\">",
     "<table role=\"presentation\" width=\"640\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"#ffffff\" style=\"width:640px;background-color:#ffffff;\">",
-    # 1. encabezado navy
-    "<tr><td bgcolor=\"#182b46\" style=\"background-color:#182b46;padding:0;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"#182b46\"><tr>",
-    "<td bgcolor=\"#182b46\" valign=\"middle\" style=\"background-color:#182b46;padding:28px 0 28px 40px;font-family:", .ARIAL, ";font-size:12px;letter-spacing:2px;color:#ffffff;text-transform:uppercase;\"><font color=\"#ffffff\">Pulso VCC &middot; Fondos aprobados</font></td>",
-    "<td bgcolor=\"#182b46\" align=\"right\" valign=\"middle\" width=\"230\" style=\"background-color:#182b46;padding:24px 40px 24px 0;\"><img src=\"", logo_src,
-    "\" alt=\"Vizcaya Capital\" width=\"190\" height=\"50\" style=\"display:block;border:0;width:190px;height:50px;\"></td></tr></table></td></tr>",
-    # 2. kicker arena
-    "<tr><td style=\"padding:40px 40px 22px 40px;\"><p style=\"margin:0;font-family:", .ARIAL, ";font-size:12px;line-height:18px;letter-spacing:2px;color:#a89880;text-transform:uppercase;\"><font color=\"#a89880\">Reporte diario &middot; Cierre ",
+    # encabezado navy: logo a la izquierda, "Confidencial" a la derecha (mist)
+    "<tr><td bgcolor=\"", .NAVY, "\" style=\"background-color:", .NAVY, ";padding:0;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"", .NAVY, "\"><tr>",
+    "<td bgcolor=\"", .NAVY, "\" valign=\"middle\" style=\"background-color:", .NAVY, ";padding:26px 0 26px 40px;\"><img src=\"", logo_src,
+    "\" alt=\"Vizcaya Capital\" width=\"158\" height=\"50\" style=\"display:block;border:0;width:158px;height:50px;\"></td>",
+    "<td bgcolor=\"", .NAVY, "\" align=\"right\" valign=\"middle\" style=\"background-color:", .NAVY, ";padding:26px 40px 26px 0;font-family:", .SANS,
+    ";font-size:11px;letter-spacing:2px;color:", .MIST, ";text-transform:uppercase;\"><font color=\"", .MIST, "\">Confidencial</font></td></tr></table></td></tr>",
+    # titulo: kicker (steel) + cierre en serif grande
+    "<tr><td style=\"padding:38px 40px 6px 40px;\"><p style=\"margin:0;font-family:", .SANS, ";font-size:11px;line-height:16px;letter-spacing:2px;color:", .STEEL,
+    ";text-transform:uppercase;\"><font color=\"", .STEEL, "\">Pulso VCC &middot; Reporte diario</font></p></td></tr>",
+    "<tr><td style=\"padding:0 40px 30px 40px;\"><p style=\"margin:0;font-family:", .SERIF, ";font-size:30px;line-height:38px;color:", .NAVY, ";\"><font color=\"", .NAVY, "\">Cierre ",
     .esc(fecha_larga), "</font></p></td></tr>",
-    # 3. un bloque por tema
-    paste(vapply(t$bloques, bloque, ""), collapse = ""),
-    # 4. cierre (enlace, consultas, adjunto)
-    paste(cierre, collapse = ""),
-    if (nzchar(firma)) fila(firma, ultimo = TRUE) else "<tr><td height=\"16\" style=\"font-size:1px;line-height:16px;\">&nbsp;</td></tr>",
-    # 5. pie
-    "<tr><td bgcolor=\"#e2ebf2\" style=\"background-color:#e2ebf2;padding:20px 40px;\"><p align=\"justify\" style=\"margin:0;font-family:", .ARIAL,
-    ";font-size:11px;line-height:16px;color:#485a66;text-align:justify;\">Confidencial. Este correo est&aacute; dirigido exclusivamente al equipo de Vizcaya Capital. Rentabilidades pasadas no garantizan resultados futuros.</p></td></tr>",
+    paste(vapply(seq_along(t$bloques), bloque, ""), collapse = ""),
+    filete, cierre, firma_html,
+    # pie ice
+    "<tr><td bgcolor=\"", .ICE, "\" style=\"background-color:", .ICE, ";padding:18px 40px;\"><p align=\"justify\" style=\"margin:0;font-family:", .SANS,
+    ";font-size:11px;line-height:16px;color:", .SLATE, ";text-align:justify;\">Confidencial. Este correo est&aacute; dirigido exclusivamente al equipo de Vizcaya Capital. Rentabilidades pasadas no garantizan resultados futuros.</p></td></tr>",
     "</table></td></tr></table></body></html>")
   list(html = html,
        texto = paste(c(t$asunto, sub("{LINK}", paste0("Pulso VCC (", URL_PULSO, ")"), c(t$parrafos, t$cierre, if (nzchar(firma)) firma), fixed = TRUE)), collapse = "\n\n"))

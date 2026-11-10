@@ -28,7 +28,8 @@ ov <- tryCatch(read.csv("data/dividendos_overrides.csv", stringsAsFactors = FALS
 t <- preparar_todo(vc, ov)
 if (is.null(t)) stop("No hay data/series_vc.rds: no se puede armar el correo.")
 txt <- texto_correo(t$pd)
-firma <- Sys.getenv("CORREO_FIRMA", "")
+# Firma: "saludo \n nombre \n cargo". Se puede cambiar con la variable CORREO_FIRMA (usar \n).
+firma <- gsub("\\n", "\n", Sys.getenv("CORREO_FIRMA", "Un cordial saludo,\nMario Meza\nAnalista\nVizcaya Capital"), fixed = TRUE)
 cuerpo <- cuerpo_correo(txt, firma = firma, logo_src = "cid:logo-pulso")          # para enviar (logo adjunto en linea)
 logo_b64 <- jsonlite::base64_enc(readBin("correo_assets/logo-vizcaya-capital-blanco.png", "raw", file.info("correo_assets/logo-vizcaya-capital-blanco.png")$size))
 vista <- cuerpo_correo(txt, firma = firma, logo_src = paste0("data:image/png;base64,", logo_b64))   # para abrirlo en el navegador
@@ -45,6 +46,8 @@ writeLines(enc2utf8(cuerpo$texto), file.path(out, "cuerpo.txt"), useBytes = TRUE
 avisos <- c(t$pd$alertas$global %||% character(0),
             if (length(txt$parrafos) < 4) "Falta algun parrafo por datos faltantes (indices, Treasury o instrumentos de la casa).")
 write_json(list(cierre = format(fc), asunto = txt$asunto, adjunto = adjunto,
+                atrasado = !is.null(t$pd$alertas$global),   # cierre anterior al ultimo dia habil
+                fondos_atrasados = vapply(t$pd$alertas$fondos, function(x) paste0(x$nombre, " (", x$fecha, ")"), ""),
                 datos_generados = t$datos$generado %||% "", avisos = avisos),
            file.path(out, "meta.json"), auto_unbox = TRUE, pretty = TRUE)
 message("Correo generado en ", out, "/ | ", txt$asunto, if (length(avisos)) paste0(" | AVISOS: ", paste(avisos, collapse = " ")) else "")

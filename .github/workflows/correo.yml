@@ -5,12 +5,18 @@ name: Correo diario Pulso
 # en el resumen. Con enviar=true lo envía por Microsoft Graph desde la cuenta de
 # Mario (app de Azure del dashboard de la AFI; secrets AZURE_TENANT_ID,
 # AZURE_CLIENT_ID, AZURE_REFRESH_TOKEN y los destinatarios CORREO_PARA / CORREO_CC).
-# Por ahora solo se corre a mano; el horario de las 17:30 se agrega al definirlo.
+# Lo dispara el programador de Supabase (proyecto "Pulso VCC") a las 17:30 de Chile de
+# lunes a viernes, con enviar=true; también se puede correr a mano. Si los datos están
+# atrasados NO se envía al equipo: se avisa solo a CORREO_AVISO.
 on:
   workflow_dispatch:
     inputs:
       enviar:
         description: "Enviar el correo (false = solo armarlo y mostrarlo)"
+        type: boolean
+        default: false
+      forzar:
+        description: "Enviar al equipo aunque los datos estén atrasados"
         type: boolean
         default: false
       solo_a:
@@ -91,6 +97,8 @@ jobs:
         env:
           SEND: ${{ inputs.enviar && 'true' || 'false' }}
           CORREO_SOLO_A: ${{ inputs.solo_a }}
+          FORZAR: ${{ inputs.forzar && 'true' || 'false' }}
+          CORREO_AVISO: ${{ secrets.CORREO_AVISO }}
           CORREO_PARA: ${{ secrets.CORREO_PARA }}
           CORREO_CC: ${{ secrets.CORREO_CC }}
           AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
