@@ -35,6 +35,17 @@ jobs:
         with:
           use-public-rspm: true
 
+      # Si el primer intento se cuelga y lo corta el timeout, deja apt a medias (candado de dpkg):
+      # sin esta limpieza el reintento falla en 2 s con "exit code 100" (pasó el 10-11).
+      - name: Limpiar apt antes del reintento
+        if: steps.setup_r.outcome == 'failure'
+        run: |
+          sudo pkill -9 -x apt-get || true
+          sudo pkill -9 -x apt || true
+          sudo pkill -9 -x dpkg || true
+          sudo rm -f /var/lib/dpkg/lock-frontend /var/lib/dpkg/lock /var/lib/apt/lists/lock /var/cache/apt/archives/lock
+          sudo dpkg --configure -a || true
+
       - name: Setup R (reintento)
         if: steps.setup_r.outcome == 'failure'
         uses: r-lib/actions/setup-r@v2
