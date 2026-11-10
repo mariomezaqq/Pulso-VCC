@@ -64,7 +64,7 @@ source("R/preparar.R")
 
 # ============================== UI ==============================
 ui <- page_navbar(
-  title = "Pulso VCC", theme = bs_theme(version = 5),
+  id = "nav", title = "Pulso VCC", theme = bs_theme(version = 5),
   header = tagList(
     # App instalable (Agregar a pantalla de inicio): icono Pulso + Vizcaya
     # (www/icon-*.png, apple-touch-icon.png, favicon-32.png; diseño entregado por
@@ -195,6 +195,11 @@ ui <- page_navbar(
 
 # ============================== SERVER ==============================
 server <- function(input, output, session) {
+  # El engranaje de la pagina rapida abre esta app con ?seccion=admin: cae directo en Administracion
+  observeEvent(session$clientData$url_search, once = TRUE, {
+    if (identical(parseQueryString(session$clientData$url_search)$seccion, "admin"))
+      nav_select("nav", "Administración")
+  })
   rv <- reactiveValues(
     tick  = 0,
     vc    = .leer_csv("manuales_vc.csv", default_vc()),
