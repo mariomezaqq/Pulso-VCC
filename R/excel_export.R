@@ -7,6 +7,7 @@
 # =============================================================================
 suppressMessages({ library(openxlsx); library(dplyr); library(lubridate); library(tibble) })
 
+`%||%` <- function(a, b) if (is.null(a)) b else a
 FECHA_BASE_XLSX <- as.Date("2025-12-31")
 .MESES_XLSX <- c("Enero","Febrero","Marzo","Abril","Mayo","Junio",
                  "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
@@ -270,6 +271,47 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
                   list("Indice","Indices Manuales", NOMBRES_INDICES_MANUALES))) {
     w <- manual_wide(tt[[1]], tt[[3]]); addWorksheet(wb, tt[[2]])
     if (!is.null(w) && nrow(w)) esc_wide(tt[[2]], w)
+  }
+
+  # ============ Indices (IPSA / Legatruh con su fuente, para verificar) ============
+  # Una hoja con la serie que usa el Pulso para cada indice manual: VC manual (manda en
+  # la misma fecha) + IPSA automatico (oficial o Yahoo). Columna "Fuente" por fecha y,
+  # a la derecha, las rentabilidades que muestra el dashboard.
+  addWorksheet(wb, "Indices")
+  col0 <- 1
+  for (nm in NOMBRES_INDICES_MANUALES) {
+    man <- serie_de_vc(vc_df, nm); if (!is.null(man)) man$Fuente <- "Manual"
+    aut <- NULL
+    if (identical(nm, "IPSA")) {
+      of <- datos$macro_series[["IPSA"]]
+      of <- if (!is.null(of) && nrow(of)) tibble(fecha=as.Date(of$fecha), valor_cuota=as.numeric(of$valor), Fuente="Oficial") else NULL
+      yh <- if (file.exists("data/ipsa_yahoo.csv")) tryCatch(read.csv("data/ipsa_yahoo.csv", colClasses="character"), error=function(e) NULL) else NULL
+      yh <- if (!is.null(yh) && nrow(yh)) tibble(fecha=as.Date(yh$fecha), valor_cuota=suppressWarnings(as.numeric(yh$cierre)), Fuente="Yahoo") else NULL
+      aut <- bind_rows(of, yh) %>% filter(!is.na(fecha), !is.na(valor_cuota)) %>% distinct(fecha, .keep_all=TRUE)
+    }
+    s <- bind_rows(man, aut)
+    if (!is.null(s) && nrow(s)) {
+      s <- s %>% filter(fecha >= FECHA_BASE_XLSX) %>% distinct(fecha, .keep_all=TRUE) %>% arrange(fecha)
+      out <- data.frame(Fecha=s$fecha, setNames(list(s$valor_cuota), nm), Fuente=s$Fuente, check.names=FALSE)
+    } else out <- data.frame(Fecha=as.Date(character()), setNames(list(numeric()), nm), Fuente=character(), check.names=FALSE)
+    writeData(wb, "Indices", out, startCol=col0, startRow=1, headerStyle=S$hdr)
+    n <- nrow(out)
+    if (n) { addStyle(wb, "Indices", S$fch, rows=2:(n+1), cols=col0, gridExpand=TRUE)
+      addStyle(wb, "Indices", S$num, rows=2:(n+1), cols=col0+1, gridExpand=TRUE)
+      addStyle(wb, "Indices", S$txt, rows=2:(n+1), cols=col0+2, gridExpand=TRUE) }
+    setColWidths(wb, "Indices", cols=col0:(col0+2), widths=c(12,16,10)); setColWidths(wb, "Indices", cols=col0+3, widths=4)
+    col0 <- col0 + 4
+  }
+  im <- pd$indices_macro
+  if (length(im)) {
+    resm <- do.call(rbind, lapply(im, function(x) data.frame(Indice=x$nombre %||% "", `Semana (WTD)`=x$wtd %||% NA_real_,
+      `Mes (MTD)`=x$mtd %||% NA_real_, `Año (YTD)`=x$ytd %||% NA_real_, `Mes anterior`=x$mes_ant %||% NA_real_, check.names=FALSE)))
+    writeData(wb, "Indices", resm, startCol=col0, startRow=1, headerStyle=S$hdr)
+    k <- nrow(resm)
+    addStyle(wb, "Indices", S$nom, rows=2:(k+1), cols=col0, gridExpand=TRUE)
+    addStyle(wb, "Indices", createStyle(fontSize=10, fontName="Arial", numFmt="0.00%", border="TopBottomLeftRight", halign="right"),
+             rows=2:(k+1), cols=(col0+1):(col0+4), gridExpand=TRUE)
+    setColWidths(wb, "Indices", cols=col0:(col0+4), widths=c(26,14,14,14,14))
   }
 
   saveWorkbook(wb, path, overwrite=TRUE)
