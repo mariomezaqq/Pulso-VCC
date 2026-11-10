@@ -822,6 +822,8 @@
 "BICE Monarch IV Fondo de Inversión","I","9529","FINRE",2026-07-15,2026-07-22,"US$","Reparto",0.016681,NA,NA,NA,NA,0.0166813952,"boletin",NA
 "BICE Monarch IV Fondo de Inversión","A","9529","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.004325,NA,NA,NA,NA,0.0043253383,"boletin",NA
 "BICE Monarch IV Fondo de Inversión","I","9529","FINRE",2026-08-05,2026-08-11,"US$","Reparto",0.004468,NA,NA,NA,NA,0.0044682309,"boletin",NA
+"BICE Monarch IV Fondo de Inversión","A","9529","FINRE",2026-11-07,2026-11-13,"US$","Reparto",0.036674,NA,NA,NA,NA,0.03667409,"boletin",NA
+"BICE Monarch IV Fondo de Inversión","I","9529","FINRE",2026-11-07,2026-11-13,"US$","Reparto",0.03795,NA,NA,NA,NA,0.03795013,"boletin",NA
 "BICE Secundarios RE II Fondo de Inversión","A","9774","FINRE",2025-01-08,2025-01-14,"US$","Reparto",0.044113,NA,NA,NA,NA,0.0441126266,"boletin",NA
 "BICE Secundarios RE II Fondo de Inversión","I","9774","FINRE",2025-01-08,2025-01-14,"US$","Reparto",0.083356,NA,NA,NA,NA,0.0833563738,"boletin",NA
 "BICE Secundarios RE II Fondo de Inversión","X","9774","FINRE",2025-01-08,2025-01-14,"US$","Reparto",0.08336,NA,NA,NA,NA,0.0833598195,"boletin",NA
@@ -4432,6 +4434,8 @@
 "Fondo de Inversión Credicorp Capital - Private Debt II","I","9567","FINRE",2026-01-22,2026-01-28,"US$","Dividendo",0.003525,NA,NA,NA,NA,0.00352513,"boletin",NA
 "Fondo de Inversión Credicorp Capital - Private Debt II","B","9567","FINRE",2026-01-22,2026-01-28,"US$","Reparto",0.016195,NA,NA,NA,NA,0.01619463,"boletin",NA
 "Fondo de Inversión Credicorp Capital - Private Debt II","I","9567","FINRE",2026-01-22,2026-01-28,"US$","Reparto",0.018019,NA,NA,NA,NA,0.01801862,"boletin",NA
+"Fondo de Inversión Credicorp Capital - Private Debt II","B","9567","FINRE",2026-11-10,2026-11-16,"US$","Dividendo",0.055804,NA,NA,NA,NA,0.0558036,"boletin",NA
+"Fondo de Inversión Credicorp Capital - Private Debt II","I","9567","FINRE",2026-11-10,2026-11-16,"US$","Dividendo",0.062508,NA,NA,NA,NA,0.0625085,"boletin",NA
 "Fondo de Inversión Credicorp Capital - SLP II","B","9892","FINRE",2026-06-06,2026-06-12,"US$","Dividendo",0.000542,NA,NA,NA,NA,0.00054193,"boletin",NA
 "Fondo de Inversión Credicorp Capital - SLP II","I","9892","FINRE",2026-06-06,2026-06-12,"US$","Dividendo",0.000547,NA,NA,NA,NA,0.00054724,"boletin",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","I",NA,NA,2026-05-07,2026-05-13,"US$","Dividendo",0.022754,NA,NA,NA,NA,0.02275366,"boletin",NA
@@ -4609,6 +4613,10 @@
 "Fondo de Inversión Deuda Privada Automotriz V","S","10865","FINRE",2026-10-17,2026-10-23,"$","Dividendo",0.526951,NA,NA,NA,NA,0.5269510696,"boletin",NA
 "Fondo de Inversión Deuda Privada Automotriz V","A","10865","FINRE",2026-10-17,2026-10-23,"$","Reparto",15.957614,NA,NA,NA,NA,15.9576136686,"boletin",NA
 "Fondo de Inversión Deuda Privada Automotriz V","S","10865","FINRE",2026-10-17,2026-10-23,"$","Reparto",16.532128,NA,NA,NA,NA,16.5321276264,"boletin",NA
+"Fondo de Inversión Deuda Privada Automotriz V","A","10865","FINRE",2026-11-07,2026-11-13,"$","Dividendo",2.551609,NA,NA,NA,NA,2.5516094614,"boletin",NA
+"Fondo de Inversión Deuda Privada Automotriz V","S","10865","FINRE",2026-11-07,2026-11-13,"$","Dividendo",2.643474,NA,NA,NA,NA,2.6434744313,"boletin",NA
+"Fondo de Inversión Deuda Privada Automotriz V","A","10865","FINRE",2026-11-07,2026-11-13,"$","Reparto",20.501143,NA,NA,NA,NA,20.5011432721,"boletin",NA
+"Fondo de Inversión Deuda Privada Automotriz V","S","10865","FINRE",2026-11-07,2026-11-13,"$","Reparto",21.239239,NA,NA,NA,NA,21.2392389843,"boletin",NA
 "Fondo de Inversión Drake Real Estate Partners Fund III","I","9458","FINRE",2025-06-18,2025-06-25,"US$","Dividendo",0.01405,NA,NA,NA,NA,0.0140495446130418,"boletin",NA
 "Fondo de Inversión Drake Real Estate Partners Fund III","P","9458","FINRE",2025-06-18,2025-06-25,"US$","Dividendo",0.013918,NA,NA,NA,NA,0.0139181622060823,"boletin",NA
 "Fondo de Inversión Drake Real Estate Partners Fund III","I","9458","FINRE",2025-06-18,2025-06-25,"US$","Reparto",0.096041,NA,NA,NA,NA,0.0960407232433961,"boletin",NA
@@ -6836,6 +6844,10 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "Fondo de Inversión Security Deuda Privada Automotriz IV","B","10745","FINRE",2026-10-15,2026-10-21,"$","Reparto",37.683581,NA,NA,NA,NA,37.6835806873,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Automotriz IV","S","10745","FINRE",2026-10-15,2026-10-21,"$","Reparto",37.987064,NA,NA,NA,NA,37.9870639935,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Automotriz IV","SUB","10745","FINRE",2026-10-15,2026-10-21,"$","Reparto",82.991793,NA,NA,NA,NA,82.9917925366,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","A","10745","FINRE",2026-11-07,2026-11-13,"$","Reparto",57.517512,NA,NA,NA,NA,57.5175123724,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","B","10745","FINRE",2026-11-07,2026-11-13,"$","Reparto",57.535377,NA,NA,NA,NA,57.5353768974,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","S","10745","FINRE",2026-11-07,2026-11-13,"$","Reparto",57.998736,NA,NA,NA,NA,57.9987358643,"boletin",NA
+"Fondo de Inversión Security Deuda Privada Automotriz IV","SUB","10745","FINRE",2026-11-07,2026-11-13,"$","Reparto",115.39762,NA,NA,NA,NA,115.3976198087,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","A","9776","FINRE",2025-02-04,2025-02-10,"$","Reparto",774.955557,NA,NA,NA,NA,774.955556656,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","FO","9776","FINRE",2025-02-04,2025-02-10,"$","Reparto",825.673846,NA,NA,NA,NA,825.673845747,"boletin",NA
 "Fondo de Inversión Security Deuda Privada Inmobiliaria y Capital Preferente","GP","9776","FINRE",2025-02-04,2025-02-10,"$","Reparto",789.851112,NA,NA,NA,NA,789.851112155,"boletin",NA
@@ -7903,6 +7915,8 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "MBI Retorno Inmobiliario Preferente Fondo de Inversión","I","10647","FINRE",2026-09-29,2026-10-05,"$","Reparto",2540.617345,NA,NA,NA,NA,2540.61734480124,"boletin",NA
 "MBI Retorno Inmobiliario Preferente Fondo de Inversión","A","10647","FINRE",2026-11-03,2026-11-09,"$","Reparto",1670.213046,NA,NA,NA,NA,1670.21304564652,"boletin",NA
 "MBI Retorno Inmobiliario Preferente Fondo de Inversión","I","10647","FINRE",2026-11-03,2026-11-09,"$","Reparto",1618.031865,NA,NA,NA,NA,1618.03186534244,"boletin",NA
+"MBI Retorno Inmobiliario Preferente Fondo de Inversión","A","10647","FINRE",2026-11-06,2026-11-12,"$","Reparto",4592.989714,NA,NA,NA,NA,4592.98971433915,"boletin",NA
+"MBI Retorno Inmobiliario Preferente Fondo de Inversión","I","10647","FINRE",2026-11-06,2026-11-12,"$","Reparto",4449.891761,NA,NA,NA,NA,4449.89176134263,"boletin",NA
 "MBI-BP Deuda Fondo de Inversión","A",NA,NA,2025-05-27,2025-06-02,"$","Dividendo",2164.820415,NA,NA,NA,NA,2164.8204148,"boletin",NA
 "MBI-BP Deuda Fondo de Inversión","B",NA,NA,2025-05-27,2025-06-02,"$","Dividendo",1551.759813,NA,NA,NA,NA,1551.7598134,"boletin",NA
 "MBI-BP Deuda Fondo de Inversión, en Liquidación.","A",NA,NA,2025-02-14,2025-02-20,"$","Reparto",5219.720309,NA,NA,NA,NA,5219.7203092,"boletin",NA
@@ -9698,14 +9712,14 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "Vinci Compass Private Equity VII Fondo de Inversión","A","7281","FINRE",2026-08-07,2026-08-13,"US$","Reparto",0.004923,NA,NA,NA,NA,0.0049227222,"boletin",NA
 "Vinci Compass Private Equity VII Fondo de Inversión","A","7281","FINRE",2026-09-08,2026-09-14,"US$","Reparto",0.02691,NA,NA,NA,NA,0.0269102577,"boletin",NA
 "Vinci Compass Private Equity VII Fondo de Inversión","A","7281","FINRE",2026-09-30,2026-10-06,"US$","Reparto",0.006367,NA,NA,NA,NA,0.006367449,"boletin",NA
-"Vinci Compass Private Equity VII Fondo de Inversión","A","7281","FINRE",2026-11-05,2026-11-11,"US$","Dividendo",0.010165,NA,NA,NA,NA,0.0101648455,"boletin",NA
+"Vinci Compass Private Equity VII Fondo de Inversión","A","7281","FINRE",2026-11-06,2026-11-12,"US$","Dividendo",0.010165,NA,NA,NA,NA,0.0101648455,"boletin",NA
 "Vinci Compass Private Equity VII Fondo de Inversión","A","7281","FINRE",2026-11-06,2026-11-12,"US$","Reparto",0.00182,NA,NA,NA,NA,0.0018197603,"boletin",NA
 "Vinci Compass Private Equity X Fondo de Inversión","A","9081","FINRE",2026-07-07,2026-07-13,"US$","Dividendo",0.005636,NA,NA,NA,NA,0.005635702,"boletin",NA
 "Vinci Compass Private Equity X Fondo de Inversión","A","9081","FINRE",2026-07-07,2026-07-13,"US$","Reparto",0.003894,NA,NA,NA,NA,0.0038937738,"boletin",NA
 "Vinci Compass Private Equity X Fondo de Inversión","A","9081","FINRE",2026-08-07,2026-08-13,"US$","Reparto",0.004215,NA,NA,NA,NA,0.004215276,"boletin",NA
 "Vinci Compass Private Equity X Fondo de Inversión","A","9081","FINRE",2026-09-08,2026-09-14,"US$","Reparto",0.02318,NA,NA,NA,NA,0.0231798098,"boletin",NA
 "Vinci Compass Private Equity X Fondo de Inversión","A","9081","FINRE",2026-09-30,2026-10-06,"US$","Reparto",0.005485,NA,NA,NA,NA,0.0054851119,"boletin",NA
-"Vinci Compass Private Equity X Fondo de Inversión","A","9081","FINRE",2026-11-05,2026-11-11,"US$","Dividendo",0.005404,NA,NA,NA,NA,0.0054043558,"boletin",NA
+"Vinci Compass Private Equity X Fondo de Inversión","A","9081","FINRE",2026-11-06,2026-11-12,"US$","Dividendo",0.005404,NA,NA,NA,NA,0.0054043558,"boletin",NA
 "Vinci Compass Private Equity X Fondo de Inversión","A","9081","FINRE",2026-11-06,2026-11-12,"US$","Reparto",0.004913,NA,NA,NA,NA,0.0049128741,"boletin",NA
 "Vinci Compass Private Equity XII Fondo de Inversión","A","9167","FINRE",2026-08-26,2026-09-01,"US$","Reparto",0.028839,NA,NA,NA,NA,0.0288389186,"boletin",NA
 "Vinci Compass Private Equity XII Fondo de Inversión","B","9167","FINRE",2026-08-26,2026-09-01,"US$","Reparto",0.031281,NA,NA,NA,NA,0.0312808929,"boletin",NA
