@@ -131,6 +131,16 @@ jobs:
           fi
           rm -f .new-refresh-token
 
+      # El aviso de "primer envio" (correo_assets/primer_envio.txt) solo va una vez: tras el primer envio
+      # real al equipo (no prueba, no aviso de datos atrasados) se borra del repo.
+      - name: Retirar el aviso de primer envío
+        if: inputs.enviar == true && inputs.solo_a == '' && github.ref_name == 'main' && hashFiles('correo_assets/primer_envio.txt') != ''
+        run: |
+          if python3 -c "import json,sys;sys.exit(0 if json.load(open('correo/meta.json')).get('atrasado') is not True or '${{ inputs.forzar }}' == 'true' else 1)"; then
+            git rm -q correo_assets/primer_envio.txt
+            .github/scripts/commit-datos.sh "Correo: primer envío realizado, se retira el aviso" correo_assets/primer_envio.txt
+          fi
+
       - name: Resumen (vista previa)
         run: |
           {

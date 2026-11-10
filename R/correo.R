@@ -174,6 +174,12 @@ cuerpo_correo <- function(t, firma = "", logo_src = "cid:logo-pulso") {
     if (length(lineas) > 2) paste0("<p style=\"margin:0;font-family:", .SANS, ";font-size:12px;line-height:18px;color:", .MIST, ";\"><font color=\"", .MIST, "\">", .esc(paste(lineas[-(1:2)], collapse = " · ")), "</font></p>") else ""),
     "10px 40px 34px 40px") else td("&nbsp;", "0 40px 10px 40px")
 
+  # Aviso de primer envio (opcional, t$intro = parrafos): se muestra antes del reporte, con kicker
+  intro_html <- if (length(t$intro)) paste0(filete, "<tr><td style=\"padding:24px 40px 6px 40px;\"><p style=\"margin:0;font-family:", .SANS,
+    ";font-size:11px;line-height:16px;letter-spacing:2px;color:", .STEEL, ";text-transform:uppercase;\"><font color=\"", .STEEL, "\">Primer env&iacute;o</font></p></td></tr>",
+    paste(vapply(t$intro, function(p) td(.p_cuerpo(html_txt(p)), "6px 40px 8px 40px"), ""), collapse = ""),
+    "<tr><td style=\"padding:0 0 18px 0;font-size:1px;line-height:1px;\">&nbsp;</td></tr>") else ""
+
   html <- paste0(
     "<!doctype html><html lang=\"es\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
     "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>", .esc(t$asunto), "</title>",
@@ -183,15 +189,16 @@ cuerpo_correo <- function(t, firma = "", logo_src = "cid:logo-pulso") {
     "<table role=\"presentation\" width=\"640\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"#ffffff\" style=\"width:640px;background-color:#ffffff;\">",
     # encabezado navy: logo a la izquierda, "Confidencial" a la derecha (mist)
     "<tr><td bgcolor=\"", .NAVY, "\" style=\"background-color:", .NAVY, ";padding:0;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"", .NAVY, "\"><tr>",
-    "<td bgcolor=\"", .NAVY, "\" valign=\"middle\" style=\"background-color:", .NAVY, ";padding:26px 0 26px 40px;\"><img src=\"", logo_src,
-    "\" alt=\"Vizcaya Capital\" width=\"158\" height=\"50\" style=\"display:block;border:0;width:158px;height:50px;\"></td>",
-    "<td bgcolor=\"", .NAVY, "\" align=\"right\" valign=\"middle\" style=\"background-color:", .NAVY, ";padding:26px 40px 26px 0;font-family:", .SANS,
+    "<td bgcolor=\"", .NAVY, "\" valign=\"middle\" style=\"background-color:", .NAVY, ";padding:20px 0 20px 40px;\"><img src=\"", logo_src,
+    "\" alt=\"Vizcaya Capital\" width=\"176\" height=\"68\" style=\"display:block;border:0;width:176px;height:68px;\"></td>",
+    "<td bgcolor=\"", .NAVY, "\" align=\"right\" valign=\"middle\" style=\"background-color:", .NAVY, ";padding:20px 40px 20px 0;font-family:", .SANS,
     ";font-size:11px;letter-spacing:2px;color:", .MIST, ";text-transform:uppercase;\"><font color=\"", .MIST, "\">Confidencial</font></td></tr></table></td></tr>",
     # titulo: kicker (steel) + cierre en serif grande
     "<tr><td style=\"padding:38px 40px 6px 40px;\"><p style=\"margin:0;font-family:", .SANS, ";font-size:11px;line-height:16px;letter-spacing:2px;color:", .STEEL,
     ";text-transform:uppercase;\"><font color=\"", .STEEL, "\">Pulso VCC &middot; Reporte diario</font></p></td></tr>",
     "<tr><td style=\"padding:0 40px 30px 40px;\"><p style=\"margin:0;font-family:", .SERIF, ";font-size:30px;line-height:38px;color:", .NAVY, ";\"><font color=\"", .NAVY, "\">Cierre ",
     .esc(fecha_larga), "</font></p></td></tr>",
+    intro_html,
     paste(vapply(seq_along(t$bloques), bloque, ""), collapse = ""),
     filete, cierre, firma_html,
     # pie ice
@@ -199,5 +206,5 @@ cuerpo_correo <- function(t, firma = "", logo_src = "cid:logo-pulso") {
     ";font-size:11px;line-height:16px;color:", .SLATE, ";text-align:justify;\">Confidencial. Este correo est&aacute; dirigido exclusivamente al equipo de Vizcaya Capital. Rentabilidades pasadas no garantizan resultados futuros.</p></td></tr>",
     "</table></td></tr></table></body></html>")
   list(html = html,
-       texto = paste(c(t$asunto, sub("{LINK}", paste0("Pulso VCC (", URL_PULSO, ")"), c(t$parrafos, t$cierre, if (nzchar(firma)) firma), fixed = TRUE)), collapse = "\n\n"))
+       texto = paste(c(t$asunto, t$intro, sub("{LINK}", paste0("Pulso VCC (", URL_PULSO, ")"), c(t$parrafos, t$cierre, if (nzchar(firma)) firma), fixed = TRUE)), collapse = "\n\n"))
 }
