@@ -46,6 +46,8 @@ writeLines(enc2utf8(cuerpo$texto), file.path(out, "cuerpo.txt"), useBytes = TRUE
 avisos <- c(t$pd$alertas$global %||% character(0),
             if (length(txt$parrafos) < 4) "Falta algun parrafo por datos faltantes (indices, Treasury o instrumentos de la casa).")
 write_json(list(cierre = format(fc), asunto = txt$asunto, adjunto = adjunto,
+                atrasado = !is.null(t$pd$alertas$global),   # cierre anterior al ultimo dia habil
+                fondos_atrasados = vapply(t$pd$alertas$fondos, function(x) paste0(x$nombre, " (", x$fecha, ")"), ""),
                 datos_generados = t$datos$generado %||% "", avisos = avisos),
            file.path(out, "meta.json"), auto_unbox = TRUE, pretty = TRUE)
 message("Correo generado en ", out, "/ | ", txt$asunto, if (length(avisos)) paste0(" | AVISOS: ", paste(avisos, collapse = " ")) else "")
