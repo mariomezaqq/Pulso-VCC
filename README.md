@@ -114,3 +114,17 @@ En ~1 minuto tendrás el link público `https://TU_CUENTA.shinyapps.io/pulso-vcc
   `fondos/data/catalogo_fondos_limpio.csv`; la app se republica sola. Si la CMF
   no responde o fallan muchos fondos, no toca el catálogo. Un fondo que aún no
   esté en el catálogo se puede agregar pegando el link de su ficha en la CMF.
+
+## Correo diario del Pulso
+`scripts/correo_diario.R` arma el correo (texto con plantilla fija en `R/correo.R`,
+formato de correo de la AFI, + Excel adjunto) con las mismas cifras del dashboard, y
+`scripts/enviar_correo.mjs` lo envía por Microsoft Graph desde la cuenta de Mario. El
+workflow `correo.yml` hace las dos cosas (a mano, `enviar=false` por defecto).
+
+Secrets del repo (Settings → Secrets and variables → Actions):
+- `AZURE_TENANT_ID`, `AZURE_CLIENT_ID`: de la app de Azure del dashboard de la AFI.
+- `AZURE_REFRESH_TOKEN`: se obtiene una vez con `node scripts/auth-device-code.mjs`
+  (en el repo de la AFI) y se renueva solo en cada envío.
+- `GH_PAT_SECRETS`: token de GitHub (solo este repo, permiso Secrets: Read and write)
+  para guardar el refresh token renovado.
+- `CORREO_PARA`, `CORREO_CC`: destinatarios, separados por coma.

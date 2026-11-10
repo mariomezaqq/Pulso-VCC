@@ -123,6 +123,9 @@ texto_correo <- function(pd) {
     asunto = paste("Pulso VCC | Cierre", cierre_txt),
     fecha_cierre = fc,
     parrafos = Filter(nzchar, c(p1, p2, p3, p4)),
+    bloques = Filter(function(b) nzchar(b$texto), list(
+      list(titulo = "Renta variable", texto = p1), list(titulo = "Commodities", texto = p2),
+      list(titulo = "Renta fija internacional", texto = p3), list(titulo = "Instrumentos de la casa", texto = p4))),
     cierre = c(
       "Recuerden que pueden acceder pinchando el siguiente enlace, {LINK}, el cual se actualiza automáticamente todos los días a las 11:00 AM. Les recomendamos agregarlo a sus favoritos o crear un acceso directo en sus computadores para un acceso más rápido.",
       "Ante cualquier duda o consulta, no duden en escribirme.",
@@ -132,17 +135,52 @@ texto_correo <- function(pd) {
 
 .esc <- function(x) { x <- gsub("&", "&amp;", x, fixed = TRUE); x <- gsub("<", "&lt;", x, fixed = TRUE); gsub(">", "&gt;", x, fixed = TRUE) }
 
-#' Cuerpo en HTML (parrafos simples, como un correo escrito a mano) y en texto plano.
-cuerpo_correo <- function(t, firma = "") {
-  todos <- c(t$parrafos, t$cierre, if (nzchar(firma)) firma)
-  html_p <- vapply(todos, function(p) {
-    p <- .esc(p)
-    p <- sub("{LINK}", sprintf("<a href=\"%s\">Pulso VCC</a>", URL_PULSO), p, fixed = TRUE)
-    paste0("<p style=\"margin:0 0 12px\">", gsub("\n", "<br>", p, fixed = TRUE), "</p>")
-  }, "")
-  list(
-    html = paste0("<!DOCTYPE html><html lang=\"es\"><body style=\"font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#1a1a1a;line-height:1.45\">",
-                  "<p style=\"margin:0 0 12px\"><b>", .esc(t$asunto), "</b></p>",
-                  paste(html_p, collapse = ""), "</body></html>"),
-    texto = paste(c(t$asunto, sub("{LINK}", paste0("Pulso VCC (", URL_PULSO, ")"), todos, fixed = TRUE)), collapse = "\n\n"))
+#' Cuerpo del correo en el formato de correo de la skill vizcaya-afi-diseno: 640 px,
+#' tablas con estilos en linea (Outlook y Gmail), encabezado navy con logo, kicker
+#' arena, un bloque con filete arena por tema, Georgia + Arial, paleta cerrada.
+#' `logo_src`: "cid:logo-pulso" para enviar (Gmail bloquea data:) o "data:image/png;base64,..."
+#' para la vista previa. Devuelve list(html, texto).
+.GEORGIA <- "Georgia,'Times New Roman',serif"; .ARIAL <- "Arial,Helvetica,sans-serif"
+.p_cuerpo <- function(txt, extra = "")
+  paste0("<p align=\"justify\" style=\"margin:0;font-family:", .GEORGIA, ";font-size:15px;line-height:24px;color:#2b3340;",
+         "text-align:justify;mso-line-height-rule:exactly;", extra, "\">", txt, "</p>")
+
+cuerpo_correo <- function(t, firma = "", logo_src = "cid:logo-pulso") {
+  link <- sprintf("<a href=\"%s\" style=\"color:#355470;font-weight:bold;\">Pulso VCC</a>", URL_PULSO)
+  html_txt <- function(p) sub("{LINK}", link, .esc(p), fixed = TRUE)
+  bloque <- function(b) paste0(
+    "<tr><td style=\"padding:0 40px 28px 40px;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr>",
+    "<td style=\"border-left:3px solid #a89880;padding:0 0 0 18px;\">",
+    "<p style=\"margin:0 0 8px 0;font-family:", .ARIAL, ";font-size:13px;line-height:18px;font-weight:bold;letter-spacing:1px;color:#182b46;text-transform:uppercase;\"><font color=\"#182b46\">",
+    .esc(b$titulo), "</font></p>", .p_cuerpo(html_txt(b$texto)), "</td></tr></table></td></tr>")
+  fila <- function(p, ultimo = FALSE) paste0("<tr><td style=\"padding:0 40px ", if (ultimo) "30" else "14", "px 40px;\">", .p_cuerpo(html_txt(p)), "</td></tr>")
+  cierre <- vapply(seq_along(t$cierre), function(i) fila(t$cierre[i]), "")
+  fecha_larga <- sprintf("%s de %d", .fecha_larga(t$fecha_cierre), as.integer(format(t$fecha_cierre, "%Y")))
+
+  html <- paste0(
+    "<!doctype html><html lang=\"es\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
+    "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><title>", .esc(t$asunto), "</title>",
+    "<style>p{margin:0;} table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;} img{border:0;-ms-interpolation-mode:bicubic;}</style></head>",
+    "<body bgcolor=\"#f1f1f1\" style=\"margin:0;padding:0;background-color:#f1f1f1;\">",
+    "<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"#f1f1f1\"><tr><td align=\"center\" style=\"padding:24px 12px;\">",
+    "<table role=\"presentation\" width=\"640\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"#ffffff\" style=\"width:640px;background-color:#ffffff;\">",
+    # 1. encabezado navy
+    "<tr><td bgcolor=\"#182b46\" style=\"background-color:#182b46;padding:0;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"#182b46\"><tr>",
+    "<td bgcolor=\"#182b46\" valign=\"middle\" style=\"background-color:#182b46;padding:28px 0 28px 40px;font-family:", .ARIAL, ";font-size:12px;letter-spacing:2px;color:#ffffff;text-transform:uppercase;\"><font color=\"#ffffff\">Pulso VCC &middot; Fondos aprobados</font></td>",
+    "<td bgcolor=\"#182b46\" align=\"right\" valign=\"middle\" width=\"230\" style=\"background-color:#182b46;padding:24px 40px 24px 0;\"><img src=\"", logo_src,
+    "\" alt=\"Vizcaya Capital AFI\" width=\"190\" height=\"61\" style=\"display:block;border:0;width:190px;height:61px;\"></td></tr></table></td></tr>",
+    # 2. kicker arena
+    "<tr><td style=\"padding:40px 40px 22px 40px;\"><p style=\"margin:0;font-family:", .ARIAL, ";font-size:12px;line-height:18px;letter-spacing:2px;color:#a89880;text-transform:uppercase;\"><font color=\"#a89880\">Reporte diario &middot; Cierre ",
+    .esc(fecha_larga), "</font></p></td></tr>",
+    # 3. un bloque por tema
+    paste(vapply(t$bloques, bloque, ""), collapse = ""),
+    # 4. cierre (enlace, consultas, adjunto)
+    paste(cierre, collapse = ""),
+    if (nzchar(firma)) fila(firma, ultimo = TRUE) else "<tr><td height=\"16\" style=\"font-size:1px;line-height:16px;\">&nbsp;</td></tr>",
+    # 5. pie
+    "<tr><td bgcolor=\"#e2ebf2\" style=\"background-color:#e2ebf2;padding:20px 40px;\"><p align=\"justify\" style=\"margin:0;font-family:", .ARIAL,
+    ";font-size:11px;line-height:16px;color:#485a66;text-align:justify;\">Confidencial. Este correo est&aacute; dirigido exclusivamente al equipo de Vizcaya Capital. Rentabilidades pasadas no garantizan resultados futuros.</p></td></tr>",
+    "</table></td></tr></table></body></html>")
+  list(html = html,
+       texto = paste(c(t$asunto, sub("{LINK}", paste0("Pulso VCC (", URL_PULSO, ")"), c(t$parrafos, t$cierre, if (nzchar(firma)) firma), fixed = TRUE)), collapse = "\n\n"))
 }

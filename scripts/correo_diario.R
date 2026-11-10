@@ -1,7 +1,7 @@
 # =============================================================================
 # CORREO DIARIO DEL PULSO  (lo corre .github/workflows/correo.yml, o a mano)
 # Genera en la carpeta de salida (default "correo/"):
-#   asunto.txt, cuerpo.html, cuerpo.txt  -> texto del correo (R/correo.R)
+#   asunto.txt, cuerpo.html (logo cid:), vista-previa.html (logo incrustado), cuerpo.txt
 #   adjunto.xlsx                          -> reporte de rentabilidad (file_show)
 #   meta.json                             -> cierre, nombre del adjunto, avisos
 # Usa los mismos datos y calculos que el dashboard (R/preparar.R). NO envia nada:
@@ -28,7 +28,10 @@ ov <- tryCatch(read.csv("data/dividendos_overrides.csv", stringsAsFactors = FALS
 t <- preparar_todo(vc, ov)
 if (is.null(t)) stop("No hay data/series_vc.rds: no se puede armar el correo.")
 txt <- texto_correo(t$pd)
-cuerpo <- cuerpo_correo(txt, firma = Sys.getenv("CORREO_FIRMA", ""))
+firma <- Sys.getenv("CORREO_FIRMA", "")
+cuerpo <- cuerpo_correo(txt, firma = firma, logo_src = "cid:logo-pulso")          # para enviar (logo adjunto en linea)
+logo_b64 <- jsonlite::base64_enc(readBin("correo_assets/logo-white.png", "raw", file.info("correo_assets/logo-white.png")$size))
+vista <- cuerpo_correo(txt, firma = firma, logo_src = paste0("data:image/png;base64,", logo_b64))   # para abrirlo en el navegador
 fc <- txt$fecha_cierre
 
 adjunto <- sprintf("Pulso VCC - Cierre %s.xlsx", format(fc, "%d-%m-%Y"))
@@ -36,6 +39,8 @@ generar_file_show(t$pd, t$datos, t$series_aj, t$div, vc, file.path(out, "adjunto
 
 writeLines(txt$asunto, file.path(out, "asunto.txt"), useBytes = TRUE)
 writeLines(enc2utf8(cuerpo$html), file.path(out, "cuerpo.html"), useBytes = TRUE)
+writeLines(enc2utf8(vista$html), file.path(out, "vista-previa.html"), useBytes = TRUE)
+file.copy("correo_assets/logo-white.png", file.path(out, "logo-white.png"), overwrite = TRUE)
 writeLines(enc2utf8(cuerpo$texto), file.path(out, "cuerpo.txt"), useBytes = TRUE)
 avisos <- c(t$pd$alertas$global %||% character(0),
             if (length(txt$parrafos) < 4) "Falta algun parrafo por datos faltantes (indices, Treasury o instrumentos de la casa).")
