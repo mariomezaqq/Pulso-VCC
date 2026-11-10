@@ -30,7 +30,7 @@ if (is.null(t)) stop("No hay data/series_vc.rds: no se puede armar el correo.")
 txt <- texto_correo(t$pd)
 firma <- Sys.getenv("CORREO_FIRMA", "")
 cuerpo <- cuerpo_correo(txt, firma = firma, logo_src = "cid:logo-pulso")          # para enviar (logo adjunto en linea)
-logo_b64 <- jsonlite::base64_enc(readBin("correo_assets/logo-white.png", "raw", file.info("correo_assets/logo-white.png")$size))
+logo_b64 <- jsonlite::base64_enc(readBin("correo_assets/logo-vizcaya-capital-blanco.png", "raw", file.info("correo_assets/logo-vizcaya-capital-blanco.png")$size))
 vista <- cuerpo_correo(txt, firma = firma, logo_src = paste0("data:image/png;base64,", logo_b64))   # para abrirlo en el navegador
 fc <- txt$fecha_cierre
 
@@ -40,7 +40,7 @@ generar_file_show(t$pd, t$datos, t$series_aj, t$div, vc, file.path(out, "adjunto
 writeLines(txt$asunto, file.path(out, "asunto.txt"), useBytes = TRUE)
 writeLines(enc2utf8(cuerpo$html), file.path(out, "cuerpo.html"), useBytes = TRUE)
 writeLines(enc2utf8(vista$html), file.path(out, "vista-previa.html"), useBytes = TRUE)
-file.copy("correo_assets/logo-white.png", file.path(out, "logo-white.png"), overwrite = TRUE)
+file.copy("correo_assets/logo-vizcaya-capital-blanco.png", file.path(out, "logo-pulso.png"), overwrite = TRUE)
 writeLines(enc2utf8(cuerpo$texto), file.path(out, "cuerpo.txt"), useBytes = TRUE)
 avisos <- c(t$pd$alertas$global %||% character(0),
             if (length(txt$parrafos) < 4) "Falta algun parrafo por datos faltantes (indices, Treasury o instrumentos de la casa).")

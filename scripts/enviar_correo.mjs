@@ -1,7 +1,7 @@
 // Envia el correo diario del Pulso por Microsoft Graph (permiso delegado Mail.Send,
 // misma app de Azure y mismo esquema de refresh token que usa el dashboard de la AFI).
 // Lee la carpeta que genera scripts/correo_diario.R (asunto.txt, cuerpo.html,
-// logo-white.png, adjunto.xlsx, meta.json). Por defecto es DRY-RUN: no envia nada.
+// logo-pulso.png, adjunto.xlsx, meta.json). Por defecto es DRY-RUN: no envia nada.
 //   env: SEND=true para enviar de verdad
 //        AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_REFRESH_TOKEN
 //        CORREO_PARA (obligatorio) y CORREO_CC, separados por coma o punto y coma
@@ -27,7 +27,7 @@ const enviar = env.SEND === 'true';
 
 const adjuntos = [
   { '@odata.type': '#microsoft.graph.fileAttachment', name: 'logo-pulso.png', contentType: 'image/png', contentId: 'logo-pulso',
-    isInline: true, contentBytes: readFileSync(join(dir, 'logo-white.png')).toString('base64') },
+    isInline: true, contentBytes: readFileSync(join(dir, 'logo-pulso.png')).toString('base64') },
   { '@odata.type': '#microsoft.graph.fileAttachment', name: meta.adjunto,
     contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
     contentBytes: readFileSync(join(dir, 'adjunto.xlsx')).toString('base64') },

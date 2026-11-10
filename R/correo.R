@@ -168,7 +168,7 @@ cuerpo_correo <- function(t, firma = "", logo_src = "cid:logo-pulso") {
     "<tr><td bgcolor=\"#182b46\" style=\"background-color:#182b46;padding:0;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"#182b46\"><tr>",
     "<td bgcolor=\"#182b46\" valign=\"middle\" style=\"background-color:#182b46;padding:28px 0 28px 40px;font-family:", .ARIAL, ";font-size:12px;letter-spacing:2px;color:#ffffff;text-transform:uppercase;\"><font color=\"#ffffff\">Pulso VCC &middot; Fondos aprobados</font></td>",
     "<td bgcolor=\"#182b46\" align=\"right\" valign=\"middle\" width=\"230\" style=\"background-color:#182b46;padding:24px 40px 24px 0;\"><img src=\"", logo_src,
-    "\" alt=\"Vizcaya Capital AFI\" width=\"190\" height=\"61\" style=\"display:block;border:0;width:190px;height:61px;\"></td></tr></table></td></tr>",
+    "\" alt=\"Vizcaya Capital\" width=\"190\" height=\"50\" style=\"display:block;border:0;width:190px;height:50px;\"></td></tr></table></td></tr>",
     # 2. kicker arena
     "<tr><td style=\"padding:40px 40px 22px 40px;\"><p style=\"margin:0;font-family:", .ARIAL, ";font-size:12px;line-height:18px;letter-spacing:2px;color:#a89880;text-transform:uppercase;\"><font color=\"#a89880\">Reporte diario &middot; Cierre ",
     .esc(fecha_larga), "</font></p></td></tr>",
