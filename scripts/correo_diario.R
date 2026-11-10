@@ -27,10 +27,16 @@ ov <- tryCatch(read.csv("data/dividendos_overrides.csv", stringsAsFactors = FALS
 t <- preparar_todo(vc, ov)
 if (is.null(t)) stop("No hay data/series_vc.rds: no se puede armar el correo.")
 txt <- texto_correo(t$pd)
+# Aviso de primer envio: si existe correo_assets/primer_envio.txt (parrafos separados por una linea en blanco) se
+# antepone al reporte. El workflow lo borra solo tras el primer envio real al equipo.
+if (file.exists("correo_assets/primer_envio.txt")) {
+  ip <- trimws(strsplit(paste(readLines("correo_assets/primer_envio.txt", encoding = "UTF-8", warn = FALSE), collapse = "\n"), "\n\\s*\n")[[1]])
+  txt$intro <- ip[nzchar(ip)]
+}
 # Firma: "saludo \n nombre \n cargo". Se puede cambiar con la variable CORREO_FIRMA (usar \n).
 firma <- gsub("\\n", "\n", Sys.getenv("CORREO_FIRMA", "Un cordial saludo,\nMario Meza\nAnalista\nVizcaya Capital"), fixed = TRUE)
 cuerpo <- cuerpo_correo(txt, firma = firma, logo_src = "cid:logo-pulso")          # para enviar (logo adjunto en linea)
-logo_b64 <- jsonlite::base64_enc(readBin("correo_assets/logo-vizcaya-capital-blanco.png", "raw", file.info("correo_assets/logo-vizcaya-capital-blanco.png")$size))
+logo_b64 <- jsonlite::base64_enc(readBin("correo_assets/logo-vizcaya-capital-10-blanco.png", "raw", file.info("correo_assets/logo-vizcaya-capital-10-blanco.png")$size))
 vista <- cuerpo_correo(txt, firma = firma, logo_src = paste0("data:image/png;base64,", logo_b64))   # para abrirlo en el navegador
 fc <- txt$fecha_cierre
 
@@ -38,7 +44,7 @@ fc <- txt$fecha_cierre
 writeLines(txt$asunto, file.path(out, "asunto.txt"), useBytes = TRUE)
 writeLines(enc2utf8(cuerpo$html), file.path(out, "cuerpo.html"), useBytes = TRUE)
 writeLines(enc2utf8(vista$html), file.path(out, "vista-previa.html"), useBytes = TRUE)
-file.copy("correo_assets/logo-vizcaya-capital-blanco.png", file.path(out, "logo-pulso.png"), overwrite = TRUE)
+file.copy("correo_assets/logo-vizcaya-capital-10-blanco.png", file.path(out, "logo-pulso.png"), overwrite = TRUE)
 writeLines(enc2utf8(cuerpo$texto), file.path(out, "cuerpo.txt"), useBytes = TRUE)
 avisos <- c(t$pd$alertas$global %||% character(0),
             if (length(txt$parrafos) < 4) "Falta algun parrafo por datos faltantes (indices, Treasury o instrumentos de la casa).")
