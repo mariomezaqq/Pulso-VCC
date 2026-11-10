@@ -7,8 +7,6 @@ name: Correo diario Pulso
 # Se corre a mano desde Actions ("Run workflow").
 on:
   workflow_dispatch:
-  push:
-    branches: [claude/ipsa-oficial-y-correo]   # TEMPORAL: prueba
 
 concurrency:
   group: pulso-correo
