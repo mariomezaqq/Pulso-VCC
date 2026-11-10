@@ -261,7 +261,7 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
 
   # ============ Fondos / Indices Manuales (orden original) ============
   manual_wide <- function(tipo, orden) {
-    sub <- vc_df[vc_df$Tipo==tipo, , drop=FALSE]; if (!nrow(sub)) return(NULL)
+    sub <- vc_df[vc_df$Tipo==tipo & !(vc_df$Nombre %in% NOMBRES_INDICES_AUTO), , drop=FALSE]; if (!nrow(sub)) return(NULL)
     pres <- unique(sub$Nombre); nombres <- c(orden[orden %in% pres], setdiff(pres, orden))
     tabs <- lapply(nombres, function(nm) { d <- sub[sub$Nombre==nm, c("Fecha","Valor")]
       names(d) <- c("Fecha", nm); d$Fecha <- as.Date(d$Fecha); d <- d[d$Fecha>=FECHA_BASE_XLSX,]; d[order(d$Fecha),] })
@@ -279,8 +279,9 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
   # a la derecha, las rentabilidades que muestra el dashboard.
   addWorksheet(wb, "Indices")
   col0 <- 1
-  for (nm in NOMBRES_INDICES_MANUALES) {
-    man <- serie_de_vc(vc_df, nm); if (!is.null(man)) man$Fuente <- "Manual"
+  for (nm in c(NOMBRES_INDICES_MANUALES, NOMBRES_INDICES_AUTO)) {
+    man <- if (nm %in% NOMBRES_INDICES_AUTO) NULL else serie_de_vc(vc_df, nm)
+    if (!is.null(man)) man$Fuente <- "Manual"
     aut <- NULL
     if (identical(nm, "IPSA")) {
       of <- datos$macro_series[["IPSA"]]
