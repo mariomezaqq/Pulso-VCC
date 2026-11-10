@@ -273,7 +273,10 @@
 }
 
 #' Devuelve el HTML completo del dashboard.
-render_dashboard_html <- function(pd, logo_b64 = NULL, generado = NULL) {
+#' @param estatico TRUE = pagina publicada en GitHub Pages (scripts/generar_dashboard.R): sin
+#'   Shiny, instalable como app, boton "Recargar" y recarga sola cuando hay datos nuevos.
+#'   FALSE = incrustada en la app Shiny (boton "Actualizar" lanza la actualizacion).
+render_dashboard_html <- function(pd, logo_b64 = NULL, generado = NULL, estatico = FALSE, url_admin = "") {
   mes_lbl <- pd$mes_ant_label %||% "Mes ant."
   cats <- pd$categorias
 
@@ -334,13 +337,22 @@ render_dashboard_html <- function(pd, logo_b64 = NULL, generado = NULL) {
     "<!DOCTYPE html><html lang='es'><head>",
     "<meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0'>",
     "<title>Pulso VCC | Vizcaya Capital</title>",
+    if (estatico) paste0(
+      "<link rel='manifest' href='manifest.webmanifest'>",
+      "<link rel='icon' type='image/png' href='www/favicon-32.png'>",
+      "<link rel='apple-touch-icon' href='www/apple-touch-icon.png'>",
+      "<meta name='theme-color' content='#1b2d5b'>",
+      "<meta name='apple-mobile-web-app-capable' content='yes'><meta name='mobile-web-app-capable' content='yes'>",
+      "<meta name='apple-mobile-web-app-title' content='Pulso'>",
+      "<link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>") else "",
     "<style>", .CSS, "</style></head><body>",
     "<header>", logo_html,
     "<div class='header-divider'></div>",
     "<div class='header-text'><div class='brand'>Pulso VCC</div>",
     "<div class='subtitle'>Fondos Aprobados &mdash; Comit&eacute; de Inversiones</div></div>",
     "<div class='header-meta'>",
-    "<button class='btn-actualizar' onclick=\"window.parent.postMessage('pulso-actualizar','*')\">&#x21bb; Actualizar</button>",
+    if (estatico) "<button class='btn-actualizar' onclick=\"location.reload()\">&#x21bb; Recargar</button>"
+    else "<button class='btn-actualizar' onclick=\"window.parent.postMessage('pulso-actualizar','*')\">&#x21bb; Actualizar</button>",
     "<div class='fecha'>Cierre ", pd$fecha_cierre, "</div>",
     if (!is.null(generado) && nzchar(generado)) paste0("<div class='gen'>Datos: ", generado, " (Chile)</div>") else "",
     "</div></header>",
@@ -349,8 +361,17 @@ render_dashboard_html <- function(pd, logo_b64 = NULL, generado = NULL) {
     "<button class='btn-fs' onclick='toggleFS()' title='Ver en pantalla completa'>&#x26F6; Pantalla completa</button></div>",
     "<main>", panel_resumen, .panel_macro(pd), cat_panels, "</main>",
     "<footer>Vizcaya Capital &nbsp;&bull;&nbsp; Uso interno &nbsp;&bull;&nbsp; ",
-    "Datos CMF, BCCh y Yahoo Finance</footer>",
-    "<script>", js, "</script></body></html>")
+    "Datos CMF, BCCh y Yahoo Finance",
+    if (estatico && nzchar(url_admin)) paste0(" &nbsp;&bull;&nbsp; <a href='", url_admin, "' style='color:inherit'>Administraci&oacute;n</a>") else "",
+    "</footer>",
+    "<script>", js, "</script>",
+    # Pagina publicada: cada 5 min (con la pestaña a la vista) revisa si hay una version nueva y se recarga sola
+    if (estatico) paste0("<script>(function(){var e0=null;function et(){return fetch(location.pathname,{method:'HEAD',cache:'no-store'})",
+      ".then(function(r){return r.headers.get('etag')||r.headers.get('last-modified');}).catch(function(){return null;});}",
+      "et().then(function(v){e0=v;});",
+      "setInterval(function(){if(document.visibilityState!=='visible'||!e0)return;et().then(function(v){if(v&&v!==e0)location.reload();});},300000);",
+      "document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible'&&e0)et().then(function(v){if(v&&v!==e0)location.reload();});});})();</script>") else "",
+    "</body></html>")
 }
 
 if (!exists("%||%")) `%||%` <- function(a, b) if (is.null(a)) b else a

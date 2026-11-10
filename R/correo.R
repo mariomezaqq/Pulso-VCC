@@ -8,7 +8,7 @@
 # Si el cierre es el ultimo dia habil del mes dice "cerró septiembre con..."; si
 # no, "registra en noviembre...". Lo usa scripts/correo_diario.R.
 # =============================================================================
-URL_PULSO <- "https://mariomezaqq.shinyapps.io/pulso-vcc/"
+URL_PULSO <- "https://mariomezaqq.github.io/Pulso-VCC/"   # dashboard estatico (abre al instante)
 .MESES_MIN <- c("enero","febrero","marzo","abril","mayo","junio",
                 "julio","agosto","septiembre","octubre","noviembre","diciembre")
 

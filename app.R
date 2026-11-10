@@ -183,7 +183,9 @@ ui <- page_navbar(
           actionButton("add_ov", "Agregar fila"), actionButton("save_ov", "Guardar correcciones", class = "btn-primary")),
         verbatimTextOutput("ov_msg"))
     )
-  )
+  ),
+  nav_spacer(),
+  nav_item(tags$a("Abrir Pulso (versión rápida) ↗", href = "https://mariomezaqq.github.io/Pulso-VCC/", target = "_blank"))
 )
 
 # ============================== SERVER ==============================
