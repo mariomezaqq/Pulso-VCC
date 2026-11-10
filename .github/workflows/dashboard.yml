@@ -1,0 +1,70 @@
+name: Dashboard estático (GitHub Pages)
+
+# Genera index.html (el Pulso ya calculado) y lo commitea; GitHub Pages lo publica en
+# https://mariomezaqq.github.io/Pulso-VCC/ y abre al instante, sin esperar a que arranque R.
+# Se regenera cada vez que cambian los datos o el código del dashboard:
+#   - push a main que toque los datos (ediciones del panel de administración, boletín, etc.)
+#   - al terminar con éxito la actualización diaria, los dividendos, el IPSA o el catálogo
+#     (los commits del bot no disparan "push", por eso se usa workflow_run)
+# Si el resultado es idéntico al anterior no hace commit.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/manuales_vc.csv'
+      - 'data/fondos_curados.csv'
+      - 'data/dividendos_overrides.csv'
+      - 'data/dividendos.xlsx'
+      - 'data/series_vc.rds'
+      - 'R/**'
+      - 'scripts/generar_dashboard.R'
+      - 'www/logo.jpg'
+      - '.github/workflows/dashboard.yml'
+  workflow_run:
+    workflows:
+      - "Actualizar datos Pulso VCC"
+      - "Calcular dividendos del Boletin (incl. monto total)"
+      - "IPSA Yahoo (cierre diario)"
+    types: [completed]
+  workflow_dispatch:
+
+concurrency:
+  group: pulso-dashboard
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  dashboard:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup R
+        id: setup_r
+        uses: r-lib/actions/setup-r@v2
+        timeout-minutes: 6
+        continue-on-error: true
+        with:
+          use-public-rspm: true
+
+      - name: Setup R (reintento)
+        if: steps.setup_r.outcome == 'failure'
+        uses: r-lib/actions/setup-r@v2
+        timeout-minutes: 8
+        with:
+          use-public-rspm: true
+
+      - name: Instalar paquetes R
+        run: install.packages(c("httr", "dplyr", "lubridate", "tibble", "jsonlite", "readxl", "openxlsx", "stringr", "tidyr"))
+        shell: Rscript {0}
+
+      - name: Generar index.html
+        run: Rscript scripts/generar_dashboard.R index.html
+
+      - name: Commit
+        run: .github/scripts/commit-datos.sh "Dashboard estático ($(date -u +%Y-%m-%d))" index.html

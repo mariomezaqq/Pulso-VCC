@@ -1,0 +1,15 @@
+{
+  "name": "Pulso VCC",
+  "short_name": "Pulso",
+  "description": "Fondos aprobados — Comité de Inversiones · Vizcaya Capital",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1b2d5b",
+  "lang": "es-CL",
+  "icons": [
+    { "src": "www/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "www/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
