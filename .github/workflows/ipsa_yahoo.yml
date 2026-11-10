@@ -1,9 +1,10 @@
-name: IPSA Yahoo (en observación)
+name: IPSA Yahoo (cierre diario)
 
 # Días hábiles a las 21:37 UTC (18:37 Chile en verano, 17:37 en invierno), después
-# del cierre de la bolsa: guarda el cierre del IPSA de Yahoo (MXIPSAGC.SN) en
-# data/ipsa_yahoo.csv para compararlo con el IPSA manual antes de usarlo en el
-# dashboard. No toca series_vc.rds ni ningún cálculo. También manual.
+# del cierre de la bolsa: guarda el cierre del IPSA de Yahoo (^767564-CLP-GRTR; respaldo MXIPSAGC.SN) en
+# data/ipsa_yahoo.csv. Es la fuente del IPSA del Pulso para los días que el BCCh
+# aún no publica: la usan el dashboard (R/preparar.R), la actualización diaria
+# (scripts/actualizar_datos.R) y el correo diario. También manual.
 on:
   schedule:
     - cron: '37 21 * * 1-5'

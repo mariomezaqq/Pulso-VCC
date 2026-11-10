@@ -140,10 +140,11 @@ macro <- list(); macro_series <- list()
 for (idx in INDICES) {
   r <- list(wtd = NA_real_, mtd = NA_real_, ytd = NA_real_, mes_ant = NA_real_); s <- NULL
   if (!is.null(idx$fuente) && idx$fuente == "bcch") {
-    # IPSA: fuente OFICIAL del BCCh (Canasta), al dia y confiable. Fallback a
-    # datosmacro si el BCCh falla. Se acumula con el historico previo guardado en
-    # macro_series por si una descarga falla. (Se descarto Yahoo ^IPSA: quedaba
-    # congelado dias, y datosmacro solo: se habia corrompido a ~la mitad.)
+    # IPSA: BCCh (Canasta) y datosmacro para el historico, mas el cierre diario
+    # de Yahoo MXIPSAGC.SN para los dias recientes (ver mas abajo). Se acumula con
+    # el historico previo guardado en macro_series por si una descarga falla.
+    # (Se descarto Yahoo ^IPSA: quedaba congelado dias, y datosmacro solo: se
+    # habia corrompido a ~la mitad.)
     s <- tryCatch(obtener_ipsa_bcch_serie(), error = function(e) NULL)
     if (is.null(s) || !nrow(s)) {
       s <- tryCatch(obtener_ipsa_datosmacro(desde = ref_ytd, hasta = fc), error = function(e) NULL)
@@ -157,6 +158,14 @@ for (idx in INDICES) {
     }
     prev_ipsa <- if (!is.null(prev) && !is.null(prev$macro_series)) prev$macro_series[[idx$nombre]] else NULL
     s <- bind_rows(s, prev_ipsa)                 # fuente nueva primero -> pisa al previo en duplicados
+    # Cierre diario de Yahoo (MXIPSAGC.SN, data/ipsa_yahoo.csv, workflow ipsa_yahoo.yml):
+    # cubre los dias que BCCh/datosmacro aun no publican (llegan con semanas de
+    # rezago). Validado contra el IPSA manual (26-10 al 02-11-2026: dif < 0,01%).
+    # Va al final: en una misma fecha manda la fuente oficial.
+    yh <- tryCatch(read.csv("data/ipsa_yahoo.csv", colClasses = "character"), error = function(e) NULL)
+    if (!is.null(yh) && nrow(yh))
+      s <- bind_rows(s, tibble(fecha = as.Date(yh$fecha), valor = suppressWarnings(as.numeric(yh$cierre))) %>%
+                          filter(!is.na(fecha), fecha <= fc))
     if (!is.null(s) && nrow(s) > 0) {
       s <- s %>% filter(!is.na(valor)) %>% distinct(fecha, .keep_all = TRUE) %>% arrange(fecha)
       if (!any(s$fecha <= ref_ytd))              # fallback: cierre 2025 fijo si la fuente no lo trae
