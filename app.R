@@ -79,7 +79,11 @@ ui <- page_navbar(
       tags$meta(name = "apple-mobile-web-app-title", content = "Pulso"),
       tags$meta(name = "apple-mobile-web-app-status-bar-style", content = "default")),
     # El dashboard ocupa la pantalla bajo la barra (sin doble scroll en el celular)
-    tags$style(HTML(".pulso-dash{height:calc(100vh - 70px);height:calc(100dvh - 70px);display:block}")),
+    tags$style(HTML(".pulso-dash{height:calc(100vh - 70px);height:calc(100dvh - 70px);display:block}",
+      # sin pantalla gris ni spinner mientras Shiny recalcula: el contenido nunca se desvanece
+      ".recalculating,.shiny-busy .recalculating{opacity:1!important;transition:none!important}",
+      ":root{--shiny-fade-opacity:1}",
+      ".shiny-spinner-output-container,.bslib-spinner,[data-shiny-busy-spinner]{display:none!important}")),
     # Reconexion automatica: shinyapps.io corta la conexion tras un rato sin
     # actividad y en cada redeploy. En vez de la pantalla gris "Disconnected from
     # the server", un aviso chico "Reconectando..." y la pagina se recarga sola en
@@ -107,7 +111,8 @@ ui <- page_navbar(
   nav_panel("Administración",
     div(style = "max-width:1100px;margin:20px auto;padding:0 16px",
       h4("Panel de administración"),
-      p(class = "text-muted", "Los cambios se guardan y persisten (en GitHub cuando está configurado). El dashboard se recalcula al instante."),
+      p(class = "text-muted", "Los cambios se guardan y persisten (en GitHub cuando está configurado). El dashboard se regenera solo en ~1 minuto."),
+      actionButton("actualizar", "↻ Actualizar datos ahora (re-consulta la CMF)", class = "btn-outline-primary btn-sm", style = "margin-bottom:12px"),
       card(card_header("➕ Agregar fondo (catálogo CMF o link de la CMF)"),
         p(class = "text-muted", "Busca el fondo en el catálogo del comparador (trae run/serie/row correctos de la CMF). Elige su categoría, completa los datos que quieras mostrar y agrégalo. Se guarda y se dispara la consulta a la CMF; en ~3 a 5 min aparecen solas sus rentabilidades."),
         selectizeInput("cat_fondo", "Fondo (busca por nombre)", width = "100%",
@@ -479,13 +484,11 @@ server <- function(input, output, session) {
     output$cat_del_msg <- renderText(paste0("🗑 Quitado(s): ", nombres, ". ", msg))
   })
 
+  # El dashboard es la pagina estatica de GitHub Pages (scripts/generar_dashboard.R, la regenera
+  # dashboard.yml al cambiar los datos): aparece al instante y esta pestaña no recalcula nada,
+  # asi que no hay pantalla gris ni espera al abrir la app.
   output$dash <- renderUI({
-    rv$tick; datos_ver()
-    t <- preparar_todo(rv$vc, rv$ov)
-    if (is.null(t)) return(div(style = "padding:40px", h4("Aún no hay datos."),
-      p("Corre scripts/actualizar_datos.R o espera al refresco automático.")))
-    gen <- substr(gsub("T", " ", t$datos$generado %||% ""), 1, 16)
-    tags$iframe(srcdoc = render_dashboard_html(t$pd, logo_b64, gen),
+    tags$iframe(src = "https://mariomezaqq.github.io/Pulso-VCC/",
                 allow = "fullscreen", allowfullscreen = NA,
                 class = "pulso-dash", style = "width:100%;border:none")
   })
