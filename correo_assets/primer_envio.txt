@@ -1,9 +1,7 @@
 Estimados:
 
-Con este correo inauguramos el envío automático del Pulso VCC, el reporte diario de rentabilidad de los instrumentos aprobados por el comité de inversión. Este es el primero de la serie.
+Con este correo inauguramos el primer envío automático del Pulso VCC.
 
-A partir de ahora lo recibirán de lunes a viernes a las 17:30. El Pulso se actualiza todos los días a las 11:00 AM; si ese día los datos aún no están al día, el envío se retiene para no compartir información atrasada.
+A partir de ahora lo recibirán de lunes a viernes a las 17:30. El Pulso aún se actualizará todos los días a las 11:00 AM; si ese día los datos aún no están al día, el envío se retiene para no compartir información atrasada.
 
-Importante: el enlace al Pulso cambió. Les pedimos usar desde hoy el nuevo enlace de {LINK} y no volver a utilizar el anterior (mariomezaqq.shinyapps.io), que quedó solo para la administración. El nuevo abre al instante. Les recomendamos reemplazar el favorito o acceso directo que tengan guardado.
-
-Cualquier comentario o sugerencia sobre el contenido o el formato será bienvenido.
+Importante: el enlace al Pulso cambió para nuevas mejoras. Les pedimos usar desde hoy el nuevo enlace de {LINK} y no volver a utilizar el anterior. El nuevo abre al instante. Les recomendamos reemplazar el favorito o acceso directo que tengan guardado.
