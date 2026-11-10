@@ -1,7 +1,7 @@
 // Envia el correo diario del Pulso por Microsoft Graph (permiso delegado Mail.Send,
 // misma app de Azure y mismo esquema de refresh token que usa el dashboard de la AFI).
 // Lee la carpeta que genera scripts/correo_diario.R (asunto.txt, cuerpo.html,
-// logo-pulso.png, adjunto.xlsx, meta.json). Por defecto es DRY-RUN: no envia nada.
+// logo-pulso.png, meta.json). El unico adjunto es el logo en linea; el reporte es el link al Pulso. Por defecto es DRY-RUN: no envia nada.
 //   env: SEND=true para enviar de verdad
 //        AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_REFRESH_TOKEN
 //        CORREO_PARA (obligatorio) y CORREO_CC, separados por coma o punto y coma
@@ -29,9 +29,6 @@ const enviar = env.SEND === 'true';
 const adjuntos = [
   { '@odata.type': '#microsoft.graph.fileAttachment', name: 'logo-pulso.png', contentType: 'image/png', contentId: 'logo-pulso',
     isInline: true, contentBytes: readFileSync(join(dir, 'logo-pulso.png')).toString('base64') },
-  { '@odata.type': '#microsoft.graph.fileAttachment', name: meta.adjunto,
-    contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-    contentBytes: readFileSync(join(dir, 'adjunto.xlsx')).toString('base64') },
 ];
 const dest = (l) => l.map((address) => ({ emailAddress: { address } }));
 const mensaje = { subject: asunto, importance: 'normal', body: { contentType: 'HTML', content: html },
@@ -56,7 +53,7 @@ if (atrasado) {
 
 console.log(`${enviar ? 'ENVIO REAL' : 'DRY-RUN (no se envia)'} | ${mensaje.subject}`);
 console.log(`  para: ${mensaje.toRecipients.map((x) => x.emailAddress.address).join(', ')}${mensaje.ccRecipients.length ? ` | cc: ${mensaje.ccRecipients.map((x) => x.emailAddress.address).join(', ')}` : ''}`);
-console.log(`  adjunto: ${mensaje.attachments.length ? meta.adjunto : '(ninguno)'} | cierre: ${meta.cierre}`);
+console.log(`  cierre: ${meta.cierre} | sin adjuntos (solo el logo en linea)`);
 if (meta.avisos?.length) console.log(`  avisos: ${[].concat(meta.avisos).join(' | ')}`);
 if (!enviar) process.exit(0);
 

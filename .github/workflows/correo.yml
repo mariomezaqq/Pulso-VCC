@@ -1,7 +1,7 @@
 name: Correo diario Pulso
 
 # Arma el correo diario del Pulso (texto en el formato de correo de la AFI + Excel
-# adjunto) con las mismas cifras del dashboard, lo deja como "artifact" y lo muestra
+# adjunto: el reporte es el link al Pulso) con las mismas cifras del dashboard, lo deja como "artifact" y lo muestra
 # en el resumen. Con enviar=true lo envía por Microsoft Graph desde la cuenta de
 # Mario (app de Azure del dashboard de la AFI; secrets AZURE_TENANT_ID,
 # AZURE_CLIENT_ID, AZURE_REFRESH_TOKEN y los destinatarios CORREO_PARA / CORREO_CC).
@@ -136,7 +136,6 @@ jobs:
           {
             echo "## $(cat correo/asunto.txt)"
             echo
-            echo '**Adjunto:** `'"$(python3 -c "import json;print(json.load(open('correo/meta.json'))['adjunto'])")"'`'
             python3 -c "import json;a=json.load(open('correo/meta.json'))['avisos'];a=[a] if isinstance(a,str) else a;print(''.join('\n> ⚠ '+x+'\n' for x in a))"
             echo
             tail -n +2 correo/cuerpo.txt
