@@ -1,0 +1,92 @@
+name: Correo diario Pulso
+
+# Arma el correo diario del Pulso (texto + Excel adjunto) con las mismas cifras
+# del dashboard. Por ahora NO envía: deja el correo como "artifact" de la corrida
+# y lo muestra en el resumen, para revisarlo. El envío y el horario (17:30 Chile)
+# se agregan cuando estén definidos el remitente y los destinatarios.
+# Se corre a mano desde Actions ("Run workflow").
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: pulso-correo
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # solo si hay que actualizar los datos antes de armar el correo
+
+jobs:
+  correo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CMF_RECAPTCHA_TOKEN: ${{ secrets.CMF_RECAPTCHA_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup R
+        id: setup_r
+        uses: r-lib/actions/setup-r@v2
+        timeout-minutes: 6
+        continue-on-error: true
+        with:
+          use-public-rspm: true
+
+      - name: Setup R (reintento)
+        if: steps.setup_r.outcome == 'failure'
+        uses: r-lib/actions/setup-r@v2
+        timeout-minutes: 8
+        with:
+          use-public-rspm: true
+
+      - name: Instalar paquetes R
+        run: |
+          install.packages(c("httr","rvest","dplyr","tidyr","stringr","lubridate","tibble",
+                             "jsonlite","quantmod","readxl","openxlsx"))
+        shell: Rscript {0}
+
+      # El correo sale con los datos del día: si la actualización completa de hoy
+      # (hora de Chile) todavía no corrió, se hace aquí antes de armarlo.
+      - name: ¿Datos de hoy?
+        id: datos
+        run: |
+          d <- readRDS("data/series_vc.rds"); ult <- d$completo
+          if (is.null(ult)) ult <- d$generado
+          hoy <- format(as.POSIXlt(Sys.time(), tz = "America/Santiago"), "%Y-%m-%d")
+          al_dia <- !is.null(ult) && substr(ult, 1, 10) >= hoy
+          message("Última actualización completa: ", ult, " | hoy en Chile: ", hoy, " | al día: ", al_dia)
+          cat(sprintf("al_dia=%s\n", tolower(al_dia)), file = Sys.getenv("GITHUB_OUTPUT"), append = TRUE)
+        shell: Rscript {0}
+
+      - name: Actualizar datos (solo si faltaba)
+        if: steps.datos.outputs.al_dia != 'true'
+        run: |
+          options(timeout = 600)
+          source("scripts/actualizar_datos.R")
+        shell: Rscript {0}
+
+      - name: Commit de los datos actualizados
+        if: steps.datos.outputs.al_dia != 'true' && github.ref_name == 'main'
+        run: .github/scripts/commit-datos.sh "Actualización automática de datos ($(date -u +%Y-%m-%d))" data/series_vc.rds
+
+      - name: Armar el correo
+        run: Rscript scripts/correo_diario.R correo
+
+      - name: Resumen (vista previa)
+        run: |
+          {
+            echo "## $(cat correo/asunto.txt)"
+            echo
+            echo '**Adjunto:** `'"$(python3 -c "import json;print(json.load(open('correo/meta.json'))['adjunto'])")"'`'
+            python3 -c "import json;a=json.load(open('correo/meta.json'))['avisos'];a=[a] if isinstance(a,str) else a;print(''.join('\n> ⚠ '+x+'\n' for x in a))"
+            echo
+            tail -n +2 correo/cuerpo.txt
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Guardar el correo generado
+        uses: actions/upload-artifact@v4
+        with:
+          name: correo-pulso
+          path: correo/
+          retention-days: 14
