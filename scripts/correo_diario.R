@@ -2,8 +2,7 @@
 # CORREO DIARIO DEL PULSO  (lo corre .github/workflows/correo.yml, o a mano)
 # Genera en la carpeta de salida (default "correo/"):
 #   asunto.txt, cuerpo.html (logo cid:), vista-previa.html (logo incrustado), cuerpo.txt
-#   adjunto.xlsx                          -> reporte de rentabilidad (file_show)
-#   meta.json                             -> cierre, nombre del adjunto, avisos
+#   meta.json                             -> cierre, avisos (sin adjunto: el reporte es el link al Pulso)
 # Usa los mismos datos y calculos que el dashboard (R/preparar.R). NO envia nada:
 # el envio lo hace el workflow con estos archivos.
 # Correr desde la raiz:  Rscript scripts/correo_diario.R [carpeta_salida]
@@ -12,7 +11,7 @@ suppressMessages({ library(dplyr); library(lubridate); library(tibble); library(
                    library(jsonlite); library(readxl); library(httr) })
 `%||%` <- function(a, b) if (is.null(a) || length(a) == 0) b else a
 source("R/github_store.R")   # solo por store_path / %||% que usan los demas (no escribe nada)
-for (f in c("fondos_pulso", "calculos", "dividendos", "ajustes", "compute", "excel_export", "preparar", "correo"))
+for (f in c("fondos_pulso", "calculos", "dividendos", "ajustes", "compute", "preparar", "correo"))
   source(file.path("R", paste0(f, ".R")))
 
 out <- commandArgs(trailingOnly = TRUE)[1]; if (is.na(out)) out <- "correo"
@@ -35,8 +34,6 @@ logo_b64 <- jsonlite::base64_enc(readBin("correo_assets/logo-vizcaya-capital-bla
 vista <- cuerpo_correo(txt, firma = firma, logo_src = paste0("data:image/png;base64,", logo_b64))   # para abrirlo en el navegador
 fc <- txt$fecha_cierre
 
-adjunto <- sprintf("Pulso VCC - Cierre %s.xlsx", format(fc, "%d-%m-%Y"))
-generar_file_show(t$pd, t$datos, t$series_aj, t$div, vc, file.path(out, "adjunto.xlsx"))
 
 writeLines(txt$asunto, file.path(out, "asunto.txt"), useBytes = TRUE)
 writeLines(enc2utf8(cuerpo$html), file.path(out, "cuerpo.html"), useBytes = TRUE)
@@ -45,7 +42,7 @@ file.copy("correo_assets/logo-vizcaya-capital-blanco.png", file.path(out, "logo-
 writeLines(enc2utf8(cuerpo$texto), file.path(out, "cuerpo.txt"), useBytes = TRUE)
 avisos <- c(t$pd$alertas$global %||% character(0),
             if (length(txt$parrafos) < 4) "Falta algun parrafo por datos faltantes (indices, Treasury o instrumentos de la casa).")
-write_json(list(cierre = format(fc), asunto = txt$asunto, adjunto = adjunto,
+write_json(list(cierre = format(fc), asunto = txt$asunto,
                 atrasado = !is.null(t$pd$alertas$global),   # cierre anterior al ultimo dia habil
                 fondos_atrasados = vapply(t$pd$alertas$fondos, function(x) paste0(x$nombre, " (", x$fecha, ")"), ""),
                 datos_generados = t$datos$generado %||% "", avisos = avisos),

@@ -127,9 +127,8 @@ texto_correo <- function(pd) {
       list(titulo = "Renta variable", texto = p1), list(titulo = "Commodities", texto = p2),
       list(titulo = "Renta fija internacional", texto = p3), list(titulo = "Instrumentos de la casa", texto = p4))),
     cierre = c(
-      "Recuerden que pueden acceder pinchando el siguiente enlace, {LINK}, el cual se actualiza automáticamente todos los días a las 11:00 AM. Les recomendamos agregarlo a sus favoritos o crear un acceso directo en sus computadores para un acceso más rápido.",
-      "Ante cualquier duda o consulta, no duden en escribirme.",
-      sprintf("Adjuntamos reporte de rentabilidad de instrumentos aprobados por comité de inversión al %s.", format(fc, "%d/%m/%Y")))
+      sprintf("El reporte de rentabilidad de los instrumentos aprobados por comité de inversión al %s está disponible en {LINK}, que se actualiza automáticamente todos los días a las 11:00 AM. Les recomendamos agregarlo a sus favoritos o crear un acceso directo en sus computadores para un acceso más rápido.", format(fc, "%d/%m/%Y")),
+      "Ante cualquier duda o consulta, no duden en escribirme.")
   )
 }
 
@@ -161,7 +160,12 @@ cuerpo_correo <- function(t, firma = "", logo_src = "cid:logo-pulso") {
       "<td valign=\"top\"><p style=\"margin:0 0 8px 0;font-family:", .SERIF, ";font-size:19px;line-height:24px;color:", .NAVY, ";\"><font color=\"", .NAVY, "\">", .esc(b$titulo), "</font></p>",
       .p_cuerpo(html_txt(b$texto)), "</td></tr></table></td></tr>")
   }
-  cierre <- paste(vapply(seq_along(t$cierre), function(i) td(.p_cuerpo(html_txt(t$cierre[i])), if (i == 1) "22px 40px 12px 40px" else "0 40px 12px 40px"), ""), collapse = "")
+  boton <- td(paste0("<table role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr><td bgcolor=\"", .NAVY, "\" style=\"background-color:", .NAVY,
+                     ";padding:13px 26px;\"><a href=\"", URL_PULSO, "\" style=\"font-family:", .SANS, ";font-size:12px;font-weight:bold;letter-spacing:1.5px;color:#ffffff;text-decoration:none;text-transform:uppercase;\">",
+                     "<span style=\"color:#ffffff;\">Abrir Pulso VCC</span></a></td></tr></table>"), "6px 40px 20px 40px")
+  # parrafos de cierre; el boton va despues del primero (el que trae el enlace)
+  cierre <- paste(vapply(seq_along(t$cierre), function(i)
+    paste0(td(.p_cuerpo(html_txt(t$cierre[i])), if (i == 1) "22px 40px 12px 40px" else "0 40px 12px 40px"), if (i == 1) boton else ""), ""), collapse = "")
   fecha_larga <- sprintf("%s de %d", .fecha_larga(t$fecha_cierre), as.integer(format(t$fecha_cierre, "%Y")))
   lineas <- if (nzchar(firma)) strsplit(firma, "\n", fixed = TRUE)[[1]] else character(0)
   firma_html <- if (length(lineas)) td(paste0(
