@@ -1,7 +1,7 @@
 // Envia el correo diario del Pulso por Microsoft Graph (permiso delegado Mail.Send,
 // misma app de Azure y mismo esquema de refresh token que usa el dashboard de la AFI).
 // Lee la carpeta que genera scripts/correo_diario.R (asunto.txt, cuerpo.html,
-// logo-pulso.png, adjunto.xlsx, meta.json). Por defecto es DRY-RUN: no envia nada.
+// logo-pulso.png, meta.json). El unico adjunto es el logo en linea; el reporte es el link al Pulso. Por defecto es DRY-RUN: no envia nada.
 //   env: SEND=true para enviar de verdad
 //        AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_REFRESH_TOKEN
 //        CORREO_PARA (obligatorio) y CORREO_CC, separados por coma o punto y coma
@@ -9,7 +9,7 @@
 //        CORREO_AVISO: a quien avisar (solo Mario) si los datos estan atrasados; FORZAR=true envia igual
 //   uso: node scripts/enviar_correo.mjs [carpeta]   (default: correo)
 // Si el token se renueva, deja el nuevo en .new-refresh-token (el workflow lo guarda).
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, appendFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const dir = process.argv[2] || 'correo';
@@ -29,9 +29,6 @@ const enviar = env.SEND === 'true';
 const adjuntos = [
   { '@odata.type': '#microsoft.graph.fileAttachment', name: 'logo-pulso.png', contentType: 'image/png', contentId: 'logo-pulso',
     isInline: true, contentBytes: readFileSync(join(dir, 'logo-pulso.png')).toString('base64') },
-  { '@odata.type': '#microsoft.graph.fileAttachment', name: meta.adjunto,
-    contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-    contentBytes: readFileSync(join(dir, 'adjunto.xlsx')).toString('base64') },
 ];
 const dest = (l) => l.map((address) => ({ emailAddress: { address } }));
 const mensaje = { subject: asunto, importance: 'normal', body: { contentType: 'HTML', content: html },
@@ -56,7 +53,16 @@ if (atrasado) {
 
 console.log(`${enviar ? 'ENVIO REAL' : 'DRY-RUN (no se envia)'} | ${mensaje.subject}`);
 console.log(`  para: ${mensaje.toRecipients.map((x) => x.emailAddress.address).join(', ')}${mensaje.ccRecipients.length ? ` | cc: ${mensaje.ccRecipients.map((x) => x.emailAddress.address).join(', ')}` : ''}`);
-console.log(`  adjunto: ${mensaje.attachments.length ? meta.adjunto : '(ninguno)'} | cierre: ${meta.cierre}`);
+// Resumen en la pestaña del run (GITHUB_STEP_SUMMARY): quien recibiria el correo, sin enviar nada.
+if (env.GITHUB_STEP_SUMMARY) {
+  const f = (l) => l.length ? l.map((x) => `\`${x.emailAddress.address}\``).join(', ') : '_(nadie)_';
+  const origen = env.CORREO_SOLO_A ? 'solo_a (prueba)' : atrasado ? 'CORREO_AVISO (datos atrasados)' : 'secrets CORREO_PARA / CORREO_CC';
+  appendFileSync(env.GITHUB_STEP_SUMMARY,
+    `### Destinatarios (${enviar ? 'ENVIO REAL' : 'solo vista previa, no se envia'})\n\n` +
+    `- Origen: ${origen}\n- Para (${mensaje.toRecipients.length}): ${f(mensaje.toRecipients)}\n` +
+    `- Cc (${mensaje.ccRecipients.length}): ${f(mensaje.ccRecipients)}\n- Asunto: ${mensaje.subject}\n\n`);
+}
+console.log(`  cierre: ${meta.cierre} | sin adjuntos (solo el logo en linea)`);
 if (meta.avisos?.length) console.log(`  avisos: ${[].concat(meta.avisos).join(' | ')}`);
 if (!enviar) process.exit(0);
 
