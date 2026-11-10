@@ -280,8 +280,8 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
   addWorksheet(wb, "Indices")
   col0 <- 1
   for (nm in c(NOMBRES_INDICES_MANUALES, NOMBRES_INDICES_AUTO)) {
-    man <- if (nm %in% NOMBRES_INDICES_AUTO) NULL else serie_de_vc(vc_df, nm)
-    if (!is.null(man)) man$Fuente <- "Manual"
+    man <- serie_de_vc(vc_df, nm)
+    if (!is.null(man)) man$Fuente <- if (nm %in% NOMBRES_INDICES_AUTO) "Historico" else "Manual"
     aut <- NULL
     if (identical(nm, "IPSA")) {
       of <- datos$macro_series[["IPSA"]]
@@ -290,7 +290,7 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
       yh <- if (!is.null(yh) && nrow(yh)) tibble(fecha=as.Date(yh$fecha), valor_cuota=suppressWarnings(as.numeric(yh$cierre)), Fuente="Yahoo") else NULL
       aut <- bind_rows(of, yh) %>% filter(!is.na(fecha), !is.na(valor_cuota)) %>% distinct(fecha, .keep_all=TRUE)
     }
-    s <- bind_rows(man, aut)
+    s <- if (nm %in% NOMBRES_INDICES_AUTO) bind_rows(aut, man) else bind_rows(man, aut)   # el primero manda por fecha
     if (!is.null(s) && nrow(s)) {
       s <- s %>% filter(fecha >= FECHA_BASE_XLSX) %>% distinct(fecha, .keep_all=TRUE) %>% arrange(fecha)
       out <- data.frame(Fecha=s$fecha, setNames(list(s$valor_cuota), nm), Fuente=s$Fuente, check.names=FALSE)
