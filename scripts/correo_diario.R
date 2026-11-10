@@ -28,7 +28,8 @@ ov <- tryCatch(read.csv("data/dividendos_overrides.csv", stringsAsFactors = FALS
 t <- preparar_todo(vc, ov)
 if (is.null(t)) stop("No hay data/series_vc.rds: no se puede armar el correo.")
 txt <- texto_correo(t$pd)
-firma <- Sys.getenv("CORREO_FIRMA", "")
+# Firma: "saludo \n nombre \n cargo". Se puede cambiar con la variable CORREO_FIRMA (usar \n).
+firma <- gsub("\\n", "\n", Sys.getenv("CORREO_FIRMA", "Un cordial saludo,\nMario Meza\nAnalista\nVizcaya Capital"), fixed = TRUE)
 cuerpo <- cuerpo_correo(txt, firma = firma, logo_src = "cid:logo-pulso")          # para enviar (logo adjunto en linea)
 logo_b64 <- jsonlite::base64_enc(readBin("correo_assets/logo-vizcaya-capital-blanco.png", "raw", file.info("correo_assets/logo-vizcaya-capital-blanco.png")$size))
 vista <- cuerpo_correo(txt, firma = firma, logo_src = paste0("data:image/png;base64,", logo_b64))   # para abrirlo en el navegador
