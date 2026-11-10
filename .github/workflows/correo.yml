@@ -1,12 +1,22 @@
 name: Correo diario Pulso
 
-# Arma el correo diario del Pulso (texto + Excel adjunto) con las mismas cifras
-# del dashboard. Por ahora NO envía: deja el correo como "artifact" de la corrida
-# y lo muestra en el resumen, para revisarlo. El envío y el horario (17:30 Chile)
-# se agregan cuando estén definidos el remitente y los destinatarios.
-# Se corre a mano desde Actions ("Run workflow").
+# Arma el correo diario del Pulso (texto en el formato de correo de la AFI + Excel
+# adjunto) con las mismas cifras del dashboard, lo deja como "artifact" y lo muestra
+# en el resumen. Con enviar=true lo envía por Microsoft Graph desde la cuenta de
+# Mario (app de Azure del dashboard de la AFI; secrets AZURE_TENANT_ID,
+# AZURE_CLIENT_ID, AZURE_REFRESH_TOKEN y los destinatarios CORREO_PARA / CORREO_CC).
+# Por ahora solo se corre a mano; el horario de las 17:30 se agrega al definirlo.
 on:
   workflow_dispatch:
+    inputs:
+      enviar:
+        description: "Enviar el correo (false = solo armarlo y mostrarlo)"
+        type: boolean
+        default: false
+      solo_a:
+        description: "Pruebas: enviar SOLO a esta dirección (ignora CORREO_PARA y CORREO_CC)"
+        type: string
+        required: false
 
 concurrency:
   group: pulso-correo
@@ -72,6 +82,35 @@ jobs:
 
       - name: Armar el correo
         run: Rscript scripts/correo_diario.R correo
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Enviar el correo (o dry-run)
+        env:
+          SEND: ${{ inputs.enviar && 'true' || 'false' }}
+          CORREO_SOLO_A: ${{ inputs.solo_a }}
+          CORREO_PARA: ${{ secrets.CORREO_PARA }}
+          CORREO_CC: ${{ secrets.CORREO_CC }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_REFRESH_TOKEN: ${{ secrets.AZURE_REFRESH_TOKEN }}
+        run: node scripts/enviar_correo.mjs correo
+
+      # Microsoft renueva el refresh token en cada uso: se guarda el nuevo (si no, caduca a los 90 días)
+      - name: Rotar refresh token
+        if: always() && hashFiles('.new-refresh-token') != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT_SECRETS }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::Falta GH_PAT_SECRETS; el refresh token no se rotó."
+          else
+            gh secret set AZURE_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < .new-refresh-token
+            echo "Refresh token rotado."
+          fi
+          rm -f .new-refresh-token
 
       - name: Resumen (vista previa)
         run: |
