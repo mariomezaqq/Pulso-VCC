@@ -9,7 +9,7 @@
 //        CORREO_AVISO: a quien avisar (solo Mario) si los datos estan atrasados; FORZAR=true envia igual
 //   uso: node scripts/enviar_correo.mjs [carpeta]   (default: correo)
 // Si el token se renueva, deja el nuevo en .new-refresh-token (el workflow lo guarda).
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, appendFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const dir = process.argv[2] || 'correo';
@@ -53,6 +53,15 @@ if (atrasado) {
 
 console.log(`${enviar ? 'ENVIO REAL' : 'DRY-RUN (no se envia)'} | ${mensaje.subject}`);
 console.log(`  para: ${mensaje.toRecipients.map((x) => x.emailAddress.address).join(', ')}${mensaje.ccRecipients.length ? ` | cc: ${mensaje.ccRecipients.map((x) => x.emailAddress.address).join(', ')}` : ''}`);
+// Resumen en la pestaña del run (GITHUB_STEP_SUMMARY): quien recibiria el correo, sin enviar nada.
+if (env.GITHUB_STEP_SUMMARY) {
+  const f = (l) => l.length ? l.map((x) => `\`${x.emailAddress.address}\``).join(', ') : '_(nadie)_';
+  const origen = env.CORREO_SOLO_A ? 'solo_a (prueba)' : atrasado ? 'CORREO_AVISO (datos atrasados)' : 'secrets CORREO_PARA / CORREO_CC';
+  appendFileSync(env.GITHUB_STEP_SUMMARY,
+    `### Destinatarios (${enviar ? 'ENVIO REAL' : 'solo vista previa, no se envia'})\n\n` +
+    `- Origen: ${origen}\n- Para (${mensaje.toRecipients.length}): ${f(mensaje.toRecipients)}\n` +
+    `- Cc (${mensaje.ccRecipients.length}): ${f(mensaje.ccRecipients)}\n- Asunto: ${mensaje.subject}\n\n`);
+}
 console.log(`  cierre: ${meta.cierre} | sin adjuntos (solo el logo en linea)`);
 if (meta.avisos?.length) console.log(`  avisos: ${[].concat(meta.avisos).join(' | ')}`);
 if (!enviar) process.exit(0);
