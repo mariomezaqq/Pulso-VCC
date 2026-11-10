@@ -9,7 +9,7 @@ name: Dashboard estático (GitHub Pages)
 # Si el resultado es idéntico al anterior no hace commit.
 on:
   push:
-    branches: [main, claude/dashboard-estatico]   # TEMPORAL: prueba
+    branches: [main]
     paths:
       - 'data/manuales_vc.csv'
       - 'data/fondos_curados.csv'
