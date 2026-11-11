@@ -56,12 +56,22 @@ jobs:
           [ -z "$PULSO_GH_TOKEN" ]   && falta="$falta PULSO_GH_TOKEN"
           if [ -n "$falta" ]; then echo "::error::Faltan secrets:$falta"; exit 1; fi
 
-      # El espejo apt de Azure (azure.archive.ubuntu.com) a veces responde 503 y "Setup R" se cuelga
-      # hasta el timeout (11-11: el refresh de las 11:00 fallo 3 veces). Se usa archive.ubuntu.com y reintentos.
+      # El espejo apt de Azure (azure.archive.ubuntu.com) a veces cae (503) y "Setup R" se cuelga hasta el timeout
+      # (11-11: el refresh de las 11:00 fallo 4 veces). Aqui se elige un espejo que SI responda y, si ninguno
+      # lo hace, se falla en segundos con un mensaje claro en vez de gastar 14 minutos (los reintentos de las
+      # 11:30 a 13:00 y el cron de respaldo lo vuelven a intentar).
       - name: Espejo de apt confiable
         run: |
-          echo "http://archive.ubuntu.com/ubuntu/" | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
           printf 'Acquire::Retries "3";\nAcquire::http::Timeout "20";\n' | sudo tee /etc/apt/apt.conf.d/99pulso >/dev/null
+          ok() { curl -fsI -m 8 "$1/dists/noble/InRelease" >/dev/null 2>&1; }
+          if ok http://azure.archive.ubuntu.com/ubuntu; then echo "Espejo de Azure OK"
+          elif ok http://archive.ubuntu.com/ubuntu; then
+            echo "Espejo de Azure caido: se usa archive.ubuntu.com"
+            echo "http://archive.ubuntu.com/ubuntu/" | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          else
+            echo "::error::Ningun espejo de apt responde (caida externa de Ubuntu/Azure): no se puede instalar R. Se reintentara solo."
+            exit 1
+          fi
 
       # pdftools (folletos CMF) necesita poppler para compilar/cargar
       - name: Librerias del sistema

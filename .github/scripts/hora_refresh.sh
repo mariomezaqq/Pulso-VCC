@@ -10,6 +10,20 @@
 set -uo pipefail
 evento="${1:-schedule}"
 repo="${GITHUB_REPOSITORY:-mariomezaqq/Pulso-VCC}"
+reintento="${2:-}"
+if [ "$evento" = "workflow_dispatch" ] && [ -n "$reintento" ]; then
+  # Reintento (Supabase: 11:30, 12:00, 12:30 y 13:00): solo para los fondos que a las 11 no tenian el NAV.
+  # data/faltantes_nav.txt lo deja cada corrida: linea 1 = fecha (Chile), siguientes = run-serie faltantes.
+  hoy=$(TZ=America/Santiago date +%F)
+  f=data/faltantes_nav.txt
+  if [ ! -f "$f" ] || [ "$(head -n1 "$f" | tr -d '\r ')" != "$hoy" ]; then
+    # hoy aun no hubo una actualizacion completa (fallo la de las 11:00): este reintento corre completo
+    echo "Reintento $reintento: sin registro de hoy, se actualiza todo" >&2; echo "correr=true"; echo "solo="; exit 0
+  fi
+  lista=$(tail -n +2 "$f" | tr -d '\r ' | grep . | paste -sd, -)
+  if [ -z "$lista" ]; then echo "Reintento $reintento: ya no falta ningun NAV, no se corre" >&2; echo "correr=false"; echo "solo="; exit 0; fi
+  echo "Reintento $reintento: solo $lista" >&2; echo "correr=true"; echo "solo=$lista"; exit 0
+fi
 if [ "$evento" = "workflow_dispatch" ]; then echo "correr=true"; exit 0; fi
 
 hoy=$(TZ=America/Santiago date +%F); hhmm=$(TZ=America/Santiago date +%H%M)
