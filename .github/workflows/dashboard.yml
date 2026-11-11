@@ -44,6 +44,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # El espejo apt de Azure (azure.archive.ubuntu.com) a veces responde 503 y "Setup R" se cuelga
+      # hasta el timeout (11-11: el refresh de las 11:00 fallo 3 veces). Se usa archive.ubuntu.com y reintentos.
+      - name: Espejo de apt confiable
+        run: |
+          echo "http://archive.ubuntu.com/ubuntu/" | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          printf 'Acquire::Retries "3";\nAcquire::http::Timeout "20";\n' | sudo tee /etc/apt/apt.conf.d/99pulso >/dev/null
+
       - name: Setup R
         id: setup_r
         uses: r-lib/actions/setup-r@v2
