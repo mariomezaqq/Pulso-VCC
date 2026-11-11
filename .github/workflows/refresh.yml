@@ -19,6 +19,10 @@ on:
         description: "Solo estos fondos (run-serie separados por coma, ej. 9152-A). Vacío = todos."
         required: false
         default: ""
+      reintento:
+        description: "Lo usa Supabase (1 a 4: 11:30, 12:00, 12:30, 13:00). Corre solo para los fondos sin NAV de hoy. Vacío = normal."
+        required: false
+        default: ""
 
 # Una corrida a la vez (las que llegan esperan su turno, no se pisan)
 concurrency:
@@ -34,14 +38,17 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       correr: ${{ steps.h.outputs.correr }}
+      solo: ${{ steps.h.outputs.solo }}
     steps:
       - uses: actions/checkout@v4
         with:
-          sparse-checkout: .github/scripts
+          sparse-checkout: |
+            .github/scripts
+            data/faltantes_nav.txt
       - id: h
         env:
           GH_TOKEN: ${{ github.token }}
-        run: .github/scripts/hora_refresh.sh "${{ github.event_name }}" >> "$GITHUB_OUTPUT"
+        run: .github/scripts/hora_refresh.sh "${{ github.event_name }}" "${{ github.event.inputs.reintento }}" >> "$GITHUB_OUTPUT"
 
   scrape:
     needs: hora
@@ -50,17 +57,27 @@ jobs:
     timeout-minutes: 30   # si algo se cuelga (ej. instalar R), falla en vez de quedar horas
     env:
       CMF_RECAPTCHA_TOKEN: ${{ secrets.CMF_RECAPTCHA_TOKEN }}
-      SOLO_FONDOS: ${{ github.event.inputs.solo_fondos }}
+      SOLO_FONDOS: ${{ needs.hora.outputs.solo || github.event.inputs.solo_fondos }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # El espejo apt de Azure (azure.archive.ubuntu.com) a veces responde 503 y "Setup R" se cuelga
-      # hasta el timeout (11-11: el refresh de las 11:00 fallo 3 veces). Se usa archive.ubuntu.com y reintentos.
+      # El espejo apt de Azure (azure.archive.ubuntu.com) a veces cae (503) y "Setup R" se cuelga hasta el timeout
+      # (11-11: el refresh de las 11:00 fallo 4 veces). Aqui se elige un espejo que SI responda y, si ninguno
+      # lo hace, se falla en segundos con un mensaje claro en vez de gastar 14 minutos (los reintentos de las
+      # 11:30 a 13:00 y el cron de respaldo lo vuelven a intentar).
       - name: Espejo de apt confiable
         run: |
-          echo "http://archive.ubuntu.com/ubuntu/" | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
           printf 'Acquire::Retries "3";\nAcquire::http::Timeout "20";\n' | sudo tee /etc/apt/apt.conf.d/99pulso >/dev/null
+          ok() { curl -fsI -m 8 "$1/dists/noble/InRelease" >/dev/null 2>&1; }
+          if ok http://azure.archive.ubuntu.com/ubuntu; then echo "Espejo de Azure OK"
+          elif ok http://archive.ubuntu.com/ubuntu; then
+            echo "Espejo de Azure caido: se usa archive.ubuntu.com"
+            echo "http://archive.ubuntu.com/ubuntu/" | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          else
+            echo "::error::Ningun espejo de apt responde (caida externa de Ubuntu/Azure): no se puede instalar R. Se reintentara solo."
+            exit 1
+          fi
 
       # "Setup R" a veces se cuelga en el runner de GitHub (pasó 2 veces el
       # 26-10, >15 min; lo normal es <1 min): tope de 6 min y un reintento.
@@ -111,5 +128,11 @@ jobs:
           source("scripts/completar_rentabilidades.R")
         shell: Rscript {0}
 
+      # Deja en data/faltantes_nav.txt los fondos que aun no tienen el NAV del dia habil anterior:
+      # los reintentos de las 11:30 a las 13:00 corren solo para ellos (ver hora_refresh.sh).
+      - name: Fondos que aún no tienen el NAV
+        continue-on-error: true
+        run: Rscript scripts/faltantes_nav.R
+
       - name: Commit del artefacto actualizado
-        run: .github/scripts/commit-datos.sh "Actualización automática de datos ($(date -u +%Y-%m-%d))" data/series_vc.rds data/fondos_curados.csv
+        run: .github/scripts/commit-datos.sh "Actualización automática de datos ($(date -u +%Y-%m-%d))" data/series_vc.rds data/fondos_curados.csv data/faltantes_nav.txt
