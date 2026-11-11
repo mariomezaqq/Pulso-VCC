@@ -111,7 +111,7 @@ ui <- page_navbar(
   nav_panel("Administración",
     div(style = "max-width:1100px;margin:20px auto;padding:0 16px",
       h4("Panel de administración"),
-      p(class = "text-muted", "Los cambios se guardan y persisten (en GitHub cuando está configurado). El dashboard se regenera solo en ~1 minuto."),
+      p(class = "text-muted", "Los cambios se guardan y persisten (en GitHub cuando está configurado). El Pulso (página rápida) se regenera solo y muestra los cambios en ~5 minutos; esta app los muestra al instante."),
       actionButton("actualizar", "↻ Actualizar datos ahora (re-consulta la CMF)", class = "btn-outline-primary btn-sm", style = "margin-bottom:12px"),
       card(card_header("➕ Agregar fondo (catálogo CMF o link de la CMF)"),
         p(class = "text-muted", "Busca el fondo en el catálogo del comparador (trae run/serie/row correctos de la CMF). Elige su categoría, completa los datos que quieras mostrar y agrégalo. Se guarda y se dispara la consulta a la CMF; en ~3 a 5 min aparecen solas sus rentabilidades."),
@@ -194,6 +194,10 @@ ui <- page_navbar(
 )
 
 # ============================== SERVER ==============================
+# Tras guardar, la pagina rapida del Pulso (GitHub Pages) tarda en regenerarse y publicarse:
+# generar (~1-2 min) + publicar (~1-2 min) + copia del navegador. La app lo avisa para evitar confusiones.
+AVISO_PULSO <- "⏱ El Pulso (página rápida) mostrará el cambio en ~5 minutos: espera y recarga con Ctrl+F5. En esta app ya se ve al instante."
+
 server <- function(input, output, session) {
   # El engranaje de la pagina rapida abre esta app con ?seccion=admin: cae directo en Administracion
   observeEvent(session$clientData$url_search, once = TRUE, {
@@ -396,7 +400,7 @@ server <- function(input, output, session) {
     showModal(modalDialog(title = "Fondo agregado",
       HTML(paste0("✅ <b>", trimws(input$cat_nombre), "</b> se agregó a <b>", hoja, "</b>.<br><br>",
                   "Se está consultando la CMF para traer sus rentabilidades.<br>",
-                  "El dashboard se actualizará solo en <b>~2 minutos</b> (no hace falta recargar).")),
+                  "El Pulso (página rápida) lo mostrará en <b>~5 minutos</b>; recarga con Ctrl+F5.")),
       easyClose = TRUE, footer = modalButton("Cerrar")))
   })
 
@@ -476,7 +480,7 @@ server <- function(input, output, session) {
     renombres <<- list()
     refrescar_fondos_globales(); rv$tick <- rv$tick + 1
     output$cat_del_msg <- renderText(paste0("💾 Cambios guardados. ", msg,
-      " · El dashboard se actualiza solo en ~1 min."))
+      " · ", AVISO_PULSO))
   })
 
   observeEvent(input$cat_del, {
@@ -503,7 +507,7 @@ server <- function(input, output, session) {
     res <- gh_dispatch("refresh.yml")
     showModal(modalDialog(title = "Actualizar datos",
       if (res$ok)
-        HTML("✅ Se inició la actualización: la app está re-consultando la CMF.<br><br>En <b>~3 a 5 minutos</b> el dashboard se actualizará solo con los datos nuevos.")
+        HTML("✅ Se inició la actualización: la app está re-consultando la CMF.<br><br>En <b>~8 minutos</b> el Pulso (página rápida) mostrará los datos nuevos; recarga con Ctrl+F5.")
       else paste("No se pudo iniciar:", res$msg),
       easyClose = TRUE, footer = modalButton("Cerrar")))
   })
@@ -525,7 +529,7 @@ server <- function(input, output, session) {
     if (!is.null(rec)) ruta <- rec
     msg <- tryCatch(paste0(store_write_file("dividendos.xlsx", ruta, "Subir dividendos desde la app"), nota),
                     error = function(e) paste("Error:", e$message))
-    output$div_msg <- renderText(paste0(msg, "\n", estado_div())); rv$tick <- rv$tick + 1
+    output$div_msg <- renderText(paste0(msg, "\n", estado_div(), "\n", AVISO_PULSO)); rv$tick <- rv$tick + 1
   })
 
   # ---- Tabla de dividendos cargados ----
@@ -586,7 +590,7 @@ server <- function(input, output, session) {
     rv$vc <- rbind(keep, nuevas)
     rv$vc <- rv$vc[order(rv$vc$Nombre, rv$vc$Fecha), ]
     msg <- guardar_vc(); rv$entry$VC <- NA_real_
-    output$vc_msg <- renderText(paste0("Guardados ", nrow(nuevas), " VC del ", f, ". ", msg)); rv$tick <- rv$tick + 1
+    output$vc_msg <- renderText(paste0("Guardados ", nrow(nuevas), " VC del ", f, ". ", msg, "\n", AVISO_PULSO)); rv$tick <- rv$tick + 1
   })
 
   # ---- Historial de VC (editable / borrar) ----
@@ -632,7 +636,7 @@ server <- function(input, output, session) {
       rv$vc <- rv$vc[order(rv$vc$Nombre, rv$vc$Fecha), ]
     }
     msg <- guardar_vc(); vc_quitados <<- character()
-    output$vc_hist_msg <- renderText(paste0(msg, if (any(faltan)) paste0(" (se conservaron ", sum(faltan), " VC ingresados desde otra sesión)") else ""))
+    output$vc_hist_msg <- renderText(paste0(msg, if (any(faltan)) paste0(" (se conservaron ", sum(faltan), " VC ingresados desde otra sesión)") else "", "\n", AVISO_PULSO))
     rv$tick <- rv$tick + 1
   })
 
