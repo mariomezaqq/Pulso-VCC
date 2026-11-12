@@ -382,6 +382,10 @@
 "Ameris LGT Secondaries V Fondo de Inversión","B","9899","FINRE",2026-06-24,2026-07-01,"US$","Dividendo",0.067143,NA,NA,NA,NA,0.067143121,"boletin",NA
 "Ameris LGT Secondaries V Fondo de Inversión","C","9899","FINRE",2026-06-24,2026-07-01,"US$","Dividendo",0.067736,NA,NA,NA,NA,0.06773641,"boletin",NA
 "Ameris LGT Secondaries V Fondo de Inversión","I","9899","FINRE",2026-06-24,2026-07-01,"US$","Dividendo",0.068427,NA,NA,NA,NA,0.06842686,"boletin",NA
+"Ameris LGT Secondaries V Fondo de Inversión","A","9899","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.046164,NA,NA,NA,NA,0.04616447,"boletin",NA
+"Ameris LGT Secondaries V Fondo de Inversión","B","9899","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.046652,NA,NA,NA,NA,0.046651956,"boletin",NA
+"Ameris LGT Secondaries V Fondo de Inversión","C","9899","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.047099,NA,NA,NA,NA,0.047098981,"boletin",NA
+"Ameris LGT Secondaries V Fondo de Inversión","I","9899","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.047621,NA,NA,NA,NA,0.047621424,"boletin",NA
 "Ameris Leasing Habitacional Fondo de Inversión","A",NA,NA,2026-06-17,2026-06-23,"$","Dividendo",93.117393,NA,NA,NA,NA,93.117392531,"boletin",NA
 "Ameris Leasing Habitacional Fondo de Inversión","I",NA,NA,2026-06-17,2026-06-23,"$","Dividendo",93.176947,NA,NA,NA,NA,93.176946939,"boletin",NA
 "Ameris MC Renta Industrial Fondo de Inversión","A","9968","FINRE",2026-05-15,2026-05-22,"$","Dividendo",0.305679,3403946,NA,NA,NA,0.305678795,"boletin",NA
@@ -5125,6 +5129,10 @@
 "Fondo de Inversión HMC Carval Credit Value Fund V","I","9886","FINRE",2026-02-04,2026-02-10,"US$","Reparto",0.040924,NA,NA,NA,NA,0.0409239031,"boletin",NA
 "Fondo de Inversión HMC Carval Credit Value Fund V","A","9886","FINRE",2026-09-10,2026-09-16,"US$","Dividendo",0.047895,NA,NA,NA,NA,0.0478951377,"boletin",NA
 "Fondo de Inversión HMC Carval Credit Value Fund V","I","9886","FINRE",2026-09-10,2026-09-16,"US$","Dividendo",0.047892,NA,NA,NA,NA,0.0478920266,"boletin",NA
+"Fondo de Inversión HMC Carval Credit Value Fund V","A","9886","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.022122,NA,NA,NA,NA,0.0221215295,"boletin",NA
+"Fondo de Inversión HMC Carval Credit Value Fund V","I","9886","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.022122,NA,NA,NA,NA,0.0221215294,"boletin",NA
+"Fondo de Inversión HMC Carval Credit Value Fund V","A","9886","FINRE",2026-11-12,2026-11-18,"US$","Reparto",0.090864,NA,NA,NA,NA,0.0908641821,"boletin",NA
+"Fondo de Inversión HMC Carval Credit Value Fund V","I","9886","FINRE",2026-11-12,2026-11-18,"US$","Reparto",0.090864,NA,NA,NA,NA,0.0908641822,"boletin",NA
 "Fondo de Inversión HMC Deuda Privada Andina","A","9804","FINRE",2025-03-28,2025-04-03,"US$","Reparto",0.055386,NA,NA,NA,NA,0.0553855991,"boletin",NA
 "Fondo de Inversión HMC Deuda Privada Andina","X","9804","FINRE",2025-03-28,2025-04-03,"US$","Reparto",0.055671,NA,NA,NA,NA,0.0556706808,"boletin",NA
 "Fondo de Inversión HMC Deuda Privada Andina","A","9804","FINRE",2025-06-12,2025-06-18,"US$","Dividendo",0.012581,NA,NA,NA,NA,0.0125806112,"boletin",NA
@@ -5397,6 +5405,9 @@
 "Fondo de Inversión HMC Renta Global Pesos","BP","9769","FIRES",2026-10-14,2026-10-20,"$","Reparto",5.361294,NA,NA,NA,NA,5.3612940797,"boletin",NA
 "Fondo de Inversión HMC Renta Global Pesos","C","9769","FIRES",2026-10-14,2026-10-20,"$","Reparto",5.605276,NA,NA,NA,NA,5.6052756558,"boletin",NA
 "Fondo de Inversión HMC Renta Global Pesos","X","9769","FIRES",2026-10-14,2026-10-20,"$","Reparto",6.523241,NA,NA,NA,NA,6.5232412124,"boletin",NA
+"Fondo de Inversión HMC Renta Global Pesos","BP","9769","FIRES",2026-11-12,2026-11-18,"$","Reparto",5.380729,NA,NA,NA,NA,5.3807288916,"boletin",NA
+"Fondo de Inversión HMC Renta Global Pesos","C","9769","FIRES",2026-11-12,2026-11-18,"$","Reparto",5.622936,NA,NA,NA,NA,5.6229359397,"boletin",NA
+"Fondo de Inversión HMC Renta Global Pesos","X","9769","FIRES",2026-11-12,2026-11-18,"$","Reparto",6.553081,NA,NA,NA,NA,6.5530814063,"boletin",NA
 "Fondo de Inversión HMC Renta Global USD","BP","10283","FIRES",2025-01-08,2025-01-14,"US$","Reparto",0.008352,NA,NA,NA,NA,0.0083521721,"boletin",NA
 "Fondo de Inversión HMC Renta Global USD","C","10283","FIRES",2025-01-08,2025-01-14,"US$","Reparto",0.008315,NA,NA,NA,NA,0.0083147463,"boletin",NA
 "Fondo de Inversión HMC Renta Global USD","X","10283","FIRES",2025-01-08,2025-01-14,"US$","Reparto",0.009234,NA,NA,NA,NA,0.0092344982,"boletin",NA
@@ -5454,6 +5465,9 @@
 "Fondo de Inversión HMC Renta Global USD","BP","10283","FIRES",2026-10-14,2026-10-20,"US$","Reparto",0.006887,NA,NA,NA,NA,0.0068868634,"boletin",NA
 "Fondo de Inversión HMC Renta Global USD","C","10283","FIRES",2026-10-14,2026-10-20,"US$","Reparto",0.006784,NA,NA,NA,NA,0.0067842933,"boletin",NA
 "Fondo de Inversión HMC Renta Global USD","X","10283","FIRES",2026-10-14,2026-10-20,"US$","Reparto",0.008048,NA,NA,NA,NA,0.0080480852,"boletin",NA
+"Fondo de Inversión HMC Renta Global USD","BP","10283","FIRES",2026-11-12,2026-11-18,"US$","Reparto",0.006831,NA,NA,NA,NA,0.0068311916,"boletin",NA
+"Fondo de Inversión HMC Renta Global USD","C","10283","FIRES",2026-11-12,2026-11-18,"US$","Reparto",0.006726,NA,NA,NA,NA,0.00672627,"boletin",NA
+"Fondo de Inversión HMC Renta Global USD","X","10283","FIRES",2026-11-12,2026-11-18,"US$","Reparto",0.007991,NA,NA,NA,NA,0.0079905778,"boletin",NA
 "Fondo de Inversión HMC Secondaries CDR X","BP","10189","FINRE",2025-02-26,2025-03-04,"US$","Reparto",0.010604,NA,NA,NA,NA,0.0106036642,"boletin",NA
 "Fondo de Inversión HMC Secondaries CDR X","E","10189","FINRE",2025-02-26,2025-03-04,"US$","Reparto",0.011691,NA,NA,NA,NA,0.0116905785,"boletin",NA
 "Fondo de Inversión HMC Secondaries CDR X","I","10189","FINRE",2025-02-26,2025-03-04,"US$","Reparto",0.011669,NA,NA,NA,NA,0.0116694979,"boletin",NA
@@ -6427,6 +6441,8 @@
 "Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-09-09,2026-09-15,"$","Dividendo",22.431103,NA,NA,NA,NA,22.4311027,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-10-14,2026-10-20,"$","Dividendo",33.526193,NA,NA,NA,NA,33.526193,"boletin",NA
 "Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-10-14,2026-10-20,"$","Dividendo",23.321842,NA,NA,NA,NA,23.3218418,"boletin",NA
+"Fondo de Inversión SURA Deuda Privada Chile","A","9977","FIRES",2026-11-13,2026-11-19,"$","Dividendo",44.205776,NA,NA,NA,NA,44.2057764,"boletin",NA
+"Fondo de Inversión SURA Deuda Privada Chile","SURA","9977","FIRES",2026-11-13,2026-11-19,"$","Dividendo",30.780806,NA,NA,NA,NA,30.7808056,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global","A",NA,NA,2025-01-07,2025-01-13,"US$","Reparto",0.174315,NA,NA,NA,NA,0.1743149,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2025-04-06,2025-04-11,"US$","Reparto",0.176995,NA,NA,NA,NA,0.17699525,"boletin",NA
 "Fondo de Inversión SURA Real Estate Global, en Liquidación","A",NA,NA,2025-11-19,2025-11-25,"US$","Reparto",90.1248,NA,NA,NA,NA,90.1248,"boletin",NA
