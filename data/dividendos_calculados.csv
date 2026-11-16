@@ -779,6 +779,12 @@
 "BICE Deuda Privada Fondo de Inversión","K","10523","FINRE",2026-08-10,2026-08-17,"US$","Dividendo",0.019913,NA,NA,NA,NA,0.0199130995,"boletin",NA
 "BICE Deuda Privada Fondo de Inversión","X","10523","FINRE",2026-08-10,2026-08-17,"US$","Dividendo",0.019739,NA,NA,NA,NA,0.0197387755,"boletin",NA
 "BICE Deuda Privada Fondo de Inversión","Z","10523","FINRE",2026-08-10,2026-08-17,"US$","Dividendo",0.019631,NA,NA,NA,NA,0.0196306951,"boletin",NA
+"BICE Deuda Privada Fondo de Inversión","R","10523","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.018157,NA,NA,NA,NA,0.0181572274,"boletin",NA
+"BICE Deuda Privada Fondo de Inversión","A","10523","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.020864,NA,NA,NA,NA,0.0208638713,"boletin",NA
+"BICE Deuda Privada Fondo de Inversión","I","10523","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.021453,NA,NA,NA,NA,0.021453044,"boletin",NA
+"BICE Deuda Privada Fondo de Inversión","K","10523","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.021284,NA,NA,NA,NA,0.021284222,"boletin",NA
+"BICE Deuda Privada Fondo de Inversión","X","10523","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.021102,NA,NA,NA,NA,0.0211023784,"boletin",NA
+"BICE Deuda Privada Fondo de Inversión","Z","10523","FINRE",2026-11-12,2026-11-18,"US$","Dividendo",0.020992,NA,NA,NA,NA,0.0209918601,"boletin",NA
 "BICE GAIP Fondo de Inversión","A","10106","FINRE",2025-05-13,2025-05-19,"US$","Reparto",0.005223,NA,NA,NA,NA,0.0052225066,"boletin",NA
 "BICE GAIP Fondo de Inversión","I","10106","FINRE",2025-05-13,2025-05-19,"US$","Reparto",0.005245,NA,NA,NA,NA,0.0052449208,"boletin",NA
 "BICE GAIP Fondo de Inversión","A","10106","FINRE",2026-01-07,2026-01-13,"US$","Dividendo",0.002742,NA,NA,NA,NA,0.0027420029,"boletin",NA
@@ -10191,6 +10197,13 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "MBI-BP Deuda Fondo de Inversión, en Liquidación.","B",NA,NA,2025-08-16,2025-08-22,"$","Reparto",NA,103850099,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Moneda Alpinvest Secondaries VII Fondo de Inversión","A","9855","FINRE",2026-11-17,2026-11-23,"US$","Reparto",NA,3265000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Moneda Alpinvest Secondaries VII Fondo de Inversión","A2","9855","FINRE",2026-11-17,2026-11-23,"US$","Reparto",NA,3265000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Moneda Alpinvest Secondaries VII Fondo de Inversión","AE","9855","FINRE",2026-11-17,2026-11-23,"US$","Reparto",NA,3265000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Moneda Alpinvest Secondaries VII Fondo de Inversión","B","9855","FINRE",2026-11-17,2026-11-23,"US$","Reparto",NA,3265000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Moneda Alpinvest Secondaries VII Fondo de Inversión","B2","9855","FINRE",2026-11-17,2026-11-23,"US$","Reparto",NA,3265000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Moneda Alpinvest Secondaries VII Fondo de Inversión","I","9855","FINRE",2026-11-17,2026-11-23,"US$","Reparto",NA,3265000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Moneda Alpinvest Secondaries VII Fondo de Inversión","I2","9855","FINRE",2026-11-17,2026-11-23,"US$","Reparto",NA,3265000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "VolcomCapital – HPS Mezzanine IV Fondo de Inversión
 (ex XLC - HPS Mezzanine IV Fondo de Inversión)","A",NA,NA,2026-07-28,2026-08-03,"US$","Reparto",NA,855992.4,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
