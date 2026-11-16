@@ -77,13 +77,17 @@ FX <- tryCatch(obtener_usdclp_web(hasta), error = function(e) NULL)
 qn <- nombre_por_clave("9274-A")   # Quest renta global A (por run-serie: no depende del nombre)
 if (nzchar(qn) && !is.null(series[[qn]]) && !is.null(FX) && nrow(FX) > 0) {
   h <- series[[qn]]
-  h$valor_cuota <- vapply(seq_len(nrow(h)), function(i) {
+  # usdclp = el USD observado que se uso en cada fecha (el Excel lo muestra junto al NAV); NA = no hubo
+  # dolar disponible y ese dia queda en CLP sin convertir.
+  fx_usado <- vapply(seq_len(nrow(h)), function(i) {
     fx <- fx_proximo_dia_habil(h$fecha[i], FX)
     if (is.na(fx)) { prev <- FX[FX$fecha <= h$fecha[i], ]; if (nrow(prev)) fx <- prev$usdclp[which.max(prev$fecha)] }
-    if (!is.na(fx) && fx > 0) h$valor_cuota[i] / fx else h$valor_cuota[i]
+    if (!is.na(fx) && fx > 0) fx else NA_real_
   }, numeric(1))
+  h$valor_cuota <- ifelse(!is.na(fx_usado), h$valor_cuota / fx_usado, h$valor_cuota)
+  h$usdclp <- fx_usado
   d31 <- as.Date("2025-12-31")
-  if (any(h$fecha == d31)) h$valor_cuota[h$fecha == d31] <- 2.2079
+  if (any(h$fecha == d31)) { h$valor_cuota[h$fecha == d31] <- 2.2079; h$usdclp[h$fecha == d31] <- NA_real_ }   # valor fijo: no hubo division
   series[[qn]] <- h
   message("  ", qn, " convertido a USD (cierre 2025 fijo=2.2079, ult VC=", round(tail(h$valor_cuota, 1), 4), ")")
 } else if (nzchar(qn) && !is.null(series[[qn]])) {

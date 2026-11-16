@@ -143,9 +143,12 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
     })
     tiene_div <- vapply(seq_len(nf), function(j) !usa_fa[j] && !is.null(divs[[j]]), logical(1))
 
+    # Fondos cuyo VC se convierte con el USD observado (Quest renta global A): junto al NAV va el dolar usado
+    usa_fx <- vapply(sfun, function(s) !is.null(s) && "usdclp" %in% names(s) && any(!is.na(s$usdclp)), logical(1))
     cvc<-integer(nf); cfa<-rep(NA_integer_,nf); cfac<-rep(NA_integer_,nf); cvca<-rep(NA_integer_,nf)
-    cdiv<-rep(NA_integer_,nf); ccmd<-rep(NA_integer_,nf); cc<-2
+    cdiv<-rep(NA_integer_,nf); ccmd<-rep(NA_integer_,nf); cfx<-rep(NA_integer_,nf); cc<-2
     for (j in seq_len(nf)) { cvc[j]<-cc; cc<-cc+1
+      if (usa_fx[j]) { cfx[j]<-cc; cc<-cc+1 }
       if (usa_fa[j]) { cfa[j]<-cc;cc<-cc+1; cfac[j]<-cc;cc<-cc+1; cvca[j]<-cc;cc<-cc+1 }
       else if (tiene_div[j]) { cdiv[j]<-cc;cc<-cc+1; ccmd[j]<-cc;cc<-cc+1 } }
     ult<-cc-1; col_lbl<-ult+2; col_calc<-ult+3
@@ -155,6 +158,7 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
     for (j in seq_len(nf)) {
       f <- fondos[[j]]
       writeData(wb, sh, f$nombre_excel, startCol=cvc[j], startRow=2); addStyle(wb, sh, S$hdr, rows=2, cols=cvc[j])
+      if (usa_fx[j]) { writeData(wb, sh, "USD observado (CLP)", startCol=cfx[j], startRow=2); addStyle(wb, sh, S$hdr, rows=2, cols=cfx[j]) }
       if (usa_fa[j]) {
         writeData(wb, sh, "Factor Reparto", startCol=cfa[j], startRow=2)
         writeData(wb, sh, "FA Acumulado", startCol=cfac[j], startRow=2)
@@ -177,6 +181,7 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
       if (!is.null(s)) {
         idx <- match(s$fecha, fechas); vc[idx] <- s$valor_cuota
         Md[, cvc[j]-1] <- vc; ref <- vc
+        if (usa_fx[j]) { fxv <- rep(NA_real_, nF); fxv[idx] <- s$usdclp; Md[, cfx[j]-1] <- fxv }
         if (usa_fa[j]) {
           faacum_s <- if ("valor_cuota_ajustado" %in% names(s))
                         ifelse(!is.na(s$valor_cuota) & s$valor_cuota!=0, s$valor_cuota_ajustado/s$valor_cuota, NA_real_)
@@ -200,6 +205,7 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
     writeData(wb, sh, Md, startCol = 2, startRow = 3, colNames = FALSE)
     addStyle(wb, sh, S$fch, rows = 3:(nF+2), cols = 1, gridExpand = TRUE)
     addStyle(wb, sh, S$num, rows = 3:(nF+2), cols = 2:ult, gridExpand = TRUE)
+    for (j in which(usa_fx)) addStyle(wb, sh, S$tnx, rows = 3:(nF+2), cols = cfx[j], gridExpand = TRUE)   # dolar: 2 decimales
 
     max_f <- fechas[nF]; yr <- as.integer(format(max_f,"%Y"))
     target <- list(MTD = as.Date(format(max_f,"%Y-%m-01")) - 1,
@@ -224,6 +230,7 @@ generar_file_show <- function(pd, datos, series_aj, div_por_fondo, vc_df, path) 
     setColWidths(wb, sh, cols=1, widths=14)
     for (j in seq_len(nf)) {
       setColWidths(wb, sh, cols=cvc[j], widths=14)
+      if (usa_fx[j]) setColWidths(wb, sh, cols=cfx[j], widths=20)
       if (usa_fa[j]) setColWidths(wb, sh, cols=c(cfa[j],cfac[j],cvca[j]), widths=c(14,14,16))
       else if (tiene_div[j]) setColWidths(wb, sh, cols=c(cdiv[j],ccmd[j]), widths=c(14,16))
     }
