@@ -58,6 +58,7 @@ aplicar_indices_manuales <- function(macro, vc_df, fc, auto = list()) {
       macro[[j]]$mtd <- .rent(s, ref_mtd, fc)
       macro[[j]]$ytd <- .rent(s, ref_ytd, fc)
       macro[[j]]$mes_ant <- .rent(s, ref_mes_ant_ini, ref_mes_ant_fin)
+      macro[[j]]$fecha <- max(s$fecha)   # ultimo dato usado (manual o automatico)
     }
   }
   macro

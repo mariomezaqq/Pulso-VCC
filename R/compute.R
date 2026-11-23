@@ -126,6 +126,7 @@ construir_pulso_data <- function(series, fecha_cierre = NULL, macro = list(), rf
         moneda   = meta$moneda   %||% "", tac      = meta$tac      %||% "",
         art107   = meta$art107   %||% "",
         fecha_dato = if (!is.na(fecha_dato)) format(fecha_dato, "%d/%m") else NA_character_,
+        fecha_iso  = if (!is.na(fecha_dato)) format(fecha_dato, "%Y-%m-%d") else NA_character_,   # para el chequeo del correo
         atrasado   = atrasado
       )
     }

@@ -132,6 +132,36 @@ texto_correo <- function(pd) {
   )
 }
 
+#' Chequeo de datos del correo: devuelve un vector con el MOTIVO de cada dato que va en el mensaje y esta
+#' faltante o atrasado (vacio = todo al dia). "Atrasado" = su ultimo dato es anterior al dia habil previo
+#' a hoy (lun-vie, hora de Chile). Cubre exactamente lo que dice el correo: S&P 500, Nasdaq, ACWI, IPSA,
+#' oro, cobre, petroleo Brent, Treasury 10y y los instrumentos de la casa. Si hay motivos, el correo NO
+#' se envia al equipo: solo se avisa a Mario (ver scripts/enviar_correo.mjs).
+datos_atrasados_correo <- function(pd, hoy = as.Date(format(Sys.time(), tz = "America/Santiago"))) {
+  esperado <- hoy - 1
+  while (as.integer(format(esperado, "%u")) > 5) esperado <- esperado - 1
+  fmt <- function(d) format(as.Date(d), "%d/%m")
+  motivo <- character(0)
+  chequear <- function(nombre, fecha) {
+    fecha <- suppressWarnings(as.Date(fecha))
+    if (length(fecha) != 1 || is.na(fecha))
+      motivo <<- c(motivo, sprintf("%s: sin dato.", nombre))
+    else if (fecha < esperado)
+      motivo <<- c(motivo, sprintf("%s: su ultimo dato es del %s (se esperaba el %s).", nombre, fmt(fecha), fmt(esperado)))
+  }
+  for (par in list(c("S&P500", "S&P 500"), c("Nasdaq", "Nasdaq"), c("ACWI", "ACWI"), c("IPSA", "IPSA"),
+                   c("Oro", "Oro"), c("Cobre", "Cobre"), c("Petroleo Brent", "Petroleo Brent"))) {
+    x <- NULL; for (m in pd$indices_macro) if (identical(m$nombre, par[1])) x <- m
+    if (is.null(x) || !(.hay(x$wtd) || .hay(x$mtd) || .hay(x$ytd))) { motivo <- c(motivo, sprintf("%s: sin dato.", par[2])); next }
+    chequear(par[2], x$fecha)
+  }
+  chequear("Treasury 10y", pd$rf_usa$ultima)
+  casa <- Filter(function(c) grepl("casa", c$nombre, ignore.case = TRUE), pd$categorias)
+  if (!length(casa)) motivo <- c(motivo, "Instrumentos de la casa: sin datos.")
+  else for (f in casa[[1]]$fondos) chequear(sub("^Amc ", "AMC ", f$nombre), f$fecha_iso)
+  motivo
+}
+
 .esc <- function(x) { x <- gsub("&", "&amp;", x, fixed = TRUE); x <- gsub("<", "&lt;", x, fixed = TRUE); gsub(">", "&gt;", x, fixed = TRUE) }
 
 #' Cuerpo del correo con el sistema de diseño de Vizcaya Capital (skill vizcaya-capital):
