@@ -46,10 +46,12 @@ writeLines(enc2utf8(cuerpo$html), file.path(out, "cuerpo.html"), useBytes = TRUE
 writeLines(enc2utf8(vista$html), file.path(out, "vista-previa.html"), useBytes = TRUE)
 file.copy("correo_assets/logo-vizcaya-capital-10-blanco.png", file.path(out, "logo-pulso.png"), overwrite = TRUE)
 writeLines(enc2utf8(cuerpo$texto), file.path(out, "cuerpo.txt"), useBytes = TRUE)
-avisos <- c(t$pd$alertas$global %||% character(0),
+# Si algo de lo que dice el correo falta o esta atrasado, NO sale al equipo (solo aviso a Mario): ver R/correo.R
+motivos_datos <- datos_atrasados_correo(t$pd)
+avisos <- c(t$pd$alertas$global %||% character(0), motivos_datos,
             if (length(txt$parrafos) < 4) "Falta algun parrafo por datos faltantes (indices, Treasury o instrumentos de la casa).")
 write_json(list(cierre = format(fc), asunto = txt$asunto,
-                atrasado = !is.null(t$pd$alertas$global),   # cierre anterior al ultimo dia habil
+                atrasado = !is.null(t$pd$alertas$global) || length(motivos_datos) > 0 || length(txt$parrafos) < 4,   # cierre atrasado, o algun dato del mensaje atrasado/faltante
                 fondos_atrasados = vapply(t$pd$alertas$fondos, function(x) paste0(x$nombre, " (", x$fecha, ")"), ""),
                 datos_generados = t$datos$generado %||% "", avisos = avisos),
            file.path(out, "meta.json"), auto_unbox = TRUE, pretty = TRUE)

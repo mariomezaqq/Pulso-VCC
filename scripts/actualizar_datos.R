@@ -185,7 +185,9 @@ for (idx in INDICES) {
     r <- rent_serie(s %>% rename(valor_cuota = valor))
     macro_series[[idx$nombre]] <- s
   }
-  macro[[length(macro) + 1]] <- list(nombre = idx$nombre, wtd = r$wtd, mtd = r$mtd, ytd = r$ytd, mes_ant = r$mes_ant)
+  # fecha = ultimo dato del indice: el correo no sale si algo de lo que dice esta atrasado (ver datos_atrasados_correo)
+  macro[[length(macro) + 1]] <- list(nombre = idx$nombre, wtd = r$wtd, mtd = r$mtd, ytd = r$ytd, mes_ant = r$mes_ant,
+                                     fecha = if (!is.null(s) && nrow(s) > 0) max(s$fecha) else as.Date(NA))
   message("  Macro ", idx$nombre, ": WTD ", round(r$wtd*100,2), " MTD ", round(r$mtd*100,2), " YTD ", round(r$ytd*100,2), " Mes ant ", round(r$mes_ant*100,2))
 }
 
@@ -206,7 +208,8 @@ if (!is.null(tnx) && nrow(tnx) > 0) {
   rf_usa <- list(
     headers = list(cierre = "Cierre 2025", fecha1 = format(ref_wtd, "%d/%m"), fecha2 = format(fc, "%d/%m")),
     rows = list(list(nombre = "Treasury 10y",
-                     cierre2025 = val_a(ref_ytd), abr20 = val_a(ref_wtd), abr27 = val_a(fc)))
+                     cierre2025 = val_a(ref_ytd), abr20 = val_a(ref_wtd), abr27 = val_a(fc))),
+    ultima = max(tnx$fecha)    # ultimo dato del Treasury (lo revisa datos_atrasados_correo)
   )
 } else {
   tnx <- NULL
