@@ -868,6 +868,8 @@
 "BICE StepStone IV Fondo de Inversión","I","9572","FINRE",2026-08-11,2026-08-18,"US$","Reparto",0.030618,NA,NA,NA,NA,0.0306175565,"boletin",NA
 "BICE StepStone IV Fondo de Inversión","A","9572","FINRE",2026-10-15,2026-10-21,"US$","Reparto",0.015061,NA,NA,NA,NA,0.0150607279,"boletin",NA
 "BICE StepStone IV Fondo de Inversión","I","9572","FINRE",2026-10-15,2026-10-21,"US$","Reparto",0.016543,NA,NA,NA,NA,0.0165426201,"boletin",NA
+"BICE StepStone IV Fondo de Inversión","A","9572","FINRE",2026-11-26,2026-12-02,"US$","Reparto",0.077145,NA,NA,NA,NA,0.07714492,"boletin",NA
+"BICE StepStone IV Fondo de Inversión","I","9572","FINRE",2026-11-26,2026-12-02,"US$","Reparto",0.08482,NA,NA,NA,NA,0.08481962,"boletin",NA
 "BICE StepStone SCLE I Fondo de Inversión","A","9722","FINRE",2025-02-18,2025-02-24,"US$","Reparto",0.01751,NA,NA,NA,NA,0.0175104454,"boletin",NA
 "BICE StepStone SCLE I Fondo de Inversión","I","9722","FINRE",2025-02-18,2025-02-24,"US$","Reparto",0.018497,NA,NA,NA,NA,0.0184966504,"boletin",NA
 "BICE StepStone SCLE I Fondo de Inversión","X","9722","FINRE",2025-02-18,2025-02-24,"US$","Reparto",0.018689,NA,NA,NA,NA,0.0186885398,"boletin",NA
@@ -4106,6 +4108,8 @@
 "Fondo de Inversión BCI Adler V","ADC","10247","FINRE",2026-02-27,2026-03-05,"US$","Reparto",0.013235,NA,NA,NA,NA,0.013234881,"boletin",NA
 "Fondo de Inversión BCI Adler V","C","10247","FINRE",2026-05-29,2026-06-04,"US$","Reparto",0.013825,NA,NA,NA,NA,0.0138252434,"boletin",NA
 "Fondo de Inversión BCI Adler V","ADC","10247","FINRE",2026-05-29,2026-06-04,"US$","Reparto",0.014025,NA,NA,NA,NA,0.014024686,"boletin",NA
+"Fondo de Inversión BCI Adler V","C","10247","FINRE",2026-11-27,2026-12-03,"US$","Reparto",0.011718,NA,NA,NA,NA,0.0117176379,"boletin",NA
+"Fondo de Inversión BCI Adler V","ADC","10247","FINRE",2026-11-27,2026-12-03,"US$","Reparto",0.011907,NA,NA,NA,NA,0.0119072553,"boletin",NA
 "Fondo de Inversión BCI DSS19","A","9758","FINRE",2025-03-28,2025-04-03,"US$","Reparto",2.026963,NA,NA,NA,NA,2.0269626355,"boletin",NA
 "Fondo de Inversión BCI DSS19","B","9758","FINRE",2025-03-28,2025-04-03,"US$","Reparto",1.971774,NA,NA,NA,NA,1.9717735366,"boletin",NA
 "Fondo de Inversión BCI DSS19","C","9758","FINRE",2025-03-28,2025-04-03,"US$","Reparto",1.941758,NA,NA,NA,NA,1.9417576192,"boletin",NA
@@ -6368,6 +6372,8 @@
 "Fondo de Inversión Nevasa Protección","A","10234","FIRES",2025-06-12,2025-06-18,"US$","Dividendo",0.002591,NA,NA,NA,NA,0.00259125,"boletin",NA
 "Fondo de Inversión Nevasa Protección","A","10234","FIRES",2026-06-12,2026-06-18,"US$","Dividendo",0.000169,NA,NA,NA,NA,0.000168618,"boletin",NA
 "Fondo de Inversión Nevasa Protección","I","10234","FIRES",2026-06-12,2026-06-18,"US$","Dividendo",0.000164,NA,NA,NA,NA,0.000163854,"boletin",NA
+"Fondo de Inversión Nevasa TIC Vendor Lease","N",NA,NA,2026-11-26,2026-12-02,"$","Reparto",207.381507,NA,NA,NA,NA,207.381507051,"boletin",NA
+"Fondo de Inversión Nevasa TIC Vendor Lease","R",NA,NA,2026-11-26,2026-12-02,"$","Reparto",207.58861,NA,NA,NA,NA,207.588610165,"boletin",NA
 "Fondo de Inversión Nevasa Visión","A","9402","FIRES",2025-06-13,2025-06-19,"US$","Dividendo",1.933688,NA,NA,NA,NA,1.933687523,"boletin",NA
 "Fondo de Inversión Nevasa Visión","B","9402","FIRES",2025-06-13,2025-06-19,"US$","Dividendo",2.13221,NA,NA,NA,NA,2.132210451,"boletin",NA
 "Fondo de Inversión Nevasa Visión","A","9402","FIRES",2026-06-11,2026-06-17,"US$","Dividendo",5.884212,NA,NA,NA,NA,5.884211559,"boletin",NA
@@ -7692,6 +7698,7 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P","10092","FINRE",2026-09-11,2026-09-17,"$","Reparto",12817.397164,NA,NA,NA,NA,12817.397164286,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P","10092","FINRE",2026-10-22,2026-10-28,"$","Reparto",1472.560714,NA,NA,NA,NA,1472.560714286,"boletin",NA
 "Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P","10092","FINRE",2026-11-03,2026-11-09,"$","Reparto",2123.766514,NA,NA,NA,NA,2123.766514286,"boletin",NA
+"Frontal Trust Fundamenta Desarrollo Inmobiliario XV Fondo de Inversión","P","10092","FINRE",2026-11-27,2026-12-03,"$","Reparto",5366.226622,NA,NA,NA,NA,5366.226621766,"boletin",NA
 "Frontal Trust Infraestructura Alpha Fondo de Inversión","A","9664","FINRE",2026-01-24,2026-01-30,"$","Reparto",296.883596,NA,NA,NA,NA,296.88359569,"boletin",NA
 "Frontal Trust Infraestructura Alpha Fondo de Inversión","B","9664","FINRE",2026-01-24,2026-01-30,"$","Reparto",311.384,NA,NA,NA,NA,311.384,"boletin",NA
 "Frontal Trust Mercado Pago Créditos Fondo de Inversión","P","10689","FINRE",2025-03-08,2025-03-14,"$","Dividendo",2.632928,NA,NA,NA,NA,2.632927593,"boletin",NA
@@ -9772,6 +9779,8 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "Vinci Compass Global Investments Fondo de Inversión","E","9165","FINRE",2026-10-21,2026-10-27,"US$","Dividendo",0.001109,NA,NA,NA,NA,0.0011094357,"boletin",NA
 "Vinci Compass Global Investments Fondo de Inversión","A","9165","FINRE",2026-10-21,2026-10-27,"US$","Reparto",0.000135,NA,NA,NA,NA,0.0001345077,"boletin",NA
 "Vinci Compass Global Investments Fondo de Inversión","E","9165","FINRE",2026-10-21,2026-10-27,"US$","Reparto",0.000135,NA,NA,NA,NA,0.0001345122,"boletin",NA
+"Vinci Compass Global Investments Fondo de Inversión","A","9165","FINRE",2026-11-27,2026-12-03,"US$","Dividendo",0.003693,NA,NA,NA,NA,0.0036928608,"boletin",NA
+"Vinci Compass Global Investments Fondo de Inversión","E","9165","FINRE",2026-11-27,2026-12-03,"US$","Dividendo",0.003693,NA,NA,NA,NA,0.0036929952,"boletin",NA
 "Vinci Compass Global Investments II Fondo de Inversión","A","9275","FINRE",2026-11-03,2026-11-09,"US$","Dividendo",0.011118,NA,NA,NA,NA,0.0111178857,"boletin",NA
 "Vinci Compass Global Investments III Fondo de Inversión","A","9308","FINRE",2026-07-31,2026-08-06,"EURO","Dividendo",0.013129,NA,NA,NA,NA,0.0131293542,"boletin",NA
 "Vinci Compass Global Investments III Fondo de Inversión","A","9308","FINRE",2026-07-31,2026-08-06,"EURO","Reparto",0.01996,NA,NA,NA,NA,0.0199598403,"boletin",NA
@@ -9945,6 +9954,9 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "Vinci Compass Private Equity XII Fondo de Inversión","A","9167","FINRE",2026-10-21,2026-10-27,"US$","Reparto",0.000629,NA,NA,NA,NA,0.000629118,"boletin",NA
 "Vinci Compass Private Equity XII Fondo de Inversión","B","9167","FINRE",2026-10-21,2026-10-27,"US$","Reparto",0.000683,NA,NA,NA,NA,0.0006826479,"boletin",NA
 "Vinci Compass Private Equity XII Fondo de Inversión","C","9167","FINRE",2026-10-21,2026-10-27,"US$","Reparto",0.000761,NA,NA,NA,NA,0.0007608159,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","A","9167","FINRE",2026-11-27,2026-12-03,"US$","Dividendo",0.001874,NA,NA,NA,NA,0.0018742668,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","B","9167","FINRE",2026-11-27,2026-12-03,"US$","Dividendo",0.002034,NA,NA,NA,NA,0.0020343007,"boletin",NA
+"Vinci Compass Private Equity XII Fondo de Inversión","C","9167","FINRE",2026-11-27,2026-12-03,"US$","Dividendo",0.002268,NA,NA,NA,NA,0.0022676839,"boletin",NA
 "Vinci Compass Private Equity XIII Fondo de Inversión","A","9257","FINRE",2026-11-03,2026-11-09,"US$","Dividendo",0.015626,NA,NA,NA,NA,0.0156259825,"boletin",NA
 "Vinci Compass Private Equity XIII Fondo de Inversión","B","9257","FINRE",2026-11-03,2026-11-09,"US$","Dividendo",0.016782,NA,NA,NA,NA,0.0167822517,"boletin",NA
 "Vinci Compass Private Equity XIII Fondo de Inversión","C","9257","FINRE",2026-11-03,2026-11-09,"US$","Dividendo",0.017667,NA,NA,NA,NA,0.0176668316,"boletin",NA
@@ -10258,8 +10270,10 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-04-02,2026-04-10,"US$","Reparto",NA,107587.7,8435679,2026-04-02,0.012754,0.012753887146596,"calculado (total/cuotas dia limite)",NA
 "Picton - KKR Global Infrastructure V Fondo de Inversión","C","10726","FINRE",2026-07-02,2026-07-08,"US$","Reparto",NA,406719.24,8190288,2026-07-02,0.049659,0.0496587196149706,"calculado (total/cuotas dia limite)",NA
 "Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-07-02,2026-07-08,"US$","Reparto",NA,332286.37,8190288,2026-07-02,0.040571,0.0405707772263402,"calculado (total/cuotas dia limite)",NA
+"Picton - KKR Global Infrastructure V Fondo de Inversión","C","10726","FINRE",2026-10-01,2026-10-07,"US$","Reparto",NA,380722.97,7461450,2026-10-01,0.051025,0.0510253318085953,"calculado (total/cuotas dia limite)",NA
 "Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-10-01,2026-10-07,"US$","Reparto",NA,311444.27,7461450,2026-10-01,0.04174,0.0417404476977992,"calculado (total/cuotas dia limite)",NA
-"Picton - WP Fondo de Inversión","N","7262","FINRE",2026-09-24,2026-09-30,"US$","Reparto",NA,616748.19,26161061,2026-09-24,0.023575,0.0235750446026189,"calculado (total/cuotas dia limite)",NA
+"Picton - KKR Global Infrastructure V Fondo de Inversión","C","10726","FINRE",2026-11-26,2026-12-02,"US$","Reparto",NA,7611.37,9279914,2026-11-26,0.00082,0.000820198311295675,"calculado (total/cuotas dia limite)",NA
+"Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-11-26,2026-12-02,"US$","Reparto",NA,6224.17,9279914,2026-11-26,0.000671,0.00067071417145891,"calculado (total/cuotas dia limite)",NA
 "Picton - WP Fondo de Inversión","N","7262","FINRE",2026-10-09,2026-10-16,"US$","Reparto",NA,442900.54,24769654,2026-10-09,0.017881,0.0178807719461985,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,128123.28,206645683,2026-03-11,0.00062,0.000620014306971599,"calculado (total/cuotas dia limite)",NA
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-03-11,2026-03-17,"US$","Reparto",NA,332465.91,206645683,2026-03-11,0.001609,0.00160886937003433,"calculado (total/cuotas dia limite)",NA
@@ -10277,6 +10291,9 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2026-01-31,2026-02-06,"$","Reparto",NA,162241028,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2026-07-31,2026-08-06,"$","Reparto",NA,242471004,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Ameris Financiamiento para Acceso a la Vivienda II Fondo de Inversión","I",NA,NA,2026-10-30,2026-11-06,"$","Reparto",NA,296507055,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
+"Avante Deuda Privada y Capital Preferente Fondo de Inversión","AM","10406","FINRE",2026-12-01,2026-12-07,"$","Dividendo",NA,375453900,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Avante Deuda Privada y Capital Preferente Fondo de Inversión","R","10406","FINRE",2026-12-01,2026-12-07,"$","Dividendo",NA,375453900,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Avante Deuda Privada y Capital Preferente Fondo de Inversión","S","10406","FINRE",2026-12-01,2026-12-07,"$","Dividendo",NA,375453900,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Fondo de Inversión Asset Deuda Vivo","ADV","10324","FINRE",2025-06-12,2025-06-18,"$","Reparto",NA,1019361859,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","I",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,114903.97,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Fondo de Inversión Credicorp Capital AIX Fully Funded","E",NA,NA,2026-05-08,2026-05-14,"US$","Reparto",NA,222847.69,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
@@ -10357,9 +10374,7 @@ Preferente","10113","FINRE",2026-11-06,2026-11-12,"$","Dividendo",114.543247,NA,
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","A",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "MBI-TA Realty Core Property Fondo de Inversión, en Liquidación","I",NA,NA,2025-11-25,2025-12-01,"US$","Reparto",NA,1550000,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
 "Neorentas Ocho Fondo de Inversión, en liquidación","B",NA,NA,2026-05-22,2026-05-28,"$","Reparto",NA,45890925,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)",NA
-"Picton - KKR Global Infrastructure V Fondo de Inversión","C","10726","FINRE",2026-10-01,2026-10-07,"US$","Reparto",NA,380722.97,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
-"Picton - KKR Global Infrastructure V Fondo de Inversión","C","10726","FINRE",2026-11-26,2026-12-02,"US$","Reparto",NA,7611.37,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
-"Picton - KKR Global Infrastructure V Fondo de Inversión","I","10726","FINRE",2026-11-26,2026-12-02,"US$","Reparto",NA,6224.17,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
+"Picton - WP Fondo de Inversión","N","7262","FINRE",2026-09-24,2026-09-30,"US$","Reparto",NA,616748.19,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","no se pudo consultar la CMF"
 "Picton - WPGG Fondo de Inversión","A","9654","FINRE",2026-11-27,2026-12-03,"US$","Reparto",NA,349701.54,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Picton - WPGG Fondo de Inversión","I","9654","FINRE",2026-11-27,2026-12-03,"US$","Reparto",NA,907903.98,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
 "Vinci Compass Deuda Plus Fondo de Inversión","A","7200","FIRES",2026-12-07,2026-12-14,"$","Dividendo",NA,3135834829,NA,NA,NA,NA,"pendiente (VC del dia limite no disponible)","sin VC publicado en la fecha limite (futura o no habil)"
